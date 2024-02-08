@@ -1,1 +1,39 @@
-site_name: My Docs
+site_name: YUMI-LAB documentation
+repo_url: https://github.com/Yumi-Lab/Yumi-Smart-Pi.git
+repo_name: Yumi-Lab/Yumi-Smart-Pi
+
+# Website layout configuration (using mkdocs-material theme)
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  logo: img/YUMI_LOGO.svg
+  favicon: img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+    alternate: material/web
+  features:
+      #- navigation.tabs
+      #- navigation.expand
+      - navigation.top
+      # if enabled, the TOC doesn't work for some pages
+      # - toc.integrate
+      - search.suggest
+      - search.highlight
+      - search.share
+  language: en
+extra_css:
+  - css/extra.css
