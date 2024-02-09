@@ -63,7 +63,7 @@ Issue the command `cd klipper` and confirm with Enter
 
 Run the `make menuconfig` command and confirm with enter.
 
- ![FW](/img/Printers/Artillery/X2/FW02.png)
+![FW](/img/Printers/Artillery/X2/FW02.png)
 
 You need to set the information below:
  
@@ -73,7 +73,7 @@ Use the arrow keys to move around and enter to confirm.
 When ready, press q
 Confirm with Y
  
- ![FW](/img/Printers/Artillery/X2/FW04.png)
+![FW](/img/Printers/Artillery/X2/FW04.png)
 
 Run the `make` command. This will generate the firmware.
 
@@ -83,12 +83,12 @@ We need to switch the printer to DFU mode in order to install the frmware.
 To do this, you can install pronterface (link to start of tutorial) on your computer and connect it directly to the printer.
 Open Pronterface (in administrator mode).
 
- ![Pronterface](/img/Printers/Artillery/X2/Pronterface01.png)
+![Pronterface](/img/Printers/Artillery/X2/Pronterface01.png)
 
 Connect the printer to the PC using the USB port and set 115200 baud.
 Click on connect.
 
-  ![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
+![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
 
   Run the `M997` command
 
@@ -98,7 +98,7 @@ Return to MobaXterm.
 Connect the printer to the pad and run the `lsusb` command.
 You should have a device in DFU mode.
 
-  ![Flash](/img/Printers/Artillery/X2/FlashPrinter.png)
+![Flash](/img/Printers/Artillery/X2/FlashPrinter.png)
 
   Run the following command to flash the printer:
 `make flash FLASH_DEVICE=0483:df11`
@@ -107,5 +107,65 @@ You should have a device in DFU mode.
 
 Download the Sidewinder X2 configuration files from the following link:
 
-Printer.cfg:
-Macros.cfg: 
+Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/printer.cfg
+Macros.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/macros.cfg
+
+# Mainsail Web interface
+
+You can connect to your Mainsail interface from a web browser with the address http://votre IP address.
+
+Example: http://192.168.1.74
+
+You should arrive on this page. The error is normal. We haven't finished the configuration.
+
+![Mainsail](/img/Printers/Artillery/X2/Mainsail01.png)
+
+ We're going to load the configuration files.
+
+Unzip the zip containing the configuration files.
+
+Go to the folder.
+
+![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
+
+From the Mainsail interface, go to Machine (wrench icon)
+Click on the button to load files
+
+![Mainsail](/img/Printers/Artillery/X2/Mainsail03.png)
+
+Select all configuration files and click Open. Your files will be uploaded to Mainsail.
+
+![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
+
+Restart the Pad and connect the printer to it with the correct USB cable.
+
+![Mainsail](/img/Printers/Artillery/X2/Mainsail04.png)
+
+# Get your printer's USB ID
+
+Connect your printer to one of the PAD's USB ports.
+
+Connect via SSH with MobaXterm, then enter the following command to retrieve the USB serial from the motherboard:
+`ls /dev/serial/by-id/*`
+
+Your id will be different from mine. You should see the USB id appear like this:
+
+![MID](/img/Printers/Artillery/X2/ID01.png)
+
+Go to your Mainsail web interface and click on the Machine tab.
+
+Open the printer.cfg file and look for the [mcu] section.
+
+Modify the existing line with the serial number you've just obtained as follows:
+
+![MID](/img/Printers/Artillery/X2/ID02.png)
+
+Click on SAVE and RESTART in the top right-hand corner to save the file.
+
+Your printer should now connect to your Pi. Restart the firmware if it hasn't been updated yet.
+
+![MID](/img/Printers/Artillery/X2/ID03.png)
+
+From the dashboard, it should look like this:
+
+![MID](/img/Printers/Artillery/X2/ID04.png)
