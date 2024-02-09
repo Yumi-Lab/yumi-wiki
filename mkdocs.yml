@@ -53,8 +53,8 @@ nav:
     - Yumi_Components/SmartShield_specifications.md
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
-      - 1.PRINTERS:
-        - PRINTERS/SIDEWINDER_X2.md
-        - PRINTERS/PRUSA_MK3.md
+    - PRINTERS:
+      - PRINTERS/SIDEWINDER_X2.md
+      - PRINTERS/PRUSA_MK3.md
   - YUMI LAB mobile APP:
 
