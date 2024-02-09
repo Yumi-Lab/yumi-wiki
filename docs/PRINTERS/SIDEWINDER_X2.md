@@ -1,6 +1,5 @@
 # Klipper Sidewinder X2 installation
 
-![YUMI-LAB](/img/Yumi-logoyellow-white.png)
 ![Sidewinder X2](/img/Printers/Artillery/X2/X2.jpeg)
 
 This procedure is for anyone who has a Sidewinder X2 and a SmartPad klipper control device.
@@ -14,7 +13,7 @@ This procedure has been tested and approved for Ruby 1.2 motherboards. Do not in
 # Hardware and software :
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
-Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1
+Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1 
 
 # Connection SSH
 
