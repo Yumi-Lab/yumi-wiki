@@ -39,7 +39,7 @@ extra_css:
   - css/extra.css
 
 nav:
-  - YUMI SBC nano computer:
+  - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
       - SmartPI/SmartPi_Klipper.md
@@ -47,12 +47,14 @@ nav:
       - SmartPI/SmartPi_Home_Assistant.md
       - SmartPI/SmartPi_Linux_Desktop.md
       - SmartPI/SmartPi_Linux_server.md
-    - Components:
-      - Config_Reference.md
-      - Rotation_Distance.md
+  - YUMI others Components:
+    - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
+    - Yumi_Components/SmartPI/SmartHub_specifications.md
+    - Yumi_Components/SmartPI/SmartShield_specifications.md
   - YUMI Klipper SMART PAD:
+    - KlipperSmartPad/SmartPad_specifications.md
     - 1.PRINTERS:
       - PRINTERS/SIDEWINDER_X2.md
       - PRINTERS/PRUSA_MK3.md
-    - details.md
+   - YUMI LAB mobile APP:
 
