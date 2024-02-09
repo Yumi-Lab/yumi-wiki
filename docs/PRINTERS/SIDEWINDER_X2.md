@@ -169,3 +169,6 @@ Your printer should now connect to your Pi. Restart the firmware if it hasn't be
 From the dashboard, it should look like this:
 
 ![MID](/img/Printers/Artillery/X2/ID04.png)
+
+# Changer les paramètres de votre slicer
+## CURA
