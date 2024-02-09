@@ -49,12 +49,12 @@ nav:
       - SmartPI/SmartPi_Linux_server.md
   - YUMI others Components:
     - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
-    - Yumi_Components/SmartPI/SmartHub_specifications.md
-    - Yumi_Components/SmartPI/SmartShield_specifications.md
+    - Yumi_Components/SmartHub_specifications.md
+    - Yumi_Components/SmartShield_specifications.md
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
-    - 1.PRINTERS:
-      - PRINTERS/SIDEWINDER_X2.md
-      - PRINTERS/PRUSA_MK3.md
-   - YUMI LAB mobile APP:
+      - 1.PRINTERS:
+        - PRINTERS/SIDEWINDER_X2.md
+        - PRINTERS/PRUSA_MK3.md
+  - YUMI LAB mobile APP:
 
