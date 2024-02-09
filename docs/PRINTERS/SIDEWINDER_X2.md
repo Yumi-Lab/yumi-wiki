@@ -57,4 +57,22 @@ Once you're logged in, you'll see this screen:
 
 The left sidebar corresponds to the Raspberry file and the right to the command line interface.
 
-Issue the command 'cd klipper' and confirm with Enter
+Issue the command `cd klipper` and confirm with Enter
+
+![FW](/img/Printers/Artillery/X2/FW01.png)
+
+Run the `make menuconfig` command and confirm with enter.
+
+ ![FW](/img/Printers/Artillery/X2/FW02.png)
+
+You need to set the information below:
+ 
+![FW](/img/Printers/Artillery/X2/FW03.png)
+
+Use the arrow keys to move around and enter to confirm.
+When ready, press q
+Confirm with Y
+ 
+ ![FW](/img/Printers/Artillery/X2/FW04.png)
+
+Run the `make` command. This will generate the firmware.
