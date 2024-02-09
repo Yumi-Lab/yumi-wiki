@@ -58,10 +58,16 @@ Once you're logged in, you'll see this screen:
 The left sidebar corresponds to the Raspberry file and the right to the command line interface.
 
 Issue the command `cd klipper` and confirm with Enter
+```
+cd klipper
+```
 
 ![FW](/img/Printers/Artillery/X2/FW01.png)
 
 Run the `make menuconfig` command and confirm with enter.
+```
+make menuconfig
+```
 
 ![FW](/img/Printers/Artillery/X2/FW02.png)
 
@@ -76,6 +82,9 @@ Confirm with Y
 ![FW](/img/Printers/Artillery/X2/FW04.png)
 
 Run the `make` command. This will generate the firmware.
+```
+make
+```
 
 #  Switch printer to DFU mode
 
@@ -91,6 +100,9 @@ Click on connect.
 ![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
 
   Run the `M997` command
+'''
+M997
+'''
 
   # Flashing with the SmartPad
 
@@ -146,8 +158,9 @@ Restart the Pad and connect the printer to it with the correct USB cable.
 Connect your printer to one of the PAD's USB ports.
 
 Connect via SSH with MobaXterm, then enter the following command to retrieve the USB serial from the motherboard:
-`ls /dev/serial/by-id/*`
-
+'''
+ls /dev/serial/by-id/*
+'''
 Your id will be different from mine. You should see the USB id appear like this:
 
 ![MID](/img/Printers/Artillery/X2/ID01.png)
