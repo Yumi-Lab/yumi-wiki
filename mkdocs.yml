@@ -1,6 +1,6 @@
 site_name: YUMI-LAB documentation
-repo_url: https://github.com/Yumi-Lab/Yumi-Smart-Pi.git
-repo_name: Yumi-Lab/Yumi-Smart-Pi
+repo_url: https://github.com/Yumi-Lab/yumi-wiki.git
+repo_name: Yumi-Lab/yumi-wiki
 
 # Website layout configuration (using mkdocs-material theme)
 theme:
@@ -37,6 +37,16 @@ theme:
   language: en
 extra_css:
   - css/extra.css
+
+# Custom markdown dialect settings
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - YUMI SBC nano-computer:
