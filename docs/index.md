@@ -1,6 +1,6 @@
 # Welcome to YUMI-LAB
 
-![YUMI-LAB](img/Yumi-logoyellow-white.png)
+![YUMI-LAB](../img/Yumi-logoyellow-white.png)
 
 Welcome to YUMI-LAB, where innovation meets versatility in the realm of electronics. We're thrilled to introduce our groundbreaking flagship product, the Smart Pi One, designed to revolutionize the world of single-board computing.
 
