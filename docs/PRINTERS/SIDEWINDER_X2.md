@@ -22,3 +22,11 @@ Download and install MobaXterm.
 Click on the Session icon
 
 ![Moba Session](/img/Printers/Artillery/X2/MobaSession.png)
+
+Select SSH
+
+![SSH](/img/Printers/Artillery/X2/MobaSSH.png)
+
+Enter the raspberry's IP address and enter pi as the user name.
+Follow this procedure to find the IP address: (Scan Network](https://www.malekal.com/comment-faire-un-scan-ip-reseau-local-lan/)
+Or, on the Pad, go to Menu :
