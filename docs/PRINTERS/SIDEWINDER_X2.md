@@ -1,17 +1,25 @@
-# Welcome to Klipper for Sidewinder X2
+# Klipper Sidewinder X2 installation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![YUMI-LAB](../img/Yumi-logoyellow-white.png)
+![YUMI-LAB](../img//Printers/Artillery/X2/X2jpeg)
 
-## Commands
+This procedure is for anyone who has a Sidewinder X2 and a SmartPad klipper control device.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Please read the procedure first
 
-## Project layout
+You are responsible for all operations carried out on your equipment. This procedure explains how to set up klipper on your printer. It has been tested and is fully functional.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This procedure has been tested and approved for Ruby 1.2 motherboards. Do not install it on other motherboards.
+
+# Hardware and software :
+
+MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
+Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1
+
+# Connection SSH
+
+Download and install MobaXterm.
+
+Click on the Session icon
+
+![YUMI-LAB](../img//Printers/Artillery/X2/XMobaSession.png)
