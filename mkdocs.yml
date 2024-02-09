@@ -40,7 +40,15 @@ extra_css:
 
 nav:
   - YUMI SBC nano computer:
-    - Installation.md
+    - SMART PI ONE:
+      - 1. Introduction & Specifications:
+      - SmartPI/SmartPi_One_specifications.md
+      - 2. Smart PI ONE Projects:
+      - SmartPI/SmartPi_Klipper.md
+      - SmartPI/SmartPi_Retro_Gaming.md
+      - SmartPI/SmartPi_Home_Assistant.md
+      - SmartPI/SmartPi_Linux_Desktop.md
+      - SmartPI/SmartPi_Linux_server.md
     - Components:
       - Config_Reference.md
       - Rotation_Distance.md
