@@ -45,7 +45,8 @@ nav:
       - Config_Reference.md
       - Rotation_Distance.md
   - SMART PAD:
+    - PRINTERS:
+      - SIDEWINDER X2.md
+      - PRUSA MK3.md
     - details.md
-  - PRINTERS:
-    - SIDEWINDER X2
-    - PRUSA MK3
+
