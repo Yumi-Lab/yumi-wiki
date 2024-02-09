@@ -76,3 +76,36 @@ Confirm with Y
  ![FW](/img/Printers/Artillery/X2/FW04.png)
 
 Run the `make` command. This will generate the firmware.
+
+#  Switch printer to DFU mode
+
+We need to switch the printer to DFU mode in order to install the frmware.
+To do this, you can install pronterface (link to start of tutorial) on your computer and connect it directly to the printer.
+Open Pronterface (in administrator mode).
+
+ ![Pronterface](/img/Printers/Artillery/X2/Pronterface01.png)
+
+Connect the printer to the PC using the USB port and set 115200 baud.
+Click on connect.
+
+  ![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
+
+  Run the `M997` command
+
+  # Flashing with the SmartPad
+
+Return to MobaXterm.
+Connect the printer to the pad and run the `lsusb` command.
+You should have a device in DFU mode.
+
+  ![Flash](/img/Printers/Artillery/X2/FlashPrinter.png)
+
+  Run the following command to flash the printer:
+`make flash FLASH_DEVICE=0483:df11`
+
+# Download configuration files
+
+Download the Sidewinder X2 configuration files from the following link:
+
+Printer.cfg:
+Macros.cfg: 
