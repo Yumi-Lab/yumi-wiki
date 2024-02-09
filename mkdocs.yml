@@ -37,3 +37,12 @@ theme:
   language: en
 extra_css:
   - css/extra.css
+
+nav:
+  - YUMI SBC nano computer:
+    - Installation.md
+    - Components:
+      - Config_Reference.md
+      - Rotation_Distance.md
+  - SMART PAD:
+    - details.md
