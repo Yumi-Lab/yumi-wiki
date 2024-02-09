@@ -50,8 +50,8 @@ nav:
     - Components:
       - Config_Reference.md
       - Rotation_Distance.md
-  - SMART PAD:
-    - PRINTERS:
+  - YUMI Klipper SMART PAD:
+    - 1.PRINTERS:
       - PRINTERS/SIDEWINDER_X2.md
       - PRINTERS/PRUSA_MK3.md
     - details.md
