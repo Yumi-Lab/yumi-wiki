@@ -1,7 +1,7 @@
 # Klipper Sidewinder X2 installation
 
-![YUMI-LAB](../img/Yumi-logoyellow-white.png)
-![Sidewinder X2](../img/Printers/Artillery/X2/X2.jpeg)
+![YUMI-LAB](img/Yumi-logoyellow-white.png)
+![Sidewinder X2](img/Printers/Artillery/X2/X2.jpeg)
 
 This procedure is for anyone who has a Sidewinder X2 and a SmartPad klipper control device.
 
@@ -22,4 +22,4 @@ Download and install MobaXterm.
 
 Click on the Session icon
 
-![Moba Session](../img/Printers/Artillery/X2/MobaSession.png)
+![Moba Session](img/Printers/Artillery/X2/MobaSession.png)
