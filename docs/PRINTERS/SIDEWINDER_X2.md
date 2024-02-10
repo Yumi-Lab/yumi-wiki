@@ -13,6 +13,7 @@ This procedure has been tested and approved for Ruby 1.2 motherboards. Do not in
 # Hardware and software :
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
+
 Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1 
 
 # Connection SSH
