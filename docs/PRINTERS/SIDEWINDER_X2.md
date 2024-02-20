@@ -1,6 +1,6 @@
 # Klipper Sidewinder X2 installation
 
-![Sidewinder X2](//img/Printers/Artillery/X2/X2.jpeg)
+![Sidewinder X2](/img/Printers/Artillery/X2/X2.jpeg)
 
 This procedure is for anyone who has a Sidewinder X2 and a SmartPad klipper control device.
 
@@ -22,27 +22,27 @@ Download and install MobaXterm.
 
 Click on the Session icon
 
-![Moba Session](//img/Printers/Artillery/X2/MobaSession.png)
+![Moba Session](/img/Printers/Artillery/X2/MobaSession.png)
 
 Select SSH
 
-![SSH](//img/Printers/Artillery/X2/MobaSSH.png)
+![SSH](/img/Printers/Artillery/X2/MobaSSH.png)
 
 Enter the raspberry's IP address and enter pi as the user name.
 Follow this procedure to find the IP address: https://www.malekal.com/comment-faire-un-scan-ip-reseau-local-lan/
 Or, on the Pad, go to Menu :
 
-![Pad1](//img/Printers/Artillery/X2/Pad1.jpeg)
+![Pad1](/img/Printers/Artillery/X2/Pad1.jpeg)
 
 Network:
 
-![Pad1](//img/Printers/Artillery/X2/Pad2.jpeg)
+![Pad1](/img/Printers/Artillery/X2/Pad2.jpeg)
 
 You will see your IP address
 
-![Pad1](//img/Printers/Artillery/X2/Pad3.jpeg)
+![Pad1](/img/Printers/Artillery/X2/Pad3.jpeg)
 
-![MobaConnect](//img/Printers/Artillery/X2/MobaConnect.png)
+![MobaConnect](/img/Printers/Artillery/X2/MobaConnect.png)
 
 You will be prompted to enter the password.
 
@@ -51,7 +51,7 @@ The Pad Wanhao username is `pi` and the password is `fun`.
 A certificate authorization may appear. You need to validate it.
 Once you're logged in, you'll see this screen:
 
-![ConnectPi](//img/Printers/Artillery/X2/ConnectPI.png)
+![ConnectPi](/img/Printers/Artillery/X2/ConnectPI.png)
 
 
 # Generate firmware
@@ -63,7 +63,7 @@ Issue the command `cd klipper` and confirm with Enter
 cd klipper
 ```
 
-![FW](//img/Printers/Artillery/X2/FW01.png)
+![FW](/img/Printers/Artillery/X2/FW01.png)
 
 Run the `make clean` and `make` command. This will generate the firmware.
 ```
@@ -71,17 +71,17 @@ make clean
 make
 ```
 
-![FW](//img/Printers/Artillery/X2/FW02.png)
+![FW](/img/Printers/Artillery/X2/FW02.png)
 
 You need to set the information below:
  
-![FW](//img/Printers/Artillery/X2/FW03.png)
+![FW](/img/Printers/Artillery/X2/FW03.png)
 
 Use the arrow keys to move around and enter to confirm.
 When ready, press q
 Confirm with Y
  
-![FW](//img/Printers/Artillery/X2/FW04.png)
+![FW](/img/Printers/Artillery/X2/FW04.png)
 
 Run the `make clean` and `make` command. This will generate the firmware.
 
@@ -91,12 +91,12 @@ We need to switch the printer to DFU mode in order to install the frmware.
 To do this, you can install pronterface (link to start of tutorial) on your computer and connect it directly to the printer.
 Open Pronterface (in administrator mode).
 
-![Pronterface](//img/Printers/Artillery/X2/Pronterface01.png)
+![Pronterface](/img/Printers/Artillery/X2/Pronterface01.png)
 
 Connect the printer to the PC using the USB port and set 115200 baud.
 Click on connect.
 
-![Pronterface](//img/Printers/Artillery/X2/Pronterface02.png)
+![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
 
   Run the command
 
@@ -111,7 +111,7 @@ Return to MobaXterm.
 Connect the printer to the pad and run the `lsusb` command.
 You should have a device in DFU mode.
 
-![Flash](//img/Printers/Artillery/X2/FlashPrinter.png)
+![Flash](/img/Printers/Artillery/X2/FlashPrinter.png)
 
   Run the following command to flash the printer:
 `make flash FLASH_DEVICE=0483:df11`
@@ -131,7 +131,7 @@ Example: http://192.168.1.74
 
 You should arrive on this page. The error is normal. We haven't finished the configuration.
 
-![Mainsail](//img/Printers/Artillery/X2/Mainsail01.png)
+![Mainsail](/img/Printers/Artillery/X2/Mainsail01.png)
 
  We're going to load the configuration files.
 
@@ -139,20 +139,20 @@ Unzip the zip containing the configuration files.
 
 Go to the folder.
 
-![Mainsail](//img/Printers/Artillery/X2/Mainsail02.png)
+![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
 
 From the Mainsail interface, go to Machine (wrench icon)
 Click on the button to load files
 
-![Mainsail](//img/Printers/Artillery/X2/Mainsail03.png)
+![Mainsail](/img/Printers/Artillery/X2/Mainsail03.png)
 
 Select all configuration files and click Open. Your files will be uploaded to Mainsail.
 
-![Mainsail](//img/Printers/Artillery/X2/Mainsail02.png)
+![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
 
 Restart the Pad and connect the printer to it with the correct USB cable.
 
-![Mainsail](//img/Printers/Artillery/X2/Mainsail04.png)
+![Mainsail](/img/Printers/Artillery/X2/Mainsail04.png)
 
 # Get your printer's USB ID
 
@@ -164,7 +164,7 @@ ls /dev/serial/by-id/*
 '''
 Your id will be different from mine. You should see the USB id appear like this:
 
-![MID](//img/Printers/Artillery/X2/ID01.png)
+![MID](/img/Printers/Artillery/X2/ID01.png)
 
 Go to your Mainsail web interface and click on the Machine tab.
 
@@ -172,17 +172,17 @@ Open the printer.cfg file and look for the [mcu] section.
 
 Modify the existing line with the serial number you've just obtained as follows:
 
-![MID](//img/Printers/Artillery/X2/ID02.png)
+![MID](/img/Printers/Artillery/X2/ID02.png)
 
 Click on SAVE and RESTART in the top right-hand corner to save the file.
 
 Your printer should now connect to your Pi. Restart the firmware if it hasn't been updated yet.
 
-![MID](//img/Printers/Artillery/X2/ID03.png)
+![MID](/img/Printers/Artillery/X2/ID03.png)
 
 From the dashboard, it should look like this:
 
-![MID](//img/Printers/Artillery/X2/ID04.png)
+![MID](/img/Printers/Artillery/X2/ID04.png)
 
 
 # Filament detector
@@ -192,11 +192,11 @@ From the dashboard, it should look like this:
   Disconnect the sensor from the printer.
   Carefully remove the cover and thread from the left-hand side of the printer and position it in the same way, but on the right-hand side.
 
-  ![Sensor](//img/Printers/Artillery/X2/left.jpg)
-  ![Sensor](//img/Printers/Artillery/X2/right.jpg)
-  ![Sensor](//img/Printers/Artillery/X2/AxeBack.jpg)
-  ![Sensor](//img/Printers/Artillery/X2/AxeTop.jpg)
-  ![Sensor](//img/Printers/Artillery/X2/FilamentSensor.jpg)
+  ![Sensor](/img/Printers/Artillery/X2/left.jpg)
+  ![Sensor](/img/Printers/Artillery/X2/right.jpg)
+  ![Sensor](/img/Printers/Artillery/X2/AxeBack.jpg)
+  ![Sensor](/img/Printers/Artillery/X2/AxeTop.jpg)
+  ![Sensor](/img/Printers/Artillery/X2/FilamentSensor.jpg)
 
   The sensor will be functional again with klipper. Everything is already configured in the printer.cfg file.
 
@@ -212,7 +212,7 @@ From cura, go to Preference/Configure Cura...
 In the new window, go to Printers and choose your X2 profile.
 Click on Machine settings
 
-![Slicer](//img/Printers/Artillery/X2/Slicer01.png)
+![Slicer](/img/Printers/Artillery/X2/Slicer01.png)
 
 In the Start Gcode section put:
 ```
@@ -224,13 +224,13 @@ Put in End Gcode:
 END_PRINT
 ```
 
-![Slicer](//img/Printers/Artillery/X2/Slicer02.png)
+![Slicer](/img/Printers/Artillery/X2/Slicer02.png)
 
 You need to install the Klipper Setting Plugin. 
 To do this, please follow the steps below: https://github.com/jjgraphix/KlipperSettingsPlugin
 Once installed, activate firmware retraction in the Klipper Settings section.
 
-![Slicer](//img/Printers/Artillery/X2/Slicer03.png)
+![Slicer](/img/Printers/Artillery/X2/Slicer03.png)
 
 ## PrusaSlicer
 
@@ -244,7 +244,7 @@ In the End Gcode section put:
 END_PRINT
 ```
 
-![Slicer](//img/Printers/Artillery/X2/Slicer04.png)
+![Slicer](/img/Printers/Artillery/X2/Slicer04.png)
 
 In the general section of your printer settings, activate firmware retraction.
 
@@ -256,7 +256,7 @@ Now it's time to set the PIDs and printer settings.
 Start BED PID and save the configuration:
 From the Dashboard, launch the BED PID 65 macro
 
-![Calibration](//img/Printers/Artillery/X2/Calibration01.png)
+![Calibration](/img/Printers/Artillery/X2/Calibration01.png)
 
 Your tray will heat up several times to 65°C and wait 5 minutes for this to finish.
 Use the save macro to apply the settings on restart.
@@ -266,7 +266,7 @@ Use the save macro to apply the settings on restart.
 Start HOTEND PID and save the configuration:
 From the Dashboard, run the HOTEND 220 PID macro
 
-![Calibration](//img/Printers/Artillery/X2/Calibration01.png)
+![Calibration](/img/Printers/Artillery/X2/Calibration01.png)
 
 Your nozzle will heat up several times to 220°C and wait 5 minutes for this to finish.
 Use the save macro to apply the settings on restart.
@@ -278,7 +278,7 @@ From the dashboard, switch to the Console section.
 Run command `G28` to reposition the head on its point of origin.
 You can execute the G28 command by clicking on the Home button.
 
-![Calibration](//img/Printers/Artillery/X2/Calibration02.png)
+![Calibration](/img/Printers/Artillery/X2/Calibration02.png)
 
 Run command
 `G28`
@@ -307,7 +307,7 @@ Use the `G28` command to reposition the head to its original point.
 The configuration files I use are set up for my hardware. You need to set the parameters of your extruder.
 Start by heating your nozzle to 220°C from the control panel.
 
-![Calibration](//img/Printers/Artillery/X2/Calibration03.png)
+![Calibration](/img/Printers/Artillery/X2/Calibration03.png)
 
 At console level, run the following commands:
 `M83` to reset the extruder
@@ -322,7 +322,7 @@ If so, nothing to do.
 If not, you'll need to change a parameter in your configuration file. The parameter to change is in printer.cfg.
 Search in the extrude section and find the value rotation_distance.
 
-![Calibration](//img/Printers/Artillery/X2/Calibration04.png)
+![Calibration](/img/Printers/Artillery/X2/Calibration04.png)
 
 The value entered must be replaced by the correct value.
 To find the correct value, use the following formula:
@@ -342,7 +342,7 @@ You can now start printing from the Mainsail interface or from the touch screen.
 
 To activate the head LED, there are 2 macros LED OFF to turn it off and LED ON to turn it on. Click on one of these macros to turn it on or off.
 
-![Calibration](//img/Printers/Artillery/X2/Calibration05.png)
+![Calibration](/img/Printers/Artillery/X2/Calibration05.png)
 
 
 # Print
