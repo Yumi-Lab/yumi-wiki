@@ -6,9 +6,9 @@ This procedure is for anyone who has a Prusa Mk3 and a SmartPad klipper control 
 
 ## Please read the procedure first
 
-You are responsible for all operations carried out on your equipment. This procedure explains how to set up klipper on your printer. It has been tested and is fully functional.
-
-This procedure has been tested and approved for prusa mk3. Do not install it on other printers.
+> [!CAUTION]
+> You are responsible for all operations carried out on your equipment. This procedure explains how to set up klipper on your printer. It has been tested and is fully functional.
+>This procedure has been tested and approved for prusa mk3. Do not install it on other printers.
 
 
 # Hardware and software :
