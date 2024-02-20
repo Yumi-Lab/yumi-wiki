@@ -9,6 +9,7 @@
 # Hardware and software
 
 Download RetrOrangePI: https://www.retrorangepi.org/images/OrangePiLite/RetrOrangePi_v4.3_Armbian_19.11.3_Orangepilite_bionic_current_5.3.13_desktop_beta.img.7z
+
 Raspberry Imager : https://downloads.raspberrypi.org/imager/imager_latest.exe
 
 # Preparing the Micro SD card
@@ -48,3 +49,5 @@ Data is copied to the micro SD card
 At the end, you get a confirmation message.
 
 ![RaspImg](/img/SmartPi/Retro_Gaming/Rasimg11.jpeg)
+
+The SmartPad is now ready to start.
