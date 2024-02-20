@@ -200,7 +200,7 @@ Use the save macro to apply the settings on restart.
 Start HOTEND PID and save the configuration:
 From the Dashboard, run the HOTEND 220 PID macro
 
-![Calibration](/img/Printers/Artillery/X2/Calibration01.png)
+![Calibration](img/Printers/Prusa/Mk3/Calibration01.png)
 
 Your nozzle will heat up several times to 220°C and wait 5 minutes for this to finish.
 Use the save macro to apply the settings on restart.
@@ -212,7 +212,7 @@ From the dashboard, switch to the Console section.
 Run command `G28` to reposition the head on its point of origin.
 You can execute the G28 command by clicking on the Home button.
 
-![Calibration](/img/Printers/Artillery/X2/Calibration02.png)
+![Calibration](img/Printers/Prusa/Mk3/Calibration02.png)
 
 Run command
 `G28`
@@ -241,7 +241,7 @@ Use the `G28` command to reposition the head to its original point.
 The configuration files I use are set up for my hardware. You need to set the parameters of your extruder.
 Start by heating your nozzle to 220°C from the control panel.
 
-![Calibration](/img/Printers/Artillery/X2/Calibration03.png)
+![Calibration](img/Printers/Prusa/Mk3/Calibration03.png)
 
 At console level, run the following commands:
 `M83` to reset the extruder
@@ -256,7 +256,7 @@ If so, nothing to do.
 If not, you'll need to change a parameter in your configuration file. The parameter to change is in printer.cfg.
 Search in the extrude section and find the value rotation_distance.
 
-![Calibration](/img/Printers/Artillery/X2/Calibration04.png)
+![Calibration](img/Printers/Prusa/Mk3/Calibration04.png)
 
 The value entered must be replaced by the correct value.
 To find the correct value, use the following formula:
