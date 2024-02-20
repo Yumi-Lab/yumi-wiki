@@ -6,7 +6,7 @@
 
 The Wanhao SMART Pad case is a complete case with Klipper pre-installed in the Wanhao colors. The WANHAO SMART PAD case is an "open source" project, which means it will benefit from a large community of users. This external Klipper case is the perfect complement to your 3D printer. Whether you're a beginner or a professional, this tool is designed to maximize the performance of your 3D printer and improve the quality of your prints.
 
-## Avantages principaux
+## Key benefits
 
 - Increased printing speed: Klipper merges the processing power of your 3D printer with that of an external computer. This increases printing speed without compromising quality.
 
@@ -30,7 +30,7 @@ Scalability: Thanks to the open source nature of Klipper, you can continue to up
 - Enhanced user experience: Klipper's user interface is designed to be easy to understand and use, making it easy even for 3D printing beginners to get started.
 Increased stability: Thanks to Klipper firmware, your 3D printer becomes more stable when printing, reducing the chance of print failure and improving print quality.
 
-## INFORMATIONS TECHNIQUES
+## TECHNICAL INFORMATION
 
 | Product name | WANHAO SMART PAD |
 | ------------- | ------------- |
