@@ -82,10 +82,7 @@ Confirm with Y
  
 ![FW](/img/Printers/Artillery/X2/FW04.png)
 
-Run the `make` command. This will generate the firmware.
-```
-make
-```
+Run the 'make clean' and 'make' command. This will generate the firmware.
 
 #  Switch printer to DFU mode
 
@@ -100,9 +97,11 @@ Click on connect.
 
 ![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
 
-  Run the M997 command
+  Run the command
 
-'M997'
+```
+M997
+```
 
 
   # Flashing with the SmartPad
@@ -215,11 +214,14 @@ Click on Machine settings
 ![Slicer](/img/Printers/Artillery/X2/Slicer01.png)
 
 In the Start Gcode section put:
-`START_PRINT BED_TEMP={material_bed_temperature_layer_0} `
-`EXTRUDER_TEMP={material_print_temperature_layer_0}`
+```
+START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
+```
 
 Put in End Gcode:
-`END_PRINT`
+```
+END_PRINT
+```
 
 ![Slicer](/img/Printers/Artillery/X2/Slicer02.png)
 
@@ -233,11 +235,13 @@ Once installed, activate firmware retraction in the Klipper Settings section.
 
 From your printer settings,
 In the Start Gcode section, enter:
-`START_PRINT BED_TEMP=[first_layer_bed_temperature]`
-` EXTRUDER_TEMP=[first_layer_temperature]`
-
+```
+START_PRINT BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]
+```
 In the End Gcode section put:
-`END_PRINT`
+```
+END_PRINT
+```
 
 ![Slicer](/img/Printers/Artillery/X2/Slicer04.png)
 
