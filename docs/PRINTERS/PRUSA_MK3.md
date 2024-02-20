@@ -10,7 +10,7 @@ You are responsible for all operations carried out on your equipment. This proce
 This procedure has been tested and approved for prusa mk3. Do not install it on other printers.
 
 
-# Hardware and software :
+# Hardware and software
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
 
