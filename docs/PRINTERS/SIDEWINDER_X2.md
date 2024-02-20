@@ -100,10 +100,10 @@ Click on connect.
 
 ![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
 
-  Run the `M997` command
-'''
-M997
-'''
+  Run the M997 command
+
+'M997'
+
 
   # Flashing with the SmartPad
 
@@ -183,6 +183,27 @@ Your printer should now connect to your Pi. Restart the firmware if it hasn't be
 From the dashboard, it should look like this:
 
 ![MID](/img/Printers/Artillery/X2/ID04.png)
+
+
+# Filament detector
+
+  The filament detector on the X2 is connected to the screen. Once klipper is installed, there is no connection between the screen and the motherboard.
+  It is currently connected to the left side of the printer. There is a port available on the right side of the printer. The filament sensor must therefore be moved.
+  Disconnect the sensor from the printer.
+  Carefully remove the cover and thread from the left-hand side of the printer and position it in the same way, but on the right-hand side.
+
+  ![Sensor](img\Printers\Artillery\X2\left.jpg)
+  ![Sensor](img\Printers\Artillery\X2\right.jpg)
+  ![Sensor](img\Printers\Artillery\X2\AxeBack.jpg)
+  ![Sensor](img\Printers\Artillery\X2\AxeTop.jpg)
+  ![Sensor](img\Printers\Artillery\X2\FilamentSensor.jpg)
+
+  The sensor will be functional again with klipper. Everything is already configured in the printer.cfg file.
+
+# Slicer profile
+## Orcaslicer
+
+    Profile_Slicer\Orcaslicer\Artillery Sidewinder X2 0.4 nozzle Klipper X4.orca_printer
 
 # Changer les paramètres de votre slicer
 ## CURA
@@ -317,6 +338,7 @@ You can now start printing from the Mainsail interface or from the touch screen.
 To activate the head LED, there are 2 macros LED OFF to turn it off and LED ON to turn it on. Click on one of these macros to turn it on or off.
 
 ![Calibration](/img/Printers/Artillery/X2/Calibration05.png)
+
 
 # Print
 
