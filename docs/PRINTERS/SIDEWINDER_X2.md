@@ -46,7 +46,7 @@ You will see your IP address
 
 You will be prompted to enter the password.
 
-The Pad Wanhao username is "pi" and the password is "fun".
+The Pad Wanhao username is `pi` and the password is `fun`.
 
 A certificate authorization may appear. You need to validate it.
 Once you're logged in, you'll see this screen:
@@ -65,9 +65,10 @@ cd klipper
 
 ![FW](/img/Printers/Artillery/X2/FW01.png)
 
-Run the `make menuconfig` command and confirm with enter.
+Run the `make clean` and `make` command. This will generate the firmware.
 ```
-make menuconfig
+make clean
+make
 ```
 
 ![FW](/img/Printers/Artillery/X2/FW02.png)
@@ -82,7 +83,7 @@ Confirm with Y
  
 ![FW](/img/Printers/Artillery/X2/FW04.png)
 
-Run the 'make clean' and 'make' command. This will generate the firmware.
+Run the `make clean` and `make` command. This will generate the firmware.
 
 #  Switch printer to DFU mode
 
