@@ -15,7 +15,7 @@ This procedure has been tested and approved for prusa mk3. Do not install it on 
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
 
-# Connection SSH
+# SSH connection
 
 Download and install MobaXterm.
 
