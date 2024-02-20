@@ -35,7 +35,7 @@ Increased stability: Thanks to Klipper firmware, your 3D printer becomes more st
 | Product name | WANHAO SMART PAD |
 | ------------- | ------------- |
 | Processor | Allwinner H3, Cortex-A7 quad-core 1.2 GHz DC 5V / 2A |
-| RAM | DDR3 512 MB|
+| RAM | DDR3 1 GB|
 | GPU | Mali400MP2 600 MHz, supports OpenGL ES2.0|
 | Audio | Via HDMI |
 | USB | 4 x USB: Type A, USB 2.0 |
