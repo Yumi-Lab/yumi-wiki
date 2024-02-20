@@ -164,7 +164,7 @@ You need to install the Klipper Setting Plugin.
 To do this, please follow the steps below: https://github.com/jjgraphix/KlipperSettingsPlugin
 Once installed, activate firmware retraction in the Klipper Settings section.
 
-![Slicer](/img/Printers/Prusa/Mk3/Slicer03.png)
+![Slicer](/img/Printers/Prusa/Mk3/Slicer03.jpeg)
 
 ## PrusaSlicer
 
