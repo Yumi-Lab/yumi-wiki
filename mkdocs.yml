@@ -105,7 +105,8 @@ nav:
     - Yumi_Components/SmartShield_specifications.md
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
-    - PRINTERS:
+    - KlipperSmartPad/Remote_multi_printers.md
+        - PRINTERS:
       - PRINTERS/SIDEWINDER_X2.md
       - PRINTERS/PRUSA_MK3.md
   
