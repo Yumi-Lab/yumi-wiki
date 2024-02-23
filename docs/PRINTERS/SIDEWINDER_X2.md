@@ -78,8 +78,8 @@ You need to set the information below:
 ![FW](/img/Printers/Artillery/X2/FW03.png)
 
 Use the arrow keys to move around and enter to confirm.
-When ready, press q
-Confirm with Y
+When ready, press `q`
+Confirm with `Y`
  
 ![FW](/img/Printers/Artillery/X2/FW04.png)
 
