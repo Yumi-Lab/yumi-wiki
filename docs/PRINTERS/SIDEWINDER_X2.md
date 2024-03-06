@@ -65,10 +65,10 @@ cd klipper
 
 ![FW](/img/Printers/Artillery/X2/FW01.png)
 
-Run the `make clean` and `make` command. This will generate the firmware.
+to access the firmware configuration parameter, run the command:
+
 ```
-make clean
-make
+make menuconfig
 ```
 
 ![FW](/img/Printers/Artillery/X2/FW02.png)
@@ -78,12 +78,16 @@ You need to set the information below:
 ![FW](/img/Printers/Artillery/X2/FW03.png)
 
 Use the arrow keys to move around and enter to confirm.
-When ready, press q
-Confirm with Y
+When ready, press `q`
+Confirm with `Y`
  
 ![FW](/img/Printers/Artillery/X2/FW04.png)
 
 Run the `make clean` and `make` command. This will generate the firmware.
+```
+make clean
+make
+```
 
 #  Switch printer to DFU mode
 
@@ -121,6 +125,7 @@ You should have a device in DFU mode.
 Download the Sidewinder X2 configuration files from the following link:
 
 Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/printer.cfg
+
 Macros.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/macros.cfg
 
 # Mainsail Web interface
