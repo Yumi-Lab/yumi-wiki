@@ -102,12 +102,13 @@ For example: make flash FLASH_DEVICE=/dev/serial/by-id/usb-Prusa_Research__prusa
 
 You can download the Prusa configuration files from the following link:
 
-Macro: Klipper\Prusa\Mk3\macros.cfg
-Printer.cfg: Klipper\Prusa\Mk3\printer.cfg
+Macro: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Prusa/Mk3/macros.cfg
+
+Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Prusa/Mk3/printer.cfg
 
 # Mainsail Web interface
 
-You can connect to your Mainsail interface from a web browser with the address http://votre IP address.
+You can connect to your Mainsail interface from a web browser with the address http://Your IP address.
 
 Example: http://192.168.1.74
 
