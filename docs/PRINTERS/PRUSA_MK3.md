@@ -55,11 +55,18 @@ Once you're logged in, you'll see this screen:
 
 The left sidebar corresponds to the Pad file and the right to the command line interface.
 
-Issue the command 'cd klipper' and confirm with Enter
+Issue the command `cd klipper` and confirm with Enter
+```
+cd klipper
+```
 
 ![FW](/img/Printers/Prusa/Mk3/fw1.png)
 
-Run the 'make menuconfig' command and confirm with enter
+to access the firmware configuration parameter, run the command:
+
+```
+make menuconfig
+```
 
 ![FW](/img/Printers/Prusa/Mk3/fw2.png)
 
@@ -74,7 +81,6 @@ Confirm with `Y`
 ![FW](/img/Printers/Prusa/Mk3/fw4.png)
 
 Run the `make clean` and `make` command. This will generate the firmware.
-
 ```
 make clean
 make
