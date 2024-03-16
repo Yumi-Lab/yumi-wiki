@@ -55,7 +55,7 @@ sudo chmod 777 -R /opt/retropie/
 sudo reboot
 ```
 
-## Sart
+## Start
 
 You should see Emulastation start up.
 
