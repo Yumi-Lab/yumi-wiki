@@ -29,13 +29,13 @@ sudo apt-get install git dialog unzip xmlstarlet libsdl2-2.0-0 libsdl2-gfx-1.0-0
 ## Download the smartpi installation for Retropie
 
 ```
-git clone .......
+git clone https://github.com/Yumi-Lab/Retropie-smartpi.git
 ```
 
 ## Retropie installation
 
 ```
-cd RetroPie-Setup
+cd Retropie-smartpi
 sudo chmod +x retropie_setup.sh
 sudo chmod +x SambaRetropie.sh
 sudo chmod +x retropie_packages.sh
