@@ -16,25 +16,25 @@ Connecter vous en ssh sur le pad avec mobaxterm ou putty par exemple.
 
 ## Mettre a jour les parcels
 
-'''
+```
 sudo apt-get update && sudo apt-get upgrade -y
-'''
+```
 
 ## Install the dependencies
 
-'''
+```
 sudo apt-get install git dialog unzip xmlstarlet libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-net-2.0-0 libsdl2-ttf-2.0-0 libsdl2-dev libusb-1.0-0-dev libavformat-dev libavdevice-dev pulseaudio samba xorg openbox alsa-utils menu libglib2.0-bin python3-xdg at-spi2-core dbus-x11 xmlstarlet joystick triggerhappy -y
-'''
+```
 
 ## Download the smartpi installation for Retropie
 
-'''
+```
 git clone .......
-'''
+```
 
 ## Retropie installation
 
-'''
+```
 cd RetroPie-Setup
 sudo chmod +x retropie_setup.sh
 sudo chmod +x SambaRetropie.sh
@@ -47,13 +47,13 @@ sudo ./retropie_packages.sh samba depends
 sudo ./retropie_packages.sh samba install_shares
 sudo ./autostartES.sh
 sudo chmod 777 -R /opt/retropie/
-'''
+```
 
 ## Relaunching the smartpie
 
-'''
+```
 sudo reboot
-'''
+```
 
 # Sart
 
