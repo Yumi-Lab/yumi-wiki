@@ -83,11 +83,11 @@ In this example there is a zip rom for a GameBoy Advence game.
 
 Each time you add or remove roms, you need to restart Emulation Station or Smartpi.
 
-![emula](/img/SmartPi/Retro_Gaming/gba1)
+![emula](/img/SmartPi/Retro_Gaming/gba1.jpg)
 
-![emula](/img/SmartPi/Retro_Gaming/gba2)
+![emula](/img/SmartPi/Retro_Gaming/gba2.jpg)
 
-![emula](/img/SmartPi/Retro_Gaming/gba3)
+![emula](/img/SmartPi/Retro_Gaming/gba3.jpg)
 
 
 For everything else, please refer to the official Retropie documentation.
