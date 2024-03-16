@@ -55,7 +55,7 @@ sudo chmod 777 -R /opt/retropie/
 sudo reboot
 ```
 
-# Sart
+## Sart
 
 You should see Emulastation start up.
 
@@ -66,7 +66,7 @@ Once started, you need to set up a controller
 ![emula](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
 
 
-# add roms or BIOS
+## add roms or BIOS
 
 you can add roms and bios from your pc by opening an explorer and typing your ip address in the address bar.
 
