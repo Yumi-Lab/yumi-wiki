@@ -6,13 +6,15 @@
 
 # Prerequisites
 
-Installing a smartpi operating system without a graphical interface
+-Installing a smartpi operating system without a graphical interface. see procedure: 
+
+-use a pi account
 
 # Manual Installation
 
-L'installation manuel peut prendre plusieur heures. il faudra donc être patient le temps que tout s'installe correctement. il faudrat simplement executer differente comment pendant l'installation.
+Manual installation can take several hours, so you'll just have to be patient while everything installs properly. You'll just have to do a few things during installation.
 
-Connecter vous en ssh sur le pad avec mobaxterm ou putty par exemple.
+Connect to the pad via ssh with mobaxterm or putty, for example.
 
 ## Mettre a jour les parcels
 
