@@ -1,14 +1,19 @@
-# 2.2 Retro Gaming
-
+# 2.2 RetroPie
 ![retropie](/img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png)
+## Intrdocution
+RetroPie stands out in the retro gaming world for its unparalleled flexibility and customization options, making it a go-to choice for enthusiasts and builders of retro gaming projects. With its broad support for emulators, RetroPie enables users to dive into a vast library of games spanning decades of consoles and computer systems, from classic Atari and NES to more recent platforms like the PlayStation.
 
+Its customizable nature is a significant advantage, offering users the freedom to tweak the user interface, controller configurations, and even add extra scripts and features to meet their specific needs. This adaptability makes RetroPie an ideal solution for those looking to create a personalized retro gaming console.
 
+Moreover, RetroPie benefits from a dedicated and active community, providing extensive guides, tutorials, and support forums. This community is invaluable for both newcomers learning to set up their retro gaming system and experienced users seeking advanced advice or new project ideas.
+
+In summary, RetroPie is a key platform for retro gaming projects, offering powerful flexibility, extensive emulator support, and a vibrant community, enabling users to craft customized and immersive retro gaming experiences.
 
 # Prerequisites
 
--Installing a smartpi operating system without a graphical interface. see procedure: 
+-Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  
 
--use a pi account
+-During linux server installation please create user: pi 
 
 # Manual Installation
 
@@ -16,7 +21,7 @@ Manual installation can take several hours, so you'll just have to be patient wh
 
 Connect to the pad via ssh with mobaxterm or putty, for example.
 
-## Mettre a jour les parcels
+## Update the parcels
 
 ```
 sudo apt-get update && sudo apt-get upgrade -y

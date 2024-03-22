@@ -1,8 +1,8 @@
-# 2.2 Official Linux Server Image
+# 1.2 Official Linux Server Image
 
 We are proud to offer our own official versions of Linux distributions, specially optimized for our YUMI SMART PI nano-computer:
 
-## 2. Debian 12 Bookworm Server (the YUMI team's choice)
+## Debian 12 Bookworm Server (the YUMI team's choice)
 Stability and security: Ideal for environments where reliability is crucial.
 Flexibility: Extensive package catalog for in-depth customization.
 Strong community: Extended support thanks to a large user base.
@@ -14,7 +14,7 @@ Ease of use: User-friendly for beginners, with abundant documentation.
 Debian is preferred for its proven stability. Ubuntu shines for its ease of use and quick access to new features.
 
 ## Official Images
-You must have a microSD card of up to 128Gb
+You must have a micro SD card but max 128Gb for SMART PI ONE
 [Official images](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
 
 ## Instructions for installing the Linux image
