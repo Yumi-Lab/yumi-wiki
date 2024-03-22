@@ -95,10 +95,12 @@ nav:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
       - SmartPI/SmartPi_Linux.md
+      - SmartPI/SmartPi_Linux_flash_sd.md
+    - LINUX LAB PROJECT:  
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
       - SmartPI/SmartPi_Home_Assistant.md
-      - SmartPI/SmartPi_Linux_flash_sd.md
+      
   - YUMI others Components:
     - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
     - Yumi_Components/SmartHub_specifications.md

@@ -1,4 +1,4 @@
-# 2.3 Home Assistant
+# 1.3 Home Assistant
 
 ## Coming Soon
 
