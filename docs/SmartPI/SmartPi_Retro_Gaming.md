@@ -9,6 +9,15 @@ Moreover, RetroPie benefits from a dedicated and active community, providing ext
 
 In summary, RetroPie is a key platform for retro gaming projects, offering powerful flexibility, extensive emulator support, and a vibrant community, enabling users to craft customized and immersive retro gaming experiences.
 
+# Auto Installation
+
+You can use raspberry imager to prepare the SD card with the image below
+
+Prebuilt image link for 16GB or more (BETA / Remember to unzip the file): https://gofile.me/67vGQ/0bSQSSoCT
+
+Image for OS any SD card: Available soon
+
+
 # Prerequisites
 
 -Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  
