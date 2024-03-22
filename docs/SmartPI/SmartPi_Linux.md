@@ -1,4 +1,4 @@
-# 2.5 Official Linux Server Image
+# 2.2 Official Linux Server Image
 
 We are proud to offer our own official versions of Linux distributions, specially optimized for our YUMI SMART PI nano-computer:
 

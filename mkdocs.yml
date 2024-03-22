@@ -1,6 +1,6 @@
 site_name: YUMI-LAB documentation
-repo_url: https://github.com/Yumi-Lab/yumi-wiki.git
-repo_name: Yumi-Lab/yumi-wiki
+repo_url: https://github.com/Yumi-Lab
+repo_name: Yumi-Lab
 
 # Website layout configuration (using mkdocs-material theme)
 theme:
@@ -94,11 +94,11 @@ nav:
   - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
+      - SmartPI/SmartPi_Linux.md
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
       - SmartPI/SmartPi_Home_Assistant.md
-      - SmartPI/SmartPi_Linux_Desktop.md
-      - SmartPI/SmartPi_Linux_server.md
+      - SmartPI/SmartPi_Linux_flash_sd.md
   - YUMI others Components:
     - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
     - Yumi_Components/SmartHub_specifications.md
