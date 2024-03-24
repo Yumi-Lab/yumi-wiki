@@ -2,15 +2,15 @@
 
 In this guide, I'll walk you through the steps to install operating system (server or desktop) on your Smart Pi One.
 
-![Layout Smart Pi One](../../img/SmartPi/flash_sd/flash1.jpg)
+![Layout Smart Pi One](../../img/SmartPi/flash_sd/flashsd1.jpg)
 
 ## 1.3.1 Hardware
 
-* Smart Pi One
-* Micro SD Card (128 Go)
-* USB keyboard and mouse
-* Computer display (HDMI)
-* Micro-USB power supply (5V - 2A  or Power delivery )
+- Smart Pi One
+- Micro SD Card (128 Go)
+- USB keyboard and mouse
+- Computer display (HDMI)
+- Micro-USB power supply (5V - 2A  or Power delivery )
 
 ## 1.3.2 Download
 Go to Official images. Choose the Armbian version you'd like to install (Debian 12 or UBuntu)
@@ -25,27 +25,27 @@ Go to Official images. Choose the Armbian version you'd like to install (Debian 
 
 Download, install, and launch Etcher.
 
-Open Etcher and click "Select image."
+- Open Etcher and click "Select image."
 
 ![ether1](../../img/SmartPi/flash_sd/ether1.png)
 
-Choose the operating system image you downloaded.
+- Choose the operating system image you downloaded.
 
 ![ether2](../../img/SmartPi/flash_sd/ether2.png)
 
-Click "Select target."
+- Click "Select target."
 
 ![ether3](../../img/SmartPi/flash_sd/ether3.png)
 
-Choose the micro sd and click "Select 1"
+- Choose the micro sd and click "Select 1"
 
 ![ether4](../../img/SmartPi/flash_sd/ether4.png)
 
-Hit "Flash!" and wait for the process to complete.
+- Hit "Flash!" and wait for the process to complete.
 
 ![ether5](../../img/SmartPi/flash_sd/ether5.png)
 
-Click “Flash!” It will take Etcher about 10 minutes to write and validate the image if your microSD card.
+- Click “Flash!” It will take Etcher about 10 minutes to write and validate the image if your microSD card.
 
 
 ## 1.3.4 Booting from MicroSD (First Boot)
@@ -64,7 +64,9 @@ Operating system  will guide you through the initial setup. Follow the on-screen
 
 After booting, open a terminal. Run the following commands to update your system:
 
-`sudo apt update && sudo apt upgrade`
+```
+sudo apt update && sudo apt upgrade
+```
 
 Debian 12 or Ubuntu will download and install the latest updates and patches.
 
@@ -72,7 +74,9 @@ Debian 12 or Ubuntu will download and install the latest updates and patches.
 
 Install additional software or packages you need by running:
 
-`sudo apt install [package-name]`
+```
+psudo apt install [package-name]
+```
 
 Let's go! Operating  system is now up and running on your Smart Pi One. You can explore a variety of applications, use it as a server, or engage in some exciting DIY projects.
 
