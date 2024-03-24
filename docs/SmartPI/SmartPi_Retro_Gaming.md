@@ -1,6 +1,6 @@
 # 2.2 RetroPie
 ![retropie](/img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png)
-## Intrdocution
+## Introduction
 RetroPie stands out in the retro gaming world for its unparalleled flexibility and customization options, making it a go-to choice for enthusiasts and builders of retro gaming projects. With its broad support for emulators, RetroPie enables users to dive into a vast library of games spanning decades of consoles and computer systems, from classic Atari and NES to more recent platforms like the PlayStation.
 
 Its customizable nature is a significant advantage, offering users the freedom to tweak the user interface, controller configurations, and even add extra scripts and features to meet their specific needs. This adaptability makes RetroPie an ideal solution for those looking to create a personalized retro gaming console.
