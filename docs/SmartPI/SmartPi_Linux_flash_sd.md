@@ -1,13 +1,12 @@
 # 1.3 Linux flash Micro SD CARD
 
 In this guide, I'll walk you through the steps to install operating system (server or desktop) on your Smart Pi One.
-
 ![Layout Smart Pi One](../../img/SmartPi/flash_sd/flashsd1.jpg)
 
 ## 1.3.1 Hardware
 
 - Smart Pi One
-- Micro SD Card (128 Go)
+- Micro SD Card (Minimum of 16GB)
 - USB keyboard and mouse
 - Computer display (HDMI)
 - Micro-USB power supply (5V - 2A  or Power delivery )
@@ -16,16 +15,17 @@ In this guide, I'll walk you through the steps to install operating system (serv
 Go to Official images. Choose the Armbian version you'd like to install (Debian 12 or UBuntu)
 
 
-* DEBIAN SERVER : [Yumi-smartpi1-bookworm-server-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/DEBIAN%2012/Yumi-smartpi1-bookworm-server-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
-* DEBIAN 12 Desktop : [Yumi-smartpi1-bookworm-desktop-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/DEBIAN%2012/Yumi-smartpi1-bookworm-desktop-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
+- <B>DEBIAN SERVER :</B> [Yumi-smartpi1-bookworm-server-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/DEBIAN%2012/Yumi-smartpi1-bookworm-server-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
+- <B>DEBIAN 12 Desktop :</B> [Yumi-smartpi1-bookworm-desktop-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/DEBIAN%2012/Yumi-smartpi1-bookworm-desktop-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
+<br>
+- <B>UBUNTU SERVER :</B> [Yumi-smartpi1-jammy-server-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/UBUNTU/Yumi-smartpi1-jammy-server-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
 
-* UBUNTU SERVER : [Yumi-smartpi1-jammy-server-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/UBUNTU/Yumi-smartpi1-jammy-server-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
 
 ## 1.3.3 Use Etcher to write the Smart Pi One SD Card Image to your microSD card
 
 Download, install, and launch Etcher.
 
-- Open Etcher and click "Select image."
+- Open Etcher and click <B>"Select image"</B>.
 
 ![ether1](../../img/SmartPi/flash_sd/ether1.png)
 
@@ -33,19 +33,19 @@ Download, install, and launch Etcher.
 
 ![ether2](../../img/SmartPi/flash_sd/ether2.png)
 
-- Click "Select target."
+- Click <B>"Select target"</B>.
 
 ![ether3](../../img/SmartPi/flash_sd/ether3.png)
 
-- Choose the micro sd and click "Select 1"
+- Choose the micro sd and click <B>"Select 1"</B>.
 
 ![ether4](../../img/SmartPi/flash_sd/ether4.png)
 
-- Hit "Flash!" and wait for the process to complete.
+- Click “Flash!” and wait for the process to complete.
 
 ![ether5](../../img/SmartPi/flash_sd/ether5.png)
 
-- Click “Flash!” It will take Etcher about 10 minutes to write and validate the image if your microSD card.
+- It will take Etcher about 10 minutes to write and validate the image if your microSD card.
 
 
 ## 1.3.4 Booting from MicroSD (First Boot)
