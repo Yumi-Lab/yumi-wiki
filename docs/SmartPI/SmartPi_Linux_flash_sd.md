@@ -22,7 +22,7 @@ Go to Official images. Choose the Armbian version you'd like to install (Debian 
 
 ## 1.3.3 Use Etcher to write the Smart Pi One SD Card Image to your microSD card
 
-Download, install, and launch Etcher.
+[Download](https://etcher.balena.io/), install, and launch Etcher.
 
 - Open Etcher and click <B>"Select image"</B>.
 
@@ -44,7 +44,7 @@ Download, install, and launch Etcher.
 
 ![ether5](../../img/SmartPi/flash_sd/ether5.png)
 
-- It will take Etcher about 10 minutes to write and validate the image if your microSD card.
+It will take Etcher about 10 minutes to write and validate the image if your microSD card.
 
 
 ## 1.3.4 Booting from MicroSD (First Boot)
