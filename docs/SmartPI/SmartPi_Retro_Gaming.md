@@ -64,7 +64,6 @@ sudo ./retropie_packages.sh samba install_shares
 sudo ./autostartES.sh
 sudo chmod 777 -R /opt/retropie/
 sudo chmod +x /opt/retropie/configs/all/autostart.sh
-sudo chmod +x /opt/retropie/configs/all/autostart.sh
 ```
 
 ## Relaunching the smartpie
