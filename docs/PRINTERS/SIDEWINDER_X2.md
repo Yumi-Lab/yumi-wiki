@@ -148,7 +148,7 @@ Select configuration file and click Open. Your file will be uploaded to Mainsail
 
 Restart the Pad and connect the printer to it with the correct USB cable.
 
-![Mainsail](/img/Printers/Artillery/X2/Mainsail04.png)
+![Mainsail](/img/Printers/Artillery/X2/Mainsail004.png)
 
 # Get your printer's USB ID
 
