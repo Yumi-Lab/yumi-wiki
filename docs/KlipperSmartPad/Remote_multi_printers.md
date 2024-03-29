@@ -1,4 +1,4 @@
-# Remote multiple printers on one pad
+# 3.1 Remote multiple printers on one pad
 
 You can control multiple pads with a single pad. This provides centralized control over all your printers.
 
