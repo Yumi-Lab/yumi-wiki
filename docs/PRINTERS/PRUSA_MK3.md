@@ -106,9 +106,7 @@ For example: make flash FLASH_DEVICE=/dev/serial/by-id/usb-Prusa_Research__prusa
 
 # Download configuration files
 
-You can download the Prusa configuration files from the following link:
-
-Macro: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Prusa/Mk3/macros.cfg
+You can download the Prusa configuration file from the following link:
 
 Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Prusa/Mk3/printer.cfg
 
@@ -122,20 +120,12 @@ You should arrive on this page. The error is normal. We haven't finished the con
 
 ![Mainsail](/img/Printers/Prusa/Mk3/mainsail1.png)
 
-We're going to load the configuration files.
-
-Unzip the zip containing the configuration files.
-
-Go to the folder.
-
-![Mainsail](/img/Printers/Prusa/Mk3/mainsail2.png)
-
 From the Mainsail interface, go to Machine (wrench icon)
 Click on the button to load files
 
 ![Mainsail](/img/Printers/Prusa/Mk3/mainsail3.png)
 
-Select all configuration files and click Open. Your files will be uploaded to Mainsail.
+Select configuration file and click Open. Your file will be uploaded to Mainsail.
 
 ![Mainsail](/img/Printers/Prusa/Mk3/mainsail2.png)
 
@@ -161,7 +151,7 @@ START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_
 
 Put in End Gcode:
 ```
-END_PRINT
+PRINT_END
 ```
 
 ![Slicer](/img/Printers/Prusa/Mk3/Slicer02.png)
@@ -181,7 +171,7 @@ START_PRINT BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_te
 ```
 In the End Gcode section put:
 ```
-END_PRINT
+PRINT_END
 ```
 
 ![Slicer](/img/Printers/Prusa/Mk3/Slicer04.png)

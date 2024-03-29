@@ -142,7 +142,7 @@ Click on the button to load files
 
 ![Mainsail](/img/Printers/Artillery/X2/Mainsail03.png)
 
-Select configuration file and click Open. Your files will be uploaded to Mainsail.
+Select configuration file and click Open. Your file will be uploaded to Mainsail.
 
 ![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
 
@@ -212,12 +212,12 @@ Click on Machine settings
 
 In the Start Gcode section put:
 ```
-START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
+PRINT_START BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
 ```
 
 Put in End Gcode:
 ```
-END_PRINT
+PRINT_END
 ```
 
 ![Slicer](/img/Printers/Artillery/X2/Slicer02.png)
@@ -233,11 +233,11 @@ Once installed, activate firmware retraction in the Klipper Settings section.
 From your printer settings,
 In the Start Gcode section, enter:
 ```
-START_PRINT BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]
+PRINT_START BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]
 ```
 In the End Gcode section put:
 ```
-END_PRINT
+PRINT_END
 ```
 
 ![Slicer](/img/Printers/Artillery/X2/Slicer04.png)
