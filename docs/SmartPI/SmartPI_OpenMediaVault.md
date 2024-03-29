@@ -1,4 +1,4 @@
-# 2.2 OpenMediaVault
+# 2.4 OpenMediaVault
 
 ![OMV](/img/SmartPi/OMV/openmediavault.png)
 
