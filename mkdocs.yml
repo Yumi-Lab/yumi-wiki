@@ -108,6 +108,8 @@ nav:
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
     - KlipperSmartPad/Remote_multi_printers.md
+    - KlipperSmartPad/Extruder_calibration.md
+    - KlipperSmartPad/Z_Offset_calibration.md
     - PRINTERS:
       - PRINTERS/SIDEWINDER_X2.md
       - PRINTERS/PRUSA_MK3.md
