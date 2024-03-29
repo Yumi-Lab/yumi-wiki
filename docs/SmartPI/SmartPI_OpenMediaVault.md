@@ -109,14 +109,14 @@ Once completed, click on Save
 ![SSH](/img/SmartPi/OMV/OMV007.png)
 
 
-If it's for a Windows share, go to Services\SMB/CIFS\Settings
+If it's for a Windows share, go to Services\SMB\CIFS\Settings
 Activate the service and select the features you want.
 Once completed, click on Save
 
 ![SSH](/img/SmartPi/OMV/OMV008.png)
 
 
-Then go to Services\SMB/CIFS\Shares and click on the pencil to choose the options that interest you.
+Then go to Services\SMB\CIFS\Shares and click on the pencil to choose the options that interest you.
 
 ![SSH](/img/SmartPi/OMV/OMV009.png)
 ![SSH](/img/SmartPi/OMV/OMV010.png)
