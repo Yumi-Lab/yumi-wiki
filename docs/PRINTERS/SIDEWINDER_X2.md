@@ -122,15 +122,14 @@ You should have a device in DFU mode.
 
 # Download configuration files
 
-Download the Sidewinder X2 configuration files from the following link:
+Download the Sidewinder X2 configuration file from the following link:
 
 Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/printer.cfg
 
-Macros.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/macros.cfg
 
 # Mainsail Web interface
 
-You can connect to your Mainsail interface from a web browser with the address http://votre IP address.
+You can connect to your Mainsail interface from a web browser with the address http://Your_IP_Address.
 
 Example: http://192.168.1.74
 
@@ -138,20 +137,12 @@ You should arrive on this page. The error is normal. We haven't finished the con
 
 ![Mainsail](/img/Printers/Artillery/X2/Mainsail01.png)
 
- We're going to load the configuration files.
-
-Unzip the zip containing the configuration files.
-
-Go to the folder.
-
-![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
-
 From the Mainsail interface, go to Machine (wrench icon)
 Click on the button to load files
 
 ![Mainsail](/img/Printers/Artillery/X2/Mainsail03.png)
 
-Select all configuration files and click Open. Your files will be uploaded to Mainsail.
+Select configuration file and click Open. Your files will be uploaded to Mainsail.
 
 ![Mainsail](/img/Printers/Artillery/X2/Mainsail02.png)
 
