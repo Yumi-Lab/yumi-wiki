@@ -1,6 +1,6 @@
 # 2.4 OpenMediaVault
 
-![OMV](/img/SmartPi/OMV/openmediavault.png)
+![OMV](/img/SmartPi/OMV/openmediavault.jpg)
 
 Openmediavault is a reference for anyone who wants to build their own DIY NAS.
 
