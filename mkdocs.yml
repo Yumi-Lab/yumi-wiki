@@ -100,6 +100,7 @@ nav:
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
       - SmartPI/SmartPi_Home_Assistant.md
+      - SmartPI/SmartPI_OpenMediaVault.md
       
   - YUMI others Components:
     - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
