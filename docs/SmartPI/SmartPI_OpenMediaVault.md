@@ -12,11 +12,13 @@ Openmediavault is a reference for anyone who wants to build their own DIY NAS.
 
 -During linux server installation please create user: pi 
 
-Connect to the pad via ssh with mobaxterm or putty, for example.
+
+
+Connect to the smartpi via ssh with mobaxterm or putty, for example.
 
 ![SSH](/img/SmartPi/OMV/OMV001.png)
 
-## Update the parcels
+## Update the smartpi
 
 ```
 sudo apt-get update && sudo apt-get upgrade -y
