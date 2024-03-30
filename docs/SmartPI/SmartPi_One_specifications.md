@@ -6,7 +6,7 @@
 
 ## Specifications
 
-* **CPU:** Allwinner H3, Quad-core ' Cortex-A7@1.3GHz '
+* **CPU:** Allwinner H3, <B>Quad-core Cortex-A7@1.3GHz</B>
 * **GPU:** Mali400MP2@600MHz，Supports OpenGL ES2.0
 * **DDR3 RAM:** 1GB
 * **Connectivity:** 10/100M Ethernet
