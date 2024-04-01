@@ -32,45 +32,16 @@ Manual installation can take several hours, so you'll just have to be patient wh
 
 Connect to the pad via ssh with mobaxterm or putty, for example.
 
-## Update the parcels
-
-```
-sudo apt-get update && sudo apt-get upgrade -y
-```
-
-## Install the dependencies
-
-```
-sudo apt-get install git dialog unzip xmlstarlet libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-net-2.0-0 libsdl2-ttf-2.0-0 libsdl2-dev libusb-1.0-0-dev libavformat-dev libavdevice-dev pulseaudio samba xorg openbox alsa-utils menu libglib2.0-bin python3-xdg at-spi2-core dbus-x11 xmlstarlet joystick triggerhappy -y
-```
-
-## Download the smartpi installation for Retropie
+## Retropie installation for YUMI Smart Pi One
 
 ```
 git clone https://github.com/Yumi-Lab/Retropie-smartpi.git
-```
-
-## Retropie installation
-
-```
 cd Retropie-smartpi
-sudo chmod +x retropie_setup.sh
-sudo chmod +x SambaRetropie.sh
-sudo chmod +x retropie_packages.sh
-sudo chmod +x autostartES.sh
-sudo ./retropie_packages.sh setup basic_install
-sudo ./retropie_packages.sh bluetooth depends
-sudo ./retropie_packages.sh usbromservice
-sudo ./retropie_packages.sh samba depends
-sudo ./retropie_packages.sh samba install_shares
-sudo ./autostartES.sh
-sudo chmod 777 -R /opt/retropie/
-sudo chmod +x /opt/retropie/configs/all/autostart.sh
-sudo sed -i 's/^%sudo\s*ALL=(ALL:ALL)\s*ALL$/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
+./install.sh
 
 ```
 
-## Relaunching the smartpie
+## Relaunching the Smart Pi One
 
 ```
 sudo reboot
