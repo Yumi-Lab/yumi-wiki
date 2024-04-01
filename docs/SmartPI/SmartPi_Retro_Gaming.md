@@ -83,6 +83,22 @@ Once started, you need to set up a controller
 ![emula](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
 
 
+## Find IP address from Retropie
+
+To find your IP from Retropie, go to the Retropie menu.
+
+![emula](/img/SmartPi/Retro_Gaming/IP001.jpg)
+
+Go to the show IP menu
+
+![emula](/img/SmartPi/Retro_Gaming/IP002.jpg)
+
+In this example the IP address is 192.168.1.123.
+
+![emula](/img/SmartPi/Retro_Gaming/IP003.jpg)
+
+You can now easily send Roms over the network.
+
 ## add roms or BIOS
 
 you can add roms and bios from your pc by opening an explorer and typing your ip address in the address bar.
