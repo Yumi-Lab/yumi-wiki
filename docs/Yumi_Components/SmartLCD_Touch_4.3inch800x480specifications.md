@@ -33,12 +33,12 @@
 # 1.1.4 How to use as PC monitor
 
 * Connect the computer HDMI output signal to the LCD HDMI interface by using the HDMI cable.
-* Connect the LCD's USB Touch interface to the micro USB C port of the device
+* Connect the LCD's micro USB C Touch interface to the micro USB port of the device
 
 # 1.1.4 How to use as Smart Pi One
 
-* Connect the HDMI output signal to the LCD HDMI-IN interface by using the HDMI FFC 20 PIN.
-* Connect the USB interface to LCD's USB Touch interface by using the HDMI FFC 6 PIN.
+* Connect the HDMI output signal to the LCD HDMI-IN interface by using the FFC 20 PIN.
+* Connect the USB interface to LCD's USB Touch interface by using the FFC 6 PIN.
 
 <img src="../../img/SmartPi/Yumi_Components/SmartLCD_Touch_4.3inch800x400specifications/ffc20-6pin.png" width="500" alt="FFC 6 & 20 pin view"> <p align="left">**[FFC 6 & 20 pin view]**</p>
 
