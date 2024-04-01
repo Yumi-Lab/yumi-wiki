@@ -13,7 +13,8 @@ In summary, RetroPie is a key platform for retro gaming projects, offering power
 
 You can use raspberry imager to prepare the SD card with the image below
 
-Prebuilt image link for 16GB or more (BETA / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/0bSQSSoCT
+01/04/2024::Prebuilt image link for 16GB or more (BETA 2 / Remember to unzip the file/ password pi: fun): 
+22/03/2024:Prebuilt image link for 16GB or more (BETA 1 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/0bSQSSoCT
 
 Image for OS any SD card: Available soon
 
@@ -64,6 +65,8 @@ sudo ./retropie_packages.sh samba install_shares
 sudo ./autostartES.sh
 sudo chmod 777 -R /opt/retropie/
 sudo chmod +x /opt/retropie/configs/all/autostart.sh
+sudo sed -i 's/^%sudo\s*ALL=(ALL:ALL)\s*ALL$/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
+
 ```
 
 ## Relaunching the smartpie
