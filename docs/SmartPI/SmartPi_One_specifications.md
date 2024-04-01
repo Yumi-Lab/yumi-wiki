@@ -312,5 +312,5 @@
 
 
 # 1.5 Board Dimension 
-<img src="../../img/SmartPi/Specifications/smart-pi-one3.jpg" width="500" alt="bottom view"> 
+<img src="../../img/SmartPi/Specifications/smart-pi-one3.jpg" width="500" alt="Board dimension view"> 
 
