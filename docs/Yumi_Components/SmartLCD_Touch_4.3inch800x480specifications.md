@@ -6,7 +6,7 @@
 
 ## 1.1.1 Product Description
 
-* 4.3"standard display, 800x480 resolution，maximum HDMI resolution 1920X1080 is supported
+* 4.3"standard display, 800x480 resolution, maximum HDMI resolution 1920X1080 is supported
 * Capacitive touch screen, support 1 point touch 
 * It is compatible with SMART PI, Raspberry Pi, ORANGE PI, NANO PI, BANANA PI
 * It can also be used as a general-purpose HDMI display, connecting computers, TV boxes, Microsoft Xbox360, SONY PS4, Nintendo Switch and so on
@@ -33,11 +33,11 @@
 # 1.1.4 How to use as PC monitor
 
 * Connect the computer HDMI output signal to the LCD HDMI interface by using the HDMI cable.
-* Connect the LCD's USB Touch interface to the USB port of the device
+* Connect the LCD's USB Touch interface to the micro USB C port of the device
 
 # 1.1.4 How to use as Smart Pi One
 
-* Connect the Smart Pi One HDMI output signal to the LCD HDMI interface by using the HDMI FFC 20 PIN.
+* Connect the Smart Pi One HDMI output signal to the LCD HDMI-IN interface by using the HDMI FFC 20 PIN.
 * Connect the Smart Pi One USB interface to LCD's USB Touch interface by using the HDMI FFC 6 PIN.
 
 <img src="../../img/SmartPi/Yumi_Components/SmartLCD_Touch_4.3inch800x400specifications/ffc20-6pin.png" width="500" alt="FFC 6 & 20 pin view"> <p align="left">**[FFC 6 & 20 pin view]**</p>
