@@ -1,7 +1,5 @@
 # 1.1 Smart LCD Touch 4.3inch
-
 <img src="../../img/SmartPi/Yumi_Components/SmartLCD_Touch_4.3inch800x400specifications/yumi-smartlcd-800x430-4.3inch-1.png" width="560" alt="Top view"> <p align="left">**[Top view]**</p>
-
 <img src="../../img/SmartPi/Yumi_Components/SmartLCD_Touch_4.3inch800x400specifications/yumi-smartlcd-800x430-4.3inch-2.png" width="600" alt="TBottom view"> <p align="left">**[Bottom view]**</p>
 
 ## 1.1.1 Product Description
