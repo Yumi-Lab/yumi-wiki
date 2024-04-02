@@ -30,7 +30,7 @@
 
 # 1.2 Software Features
 
-Official Linux Server Image : [https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
+**Official Linux Server Image:** [https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
 
 
 # 1.3 Layout
