@@ -26,16 +26,16 @@
 * **Product Size:** 106.0 mm x 85 mm
 * **Weight:** 88g
 
-# 1.1.3 Board Dimension 
+## 1.1.3 Board Dimension 
 
 <img src="../../img/SmartPi/Yumi_Components/SmartLCD_Touch_4.3inch800x400specifications/yumi-smartlcd-800x430-4.3inch-3.png" width="500" alt="Board dimension view"> <p align="left">**[Board dimension view]**</p>
 
-# 1.1.4 How to use as PC monitor
+## 1.1.4 How to use as PC monitor
 
 * Connect the computer HDMI output signal to the LCD HDMI interface by using the HDMI cable.
 * Connect the LCD's micro USB C Touch interface to the micro USB port of the device
 
-# 1.1.4 How to use as Smart Pi One
+## 1.1.5 How to use as Smart Pi One
 
 * Connect the HDMI output signal to the LCD HDMI-IN interface by using the FFC 20 PIN.
 * Connect the USB interface to LCD's USB Touch interface by using the FFC 6 PIN.
