@@ -1,6 +1,6 @@
 # 2.3 Home Assistant
 
-![Home Assistant](../../img/SmartPi/Home_Assistant/homeassistant_logo.png)
+![Home Assistant](/img/SmartPi/Home_Assistant/homeassistant_logo.png)
 
 # Install Home Assistant Supervised on a Smart Pi One
 
@@ -41,11 +41,11 @@ armbian-config
 In the interactive menu, select **"System"**
 
 
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant1.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant1.png)
 
 And select **"Firmware"**
 
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant2.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant2.png)
 
 # Install Home Assistant Supervised
 
@@ -85,19 +85,19 @@ cd
 ```
 
 ## Chose qemuarm
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant3.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant3.png)
 
 A short while after the installation begins, the Home Assistant web interface will be available at http://homeassistant:8123 or http://IP:8123, where IP is the IP address of your device. I get the “Preparing Home Assistant” screen. 
 
 Wait until the installation is complete
 
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant4.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant4.png)
 
 The script will terminate when the installation is complete.
 
 Once its preparation is complete, it will ask you for some settings.
 
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant5.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant5.png)
 
 
 

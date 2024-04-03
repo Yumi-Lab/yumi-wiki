@@ -1,7 +1,7 @@
 # 1.3 Linux flash Micro SD CARD
 
 In this guide, I'll walk you through the steps to install operating system (server or desktop) on your Smart Pi One.
-![Layout Smart Pi One](../../img/SmartPi/flash_sd/flashsd1.jpg)
+![Layout Smart Pi One](/img/SmartPi/flash_sd/flashsd1.jpg)
 
 ## 1.3.1 Hardware
 
@@ -26,23 +26,23 @@ Go to Official images. Choose the Armbian version you'd like to install (Debian 
 
 - Open Etcher and click <B>"Select image"</B>.
 
-![ether1](../../img/SmartPi/flash_sd/ether1.png)
+![ether1](/img/SmartPi/flash_sd/ether1.png)
 
 - Choose the operating system image you downloaded.
 
-![ether2](../../img/SmartPi/flash_sd/ether2.png)
+![ether2](/img/SmartPi/flash_sd/ether2.png)
 
 - Click <B>"Select target"</B>.
 
-![ether3](../../img/SmartPi/flash_sd/ether3.png)
+![ether3](/img/SmartPi/flash_sd/ether3.png)
 
 - Choose the micro sd and click <B>"Select 1"</B>.
 
-![ether4](../../img/SmartPi/flash_sd/ether4.png)
+![ether4](/img/SmartPi/flash_sd/ether4.png)
 
 - Click “Flash!” and wait for the process to complete.
 
-![ether5](../../img/SmartPi/flash_sd/ether5.png)
+![ether5](/img/SmartPi/flash_sd/ether5.png)
 
 It will take Etcher about 10 minutes to write and validate the image if your microSD card.
 
