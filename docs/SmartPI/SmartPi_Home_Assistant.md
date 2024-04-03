@@ -1,6 +1,10 @@
 # 2.3 Home Assistant
 
-![Home Assistant](../../img/SmartPi/Home_Assistant/homeassistantlogo.png)
+![Home Assistant](../../img/SmartPi/Home_Assistant/homeassistant_logo.png)
+
+# Install Home Assistant Supervised on a Smart Pi One
+
+This guide will go over how to install Home Assistant (Supervised) on Debian based Linux Distributions. Remember only the latest version of Debian is supported.
 
 ## SD card with the image below
 
@@ -9,11 +13,6 @@ Prebuilt image link for 32GB or more :
 ### The default logins are :
 
 Access your account by using the default username **“root”** and **"pi"**, the default password **“pi”**.
-
-
-# Install Home Assistant Supervised on a Smart Pi One
-
-This guide will go over how to install Home Assistant (Supervised) on Debian based Linux Distributions. Remember only the latest version of Debian is supported.
 
 # Prerequisites
 
