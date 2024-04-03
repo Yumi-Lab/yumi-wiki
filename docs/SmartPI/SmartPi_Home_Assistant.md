@@ -54,8 +54,11 @@ Installed logged in as root.
 ## Update the OS name
 Only Debian is supported by HA supervised, so we need to fake the OS name, otherwise install will fail on check:
 
-in ** /etc/os-release ** update ** ARMBIAN_PRETTY_NAME **:
+In **/etc/os-release** update **ARMBIAN_PRETTY_NAME** by:
+
+```
 ARMBIAN_PRETTY_NAME="Debian GNU/Linux 12 (bookworm)
+```
 
 ## Give a host name if you like
 ```
