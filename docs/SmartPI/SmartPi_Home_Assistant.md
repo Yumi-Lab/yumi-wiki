@@ -18,7 +18,7 @@ Access your account by using the default username **“root”** and **"pi"**, t
 
 - Micro SD Card: a 32 GB or bigger card is recommended.
 
-- Installing a smartpi, YUMI SMART PI 1 BOOKWORM SERVER is recommanded.  
+- Installing a smartpi, **YUMI SMART PI 1 BOOKWORM SERVER is recommanded**.  
 
 - During linux server installation please create user: pi 
 
