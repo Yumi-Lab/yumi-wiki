@@ -8,7 +8,7 @@ This guide will go over how to install Home Assistant (Supervised) on Debian bas
 
 ## SD card with the image below
 
-Prebuilt image link for 32GB or more : 
+Prebuilt image link for **32GB or more** : 
 
 ### The default logins are :
 
@@ -16,13 +16,13 @@ Access your account by using the default username **“root”** and **"pi"**, t
 
 # Prerequisites
 
-- Micro SD Card: a 32 GB or bigger card is recommended.
+- Micro SD Card: **a 32 GB or bigger card is recommended**.
 
 - Installing a smartpi, **YUMI SMART PI 1 BOOKWORM SERVER is recommanded**.  
 
-- During linux server installation please create user: pi 
+- During linux server installation please **create user: pi**
 
-Connect to the smartpi via ssh with mobaxterm or putty, for example.
+Connect to the smartpi via ssh with **mobaxterm** or **putty**, for example.
 
 ## Update the smartpi
 
