@@ -8,7 +8,7 @@ This guide will go over how to install Home Assistant (Supervised) on Debian bas
 
 ## SD card with the image below
 
-Prebuilt image link for **32GB or more** : 
+Prebuilt image link for **32GB or more** : Coming Soon
 
 ### The default logins are :
 
@@ -43,9 +43,13 @@ In the interactive menu, select **"System"**
 
 ![alt text](/img/SmartPi/Home_Assistant/homeassistant1.png)
 
-And select **"Firmware"**
+Select **"Firmware"** and **"< Yes >"**
 
 ![alt text](/img/SmartPi/Home_Assistant/homeassistant2.png)
+
+And select **< Yes >** for reboot
+
+![alt text](/img/SmartPi/Home_Assistant/homeassistant3.png)
 
 # Install Home Assistant Supervised
 
@@ -78,26 +82,25 @@ reboot
 ## Retropie installation for YUMI Smart Pi One
 
 ```
-git clone 
-cd 
+git clone https://github.com/adnroboticsfr/smartpi_homeassistant.git
+cd smartpi_homeassistant
 ./install.sh
 
 ```
 
 ## Chose qemuarm
-![alt text](/img/SmartPi/Home_Assistant/homeassistant3.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant4.png)
 
-A short while after the installation begins, the Home Assistant web interface will be available at http://homeassistant:8123 or http://IP:8123, where IP is the IP address of your device. I get the “Preparing Home Assistant” screen. 
+A short while after the installation begins, the Home Assistant web interface will be available at http://homeassistant:8123 or http://IP:8123, where IP is the IP address of your device. I get the **“Preparing Home Assistant”** screen. 
 
 Wait until the installation is complete
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant4.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant5.png)
 
-The script will terminate when the installation is complete.
 
 Once its preparation is complete, it will ask you for some settings.
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant5.png)
+![alt text](/img/SmartPi/Home_Assistant/homeassistant6.png)
 
 
 
