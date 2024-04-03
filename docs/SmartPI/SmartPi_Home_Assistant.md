@@ -5,9 +5,14 @@
 
 Prebuilt image link for 32GB or more : 
 
+The default logins are :
+
+Access your account by using the default username **“root”** and **"pi"**, the default password **“pi”**.
+
+
 # Install Home Assistant Supervised on a Smart Pi One
 
-This guide will go over how to install Home Assistant (Supervised) on Debian based Linux Distributions. Remember only the latest version of Debian is supported
+This guide will go over how to install Home Assistant (Supervised) on Debian based Linux Distributions. Remember only the latest version of Debian is supported.
 
 # Prerequisites
 
@@ -27,17 +32,24 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 # Firmware Update and restart
 
-Use the armbian-config utility to update the firmware:
+Use the **armbian-config** utility to update the firmware:
 
 ```
 armbian-config
 ```
 
-In the interactive menu, **select System>Firmware**
+In the interactive menu, select **"System"**
+
+
+![alt text](../../img/SmartPi/Home_Assistant/homeassistant1.png)
+
+And select **"Firmware"**
+
+![alt text](../../img/SmartPi/Home_Assistant/homeassistant2.png)
 
 # Install Home Assistant Supervised
 
-Installed logged in as root
+Installed logged in as root.
 
 ## Update the OS name
 Only Debian is supported by HA supervised, so we need to fake the OS name, otherwise install will fail on check:
@@ -70,19 +82,19 @@ cd
 ```
 
 ## Chose qemuarm
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant1.png)
+![alt text](../../img/SmartPi/Home_Assistant/homeassistant3.png)
 
 A short while after the installation begins, the Home Assistant web interface will be available at http://homeassistant:8123 or http://IP:8123, where IP is the IP address of your device. I get the “Preparing Home Assistant” screen. 
 
 Wait until the installation is complete
 
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant2.png)
+![alt text](../../img/SmartPi/Home_Assistant/homeassistant4.png)
 
 The script will terminate when the installation is complete.
 
 Once its preparation is complete, it will ask you for some settings.
 
-![alt text](../../img/SmartPi/Home_Assistant/homeassistant3.png)
+![alt text](../../img/SmartPi/Home_Assistant/homeassistant5.png)
 
 
 
