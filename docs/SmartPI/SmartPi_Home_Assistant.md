@@ -1,4 +1,5 @@
 # 2.3 Home Assistant
+
 ![Home Assistant](../../img/SmartPi/Home_Assistant/homeassistantlogo.png)
 
 ## SD card with the image below
