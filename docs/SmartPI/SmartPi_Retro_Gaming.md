@@ -22,7 +22,7 @@ Image for OS any SD card: Available soon
 
 # Prerequisites
 
--Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  
+-Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  (https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
 
 -During linux server installation please create user: pi 
 
