@@ -6,7 +6,7 @@
 
 Prebuilt image link for 32GB or more : 
 
-###The default logins are :
+### The default logins are :
 
 Access your account by using the default username **“root”** and **"pi"**, the default password **“pi”**.
 
