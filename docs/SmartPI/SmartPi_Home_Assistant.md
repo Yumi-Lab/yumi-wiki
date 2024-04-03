@@ -41,15 +41,15 @@ armbian-config
 In the interactive menu, select **"System"**
 
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant1.png)
+![homeassistant1](/img/SmartPi/Home_Assistant/homeassistant1.png)
 
 Select **"Firmware"** and **"< Yes >"**
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant2.png)
+![homeassistant2](/img/SmartPi/Home_Assistant/homeassistant2.png)
 
-And select **< Yes >** for reboot
+And select **"< Yes >"** for reboot
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant3.png)
+![homeassistant3](/img/SmartPi/Home_Assistant/homeassistant3.png)
 
 # Install Home Assistant Supervised
 
@@ -61,7 +61,7 @@ Only Debian is supported by HA supervised, so we need to fake the OS name, other
 In **/etc/os-release** update **ARMBIAN_PRETTY_NAME** by:
 
 ```
-ARMBIAN_PRETTY_NAME="Debian GNU/Linux 12 (bookworm)
+ARMBIAN_PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
 ```
 
 ## Give a host name if you like
@@ -74,33 +74,37 @@ I am not going to explain what and why, this has beed discussed here before (see
 
 ```
 apt install apparmor
-echo "extraargs=apparmor=1 security=apparmor systemd.unified_cgroup_hierarchy=false systemd.legacy_systemd_cgroup_controller=false" >> /boot/armbianEnv.txt
+sudo echo "extraargs=apparmor=1 security=apparmor systemd.unified_cgroup_hierarchy=false systemd.legacy_systemd_cgroup_controller=false" >> /boot/armbianEnv.txt
 update-initramfs -u
 reboot
 ```
 
-## Retropie installation for YUMI Smart Pi One
+## Home Assistant installation for YUMI Smart Pi One
 
 ```
 git clone https://github.com/adnroboticsfr/smartpi_homeassistant.git
 cd smartpi_homeassistant
+chmod 775 install.sh
 ./install.sh
 
 ```
 
 ## Chose qemuarm
-![alt text](/img/SmartPi/Home_Assistant/homeassistant4.png)
+![homeassistant4](/img/SmartPi/Home_Assistant/homeassistant4.png)
 
-A short while after the installation begins, the Home Assistant web interface will be available at http://homeassistant:8123 or http://IP:8123, where IP is the IP address of your device. I get the **“Preparing Home Assistant”** screen. 
+Wait check installation of Home Assistant and reboot.
 
-Wait until the installation is complete
+![homeassistant7](/img/SmartPi/Home_Assistant/homeassistant7.png)
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant5.png)
+A short while after the installation begins, the Home Assistant web interface will be available at **http://homeassistant:8123** or **http://IP:8123**, where IP is the IP address of your device. I get the **“Preparing Home Assistant”** screen. 
 
+Wait until the installation is complete.
+
+![homeassistant5](/img/SmartPi/Home_Assistant/homeassistant5.png)
 
 Once its preparation is complete, it will ask you for some settings.
 
-![alt text](/img/SmartPi/Home_Assistant/homeassistant6.png)
+![homeassistant6](/img/SmartPi/Home_Assistant/homeassistant6.png)
 
 
 
