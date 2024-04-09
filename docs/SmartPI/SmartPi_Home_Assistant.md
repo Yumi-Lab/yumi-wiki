@@ -8,9 +8,9 @@ This guide will go over how to install Home Assistant (Supervised) on Debian bas
 
 ## SD card with the image below
 
-Prebuilt image link for **32GB or more** : Coming Soon
+Prebuilt image link for **32GB or more** : https://drive.google.com/file/d/1OFF1DpqMVtUqXKGGxFsO4lJdDIy_v8eS/view?usp=drive_link
 
-### The default logins are :
+### The default logins are : 
 
 Access your account by using the default username **“root”** and **"pi"**, the default password **“pi”**.
 
