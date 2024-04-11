@@ -1,6 +1,7 @@
 # 1.3 Smart Shield
 <img src="../../img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_top.png" width="560" alt="Top view"><p align="left">**[Top view]**</p>
 
+
 <img src="../../img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_side.png" width="560" alt="Top view"><p align="left">**[Side view]**</p>
 
 ## 1.2.1 Product Description
