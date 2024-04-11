@@ -20,7 +20,7 @@ The YUMI SMART SHIELD is the essential accessory for those who want to push the 
  * USB-C power input to double the power on the SMART PI ONE, ensuring stable and efficient power for your most demanding projects.
 
 ## 1.2.2 Product Parameters
-* **GPIO :** 2.54mm spacing input 40 pin/Output 40 pin compatible with Raspberry Pi's GPIO
-* **MicroUSB-C :** for data transmission and power input
-* **Product Size :** -
-* **Weight :** -
+* **GPIO:** 2.54mm spacing input 40 pin/Output 40 pin compatible with Raspberry Pi's GPIO
+* **MicroUSB-C:** for data transmission and power input
+* **Product Size:** -
+* **Weight:** -
