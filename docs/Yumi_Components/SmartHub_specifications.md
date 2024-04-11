@@ -5,7 +5,7 @@
 ## 1.2.1 Product Description
 The YUMI SMART HUB 1 to 4 revolutionizes the management of power and connectivity for your devices. With an innovative configuration including 1 USB 2.0 input, 2 standard USB 2.0 outputs and 2 USB 2.0 outputs in 6pin FFC format, this hub stands out for its ability to inject 5V into all USB ports, whether from the inputs or exits. This unique feature not only powers the SMART PI ONE, but also all connected devices, providing unprecedented flexibility in energy management.
 
-<img src="../../img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_side.png" width="450" alt="side view">
+<img src="../../img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_side.png)" width="600" alt="side view">
 
 ### Applications
 * Power and connect multiple USB devices without worry of power management.
