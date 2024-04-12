@@ -17,5 +17,5 @@ The [YUMI SMART HUB 1 to 4](https://wanhao-europe.com/collections/yumi-retro-gam
 * For those looking for an efficient and versatile solution for powering and connecting multiple devices, the YUMI SMART HUB 1 to 4 is the ideal tool. Maximize your productivity and  simplify the management of your devices with this innovative USB hub.
 
 ## 1.2.2 Product Parameters
-* **Product Size :** -
-* **Weight :** -
+* **Product Size :** 49.5 mm x 47.5mm
+* **Weight :** 12g
