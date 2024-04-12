@@ -112,7 +112,8 @@ nav:
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Tuto/Remote_multi_printers.md
-    - PRINTERS:
+    - PRINTERS INSTALLATION:
+      - PRINTERS/WANHAO_D12.md
       - PRINTERS/SIDEWINDER_X2.md
       - PRINTERS/PRUSA_MK3.md
   
