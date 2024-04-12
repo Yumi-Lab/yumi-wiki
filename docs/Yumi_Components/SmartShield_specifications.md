@@ -18,7 +18,9 @@ The YUMI SMART SHIELD is the essential accessory for those who want to push the 
 ### Compatibility
  * GPIO 40 pin compatible with Raspberry Pi's GPIO
  * With the YUMI - ADXL345 Sensor: Incorporates a specific connector for the YUMI - ADXL345 sensor, facilitating interfacing and expanding the capabilities of the SMART PI ONE without additional effort.
- * USB-C power input to double the power on the SMART PI ONE, ensuring stable and efficient power for your most demanding projects.
+ * USB-C power input/ouput to double the power on the SMART PI ONE, ensuring stable and efficient power for your most demanding projects. And UART1, UART2.
+ * RJ11 a connector for UART1.
+
  
 
 ## 1.2.2 Product Parameters
