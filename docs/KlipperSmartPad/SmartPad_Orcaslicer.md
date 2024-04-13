@@ -23,6 +23,12 @@ Add the profile for the wanhao d12 300 to the predefined printers. then download
 
 It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
 
-https://github.com/Yumi-Lab/yumi-wiki/blob/main/Profile_Slicer/Orcaslicer/Wanhao%20D12-300%200.4%20nozzle.orca_printer
+https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao%20D12-230%200.4%20nozzle.zip
 
+## Sidewinder X2
 
+Add the Sidewinder X2 profile to the predefined printers. Then download the X2 smartpad profile and import it. 
+
+It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+
+https://raw.githubusercontent.com/Yumi-Lab/yumi-wiki/main/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer
