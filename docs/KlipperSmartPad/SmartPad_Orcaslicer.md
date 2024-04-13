@@ -16,6 +16,13 @@ https://github.com/SoftFever/OrcaSlicer
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/Wanhao-D12-230%20mono.png)
 
-## D12 230 bltouch
+## D12 230
+
+
+Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for the 230 and import it. there's a version with bltouch and one without.
+
+It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+
+https://github.com/Yumi-Lab/yumi-wiki/blob/main/Profile_Slicer/Orcaslicer/Wanhao%20D12-300%200.4%20nozzle.orca_printer
 
 
