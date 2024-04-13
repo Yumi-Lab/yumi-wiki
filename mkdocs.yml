@@ -109,7 +109,7 @@ nav:
     - Yumi_Components/SmartShield_specifications.md
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
-    - KlipperSmartPad/Tuto/SmartPad_Orcaslicer.md
+    - KlipperSmartPad/SmartPad_Orcaslicer.md
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Tuto/Remote_multi_printers.md
