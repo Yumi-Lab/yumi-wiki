@@ -1,99 +1,21 @@
-# Remote multiple printers on one pad
+# Orcaslicer profiles
 
-You can control multiple pads with a single pad. This provides centralized control over all your printers.
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001.png)
 
-# Mainsail method
+Below you will find the Orceslicer profiles for different printers. They have been optimized and tested to work with the smartpad.
 
-Log in to your mainsail interface
+# Download Orcaslicer
 
-Go to the `Machine` tab and edit the `klipperscreen.cfg` file
+https://github.com/SoftFever/OrcaSlicer
 
-In this text file, you'll need to put the first line:
+# Import a profile
 
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer002.png)
 
-```
-[main]
-```
+# Wanhao
 
-Now we need to add sections for each printer
-`[printer Printer name]`
-`moonraker_host: pad ip address`
+![Orca](/img/KlipperSmartPad/Orcaslicer/Wanhao-D12-230%20mono.png)
 
-In the following example, a smartpad is connected to a sidewinder x2 and a creality K1 Max.
-The K1 Max uses a port to connect to mainsail, so you need to specify it with the additional line `moonraker_port: port number`
-
-```
-[main]
-
-[printer Sidewinderx2]
-moonraker_host: 192.168.1.35
-
-[printer CrealityK1Max]
-moonraker_host: 192.168.1.69
-moonraker_port: 4409
-```
-Here's how it looks on the Pad
-You can see the Sidewinder X2 and the Creality K1 Max.
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170827.jpg)
-
-From this screen I can control the X2 pad
-
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170840.jpg)
-
-Press this button to return to the printer list.
-
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170841.jpg)
-
-And now I control my Creality K1 Max
-
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170854.jpg)
-
-# SSH method
-
-To do this, you need an ssh connection on the pad you'll be using to control other pads.
-
-Once connected, you'll need to edit a text file.
-
-```
-nano cd ~/printer_data/config/KlipperScreen.conf
-```
-
-In this text file, you'll need to put the first line:
+## D12 230 bltouch
 
 
-```
-[main]
-```
-
-Now we need to add sections for each printer
-`[printer Printer name]`
-`moonraker_host: pad ip address`
-
-In the following example, a smartpad is connected to a sidewinder x2 and a creality K1 Max.
-The K1 Max uses a port to connect to mainsail, so you need to specify it with the additional line `moonraker_port: port number`
-
-```
-[main]
-
-[printer Sidewinderx2]
-moonraker_host: 192.168.1.35
-
-[printer CrealityK1Max]
-moonraker_host: 192.168.1.69
-moonraker_port: 4409
-```
-Here's how it looks on the Pad
-You can see the Sidewinder X2 and the Creality K1 Max.
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170827.jpg)
-
-From this screen I can control the X2 pad
-
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170840.jpg)
-
-Press this button to return to the printer list.
-
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170841.jpg)
-
-And now I control my Creality K1 Max
-
-![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170854.jpg)
