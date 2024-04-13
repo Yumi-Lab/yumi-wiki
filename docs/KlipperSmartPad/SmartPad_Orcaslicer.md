@@ -27,6 +27,8 @@ https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao%
 
 ## Sidewinder X2
 
+![Sidewinder X2](/img/Printers/Artillery/X2/X2.jpeg)
+
 Add the Sidewinder X2 profile to the predefined printers. Then download the X2 smartpad profile and import it. 
 
 It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
@@ -35,6 +37,8 @@ https://raw.githubusercontent.com/Yumi-Lab/yumi-wiki/main/Profile_Slicer/Orcasli
 
 
 ## Prusa MK3/S/S+
+
+![mk3](/img/Printers/Prusa/Mk3/Mk3.jpeg)
 
 Add the Mk3 profile to the predefined printers. Then download the mk3 smartpad profile and import it. 
 
