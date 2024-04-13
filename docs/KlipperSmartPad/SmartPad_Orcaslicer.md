@@ -32,3 +32,12 @@ Add the Sidewinder X2 profile to the predefined printers. Then download the X2 s
 It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
 
 https://raw.githubusercontent.com/Yumi-Lab/yumi-wiki/main/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer
+
+
+## Prusa MK3/S/S+
+
+Add the Mk3 profile to the predefined printers. Then download the mk3 smartpad profile and import it. 
+
+It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+
+https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Prusa%20MK3S%200.4%20nozzle%20-%20Klipper.orca_printer
