@@ -109,10 +109,10 @@ nav:
     - Yumi_Components/SmartShield_specifications.md
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
-    - KlipperSmartPad/SmartPad_Orcaslicer.md
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Tuto/Remote_multi_printers.md
+    - KlipperSmartPad/SmartPad_Orcaslicer.md
     - PRINTERS INSTALLATION:
       - PRINTERS/WANHAO_D12.md
       - PRINTERS/SIDEWINDER_X2.md
