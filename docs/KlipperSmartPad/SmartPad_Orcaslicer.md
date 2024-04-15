@@ -23,7 +23,7 @@ Add the profile for the wanhao d12 300 to the predefined printers. then download
 
 It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
 
-https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao%20D12-230%200.4%20nozzle.zip
+https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao%20D12-300%200.4%20nozzle.zip
 
 ## Sidewinder X2
 
