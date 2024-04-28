@@ -199,50 +199,10 @@ From the dashboard, it should look like this:
 # Slicer profile
 ## Orcaslicer
 
-    Profile_Slicer\Orcaslicer\Artillery Sidewinder X2 0.4 nozzle Klipper X4.orca_printer
+    ![OrcaX2](/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer)
+  
 
-# Changer les paramètres de votre slicer
-## CURA
 
-From cura, go to Preference/Configure Cura...
-In the new window, go to Printers and choose your X2 profile.
-Click on Machine settings
-
-![Slicer](/img/Printers/Artillery/X2/Slicer01.png)
-
-In the Start Gcode section put:
-```
-PRINT_START BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
-```
-
-Put in End Gcode:
-```
-PRINT_END
-```
-
-![Slicer](/img/Printers/Artillery/X2/Slicer02.png)
-
-You need to install the Klipper Setting Plugin. 
-To do this, please follow the steps below: https://github.com/jjgraphix/KlipperSettingsPlugin
-Once installed, activate firmware retraction in the Klipper Settings section.
-
-![Slicer](/img/Printers/Artillery/X2/Slicer03.jpeg)
-
-## PrusaSlicer
-
-From your printer settings,
-In the Start Gcode section, enter:
-```
-PRINT_START BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]
-```
-In the End Gcode section put:
-```
-PRINT_END
-```
-
-![Slicer](/img/Printers/Artillery/X2/Slicer04.png)
-
-In the general section of your printer settings, activate firmware retraction.
 
 # Calibrating your printer
 ## BED PID
