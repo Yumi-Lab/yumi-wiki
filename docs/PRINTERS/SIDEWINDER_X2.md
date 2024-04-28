@@ -199,7 +199,7 @@ From the dashboard, it should look like this:
 # Slicer profile
 ## Orcaslicer
 
-    ![OrcaX2](/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer)
+    https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer
   
 
 
