@@ -1,20 +1,18 @@
-# Klipper Sidewinder X2 installation
+# Klipper Sidewinder X1 installation
 
-![Sidewinder X2](/img/Printers/Artillery/X2/X2.jpeg)
+![Sidewinder X1](/img/Printers/Artillery/X1/sidewinderx1.jpg)
 
-This procedure is for anyone who has a Sidewinder X2 and a SmartPad klipper control device.
+This procedure is for anyone who has a Sidewinder X1 and a SmartPad klipper control device.
 
 ## Please read the procedure first
 
 You are responsible for all operations carried out on your equipment. This procedure explains how to set up klipper on your printer. It has been tested and is fully functional.
 
-This procedure has been tested and approved for Ruby 1.2 motherboards. Do not install it on other motherboards.
 
 # Hardware and software :
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
 
-Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1 
 
 # SSH connection
 
@@ -59,7 +57,6 @@ Once you're logged in, you'll see this screen:
 The left sidebar corresponds to the Raspberry file and the right to the command line interface.
 
 Issue the command `cd klipper` and confirm with Enter
-
 ```
 cd klipper
 ```
@@ -76,7 +73,7 @@ make menuconfig
 
 You need to set the information below:
  
-![FW](/img/Printers/Artillery/X2/FW03.png)
+![FW](/img/Printers/Artillery/X1/MKS%20Gen%20l%20V1.x%20V2.x%20setting.png)
 
 Use the arrow keys to move around and enter to confirm.
 When ready, press `q`
@@ -90,48 +87,32 @@ make clean
 make
 ```
 
-# Switch printer to DFU mode
-
-We need to switch the printer to DFU mode in order to install the frmware.
-To do this, you can install pronterface (link to start of tutorial) on your computer and connect it directly to the printer.
-Open Pronterface (in administrator mode).
-
-![Pronterface](/img/Printers/Artillery/X2/Pronterface01.png)
-
-Connect the printer to the PC using the USB port and set 115200 baud.
-Click on connect.
-
-![Pronterface](/img/Printers/Artillery/X2/Pronterface02.png)
-
-  Run the command
-
-```
-M997
-```
-
 
 # Flashing with the SmartPad
 
 Return to MobaXterm.
-Connect the printer to the pad and run the `lsusb` command.
-You should have a device in DFU mode.
+Connect the printer to the pad and run the `ls /dev/serial/by-id/*` command.
 
-![Flash](/img/Printers/Artillery/X2/FlashPrinter.png)
+![Flash](/img/Printers/Artillery/X1/X1-001.png)
 
   Run the following command to flash the printer:
 
 ```
  sudo service klipper stop
- make flash FLASH_DEVICE=0483:df11
- sudo service klipper start
+ make flash FLASH_DEVICE=/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
  ```
 
+![Flash](/img/Printers/Artillery/X1/X1-002.png)
+
+ ```
+sudo service klipper start
+ ```
 
 # Download configuration files
 
-Download the Sidewinder X2 configuration file from the following link:
+Download the Sidewinder X1 configuration file from the following link:
 
-Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/printer.cfg
+Printer.cfg: https://github.com/Yumi-Lab/yumi-config/blob/main/smartpad-sidewinder-x1/printer.cfg
 
 
 # Mainsail Web interface
@@ -162,9 +143,11 @@ Restart the Pad and connect the printer to it with the correct USB cable.
 Connect your printer to one of the PAD's USB ports.
 
 Connect via SSH with MobaXterm, then enter the following command to retrieve the USB serial from the motherboard:
+
 '''
 ls /dev/serial/by-id/*
 '''
+
 Your id will be different from mine. You should see the USB id appear like this:
 
 ![MID](/img/Printers/Artillery/X2/ID01.png)
@@ -186,29 +169,6 @@ Your printer should now connect to your Pi. Restart the firmware if it hasn't be
 From the dashboard, it should look like this:
 
 ![MID](/img/Printers/Artillery/X2/ID04.png)
-
-
-# Filament detector
-
-  The filament detector on the X2 is connected to the screen. Once klipper is installed, there is no connection between the screen and the motherboard.
-  It is currently connected to the left side of the printer. There is a port available on the right side of the printer. The filament sensor must therefore be moved.
-  Disconnect the sensor from the printer.
-  Carefully remove the cover and thread from the left-hand side of the printer and position it in the same way, but on the right-hand side.
-
-  ![Sensor](/img/Printers/Artillery/X2/left.jpg)
-  ![Sensor](/img/Printers/Artillery/X2/right.jpg)
-  ![Sensor](/img/Printers/Artillery/X2/AxeBack.jpg)
-  ![Sensor](/img/Printers/Artillery/X2/AxeTop.jpg)
-  ![Sensor](/img/Printers/Artillery/X2/FilamentSensor.jpg)
-
-  The sensor will be functional again with klipper. Everything is already configured in the printer.cfg file.
-
-# Slicer profile
-## Orcaslicer
-
-    https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer
-  
-
 
 
 # Calibrating your printer
@@ -300,12 +260,6 @@ Click on SAVE and RESTART in the top right-hand corner to save the file.
 Now your Pad and printer are ready to print.
 You can slice a 3d model and import it into the G-Code File section.
 You can now start printing from the Mainsail interface or from the touch screen.
-
-# Activate Head LED
-
-To activate the head LED, there are 2 macros LED OFF to turn it off and LED ON to turn it on. Click on one of these macros to turn it on or off.
-
-![Calibration](/img/Printers/Artillery/X2/Calibration05.png)
 
 
 # Print
