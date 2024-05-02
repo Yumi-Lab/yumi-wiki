@@ -36,7 +36,7 @@ You will see your IP address
 
 You will be prompted to enter the password.
 
-The Pad Wanhao username is `pi` and the password is `fun`.
+The Pad Wanhao username is `pi` and the password is `Yumi`.
 
 A certificate authorization may appear. You need to validate it.
 Once you're logged in, you'll see this screen:
