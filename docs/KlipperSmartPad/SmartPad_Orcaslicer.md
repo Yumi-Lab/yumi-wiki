@@ -43,7 +43,7 @@ Add the Sidewinder X1 profile to the predefined printers. Then download the X1 s
 
 It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
 
-https://raw.githubusercontent.com/Yumi-Lab/yumi-wiki/main/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer
+https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Printer_presets-Orca_Sidewinder_X1_SMARTPAD_Dark3Dprint.zip
 
 Special thanks to Dark3dprint for their help : https://www.tiktok.com/@dark3dprint?lang=fr
 
