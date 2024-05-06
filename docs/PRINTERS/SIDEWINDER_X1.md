@@ -99,6 +99,7 @@ Connect the printer to the pad and run the `ls /dev/serial/by-id/*` command.
 
 ```
  sudo service klipper stop
+ 
  make flash FLASH_DEVICE=/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
  ```
 
