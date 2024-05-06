@@ -106,9 +106,9 @@ Connect the printer to the pad and run the `ls /dev/serial/by-id/*` command.
 
 ![Flash](/img/Printers/Artillery/X1/X1-002.png)
 
- ```
+```
 sudo service klipper start
- ```
+```
 
 # Download configuration files
 
