@@ -121,10 +121,14 @@ You should have a device in DFU mode.
   Run the following command to flash the printer:
 
 ```
- sudo service klipper stop
- make flash FLASH_DEVICE=0483:df11
- sudo service klipper start
- ```
+sudo service klipper stop
+```
+```
+make flash FLASH_DEVICE=0483:df11
+```
+```
+sudo service klipper start
+```
 
 
 # Download configuration files
