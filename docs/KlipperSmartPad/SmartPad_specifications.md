@@ -52,4 +52,4 @@ Increased stability: Thanks to Klipper firmware, your 3D printer becomes more st
 
 Below is a plan for connecting the peripherals. For the connection with the printer it is rare that the cable supplied with the printer is of good quality. You need a quality high-speed cable.
 
-![KlipperSmartPad](/img/KlipperSmartPad/Smartpad-ERIPHERALS-CONNECTION.png)
+![KlipperSmartPad](/img/KlipperSmartPad/Smartpad-CONNECTION.png)
