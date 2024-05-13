@@ -8,6 +8,10 @@ This procedure is for anyone who has a Sidewinder X1 and a SmartPad klipper cont
 
 You are responsible for all operations carried out on your equipment. This procedure explains how to set up klipper on your printer. It has been tested and is fully functional.
 
+**Disconnect the X1 screen from your motherboard**
+
+[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://vm.tiktok.com/ZGeCArDfU/)
+
 
 # Hardware and software :
 
