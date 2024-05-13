@@ -14,7 +14,7 @@ You are responsible for all operations carried out on your equipment. This proce
 
 Installation video by Dark3dPrint (https://www.tiktok.com/@dark3dprint)
 
-[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://vm.tiktok.com/ZGeCArDfU/)
+[![Watch the video](/img/Printers/Artillery/X1/Video-icon-vector-by-rudezstudio-580x386.jpg)](https://vm.tiktok.com/ZGeCArDfU/)
 
 
 # Hardware and software :
