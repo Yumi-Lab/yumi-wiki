@@ -135,7 +135,7 @@ sudo service klipper start
 
 Download the Sidewinder X2 configuration file from the following link:
 
-Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Artillery/X2/printer.cfg
+Printer.cfg: https://github.com/Yumi-Lab/yumi-config/tree/main/smartpad-sidewinder-x2
 
 
 # Mainsail Web interface
