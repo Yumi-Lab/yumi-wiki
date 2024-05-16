@@ -130,6 +130,41 @@ make flash FLASH_DEVICE=0483:df11
 sudo service klipper start
 ```
 
+If you get this error:
+
+![Flash](/img/Printers/Artillery/X2/X2error001.png)
+
+Please follow the steps below.
+
+To begin, download the STM32cubeprogrammer: ![Flash](https://gofile.me/67vGQ/QqyBHGEDB)
+
+
+Run the following command to copy the firmware to a specific location so that it can be retrieved from the mainsail web interface.
+
+```
+cp /home/pi/klipper/out/klipper.bin /home/pi/printer_data/config/firmware.bin
+```
+
+Download the file firmware.bin
+
+![Flash](/img/Printers/Artillery/X2/X2error002.png)
+
+Switch the card to DFU mode by shaking the pins. To do this, you need to remove the bottom cover of the printer to gain physical access to the Artillery Ruby board. Next, you need to install a jumper to connect the BOOT pin and the +3.3V pin. This connection will put the Ruby card into DFU mode and allow you to flash the printer.
+Once the printer has started up in DFU mode, remove the jumper and connect it to the PC.
+
+![Flash](/img/Printers/Artillery/X2/X2error003.jpg)
+
+Launch STM32cubeprogrammer
+Select USB mode, USB1 port in my case and connect
+
+![Flash](/img/Printers/Artillery/X2/X2error004.png)
+
+Select erasing mode on the right-hand panel. select your firmware and click on start Programm
+
+![Flash](/img/Printers/Artillery/X2/X2error005.png)
+
+Once the firmware has been uploaded, close the STM32 program and disconnect the printer from the PC to connect it to the smartpad.
+
 
 # Download configuration files
 
