@@ -136,7 +136,7 @@ If you get this error:
 
 Please follow the steps below.
 
-To begin, download the STM32cubeprogrammer: ![Flash](https://gofile.me/67vGQ/QqyBHGEDB)
+To begin, download the STM32cubeprogrammer: https://gofile.me/67vGQ/QqyBHGEDB
 
 
 Run the following command to copy the firmware to a specific location so that it can be retrieved from the mainsail web interface.
