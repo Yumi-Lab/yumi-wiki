@@ -96,6 +96,7 @@ nav:
       - SmartPI/SmartPi_One_specifications.md
       - SmartPI/SmartPi_Linux.md
       - SmartPI/SmartPi_Linux_flash_sd.md
+      - SmartPI/SmartPi_ConfigureTimeZone.md
     - LINUX LAB PROJECT:  
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
@@ -112,9 +113,11 @@ nav:
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Tuto/Remote_multi_printers.md
+    - KlipperSmartPad/SmartPad_Orcaslicer.md
     - PRINTERS INSTALLATION:
       - PRINTERS/WANHAO_D12.md
       - PRINTERS/SIDEWINDER_X2.md
+      - PRINTERS/SIDEWINDER_X1.md
       - PRINTERS/PRUSA_MK3.md
   
 

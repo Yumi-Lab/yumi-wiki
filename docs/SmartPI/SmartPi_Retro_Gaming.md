@@ -13,7 +13,9 @@ In summary, RetroPie is a key platform for retro gaming projects, offering power
 
 You can use raspberry imager to prepare the SD card with the image below
 
-01/04/2024::Prebuilt image link for 16GB or more (BETA 2 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/VREUvyEth 
+26/04/2024:Prebuilt image link for 16GB or more (BETA 3 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/JYxrUDZA1
+
+01/04/2024:Prebuilt image link for 16GB or more (BETA 2 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/VREUvyEth 
 
 22/03/2024:Prebuilt image link for 16GB or more (BETA 1 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/0bSQSSoCT
 

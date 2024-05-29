@@ -38,7 +38,11 @@ Finally, go to the Machine menu and replace the `printer.cfg` with the one you j
 # Slicer profile
 ## Orcaslicer
     
-    comming soon
+Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer (230, 300, 500) and import it. there's a version with bltouch and one without.
+
+It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+
+    https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
 
 # Print
 
