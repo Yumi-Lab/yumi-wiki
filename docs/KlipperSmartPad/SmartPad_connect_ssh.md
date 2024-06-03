@@ -51,7 +51,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 
    ![connect_ssh_smartpad_5.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_5.png)
 
-   - When prompted, enter the password `yumi`.
+   - When prompted, enter the password **`yumi`**.
 
    ![connect_ssh_smartpad_6.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_6.png)
 
@@ -64,7 +64,7 @@ MacOS comes with an SSH client pre-installed, accessible through the Terminal.
 2. **Use SSH Command**:
    - Type the following command and press **`Enter`**:
      ```
-     **ssh pi@192.168.1.61**
+     ssh pi@192.168.1.61
      ```
    - When prompted, enter the password **`yumi`**.
 
@@ -77,7 +77,7 @@ Most Linux distributions come with an SSH client pre-installed. You can use the 
 2. **Use SSH Command**:
    - Type the following command and press **`Enter`**:
      ```
-     **ssh pi@192.168.1.61**
+     ssh pi@192.168.1.61
      ```
    - When prompted, enter the password **`yumi`**.
 
