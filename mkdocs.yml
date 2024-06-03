@@ -113,6 +113,7 @@ nav:
     - KlipperSmartPad/SmartPad_connect_ssh.md
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
+    - KlipperSmartPad/Calibration/PID_calibration.md
     - KlipperSmartPad/Tuto/Remote_multi_printers.md
     - KlipperSmartPad/SmartPad_Orcaslicer.md
     - PRINTERS INSTALLATION:
