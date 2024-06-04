@@ -1,6 +1,6 @@
 # 2.3 PID calibration
 
-The calibration of the PID (Proportional-Integral-Derivative) on Klipper, a firmware used to control 3D printers, is crucial for ensuring precise temperature regulation of the extruder and the heated bed. It improves temperature stability and accuracy, resulting in higher print quality and overall better printer performance. 
+The calibration of the PID (Proportional-Integral-Derivative) on Klipper, a firmware used to control 3D printers, is crucial for ensuring precise temperature regulation of the extruder and the heated bed. 
 
 # 2.3.1 Purpose of PID Calibration
 
@@ -22,11 +22,11 @@ Here are the primary purposes and benefits of this calibration.
 
 # 2.3.2 Calibrating PID settings for the extruder
 
-**1.** Open the Printer’s Terminal and access your printer's terminal via your control interface (such as Mainsail: **http://yumios.local** or **http://Your_IP_Address**).
+1. Open the Printer’s Terminal and access your printer's terminal via your control interface (such as Mainsail: **http://yumios.local** or **http://Your_IP_Address**).
 
    ![smartpad_pid_1](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_1.png)
    
-**2.** In the console, input the following command for the calibration:
+2. In the console, input the following command for the calibration:
 
      ```sh
      PID_CALIBRATE HEATER=extruder TARGET=200
@@ -35,11 +35,11 @@ Here are the primary purposes and benefits of this calibration.
 
      ![smartpad_pid_2](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_2.png)
 
-**3.** The calibration process may take several minutes. Klipper will heat and cool the extruder or bed multiple times to determine the optimal PID parameters.
+3. The calibration process may take several minutes. Klipper will heat and cool the extruder or bed multiple times to determine the optimal PID parameters.
 
    ![smartpad_pid_3](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_3.png)
 
-**4.** Once the calibration is complete, Klipper will display the new PID parameters (P, I, D). Save them using the command:
+4. Once the calibration is complete, Klipper will display the new PID parameters (P, I, D). Save them using the command:
 
      ```sh
      SAVE_CONFIG
@@ -49,7 +49,7 @@ Here are the primary purposes and benefits of this calibration.
 
 # 2.3.2 Calibrating PID settings for the heated bed
 
-**1.** In the console, input the following command for the calibration:
+1. In the console, input the following command for the calibration:
 
      ```sh
      PID_CALIBRATE HEATER=heater_bed TARGET=60
@@ -58,11 +58,11 @@ Here are the primary purposes and benefits of this calibration.
 
      ![smartpad_pid_5](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_5.png)
 
-**3.** The calibration process may take several minutes. Klipper will heat and cool the extruder or bed multiple times to determine the optimal PID parameters.
+2. The calibration process may take several minutes. Klipper will heat and cool the extruder or bed multiple times to determine the optimal PID parameters.
 
    ![smartpad_pid_6](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_6.png)
 
-**4.** Once the calibration is complete, Klipper will display the new PID parameters (P, I, D). Save them using the command:
+3. Once the calibration is complete, Klipper will display the new PID parameters (P, I, D). Save them using the command:
 
      ```sh
      SAVE_CONFIG
