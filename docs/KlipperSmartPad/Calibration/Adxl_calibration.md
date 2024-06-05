@@ -1,3 +1,3 @@
 # 2.4 Adxl calibration
 
-Comming soon
+Coming soon
