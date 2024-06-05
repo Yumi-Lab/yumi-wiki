@@ -111,6 +111,7 @@ nav:
   - YUMI Klipper SMART PAD:
     - KlipperSmartPad/SmartPad_specifications.md
     - KlipperSmartPad/SmartPad_connect_ssh.md
+    - KlipperSmartPad/SmartPad_change_password.md
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Calibration/PID_calibration.md
