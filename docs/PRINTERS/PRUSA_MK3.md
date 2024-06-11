@@ -44,7 +44,7 @@ You will see your IP address
 
 You will be prompted to enter the password.
 
-The Pad Wanhao username is "pi" and the password is "fun".
+The Yumi Smart Pad username is "pi" and the password is "yumi".
 
 A certificate authorization may appear. You need to validate it.
 Once you're logged in, you'll see this screen:
