@@ -115,6 +115,7 @@ nav:
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Calibration/PID_calibration.md
+    - KlipperSmartPad/Calibration/Adxl_calibration.md
     - KlipperSmartPad/Tuto/Remote_multi_printers.md
     - KlipperSmartPad/SmartPad_Orcaslicer.md
     - PRINTERS INSTALLATION:
