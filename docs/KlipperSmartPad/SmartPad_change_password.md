@@ -1,4 +1,4 @@
-# 1.3 How to change password on Smartpad (Yumios)
+# 1.3 How to change password on SMARTPAD (Yumios)
 
 To change your password on smartpad using SSH (Secure Shell), you can follow these steps. This tutorial assumes you have already set up SSH access to your Smartpad and can connect to it.
 
