@@ -12,7 +12,7 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 ### 1 Connect to Smartpad via SSH
 
-- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#121-windows)
+- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#method-2-using-windows-10-built-in-ssh)[Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#method-2-using-windows-10-built-in-ssh)
 
 - **Linux**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#123-linux)
 

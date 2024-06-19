@@ -95,6 +95,8 @@ nav:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
       - SmartPI/SmartPi_Linux.md
+      - SmartPI/SmartPi_Connect_Ssh.md
+      - SmartPI/SmartPi_Change_Password.md
       - SmartPI/SmartPi_Linux_flash_sd.md
       - SmartPI/SmartPi_ConfigureTimeZone.md
     - LINUX LAB PROJECT:  
