@@ -30,6 +30,8 @@ This tutorial will guide you through the steps to rotate the screen of your Smar
 
    Replace `smartpad_ip_address` with the actual IP address of your Smartpad Yumi.
 
+   ![Smartpad rotation screen 1](../../img/KlipperSmartPad/Rotation_screen/smartpad_rotation_screen_1.png)  
+
 ### 3. Clone the GitHub Repository
 
 Once connected via SSH, clone the repository using the following command:
@@ -61,7 +63,7 @@ chmod +x rotate_screen.sh
 Run the script to rotate the screen of your Smartpad Yumi:
 
 ```bash
-./rotate_screen.sh
+sudo ./rotate_screen.sh
 ```
 
 ## Troubleshooting
