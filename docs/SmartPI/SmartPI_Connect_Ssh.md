@@ -1,4 +1,4 @@
-# 1.3 How to Connect via SSH on Windows, Mac, and Linux into SMART PI ONE
+# 1.3 How to connect via SSH on Windows, Mac, and Linux into SMART PI ONE
 
 A detailed guide on how to connect to an Smart Pi One using SSH from a computer running Windows, Linux, or macOS.
 
@@ -16,13 +16,13 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 3. **Launch PuTTY**:
    - Open PuTTY.
    - In the **"Host Name (or IP address)"** field, enter the IP address of your Smart Pi One.
-   - Ensure the port is set to **22** and the connection type is **SSH**.
+   - Ensure the port is set to **`22`** and the connection type is **SSH**.
    - Click **"Open"**.
 
    ![Smart pi one - Connect ssh](../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_2.png)
 
 4. **Connect**:
-   - A terminal window will open, prompting you to enter your username **(default: `root`)** and password.
+   - A terminal window will open, prompting you to enter your username (default: **`root`**) and password.
 
 ### Windows Terminal (Command Prompt or PowerShell)
 
@@ -37,7 +37,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
      ```powershell
      ssh root@your_smartpione_ip_address
      ```
-   - Replace **`your_smartpione_ip_address`** with the actual IP address of your Smart Pi One.
+   - Replace **"your_smartpione_ip_address"** with the actual IP address of your Smart Pi One.
    - Enter the password when prompted.
 
 
@@ -54,7 +54,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
      ```bash
      ssh root@your_smartpione_ip_address
      ```
-   - Replace **`your_smartpione_ip_address`** with the actual IP address of your Smart Pi One.
+   - Replace **"your_smartpione_ip_address"** with the actual IP address of your Smart Pi One.
    - Enter the password when prompted.
 
 ### macOS (Terminal)
@@ -70,7 +70,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
      ```bash
      ssh root@your_smartpione_ip_address
      ```
-   - Replace **`your_smartpione_ip_address`** with the actual IP address of your Smart Pi One.
+   - Replace **"your_smartpione_ip_address"** with the actual IP address of your Smart Pi One.
    - Enter the password when prompted.
 
 ### Troubleshooting Common Issues

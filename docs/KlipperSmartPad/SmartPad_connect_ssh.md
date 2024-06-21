@@ -1,6 +1,6 @@
 
 
-# 1.2 How to Connect via SSH on Windows, Mac, and Linux into SMARTPAD
+# 1.2 How to connect via SSH on Windows, Mac, and Linux into SMARTPAD
 
 ![ssh smartpad](../../img/KlipperSmartPad/Connect_ssh/smartpad_ssh.png)
 
@@ -27,14 +27,14 @@ Windows does not come with an SSH client by default, but you can use third-party
    ![Launch PuTTT](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_1.png)
 
 3. **Configure PuTTY**:
-   - In the "Host Name (or IP address)" field, enter the IP address of the remote machine (e.g., **`192.168.1.61`**).
+   - In the **"Host Name (or IP address)"** field, enter the IP address of the remote machine (e.g., **`192.168.1.61`**).
    - Ensure the **"Port"** field is set to **`22`**.
    - Ensure the **"Connection type"** is set to **`SSH`**.
 
    ![connect_ssh_smartpad_2.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_2.png)
 
 4. **Connect**:
-   - Click on the "Open" button.
+   - Click on the **"Open"** button.
    - A terminal window will open asking for a username. Enter **`pi`**.
    - When prompted for a password, enter **`yumi`**.
 
@@ -42,12 +42,12 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 #### Method 2: Using Windows 10 Built-in SSH
 1. **Open Command Prompt or PowerShell**:
-   - Press `Win + R`, type `cmd` or `powershell`, and press `Enter`.
+   - Press **`Win + R`**, type **`cmd`** or **`powershell`**, and press **`Enter`**.
 
    ![connect_ssh_smartpad_4.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_4.png)
 
 2. **Use SSH Command**:
-   - Type the following command **"ssh pi@192.168.1.61"** and press `Enter`:
+   - Type the following command **"ssh pi@192.168.1.61"** and press **`Enter`**:
 
    ![connect_ssh_smartpad_5.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_5.png)
 
@@ -59,7 +59,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 MacOS comes with an SSH client pre-installed, accessible through the Terminal.
 
 1. **Open Terminal**:
-   - Press `Cmd + Space` to open Spotlight, type `Terminal`, and press `Enter`.
+   - Press **`Cmd + Space`** to open Spotlight, type **`Terminal`**, and press **`Enter`**.
 
 2. **Use SSH Command**:
    - Type the following command and press **`Enter`**:
@@ -72,7 +72,7 @@ MacOS comes with an SSH client pre-installed, accessible through the Terminal.
 Most Linux distributions come with an SSH client pre-installed. You can use the terminal to connect via SSH.
 
 1. **Open Terminal**:
-   - Depending on your Linux distribution, open the Terminal from your applications menu or press `Ctrl + Alt + T`.
+   - Depending on your Linux distribution, open the Terminal from your applications menu or press **`Ctrl + Alt + T`**.
 
 2. **Use SSH Command**:
    - Type the following command and press **`Enter`**:
