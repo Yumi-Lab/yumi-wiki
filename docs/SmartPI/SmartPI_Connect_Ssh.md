@@ -15,9 +15,9 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 
 3. **Launch PuTTY**:
    - Open PuTTY.
-   - In the "Host Name (or IP address)" field, enter the IP address of your Smart Pi One.
+   - In the **"Host Name (or IP address)"** field, enter the IP address of your Smart Pi One.
    - Ensure the port is set to **22** and the connection type is **SSH**.
-   - Click "Open".
+   - Click **"Open"**.
 
    ![Smart pi one - Connect ssh](../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_2.png)
 
