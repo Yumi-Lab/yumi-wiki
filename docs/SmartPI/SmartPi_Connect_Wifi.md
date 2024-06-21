@@ -1,4 +1,4 @@
-# 1.6 How to Connect a Smart Pi One to Wi-Fi
+# 1.6 How to connect a Smart Pi One to Wi-Fi
 
 ### Prerequisites:
 1. **Smart Pi One**: Ensure your Smart Pi One is powered on and has a Wi-Fi module or dongle connected.
