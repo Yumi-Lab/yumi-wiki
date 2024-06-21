@@ -12,7 +12,7 @@ To change your password on Smart Pi One using SSH (Secure Shell), you can follow
 
 ### 1 Connect to Smart Pi One via SSH
 
-- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#windows-with-putty)[Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#windows-terminal-command-prompt-or-powershell)
+- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#windows-with-putty) - [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#windows-terminal-command-prompt-or-powershell)
 
 - **Linux**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#linux-terminal)
 
@@ -30,9 +30,9 @@ Once logged in:
 
 - You will be prompted to enter the current password once more.
 
-- Then, you'll be asked to enter the new password. Type the new password and press `Enter`.
+- Then, you'll be asked to enter the new password. Type the new password and press **`Enter`**.
 
-- You'll need to retype the new password for confirmation. Enter it again and press Enter.
+- You'll need to retype the new password for confirmation. Enter it again and press **`Enter`**.
 
 The system will update the password and confirm back with **`passwd: password updated successfully`** or a similar message.
 
