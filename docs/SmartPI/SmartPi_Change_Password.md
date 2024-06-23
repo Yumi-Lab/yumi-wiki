@@ -4,7 +4,7 @@ To change your password on Smart Pi One using SSH (Secure Shell), you can follow
 
 ## What You Need:
 
-1. **SSH Client**: If you're on Windows, you can use [PuTTY](https://www.putty.org/) or Windows Subsystem for Linux. On macOS or Linux, you can use the terminal.
+1. **SSH Client**: If you're on Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or Windows Subsystem for Linux. On macOS or Linux, you can use the terminal.
 
 2. **Smart Pi One's IP address**: You need to know the IP address of your Smart Pi One to connect to it.
 

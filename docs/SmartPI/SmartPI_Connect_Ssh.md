@@ -7,7 +7,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 ## 1.3.1 Windows with PuTTY
 
 1. **Download and Install PuTTY**:
-   - Go to the official [PuTTY website](https://www.putty.org/).
+   - Go to the official [PuTTY website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
    - Download the appropriate version of PuTTY for your system and install it.
 
 2. **Obtain the IP Address of the Smart Pi One**:

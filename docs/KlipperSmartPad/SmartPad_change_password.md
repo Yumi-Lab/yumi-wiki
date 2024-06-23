@@ -12,7 +12,7 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 ### 1 Connect to Smartpad via SSH
 
-- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#131-windows-with-putty)[Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#132-windows-terminal-command-prompt-or-powershell)
+- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#131-windows-with-putty) - [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#132-windows-terminal-command-prompt-or-powershell)
 
 - **Linux**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#132-windows-terminal-command-prompt-or-powershell)
 
