@@ -4,7 +4,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 
 <img src="../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_1.png" alt="Smartpad rotation screen 1" width="310">
 
-### Windows with PuTTY
+## 1.3.1 Windows with PuTTY
 
 1. **Download and Install PuTTY**:
    - Go to the official [PuTTY website](https://www.putty.org/).
@@ -24,7 +24,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 4. **Connect**:
    - A terminal window will open, prompting you to enter your username (default: **`root`**) and password.
 
-### Windows Terminal (Command Prompt or PowerShell)
+## 1.3.2 Windows Terminal (Command Prompt or PowerShell)
 
 1. **Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like **"Advanced IP Scanner"**.
@@ -41,7 +41,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
    - Enter the password when prompted.
 
 
-### Linux (Terminal)
+## 1.3.3 Linux (Terminal)
 
 1. **Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like **"Advanced IP Scanner"**.
@@ -57,7 +57,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
    - Replace **"your_smartpione_ip_address"** with the actual IP address of your Smart Pi One.
    - Enter the password when prompted.
 
-### macOS (Terminal)
+## 1.3.4 macOS (Terminal)
 
 1. **Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like "Advanced IP Scanner".
@@ -73,7 +73,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
    - Replace **"your_smartpione_ip_address"** with the actual IP address of your Smart Pi One.
    - Enter the password when prompted.
 
-### Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 - **Connection Refused**: Ensure the SSH service is enabled on your Smart Pi One. You can check this by connecting directly with a monitor and keyboard attached to the Smart Pi One and using the command **`sudo systemctl status ssh`**.
 - **Firewall**: Make sure no firewall on your network is blocking port **22**.
