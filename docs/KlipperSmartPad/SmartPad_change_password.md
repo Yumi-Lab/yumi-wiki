@@ -12,11 +12,11 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 ### 1 Connect to Smartpad via SSH
 
-- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#method-2-using-windows-10-built-in-ssh)[Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#method-2-using-windows-10-built-in-ssh)
+- **Windows**: [PuTTY](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#131-windows-with-putty)[Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#132-windows-terminal-command-prompt-or-powershell)
 
-- **Linux**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#123-linux)
+- **Linux**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#132-windows-terminal-command-prompt-or-powershell)
 
-- **macOS**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/KlipperSmartPad/SmartPad_connect_ssh.md#122-mac)
+- **macOS**: [Terminal](https://github.com/Yumi-Lab/yumi-wiki/blob/main/docs/SmartPI/SmartPI_Connect_Ssh.md#134-macos-terminal)
 
 
 ### 2. Changing the Password
