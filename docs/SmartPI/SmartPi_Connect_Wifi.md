@@ -1,7 +1,7 @@
 # 1.6 How to connect a Smart Pi One to Wi-Fi
 
 ## Prerequisites:
-1. **Smart Pi One**: Ensure your Smart Pi One is powered on and has a Wi-Fi module or dongle connected.
+1. **Smart Pi One**: Ensure your Smart Pi One is powered on and has a Wi-Fi module or [dongle](https://wanhao-europe.com/collections/yumi-accessoires-diy/products/cle-wifi-compaitble-windows-linux-2-4g) connected.
 2. **NetworkManager and `nmcli`**: These should be installed by default on most Linux distributions for Smart Pi One. If not, install them using your package manager.
 
 ## Steps:
