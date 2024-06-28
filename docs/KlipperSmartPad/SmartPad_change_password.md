@@ -4,11 +4,11 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 ### What You Need:
 
-- **SSH Client**: If you're on Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or Windows Subsystem for Linux. On macOS or Linux, you can use the terminal.
+1. **SSH Client**: If you're on Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or Windows Subsystem for Linux. On macOS or Linux, you can use the terminal.
 
-- **Smartpad's IP address**: You need to know the IP address of your Smartpad to connect to it.
+2. **Smartpad's IP address**: You need to know the IP address of your Smartpad to connect to it.
 
-- **Username: `pi` and Password: `yumi`**
+3. **Username: `pi` and Password: `yumi`**
 
 ### 1. Connect to Smartpad via SSH
 
