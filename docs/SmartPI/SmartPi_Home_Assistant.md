@@ -14,20 +14,20 @@ Start Balena Etcher
 
 Select your img file:
 <p align="center">
-<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/Balena001.png" style="width:50%" >
+<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/Balena001.png?raw=true" style="width:50%" >
 </p>
 
 Select you sd support:
 <p align="center">
-<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena002.png" style="width:50%" >
+<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena002.png?raw=true" style="width:50%" >
 </p>
 <p align="center">
-<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena003.png" style="width:50%" >
+<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena003.png?raw=true" style="width:50%" >
 </p>
 
 Flash SD:
 <p align="center">
-<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena004.png" style="width:50%" >
+<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena004.png?raw=true" style="width:50%" >
 </p>
 
 # Wifi
@@ -61,5 +61,5 @@ http://Your_IP:8123
 
 
 <p align="center">
-<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/HA001.png" style="width:50%" >
+<img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/HA001.png?raw=true" style="width:50%" >
 </p>
