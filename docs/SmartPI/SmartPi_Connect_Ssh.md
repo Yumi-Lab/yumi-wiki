@@ -6,14 +6,14 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 
 ## 1.3.1 Windows with PuTTY
 
-1. **Download and Install PuTTY**:
+**1. Download and Install PuTTY**:
    - Go to the official [PuTTY website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
    - Download the appropriate version of PuTTY for your system and install it.
 
-2. **Obtain the IP Address of the Smart Pi One**:
+**2. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like "Advanced IP Scanner".
 
-3. **Launch PuTTY**:
+**3. Launch PuTTY**:
    - Open PuTTY.
    - In the **"Host Name (or IP address)"** field, enter the IP address of your Smart Pi One.
    - Ensure the port is set to **`22`** and the connection type is **SSH**.
@@ -21,18 +21,18 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 
    ![Smart pi one - Connect ssh](../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_2.png)
 
-4. **Connect**:
+**4. Connect**:
    - A terminal window will open, prompting you to enter your username (default: **`root`**) and password.
 
 ## 1.3.2 Windows Terminal (Command Prompt or PowerShell)
 
-1. **Obtain the IP Address of the Smart Pi One**:
+**1. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like **"Advanced IP Scanner"**.
 
-2. **Open Windows Terminal**:
+**2. Open Windows Terminal**:
    - You can use Command Prompt or PowerShell. To open either, press **`Win + X`** and select **"Windows Terminal"** (or open them individually via the Start menu).
 
-3. **Connect via SSH**:
+**3. Connect via SSH**:
    - In the terminal, type the following command:
      ```powershell
      ssh root@your_smartpione_ip_address
@@ -43,13 +43,13 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 
 ## 1.3.3 Linux (Terminal)
 
-1. **Obtain the IP Address of the Smart Pi One**:
+**1. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like **"Advanced IP Scanner"**.
 
-2. **Open the Terminal**:
+**2. Open the Terminal**:
    - On your Linux computer, open the terminal.
 
-3. **Connect via SSH**:
+**3. Connect via SSH**:
    - Type the following command:
      ```bash
      ssh root@your_smartpione_ip_address
@@ -59,13 +59,13 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 
 ## 1.3.4 macOS (Terminal)
 
-1. **Obtain the IP Address of the Smart Pi One**:
+**1. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like "Advanced IP Scanner".
 
-2. **Open the Terminal**:
+**2. Open the Terminal**:
    - On your Mac, open the Terminal application (you can find it in Applications > Utilities).
 
-3. **Connect via SSH**:
+**3. Connect via SSH**:
    - Type the following command:
      ```bash
      ssh root@your_smartpione_ip_address
