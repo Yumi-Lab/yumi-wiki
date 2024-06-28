@@ -1,4 +1,4 @@
-# How to Rotate the Screen of Smartpad Yumi When Connected to an External HDMI Display
+# 1.4 How to rotate the Screen of Smartpad
 
 This tutorial will guide you through the steps to rotate the screen of your Smartpad Yumi when it is connected to an external display via HDMI using the `rotate_screen.sh` script from the GitHub repository.
 
@@ -15,14 +15,14 @@ This tutorial will guide you through the steps to rotate the screen of your Smar
 
 ### 1. Connect Smartpad Yumi to External Display
 
-1. Power on your Smartpad Yumi.
-2. Connect the Smartpad Yumi to the external display using an HDMI cable.
-3. Ensure the external display is turned on and set to the correct HDMI input.
+- Power on your Smartpad Yumi.
+- Connect the Smartpad Yumi to the external display using an HDMI cable.
+- Ensure the external display is turned on and set to the correct HDMI input.
 
 ### 2. Connect to Smartpad Yumi via SSH
 
-1. Obtain the IP address of your Smartpad Yumi.
-2. Open a terminal on your local machine and connect to the Smartpad Yumi via SSH:
+- Obtain the IP address of your Smartpad Yumi.
+- Open a terminal on your local machine and connect to the Smartpad Yumi via SSH:
 
    ```bash
    ssh pi@smartpad_ip_address
