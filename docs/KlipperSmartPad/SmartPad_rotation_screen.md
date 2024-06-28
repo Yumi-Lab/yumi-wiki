@@ -1,4 +1,4 @@
-# 1.4 How to rotate the Screen of Smartpad
+# 1.4 How to rotate the screen of Smartpad
 
 This tutorial will guide you through the steps to rotate the screen of your Smartpad Yumi when it is connected to an external display via HDMI using the `rotate_screen.sh` script from the GitHub repository.
 
