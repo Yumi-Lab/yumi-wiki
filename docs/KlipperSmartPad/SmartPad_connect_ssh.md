@@ -18,18 +18,18 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 #### Method 1: Using PuTTY
 
-1. **Download and Install PuTTY**:
+**1. Download and Install PuTTY**:
 
 - Visit the [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 - Download and install the appropriate version for your system.
 
-2. **Open PuTTY**:
+**2. Open PuTTY**:
 
 - Launch PuTTY from the Start menu.
 
 ![Launch PuTTT](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_1.png)
 
-3. **Configure PuTTY**:
+**3. Configure PuTTY**:
 
 - In the **"Host Name (or IP address)"** field, enter the IP address of the remote machine (e.g., **`192.168.1.61`**).
 - Ensure the **"Port"** field is set to **`22`**.
@@ -37,7 +37,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 ![connect_ssh_smartpad_2.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_2.png)
 
-4. **Connect**:
+**4. Connect**:
 
 - Click on the **"Open"** button.
 - A terminal window will open asking for a username. Enter **`pi`**.
@@ -47,13 +47,13 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 #### Method 2: Using Windows 10 Built-in SSH
 
-1. **Open Command Prompt or PowerShell**:
+**1. Open Command Prompt or PowerShell**:
 
 - Press **`Win + R`**, type **`cmd`** or **`powershell`**, and press **`Enter`**.
 
 ![connect_ssh_smartpad_4.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_4.png)
 
-2. **Use SSH Command**:
+**2. Use SSH Command**:
 
 - Type the following command **"ssh pi@192.168.1.61"** and press **`Enter`**:
 
@@ -66,11 +66,11 @@ Windows does not come with an SSH client by default, but you can use third-party
 ## 1.2.2 Mac
 MacOS comes with an SSH client pre-installed, accessible through the Terminal.
 
-1. **Open Terminal**:
+**1. Open Terminal**:
 
 - Press **`Cmd + Space`** to open Spotlight, type **`Terminal`**, and press **`Enter`**.
 
-2. **Use SSH Command**:
+**2. Use SSH Command**:
 
 - Type the following command and press **`Enter`**:
 ```
@@ -81,11 +81,11 @@ ssh pi@192.168.1.61
 ## 1.2.3 Linux
 Most Linux distributions come with an SSH client pre-installed. You can use the terminal to connect via SSH.
 
-1. **Open Terminal**:
+**1. Open Terminal**:
 
 - Depending on your Linux distribution, open the Terminal from your applications menu or press **`Ctrl + Alt + T`**.
 
-2. **Use SSH Command**:
+**2. Use SSH Command**:
 
 - Type the following command and press **`Enter`**:
 ```
