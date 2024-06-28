@@ -1,4 +1,4 @@
-# 1.3 How to connect via SSH on Windows, Mac, and Linux into SMART PI ONE
+# 1.3 How to connect via SSH on Windows, Mac, and Linux
 
 A detailed guide on how to connect to an Smart Pi One using SSH from a computer running Windows, Linux, or macOS.
 
