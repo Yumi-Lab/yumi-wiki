@@ -38,9 +38,9 @@ User: pi
 Password: yumi
 
 run the command:
-
+```
 sudo armbian-config
-
+```
 using the arrows on your keyboard, go to Network confirm with Enter
 Then go to Wifi
 
@@ -48,8 +48,9 @@ Select your wifi and type your password.
 Exit the menu
 
 Use the command to retrieve the IP address:
+```
 sudo ip a
-
+```
 
 
 
