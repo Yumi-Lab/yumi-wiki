@@ -26,7 +26,7 @@ For the moment the following motherboards are configured:
 
 You must have printed the purge system
 
-STL:
+STL: https://github.com/Yumi-Lab/yumi-wiki/blob/main/stl/D12_purge/PURGE_D12_v2.stl
 
 ![Dualcolorpurge](/img/KlipperSmartPad/DualColorD12/purge001.jpg)
 
