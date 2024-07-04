@@ -25,7 +25,7 @@ It's an optimized profile. As a reminder, you need to adapt the profile to your 
 
 Mono (230/300/500): https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
 
-Dual (230) Update 15/05/2024: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao-D12-230-0.4-nozzle-Dual-smartpad.orca_printer
+Dual (230) Update 15/05/2024: coming soon
 
 ## Sidewinder X2
 
