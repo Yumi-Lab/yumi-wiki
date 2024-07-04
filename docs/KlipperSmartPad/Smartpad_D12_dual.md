@@ -52,7 +52,7 @@ Add the profile for the wanhao d12 300 to the predefined printers. then download
 
 It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
 
-Download It:
+Download It: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao_D12_Profils_Orcaslicer_DUAL.zip
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer002.png)
 
