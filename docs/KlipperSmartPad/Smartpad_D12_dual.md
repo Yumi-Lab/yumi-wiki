@@ -18,8 +18,10 @@ https://github.com/Yumi-Lab/yumi-config
 
 For the moment the following motherboards are configured:
 
-- 3.2
-
+- Nano Robin 3.2
+- Nano Robin 3.1
+- Nano Robin 1.3
+- Nano Robin 1.2
 
 ### Purge system
 
