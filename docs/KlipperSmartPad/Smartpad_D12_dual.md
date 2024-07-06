@@ -86,7 +86,9 @@ Adjust the rinse volume to avoid having too large a purge tower.
 
 
 For fairly dark colours use between 0.35 and 0.45
+
 For darker colours, use between 0.55 and 0.65
+
 For light colours use between 0.35 and 0.45
 
 ![Dualcolororca](/img/KlipperSmartPad/DualColorD12/profildualorcaslicer004.png)
