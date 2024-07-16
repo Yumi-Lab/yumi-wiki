@@ -11,13 +11,15 @@ In summary, RetroPie is a key platform for retro gaming projects, offering power
 
 # Auto Installation
 
-You can use raspberry imager to prepare the SD card with the image below
+You can use Balena Etcher or Raspberry imager to prepare the SD card with the image below
 
-26/04/2024:Prebuilt image link for 16GB or more (BETA 3 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/JYxrUDZA1
+2024-07-16: Pre-built with web browser http://your_ip:8080 for managing games and auto resize image for all TF cards minimum 16GB recommended. (BETA v0.4 / Remember to unzip the file. SSH user: pi, password: yumi) [RetroPie for SMART PI ONE V0.6beta](https://www.dropbox.com/scl/fi/et290vqex21cth2eoav81/smartpad1-retro.img.xz?rlkey=jp0starr84i54ydhd7tqubpjr&dl=0) [GITHUB MAXIME3D77 SMARTPI](https://github.com/Maxime3d77/smartpi1-retropie) for more details.
 
-01/04/2024:Prebuilt image link for 16GB or more (BETA 2 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/VREUvyEth 
+2024-04-26 : Prebuilt image link for 16GB or more (BETA v0.3 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/JYxrUDZA1 )
 
-22/03/2024:Prebuilt image link for 16GB or more (BETA 1 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/0bSQSSoCT
+2024-04-01 : Prebuilt image link for 16GB or more (BETA v0.2 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/VREUvyEth )
+
+2024-03-22 : Prebuilt image link for 16GB or more (BETA v0.1 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/0bSQSSoCT )
 
 Image for OS any SD card: Available soon
 
