@@ -9,28 +9,27 @@ Moreover, RetroPie benefits from a dedicated and active community, providing ext
 
 In summary, RetroPie is a key platform for retro gaming projects, offering powerful flexibility, extensive emulator support, and a vibrant community, enabling users to craft customized and immersive retro gaming experiences.
 
-# Auto Installation
+# Auto Installation (Recommended for beginners)
 
 You can use Balena Etcher or Raspberry imager to prepare the SD card with the image below
 
-2024-07-16: Pre-built with web browser http://your_ip:8080 for managing games and auto resize image for all TF cards minimum 16GB recommended. (BETA v0.4 / Remember to unzip the file. SSH user: pi, password: yumi) [RetroPie for SMART PI ONE V0.6beta](https://www.dropbox.com/scl/fi/et290vqex21cth2eoav81/smartpad1-retro.img.xz?rlkey=jp0starr84i54ydhd7tqubpjr&dl=0) [GITHUB MAXIME3D77 SMARTPI](https://github.com/Maxime3d77/smartpi1-retropie) for more details.
+2024-07-16: Pre-built with web browser http://your_ip:8080 for managing games and auto resize image for all TF cards minimum 16GB recommended. (BETA v0.4 / Remember to unzip the file. SSH user: pi, password: yumi) [RetroPie for SMART PI ONE V0.4beta](https://www.dropbox.com/scl/fi/et290vqex21cth2eoav81/smartpad1-retro.img.xz?rlkey=jp0starr84i54ydhd7tqubpjr&dl=0) for more details : [GITHUB MAXIME3D77 SMARTPI](https://github.com/Maxime3d77/smartpi1-retropie)
 
-2024-04-26 : Prebuilt image link for 16GB or more (BETA v0.3 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/JYxrUDZA1 )
+2024-04-26 : Prebuilt image link for 16GB or more (BETA v0.3 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.3beta](https://gofile.me/67vGQ/)JYxrUDZA1 )
 
-2024-04-01 : Prebuilt image link for 16GB or more (BETA v0.2 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/VREUvyEth )
+2024-04-01 : Prebuilt image link for 16GB or more (BETA v0.2 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.2beta](https://gofile.me/67vGQ/)VREUvyEth )
 
-2024-03-22 : Prebuilt image link for 16GB or more (BETA v0.1 / Remember to unzip the file/ password pi: fun): https://gofile.me/67vGQ/0bSQSSoCT )
+2024-03-22 : Prebuilt image link for 16GB or more (BETA v0.1 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.1beta](https://gofile.me/67vGQ/)0bSQSSoCT )
 
 Image for OS any SD card: Available soon
 
+# Manual Installation
 
-# Prerequisites
+## Prerequisites
 
 -Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  (https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
 
 -During linux server installation please create user: pi 
-
-# Manual Installation
 
 Manual installation can take several hours, so you'll just have to be patient while everything installs properly. You'll just have to do a few things during installation.
 
