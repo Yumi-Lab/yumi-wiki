@@ -106,7 +106,8 @@ nav:
       - SmartPI/SmartPi_Home_Assistant.md
       - SmartPI/SmartPI_OpenMediaVault.md
       - SmartPI/SmartPi_Plex_Server.md
-      
+  - YUMI PenScreen:    
+      - PenScreen/index.md
   - YUMI others Components:
     - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
     - Yumi_Components/SmartHub_specifications.md
