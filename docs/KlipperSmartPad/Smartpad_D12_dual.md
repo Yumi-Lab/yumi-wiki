@@ -6,6 +6,34 @@ How do I use the D12 230 dual?
 
 ![Dualcolorexemples](/img/KlipperSmartPad/DualColorD12/dualexemples001.jpg)
 
+## Without purge system
+
+### Profile Klipper
+
+Remember to use the latest dual version of the klipper profile.
+https://github.com/Yumi-Lab/yumi-config
+
+For the moment the following motherboards are configured:
+
+- Nano Robin 3.2
+- Nano Robin 3.1
+- Nano Robin 1.3
+- Nano Robin 1.2
+
+### Orcaslicer
+
+Also use orcaslicer profiles for the D12 DUAL.
+
+Import profile
+
+Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer and import it. there's a version with bltouch (bl in name) and one without (no bl in name).
+
+It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+
+Download It: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230DUAL.zip
+
+### Next Coming soon
+
 ## With purge system
 
 
@@ -22,6 +50,28 @@ For the moment the following motherboards are configured:
 - Nano Robin 3.1
 - Nano Robin 1.3
 - Nano Robin 1.2
+
+### Orcaslicer
+
+Also use orcaslicer profiles for the D12 DUAL.
+
+Import profile
+
+Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer and import it. there's a version with bltouch (bl in name) and one without (no bl in name).
+
+It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+
+Download It: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao_D12_Profils_Orcaslicer_DUAL.zip
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer002.png)
+
+
+![Dualcolororca](/img/KlipperSmartPad/DualColorD12/profildualorcaslicer001.png)
+Use Vpurge imrpimante profile, T0-T1 klipper filament and @Wanhao D12-230 standard 0.2 profile.
+
+add 2 filaments to orcaslicer
+
+![Dualcolororca](/img/KlipperSmartPad/DualColorD12/profildualorcaslicer002.png)
 
 ### Purge system
 
