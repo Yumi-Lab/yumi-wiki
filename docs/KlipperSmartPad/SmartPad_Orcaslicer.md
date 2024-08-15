@@ -27,7 +27,8 @@ Mono (230/300/500): https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slice
 
 Dual (230) Update BETA 1 15/08/2024 KLIPPER: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230DUAL.zip
 
-Dual (230) Update BETA 1 15/08/2024 MARLIN2: 
+Dual (230) Update BETA 1 15/08/2024 MARLIN2: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230-PRO-M2-MONO-DUAL-BETA.zip
+
 
 
 ## Sidewinder X2
