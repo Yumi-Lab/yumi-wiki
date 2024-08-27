@@ -12,7 +12,8 @@ Print a custom multi-part case for your SmartPad.
 
   ![SMART PAD top-v1](../../img/Yumi_stl/Yumi_SmartPad/Smart_Pad_Top-v1.png)
 
-  [SMART PAD top-v1.stl](<../../stl/yumi_SmartPad/SMART PAD top-v1.stl>) - 
+  [SMART PAD top-v1.stl](<../../stl/yumi_SmartPad/SMART PAD top-v1.stl>)
+  
   [SMART PAD top-v2.stl](<../../stl/yumi_SmartPad/SMART PAD top-v2.stl>)  
 
   ![SMART PAD middle-v1](../../img/Yumi_stl/Yumi_SmartPad/Smart_Pad_middle-v1.png)
@@ -36,7 +37,7 @@ Print this case to protect and easily mount your ADXL345 sensor.
   [ADXL Case Top (V2)](<../../stl/yumi_adxl/yumi-adxl case down-V2.stl>)
 
   ![ADXL Case Bottom (V2)](../../img/Yumi_stl/Yumi_Adxl/Yumi_Adxl_Case_Down-v2.png)
-  
+
   [ADXL Case Bottom (V2)](<../../stl/yumi_adxl/yumi-adxl case down-V2.stl>)
 
 ---
