@@ -130,5 +130,7 @@ nav:
       - PRINTERS/SIDEWINDER_X2.md
       - PRINTERS/SIDEWINDER_X1.md
       - PRINTERS/PRUSA_MK3.md
+    - YUMI STL:
+      - Yumi_stl/Printable_Accessories_and_Parts.md
   
 
