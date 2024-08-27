@@ -32,7 +32,7 @@ Print this case to protect and easily mount your ADXL345 sensor.
 
 - **Available Files**:  
 
-  ![ADXL Case Top (V2)](../../img/Yumi_stl/Yumi_Adxl/Yumi_Adxl_Case_Top-v2.png)
+  ![ADXL Case Top (V2)](<../../stl/yumi_adxl/yumi-adxl case top-V2.stl>)
 
   [ADXL Case Top (V2)](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/yumi_adxl/yumi-adxl%20case%20top-V2.stl)
 
@@ -50,7 +50,6 @@ This purge system is designed to optimize color changes on your D12 printer.
 ![D12_purge](../../img/Yumi_stl/D12_Purge/D12_Purge.png)
 
 - **Download STL Files**:  
-[D12_purge](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/D12_purge)
 [D12_purge](../../stl/D12_purge/PURGE_D12_v2.stl)
 
 ---
@@ -59,7 +58,7 @@ This purge system is designed to optimize color changes on your D12 printer.
 
 A compact case designed to protect the SmartPione electronic board.
 
-![Smart Pi ONE - Case Middle v1](../../img/Yumi_stl/Yumi_SmartCase/Smart_pi_one_mini_case_middle_v1.png)
+![Smart Pi ONE - Case Middle v1](../../stl/yumi_SmartCase/Smart_pi_one/Smart pi one mini case V1 middle part.stl)
 
 - **Available Files**:  
   [Middle Smart pi one mini case V1 middle part.stl](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/smart_pione/middle%20Smart%20pi%20one%20mini%20case%20V1%20middle%20part.stl)
