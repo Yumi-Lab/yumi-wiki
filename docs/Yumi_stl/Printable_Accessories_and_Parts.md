@@ -19,7 +19,7 @@ Print a custom multi-part case for your SmartPad.
 
   [SMART PAD middle-v1.stl](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/smart_pad/SMART%20PAD%20middle-v1.stl)
 
-  ![SMART PAD bottom-v1](../../img/yumi_stl/Yumi_SmartPad/Smart_Pad_bottom-v1.png)
+  ![SMART PAD bottom-v1](../../img/Yumi_stl/Yumi_SmartPad/Smart_Pad_bottom-v1.png)
 
   [SMART PAD bottom-v1.stl](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/smart_pad/SMART%20PAD%20bottom-v1.stl)
 
@@ -50,8 +50,8 @@ This purge system is designed to optimize color changes on your D12 printer.
 ![D12_purge](../../img/Yumi_stl/D12_Purge/D12_Purge.png)
 
 - **Download STL Files**:  
-  [D12_purge](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/D12_purge)
-
+[D12_purge](https://github.com/Yumi-Lab/yumi-wiki/tree/main/stl/D12_purge)
+[D12_purge](../../stl/D12_purge/PURGE_D12_v2.stl)
 
 ---
 
