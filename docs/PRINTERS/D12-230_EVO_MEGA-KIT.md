@@ -3,10 +3,10 @@
 
 <img src="../../img/Printers/Wanhao/D12-230_evo_mega-kit/d12-230_evo_mega-kit_1.webp" alt="D12-230 Evo Mega-Kit" width="500">
 
-## **Important: Please Read the Procedure Before Starting**
+### **Important: Please Read the Procedure Before Starting**
 You are responsible for any operations performed on your hardware. This guide explains how to install **[KLIPPER](https://www.klipper3d.org/)** on your 3D printer. It has been tested and is fully functional. We disclaim any responsibility for improper handling. Please note that installing the wrong firmware can brick your printer.
 
-## **Required Materials:**
+### **Required Materials:**
 1. **SmartPad** (Preconfigured with **[YumiOS](https://github.com/Yumi-Lab/YumiOS)**). **Note:** Ensure the SmartPad is configured to connect to your Wi-Fi network or is directly connected to the smartpad via an Ethernet cable.
 2. **USB Cable** (Type A male to Type B male). **Recommendation:** Use a shielded USB cable to avoid interference and ensure a stable connection.
 
