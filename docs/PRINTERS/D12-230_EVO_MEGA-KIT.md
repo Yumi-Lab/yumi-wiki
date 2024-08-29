@@ -35,7 +35,7 @@ You are responsible for any operations performed on your hardware. This guide ex
 
 <img src="../../img/Printers/Wanhao/D12-230_evo_mega-kit/d12-230_evo_mega-kit_5.png" alt="3D TOUCH - D12-230 Evo Mega-Kit" width="200">
 
-If your printer is equipped with a 3D Touch sensor, make sure to download and use the corresponding `printer.cfg` file available in the GitHub repository [Yumi-Lab/yumi-config](https://github.com/Yumi-Lab/yumi-config/tree/main/smartpad-wanhao-D12230-Evo-Mega-Kit-MKS3.0).
+If your printer is equipped with a 3D Touch sensor, make sure to download and use the corresponding `printer.cfg` file available in the GitHub repository [Yumi-Lab/yumi-config](https://github.com/Yumi-Lab/yumi-config/tree/main/smartpad-wanhao-D12230-Evo-Mega-Kit-MKS3.0%20-BL).
 
 ### **Step 3: Connect the SmartPad**
 1. Use the USB cable to connect the SmartPad to your printer. Ensure the SmartPad is either connected to the Wi-Fi network or directly connected to the Smartpad via an Ethernet cable.

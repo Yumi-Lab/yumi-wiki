@@ -1,4 +1,4 @@
-# **3D Printable Accessories and Parts**
+# **Yumi - 3D Printable Accessories and Parts**
 
 Welcome to this page where you can download STL files to print various accessories and upgrades for your 3D printer.
 
