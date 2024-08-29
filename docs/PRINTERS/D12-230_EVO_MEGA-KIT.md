@@ -4,7 +4,7 @@
 <img src="../../img/Printers/Wanhao/D12-230_evo_mega-kit/d12-230_evo_mega-kit_1.webp" alt="D12-230 Evo Mega-Kit" width="500">
 
 ### **Important: Please Read the Procedure Before Starting**
-You are responsible for any operations performed on your hardware. This guide explains how to install KLIPPER on your 3D printer. It has been tested and is fully functional. We disclaim any responsibility for improper handling. Please note that installing the wrong firmware can brick your printer.
+You are responsible for any operations performed on your hardware. This guide explains how to install **[KLIPPER](https://www.klipper3d.org/)** on your 3D printer. It has been tested and is fully functional. We disclaim any responsibility for improper handling. Please note that installing the wrong firmware can brick your printer.
 
 ### **Required Materials:**
 1. **SmartPad** (Preconfigured with **[YumiOS](https://github.com/Yumi-Lab/YumiOS)**). **Note:** Ensure the SmartPad is configured to connect to your Wi-Fi network or is directly connected to the smartpad via an Ethernet cable.
@@ -67,16 +67,16 @@ If your printer is equipped with a 3D Touch sensor, make sure to download and us
 Before performing your first print, it’s crucial to properly calibrate your printer for optimal results. Follow these steps:
 
 1. **Extruder Calibration**  
-   - This calibration ensures that the extruder is accurately pushing the correct amount of filament. Follow this [guide on extruder calibration](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Extruder_calibration/).
+   - This calibration ensures that the extruder is accurately pushing the correct amount of filament. Follow [this guide on extruder calibration](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Extruder_calibration/).
 
 2. **Z-Offset Adjustment**  
-   - Proper Z-offset calibration is essential for a good first layer. You can follow this [detailed Z-offset calibration guide](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Z_Offset_calibration/).
+   - Proper Z-offset calibration is essential for a good first layer. You can follow [this detailed Z-offset calibration guide](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Z_Offset_calibration/).
 
 3. **PID Tuning (Proportional-Integral-Derivative)**  
-   - Perform PID tuning for both the extruder and bed to maintain stable temperatures during printing. Use this [guide for PID tuning](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/PID_calibration/).
+   - Perform PID tuning for both the extruder and bed to maintain stable temperatures during printing. Use [this guide for PID tuning](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/PID_calibration/).
 
 4. **ADXL Configuration (if applicable)**  
-   - If your printer is equipped with an ADXL345 sensor for vibration analysis, follow this [vibration measurement and compensation guide](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Adxl_calibration/).
+   - If your printer is equipped with an ADXL345 sensor for vibration analysis, follow [this vibration measurement and compensation guide](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Adxl_calibration/).
 
 
 ### **Recommended Tests Before Your First Print**
