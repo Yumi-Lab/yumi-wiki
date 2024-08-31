@@ -106,6 +106,8 @@ nav:
       - SmartPI/SmartPi_Home_Assistant.md
       - SmartPI/SmartPI_OpenMediaVault.md
       - SmartPI/SmartPi_Plex_Server.md
+  - YUMI 3D PEN:    
+      - 3d_pen/index.md    
   - YUMI PenScreen:    
       - PenScreen/index.md
   - YUMI others Components:
