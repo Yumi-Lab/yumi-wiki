@@ -41,12 +41,13 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 
 ![YUMI 3D PEN - Pack](../../img/3d_pen/YUMI-3D-PEN-3.png)
 
-
 ## 4. Example of First Use
 
 <img src="../../img/3d_pen/YUMI-3D-PEN-4.webp" alt="YUMI - 3D PEN" width="300">
 
 **Step 1: Preparation**
+
+
 
 - **Connect**: Plug the YUMI 3D Pen into a power source via USB-C or use an external battery for total mobility.
 - **Choose the Filament**: Select a PLA or ABS filament and insert it into the pen. The motorized system takes care of the rest.
@@ -65,7 +66,10 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 - **Cool and Finalize**: Once your creation is complete, let it cool on the mat. Use the scissors to adjust any details, and voilà! Your first 3D object is ready.
 
 
-## Specifications
+**Attention:** The extrusion nozzle becomes very hot during use. Never touch the extrusion nozzle while it is in operation. After use, allow the pen to cool down before storing it in the travel bag. It is recommended to empty the pen after use by pressing the "filament reverse" button. For children using the pen, ensure that they are supervised by an adult at all times to avoid accidents and misuse.
+
+
+## 5. Specifications
 
 | **Feature**                  | **Description**                     |
 |------------------------------|-------------------------------------|
@@ -81,6 +85,8 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 | **Temperature Display**      | Real-time display                   |
 | **Extrusion Speed**          | 3 adjustable speeds                 |
 | **Usage**                    | Ambidextrous                        |
+
+
 
 ## Where to Buy the YUMI 3D Pen
 - **[Official Store - Wanhao Europe](https://wanhao-europe.com/)**  
