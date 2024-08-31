@@ -2,14 +2,14 @@
 
 <img src="../../img/3d_pen/YUMI-3D-PEN-1.webp" alt="YUMI - 3D PEN" width="400">
 
-##  Overview
+##  1. Overview
 
-The **[YUMI 3D Pen](https://wanhao-europe.com/en/products/yumi-stylo-3d-3d-pen-enfant-children?variant=49236914995540)** is the ultimate tool for creators of all ages, from curious children to DIY enthusiasts and artists. With its ergonomic design and advanced features, the YUMI 3D Pen provides an easy and enjoyable 3D drawing experience for beginners and experts alike. 
+The [YUMI 3D Pen](https://wanhao-europe.com/en/products/yumi-stylo-3d-3d-pen-enfant-children?variant=49236914995540) is the ultimate tool for creators of all ages, from curious children to DIY enthusiasts and artists. With its ergonomic design and advanced features, the YUMI 3D Pen provides an easy and enjoyable 3D drawing experience for beginners and experts alike. 
 
 Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and tastes.
 
 
-## Key Features
+## 2. Key Features
 
 - **Ergonomic and Lightweight Design (60g)**: The YUMI 3D Pen is designed for comfort, even during extended use. Its lightweight construction makes it accessible for everyone, from small children's hands to adult hands. Suitable for both right-handed and left-handed users.
 
@@ -26,7 +26,7 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 - **Adjustable Extrusion Speed:** Three speeds to accommodate both beginners and experienced users.
 
 
-## YUMI 3D Pen pack includes:
+## 3. YUMI 3D Pen pack includes:
 
 - **YUMI 3D Pen**  
 - **Instruction manual** 
@@ -42,7 +42,7 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 ![YUMI 3D PEN - Pack](../../img/3d_pen/YUMI-3D-PEN-3.png)
 
 
-## Example of First Use
+## 4. Example of First Use
 
 <img src="../../img/3d_pen/YUMI-3D-PEN-4.webp" alt="YUMI - 3D PEN" width="300">
 
@@ -81,4 +81,7 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 | **Temperature Display**      | Real-time display                   |
 | **Extrusion Speed**          | 3 adjustable speeds                 |
 | **Usage**                    | Ambidextrous                        |
-| **Included in the Pack**     | Scissors, Filament, USB Cable, Silicone Mat, Finger Protectors, Activity Book, Nozzle Cleaner, Instruction Manual, Travel Bag |
+
+## Where to Buy the YUMI 3D Pen
+- **[Official Store - Wanhao Europe](https://wanhao-europe.com/)**  
+  Buy directly from the official Wanhao Europe.
