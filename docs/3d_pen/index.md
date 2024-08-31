@@ -47,8 +47,6 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 
 **Step 1: Preparation**
 
-
-
 - **Connect**: Plug the YUMI 3D Pen into a power source via USB-C or use an external battery for total mobility.
 - **Choose the Filament**: Select a PLA or ABS filament and insert it into the pen. The motorized system takes care of the rest.
 
