@@ -9,7 +9,7 @@ In this guide, I'll walk you through the steps to install operating system (serv
 - Micro SD Card ([Minimum of 16GB](https://wanhao-europe.com/collections/yumi-smart-pi-nano-computer-diy/products/carte-micro-sd-16go))
 - USB keyboard and mouse
 - Computer display (HDMI)
-- Micro-USB C power supply (5V - 2A  or Power delivery )
+- Micro-USB C power supply (**5V - 2A  or Power delivery**)
 
 ## 1.4.2 Download
 Go to Official images. Choose the Armbian version you'd like to install (Debian 12 or UBuntu)
