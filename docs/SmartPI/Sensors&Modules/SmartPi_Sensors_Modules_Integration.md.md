@@ -1,4 +1,4 @@
-# 2.0 Sensor & Module Integration
+# 2.0 Sensors & Modules Integration
 
 This section includes various sensors and modules compatible with the Smart Pi One. Each link will take you to a dedicated page with detailed instructions for connecting, configuring, and using the sensor.
 
