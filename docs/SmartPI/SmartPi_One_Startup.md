@@ -1,5 +1,7 @@
 # 1.2 Getting Started with the Smart Pi One
 
+<img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_1.png" alt="Smart Pi One - Yumi" width="380"/>
+
 ## Introduction
 The **Smart Pi One** is a versatile nano-computer designed for various projects, from home automation to retro gaming. This guide will walk you through the initial setup and essential configurations to get you started.
 
@@ -18,6 +20,9 @@ Before starting, ensure you have the following:
 ## 2. Preparing the microSD Card
 1. **Download the Official Linux Server Image** for Smart Pi One from the [Linux Image Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/).
 2. **Flash the Image** onto the microSD card using software like balenaEtcher. Follow the instructions on the [Micro SD Card Flashing Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/).
+
+![alt text](../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_2.png)
+
 3. Insert the microSD card into the Smart Pi One.
 
 ## 3. Connecting the Hardware
@@ -38,6 +43,8 @@ The Smart Pi One has SSH enabled by default. To connect remotely:
    ```
    Replace `user` with your username and `ip_address` with the Smart Pi One’s IP address.
 
+![alt text](../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_3.png)
+
 For detailed SSH connection instructions for Windows, Mac, and Linux, refer to the [SSH Connection Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Connect_Ssh/).
 
 ## 6. System Update
@@ -45,6 +52,8 @@ After booting, it’s crucial to update the system to ensure you have the latest
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
+
+![alt text](../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_4.png)
 
 ## 7. Initial Configuration
 - **Change Password**: For security, change the default password. Follow the instructions in the [Password Change Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Change_Password/).
