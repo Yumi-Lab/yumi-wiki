@@ -156,7 +156,7 @@ sudo nano /path/to/file
 ```
 Replace `/path/to/file` with the actual path of the file you want to edit.
 
----
+
 ## 10. Shutdown
 To safely power off the Smart Pi One:
 ```bash
