@@ -1,10 +1,10 @@
-# 1.4 How to connect via SSH on Windows, Mac, and Linux
+# 1.5 How to connect via SSH on Windows, Mac, and Linux
 
 A detailed guide on how to connect to an Smart Pi One using SSH from a computer running Windows, Linux, or macOS.
 
 <img src="../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_1.png" alt="Smartpad rotation screen 1" width="310">
 
-## 1.4.1 Windows with PuTTY
+## 1.5.1 Windows with PuTTY
 
 **1. Download and Install PuTTY**:
    - Go to the official [PuTTY website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
@@ -24,7 +24,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
 **4. Connect**:
    - A terminal window will open, prompting you to enter your username (default: **`root`**) and password.
 
-## 1.4.2 Windows Terminal (Command Prompt or PowerShell)
+## 1.5.2 Windows Terminal (Command Prompt or PowerShell)
 
 **1. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like **"Advanced IP Scanner"**.
@@ -41,7 +41,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
    - Enter the password when prompted.
 
 
-## 1.4.3 Linux (Terminal)
+## 1.5.3 Linux (Terminal)
 
 **1. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like **"Advanced IP Scanner"**.
@@ -57,7 +57,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
    - Replace **"your_smartpione_ip_address"** with the actual IP address of your Smart Pi One.
    - Enter the password when prompted.
 
-## 1.4.4 macOS (Terminal)
+## 1.5.4 macOS (Terminal)
 
 **1. Obtain the IP Address of the Smart Pi One**:
    - Connect your Smart Pi One to the network and find its IP address using your router or a network scanning application like "Advanced IP Scanner".

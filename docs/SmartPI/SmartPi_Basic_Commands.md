@@ -1,4 +1,4 @@
-# 1.6 Basic Commands for Using the Smart Pi One Board
+# 1.7 Basic Commands for Using the Smart Pi One Board
 
 ## Introduction
 The **Smart Pi One** board runs on Debian with Armbian, a distribution optimized for Single Board Computers (SBCs). This guide provides essential commands to manage the board, focusing on GPIO control, network configuration, and basic system management.
@@ -149,7 +149,7 @@ sudo modprobe rtc-ds1307
 sudo hwclock -s
 ```
 
-## 9.Modify a File
+## 9. Modify a File
 To edit a configuration file (e.g., using `nano`):
 ```bash
 sudo nano /path/to/file

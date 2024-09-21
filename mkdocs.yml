@@ -94,6 +94,7 @@ nav:
   - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
+      - SmartPI/SmartPi_One_Startup.md
       - SmartPI/SmartPi_Linux.md
       - SmartPI/SmartPi_Linux_flash_sd.md
       - SmartPI/SmartPi_Connect_Ssh.md

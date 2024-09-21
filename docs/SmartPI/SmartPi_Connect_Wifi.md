@@ -1,4 +1,4 @@
-# 1.8 How to connect Wi-Fi
+# 1.9 How to connect Wi-Fi
 
 ## Prerequisites:
 - **Smart Pi One**: Ensure your Smart Pi One is powered on and has a Wi-Fi module or [dongle](https://wanhao-europe.com/collections/yumi-accessoires-diy/products/cle-wifi-compaitble-windows-linux-2-4g) connected.
