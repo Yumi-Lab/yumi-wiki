@@ -19,14 +19,14 @@ Before starting, ensure you have the following:
 
 ## 2. Modules Complémentaires
 While not required for the initial setup, the following accessories can enhance your Smart Pi One experience:
-- **[Smart LCD Touch 4.3inch](https://wiki.yumi-lab.com/Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications/)** (for a touch interface)
-- **[Smart Hub](https://wiki.yumi-lab.com/Yumi_Components/SmartHub_specifications/)** (for enhanced connectivity)
-- **[Smart Shield](https://wiki.yumi-lab.com/Yumi_Components/SmartShield_specifications/)** (for additional functionalities)
+- [Smart LCD Touch 4.3inch](https://wiki.yumi-lab.com/Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications/) (for a touch interface)
+- [Smart Hub](https://wiki.yumi-lab.com/Yumi_Components/SmartHub_specifications/) (for enhanced connectivity)
+- [Smart Shield](https://wiki.yumi-lab.com/Yumi_Components/SmartShield_specifications/) (for additional functionalities)
 
-## 3. Boîtiers Imprimables
-Pour protéger et améliorer votre Smart Pi One, vous pouvez imprimer des boîtiers. Voici quelques ressources où vous pouvez trouver des modèles 3D :
-- [Cults3D - Boîtier Smart Pi](https://cults3d.com/fr/recherche?q=boitier+smart+pi)
-- [YUMI STL - Accessoires et pièces imprimables en 3D](https://wiki.yumi-lab.com/Yumi_stl/Printable_Accessories_and_Parts/)
+## 3. Printable Cases
+To protect and enhance your Smart Pi One, you can print cases. Here are some resources where you can find 3D models:
+- [Cults3D - Smart Pi Case](https://cults3d.com/fr/recherche?q=boitier+smart+pi)
+- [YUMI STL - 3D Printable Accessories and Parts](https://wiki.yumi-lab.com/Yumi_stl/Printable_Accessories_and_Parts/)
 
 ## 4. Preparing the microSD Card
 1. **Download the Official Linux Server Image** for Smart Pi One from the [Linux Image Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/).
