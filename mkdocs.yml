@@ -102,6 +102,7 @@ nav:
       - SmartPi/SmartPi_Basic_Commands.md
       - SmartPI/SmartPi_ConfigureTimeZone.md
       - SmartPI/SmartPi_Connect_Wifi.md
+      - SmartPI/Sensor&Module/SmartPi_Sensor_Module_Integration.md
     - LINUX LAB PROJECT:  
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md

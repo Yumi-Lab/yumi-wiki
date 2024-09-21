@@ -137,7 +137,45 @@ sudo nano /etc/network/interfaces
 sudo systemctl restart networking
 ```
 
-## 8. Managing Real-Time Clock (RTC)
+## 8. Obtain the IP Address
+To find the IP address of your Smart Pi One board, you can use the following commands:
+
+- **Display the IP address of network interfaces:**
+```bash
+ip a
+```
+
+- **Display only the IP address of the main interface (e.g., `eth0` or `wlan0`):**
+```bash
+hostname -I
+```
+
+## 9. Display and Modify the Hostname
+To view and change the name of your Smart Pi One board:
+
+- **Display the current hostname:**
+```bash
+hostname
+```
+
+- **Edit the hostname file:**
+```bash
+sudo nano /etc/hostname
+```
+Replace the content with the desired new name, then save and exit the editor.
+
+- **Edit the hosts file:**
+```bash
+sudo nano /etc/hosts
+```
+Update the line containing the old hostname with the new name.
+
+- **Restart the system to apply the changes:**
+```bash
+sudo reboot
+```
+
+## 10. Managing Real-Time Clock (RTC)
 To enable and configure an external RTC module:
 
 - Load the RTC module:
@@ -150,7 +188,7 @@ sudo modprobe rtc-ds1307
 sudo hwclock -s
 ```
 
-## 9. Modify a File
+## 11. Modify a File
 To edit a configuration file (e.g., using `nano`):
 ```bash
 sudo nano /path/to/file
@@ -158,7 +196,7 @@ sudo nano /path/to/file
 Replace `/path/to/file` with the actual path of the file you want to edit.
 
 
-## 10. Shutdown and Reboot
+## 12. Shutdown and Reboot
 To safely power off the Smart Pi One:
 ```bash
 sudo shutdown now
