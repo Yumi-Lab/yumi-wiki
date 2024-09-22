@@ -123,6 +123,7 @@ except Exception as e:
    ```bash
    sudo python3 ir_event.py
    ```
+    <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_6.png"  alt="Top view">
 
 ## Using a C Program
 
@@ -171,5 +172,6 @@ int main() {
    ```bash
    ./ir_test
    ```
+    <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_7.png"  alt="Top view">
 
 You now have all the information needed to activate, test, and use the infrared sensor on the Smart Pi One board. Whether using Python or C, you can easily interact with your remote control.
