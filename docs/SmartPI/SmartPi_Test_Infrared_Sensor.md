@@ -1,4 +1,4 @@
-# Testing and Using the Infrared Sensor on Smart Pi One
+# 1.10 Testing and Using the Infrared Sensor on Smart Pi One
 
 ## Introduction
 This guide explains how to activate and test the infrared sensor on the Smart Pi One board running Armbian. We will also see how to use this sensor with Python and a more engaging C program.
