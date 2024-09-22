@@ -34,6 +34,7 @@ This guide explains how to activate and test the infrared sensor on the Smart Pi
 Start by installing `ir-keytable`, a tool that allows you to manage the infrared sensor:
 
 ```bash
+sudo apt-get update
 sudo apt-get install ir-keytable
 ```
 
@@ -72,7 +73,7 @@ To test the infrared sensor using a TV remote or a LED strip remote, follow thes
 Before starting, ensure you have installed the `python-evdev` module, which allows you to read events from input devices:
 
 ```bash
-sudo apt-get apt update
+sudo apt-get update
 sudo apt-get install python3-evdev python3-dev
 ```
 
