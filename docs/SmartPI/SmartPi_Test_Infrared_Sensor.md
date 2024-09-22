@@ -12,7 +12,7 @@ This guide explains how to activate and test the infrared sensor on the Smart Pi
    ```bash
    sudo armbian-config
    ```
-   
+
 2. Choose **`System`**:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_2.png" width="750" alt="Top view">
@@ -21,11 +21,11 @@ This guide explains how to activate and test the infrared sensor on the Smart Pi
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_3.png" width="750" alt="Top view">
 
-4. Then **`cir`**,**`save`** and **`back`**:
+4. Then **`cir`**,**`Save`** and **`Back`**:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_4.png" width="750" alt="Top view">
 
-5. To finish: **`reboot`** to apply the changes:
+5. To finish: **`Reboot`** to apply the changes:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_5.png" width="750" alt="Top view">
 
@@ -46,12 +46,25 @@ echo "+rc-5 +nec +rc-6 +jvc +sony +rc-5-sz +sanyo +sharp +mce_kbd +xmp" | sudo t
 
 ## Testing the Infrared Sensor
 
-To test the infrared sensor and verify that it is working correctly, run the following command:
+To test the infrared sensor using a TV remote or a LED strip remote, follow these steps:
 
-```bash
-ir-keytable -t
-```
-This command will display events when a button on the remote control is pressed. Press `CTRL-C` to stop the test.
+1. Ensure that the infrared sensor is properly connected to the Smart Pi One.
+
+2. Open a terminal and run the following command:
+
+   ```bash
+   ir-keytable -t
+   ```
+
+3. Point the infrared remote (like your TV or LED strip remote) at the sensor and press a button.
+
+4. Each time a button is pressed, events will appear in the terminal, indicating that the sensor is detecting the infrared signals.
+
+5. You will see different codes for each button press, confirming that the sensor is working properly.
+
+6. To stop the test, press `CTRL-C`.
+
+
 
 ## Using Python
 
@@ -89,9 +102,16 @@ except Exception as e:
     print(f"An error occurred: {e}")
 ```
 
-### Running the Script
-1. Save the script as `ir_event.py`.
-2. Execute it with the necessary permissions (you may need to use `sudo`):
+### Creating and Running the Script
+
+1. Open a text editor, such as `nano`, and create the Python file:
+   ```bash
+   nano ir_event.py
+   ```
+
+2. Paste the script into the file and save it.
+
+3. Execute the script with the necessary permissions (you may need to use `sudo`):
    ```bash
    sudo python3 ir_event.py
    ```
@@ -127,15 +147,22 @@ int main() {
 ```
 
 ### Compilation and Execution
-1. Save the program as `ir_test.c`.
-2. Compile it with:
+
+1. Open a text editor, such as `nano`, to create the C file:
+   ```bash
+   nano ir_test.c
+   ```
+
+2. Paste the C program into the file and save it.
+
+3. Compile the program with:
    ```bash
    gcc -o ir_test ir_test.c
    ```
-3. Run the program:
+
+4. Run the program:
    ```bash
    ./ir_test
    ```
 
 You now have all the information needed to activate, test, and use the infrared sensor on the Smart Pi One board. Whether using Python or C, you can easily interact with your remote control.
-
