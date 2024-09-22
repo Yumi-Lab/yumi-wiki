@@ -72,7 +72,8 @@ To test the infrared sensor using a TV remote or a LED strip remote, follow thes
 Before starting, ensure you have installed the `python-evdev` module, which allows you to read events from input devices:
 
 ```bash
-sudo apt-get install python3-evdev
+sudo apt-get apt update
+sudo apt-get install python3-evdev python3-dev
 ```
 
 ### Example Python Script
@@ -80,20 +81,27 @@ sudo apt-get install python3-evdev
 Here’s a complete script to read infrared events from the sensor:
 
 ```python
+import subprocess
 import evdev
-from evdev import InputDevice, categorize, ecodes
+from evdev import InputDevice
+import time
+
+# Set the IR protocols
+subprocess.run("echo '+rc-5 +nec +rc-6 +jvc +sony +rc-5-sz +sanyo +sharp +mce_kbd +xmp' | sudo tee /sys/class/rc/rc0/protocols", shell=True)
 
 # Replace '/dev/input/eventX' with the correct path for your infrared sensor
-device = InputDevice('/dev/input/eventX')
+device_path = '/dev/input/eventX'  # Update this line
+
+# Attempt to access the device
+device = InputDevice(device_path)
 
 print("Waiting for infrared events. Press CTRL-C to quit.")
 
 try:
-    for event in device.read():
-        if event.type == ecodes.EV_KEY:  # Check if the event is a key press
-            key_event = categorize(event)
-            if key_event.keystate == key_event.key_up:  # Only take key releases
-                print(f"Key released: {key_event.keycode}")
+    while True:
+        event = device.read_one()  # Read a single event
+        if event:
+            print(event)  # Print the raw event data
 
 except KeyboardInterrupt:
     print("\nScript stopped.")
