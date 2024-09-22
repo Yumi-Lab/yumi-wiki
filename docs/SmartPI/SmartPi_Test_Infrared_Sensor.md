@@ -13,26 +13,26 @@ This guide explains how to activate and test the infrared sensor on the Smart Pi
    sudo armbian-config
    ```
 
-2. Choose `System`:
+2. Choose **`System`**:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_2.png" width="750" alt="Top view">
 
-3. Select `Hardware`:
+3. Select **`Hardware`**:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_3.png" width="750" alt="Top view">
 
-4. Then `cir`,`save` and `back`:
+4. Then **`cir`**,**`save`** and **`back`**:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_4.png" width="750" alt="Top view">
 
-5. To finish: "reboot" to apply the changes:
+5. To finish: **`reboot`** to apply the changes:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_5.png" width="750" alt="Top view">
 
 
 
 ### Step 2: Install ir-keytable
-Start by installing `ir-keytable`, a tool that allows you to manage the infrared sensor:
+Start by installing **`ir-keytable`**, a tool that allows you to manage the infrared sensor:
 
 ```bash
 sudo apt-get install ir-keytable
@@ -57,10 +57,10 @@ This command will display events when a button on the remote control is pressed.
 ## Using Python
 
 ### Prerequisites
-Before starting, ensure you have installed the `python-evdev` module, which allows you to read events from input devices:
+Before starting, ensure you have installed the **`python-evdev`** module, which allows you to read events from input devices:
 
 ```bash
-sudo apt-get install python3-evdev
+sudo apt-get install python3-evdev python3-dev
 ```
 
 ### Example Python Script
@@ -91,8 +91,8 @@ except Exception as e:
 ```
 
 ### Running the Script
-1. Save the script as `ir_event.py`.
-2. Execute it with the necessary permissions (you may need to use `sudo`):
+1. Save the script as **`ir_event.py`**.
+2. Execute it with the necessary permissions (you may need to use **`sudo`**):
    ```bash
    sudo python3 ir_event.py
    ```
@@ -128,7 +128,7 @@ int main() {
 ```
 
 ### Compilation and Execution
-1. Save the program as `ir_test.c`.
+1. Save the program as **`ir_test.c`**.
 2. Compile it with:
    ```bash
    gcc -o ir_test ir_test.c
