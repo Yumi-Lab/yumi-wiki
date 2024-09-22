@@ -8,11 +8,11 @@ This guide explains how to activate and test the infrared sensor on the Smart Pi
 ## Activating the Infrared Sensor
 
 ### Step 1: Activate in Armbian-Config
-1. Open Armbian-Config:
+1. Open `Armbian-Config`  via an SSH interface or a terminal window:
    ```bash
    sudo armbian-config
    ```
-
+   
 2. Choose **`System`**:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_2.png" width="750" alt="Top view">
@@ -28,7 +28,6 @@ This guide explains how to activate and test the infrared sensor on the Smart Pi
 5. To finish: **`reboot`** to apply the changes:
 
     <img src="../../img/SmartPi/SmartPi_Test_Infrared_Sensor/SmartPi_Test_Infrared_Sensor_5.png" width="750" alt="Top view">
-
 
 
 ### Step 2: Install ir-keytable
