@@ -90,7 +90,7 @@ import time
 subprocess.run("echo '+rc-5 +nec +rc-6 +jvc +sony +rc-5-sz +sanyo +sharp +mce_kbd +xmp' | sudo tee /sys/class/rc/rc0/protocols", shell=True)
 
 # Replace '/dev/input/eventX' with the correct path for your infrared sensor
-device_path = '/dev/input/eventX'  # Update this line
+device_path = '/dev/input/event1'  # Update this line
 
 # Attempt to access the device
 device = InputDevice(device_path)
@@ -139,7 +139,6 @@ Here’s a more engaging example in C that will listen for infrared events and p
 int main() {
     char command[100];
 
-    // Replace '/dev/input/eventX' with the correct path for your infrared sensor
     snprintf(command, sizeof(command), "ir-keytable -t");
 
     printf("Listening for infrared remote control events. Press CTRL-C to exit.\n");
