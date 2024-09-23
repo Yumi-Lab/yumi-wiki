@@ -10,12 +10,10 @@ Print a custom multi-part case for your SmartPad.
 
 - **Download STL Files**: 
 
-  #![SMART PAD top-v1]
-  
-  (/img/Yumi_stl/Yumi_SmartPad/Smart_Pad_Top-v1.png)
+  ![SMART PAD top-v1](/img/Yumi_stl/Yumi_SmartPad/Smart_Pad_Top-v1.png)
 
-    - [SMART PAD top-v1.stl](https://github.com/Yumi-Lab/yumi-wiki/blob/7abe2b53a4ef6940de3482d6101dd0499a9ff7d0/stl/yumi_SmartPad/SMART%20PAD%20top-v1.stl)
-    - [SMART PAD top-v2.stl](https://github.com/Yumi-Lab/yumi-wiki/blob/fae530a9a8db1fab1b992e8b7b6fcdfaf76d7d22/stl/yumi_SmartPad/SMART%20PAD%20top-v2.stl) 
+    [SMART PAD top-v1.stl](https://github.com/Yumi-Lab/yumi-wiki/blob/7abe2b53a4ef6940de3482d6101dd0499a9ff7d0/stl/yumi_SmartPad/SMART%20PAD%20top-v1.stl)
+    [SMART PAD top-v2.stl](https://github.com/Yumi-Lab/yumi-wiki/blob/fae530a9a8db1fab1b992e8b7b6fcdfaf76d7d22/stl/yumi_SmartPad/SMART%20PAD%20top-v2.stl) 
 
   ![SMART PAD middle-v1](/img/Yumi_stl/Yumi_SmartPad/Smart_Pad_middle-v1.png)
 
