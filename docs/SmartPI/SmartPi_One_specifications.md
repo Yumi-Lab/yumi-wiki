@@ -40,272 +40,59 @@
 
 # 1.4 Diagram
 
-### <b>GPIO Pin Spec</b>
-<dl><dd><dl><dd><table class="wikitable" border="1">
+### GPIO Pin Spec
 
-<tr>
-<td>Pin# </td>
-<td> Name </td>
-<td> Linux gpio </td>
-<td>Pin#  </td>
-<td> Name </td>
-<td> Linux gpio
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>1    </td>
-<td> SYS_3.3V   </td>
-<td>     </td>
-<td>2     </td>
-<td> VDD_5V </td>
-<td>
-</td></tr>
-<tr>
-<td>3    </td>
-<td> I2C0_SDA/GPIOA12   </td>
-<td>     </td>
-<td>4     </td>
-<td> VDD_5V </td>
-<td>
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>5    </td>
-<td> I2C0_SCL/GPIOA11  </td>
-<td>     </td>
-<td>6     </td>
-<td> GND    </td>
-<td>
-</td></tr>
-<tr>
-<td>7    </td>
-<td> GPIOG11    </td>
-<td> 203 </td>
-<td>8     </td>
-<td> UART1_TX/GPIOG6 </td>
-<td> 198
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>9    </td>
-<td> GND        </td>
-<td>     </td>
-<td>10    </td>
-<td> UART1_RX/GPIOG7 </td>
-<td> 199
-</td></tr>
-<tr>
-<td>11   </td>
-<td> UART2_TX/GPIOA0  </td>
-<td> 0      </td>
-<td>12    </td>
-<td> GPIOA6 </td>
-<td> 6
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>13   </td>
-<td> UART2_RTS/GPIOA2 </td>
-<td> 2      </td>
-<td>14    </td>
-<td> GND </td>
-<td>
-</td></tr>
-<tr>
-<td>15   </td>
-<td> UART2_CTS/GPIOA3 </td>
-<td> 3      </td>
-<td>16    </td>
-<td> UART1_RTS/GPIOG8 </td>
-<td> 200
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>17   </td>
-<td> SYS_3.3V         </td>
-<td>        </td>
-<td>18    </td>
-<td> UART1_CTS/GPIOG9 </td>
-<td> 201
-</td></tr>
-<tr>
-<td>19   </td>
-<td> SPI0_MOSI/GPIOC0 </td>
-<td> 64     </td>
-<td>20    </td>
-<td> GND              </td>
-<td>
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>21   </td>
-<td> SPI0_MISO/GPIOC1 </td>
-<td> 65     </td>
-<td>22    </td>
-<td> UART2_RX/GPIOA1  </td>
-<td> 1
-</td></tr>
-<tr>
-<td>23   </td>
-<td> SPI0_CLK/GPIOC2 </td>
-<td> 66     </td>
-<td>24    </td>
-<td> SPI0_CS/GPIOC3   </td>
-<td> 67
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>25   </td>
-<td> GND              </td>
-<td>        </td>
-<td>26    </td>
-<td> SPDIF-OUT/GPIOA17 </td>
-<td> 17
-</td></tr>
-<tr>
-<td>27   </td>
-<td> I2C1_SDA/GPIOA19/PCM0_CLK/I2S0_BCK </td>
-<td> 19     </td>
-<td>28    </td>
-<td> I2C1_SCL/GPIOA18/PCM0_SYNC/I2S0_LRCK </td>
-<td> 18
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>29   </td>
-<td> GPIOA20/PCM0_DOUT/I2S0_SDOUT          </td>
-<td> 20     </td>
-<td>30     </td>
-<td> GND             </td>
-<td>
-</td></tr>
-<tr>
-<td>31   </td>
-<td> GPIOA21/PCM0_DIN/I2S0_SDIN         </td>
-<td> 21     </td>
-<td>32     </td>
-<td> GPIOA7          </td>
-<td> 7
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>33   </td>
-<td> GPIOA8           </td>
-<td> 8      </td>
-<td>34     </td>
-<td> GND             </td>
-<td>
-</td></tr>
-<tr>
-<td>35   </td>
-<td> UART3_CTS/SPI1_MISO/GPIOA16    </td>
-<td> 16   </td>
-<td>36     </td>
-<td> UART3_TX/SPI1_CS/GPIOA13    </td>
-<td> 13
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>37   </td>
-<td> GPIOA9           </td>
-<td> 9      </td>
-<td>38     </td>
-<td> UART3_RTS/SPI1_MOSI/GPIOA15 </td>
-<td> 15
-</td></tr>
-<tr>
-<td>39   </td>
-<td> GND              </td>
-<td>        </td>
-<td>40     </td>
-<td> UART3_RX/SPI1_CLK/GPIOA14   </td>
-<td> 14
-</td></tr></table></dd></dl></dd></dl>
+| Pin# | Name | Linux gpio | Pin# | Name | Linux gpio |
+|------|------|------------|------|------|------------|
+| 1    | SYS_3.3V         |        | 2    | VDD_5V            |        |
+| 3    | I2C0_SDA/GPIOA12 |        | 4    | VDD_5V            |        |
+| 5    | I2C0_SCL/GPIOA11 |        | 6    | GND               |        |
+| 7    | GPIOG11          | 203    | 8    | UART1_TX/GPIOG6   | 198    |
+| 9    | GND              |        | 10   | UART1_RX/GPIOG7   | 199    |
+| 11   | UART2_TX/GPIOA0  | 0      | 12   | GPIOA6            | 6      |
+| 13   | UART2_RTS/GPIOA2 | 2      | 14   | GND               |        |
+| 15   | UART2_CTS/GPIOA3 | 3      | 16   | UART1_RTS/GPIOG8  | 200    |
+| 17   | SYS_3.3V         |        | 18   | UART1_CTS/GPIOG9  | 201    |
+| 19   | SPI0_MOSI/GPIOC0 | 64     | 20   | GND               |        |
+| 21   | SPI0_MISO/GPIOC1 | 65     | 22   | UART2_RX/GPIOA1   | 1      |
+| 23   | SPI0_CLK/GPIOC2  | 66     | 24   | SPI0_CS/GPIOC3    | 67     |
+| 25   | GND              |        | 26   | SPDIF-OUT/GPIOA17 | 17     |
+| 27   | I2C1_SDA/GPIOA19/PCM0_CLK/I2S0_BCK | 19 | 28   | I2C1_SCL/GPIOA18/PCM0_SYNC/I2S0_LRCK | 18 |
+| 29   | GPIOA20/PCM0_DOUT/I2S0_SDOUT       | 20 | 30   | GND                                  |        |
+| 31   | GPIOA21/PCM0_DIN/I2S0_SDIN         | 21 | 32   | GPIOA7                               | 7      |
+| 33   | GPIOA8                              | 8  | 34   | GND                                  |        |
+| 35   | UART3_CTS/SPI1_MISO/GPIOA16         | 16 | 36   | UART3_TX/SPI1_CS/GPIOA13             | 13     |
+| 37   | GPIOA9                              | 9  | 38   | UART3_RTS/SPI1_MOSI/GPIOA15          | 15     |
+| 39   | GND                                 |    | 40   | UART3_RX/SPI1_CLK/GPIOA14            | 14     |
 
-### <b>Debug Port（UART0）</b>
 
-<dl><dd><dl><dd><table class="wikitable" border="1">
+### Debug Port（UART0）
 
-<tr>
-<td>Pin# </td>
-<td> Name
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>1    </td>
-<td> GND
-</td></tr>
-<tr>
-<td>2    </td>
-<td> VDD_5V
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>3    </td>
-<td> UART_TXD0/GPIOA4
-</td></tr>
-<tr>
-<td>4    </td>
-<td> UART_RXD0/GPIOA5/PWM0
-</td></tr></table></dd></dl></dd></dl>
+| Pin# | Name                     |
+|------|--------------------------|
+| 1    | GND                      |
+| 2    | VDD_5V                   |
+| 3    | UART_TXD0/GPIOA4         |
+| 4    | UART_RXD0/GPIOA5/PWM0    |
+
 
 ### <b>DVP Camera IF Pin Spec</b>
 
-<dl><dd><dl><dd><table class="wikitable" border="1">
+| Pin#              | Name       | Description                                   |
+|-------------------|------------|-----------------------------------------------|
+| 1, 2              | SYS_3.3V   | 3.3V power output, to camera modules          |
+| 7,9,13,15,24      | GND        | Ground, 0V                                    |
+| 3                 | I2C2_SCL   | I2C Clock Signal                              |
+| 4                 | I2C2_SDA   | I2C Data Signal                               |
+| 5                 | GPIOE15    | Regular GPIO, control signals output to camera modules |
+| 6                 | GPIOE14    | Regular GPIO, control signals output to camera modules |
+| 8                 | MCLK       | Clock signals output to camera modules        |
+| 10                | NC         | Not Connected                                 |
+| 11                | VSYNC      | Vertical synchronization to CPU from camera modules |
+| 12                | HREF/HSYNC | HREF/HSYNC signal to CPU from camera modules  |
+| 14                | PCLK       | PCLK signal to CPU from camera modules        |
+| 16-23             | Data bit7-0| Data signals                                  |
 
-<tr>
-<td>Pin# </td>
-<td> Name      </td>
-<td> Description
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>1, 2 </td>
-<td> SYS_3.3V  </td>
-<td> 3.3V power output, to camera modules
-</td></tr>
-<tr>
-<td>7,9,13,15,24 </td>
-<td> GND </td>
-<td> Gound, 0V
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>3    </td>
-<td> I2C2_SCL </td>
-<td> I2C Clock Signal
-</td></tr>
-<tr>
-<td>4    </td>
-<td> I2C2_SDA  </td>
-<td> I2C Data Signal
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>5    </td>
-<td> GPIOE15  </td>
-<td> Regular GPIO, control signals output to camera modules
-</td></tr>
-<tr>
-<td>6    </td>
-<td> GPIOE14 </td>
-<td> Regular GPIO, control signals output to camera modules
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>8    </td>
-<td> MCLK      </td>
-<td> Clock signals output to camera modules
-</td></tr>
-<tr>
-<td>10   </td>
-<td> NC </td>
-<td> Not Connected
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>11   </td>
-<td> VSYNC </td>
-<td> vertical synchronization to CPU　from camera modules
-</td></tr>
-<tr>
-<td>12   </td>
-<td> HREF/HSYNC </td>
-<td> HREF/HSYNC signal to CPU from camera modules
-</td></tr>
-<tr style="background-color:#F6F8FA">
-<td>14   </td>
-<td> PCLK      </td>
-<td> PCLK signal to CPU from camera modules
-</td></tr>
-<tr>
-<td>16-23 </td>
-<td> Data bit7-0 </td>
-<td> data signals
-</td></tr></table></dd></dl></dd></dl>
 
 
 # 1.5 Board Dimension 
