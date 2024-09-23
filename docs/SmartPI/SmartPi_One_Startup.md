@@ -32,7 +32,7 @@ To protect and enhance your Smart Pi One, you can print cases. Here are some res
 1. **Download the Official Linux Server Image** for Smart Pi One from the [Linux Image Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/).
 2. **Flash the Image** onto the microSD card using software like balenaEtcher. Follow the instructions on the [Micro SD Card Flashing Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/).
 
-![smartpi_one_startup_2](../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_2.png)
+![smartpi_one_startup_2](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_2.png)
 
 3. Insert the microSD card into the Smart Pi One.
 
@@ -54,7 +54,7 @@ The Smart Pi One has SSH enabled by default. To connect remotely:
    ```
    Replace `user` with your username and `ip_address` with the Smart Pi One’s IP address.
 
-![smartpi_one_startup_3](../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_3.png)
+![smartpi_one_startup_3](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_3.png)
 
 For detailed SSH connection instructions for Windows, Mac, and Linux, refer to the [SSH Connection Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Connect_Ssh/).
 
@@ -64,7 +64,7 @@ After booting, it’s crucial to update the system to ensure you have the latest
 sudo apt update && sudo apt upgrade -y
 ```
 
-![smartpi_one_startup_4](../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_4.png)
+![smartpi_one_startup_4](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_4.png)
 
 ## 9. Initial Configuration
 - **Change Password**: For security, change the default password. Follow the instructions in the [Password Change Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Change_Password/).

@@ -39,7 +39,7 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 - **Nozzle cleaner**   
 - **YUMI black and yellow travel bag**  
 
-![YUMI 3D PEN - Pack](../../img/3d_pen/YUMI-3D-PEN-3.png)
+![YUMI 3D PEN - Pack](/img/3d_pen/YUMI-3D-PEN-3.png)
 
 ## 4. Example of First Use
 
