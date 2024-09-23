@@ -61,7 +61,7 @@ If your printer is equipped with a 3D Touch sensor, make sure to download and us
 2. Add the Wanhao D12 300 profile to the predefined printer profiles in OrcaSlicer.
 3. Next, import the D12-230 profile available for download at the following link: [D12-230 Profile](https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip). There are two versions: one with 3D Touch and one without.
 
-![Profil BL - NOT BL](../../img/Printers/Wanhao/D12-230_evo_mega-kit/d12-230_evo_mega-kit_8.png)
+![Profil BL - NOT BL](../img/Printers/Wanhao/D12-230_evo_mega-kit/d12-230_evo_mega-kit_8.png)
 
 4. The profile is optimized for general use, but remember to adjust it to suit your specific 3D models.
 

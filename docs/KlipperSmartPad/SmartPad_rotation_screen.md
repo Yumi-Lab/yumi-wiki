@@ -2,7 +2,7 @@
 
 This tutorial will guide you through the steps to rotate the screen of your Smartpad Yumi when it is connected to an external display via HDMI using the `rotate_screen.sh` script from the GitHub repository.
 
-![Smartpad rotation screen](../../img/KlipperSmartPad/Rotation_screen/smartpad_rotation_screen.png)
+![Smartpad rotation screen](../img/KlipperSmartPad/Rotation_screen/smartpad_rotation_screen.png)
 
 ## Prerequisites
 

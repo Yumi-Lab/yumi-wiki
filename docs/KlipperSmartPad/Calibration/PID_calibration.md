@@ -24,7 +24,7 @@ Here are the primary purposes and benefits of this calibration.
 
 1. Open the Printer’s Terminal and access your printer's terminal via your control interface (such as Mainsail: **http://yumios.local** or **http://Your_IP_Address**).
 
-   ![smartpad_pid_1](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_1.png)
+   ![smartpad_pid_1](../img/KlipperSmartPad/PID_calibration/smartpad_pid_1.png)
    
 2. In the console, input the following command for the calibration:
 
@@ -33,11 +33,11 @@ Here are the primary purposes and benefits of this calibration.
      ```
      Replace **`200`** with the desired target temperature.
 
-     ![smartpad_pid_2](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_2.png)
+     ![smartpad_pid_2](../img/KlipperSmartPad/PID_calibration/smartpad_pid_2.png)
 
 3. The calibration process may take several minutes. Klipper will heat and cool the extruder or bed multiple times to determine the optimal PID parameters.
 
-   ![smartpad_pid_3](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_3.png)
+   ![smartpad_pid_3](../img/KlipperSmartPad/PID_calibration/smartpad_pid_3.png)
 
 4. Once the calibration is complete, Klipper will display the new PID parameters (P, I, D). Save them using the command:
 
@@ -45,7 +45,7 @@ Here are the primary purposes and benefits of this calibration.
      SAVE_CONFIG
      ```
 
-     ![smartpad_pid_4](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_4.png)
+     ![smartpad_pid_4](../img/KlipperSmartPad/PID_calibration/smartpad_pid_4.png)
 
 # 2.3.2 Calibrating PID settings for the heated bed
 
@@ -56,11 +56,11 @@ Here are the primary purposes and benefits of this calibration.
      ```
      Replace **`60`** with the desired target temperature.
 
-     ![smartpad_pid_5](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_5.png)
+     ![smartpad_pid_5](../img/KlipperSmartPad/PID_calibration/smartpad_pid_5.png)
 
 2. The calibration process may take several minutes. Klipper will heat and cool the extruder or bed multiple times to determine the optimal PID parameters.
 
-   ![smartpad_pid_6](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_6.png)
+   ![smartpad_pid_6](../img/KlipperSmartPad/PID_calibration/smartpad_pid_6.png)
 
 3. Once the calibration is complete, Klipper will display the new PID parameters (P, I, D). Save them using the command:
 
@@ -68,5 +68,5 @@ Here are the primary purposes and benefits of this calibration.
      SAVE_CONFIG
      ```
 
-    ![smartpad_pid_7](../../../img/KlipperSmartPad/PID_calibration/smartpad_pid_4.png)
+    ![smartpad_pid_7](../img/KlipperSmartPad/PID_calibration/smartpad_pid_4.png)
 

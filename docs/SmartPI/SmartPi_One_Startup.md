@@ -32,7 +32,7 @@ To protect and enhance your Smart Pi One, you can print cases. Here are some res
 1. **Download the Official Linux Server Image** for Smart Pi One from the [Linux Image Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/).
 2. **Flash the Image** onto the microSD card using software like balenaEtcher. Follow the instructions on the [Micro SD Card Flashing Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/).
 
-![smartpi_one_startup_2](../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_2.png)
+![smartpi_one_startup_2](../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_2.png)
 
 3. Insert the microSD card into the Smart Pi One.
 
