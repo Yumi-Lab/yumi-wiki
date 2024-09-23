@@ -99,7 +99,7 @@ nav:
       - SmartPI/SmartPi_Linux_flash_sd.md
       - SmartPI/SmartPi_Connect_Ssh.md
       - SmartPI/SmartPi_Change_Password.md
-      - SmartPi/SmartPi_Basic_Commands.md
+      - SmartPI/SmartPi_Basic_Commands.md
       - SmartPI/SmartPi_ConfigureTimeZone.md
       - SmartPI/SmartPi_Connect_Wifi.md
       - SmartPI/SmartPi_Test_Infrared_Sensor.md
