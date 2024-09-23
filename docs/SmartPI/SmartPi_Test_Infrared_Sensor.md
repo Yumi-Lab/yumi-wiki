@@ -52,7 +52,6 @@ To test the infrared sensor using a TV remote or a LED strip remote, follow thes
 1. Ensure that the infrared sensor is properly connected to the Smart Pi One.
 
 2. Open a terminal and run the following command:
-
    ```bash
    ir-keytable -t
    ```
