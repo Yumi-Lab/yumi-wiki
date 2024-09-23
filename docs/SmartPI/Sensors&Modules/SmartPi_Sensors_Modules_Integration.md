@@ -4,17 +4,21 @@ This section includes various sensors and modules compatible with the Smart Pi O
 
 List of Sensors & Modules
 
-- [Button](#)  
-- [LED](#)  
-- [Relay](#)  
-- [3-Axis Digital Accelerometer](#)  
-- [Temperature & Humidity Sensor](#)  
-- [Buzzer](#)   
-- [Ultrasonic Ranger](#)    
-- [IR Receiver](#)  
-- [L298N Motor Driver](#)   
-- [Photoresistor](#)  
-- [Potentiometer](#)  
+- [Button] 
+- [LED]  
+- [Relay]  
+- [3-Axis Digital Accelerometer] 
+- [Temperature & Humidity Sensor]  
+- [Buzzer] 
+- [Ultrasonic Ranger]   
+- [IR Receiver] 
+- [L298N Motor Driver]  
+- [Photoresistor] 
+- [Potentiometer]
+
+---
+
+Coming soon
 
 
 
