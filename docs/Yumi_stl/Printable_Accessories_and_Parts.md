@@ -33,11 +33,11 @@ Print this case to protect and easily mount your ADXL345 sensor.
 
   ![ADXL Case Top (V2)](../../img/Yumi_stl/Yumi_Adxl/Yumi_Adxl_Case_Top-v2.png)
 
-    - [ADXL Case Top (V2)](<../../stl/yumi_adxl/yumi-adxl case down-V2.stl>)
+    - [ADXL Case Top (V2)](https://github.com/Yumi-Lab/yumi-wiki/blob/7abe2b53a4ef6940de3482d6101dd0499a9ff7d0/stl/yumi_adxl/yumi-adxl%20case%20top-V2.stl)
 
   ![ADXL Case Bottom (V2)](../../img/Yumi_stl/Yumi_Adxl/Yumi_Adxl_Case_Down-v2.png)
 
-    - [ADXL Case Bottom (V2)](<../../stl/yumi_adxl/yumi-adxl case down-V2.stl>)
+    - [ADXL Case Bottom (V2)](https://github.com/Yumi-Lab/yumi-wiki/blob/7abe2b53a4ef6940de3482d6101dd0499a9ff7d0/stl/yumi_adxl/yumi-adxl%20case%20down-V2.stl)
 
 ---
 
