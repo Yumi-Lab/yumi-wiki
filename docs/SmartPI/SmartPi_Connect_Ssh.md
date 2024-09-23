@@ -19,7 +19,7 @@ A detailed guide on how to connect to an Smart Pi One using SSH from a computer 
    - Ensure the port is set to **`22`** and the connection type is **SSH**.
    - Click **"Open"**.
 
-   ![Smart pi one - Connect ssh](../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_2.png)
+   ![Smart pi one - Connect ssh](/img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_2.png)
 
 **4. Connect**:
    - A terminal window will open, prompting you to enter your username (default: **`root`**) and password.

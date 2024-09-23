@@ -1,6 +1,6 @@
 # YUMI 3D PEN
 
-<img src="../../img/3d_pen/YUMI-3D-PEN-1.webp" alt="YUMI - 3D PEN" width="400">
+<img src="../img/3d_pen/YUMI-3D-PEN-1.webp" alt="YUMI - 3D PEN" width="400">
 
 ##  1. Overview
 
@@ -39,11 +39,12 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 - **Nozzle cleaner**   
 - **YUMI black and yellow travel bag**  
 
-![YUMI 3D PEN - Pack](../../img/3d_pen/YUMI-3D-PEN-3.png)
+![YUMI 3D PEN - Pack](/img/3d_pen/YUMI-3D-PEN-3.png)
 
 ## 4. Example of First Use
 
 <img src="../../img/3d_pen/YUMI-3D-PEN-4.webp" alt="YUMI - 3D PEN" width="300">
+
 **Step 1: Preparation**
 
 - **Connect**: Plug the YUMI 3D Pen into a power source via USB-C or use an external battery for total mobility.
