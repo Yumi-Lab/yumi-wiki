@@ -44,6 +44,7 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 ## 4. Example of First Use
 
 <img src="../../img/3d_pen/YUMI-3D-PEN-4.webp" alt="YUMI - 3D PEN" width="300">
+
 **Step 1: Preparation**
 
 - **Connect**: Plug the YUMI 3D Pen into a power source via USB-C or use an external battery for total mobility.
