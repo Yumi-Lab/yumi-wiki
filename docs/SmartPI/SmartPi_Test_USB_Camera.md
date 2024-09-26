@@ -193,6 +193,3 @@ Run the program to display the live video feed from the camera:
 
 The video feed will be displayed in a window, and you can press `q` to exit the window. Make sure to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on your setup.
 
----
-
-By following these steps, you will be able to test the USB camera on the Smart Pi One using either Python or C, displaying the live video feed with `imshow()`, and you can record video using `ffmpeg`. Always ensure you are using the correct video source (`/dev/video0`, `/dev/video1`, etc.) based on what the system detects.
