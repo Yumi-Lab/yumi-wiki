@@ -103,6 +103,7 @@ nav:
       - SmartPI/SmartPi_ConfigureTimeZone.md
       - SmartPI/SmartPi_Connect_Wifi.md
       - SmartPI/SmartPi_Test_Infrared_Sensor.md
+      - SmartPI/SmartPi_Test_USB_Camera.md
       - SmartPI/Sensors&Modules/SmartPi_Sensors_Modules_Integration.md
     - LINUX LAB PROJECT:  
       - SmartPI/SmartPi_Klipper.md
