@@ -2,22 +2,15 @@
 
 ![USB Camera - Smart PI One](../../img/SmartPi/SmartPi_Test_USB_Camera/SmartPi_Test_USB_Camera_1.png)
 
-
-This page provides instructions for testing a USB camera connected to Smart Pi One on an Armbian Debian system. The camera should be connected to the `/dev/video1` source. We will provide examples using both Python and C, with step-by-step instructions for installing the necessary packages and creating the test scripts.
-
-Before proceeding, ensure the camera is connected and the `/dev/video1` source is available by running:
-
-```bash
-ls /dev/video*
-```
+This page provides instructions for testing a USB camera connected to Smart Pi One on an Armbian Debian system. The camera is typically connected to the `/dev/video0` source by default, but this may vary depending on your system configuration. Make sure to check the correct video source (e.g., `/dev/video1`) and adjust the commands accordingly.
 
 ---
 
 ## 1. **Linux Commands for Camera Testing**
 
-Before running the test programs, ensure the camera is recognized and accessible:
+Before running the test programs, ensure that your camera is recognized and accessible by following these steps:
 
-- Verify the camera is recognized using `v4l2-ctl`:
+- Verify the connected camera device using `v4l2-ctl`:
 
   ```bash
   sudo apt-get update
@@ -25,21 +18,21 @@ Before running the test programs, ensure the camera is recognized and accessible
   v4l2-ctl --list-devices
   ```
 
-- To test recording video using `ffmpeg`:
+  This will display a list of video devices connected to the system (e.g., `/dev/video0`, `/dev/video1`). Identify the correct device and adapt the commands as necessary.
+
+- To test recording video using `ffmpeg`, install `ffmpeg` first:
 
   ```bash
   sudo apt-get install ffmpeg
   ```
 
-  Once installed, you can use the following command to capture video from the camera and save it to a file:
+  Then, run the following command, replacing `/dev/video0` with your detected video source if needed (e.g., `/dev/video1`):
 
   ```bash
-  ffmpeg -f v4l2 -i /dev/video1 -c:v libx264 -preset ultrafast output.mp4
+  ffmpeg -f v4l2 -i /dev/video0 -c:v libx264 -preset ultrafast output.mp4
   ```
 
-  This command captures video from `/dev/video1`, encodes it using H.264 (`libx264`), and saves it as `output.mp4`.
-
-- If you see `/dev/video1` in the output of the `v4l2-ctl` command, you can proceed to the Python or C sections.
+  This command captures video from the specified camera and saves it to `output.mp4`.
 
 ---
 
@@ -62,13 +55,13 @@ sudo apt-get install python3-opencv
    nano camera_test.py
    ```
 
-2. Add the following Python code to capture a frame from the USB camera:
+2. Add the following Python code, making sure to adjust the source (`/dev/video0`) if necessary:
 
    ```python
    import cv2
 
-   # Open the camera
-   cap = cv2.VideoCapture('/dev/video1')
+   # Open the camera (replace /dev/video0 with the correct source if needed)
+   cap = cv2.VideoCapture('/dev/video0')
 
    if not cap.isOpened():
        print("Error: Could not open video device")
@@ -102,7 +95,7 @@ Run the script to capture an image from the camera:
 python3 camera_test.py
 ```
 
-The image will be saved as `captured_frame.jpg` in the current directory.
+The image will be saved as `captured_frame.jpg` in the current directory. Remember to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on the device detected earlier.
 
 ---
 
@@ -125,7 +118,7 @@ sudo apt install libopencv-dev
    nano camera_test.c
    ```
 
-2. Add the following C code to capture a frame from the USB camera:
+2. Add the following C code, adjusting the source (`/dev/video0`) if necessary:
 
    ```c
    #include <opencv2/opencv.hpp>
@@ -135,8 +128,8 @@ sudo apt install libopencv-dev
    using namespace std;
 
    int main() {
-       // Open the camera
-       VideoCapture cap("/dev/video1");
+       // Open the camera (replace /dev/video0 with the correct source if needed)
+       VideoCapture cap("/dev/video0");
 
        if (!cap.isOpened()) {
            cout << "Error: Could not open video device" << endl;
@@ -184,5 +177,6 @@ Run the program to capture an image from the camera:
 ./camera_test
 ```
 
-The image will be saved as `captured_frame.jpg` in the current directory.
+The image will be saved as `captured_frame.jpg` in the current directory. Make sure to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on your setup.
+
 
