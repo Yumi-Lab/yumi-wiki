@@ -3,9 +3,9 @@
 ![USB Camera - Smart PI One](../../img/SmartPi/SmartPi_Test_USB_Camera/SmartPi_Test_USB_Camera_1.png)
 
 
-This page provides instructions for testing a USB camera connected to Smart Pi One on an Armbian Debian system. The camera should be connected to the `/dev/video1` source. We will provide examples using both Python and C, with step-by-step instructions for installing the necessary packages and creating the test scripts. 
+This page provides instructions for testing a USB camera connected to Smart Pi One on an Armbian Debian system. The camera should be connected to the `/dev/video1` source. We will provide examples using both Python and C, with step-by-step instructions for installing the necessary packages and creating the test scripts.
 
-Before proceeding, make sure the camera is connected and the `/dev/video1` source is available by running:
+Before proceeding, ensure the camera is connected and the `/dev/video1` source is available by running:
 
 ```bash
 ls /dev/video*
@@ -15,7 +15,7 @@ ls /dev/video*
 
 ## 1. **Linux Commands for Camera Testing**
 
-Start by ensuring that you have the required tools to test the camera:
+Before running the test programs, ensure the camera is recognized and accessible:
 
 - Verify the camera is recognized using `v4l2-ctl`:
 
@@ -25,7 +25,21 @@ Start by ensuring that you have the required tools to test the camera:
   v4l2-ctl --list-devices
   ```
 
-- If you see `/dev/video1` in the output, you can proceed to the Python or C sections.
+- To test recording video using `ffmpeg`:
+
+  ```bash
+  sudo apt-get install ffmpeg
+  ```
+
+  Once installed, you can use the following command to capture video from the camera and save it to a file:
+
+  ```bash
+  ffmpeg -f v4l2 -i /dev/video1 -c:v libx264 -preset ultrafast output.mp4
+  ```
+
+  This command captures video from `/dev/video1`, encodes it using H.264 (`libx264`), and saves it as `output.mp4`.
+
+- If you see `/dev/video1` in the output of the `v4l2-ctl` command, you can proceed to the Python or C sections.
 
 ---
 
@@ -171,6 +185,4 @@ Run the program to capture an image from the camera:
 ```
 
 The image will be saved as `captured_frame.jpg` in the current directory.
-
-
 
