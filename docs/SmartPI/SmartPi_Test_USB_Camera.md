@@ -55,7 +55,7 @@ sudo apt-get install python3-opencv
    nano camera_test.py
    ```
 
-2. Add the following Python code, making sure to adjust the source (`/dev/video0`) if necessary:
+2. Add the following Python code, making sure to adjust the source (`/dev/video0`) if necessary. This script captures and displays the video feed using `cv2.imshow()`.
 
    ```python
    import cv2
@@ -71,31 +71,37 @@ sudo apt-get install python3-opencv
    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
-   # Capture a single frame
-   ret, frame = cap.read()
+   while True:
+       # Capture frame-by-frame
+       ret, frame = cap.read()
 
-   if not ret:
-       print("Error: Could not read frame")
-       exit()
+       if not ret:
+           print("Error: Could not read frame")
+           break
 
-   # Save the captured frame to a file
-   cv2.imwrite('captured_frame.jpg', frame)
+       # Display the resulting frame
+       cv2.imshow('USB Camera Feed', frame)
 
-   # Release the camera
+       # Press 'q' to exit the window
+       if cv2.waitKey(1) & 0xFF == ord('q'):
+           break
+
+   # When everything is done, release the capture and close windows
    cap.release()
+   cv2.destroyAllWindows()
    ```
 
 3. Save and exit by pressing `Ctrl + X`, then `Y`, and `Enter`.
 
 ### Run the Python Test Script
 
-Run the script to capture an image from the camera:
+Run the script to display the live video feed from the camera:
 
 ```bash
 python3 camera_test.py
 ```
 
-The image will be saved as `captured_frame.jpg` in the current directory. Remember to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on the device detected earlier.
+The video feed will be displayed in a window, and you can press `q` to exit the window. Remember to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on the device detected earlier.
 
 ---
 
@@ -118,7 +124,7 @@ sudo apt install libopencv-dev
    nano camera_test.c
    ```
 
-2. Add the following C code, adjusting the source (`/dev/video0`) if necessary:
+2. Add the following C code, adjusting the source (`/dev/video0`) if necessary. This script captures and displays the video feed using `imshow()`:
 
    ```c
    #include <opencv2/opencv.hpp>
@@ -141,19 +147,27 @@ sudo apt install libopencv-dev
        cap.set(CAP_PROP_FRAME_HEIGHT, 480);
 
        Mat frame;
-       // Capture a single frame
-       bool ret = cap.read(frame);
+       while (true) {
+           // Capture frame-by-frame
+           bool ret = cap.read(frame);
 
-       if (!ret) {
-           cout << "Error: Could not read frame" << endl;
-           return -1;
+           if (!ret) {
+               cout << "Error: Could not read frame" << endl;
+               break;
+           }
+
+           // Display the resulting frame
+           imshow("USB Camera Feed", frame);
+
+           // Press 'q' to exit the window
+           if (waitKey(1) == 'q') {
+               break;
+           }
        }
-
-       // Save the captured frame to a file
-       imwrite("captured_frame.jpg", frame);
 
        // Release the camera
        cap.release();
+       destroyAllWindows();
 
        return 0;
    }
@@ -171,12 +185,14 @@ g++ camera_test.c -o camera_test `pkg-config --cflags --libs opencv4`
 
 ### Run the C Program
 
-Run the program to capture an image from the camera:
+Run the program to display the live video feed from the camera:
 
 ```bash
 ./camera_test
 ```
 
-The image will be saved as `captured_frame.jpg` in the current directory. Make sure to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on your setup.
+The video feed will be displayed in a window, and you can press `q` to exit the window. Make sure to adjust the video source (`/dev/video0`, `/dev/video1`, etc.) based on your setup.
 
+---
 
+By following these steps, you will be able to test the USB camera on the Smart Pi One using either Python or C, displaying the live video feed with `imshow()`, and you can record video using `ffmpeg`. Always ensure you are using the correct video source (`/dev/video0`, `/dev/video1`, etc.) based on what the system detects.
