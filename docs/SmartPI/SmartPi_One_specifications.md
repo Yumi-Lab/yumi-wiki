@@ -28,7 +28,7 @@
 * **Weight:** 33g
 * **OS/Software:** YumiOS, Debian 12(Armbian), Ubuntu(Armbian)
 
-# 1.2 Software Features
+## 1.2 Software Features
 
 **Official Linux Server Image:** [https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
 
@@ -38,7 +38,7 @@
 <img src="../../img/SmartPi/Specifications/smart-pi-one2.jpg" width="1000" alt="bottom view"> <p align="center">**[Bottom view]**</p>
 
 
-# 1.4 Diagram
+## 1.4 Diagram
 
 ### GPIO Pin Spec
 
@@ -95,6 +95,6 @@
 
 
 
-# 1.5 Board Dimension 
+## 1.5 Board Dimension 
 <img src="../../img/SmartPi/Specifications/smart-pi-one3.jpg" width="500" alt="Board dimension view"> 
 
