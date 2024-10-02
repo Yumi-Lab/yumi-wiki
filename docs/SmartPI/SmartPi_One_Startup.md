@@ -53,7 +53,6 @@ To protect and enhance your Smart Pi One, you can print cases. Here are some res
 
 > **Note**: If the initial setup for configuring the root and user accounts doesn't appear, you may have missed the first boot and initialization phase. In this case, reflash the SD card, and ensure that the screen and HDMI cable are properly connected before powering on the board to avoid missing the first boot process.
 
----
 
 ## 7. Accessing the Board via SSH
 The Smart Pi One has SSH enabled by default. To connect remotely:
