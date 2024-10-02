@@ -10,6 +10,7 @@ For detailed specifications of the Smart Pi One, visit the [Specifications Page]
 
 ## 1. Required Materials
 Before starting, ensure you have the following:
+
 - A **[Smart Pi One board](https://wanhao-europe.com/collections/yumi-smart-pi-nano-computer-diy/products/yumi-smart-pi-one-1g-ddr3-processeur-h3-allwinner)**
 - A compatible power adapter (**5V - 2A or Power delivery**)
 - A microSD card ([Minimum of 16GB](https://wanhao-europe.com/collections/yumi-smart-pi-nano-computer-diy/products/carte-micro-sd-16go))
@@ -19,12 +20,14 @@ Before starting, ensure you have the following:
 
 ## 2. Modules Complémentaires
 While not required for the initial setup, the following accessories can enhance your Smart Pi One experience:
+
 - [Smart LCD Touch 4.3inch](https://wiki.yumi-lab.com/Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications/) (for a touch interface)
 - [Smart Hub](https://wiki.yumi-lab.com/Yumi_Components/SmartHub_specifications/) (for enhanced connectivity)
 - [Smart Shield](https://wiki.yumi-lab.com/Yumi_Components/SmartShield_specifications/) (for additional functionalities)
 
 ## 3. Printable Cases
 To protect and enhance your Smart Pi One, you can print cases. Here are some resources where you can find 3D models:
+
 - [Cults3D - Smart Pi Case](https://cults3d.com/fr/recherche?q=boitier+smart+pi)
 - [YUMI STL - 3D Printable Accessories and Parts](https://wiki.yumi-lab.com/Yumi_stl/Printable_Accessories_and_Parts/)
 
@@ -42,8 +45,15 @@ To protect and enhance your Smart Pi One, you can print cases. Here are some res
 3. Connect the power adapter to the board.
 
 ## 6. Powering On the Board
+
 1. Turn on the power supply. The board should boot automatically.
-2. Follow the on-screen instructions to configure the initial settings, including network configuration.
+2. Follow the on-screen instructions to configure the initial settings for both the root and user accounts, which will appear during the first boot.
+
+![smartpi_one_startup_9](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_9.png)
+
+> **Note**: If the initial setup for configuring the root and user accounts doesn't appear, you may have missed the first boot and initialization phase. In this case, reflash the SD card, and ensure that the screen and HDMI cable are properly connected before powering on the board to avoid missing the first boot process.
+
+---
 
 ## 7. Accessing the Board via SSH
 The Smart Pi One has SSH enabled by default. To connect remotely:
@@ -76,6 +86,7 @@ Familiarize yourself with essential commands to manage your board effectively. V
 
 ## 11. Explore Advanced Projects
 Once you are comfortable with the basics, explore advanced projects:
+
 - **Klipper**: [Setup Klipper <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_6.png" alt="Smart Pi One - Yumi" width="50"/>](https://wiki.yumi-lab.com/SmartPI/SmartPi_Klipper/)
 - **Retro Gaming**: [Install RetroMi (Optimized <img src="../../img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png" alt="Smart Pi One - Yumi" width="100"/>)](https://wiki.yumi-lab.com/SmartPI/SmartPi_Retro_Gaming/)
 
