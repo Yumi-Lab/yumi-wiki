@@ -42,6 +42,8 @@
 
 ### GPIO Pin Spec
 
+![Smart Pi ONE - GPIO ](../../img/SmartPi/Specifications/smart-pi-one-gpio.png)
+
 | Pin# | Name | Linux gpio | Pin# | Name | Linux gpio |
 |------|------|------------|------|------|------------|
 | 1    | SYS_3.3V         |        | 2    | VDD_5V            |        |
