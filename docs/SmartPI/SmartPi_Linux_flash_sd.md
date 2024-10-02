@@ -59,6 +59,10 @@ Power on your Smart Pi One.
 
 Operating system  will guide you through the initial setup. Follow the on-screen instructions, including setting a root password and creating a user.
 
+![smartpi_one_startup_9](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_9.png)
+
+> **Note**: If the initial setup for configuring the root and user accounts doesn't appear, you may have missed the first boot and initialization phase. In this case, reflash the SD card, and ensure that the screen and HDMI cable are properly connected before powering on the board to avoid missing the first boot process.
+
 ## 1.4.6 Software Updates
 
 After booting, open a terminal. Run the following commands to update your system:
