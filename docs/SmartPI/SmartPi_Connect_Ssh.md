@@ -1,7 +1,7 @@
 # 1.5 How to connect via SSH on Windows, Mac, and Linux
 
 A detailed guide on how to connect to an Smart Pi One using SSH from a computer running Windows, Linux, or macOS. 
-![Smart PI One - SSH](../../img/SmartPi/SmartPi_Connect_Ssh/SmartPi_Connect_Ssh_1.png)
+
 <img src="../../img/SmartPi/Connect_Ssh/connect_ssh_smart_pi_one_1.png" alt="Smartpad rotation screen 1" width="310">
 
 ## 1.5.1 Windows with PuTTY
