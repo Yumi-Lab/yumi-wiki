@@ -1,6 +1,5 @@
 # 1.7 Basic Commands for Using the Smart Pi One Board
 
-## Introduction
 The **Smart Pi One** board runs on Debian with Armbian, a distribution optimized for Single Board Computers (SBCs). This guide provides essential commands to manage the board, focusing on GPIO control, network configuration, and basic system management.
 
 ![SmartPi - Commands](../../img/SmartPi/SmartPi_Basic_Commands/SmartPi_Basic_Commands_1.png)
