@@ -1,6 +1,9 @@
-# How to Test the MPU-6050 Sensor on Smart Pi One Using smartpi-mpu6050 (Python and C)
+# How to Test the MPU-6050 Sensor on Smart Pi One (Python and C)
 
 This guide explains how to connect and test the **MPU-6050** accelerometer and gyroscope sensor with the **Smart Pi One** board using both Python (`smartpi-mpu6050` package) and C. It also covers how to detect the sensor via I2C.
+
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_1.png)
+
 
 The **MPU-6050** is a 6-axis motion tracking device that provides accelerometer and gyroscope data, making it useful for projects requiring motion sensing, orientation detection, and balance control.
 
@@ -42,11 +45,27 @@ Before you begin programming, you need to verify that the MPU-6050 sensor is con
 
 ### Step 1: Enable I2C on the Raspberry Pi
 
-To enable I2C, run the following command:
+1. Open Armbian-Config via an SSH interface or a terminal window:
 
 ```bash
 sudo armbian-config
 ```
+
+2. Choose `System`:
+
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_2.png)
+
+3. Select `Hardware`:
+
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_3.png)
+
+4. Then `i2c1`, `Save` and `Back`:
+
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_4.png)
+
+5. To finish: `Reboot` to apply the changes:
+
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_5.png)
 
 After enabling I2C, you can use the i2cdetect command to check if the sensor is connected and detect its address. Run the following command:
 
@@ -56,17 +75,7 @@ sudo i2cdetect -y 1
 
 You should see an output similar to this:
 
-```lua
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
-10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-60: -- -- -- -- -- -- -- 68 -- -- -- -- -- -- -- -- 
-70: -- -- -- -- -- -- -- --                        
-```
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_6.png)
 
 In this case, the MPU-6050 is detected at address 0x68. This confirms that the sensor is correctly connected and ready for use.
 
@@ -89,8 +98,7 @@ sudo apt-get install python3-smbus
 sudo pip3 install smartpi-mpu6050
 ```
 
-
-#### 6. Running the Test (Python)
+### 6. Running the Test (Python)
 
 ## Running the Test (Python)
 
