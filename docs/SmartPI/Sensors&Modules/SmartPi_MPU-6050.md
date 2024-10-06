@@ -46,6 +46,7 @@ To enable I2C, run the following command:
 
 ```bash
 sudo armbian-config
+```
 
 After enabling I2C, you can use the i2cdetect command to check if the sensor is connected and detect its address. Run the following command:
 
