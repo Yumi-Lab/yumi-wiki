@@ -39,6 +39,8 @@ To connect the MPU-6050 sensor to the Smart Pi One, follow this wiring setup:
 | SCL          |(27) SCL (I2C1 Clock)  | I2C Clock    |
 | SDA          |(28) SDA (I2C1 Data)   | I2C Data     |
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_2.png" width="500" alt="Smart Pi One - MPU-6050">
+
 ## Detecting the MPU-6050 Using I2C
 
 Before you begin programming, you need to verify that the MPU-6050 sensor is connected correctly and can be detected via I2C.
@@ -51,21 +53,21 @@ Before you begin programming, you need to verify that the MPU-6050 sensor is con
 sudo armbian-config
 ```
 
-2. Choose `System`:
-
-![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_2.png)
-
-3. Select `Hardware`:
+2. Choose **`System`**:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_3.png)
 
-4. Then `i2c1`, `Save` and `Back`:
+3. Select **`Hardware`**:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_4.png)
 
-5. To finish: `Reboot` to apply the changes:
+4. Then **`i2c1`**, **`Save`** and **`Back`**:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_5.png)
+
+5. To finish: **`Reboot`** to apply the changes:
+
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_6.png)
 
 After enabling I2C, you can use the i2cdetect command to check if the sensor is connected and detect its address. Run the following command:
 
@@ -75,7 +77,7 @@ sudo i2cdetect -y 1
 
 You should see an output similar to this:
 
-![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_6.png)
+![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_7.png)
 
 In this case, the MPU-6050 is detected at address 0x68. This confirms that the sensor is correctly connected and ready for use.
 
