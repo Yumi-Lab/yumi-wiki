@@ -7,7 +7,7 @@ List of Sensors & Modules
 - [Button] 
 - [LED]  
 - [Relay] 
-- [MPU-6050](SmartPi_Sensors_Modules_Integration.md)
+- [MPU-6050](SmartPi_MPU-6050.md)
 - [3-Axis Digital Accelerometer] 
 - [Temperature & Humidity Sensor]  
 - [Buzzer] 
