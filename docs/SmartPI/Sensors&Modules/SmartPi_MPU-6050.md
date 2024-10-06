@@ -13,15 +13,15 @@ You will learn how to:
 ## Prerequisites
 
 ### Hardware
-- Smart Pi One board (Yumi Robotics)
+- Smart Pi One board (Yumi)
 - MPU-6050 sensor
 - Jumper wires for connections
-- Raspberry Pi (connected to Smart Pi One)
+
 
 ### Software
 - Python 3.6 or higher
 - `smartpi-mpu6050` Python package
-- I2C enabled on Raspberry Pi
+- I2C enabled on Smart Pi One
 - `python3-smbus` installed (system library for I2C communication)
 - `libi2c-dev` package for C development
 
@@ -75,7 +75,7 @@ In this case, the MPU-6050 is detected at address 0x68. This confirms that the s
 
 ## Installation (Python)
 
-Before starting, make sure the I2C interface is enabled on your Raspberry Pi as explained above.
+Before starting, make sure the I2C interface is enabled on your Smart Pi One as explained above.
 
 ### Step 1: Install python3-smbus
 Install the required system library for I2C communication:
