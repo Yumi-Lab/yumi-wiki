@@ -31,10 +31,10 @@ To connect the MPU-6050 sensor to the Smart Pi One, follow this wiring setup:
 
 | MPU-6050 Pin | Smart Pi One Pin | Description  |
 |--------------|------------------|--------------|
-| VCC          | 3.3V             | Power        |
-| GND          | GND              | Ground       |
-| SCL          | SCL (I2C1 Clock)  | I2C Clock    |
-| SDA          | SDA (I2C1 Data)   | I2C Data     |
+| VCC          |(1) 3.3V             | Power        |
+| GND          |(6) GND              | Ground       |
+| SCL          |(27) SCL (I2C1 Clock)  | I2C Clock    |
+| SDA          |(28) SDA (I2C1 Data)   | I2C Data     |
 
 ## Detecting the MPU-6050 Using I2C
 
