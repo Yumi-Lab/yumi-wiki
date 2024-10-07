@@ -7,8 +7,7 @@ List of Sensors & Modules
 - [Button] 
 - [LED]  
 - [Relay] 
-- [MPU-6050](SmartPi_MPU-6050.md)
-- [ADXL345](SmartPi_ADXL345.md)
+- [MPU-6050](SmartPi_MPU-6050-ADXL345.md)
 - [Temperature & Humidity Sensor]  
 - [Buzzer] 
 - [Ultrasonic Ranger]   
