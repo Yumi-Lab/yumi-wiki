@@ -45,7 +45,7 @@ To connect the MPU-6050 sensor to the Smart Pi One, follow this wiring setup:
 
 Before you begin programming, you need to verify that the MPU-6050 sensor is connected correctly and can be detected via I2C.
 
-### Step 1: Enable I2C on the Raspberry Pi
+### Step 1: Enable I2C on the Smart Pi One
 
 1. Open Armbian-Config via an SSH interface or a terminal window:
 
@@ -81,14 +81,11 @@ You should see an output similar to this:
 
 In this case, the MPU-6050 is detected at address 0x68. This confirms that the sensor is correctly connected and ready for use.
 
-
-#### 5. Installation (Python)
-
-## Installation (Python)
+## Using Python to Read MPU-6050 Data
 
 Before starting, make sure the I2C interface is enabled on your Smart Pi One as explained above.
 
-### Step 1: Install python3-smbus
+### Prerequisites
 Install the required system library for I2C communication:
 
 ```bash
@@ -100,13 +97,13 @@ sudo apt-get install python3-smbus
 sudo pip3 install smartpi-mpu6050
 ```
 
-### 6. Running the Test (Python)
-
-## Running the Test (Python)
+## Running the Test 
 
 After the installation, you can use the following Python script to test your MPU-6050 sensor. This script will print the temperature, accelerometer, and gyroscope data from the sensor.
 
-### Test Script (Python)
+### Example Python Script
+
+Here’s a complete script to MPU6050 events from the sensor:
 
 ```python
 from smartpi_mpu6050.mpu6050 import MPU6050
@@ -127,21 +124,27 @@ gyro_data = mpu.get_gyro_data()
 print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={gyro_data['z']:.2f} °/s")
 ```
 
-# Step-by-Step Instructions
+# Creating and Running the Script
 
 1. Create a new Python file test_mpu6050.py and paste the code above.
 
-2. Run the Python script:
+```bash
+nano test_mpu6050.py
+```
+
+2.Paste the script into the file and save it.
+
+3. Execute the script with the necessary permissions (you may need to use sudo):
 
 ```bash
-python3 test_mpu6050.py
+sudo python3 test_mpu6050.py
 ```
 
 3. You should see output showing the temperature, accelerometer, and gyroscope data.
 
-## C Program to Read MPU-6050 Data
+## Using a C Program to Read MPU-6050 Data
 
-Create a C file test_mpu6050.c and add the following code:
+### Example C Program
 
 ```c
 #include <stdio.h>
@@ -199,15 +202,25 @@ int main() {
 }
 ```
 
-## Step 3: Compile and Run the Program
-Compile the C program using gcc:
+## Compile and Run the Program
+
+1. Open a text editor, such as nano, to create the C file:
+
+```bash
+nano test_mpu6050.c
+
+```
+
+2. Paste the C program into the file and save it.
+
+3. Compile the C program using gcc:
 
 ```bash
 gcc -o test_mpu6050 test_mpu6050.c -li2c
 
 ```
 
-Run the program:
+4. Run the program:
 
 ```bash
 ./test_mpu6050
@@ -224,7 +237,7 @@ You should see the temperature and accelerometer data printed to the terminal.
 ### Common Issues:
 
 1. **I2C Device Not Detected**
-   - Ensure I2C is enabled on the Raspberry Pi using `sudo raspi-config`.
+   - Ensure I2C is enabled on the Smart Pi One using `sudo armbian-config`.
    - Verify the connections of the SDA and SCL pins.
    - Use the following command to check if the MPU-6050 is detected:
      ```bash
