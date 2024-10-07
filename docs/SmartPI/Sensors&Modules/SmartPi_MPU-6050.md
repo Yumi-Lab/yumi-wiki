@@ -222,12 +222,7 @@ gcc -o test_mpu6050 test_mpu6050.c -li2c
 
 You should see the temperature and accelerometer data printed to the terminal.
 
-<<<<<<< HEAD
 ## 4. Troubleshooting
-=======
-
-## Troubleshooting
->>>>>>> 4b8087f97a3be3fd6db4b578fb31bd3816cc8030
 
 ### Common Issues:
 
