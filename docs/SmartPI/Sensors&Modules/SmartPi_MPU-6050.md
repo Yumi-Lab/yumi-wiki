@@ -1,7 +1,3 @@
-Voici votre document avec les titres et la numérotation corrigés pour une meilleure lisibilité :
-
----
-
 # How to Test the MPU-6050 Sensor on Smart Pi One (Python and C)
 
 This guide explains how to connect and test the **MPU-6050** accelerometer and gyroscope sensor with the **Smart Pi One** board using both Python (`smartpi-mpu6050` package) and C. It also covers how to detect the sensor via I2C.
@@ -34,7 +30,6 @@ To connect the MPU-6050 sensor to the Smart Pi One, follow this wiring setup:
 | GND          | (6) GND              | Ground       |
 | SCL          | (27) SCL (I2C1 Clock)| I2C Clock    |
 | SDA          | (28) SDA (I2C1 Data) | I2C Data     |
-
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_2.png" width="500" alt="Smart Pi One - MPU-6050">
 
@@ -101,7 +96,7 @@ sudo pip3 install smartpi-mpu6050
 
 After installation, use the following Python script to test your MPU-6050 sensor. This script will print the temperature, accelerometer, and gyroscope data from the sensor.
 
-#### Example Python Script
+### Example Python Script
 
 Here’s a complete script to read MPU6050 data from the sensor:
 
@@ -131,6 +126,7 @@ print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={
 ```bash
 nano test_mpu6050.py
 ```
+![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_8.png)
 
 2. Save the script, then run it with the necessary permissions (you may need to use sudo):
 
@@ -140,13 +136,26 @@ sudo python3 test_mpu6050.py
 
 You should see output showing the temperature, accelerometer, and gyroscope data.
 
+![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_9.png)
+
 ## 3. Using a C Program to Read MPU-6050 Data
 
+### Prerequisites
+
+Before compiling the C program, install the required I2C development package:
+
+```bash
+sudo apt-get install libi2c-dev
+```
+
 ### Example C Program
+
+Here’s the updated C program that includes the necessary headers for SMBus communication:
 
 ```c
 #include <stdio.h>
 #include <linux/i2c-dev.h>
+#include <i2c/smbus.h>  // Include this header for SMBus functions
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -222,6 +231,8 @@ gcc -o test_mpu6050 test_mpu6050.c -li2c
 
 You should see the temperature and accelerometer data printed to the terminal.
 
+![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_10.png)
+
 ## 4. Troubleshooting
 
 ### Common Issues:
@@ -229,10 +240,10 @@ You should see the temperature and accelerometer data printed to the terminal.
 1. **I2C Device Not Detected**
    - Ensure I2C is enabled on the Smart Pi One using `sudo armbian-config`.
    - Verify the connections of the SDA and SCL pins.
-   - Use the following command to check if the MPU-6050 is detected:
+   - Use the following command to check if the MPU-6050
+
+ is detected:
      ```bash
-
-
      sudo i2cdetect -y 1
      ```
    - You should see the address `0x68` in the output.
@@ -244,6 +255,3 @@ You should see the temperature and accelerometer data printed to the terminal.
 3. **Library Installation Issues**
    - Ensure that `python3-smbus` or `libi2c-dev` is installed, depending on the language you're using.
 
----
-
-La numérotation, l'ordre et la hiérarchie des titres ont été ajustés.
