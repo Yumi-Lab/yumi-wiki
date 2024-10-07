@@ -31,7 +31,7 @@ To connect the ADXL345 sensor to the Smart Pi One, follow this wiring setup:
 | SCL          | (27) SCL (I2C1 Clock)| I2C Clock    |
 | SDA          | (28) SDA (I2C1 Data) | I2C Data     |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_2.png" width="500" alt="Smart Pi One - ADXL345">
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_2.png" width="500" alt="Smart Pi One - ADXL345">
 
 ## 1. Detecting the ADXL345 Using I2C
 
@@ -47,19 +47,19 @@ sudo armbian-config
 
 2. Choose **System**:
 
-![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_3.png)
+![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_3.png)
 
 3. Select **Hardware**:
 
-![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_4.png)
+![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_4.png)
 
 4. Enable **i2c1**, then **Save** and **Back**:
 
-![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_5.png)
+![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_5.png)
 
 5. To finish, **Reboot** to apply the changes:
 
-![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_6.png)
+![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_.png)
 
 After enabling I2C, you can use the i2cdetect command to check if the sensor is connected and detect its address. Run the following command:
 
@@ -69,7 +69,7 @@ sudo i2cdetect -y 1
 
 You should see an output similar to this:
 
-![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_7.png)
+![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_.png)
 
 In this case, the ADXL345 is detected at address 0x53. This confirms that the sensor is correctly connected and ready for use.
 
@@ -126,7 +126,7 @@ print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={
 ```bash
 nano test_adxl345.py
 ```
-![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_8.png)
+![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_8.png)
 
 2. Save the script, then run it with the necessary permissions (you may need to use sudo):
 
@@ -136,7 +136,7 @@ sudo python3 test_adxl345.py
 
 You should see output showing the temperature, accelerometer, and gyroscope data.
 
-![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_9.png)
+![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_9.png)
 
 ## 3. Using a C Program to Read ADXL345 Data
 
@@ -231,7 +231,7 @@ gcc -o test_adxl345 test_adxl345.c -li2c
 
 You should see the temperature and accelerometer data printed to the terminal.
 
-![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_10.png)
+![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPI_ADXL345/SmartPi_ADXL345_10.png)
 
 ## 4. Troubleshooting
 
