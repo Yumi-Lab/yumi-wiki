@@ -1,6 +1,6 @@
 # How to Test the ADX345 Sensor on Smart Pi One (Python and C)
 
-This guide explains how to connect and test the **ADXL345** accelerometer and gyroscope sensor with the **Smart Pi One** board using both Python (`smartpi-mpu6050` package) and C. It also covers how to detect the sensor via I2C.
+This guide explains how to connect and test the **ADXL345** accelerometer and gyroscope sensor with the **Smart Pi One** board using both Python (`smartpi-mpu6050` package) and C. It also covers how to detect the sensor via I2C. 
 
 ![Smart Pi One - ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_ADXL345/SmartPi_ADXL345_1.png)
 
