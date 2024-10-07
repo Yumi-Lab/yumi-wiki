@@ -48,7 +48,7 @@ Before starting with sensor tests, ensure that **I2C** is enabled on the Smart P
 
 ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_1.png)
 
-### Wiring Diagram
+### Step 1: Wiring Diagram
 
 Connect the **MPU-6050** sensor to the **Smart Pi One** using this setup:
 
@@ -61,76 +61,67 @@ Connect the **MPU-6050** sensor to the **Smart Pi One** using this setup:
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_2.png" width="500" alt="Smart Pi One - MPU-6050 Wiring">
 
-### 1. Detecting the MPU-6050 Using I2C
+### Step 2: Detecting the MPU-6050 Using I2C
 
-Run the following steps to verify that the MPU-6050 sensor is detected:
+Run the following step to verify that the MPU-6050 sensor is detected:
 
-1. Enable I2C using the steps mentioned above.
+```bash
+sudo i2cdetect -y 1
+```
 
-2. Check for sensor detection with this command:
+You should see the MPU-6050 detected at address `0x68`.
 
-    ```bash
-    sudo i2cdetect -y 1
-    ```
+![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_7.png)
 
-    You should see the MPU-6050 detected at address `0x68`.
+### Using Python to Read MPU-6050 Data
 
-    ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_7.png)
-
-### 2. Using Python to Read MPU-6050 Data
-
-#### Prerequisites
+### Prerequisites
 
 Install the required system libraries for I2C communication:
 
-    ```bash
-    sudo apt-get update
-    sudo apt-get install python3-smbus
-    ```
+```bash
+sudo apt-get update
+sudo apt-get install python3-smbus
+```
 
 Install the Python package:
 
-    ```bash
-    sudo pip3 install smartpi-mpu6050
+```bash
+sudo pip3 install smartpi-mpu6050
+```
+
+### Example Python Script for Testing MPU-6050:
+
+Here’s a complete script to read MPU-6050 from the sensor:
+
+    ```python
+    from smartpi_mpu6050.mpu6050 import MPU6050
+
+    mpu = MPU6050(0x68)
+
+    temp = mpu.get_temp()
+    print(f"Temperature: {temp:.2f} °C")
+
+    accel_data = mpu.get_accel_data()
+    print(f"Accelerometer: X={accel_data['x']:.2f} m/s^2, Y={accel_data['y']:.2f} m/s^2, Z={accel_data['z']:.2f} m/s^2")
+
+    gyro_data = mpu.get_gyro_data()
+    print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={gyro_data['z']:.2f} °/s")
     ```
 
-#### Python Script for Testing MPU-6050:
+### Creating and Running the Script
 
-Create a Python file named `test_mpu6050.py` and add the following code:
+1. Open a text editor, such as nano, and create the Python file:
 
-```bash
-nano test_mpu6050.py
-```
-
-Paste the code below into the file:
-
-```python
-from smartpi_mpu6050.mpu6050 import MPU6050
-
-mpu = MPU6050(0x68)
-
-temp = mpu.get_temp()
-print(f"Temperature: {temp:.2f} °C")
-
-accel_data = mpu.get_accel_data()
-print(f"Accelerometer: X={accel_data['x']:.2f} m/s^2, Y={accel_data['y']:.2f} m/s^2, Z={accel_data['z']:.2f} m/s^2")
-
-gyro_data = mpu.get_gyro_data()
-print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={gyro_data['z']:.2f} °/s")
-```
-
-### Running the Python Script
-
-1. Create a new Python file test_mpu6050.py and paste the code above.
-
-    
     ```bash
     nano test_mpu6050.py
     ```
 
+2. Paste the script into the file and save it.
+
     ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_8.png)
 
-2. Save the script, then run it with the necessary permissions (you may need to use sudo):
+3. Execute the script with the necessary permissions (you may need to use sudo):
 
     ```bash
     sudo python3 test_mpu6050.py
@@ -144,23 +135,7 @@ print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={
 
 ### 3. Using a C Program to Read MPU-6050 Data
 
-#### Prerequisites
-
-Install the required I2C development library:
-
-```bash
-sudo apt-get install libi2c-dev
-```
-
-#### Example C Program
-
-Create a C file named `test_mpu6050.c` and add the following code:
-
-```bash
-nano test_mpu6050.c
-```
-
-Paste the code below into the file:
+### Example C Program
 
 ```c
 #include <stdio.h>
@@ -216,24 +191,33 @@ int main() {
 }
 ```
 
-### Compile and Run the Program
+### Compilation and Execution
 
-1. Open a text editor to create the C file:
+### Prerequisites
 
-    
-    ```bash
-    nano test_mpu6050.c
-    ```
+Install the required I2C development library:
 
-2. Save the C program, then compile it using gcc:
+```bash
+sudo apt-get install libi2c-dev
+```
 
+#### Example C Program
+
+1. Open a text editor, such as nano, to create the C file:
+
+```bash
+nano test_mpu6050.c
+```
+
+2. Paste the C program into the file and save it.
+
+3. Compile the program with
     
     ```bash
     gcc -o test_mpu6050 test_mpu6050.c -li2c
     ```
 
-3. Run the program:
-
+4. Run the program:
     
     ```bash
     ./test_mpu6050
@@ -263,26 +247,21 @@ Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
 ### 1. Detecting the ADXL345 Using I2C
 
-Run the following steps to verify that the ADXL345 sensor is detected:
+Run the following step to verify that the ADXL345 sensor is detected:
 
-1. Enable I2C using the steps mentioned above.
+```bash
+sudo i2cdetect -y 1
+ ```
 
-2. Check for sensor detection with this command:
+You should see the ADXL345 detected at address `0x53`.
 
-    ```bash
-    sudo i2cdetect -y 1
-    ```
+![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_13.png)
 
-    You should see the ADXL345 detected at address `0x53`.
+Here’s the converted text for reading data from the **ADXL345** sensor in Python and C:
 
-    ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_13.png)
+### Using Python to Read ADXL345 Data
 
-### 2. Using Python to Read ADXL345 Data
-
-![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_11.png)
-
-
-#### Prerequisites
+### Prerequisites
 
 Install the required system libraries for I2C communication:
 
@@ -297,65 +276,43 @@ Install the Python package:
 sudo pip3 install smartpi-mpu6050
 ```
 
-#### Python Script for Testing ADXL345
+### Example Python Script for Testing ADXL345
 
-Create a Python file named `test_adxl345.py` and add the following code:
-
-```bash
-nano test_adxl345.py
-```
-
-Paste the code below into the file:
+Here’s a complete script to read data from the ADXL345 sensor:
 
 ```python
 from smartpi_mpu6050.mpu6050 import MPU6050
 
-mpu = MPU6050(0x53)
+adxl = MPU6050(0x53)
 
-accel_data = mpu.get_accel_data()
+accel_data = adxl.get_accel_data()
 print(f"Accelerometer: X={accel_data['x']:.2f} m/s^2, Y={accel_data['y']:.2f} m/s^2, Z={accel_data['z']:.2f} m/s^2")
 ```
 
-### Running the Python Script
+### Creating and Running the Script
 
-1. Create a new Python file `test_adxl345.py` and paste the code above.
+1. Open a text editor, such as nano, and create the Python file:
 
     ```bash
     nano test_adxl345.py
     ```
 
+2. Paste the script into the file and save it.
 
-2. Save the script, then run it with the necessary permissions (you may need to use sudo):
+3. Execute the script with the necessary permissions (you may need to use sudo):
 
     ```bash
     sudo python3 test_adxl345.py
     ```
 
-    You should see the accelerometer data printed in the terminal.
+    You should see the accelerometer data in the terminal.
 
     ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_15.png)
 
----
 
-### 3. Using a C Program to Read ADXL345 Data
+### Using a C Program to Read ADXL345 Data
 
-#### Prerequisites
-
-Install the required I2C development library:
-
-```bash
-sudo apt-get install libi2c-dev
-```
-
-#### Example C Program
-
-Create a C file named `test_adxl345.c` and add the following code:
-
-```bash
-nano test_adxl345.c
-```
-
-Paste the code below into the file:
+### Example C Program
 
 ```c
 #include <stdio.h>
@@ -405,21 +362,33 @@ int main() {
 }
 ```
 
-### Compile and Run the Program
+### Compilation and Execution
 
-1. Open a text editor to create the C file:
+#### Prerequisites
+
+Install the required I2C development library:
+
+```bash
+sudo apt-get install libi2c-dev
+```
+
+### Example C Program Steps
+
+1. Open a text editor, such as nano, to create the C file:
 
     ```bash
     nano test_adxl345.c
     ```
 
-2. Save the C program, then compile it using gcc:
+2. Paste the C program into the file and save it.
+
+3. Compile the program with:
 
     ```bash
     gcc -o test_adxl345 test_adxl345.c -li2c
     ```
 
-3. Run the program:
+4. Run the program:
 
     ```bash
     ./test_adxl345
@@ -428,4 +397,3 @@ int main() {
     You should see the accelerometer data printed in the terminal.
 
     ![Smart Pi One - Create file](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_16.png)
-
