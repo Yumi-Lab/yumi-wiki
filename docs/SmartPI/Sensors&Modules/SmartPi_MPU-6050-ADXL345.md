@@ -7,7 +7,7 @@ This guide explains how to connect and test the **MPU-6050** and **ADXL345** sen
 ### Hardware
 - **Smart Pi One** board
 - Jumper wires for connections
-- **MPU-6050** sensor and/or **ADXL345** sensor
+- **MPU-6050** sensor or **ADXL345** sensor
 
 ### Software
 - Python 3.6 or higher
@@ -48,7 +48,7 @@ Before starting with sensor tests, ensure that **I2C** is enabled on the Smart P
 
 ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_1.png)
 
-### 3.1 Wiring Diagram
+### Wiring Diagram
 
 Connect the **MPU-6050** sensor to the **Smart Pi One** using this setup:
 
@@ -61,7 +61,7 @@ Connect the **MPU-6050** sensor to the **Smart Pi One** using this setup:
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_2.png" width="500" alt="Smart Pi One - MPU-6050 Wiring">
 
-### 3.2 Detecting the MPU-6050 Using I2C
+### Detecting the MPU-6050 Using I2C
 
 Run the following step to verify that the MPU-6050 sensor is detected:
 
@@ -73,9 +73,9 @@ You should see the MPU-6050 detected at address `0x68`.
 
 ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_7.png)
 
-### 3.3 Using Python to Read MPU-6050 Data
+### Using Python to Read MPU-6050 Data
 
-#### Example Python Script for Testing MPU-6050:
+### Example Python Script for Testing MPU-6050:
 
 Here’s a complete script to read MPU-6050 from the sensor:
 
@@ -94,7 +94,7 @@ gyro_data = mpu.get_gyro_data()
 print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={gyro_data['z']:.2f} °/s")
 ```
 
-### 3.4 Creating and Running the Script
+### Creating and Running the Script
 
 #### Prerequisites
 
@@ -133,7 +133,7 @@ sudo pip3 install smartpi-mpu6050
 
 
 
-### 3.5 Using a C Program to Read MPU-6050 Data
+### Using a C Program to Read MPU-6050 Data
 
 #### Example C Program
 
@@ -191,7 +191,7 @@ int main() {
 }
 ```
 
-### 3.6 Compilation and Execution
+### Compilation and Execution
 
 #### Prerequisites
 
@@ -230,7 +230,7 @@ sudo apt-get install libi2c-dev
 
 ![ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_11.png)
 
-### 4.1 Wiring Diagram
+### Wiring Diagram
 
 Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
@@ -243,7 +243,7 @@ Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_12.png" width="500" alt="Smart Pi One - ADXL345 Wiring">
 
-### 4.2 Detecting the ADXL345 Using I2C
+### Detecting the ADXL345 Using I2C
 
 Run the following step to verify that the ADXL345 sensor is detected:
 
@@ -255,7 +255,7 @@ You should see the ADXL345 detected at address `0x53`.
 
 ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_13.png)
 
-### 4.3 Using Python to Read ADXL345 Data
+### Using Python to Read ADXL345 Data
 
 #### Example Python Script for Testing ADXL345
 
@@ -269,7 +269,7 @@ adxl = MPU6050(0x53)
 accel_data = adxl.get_accel_data()
 print(f"Accelerometer: X={accel_data['x']:.2f} m/s^2, Y={accel_data['y']:.2f} m/s^2, Z={accel_data['z']:.2f} m/s^2")
 ```
-### 4.4 Creating and Running the Script
+### Creating and Running the Script
 
 #### Prerequisites
 
@@ -305,7 +305,7 @@ sudo pip3 install smartpi-mpu6050
     ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_15.png)
 
 
-### 4.5 Using a C Program to Read ADXL345 Data
+### Using a C Program to Read ADXL345 Data
 
 #### Example C Program
 
@@ -357,7 +357,7 @@ int main() {
 }
 ```
 
-### 4.6 Compilation and Execution
+### Compilation and Execution
 
 #### Prerequisites
 
@@ -367,7 +367,7 @@ Install the required I2C development library:
 sudo apt-get install libi2c-dev
 ```
 
-### Example C Program Steps
+#### Example C Program Steps
 
 1. Open a text editor, such as nano, to create the C file:
 
