@@ -8,7 +8,7 @@ List of Sensors & Modules
 - [LED]  
 - [Relay] 
 - [MPU-6050](SmartPi_MPU-6050.md)
-- [3-Axis Digital Accelerometer] 
+- [ADXL345](SmartPi_ADXL345.md)
 - [Temperature & Humidity Sensor]  
 - [Buzzer] 
 - [Ultrasonic Ranger]   
