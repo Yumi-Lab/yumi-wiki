@@ -73,9 +73,9 @@ You should see the MPU-6050 detected at address `0x68`.
 
 ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_7.png)
 
-### 3.4 Using Python to Read MPU-6050 Data
+### 3.3 Using Python to Read MPU-6050 Data
 
-### Example Python Script for Testing MPU-6050:
+#### Example Python Script for Testing MPU-6050:
 
 Here’s a complete script to read MPU-6050 from the sensor:
 
@@ -94,9 +94,9 @@ gyro_data = mpu.get_gyro_data()
 print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={gyro_data['z']:.2f} °/s")
 ```
 
-### 3.5 Creating and Running the Script
+### 3.4 Creating and Running the Script
 
-### Prerequisites
+#### Prerequisites
 
 Install the required system libraries for I2C communication:
 
@@ -133,9 +133,9 @@ sudo pip3 install smartpi-mpu6050
 
 
 
-### 3.6 Using a C Program to Read MPU-6050 Data
+### 3.5 Using a C Program to Read MPU-6050 Data
 
-### Example C Program
+#### Example C Program
 
 ```c
 #include <stdio.h>
@@ -191,9 +191,9 @@ int main() {
 }
 ```
 
-### 3.7 Compilation and Execution
+### 3.6 Compilation and Execution
 
-### Prerequisites
+#### Prerequisites
 
 Install the required I2C development library:
 
@@ -257,7 +257,7 @@ You should see the ADXL345 detected at address `0x53`.
 
 ### 4.3 Using Python to Read ADXL345 Data
 
-### Example Python Script for Testing ADXL345
+#### Example Python Script for Testing ADXL345
 
 Here’s a complete script to read data from the ADXL345 sensor:
 
@@ -269,9 +269,9 @@ adxl = MPU6050(0x53)
 accel_data = adxl.get_accel_data()
 print(f"Accelerometer: X={accel_data['x']:.2f} m/s^2, Y={accel_data['y']:.2f} m/s^2, Z={accel_data['z']:.2f} m/s^2")
 ```
-### Creating and Running the Script
+### 4.4 Creating and Running the Script
 
-### Prerequisites
+#### Prerequisites
 
 Install the required system libraries for I2C communication:
 
@@ -305,9 +305,9 @@ sudo pip3 install smartpi-mpu6050
     ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_15.png)
 
 
-### Using a C Program to Read ADXL345 Data
+### 4.5 Using a C Program to Read ADXL345 Data
 
-### Example C Program
+#### Example C Program
 
 ```c
 #include <stdio.h>
@@ -357,7 +357,7 @@ int main() {
 }
 ```
 
-### Compilation and Execution
+### 4.6 Compilation and Execution
 
 #### Prerequisites
 
@@ -393,7 +393,7 @@ sudo apt-get install libi2c-dev
 
     ![Smart Pi One - Create file](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_16.png)
 
-## Troubleshooting
+## 5. Troubleshooting
 
 ### Common Issues:
 
