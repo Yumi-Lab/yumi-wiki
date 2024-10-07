@@ -45,7 +45,7 @@ To connect the MPU-6050 sensor to the Smart Pi One, follow this wiring setup:
 
 Before you begin programming, you need to verify that the MPU-6050 sensor is connected correctly and can be detected via I2C.
 
-### Step 1: Enable I2C on the Smart Pi One
+### Enable I2C on the Smart Pi One
 
 1. Open Armbian-Config via an SSH interface or a terminal window:
 
