@@ -96,7 +96,7 @@ print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={
 
 ### Creating and Running the Script
 
-#### Prerequisites
+### Prerequisites
 
 Install the required system libraries for I2C communication:
 
@@ -135,7 +135,7 @@ sudo pip3 install smartpi-mpu6050
 
 ### Using a C Program to Read MPU-6050 Data
 
-#### Example C Program
+### Example C Program
 
 ```c
 #include <stdio.h>
@@ -193,7 +193,7 @@ int main() {
 
 ### Compilation and Execution
 
-#### Prerequisites
+### Prerequisites
 
 Install the required I2C development library:
 
@@ -257,7 +257,7 @@ You should see the ADXL345 detected at address `0x53`.
 
 ### Using Python to Read ADXL345 Data
 
-#### Example Python Script for Testing ADXL345
+### Example Python Script for Testing ADXL345
 
 Here’s a complete script to read data from the ADXL345 sensor:
 
@@ -271,7 +271,7 @@ print(f"Accelerometer: X={accel_data['x']:.2f} m/s^2, Y={accel_data['y']:.2f} m/
 ```
 ### Creating and Running the Script
 
-#### Prerequisites
+### Prerequisites
 
 Install the required system libraries for I2C communication:
 
@@ -307,7 +307,7 @@ sudo pip3 install smartpi-mpu6050
 
 ### Using a C Program to Read ADXL345 Data
 
-#### Example C Program
+### Example C Program
 
 ```c
 #include <stdio.h>
@@ -359,7 +359,7 @@ int main() {
 
 ### Compilation and Execution
 
-#### Prerequisites
+### Prerequisites
 
 Install the required I2C development library:
 
@@ -367,7 +367,7 @@ Install the required I2C development library:
 sudo apt-get install libi2c-dev
 ```
 
-#### Example C Program Steps
+### Example C Program Steps
 
 1. Open a text editor, such as nano, to create the C file:
 
