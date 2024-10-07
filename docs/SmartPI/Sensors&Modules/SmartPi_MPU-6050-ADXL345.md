@@ -133,7 +133,7 @@ sudo pip3 install smartpi-mpu6050
 
 
 
-### 4. Using a C Program to Read MPU-6050 Data
+### 3.6 Using a C Program to Read MPU-6050 Data
 
 ### Example C Program
 
@@ -191,7 +191,7 @@ int main() {
 }
 ```
 
-### 4.1 Compilation and Execution
+### 3.7 Compilation and Execution
 
 ### Prerequisites
 
@@ -200,8 +200,6 @@ Install the required I2C development library:
 ```bash
 sudo apt-get install libi2c-dev
 ```
-
-#### Example C Program
 
 1. Open a text editor, such as nano, to create the C file:
 
@@ -228,11 +226,11 @@ sudo apt-get install libi2c-dev
     ![Smart Pi One - Create file](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_10.png)
 
 
-## 5. How to Test the ADXL345 Sensor
+## 4. How to Test the ADXL345 Sensor
 
 ![ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_11.png)
 
-### 5.1 Wiring Diagram
+### 4.1 Wiring Diagram
 
 Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
@@ -245,7 +243,7 @@ Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_12.png" width="500" alt="Smart Pi One - ADXL345 Wiring">
 
-### Detecting the ADXL345 Using I2C
+### 4.2 Detecting the ADXL345 Using I2C
 
 Run the following step to verify that the ADXL345 sensor is detected:
 
@@ -257,7 +255,7 @@ You should see the ADXL345 detected at address `0x53`.
 
 ![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_13.png)
 
-### Using Python to Read ADXL345 Data
+### 4.3 Using Python to Read ADXL345 Data
 
 ### Example Python Script for Testing ADXL345
 
