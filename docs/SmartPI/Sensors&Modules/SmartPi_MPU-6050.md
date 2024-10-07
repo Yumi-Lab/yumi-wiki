@@ -1,17 +1,14 @@
+Voici votre document avec les titres et la numérotation corrigés pour une meilleure lisibilité :
+
+---
+
 # How to Test the MPU-6050 Sensor on Smart Pi One (Python and C)
 
 This guide explains how to connect and test the **MPU-6050** accelerometer and gyroscope sensor with the **Smart Pi One** board using both Python (`smartpi-mpu6050` package) and C. It also covers how to detect the sensor via I2C.
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_1.png)
 
-
 The **MPU-6050** is a 6-axis motion tracking device that provides accelerometer and gyroscope data, making it useful for projects requiring motion sensing, orientation detection, and balance control.
-
-You will learn how to:
-- Connect the MPU-6050 sensor to the Smart Pi One.
-- Detect the MPU-6050 via I2C.
-- Install and use the Python library `smartpi-mpu6050`.
-- Test the sensor and retrieve data using Python and C.
 
 ## Prerequisites
 
@@ -19,7 +16,6 @@ You will learn how to:
 - Smart Pi One board (Yumi)
 - MPU-6050 sensor
 - Jumper wires for connections
-
 
 ### Software
 - Python 3.6 or higher
@@ -32,16 +28,17 @@ You will learn how to:
 
 To connect the MPU-6050 sensor to the Smart Pi One, follow this wiring setup:
 
-| MPU-6050 Pin | Smart Pi One Pin | Description  |
-|--------------|------------------|--------------|
-| VCC          |(1) 3.3V             | Power        |
-| GND          |(6) GND              | Ground       |
-| SCL          |(27) SCL (I2C1 Clock)  | I2C Clock    |
-| SDA          |(28) SDA (I2C1 Data)   | I2C Data     |
+| MPU-6050 Pin | Smart Pi One Pin     | Description  |
+|--------------|----------------------|--------------|
+| VCC          | (1) 3.3V             | Power        |
+| GND          | (6) GND              | Ground       |
+| SCL          | (27) SCL (I2C1 Clock)| I2C Clock    |
+| SDA          | (28) SDA (I2C1 Data) | I2C Data     |
+
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_2.png" width="500" alt="Smart Pi One - MPU-6050">
 
-## Detecting the MPU-6050 Using I2C
+## 1. Detecting the MPU-6050 Using I2C
 
 Before you begin programming, you need to verify that the MPU-6050 sensor is connected correctly and can be detected via I2C.
 
@@ -53,19 +50,19 @@ Before you begin programming, you need to verify that the MPU-6050 sensor is con
 sudo armbian-config
 ```
 
-2. Choose **`System`**:
+2. Choose **System**:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_3.png)
 
-3. Select **`Hardware`**:
+3. Select **Hardware**:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_4.png)
 
-4. Then **`i2c1`**, **`Save`** and **`Back`**:
+4. Enable **i2c1**, then **Save** and **Back**:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_5.png)
 
-5. To finish: **`Reboot`** to apply the changes:
+5. To finish, **Reboot** to apply the changes:
 
 ![Smart Pi One - MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050/SmartPi_MPU-6050_6.png)
 
@@ -81,11 +78,12 @@ You should see an output similar to this:
 
 In this case, the MPU-6050 is detected at address 0x68. This confirms that the sensor is correctly connected and ready for use.
 
-## Using Python to Read MPU-6050 Data
+## 2. Using Python to Read MPU-6050 Data
 
 Before starting, make sure the I2C interface is enabled on your Smart Pi One as explained above.
 
 ### Prerequisites
+
 Install the required system library for I2C communication:
 
 ```bash
@@ -93,17 +91,19 @@ sudo apt-get update
 sudo apt-get install python3-smbus
 ```
 
+Install the Python package:
+
 ```bash
 sudo pip3 install smartpi-mpu6050
 ```
 
-## Running the Test 
+### Running the Test
 
-After the installation, you can use the following Python script to test your MPU-6050 sensor. This script will print the temperature, accelerometer, and gyroscope data from the sensor.
+After installation, use the following Python script to test your MPU-6050 sensor. This script will print the temperature, accelerometer, and gyroscope data from the sensor.
 
-### Example Python Script
+#### Example Python Script
 
-Here’s a complete script to MPU6050 events from the sensor:
+Here’s a complete script to read MPU6050 data from the sensor:
 
 ```python
 from smartpi_mpu6050.mpu6050 import MPU6050
@@ -124,25 +124,23 @@ gyro_data = mpu.get_gyro_data()
 print(f"Gyroscope: X={gyro_data['x']:.2f} °/s, Y={gyro_data['y']:.2f} °/s, Z={gyro_data['z']:.2f} °/s")
 ```
 
-# Creating and Running the Script
+### Creating and Running the Script
 
-1. Create a new Python file test_mpu6050.py and paste the code above.
+1. Create a new Python file `test_mpu6050.py` and paste the code above.
 
 ```bash
 nano test_mpu6050.py
 ```
 
-2.Paste the script into the file and save it.
-
-3. Execute the script with the necessary permissions (you may need to use sudo):
+2. Save the script, then run it with the necessary permissions (you may need to use sudo):
 
 ```bash
 sudo python3 test_mpu6050.py
 ```
 
-3. You should see output showing the temperature, accelerometer, and gyroscope data.
+You should see output showing the temperature, accelerometer, and gyroscope data.
 
-## Using a C Program to Read MPU-6050 Data
+## 3. Using a C Program to Read MPU-6050 Data
 
 ### Example C Program
 
@@ -202,37 +200,29 @@ int main() {
 }
 ```
 
-## Compile and Run the Program
+### Compile and Run the Program
 
-1. Open a text editor, such as nano, to create the C file:
+1. Open a text editor to create the C file:
 
 ```bash
 nano test_mpu6050.c
-
 ```
 
-2. Paste the C program into the file and save it.
-
-3. Compile the C program using gcc:
+2. Save the C program, then compile it using gcc:
 
 ```bash
 gcc -o test_mpu6050 test_mpu6050.c -li2c
-
 ```
 
-4. Run the program:
+3. Run the program:
 
 ```bash
 ./test_mpu6050
-
 ```
 
 You should see the temperature and accelerometer data printed to the terminal.
 
-
-#### 8. Troubleshooting
-
-## Troubleshooting
+## 4. Troubleshooting
 
 ### Common Issues:
 
@@ -241,6 +231,8 @@ You should see the temperature and accelerometer data printed to the terminal.
    - Verify the connections of the SDA and SCL pins.
    - Use the following command to check if the MPU-6050 is detected:
      ```bash
+
+
      sudo i2cdetect -y 1
      ```
    - You should see the address `0x68` in the output.
@@ -251,3 +243,7 @@ You should see the temperature and accelerometer data printed to the terminal.
 
 3. **Library Installation Issues**
    - Ensure that `python3-smbus` or `libi2c-dev` is installed, depending on the language you're using.
+
+---
+
+La numérotation, l'ordre et la hiérarchie des titres ont été ajustés.
