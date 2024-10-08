@@ -2,6 +2,9 @@
 
 This page describes how to activate a relay using the Smart Pi One, with detailed steps, wiring instructions, and code examples in both Python and C.
 
+![RELAY 5V](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_1.png)
+
+
 ## Required Materials
 
 - Smart Pi One
@@ -13,19 +16,36 @@ This page describes how to activate a relay using the Smart Pi One, with detaile
 
 Below is a sample wiring diagram for connecting a relay module to the Smart Pi One:
 
-![Relay Wiring Diagram]
-
-*Note: Replace the placeholder image with an actual wiring diagram illustrating the connections.*
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_2.png" width="520" alt="Relay Wiring Diagram">
 
 ### Connecting the Relay
 
 1. **Connect the Relay:**
-   - Connect the input pin of the relay module (IN) to a GPIO pin on the Smart Pi One (GPIO7).
-   - Connect the VCC pin of the relay module to the 5V pin on the Smart Pi One.
-   - Connect the GND pin of the relay module to the ground (GND) pin on the Smart Pi One.
+   - Connect the input pin of the relay module (IN) to a GPIO pin on the Smart Pi One (**GPIO7**/**PIN: 7**).
+   - Connect the VCC pin of the relay module to the (**5V**/**PIN:2**) on the Smart Pi One.
+   - Connect the GND pin of the relay module to the ground (**GND**/**PIN:9**) pin on the Smart Pi One.
 
 2. **Connect the Load:**
    - Connect the device you want to control (e.g., a lamp) to the relay's output terminals. Ensure proper electrical connections are made according to the relay's specifications.
+
+## Turning on a RELAY via Command Line (CLI)
+
+### Step 1: Turn on the LED
+
+To turn on the LED on GPIO 7:
+
+```bash
+gpio -g mode 7 out
+gpio -g write 7 1
+```
+
+### Step 2: Turn off the LED
+
+To turn off the LED:
+
+```bash
+gpio -g write 7 0
+```
 
 ## Using Python
 
