@@ -27,7 +27,28 @@ Below is the wiring diagram for connecting an LED to GPIO on the Smart Pi One:
    - Connect the shorter leg of the LED (cathode) to ground (GND).
    - If necessary, place a resistor in series with the LED to limit the current (typically around 220Ω to 1kΩ).
 
-## Configuration of smartpi-gpio
+## Turning on an LED via Command Line (CLI)
+
+### Step 1: Turn on the LED
+
+To turn on the LED on GPIO 17:
+
+```bash
+gpio -g mode 7 out
+gpio -g write 7 1
+```
+
+### Step 2: Turn off the LED
+
+To turn off the LED:
+
+```bash
+gpio -g write 7 0
+```
+
+## Using Python
+
+## Prerequisites: Configuration of smartpi-gpio
 
 To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 
@@ -101,6 +122,8 @@ To run the Python script, use the following command:
 ```bash
 sudo python3 led_control.py
 ```
+
+## Using a C Program
 
 ## Creating the C Program
 
