@@ -5,7 +5,7 @@ This section includes various sensors and modules compatible with the Smart Pi O
 List of Sensors & Modules
 
 - [Button] 
-- [LED]  
+- [LED](SmartPi_LED_Control.md)
 - [Relay] 
 - [MPU-6050](SmartPi_MPU-6050-ADXL345.md)
 - [Temperature & Humidity Sensor]  
