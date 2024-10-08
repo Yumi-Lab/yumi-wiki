@@ -48,7 +48,7 @@ gpio -g write 7 0
 
 ## Using Python
 
-## Prerequisites: Configuration of smartpi-gpio
+### Prerequisites: Configuration of smartpi-gpio
 
 To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 
@@ -125,7 +125,7 @@ sudo python3 led_control.py
 
 ## Using a C Program
 
-## Creating the C Program
+### Creating the C Program
 
 1. Open a terminal on your Smart Pi One.
 2. Create a new C file using `nano`:
