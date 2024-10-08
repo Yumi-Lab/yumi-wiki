@@ -23,7 +23,7 @@ Below is a sample wiring diagram for connecting a relay module to the Smart Pi O
 1. **Connect the Relay:**
    - Connect the input pin of the relay module (IN) to a GPIO pin on the Smart Pi One (**GPIO7**/**PIN: 7**).
    - Connect the VCC pin of the relay module to the (**5V**/**PIN:2**) on the Smart Pi One.
-   - Connect the GND pin of the relay module to the ground (**GND**/**PIN:9**) pin on the Smart Pi One.
+   - Connect the GND pin of the relay module to the ground (**GND**/**PIN:3**) pin on the Smart Pi One.
 
 2. **Connect the Load:**
    - Connect the device you want to control (e.g., a lamp) to the relay's output terminals. Ensure proper electrical connections are made according to the relay's specifications.
