@@ -7,7 +7,7 @@ This page describes how to control an LED using GPIO on the Smart Pi One, with d
 ## Required Materials
 
 - Smart Pi One
-- LED (with resistor 220 Ohm if necessary)
+- LED (with resistoraround 220Ω to 1kΩ if necessary)
 - Connecting wires
 - Breadboard (optional for easier connections)
 
@@ -23,9 +23,9 @@ Below is the wiring diagram for connecting an LED to GPIO on the Smart Pi One:
 ### Connecting the LED
 
 1. **Connect the LED:**
-   - Connect the longer leg of the LED (anode) to GPIO (e.g., GPIO7).
-   - Connect the shorter leg of the LED (cathode) to ground (GND).
-   - If necessary, place a resistor in series with the LED to limit the current (typically around 220Ω to 1kΩ).
+   - Connect the longer leg of the LED (**anode**) to GPIO (**GPIO7**).
+   - Connect the shorter leg of the LED (**cathode**) to ground (**GND**).
+   - If necessary, place a resistor in series with the LED to limit the current (**typically around 220Ω to 1kΩ**).
 
 ## Turning on an LED via Command Line (CLI)
 
