@@ -15,9 +15,9 @@ This page describes how to control an LED using GPIO on the Smart Pi One, with d
 
 Below is the wiring diagram for connecting an LED to GPIO on the Smart Pi One:
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_3.png" width="140" alt="LED Wiring Diagram">
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_2.png" width="140" alt="LED Wiring Diagram">
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_2.png" width="500" alt="LED Wiring Diagram">
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_3.png" width="500" alt="LED Wiring Diagram">
 
 
 ### Connecting the LED
