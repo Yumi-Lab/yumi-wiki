@@ -31,7 +31,7 @@ Below is the wiring diagram for connecting an LED to GPIO on the Smart Pi One:
 
 ### Step 1: Turn on the LED
 
-To turn on the LED on GPIO 17:
+To turn on the LED on GPIO 7:
 
 ```bash
 gpio -g mode 7 out
