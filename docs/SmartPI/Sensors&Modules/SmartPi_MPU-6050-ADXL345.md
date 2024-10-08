@@ -2,6 +2,8 @@
 
 This guide explains how to connect and test the **MPU-6050** and **ADXL345** sensors with the **Smart Pi One** board using both Python (via the `smartpi-mpu6050` package) and C. It also covers how to detect the sensors via I2C.
 
+![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_1.png)
+
 ## 1. Prerequisites
 
 ### Hardware
@@ -45,8 +47,6 @@ Before starting with sensor tests, ensure that **I2C** is enabled on the Smart P
 
 
 ## 3. How to Test the MPU-6050 Sensor
-
-![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_1.png)
 
 ### Wiring Diagram
 
