@@ -1,50 +1,31 @@
-# Controlling an LED via GPIO on Smart Pi One
+# Activating a Relay on Smart Pi One
 
-This page describes how to control an LED using GPIO on the Smart Pi One, with detailed steps, wiring instructions, a wiring diagram, and code examples in both Python and C.
-
-![LED](../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_1.png)
+This page describes how to activate a relay using the Smart Pi One, with detailed steps, wiring instructions, and code examples in both Python and C.
 
 ## Required Materials
 
 - Smart Pi One
-- LED (with resistor around 220Ω to 1kΩ if necessary)
+- Relay module (with optoisolator recommended)
 - Connecting wires
 - Breadboard (optional for easier connections)
 
 ## Wiring Diagram
 
-Below is the wiring diagram for connecting an LED to GPIO on the Smart Pi One
+Below is a sample wiring diagram for connecting a relay module to the Smart Pi One:
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_3.png" width="520" alt="LED Wiring Diagram">
+![Relay Wiring Diagram]
 
+*Note: Replace the placeholder image with an actual wiring diagram illustrating the connections.*
 
-## Connecting the LED
+### Connecting the Relay
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_2.png" width="140" alt="LED Wiring Diagram">
+1. **Connect the Relay:**
+   - Connect the input pin of the relay module (IN) to a GPIO pin on the Smart Pi One (GPIO7).
+   - Connect the VCC pin of the relay module to the 5V pin on the Smart Pi One.
+   - Connect the GND pin of the relay module to the ground (GND) pin on the Smart Pi One.
 
-**Connect the LED:**
-   - Connect the longer leg of the LED (**anode**) to GPIO (**GPIO7**/**PIN: 7**).
-   - Connect the shorter leg of the LED (**cathode**) to ground (**GND**/**PIN:9**).
-   - If necessary, place a resistor in series with the LED to limit the current (**typically around 220Ω to 1kΩ**).
-
-## Turning on an LED via Command Line (CLI)
-
-### Step 1: Turn on the LED
-
-To turn on the LED on GPIO 7:
-
-```bash
-gpio -g mode 7 out
-gpio -g write 7 1
-```
-
-### Step 2: Turn off the LED
-
-To turn off the LED:
-
-```bash
-gpio -g write 7 0
-```
+2. **Connect the Load:**
+   - Connect the device you want to control (e.g., a lamp) to the relay's output terminals. Ensure proper electrical connections are made according to the relay's specifications.
 
 ## Using Python
 
@@ -81,7 +62,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 2. Create a new Python file using `nano`:
 
    ```bash
-   nano led_control.py
+   nano relay_control.py
    ```
 
 3. Copy and paste the following Python code into the file:
@@ -93,19 +74,19 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    # Initialize GPIO
    gpio = GPIO()
 
-   # Set GPIO7 as output for the LED
+   # Set GPIO7 as output for the relay
    gpio.setup(7, gpio.OUT)
 
    try:
        while True:
-           # Turn on the LED
+           # Activate the relay (turn on)
            gpio.output(7, gpio.HIGH)
-           print("LED is ON")
+           print("Relay is ON")
            time.sleep(2)  # Keep it on for 2 seconds
            
-           # Turn off the LED
+           # Deactivate the relay (turn off)
            gpio.output(7, gpio.LOW)
-           print("LED is OFF")
+           print("Relay is OFF")
            time.sleep(2)  # Keep it off for 2 seconds
    except KeyboardInterrupt:
        pass
@@ -120,7 +101,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 To run the Python script, use the following command:
 
 ```bash
-sudo python3 led_control.py
+python3 relay_control.py
 ```
 
 ## Using a C Program
@@ -131,7 +112,7 @@ sudo python3 led_control.py
 2. Create a new C file using `nano`:
 
    ```bash
-   nano led_control.c
+   nano relay_control.c
    ```
 
 3. Copy and paste the following C code into the file:
@@ -146,18 +127,18 @@ sudo python3 led_control.py
        // Initialize GPIO
        smartpi_gpio_init();
        
-       // Set GPIO7 as output for the LED
+       // Set GPIO7 as output for the relay
        smartpi_gpio_set_mode(7, OUTPUT);
        
        while (1) {
-           // Turn on the LED
+           // Activate the relay (turn on)
            smartpi_gpio_write(7, HIGH);
-           printf("LED is ON\n");
+           printf("Relay is ON\n");
            sleep(2);  // Keep it on for 2 seconds
            
-           // Turn off the LED
+           // Deactivate the relay (turn off)
            smartpi_gpio_write(7, LOW);
-           printf("LED is OFF\n");
+           printf("Relay is OFF\n");
            sleep(2);  // Keep it off for 2 seconds
        }
 
@@ -174,7 +155,6 @@ sudo python3 led_control.py
 To compile and run the C program, use the following commands:
 
 ```bash
-gcc -o led_control led_control.c -I/path/to/smartpi_gpio/include -L/path/to/smartpi_gpio/lib -lsmartpi_gpio
-sudo ./led_control
+gcc -o relay_control relay_control.c -I/path/to/smartpi_gpio/include -L/path/to/smartpi_gpio/lib -lsmartpi_gpio
+./relay_control
 ```
-
