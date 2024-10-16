@@ -88,7 +88,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 
    ```python
    import time
-   from smartpi_gpio import GPIO
+   from smartpi_gpio.gpio import GPIO
 
    # Initialize GPIO
    gpio = GPIO()

@@ -16,7 +16,7 @@ This page describes how to use an ultrasonic sensor (e.g., HC-SR04) with the Sma
 
 Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smart Pi One:
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_1.png" width="520" alt="Ultrasonic Sensor Wiring Diagram">
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_2.png" width="520" alt="Ultrasonic Sensor Wiring Diagram">
 
 
 ### Connecting the Ultrasonic Sensor
@@ -43,7 +43,7 @@ Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smar
 
    ```python
    import time
-   from smartpi_gpio import GPIO
+   from smartpi_gpio.gpio import GPIO
 
    # Initialize GPIO
    gpio = GPIO()
