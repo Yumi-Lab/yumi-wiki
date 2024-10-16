@@ -3,7 +3,7 @@
 
 ## **Wanhao D12 Series for Smartpad Yumi Configuration**
 
-#### **Model D12 200**
+### **Model D12 200**
 
 | **Motherboard** | **Type** | **TMC Driver Configuration** | **Download Firmware** | **Download printer.cfg Without BL** | **Download printer.cfg With BL** |
 |------------------|----------|-------------------------------|-----------------------|---------------------------------------|------------------------------------|
@@ -30,7 +30,7 @@
 
 ---
 
-#### **Model D12 300**
+### **Model D12 300**
 
 | **Motherboard** | **Type** | **TMC Driver Configuration** | **Download Firmware** | **Download printer.cfg Without BL** | **Download printer.cfg With BL** |
 |------------------|----------|-------------------------------|-----------------------|---------------------------------------|------------------------------------|
@@ -57,7 +57,7 @@
 
 ---
 
-#### **Model D12 500**
+### **Model D12 500**
 
 | **Motherboard** | **Type** | **TMC Driver Configuration** | **Download Firmware** | **Download printer.cfg Without BL** | **Download printer.cfg With BL** |
 |------------------|----------|-------------------------------|-----------------------|---------------------------------------|------------------------------------|
@@ -84,7 +84,7 @@
 
 ---
 
-#### **Wanhao D12 Expert**
+### **Wanhao D12 Expert**
 
 | **Type**           | Motherboard  | Download Firmware | Download printer.cfg (Without BL Touch) | Download printer.cfg (With BL Touch) |
 |--------------------|--------------|-------------------|-----------------------------------------|--------------------------------------|
@@ -94,7 +94,7 @@
 
 ### **Other Printer Brands for Smartpad Yumi Configuration**
 
-#### **Creality Ender Series**
+### **Creality Ender Series**
 
 For the **Creality Ender Series**, the BL Touch is significant for some models, while others don't need specific mention. Only models with CR Touch have BL Touch included in the `printer.cfg`:
 
@@ -111,7 +111,7 @@ For the **Creality Ender Series**, the BL Touch is significant for some models, 
 
 ## Other Printer Brands for Smartpad Yumi Configuration
 
-#### **Anycubic Series**
+### **Anycubic Series**
 
 For **Anycubic**, the BL Touch is not specified, so no need to differentiate:
 
@@ -122,7 +122,7 @@ For **Anycubic**, the BL Touch is not specified, so no need to differentiate:
 
 ---
 
-#### **Elegoo Neptune Series**
+### **Elegoo Neptune Series**
 
 For **Elegoo Neptune** printers, there is no need to specify BL Touch:
 
@@ -134,8 +134,3 @@ For **Elegoo Neptune** printers, there is no need to specify BL Touch:
 
 ---
 
-
-
-1. **Mono & Dual tables for Wanhao models**: The table layout is more distinct between Mono and Dual to make it visually clearer.
-2. **Creality Ender Series**: Specific models with CR Touch require BL Touch configuration, while others don’t.
-3. **Anycubic & Elegoo Series**: BL Touch is not specified or necessary in their configurations.
