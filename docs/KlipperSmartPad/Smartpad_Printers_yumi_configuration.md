@@ -3,7 +3,7 @@
 
 ## **Wanhao D12 Series for Smartpad Yumi Configuration**
 
-### **Model D12 200**
+### **Model D12 230**
 
 | **Motherboard** | **Type** | **TMC Driver Configuration** | **Download Firmware** | **Download printer.cfg Without BL** | **Download printer.cfg With BL** |
 |------------------|----------|-------------------------------|-----------------------|---------------------------------------|------------------------------------|
