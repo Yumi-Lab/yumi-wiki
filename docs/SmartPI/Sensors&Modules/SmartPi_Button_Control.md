@@ -27,7 +27,7 @@ The button is connected to **GPIOG11 (Pin 7)** as the input pin for detecting th
 | 7            | GPIOG11                | Button Input            |
 | 7             | GND                   | Ground                  |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_Button_Control_2.png" width="520" alt="BUTTON Wiring Diagram">
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_2.png" width="520" alt="BUTTON Wiring Diagram">
 
 ## Displaying a Message via CLI
 
