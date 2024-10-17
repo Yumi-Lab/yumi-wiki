@@ -18,7 +18,7 @@ Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smar
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_2.png" width="520" alt="Ultrasonic Sensor Wiring Diagram">
 
-| HC-SR04 Pin  | Smart Pi One Pin |  Description                                     |
+| HC-SR04 Pin  | Smart Pi One Pin | Description                                     |
 |--------------|------------------|--------------------------------|
 | VCC          | 5V               |  Powers the sensor (5V supply)                   |
 | GND          | GND              |  Ground connection                               |
