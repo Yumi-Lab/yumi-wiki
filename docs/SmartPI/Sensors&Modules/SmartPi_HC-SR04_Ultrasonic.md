@@ -4,13 +4,13 @@ This page describes how to use an ultrasonic sensor (e.g., HC-SR04) with the Sma
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_1.png" width="200" alt="ultrasonic sensor - HC-SR04">
 
-
 ## Required Materials
 
 - Smart Pi One
 - Ultrasonic sensor (e.g., HC-SR04)
 - Connecting wires
 - Breadboard (optional for easier connections)
+- 1kΩ and 2kΩ resistors (for voltage divider)
 
 ## Wiring Diagram
 
@@ -18,15 +18,19 @@ Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smar
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_2.png" width="520" alt="Ultrasonic Sensor Wiring Diagram">
 
+## Wiring Table with Resistors
 
-### Connecting the Ultrasonic Sensor
+| HC-SR04 Pin  | Smart Pi One Pin | Resistor (If Used)       | Description                                     |
+|--------------|------------------|--------------------------|-------------------------------------------------|
+| VCC          | 5V               | None                     | Powers the sensor (5V supply)                   |
+| GND          | GND              | None                     | Ground connection                               |
+| TRIG         | GPIO7            | None                     | Trigger pin connected to GPIO                   |
+| ECHO         | GPIO8            | 1kΩ + 2kΩ (Voltage Divider) | Resistors used to step down voltage from 5V to 3.3V to protect the GPIO pin |
 
-1. **Connect the Ultrasonic Sensor:**
-   - Connect the VCC pin of the sensor to the 5V pin on the Smart Pi One.
-   - Connect the GND pin of the sensor to the ground (GND) pin on the Smart Pi One.
-   - Connect the TRIG pin of the sensor to a GPIO pin on the Smart Pi One (e.g., GPIO7).
-   - Connect the ECHO pin of the sensor to another GPIO pin on the Smart Pi One (e.g., GPIO8).
-
+### Important Note:
+- **ECHO pin (GPIO8)** requires a voltage divider to step down the 5V output signal from the sensor to 3.3V, which is safe for the GPIO pin on the Smart Pi One. 
+  - Connect a 1kΩ resistor between the ECHO pin and the GPIO pin.
+  - Connect a 2kΩ resistor between the GPIO pin and GND to complete the voltage divider.
 
 ## Using Python
 
@@ -90,6 +94,8 @@ To run the Python script, use the following command:
 ```bash
 python3 ultrasonic_sensor.py
 ```
+
+![Smart Pi One - HC-SR04](../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_3.png)
 
 ## Using a C Program
 
