@@ -107,6 +107,7 @@ nav:
       - SmartPI/Sensors&Modules/SmartPi_Sensors_Modules_Integration.md
       - SmartPI/Sensors&Modules/SmartPi_Button_Control.md
       - SmartPI/Sensors&Modules/SmartPi_LED_Control.md
+      - SmartPI/Sensors&Modules/SmartPi_Buzzer_Control.md
       - SmartPI/Sensors&Modules/SmartPi_MPU-6050-ADXL345.md
       - SmartPI/Sensors&Modules/SmartPi_Relay_Control.md
       - SmartPI/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic.md

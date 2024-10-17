@@ -9,12 +9,12 @@ List of Sensors & Modules
 - [Relay](SmartPi_Relay_Control.md)
 - [MPU-6050 & ADXL345](SmartPi_MPU-6050-ADXL345.md)
 - [Temperature & Humidity Sensor]  
-- [Buzzer] 
+- [Buzzer](SmartPi_Buzzer_Control.md)
 - [Ultrasonic Ranger - HC-SR04](SmartPi_Sensors_Modules_Integration.md)   
 - [IR Receiver] 
 - [L298N Motor Driver]  
 - [Photoresistor] 
-- [Potentiometer]
+- [PCA9685]
 
 ---
 

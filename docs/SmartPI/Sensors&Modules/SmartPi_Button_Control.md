@@ -85,7 +85,6 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 4. **Activate GPIO interfaces**:
    ```bash
    sudo activate_interfaces.sh
-    pip install smartpi-gpio
     ```
 
 ## Displaying a Message with Python
