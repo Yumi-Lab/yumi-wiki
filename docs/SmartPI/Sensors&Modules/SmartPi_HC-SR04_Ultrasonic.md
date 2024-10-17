@@ -18,12 +18,12 @@ Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smar
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_2.png" width="520" alt="Ultrasonic Sensor Wiring Diagram">
 
-| HC-SR04 Pin  | Smart Pi One Pin | Resistor (If Used)       | Description                                     |
-|--------------|------------------|--------------------------|-------------------------------------------------|
-| VCC          | 5V               | None                     | Powers the sensor (5V supply)                   |
-| GND          | GND              | None                     | Ground connection                               |
-| TRIG         | GPIO7            | None                     | Trigger pin connected to GPIO                   |
-| ECHO         | GPIO8            | 1kΩ + 2kΩ (Voltage Divider) | Resistors used to step down voltage from 5V to 3.3V to protect the GPIO pin |
+| HC-SR04 Pin  | Smart Pi One Pin |  Description                                     |
+|--------------|------------------|-------------------------------------------------|
+| VCC          | 5V               |  Powers the sensor (5V supply)                   |
+| GND          | GND              |  Ground connection                               |
+| TRIG         | GPIO7            | Trigger pin connected to GPIO                   |
+| ECHO         | GPIO8            |  Resistors used to step down voltage from 5V to 3.3V to protect the GPIO pin -  1kΩ + 2kΩ (Voltage Divider) |
 
 ### Important Note:
 - **ECHO pin (GPIO8)** requires a voltage divider to step down the 5V output signal from the sensor to 3.3V, which is safe for the GPIO pin on the Smart Pi One. 
