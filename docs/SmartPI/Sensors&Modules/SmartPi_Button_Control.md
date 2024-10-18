@@ -1,4 +1,4 @@
-# Button Message Display with Smart Pi One, SmartPi-GPIO, and Pull-down Resistor (3.3V)
+# Button with Smart Pi One
 
 In this guide, we will demonstrate how to display a message when a button connected to the **Smart Pi One** is pressed, using the **SmartPi-GPIO** library and a **pull-down resistor** connected to the **3.3V** pin.
 
