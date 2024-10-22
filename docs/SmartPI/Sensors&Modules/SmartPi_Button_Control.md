@@ -44,7 +44,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 
 ### Wiring Diagram
@@ -55,7 +55,7 @@ The button is connected to **GPIOG11 (Pin 7)** as the input pin for detecting th
 |----------------|-----------------------|------------------------|
 | 1              | 3.3V                  | Power Supply            |
 | 7              | GPIOG11               | Button Input            |
-
+| 6              | GROUND                | GROUND           |
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_2.png" width="520" alt="BUTTON Wiring Diagram">
 
@@ -126,73 +126,7 @@ With **SmartPi-GPIO** and Python, you can write a simple script to detect the bu
 
 4. **Run the Python script**:
    ```bash
-   python3 button_message.py
-   ```
-
-When the button is pressed, the message "Button Pressed!" will be displayed.
-
-## Displaying a Message with a C Program
-
-You can also detect button presses using a C program and the **SmartPi-GPIO** library.
-
-### Steps:
-
-1. **Create a C file**:
-   ```bash
-   nano button_message.c
-   ```
-
-2. **Write the following code**:
-
-   ```c
-   #include <stdio.h>
-   #include <stdlib.h>
-   #include "smartpi_gpio.h" // Include SmartPi-GPIO header
-
-   int main() {
-       // Initialize the GPIO library
-       if (gpio_init() == -1) {
-           printf("Failed to initialize GPIO.\n");
-           return -1;
-       }
-
-       int button_pin = 7; // GPIOG11 (Pin 7)
-
-       // Set the button pin as input with pull-down resistor
-       gpio_set_direction(button_pin, GPIO_INPUT_PULLDOWN);
-
-       printf("Press the button to display a message...\n");
-
-       while (1) {
-           // Read the button state
-           int button_state = gpio_read(button_pin);
-
-           if (button_state == 1) {
-               printf("Button Pressed!\n");
-               break;
-           }
-
-           // Small delay to prevent busy-waiting
-           usleep(100000); // 100 ms
-       }
-
-       // Cleanup and close GPIO
-       gpio_cleanup();
-
-       return 0;
-   }
-   ```
-
-3. **Save and exit** (`CTRL+X`, `Y`, and `Enter`).
-
-4. **Compile the C program**:
-   ```bash
-   gcc -o button_message button_message.c -lsmartpi_gpio
-   ```
-
-5. **Run the program**:
-   ```bash
-   sudo ./button_message
+   sudo python3 button_message.py
    ```
 
 When the button is pressed, the message "Button Pressed!" will be displayed.
