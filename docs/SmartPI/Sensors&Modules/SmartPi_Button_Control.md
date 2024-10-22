@@ -79,7 +79,7 @@ You can detect button presses using CLI and print a message accordingly.
 
    ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_5.png)
 
-   This will print "Pin 7: 1" when the button is pressed.
+   This will print **"Pin 7: 1"** when the button is pressed.
 
 ## Using Python
 
@@ -129,5 +129,5 @@ With **SmartPi-GPIO** and Python, you can write a simple script to detect the bu
    sudo python3 button_message.py
    ```
 
-When the button is pressed, the message "Button Pressed!" will be displayed.
+When the button is pressed, the message **"Button Pressed!"** will be displayed.
 
