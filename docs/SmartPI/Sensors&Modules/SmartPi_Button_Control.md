@@ -7,7 +7,6 @@ In this guide, we will demonstrate how to display a message when a button connec
 We will cover the following methods:
 - **CLI commands**
 - **Python script**
-- **C program**
 
 ## Required Materials
 
