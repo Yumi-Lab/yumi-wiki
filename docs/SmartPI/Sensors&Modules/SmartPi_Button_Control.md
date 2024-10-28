@@ -8,6 +8,7 @@ We will cover the following methods:
 - **CLI commands**
 - **Python script**
 
+
 ## Required Materials
 
 - Smart Pi One
