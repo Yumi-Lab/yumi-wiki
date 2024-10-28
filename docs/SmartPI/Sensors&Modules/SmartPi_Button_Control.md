@@ -4,11 +4,6 @@ In this guide, we will demonstrate how to display a message when a button connec
 
 ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_1.png)
 
-We will cover the following methods:
-- **CLI commands**
-- **Python script**
-
-
 ## Required Materials
 
 - Smart Pi One
@@ -51,13 +46,14 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 
 The button is connected to **GPIOG11 (Pin 7)** as the input pin for detecting the button press. A **10kΩ pull-down resistor** is placed between **GPIOG11** and **Ground**. This setup ensures the pin reads **LOW** when the button is not pressed and **HIGH** when the button is pressed due to the connection to **3.3V (Pin 1)**.
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_2.png" width="520" alt="BUTTON Wiring Diagram">
+
 | **Pin Number** | **Pin Name**          | **Function**           |
 |----------------|-----------------------|------------------------|
 | 1              | 3.3V                  | Power Supply            |
 | 7              | GPIOG11               | Button Input            |
-| 6              | GROUND                | GROUND           |
+| 6              | GND               | GROUND           |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_2.png" width="520" alt="BUTTON Wiring Diagram">
 
 ## Displaying a Message via CLI
 
