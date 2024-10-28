@@ -11,6 +11,36 @@ This page describes how to connect and use a buzzer with the Smart Pi One, inclu
 - Connecting wires
 - Breadboard (optional for easier connections)
 
+## Prerequisites: Configuration of smartpi-gpio
+
+To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
+
+1. **Update system**:
+   ```bash
+   sudo apt update 
+   sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
+   sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
+   ```
+
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
+   cd smartpi-gpio
+   ```
+
+3. **Install the library**:
+   ```bash
+   sudo python3 setup.py sdist bdist_wheel
+   sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
+   ```
+
+4. **Activate GPIO interfaces**:
+   ```bash
+   sudo activate_interfaces.sh
+   ``` 
+
+   ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+
 ## Wiring Diagram
 
 Below is a sample wiring diagram for connecting a buzzer to the Smart Pi One:
@@ -58,6 +88,8 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
     ```
 
+## Using Python
+
 ## Creating the Python Script
 
 1. Open a terminal on your Smart Pi One.
@@ -104,61 +136,5 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 To run the Python script, use the following command:
 
 ```bash
-python3 buzzer_control.py
-```
-
-## Using a C Program
-
-## Creating the C Program
-
-1. Open a terminal on your Smart Pi One.
-2. Create a new C file using `nano`:
-
-   ```bash
-   nano buzzer_control.c
-   ```
-
-3. Copy and paste the following C code into the file:
-
-   ```c
-   #include <stdio.h>
-   #include <stdlib.h>
-   #include <unistd.h>
-   #include "smartpi_gpio.h"
-
-   int main() {
-       // Initialize GPIO
-       smartpi_gpio_init();
-       int BUZZER_PIN = 7;
-
-       // Set GPIO7 as output for the buzzer
-       smartpi_gpio_set_mode(BUZZER_PIN, OUTPUT);
-
-       while (1) {
-           // Turn the buzzer on
-           smartpi_gpio_write(BUZZER_PIN, HIGH);
-           printf("Buzzer ON\n");
-           sleep(1);  // Buzzer stays on for 1 second
-           
-           // Turn the buzzer off
-           smartpi_gpio_write(BUZZER_PIN, LOW);
-           printf("Buzzer OFF\n");
-           sleep(1);  // Buzzer stays off for 1 second
-       }
-
-       // Release GPIO resources (this will never be reached)
-       smartpi_gpio_cleanup();
-       return 0;
-   }
-   ```
-
-4. Save the file by pressing `CTRL + X`, then `Y`, and finally `Enter`.
-
-## Compiling and Running the C Program
-
-To compile and run the C program, use the following commands:
-
-```bash
-gcc -o buzzer_control buzzer_control.c -I/path/to/smartpi_gpio/include -L/path/to/smartpi_gpio/lib -lsmartpi_gpio
-./buzzer_control
+sudo python3 buzzer_control.py
 ```
