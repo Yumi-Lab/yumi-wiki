@@ -23,13 +23,13 @@ The flame presence sensor typically has three pins: **VCC**, **GND**, and **DOUT
 - **GND** connects to **Ground (Pin 6)**.
 - **DOUT** connects to **GPIOG11(Pin 7)** to read the presence of flame.
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_2.png" width="520" alt="Flame Sensor Wiring Diagram">
+
 | **Pin Number** | **Pin Name**          | **Function**          |
 |----------------|-----------------------|-----------------------|
 | 2              | 5V                  | Power Supply          |
 | 7              | GPIOG11                | Flame Sensor Output (D0)   |
 | 6              | GND                   | Ground                |
-
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_2.png" width="520" alt="Flame Sensor Wiring Diagram">
 
 
 ## Prerequisites: Configuration of smartpi-gpio

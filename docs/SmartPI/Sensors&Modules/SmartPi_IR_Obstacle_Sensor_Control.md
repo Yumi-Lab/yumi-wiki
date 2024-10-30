@@ -20,13 +20,15 @@ We will cover the following methods:
 
 The IR obstacle sensor is connected to **GPIOG11 (Pin 7)** as the input pin for detecting obstacles. When an obstacle is detected, the sensor outputs a **LOW** signal (0). 
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_2.png" width="520" alt="Obstacle IR Wiring Diagram">
+
 | **Pin Number** | **Pin Name**          | **Function**           |
 |----------------|-----------------------|------------------------|
 | 1              | 3.3V                  | Power Supply            |
 | 7              | GPIOG11               | Obstacle Sensor Input   |
 | 6              | GND                   | Ground                  |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_2.png" width="520" alt="Obstacle IR Wiring Diagram">
+
 
 ## Prerequisites: Configuration of smartpi-gpio
 

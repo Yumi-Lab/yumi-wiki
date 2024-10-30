@@ -52,6 +52,8 @@ Before starting with sensor tests, ensure that **I2C** is enabled on the Smart P
 
 Connect the **MPU-6050** sensor to the **Smart Pi One** using this setup:
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_2.png" width="500" alt="Smart Pi One - MPU-6050 Wiring">
+
 | MPU-6050 Pin | Smart Pi One Pin     | Description  |
 |--------------|----------------------|--------------|
 | VCC          | (**1**) 3.3V             | Power        |
@@ -59,7 +61,6 @@ Connect the **MPU-6050** sensor to the **Smart Pi One** using this setup:
 | SCL          | (**27**) SCL (I2C1 Clock)| I2C Clock    |
 | SDA          | (**28**) SDA (I2C1 Data) | I2C Data     |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_2.png" width="500" alt="Smart Pi One - MPU-6050 Wiring">
 
 ### Detecting the MPU-6050 Using I2C
 
@@ -234,6 +235,8 @@ sudo apt-get install libi2c-dev
 
 Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_12.png" width="500" alt="Smart Pi One - ADXL345 Wiring">
+
 | ADXL345 Pin | Smart Pi One Pin     | Description  |
 |-------------|----------------------|--------------|
 | VCC         | (**1**) 3.3V             | Power        |
@@ -241,7 +244,6 @@ Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 | SCL         | (**27**) SCL (I2C1 Clock)| I2C Clock    |
 | SDA         | (**28**) SDA (I2C1 Data) | I2C Data     |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_12.png" width="500" alt="Smart Pi One - ADXL345 Wiring">
 
 ### Detecting the ADXL345 Using I2C
 

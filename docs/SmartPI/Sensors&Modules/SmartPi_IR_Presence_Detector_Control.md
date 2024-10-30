@@ -27,13 +27,15 @@ The IR presence detector typically has three pins: **VCC**, **GND**, and **DOUT*
 - **GND** connects to **Ground (Pin 6)**.
 - **DOUT** connects to **GPIOG11 (Pin 7)** to read the presence detection signal.
 
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_2.png" width="520" alt="IR Presence Detector Wiring Diagram">
+
 | **Pin Number** | **Pin Name**          | **Function**          |
 |----------------|-----------------------|-----------------------|
 | 1              | 3.3V                  | Power Supply          |
 | 7              | GPIOG11                | IR Presence Output     |
 | 6              | GND                   | Ground                |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_2.png" width="520" alt="IR Presence Detector Wiring Diagram">
+
 
 ## Prerequisites: Configuration of smartpi-gpio
 
