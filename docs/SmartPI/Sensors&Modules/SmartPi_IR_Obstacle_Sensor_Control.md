@@ -2,12 +2,11 @@
 
 In this guide, we will demonstrate how to display a message when an obstacle is detected by an **IR obstacle sensor** connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
-![Smart Pi One - IR Sensor](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Sensor_Control/SmartPi_IR_Sensor_Control_1.png)
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_1.png" width="200" alt="ultrasonic sensor - HC-SR04">
 
 We will cover the following methods:
 - **CLI commands**
 - **Python script**
-- **C program**
 
 ## Required Materials
 
@@ -16,7 +15,8 @@ We will cover the following methods:
 - Connecting wires
 - Breadboard (optional for easier connections)
 
-### Wiring Diagram
+
+## Wiring Diagram
 
 The IR obstacle sensor is connected to **GPIOG11 (Pin 7)** as the input pin for detecting obstacles. When an obstacle is detected, the sensor outputs a **LOW** signal (0). 
 
@@ -24,9 +24,43 @@ The IR obstacle sensor is connected to **GPIOG11 (Pin 7)** as the input pin for 
 |----------------|-----------------------|------------------------|
 | 1              | 3.3V                  | Power Supply            |
 | 7              | GPIOG11               | Obstacle Sensor Input   |
-| 7              | GND                   | Ground                  |
+| 6              | GND                   | Ground                  |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Sensor_Control/SmartPi_IR_Sensor_Control_2.png" width="520" alt="IR Sensor Wiring Diagram">
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_2.png" width="520" alt="Obstacle IR Wiring Diagram">
+
+## Prerequisites: Configuration of smartpi-gpio
+
+To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
+
+1. **Update system**:
+
+   ```bash
+   sudo apt update 
+   sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
+   sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
+   ```
+
+2. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
+   cd smartpi-gpio
+   ```
+
+3. **Install the library**:
+
+   ```bash
+   sudo python3 setup.py sdist bdist_wheel
+   sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
+   ```
+
+4. **Activate GPIO interfaces**:
+
+   ```bash
+   sudo activate_interfaces.sh
+   ``` 
+
+   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 ## Displaying a Message via CLI
 
@@ -35,58 +69,37 @@ You can detect obstacles using the CLI and print a message accordingly.
 ### Steps:
 
 1. **Configure the sensor pin as input**:
+
    ```bash
    sudo gpio 7 mode in pull-up
    ```
 
 2. **Read the sensor state**:
+
    ```bash
    sudo gpio 7 read
    ```
 
+   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_3.png)
+
+
 3. **Example to display a message**:
    Use a loop to continuously check the sensor status and display a message when an obstacle is detected:
+
    ```bash
    while true; do
-     if [ $(sudo gpio 7 read) -eq 0 ]; then
-       echo "Obstacle Detected!"
-       break
-     fi
-     sleep 0.1
+     value=$(sudo gpio 7 read)
+     echo "Obstacle IR value: $value"
+     sleep 1
    done
    ```
 
-This will print "Obstacle Detected!" when an obstacle is detected.
+   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_4.png)
+
+This will display the current value read by the Obstacle IR every second..
+
 
 ## Using Python
-
-### Prerequisites: Configuration of smartpi-gpio
-
-To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
-
-1. **Update system**:
-   ```bash
-   sudo apt update 
-   sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
-   sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-   ```
-
-2. **Clone the repository**:
-   ```bash
-   git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
-   cd smartpi-gpio
-   ```
-
-3. **Install the library**:
-   ```bash
-   sudo python3 setup.py sdist bdist_wheel
-   sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
-   ```
-
-4. **Activate GPIO interfaces**:
-   ```bash
-   sudo activate_interfaces.sh
-   ```
 
 ## Displaying a Message with Python
 
@@ -95,6 +108,7 @@ With **SmartPi-GPIO** and Python, you can write a simple script to detect obstac
 ### Steps:
 
 1. **Create a Python file**:
+
    ```bash
    nano ir_sensor_message.py
    ```
@@ -130,75 +144,12 @@ With **SmartPi-GPIO** and Python, you can write a simple script to detect obstac
 3. **Save and exit** (`CTRL + X`, `Y`, and `Enter`).
 
 4. **Run the Python script**:
+
    ```bash
-   python3 ir_sensor_message.py
+   sudo python3 ir_sensor_message.py
    ```
 
-When an obstacle is detected, the message "Obstacle Detected!" will be displayed.
-
-## Displaying a Message with a C Program
-
-You can also detect obstacles using a C program and the **SmartPi-GPIO** library.
-
-### Steps:
-
-1. **Create a C file**:
-   ```bash
-   nano ir_sensor_message.c
-   ```
-
-2. **Write the following code**:
-
-   ```c
-   #include <stdio.h>
-   #include <stdlib.h>
-   #include "smartpi_gpio.h" // Include SmartPi-GPIO header
-
-   int main() {
-       // Initialize the GPIO library
-       if (gpio_init() == -1) {
-           printf("Failed to initialize GPIO.\n");
-           return -1;
-       }
-
-       int sensor_pin = 7; // GPIOG11 (Pin 7)
-
-       // Set the sensor pin as input with pull-up resistor
-       gpio_set_direction(sensor_pin, GPIO_INPUT_PULLUP);
-
-       printf("Monitoring for obstacles...\n");
-
-       while (1) {
-           // Read the sensor state
-           int sensor_state = gpio_read(sensor_pin);
-
-           if (sensor_state == 0) {  // If an obstacle is detected
-               printf("Obstacle Detected!\n");
-               break;
-           }
-
-           // Small delay to prevent busy-waiting
-           usleep(100000); // 100 ms
-       }
-
-       // Cleanup and close GPIO
-       gpio_cleanup();
-
-       return 0;
-   }
-   ```
-
-3. **Save and exit** (`CTRL + X`, `Y`, and `Enter`).
-
-4. **Compile the C program**:
-   ```bash
-   gcc -o ir_sensor_message ir_sensor_message.c -lsmartpi_gpio
-   ```
-
-5. **Run the program**:
-   ```bash
-   sudo ./ir_sensor_message
-   ```
+   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_5.png)
 
 When an obstacle is detected, the message "Obstacle Detected!" will be displayed.
 

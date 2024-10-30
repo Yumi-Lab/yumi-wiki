@@ -12,11 +12,18 @@ This page describes how to activate a relay using the Smart Pi One, with detaile
 - Connecting wires
 - Breadboard (optional for easier connections)
 
+
 ## Wiring Diagram
 
 Below is a sample wiring diagram for connecting a relay module to the Smart Pi One:
 
 <img src="../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_2.png" width="520" alt="Relay Wiring Diagram">
+
+| **Pin Number** | **Pin Name**          | **Function**           |
+|----------------|-----------------------|------------------------|
+| 2             | 5V                  | Power Supply            |
+| 7              | GPIOG11               | Signal           |
+| 6              | GND               | GROUND           |
 
 ### Connecting the Relay
 
@@ -28,53 +35,63 @@ Below is a sample wiring diagram for connecting a relay module to the Smart Pi O
 2. **Connect the Load:**
    - Connect the device you want to control (e.g., a lamp) to the relay's output terminals. Ensure proper electrical connections are made according to the relay's specifications.
 
-## Turning on a RELAY via Command Line (CLI)
-
-### Step 1: Turn on the LED
-
-To turn on the LED on GPIO 7:
-
-```bash
-gpio -g mode 7 out
-gpio -g write 7 1
-```
-
-### Step 2: Turn off the LED
-
-To turn off the LED:
-
-```bash
-gpio -g write 7 0
-```
-
-## Using Python
-
-### Prerequisites: Configuration of smartpi-gpio
+## Prerequisites: Configuration of smartpi-gpio
 
 To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 
 1. **Update system**:
+
    ```bash
    sudo apt update 
    sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
    sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
+   ```
 
 2. **Clone the repository**:
+
    ```bash
    git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
    cd smartpi-gpio
+   ```
 
 3. **Install the library**:
+
    ```bash
    sudo python3 setup.py sdist bdist_wheel
    sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
-
+   ```
 
 4. **Activate GPIO interfaces**:
+
    ```bash
    sudo activate_interfaces.sh
-    pip install smartpi-gpio
-    ```
+   ``` 
+
+   ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)   
+
+## Turning on a RELAY via Command Line (CLI)
+
+### Step 1: Turn on the RELAY
+
+To turn on the RELAY on GPIO 7:
+
+```bash
+sudo gpio 7 mode out
+sudo gpio 7 write 1
+```
+![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_4.png)   
+
+### Step 2: Turn off the RELAY
+
+To turn off the RELAY:
+
+```bash
+sudo gpio 7 write 0
+```
+
+![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_5.png)   
+
+## Using Python
 
 ## Creating the Python Script
 
@@ -89,7 +106,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 
    ```python
    import time
-   from smartpi_gpio import GPIO
+   from smartpi_gpio.gpio import GPIO
 
    # Initialize GPIO
    gpio = GPIO()
@@ -121,60 +138,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
 To run the Python script, use the following command:
 
 ```bash
-python3 relay_control.py
+sudo python3 relay_control.py
 ```
 
-## Using a C Program
-
-### Creating the C Program
-
-1. Open a terminal on your Smart Pi One.
-2. Create a new C file using `nano`:
-
-   ```bash
-   nano relay_control.c
-   ```
-
-3. Copy and paste the following C code into the file:
-
-   ```c
-   #include <stdio.h>
-   #include <stdlib.h>
-   #include <unistd.h>
-   #include "smartpi_gpio.h"
-
-   int main() {
-       // Initialize GPIO
-       smartpi_gpio_init();
-       
-       // Set GPIO7 as output for the relay
-       smartpi_gpio_set_mode(7, OUTPUT);
-       
-       while (1) {
-           // Activate the relay (turn on)
-           smartpi_gpio_write(7, HIGH);
-           printf("Relay is ON\n");
-           sleep(2);  // Keep it on for 2 seconds
-           
-           // Deactivate the relay (turn off)
-           smartpi_gpio_write(7, LOW);
-           printf("Relay is OFF\n");
-           sleep(2);  // Keep it off for 2 seconds
-       }
-
-       // Release GPIO resources (this will never be reached)
-       smartpi_gpio_cleanup();
-       return 0;
-   }
-   ```
-
-4. Save the file by pressing `CTRL + X`, then `Y`, and finally `Enter`.
-
-## Compiling and Running the C Program
-
-To compile and run the C program, use the following commands:
-
-```bash
-gcc -o relay_control relay_control.c -I/path/to/smartpi_gpio/include -L/path/to/smartpi_gpio/lib -lsmartpi_gpio
-./relay_control
-```
+![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_6.png)   
