@@ -100,3 +100,38 @@
 ## 1.5 Board Dimension 
 <img src="../../img/SmartPi/Specifications/smart-pi-one3.jpg" width="500" alt="Board dimension view"> 
 
+## 1.6 Case SmartPi One
+
+<img src="../../img/SmartPi/Specifications/Case_SmartPiOne.jpg" width="500" alt="Case"> 
+
+###SmartPione Cases: Versatility and Style for Your Nano-Computer
+
+Give your SmartPione the protection it deserves with our modular and versatile cases. Designed to suit various operational modes, these cases are an excellent solution to safeguard and showcase your electronic board while meeting the demands of your project.
+
+Available Modes:
+
+* **Classic Mounting:**
+A simple and effective solution for standard use. This format perfectly protects the board while ensuring easy access to essential connectors.
+
+
+* **Closed Stacking:**
+Ideal for projects requiring multiple stacked boards. This mode provides excellent protection against dust and impacts while maintaining a compact and sleek design.
+
+* **Open Simple Mode:**
+Perfect for direct use or testing that requires easy access to electronic components and GPIO. A minimalist and practical solution for advanced users.
+
+* **Open Stacking:**
+Designed for multi-board setups where access to each level is essential. This mode is perfect for complex projects requiring optimal cooling or frequent manipulation of stacked boards.
+
+Why Choose Our Cases?
+
+* **Optimal Protection:** Safeguard your board from external elements like dust, shocks, or debris.
+* **Adaptable Design:** Easily switch between modes to fit your operational needs.
+* **Aesthetic and Functional:** Showcase your SmartPione while enhancing its practicality for various uses.
+* **Modularity:** The different configurations perfectly suit your needs, whether it’s a prototype, a development project, or a final installation.
+
+With our SmartPione cases, combine style, protection, and flexibility to unlock the full potential of your nano-computer.
+
+* **Buy here:** https://wanhao-europe.com/products/yumi-smart-pi-one-1g-ddr3-processeur-h3-allwinner?variant=51127544840532
+
+
