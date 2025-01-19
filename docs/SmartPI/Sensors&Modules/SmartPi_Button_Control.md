@@ -1,8 +1,8 @@
-# Button with Smart Pi One
+# 2.1 Button with Smart Pi One
 
 In this guide, we will demonstrate how to display a message when a button connected to the **Smart Pi One** is pressed, using the **SmartPi-GPIO** library and a **pull-down resistor** connected to the **3.3V** pin.
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_1.png)
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_1.png)
 
 
 ## Required Materials
@@ -57,7 +57,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 
 ## Displaying a Message via CLI
@@ -72,7 +72,7 @@ You can detect button presses using CLI and print a message accordingly.
    sudo gpio 7 mode in pull-down
    ```
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_4.png)
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_4.png)
 
 2. **Read the button state**:
 
@@ -80,7 +80,7 @@ You can detect button presses using CLI and print a message accordingly.
    sudo gpio 7 read
    ```
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_5.png)
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_5.png)
 
 This will print **"Pin 7: 1"** when the button is pressed.
 
@@ -134,7 +134,7 @@ With **SmartPi-GPIO** and Python, you can write a simple script to detect the bu
    sudo python3 button_message.py
    ```
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_6.png)
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_6.png)
 
 When the button is pressed, the message **"Button Pressed!"** will be displayed.
 

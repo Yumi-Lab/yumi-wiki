@@ -2,7 +2,7 @@
 
 To change your password on Smart Pi One using SSH (Secure Shell), you can follow these steps. This tutorial assumes you have already set up SSH access to your Smart Pi One and can connect to it.
 
-![SmartPi One - Password](../../img/SmartPi/SmartPi_Change_Password/SmartPi_Change_Password_1.png)
+![SmartPi One - Password](/img/SmartPi/SmartPi_Change_Password/SmartPi_Change_Password_1.png)
 
 
 ## What You Need:

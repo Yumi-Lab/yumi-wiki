@@ -1,8 +1,8 @@
-# Activating a Relay on Smart Pi One
+# 2.3 Activating a Relay on Smart Pi One
 
 This page describes how to activate a relay using the Smart Pi One, with detailed steps, wiring instructions, and code examples in both Python and C.
 
-![RELAY 5V](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_1.png)
+![RELAY 5V](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_1.png)
 
 
 ## Required Materials
@@ -67,7 +67,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)   
+   ![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)   
 
 ## Turning on a RELAY via Command Line (CLI)
 
@@ -79,7 +79,7 @@ To turn on the RELAY on GPIO 7:
 sudo gpio 7 mode out
 sudo gpio 7 write 1
 ```
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_4.png)   
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_3.png)   
 
 ### Step 2: Turn off the RELAY
 
@@ -89,7 +89,7 @@ To turn off the RELAY:
 sudo gpio 7 write 0
 ```
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_5.png)   
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_4.png)   
 
 ## Using Python
 
@@ -141,4 +141,4 @@ To run the Python script, use the following command:
 sudo python3 relay_control.py
 ```
 
-![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_6.png)   
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_5.png)   

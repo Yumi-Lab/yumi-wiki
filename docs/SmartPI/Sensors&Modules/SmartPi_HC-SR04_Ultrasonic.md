@@ -1,4 +1,4 @@
-# Using an Ultrasonic Sensor with Smart Pi One
+# 2.6 Using an Ultrasonic Sensor with Smart Pi One
 
 This page describes how to use an ultrasonic sensor (e.g., HC-SR04) with the Smart Pi One, providing detailed steps, wiring instructions, and code examples in both Python and C.
 
@@ -71,7 +71,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - Button](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 ## Using Python
 
@@ -136,6 +136,6 @@ To run the Python script, use the following command:
 sudo python3 ultrasonic_sensor.py
 ```
 
-![Smart Pi One - HC-SR04](../../../img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_3.png)
+![Smart Pi One - HC-SR04](/img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_3.png)
 
 

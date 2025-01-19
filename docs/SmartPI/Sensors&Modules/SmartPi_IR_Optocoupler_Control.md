@@ -2,7 +2,7 @@
 
 In this guide, we will demonstrate how to use a **Motor Measuring Comparator IR Optocoupler** module with the **Smart Pi One** to measure speed by detecting object interruptions (e.g., wheel rotation), using the **SmartPi-GPIO** library.
 
-![Smart Pi One - IR Optocoupler](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control/SmartPi_IR_Optocoupler_Control_1.png)
+<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control/SmartPi_IR_Optocoupler_Control_1.png"  width="200" alt="IR Optocoupler Control">
 
 We will cover the following methods:
 - **CLI commands**
@@ -30,7 +30,7 @@ The IR Optocoupler module typically has three connections: **VCC**, **GND**, and
 | 7              | GPIO7                 | Output Signal          |
 | 7              | GND                   | Ground                 |
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control/SmartPi_IR_Optocoupler_Control_2.png" width="520" alt="IR Optocoupler Wiring Diagram">
+
 
 ## Detecting Speed via CLI
 
@@ -138,78 +138,5 @@ Using **SmartPi-GPIO** in Python, you can write a script to detect the interrupt
    python3 ir_optocoupler.py
    ```
 
-This will continuously display "Speed Detected!" whenever the sensor detects speed.
 
-## Detecting Speed with a C Program
 
-You can also detect speed using a C program and the **SmartPi-GPIO** library.
-
-### Steps:
-
-1. **Create a C file**:
-   ```bash
-   nano ir_optocoupler.c
-   ```
-
-2. **Write the following code**:
-
-   ```c
-   #include <stdio.h>
-   #include <stdlib.h>
-   #include <signal.h>
-   #include "smartpi_gpio.h" // Include SmartPi-GPIO header
-
-   volatile int running = 1;
-
-   void intHandler(int dummy) {
-       running = 0;
-   }
-
-   int main() {
-       // Register signal handler for Ctrl+C
-       signal(SIGINT, intHandler);
-
-       // Initialize the GPIO library
-       if (gpio_init() == -1) {
-           printf("Failed to initialize GPIO.\n");
-           return -1;
-       }
-
-       int speed_sensor_pin = 7; // GPIO7 (Pin 7)
-
-       // Set the pin as input
-       gpio_set_direction(speed_sensor_pin, GPIO_INPUT);
-
-       printf("Detecting speed from the IR Optocoupler sensor...\n");
-
-       while (running) {
-           // Read the value from the speed detection sensor
-           int value = gpio_read(speed_sensor_pin);
-           if (value == 1) {
-               printf("Speed Detected!\n");
-           }
-
-           // Small delay to prevent busy-waiting
-           usleep(100000); // 100 ms
-       }
-
-       // Cleanup and close GPIO
-       gpio_cleanup();
-
-       return 0;
-   }
-   ```
-
-3. **Save and exit** (`CTRL+X`, `Y`, and `Enter`).
-
-4. **Compile the C program**:
-   ```bash
-   gcc -o ir_optocoupler ir_optocoupler.c -lsmartpi_gpio
-   ```
-
-5. **Run the program**:
-   ```bash
-   sudo ./ir_optocoupler
-   ```
-
-When you run the program, it will continuously display "Speed Detected!" until you stop it with `Ctrl+C`.

@@ -1,8 +1,8 @@
-# Flame Presence Sensor with Smart Pi One
+# 2.7 Flame Presence Sensor with Smart Pi One
 
 In this guide, we will demonstrate how to read the values from a flame presence sensor connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
-![Smart Pi One - Flame Presence Sensor](../../../img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_1.png)
+![Smart Pi One - Flame Presence Sensor](/img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_1.png)
 
 We will cover the following methods:
 - **CLI commands**
@@ -64,7 +64,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - Flame Sensor](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - Flame Sensor](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 ## Reading Values via CLI
 
@@ -84,7 +84,7 @@ You can read the values from the flame presence sensor using the CLI.
    sudo gpio 7 read
    ```
 
-![Smart Pi One - Flame Presence Sensor](../../../img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_3.png)
+![Smart Pi One - Flame Presence Sensor](/img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_3.png)
 
 3. **Example to read and display values continuously**:
 
@@ -98,7 +98,7 @@ You can read the values from the flame presence sensor using the CLI.
    done
    ```
 
-   ![Smart Pi One - Flame Presence Sensor](../../../img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_4.png)
+   ![Smart Pi One - Flame Presence Sensor](/img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_4.png)
 
 This will display the current value read by the flame sensor every second.
 
@@ -149,6 +149,6 @@ With **SmartPi-GPIO** and Python, you can write a simple script to read the valu
    sudo python3 flame_sensor_read.py
    ```
 
-   ![Smart Pi One - Flame Presence Sensor](../../../img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_5.png)
+   ![Smart Pi One - Flame Presence Sensor](/img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/SmartPi_Flame_Sensor_Control_5.png)
 
 This will continuously display the current value read by the flame presence sensor every second.

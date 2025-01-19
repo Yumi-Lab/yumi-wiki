@@ -1,8 +1,8 @@
-# Using a Buzzer with Smart Pi One
+# 2.4 Using a Buzzer with Smart Pi One
 
 This page describes how to connect and use a buzzer with the Smart Pi One, including wiring instructions, and code examples in both Python and C.
 
-![Smart Pi One - Buzzer](../../../img/SmartPi/Sensors&Modules/SmartPi_Buzzer_Control/SmartPi_Buzzer_Control_1.png)
+![Smart Pi One - Buzzer](/img/SmartPi/Sensors&Modules/SmartPi_Buzzer_Control/SmartPi_Buzzer_Control_1.png)
 
 ## Required Materials
 
@@ -59,7 +59,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - Buzzer](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - Buzzer](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 
 ## Using Python
@@ -113,4 +113,4 @@ To run the Python script, use the following command:
 sudo python3 buzzer_control.py
 ```
 
-![Smart Pi One - Buzzer](../../../img/SmartPi/Sensors&Modules/SmartPi_Buzzer_Control/SmartPi_Buzzer_Control_3.png)
+![Smart Pi One - Buzzer](/img/SmartPi/Sensors&Modules/SmartPi_Buzzer_Control/SmartPi_Buzzer_Control_3.png)

@@ -1,4 +1,4 @@
-# Obstacle IR Sensor with Smart Pi One
+# 2.5 Obstacle IR Sensor with Smart Pi One
 
 In this guide, we will demonstrate how to display a message when an obstacle is detected by an **IR obstacle sensor** connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
@@ -62,7 +62,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - Obstacle IR](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 ## Displaying a Message via CLI
 
@@ -82,7 +82,7 @@ You can detect obstacles using the CLI and print a message accordingly.
    sudo gpio 7 read
    ```
 
-   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_3.png)
+   ![Smart Pi One - Obstacle IR](/img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_3.png)
 
 
 3. **Example to display a message**:
@@ -96,7 +96,7 @@ You can detect obstacles using the CLI and print a message accordingly.
    done
    ```
 
-   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_4.png)
+   ![Smart Pi One - Obstacle IR](/img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_4.png)
 
 This will display the current value read by the Obstacle IR every second..
 
@@ -151,7 +151,7 @@ With **SmartPi-GPIO** and Python, you can write a simple script to detect obstac
    sudo python3 ir_sensor_message.py
    ```
 
-   ![Smart Pi One - Obstacle IR](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_5.png)
+   ![Smart Pi One - Obstacle IR](/img/SmartPi/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control/SmartPi_IR_Obstacle_Sensor_Control_5.png)
 
 When an obstacle is detected, the message "Obstacle Detected!" will be displayed.
 

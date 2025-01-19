@@ -1,4 +1,4 @@
-# IR Presence Detector with Smart Pi One
+# 2.8 IR Presence Detector with Smart Pi One
 
 In this guide, we will demonstrate how to read the values from an IR presence detector connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
@@ -69,7 +69,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - IR Presence Detector](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 ## Reading Values via CLI
 
@@ -94,7 +94,7 @@ You can read the values from the IR presence detector using the CLI.
    done
    ```
 
-   ![Smart Pi One - IR Presence Detector](../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_3.png)
+   ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_3.png)
 
 This will display "IR presence detector value: Pin 7: 1" when the detector senses something.
 
@@ -148,7 +148,7 @@ With **SmartPi-GPIO** and Python, you can write a simple script to read the valu
    sudo python3 ir_presence_detector_read.py
    ```
 
-   ![Smart Pi One - IR Presence Detector](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_4.png)
+   ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_4.png)
 
 This will continuously display "Presence Detected!" when detection occurs.
 

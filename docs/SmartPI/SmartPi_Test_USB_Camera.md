@@ -1,6 +1,6 @@
 # Testing USB Camera on Smart Pi One
 
-![USB Camera - Smart PI One](../../img/SmartPi/SmartPi_Test_USB_Camera/SmartPi_Test_USB_Camera_1.png)
+![USB Camera - Smart PI One](/img/SmartPi/SmartPi_Test_USB_Camera/SmartPi_Test_USB_Camera_1.png)
 
 This page provides instructions for testing a USB camera connected to Smart Pi One on an Armbian Debian system. The camera is typically connected to the `/dev/video0` source by default, but this may vary depending on your system configuration. Make sure to check the correct video source (e.g., `/dev/video1`) and adjust the commands accordingly.
 

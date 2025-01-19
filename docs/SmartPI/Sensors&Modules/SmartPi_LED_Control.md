@@ -1,8 +1,8 @@
-# Controlling an LED via GPIO on Smart Pi One
+# 2.2 Controlling an LED via GPIO on Smart Pi One
 
 This page describes how to control an LED using GPIO on the Smart Pi One, with detailed steps, wiring instructions, a wiring diagram, and code examples in both Python and C.
 
-![Smart Pi One - LED](../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_1.png)
+![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_1.png)
 
 ## Required Materials
 
@@ -59,7 +59,7 @@ To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
    sudo activate_interfaces.sh
    ``` 
 
-   ![Smart Pi One - LED](../../../img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+   ![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
 
 
 ## Turning on an LED via Command Line (CLI)
@@ -73,7 +73,7 @@ sudo gpio 7 mode out
 sudo gpio 7 write 1
 ```
 
-![Smart Pi One - LED](../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_4.png)
+![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_4.png)
 
 ### Step 2: Turn off the LED
 
@@ -83,7 +83,7 @@ To turn off the LED:
 sudo gpio 7 write 0
 ```
 
-![Smart Pi One - LED](../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_5.png)
+![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_5.png)
 
 ## Using Python
 
@@ -135,4 +135,4 @@ To run the Python script, use the following command:
 sudo python3 led_control.py
 ```
 
-![Smart Pi One - LED](../../../img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_6.png)
+![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_6.png)
