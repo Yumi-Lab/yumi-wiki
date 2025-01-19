@@ -79,7 +79,7 @@ To turn on the RELAY on GPIO 7:
 sudo gpio 7 mode out
 sudo gpio 7 write 1
 ```
-![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_3.png)   
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_4.png)   
 
 ### Step 2: Turn off the RELAY
 
@@ -89,7 +89,7 @@ To turn off the RELAY:
 sudo gpio 7 write 0
 ```
 
-![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_4.png)   
+![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Relay_Control/SmartPi_Relay_Control_3.png)   
 
 ## Using Python
 

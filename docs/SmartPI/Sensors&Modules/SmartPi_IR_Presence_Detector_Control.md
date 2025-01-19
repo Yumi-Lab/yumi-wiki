@@ -148,7 +148,7 @@ With **SmartPi-GPIO** and Python, you can write a simple script to read the valu
    sudo python3 ir_presence_detector_read.py
    ```
 
-   ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_4.png)
+   ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_4.png)
 
 This will continuously display "Presence Detected!" when detection occurs.
 

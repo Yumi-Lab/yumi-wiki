@@ -73,7 +73,7 @@ sudo gpio 7 mode out
 sudo gpio 7 write 1
 ```
 
-![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_4.png)
+![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_5.png)
 
 ### Step 2: Turn off the LED
 
@@ -83,7 +83,7 @@ To turn off the LED:
 sudo gpio 7 write 0
 ```
 
-![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_5.png)
+![Smart Pi One - LED](/img/SmartPi/Sensors&Modules/SmartPi_LED_Control/SmartPi_LED_Control_4.png)
 
 ## Using Python
 
