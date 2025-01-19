@@ -113,9 +113,9 @@ nav:
       - SmartPI/Sensors&Modules/SmartPi_MPU-6050-ADXL345.md
       - SmartPI/Sensors&Modules/SmartPi_Relay_Control.md
       - SmartPI/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic.md
-      - SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control.md
-      - SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md
-      - SmartPi/Sensors&Modules/SmartPi_Sound_Detection_Control.md
+      #- SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control.md
+      #- SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md
+      #- SmartPi/Sensors&Modules/SmartPi_Sound_Detection_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control.md
     - LINUX LAB PROJECT:  
       - SmartPI/SmartPi_Klipper.md
