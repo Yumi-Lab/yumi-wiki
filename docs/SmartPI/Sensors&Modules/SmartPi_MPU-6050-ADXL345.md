@@ -2,7 +2,8 @@
 
 This guide explains how to connect and test the **MPU-6050** and **ADXL345** sensors with the **Smart Pi One** board using both Python (via the `smartpi-mpu6050` package) and C. It also covers how to detect the sensors via I2C.
 
-![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_1.png)
+![MPU-6050](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_1.png)
+
 
 ## 1. Prerequisites
 
@@ -30,20 +31,20 @@ Before starting with sensor tests, ensure that **I2C** is enabled on the Smart P
 
 2. Choose **System**:
 
-    ![Smart Pi One - System](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_3.png)
+    ![Smart Pi One - System](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_3.png)
 
 3. Select **Hardware**:
 
-    ![Smart Pi One - Hardware](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_4.png)
+    ![Smart Pi One - Hardware](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_4.png)
 
 4. Enable **i2c1**, then **Save** and **Back**:
 
-    ![Smart Pi One - Enable I2C](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_5.png)
+    ![Smart Pi One - Enable I2C](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_5.png)
 
 
 5. To finish, **Reboot** to apply the changes:
 
-    ![Smart Pi One - Reboot](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_6.png)
+    ![Smart Pi One - Reboot](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_6.png)
 
 
 ## 3. How to Test the MPU-6050 Sensor
@@ -72,7 +73,7 @@ sudo i2cdetect -y 1
 
 You should see the MPU-6050 detected at address `0x68`.
 
-![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_7.png)
+![MPU-6050](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_7.png)
 
 ### Using Python to Read MPU-6050 Data
 
@@ -120,7 +121,7 @@ sudo pip3 install smartpi-mpu6050
 
 2. Paste the script into the file and save it.
 
-    ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_8.png)
+    ![Smart Pi One - nano](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_8.png)
 
 3. Execute the script with the necessary permissions (you may need to use sudo):
 
@@ -130,7 +131,7 @@ sudo pip3 install smartpi-mpu6050
 
     You should see the temperature, accelerometer, and gyroscope data in the terminal.
 
-    ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_9.png)
+    ![Smart Pi One - nano](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_9.png)
 
 
 
@@ -224,18 +225,18 @@ sudo apt-get install libi2c-dev
 
     You should see the temperature and accelerometer data printed to the terminal.
 
-    ![Smart Pi One - Create file](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_10.png)
+    ![Smart Pi One - Create file](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_10.png)
 
 
 ## 4. How to Test the ADXL345 Sensor
 
-![ADXL345](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_11.png)
+![ADXL345](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_11.png)
 
 ### Wiring Diagram
 
 Connect the **ADXL345** sensor to the **Smart Pi One** using this setup:
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_12.png" width="500" alt="Smart Pi One - ADXL345 Wiring">
+<img src="/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_12.png" width="500" alt="Smart Pi One - ADXL345 Wiring">
 
 | ADXL345 Pin | Smart Pi One Pin     | Description  |
 |-------------|----------------------|--------------|
@@ -255,7 +256,7 @@ sudo i2cdetect -y 1
 
 You should see the ADXL345 detected at address `0x53`.
 
-![MPU-6050](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_13.png)
+![MPU-6050](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_13.png)
 
 ### Using Python to Read ADXL345 Data
 
@@ -304,7 +305,7 @@ sudo pip3 install smartpi-mpu6050
 
     You should see the accelerometer data in the terminal.
 
-    ![Smart Pi One - nano](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_15.png)
+    ![Smart Pi One - nano](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_15.png)
 
 
 ### Using a C Program to Read ADXL345 Data
@@ -393,7 +394,7 @@ sudo apt-get install libi2c-dev
 
     You should see the accelerometer data printed in the terminal.
 
-    ![Smart Pi One - Create file](../../../img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_16.png)
+    ![Smart Pi One - Create file](/img/SmartPi/Sensors&Modules/SmartPi_MPU-6050-ADXL345/SmartPi_MPU-6050_ADXL345_16.png)
 
 ## 5. Troubleshooting
 
