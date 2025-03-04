@@ -50,23 +50,6 @@ Bowden:
 
 
 
-## D12 230
-
-
-Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer (230, 300, 500) and import it. there's a version with bltouch and one without.
-
-It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
-
-Mono (230/300/500): https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
-
-Dual (230) Update BETA 2 21/10/2024 KLIPPER: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230DUAL.zip
-
-Dual (230) Update BETA 1 15/08/2024 MARLIN2: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230-PRO-M2-MONO-DUAL-BETA.zip
-
-Direct Drive (500) Update BETA 1 06/09/2024 Klipper: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao_D12-500_0.4_nozzle_DirectDrive_smartpad.zip
-
-
-
 ## Sidewinder X2
 
 ![Sidewinder X2](/img/Printers/Artillery/X2/X2.jpeg)
