@@ -1,4 +1,4 @@
-# 4.1 Orcaslicer profiles
+# 4.1 Orcaslicer profiles V1.00
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001.png)
 
@@ -6,15 +6,45 @@ Below you will find the Orceslicer profiles for different printers. They have be
 
 # Download Orcaslicer
 
-https://github.com/SoftFever/OrcaSlicer
+https://github.com/Yumi-Lab/yumi-wiki/raw/refs/heads/main/Profile_Slicer/Orcaslicer/profilesD1204032025.zip
 
-# Import a profile
+# Extract the ZIP archive
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer002.png)
+Right-click and click on "Extract All..."
 
-# Wanhao
+# Copy the files and folder
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Wanhao-D12-230%20mono.png)
+Copy the **Wanhao France** folder and the **Wanhao France.json** file.
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils02.png)
+
+# Go to the OrcaSlicer directory
+
+Close OrcaSlicer  
+Move to this folder **"C:\Program Files\OrcaSlicer\resources\profiles"** and paste the previously copied elements
+
+# Select your profile
+
+Launch OrcaSlicer and add a printer
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils03.png)
+
+In the list, search for **Wanhao** or **D12**. Then select your printer
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils04.png)
+
+M2 corresponds to the **Marlin2 profile**  
+Smartpad to the **Smartpad profile**
+
+Direct Drive:
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils05.png)
+
+Bowden:
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils06.png)
+
+
 
 ## D12 230
 
