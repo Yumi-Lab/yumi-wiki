@@ -20,7 +20,7 @@ Right-click and click on "Extract All..."
 
 Copy the **Wanhao France** folder and the **Wanhao France.json** file.
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils02.png)
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils02.png)
 
 # Go to the OrcaSlicer directory
 
@@ -31,22 +31,22 @@ Move to this folder **"C:\Program Files\OrcaSlicer\resources\profiles"** and pas
 
 Launch OrcaSlicer and add a printer
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils03.png)
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils03.png)
 
 In the list, search for **Wanhao** or **D12**. Then select your printer
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils04.png)
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils04.png)
 
 M2 corresponds to the **Marlin2 profile**  
 Smartpad to the **Smartpad profile**
 
 Direct Drive:
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils05.png)
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils05.png)
 
 Bowden:
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001d12profils06.png)
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils06.png)
 
 
 
