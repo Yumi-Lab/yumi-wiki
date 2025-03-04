@@ -6,6 +6,10 @@ Below you will find the Orceslicer profiles for different printers. They have be
 
 # Download Orcaslicer
 
+https://github.com/SoftFever/OrcaSlicer/releases
+
+# Download D12 profiles
+
 https://github.com/Yumi-Lab/yumi-wiki/raw/refs/heads/main/Profile_Slicer/Orcaslicer/profilesD1204032025.zip
 
 # Extract the ZIP archive
