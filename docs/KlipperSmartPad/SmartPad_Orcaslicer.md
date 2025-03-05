@@ -10,7 +10,7 @@ https://github.com/SoftFever/OrcaSlicer/releases
 
 # Download D12 profiles
 
-https://github.com/Yumi-Lab/yumi-wiki/raw/refs/heads/main/Profile_Slicer/Orcaslicer/profilesD1204032025.zip
+https://www.dropbox.com/scl/fi/4ow5eeu3zszglfle36loi/profilesD1204032025.zip?rlkey=znlm255ygllrf27kq3sky0pxf&st=dkgm2rce&dl=0
 
 # Extract the ZIP archive
 
