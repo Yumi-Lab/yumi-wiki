@@ -10,7 +10,7 @@ https://github.com/SoftFever/OrcaSlicer/releases
 
 # Download D12 profiles
 
-https://www.dropbox.com/scl/fi/ht8gekkkfxpsqlmam76vn/ProfilsD12-21032025.zip?rlkey=aulohz9vhd8345v03uzjy6u22&st=l540l4ve&dl=0
+https://www.dropbox.com/scl/fi/joc7zcqv6oye5wadbcd2o/profilsD12-02042025.zip?rlkey=n6hbde74c9qwl86v1pipnrrcu&st=0vpvg5u9&dl=0
 
 # Extract the ZIP archive
 
