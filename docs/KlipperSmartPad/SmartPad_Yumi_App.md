@@ -15,7 +15,7 @@ Sign up with your email, Google or Facebook account. If you have already registe
 
 Download the Yumi App from the [Apple App Store](https://apps.apple.com/fr/app/yumi-lab/id6477959422) or  [Google Play Store ](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share).
 
-[![yumiapp](/img/KlipperSmartPad/yumiapp/googleplay001.png){: style="height:150px;width:150px"}](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share "Redirect to play Store")
+[![yumiapp](/img/KlipperSmartPad/yumiapp/googleplay001.png)](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share "Redirect to play Store")
 
 Open the mobile app. Click through the first time tour and then tap “Let’s Go!”.
 Simply tap "YES!" on the "Hardware Required" screen.
