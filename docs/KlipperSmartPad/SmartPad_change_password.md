@@ -29,11 +29,11 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 - You will be prompted to enter the current password once more.
 
-![change_password_smartpad_1](../../img/KlipperSmartPad/Change_password/change_password_smartpad_1.png)
+![change_password_smartpad_1](/img/KlipperSmartPad/Change_password/change_password_smartpad_1.png)
 
 - Then, you'll be asked to enter the new password. Type the new password and press `Enter`.
 
-![change_password_smartpad_2](../../img/KlipperSmartPad/Change_password/change_password_smartpad_2.png)
+![change_password_smartpad_2](/img/KlipperSmartPad/Change_password/change_password_smartpad_2.png)
 
 - You'll need to retype the new password for confirmation. Enter it again and press Enter.
 

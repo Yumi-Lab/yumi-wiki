@@ -50,8 +50,14 @@ Increased stability: Thanks to Klipper firmware, your 3D printer becomes more st
 | Dock | Magnetic all-metal swivel bracket V-SLOT rail mounting included |
 | Storage | MICRO SD drive (accessible from the side of the box)|
 
+## Dimensions
+
+![Dimensions](../../img/KlipperSmartPad/SmartPad_specifications/SmartPad_specifications_dimensions.png)
+
 ## PERIPHERALS CONNECTION
 
 Below is a plan for connecting the peripherals. For the connection with the printer it is rare that the cable supplied with the printer is of good quality. You need a quality high-speed cable.
 
 ![KlipperSmartPad](/img/KlipperSmartPad/Smartpad-CONNECTION.png)
+
+

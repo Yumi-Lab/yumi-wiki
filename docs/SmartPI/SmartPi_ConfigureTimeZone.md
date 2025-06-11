@@ -1,4 +1,4 @@
-# 1.5 Change timezone
+# 1.8 Change timezone
 
 # Hardware and software :
 

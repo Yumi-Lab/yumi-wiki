@@ -1,4 +1,4 @@
-# 4.1 Orcaslicer profiles
+# 4.1 Orcaslicer profiles V1.00
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001.png)
 
@@ -6,26 +6,49 @@ Below you will find the Orceslicer profiles for different printers. They have be
 
 # Download Orcaslicer
 
-https://github.com/SoftFever/OrcaSlicer
+https://github.com/SoftFever/OrcaSlicer/releases
 
-# Import a profile
+# Download D12 profiles
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer002.png)
+https://www.dropbox.com/scl/fi/joc7zcqv6oye5wadbcd2o/profilsD12-02042025.zip?rlkey=n6hbde74c9qwl86v1pipnrrcu&st=0vpvg5u9&dl=0
 
-# Wanhao
+# Extract the ZIP archive
 
-![Orca](/img/KlipperSmartPad/Orcaslicer/Wanhao-D12-230%20mono.png)
+Right-click and click on "Extract All..."
 
-## D12 230
+# Copy the files and folder
+
+Copy the **Wanhao France** folder and the **Wanhao France.json** file.
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils02.png)
+
+# Go to the OrcaSlicer directory
+
+Close OrcaSlicer  
+Move to this folder **"C:\Program Files\OrcaSlicer\resources\profiles"** and paste the previously copied elements
+
+# Select your profile
+
+Launch OrcaSlicer and add a printer
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils03.png)
+
+In the list, search for **Wanhao** or **D12**. Then select your printer
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils04.png)
+
+M2 corresponds to the **Marlin2 profile**  
+Smartpad to the **Smartpad profile**
+
+Direct Drive:
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils05.png)
+
+Bowden:
+
+![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils06.png)
 
 
-Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer (230, 300, 500) and import it. there's a version with bltouch and one without.
-
-It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
-
-Mono (230/300/500): https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
-
-Dual (230) Update 15/05/2024: coming soon
 
 ## Sidewinder X2
 

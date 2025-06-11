@@ -2,7 +2,7 @@
 
 # 1.2 How to connect via SSH on Windows, Mac, and Linux
 
-![ssh smartpad](../../img/KlipperSmartPad/Connect_ssh/smartpad_ssh.png)
+![ssh smartpad](/img/KlipperSmartPad/Connect_ssh/smartpad_ssh.png)
 
 This guide should help you establish an SSH connection to your remote machine from Windows, Mac, and Linux systems. If you encounter any issues, ensure that the SSH server is running on the remote machine and that the firewall allows SSH connections.
 
@@ -27,7 +27,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 - Launch PuTTY from the Start menu.
 
-![Launch PuTTT](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_1.png)
+![Launch PuTTT](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_1.png)
 
 **3. Configure PuTTY**:
 
@@ -35,7 +35,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 - Ensure the **"Port"** field is set to **`22`**.
 - Ensure the **"Connection type"** is set to **`SSH`**.
 
-![connect_ssh_smartpad_2.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_2.png)
+![connect_ssh_smartpad_2.png](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_2.png)
 
 **4. Connect**:
 
@@ -43,7 +43,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 - A terminal window will open asking for a username. Enter **`pi`**.
 - When prompted for a password, enter **`yumi`**.
 
-![connect_ssh_smartpad_3.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_3.png)
+![connect_ssh_smartpad_3.png](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_3.png)
 
 #### Method 2: Using Windows 10 Built-in SSH
 
@@ -51,17 +51,17 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 - Press **`Win + R`**, type **`cmd`** or **`powershell`**, and press **`Enter`**.
 
-![connect_ssh_smartpad_4.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_4.png)
+![connect_ssh_smartpad_4.png](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_4.png)
 
 **2. Use SSH Command**:
 
 - Type the following command **"ssh pi@192.168.1.61"** and press **`Enter`**:
 
-![connect_ssh_smartpad_5.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_5.png)
+![connect_ssh_smartpad_5.png](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_5.png)
 
 - When prompted, enter the password **`yumi`**.
 
-![connect_ssh_smartpad_6.png](../../img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_6.png)
+![connect_ssh_smartpad_6.png](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_6.png)
 
 ## 1.2.2 Mac
 MacOS comes with an SSH client pre-installed, accessible through the Terminal.
