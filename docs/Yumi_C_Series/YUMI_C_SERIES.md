@@ -126,14 +126,23 @@ YUMI uses a proximity sensor to detect the build surface without any physical co
 
 This campaign would never have come to life without the passion and dedication of our incredible team. Over the past few months, our logistics, marketing, customer support, and production crews have worked tirelessly behind the scenes to make sure every detail is planned, tested, and ready—so we can deliver exactly what we promise.
 
-![yumiC](/img/YumiCSeries/YumiCSeries017.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries017.avif" alt="yumiC" />
+</p>
+
 
 We also want to give a special shout-out to our creative team, the minds behind the design and visual identity of the YUMI Model C. Your talent, vision, and commitment have been essential in shaping the spirit of this project.
 
-![yumiC](/img/YumiCSeries/YumiCSeries018.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries018.avif" alt="yumiC" />
+</p>
+
 
 At YUMI, everything is built with care, transparency, and a deep love for innovation—and this journey is one we’re proud to share with you ❤️
 
-![yumiC](/img/YumiCSeries/YumiCSeries019.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries019.avif" alt="yumiC" />
+</p>
+
 
 [![yumiC](/img/YumiCSeries/YumiCSeries020.avif)](https://www.kickstarter.com/projects/yumi-3d-printer/yumi-3d-printer-the-faster-multicolor-printer-in-the-galaxy?ref=discovery&term=yumi&total_hits=35&category_id=331)
