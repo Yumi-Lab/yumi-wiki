@@ -1,11 +1,12 @@
 # 1.1 YUMI C SERIES
 
 <div style="text-align: center;">
-  <video controls style="max-width: 100%; height: auto;">
+  <video autoplay muted playsinline controls style="max-width: 100%; height: auto;">
     <source src="https://v2.kickstarter.com/1752735520-XfqB7Z8WIIWsBUqzPqJ%2FbrmiQUsezYyEg93oH8ND1Gc%3D/projects/5038119/video-1372971-h264_high.mp4" type="video/mp4">
     Votre navigateur ne supporte pas la lecture de vidéos.
   </video>
 </div>
+
 
 
 # ❤️ Open Source at Heart — Powered by Klipper ❤️
