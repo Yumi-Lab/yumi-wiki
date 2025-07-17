@@ -91,9 +91,9 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - YUMI SBC nano-computer:
-    - YUMI C SERIES:
+  - YUMI C SERIES:
       - Yumi_C_Series/YUMI_C_SERIES.md
+  - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
       - SmartPI/SmartPi_One_Startup.md
