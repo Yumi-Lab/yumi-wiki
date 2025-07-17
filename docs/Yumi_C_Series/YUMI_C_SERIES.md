@@ -34,11 +34,21 @@ Whether you're an artist, educator, or engineer, the YUMI Model C is not just a 
 Choose from C235 / C335 / C435, covering needs from everyday prints to large-scale projects.
 → From compact to professional-scale prints.
 
-![yumiC](/img/YumiCSeries/YumiCSeries001.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries002.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries003.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries004.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries005.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries001.avif" alt="yumiC" />
+</p>
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries002.avif" alt="yumiC" />
+</p>
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries003.avif" alt="yumiC" />
+</p>
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries004.avif" alt="yumiC" />
+</p>
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries005.avif" alt="yumiC" />
+</p>
 
 # 🌟 MAIN FEATURES — The Future of Modular 3D Printing
 
@@ -50,24 +60,38 @@ The YUMI Material System (YMS) scales from 1 to 12 independent modules.
 Each YMS includes an anti-UV protective cover, and only 10 cm of retraction is needed to switch colors.
 Filament is cut close to the nozzle, reducing purge, and waste is automatically ejected.
 
-![yumiC](/img/YumiCSeries/YumiCSeries006.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries006.avif" alt="yumiC" />
+</p>
 
 # 🔥Meet the YUMI Print Heads — Built for Speed and Color
 
-![yumiC](/img/YumiCSeries/YumiCSeries007.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries007.avif" alt="yumiC" />
+</p>
+
 
 🧠 Two Swappable Heads for Full Material Compatibility
 →ChromaX12: for complex multi-color prints up to 240°C
 →High-Flow DirectDrive: high-temperature filaments up to 310°C
 They cover everything from PLA, PETG, ABS, ASA, TPU to engineering-grade materials
 
-![yumiC](/img/YumiCSeries/YumiCSeries008.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries009.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries008.avif" alt="yumiC" />
+</p>
+
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries009.avif" alt="yumiC" />
+</p>
+
 
 
 # 🎯 YMS — The Modular Material System That Changes Everything
 
-![yumiC](/img/YumiCSeries/YumiCSeries010.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries010.avif" alt="yumiC" />
+</p>
+
 
 At the heart of the YUMI Model C lies our most revolutionary innovation: the YMS (YUMI Material System) — a fully modular, independent multicolor filament system designed to make multi-material 3D printing simple, fast, and clean.
 
@@ -84,10 +108,22 @@ Whether you’re printing prototypes, figurines, or detailed functional parts, Y
 
 No more towers. No more waste. Just pure color freedom.
 
-![yumiC](/img/YumiCSeries/YumiCSeries011.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries012.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries013.avif)
-![yumiC](/img/YumiCSeries/YumiCSeries014.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries011.avif" alt="yumiC" />
+</p>
+
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries012.avif" alt="yumiC" />
+</p>
+
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries013.avif" alt="yumiC" />
+</p>
+
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries014.avif" alt="yumiC" />
+</p>
+
 
 # More details about YUMi 3D printers
 
@@ -95,7 +131,10 @@ No more towers. No more waste. Just pure color freedom.
 Use the built-in 4.3” capacitive touchscreen to control everything, or manage your print remotely through the YUMI | Lab mobile app.
 → Built-in 2.4 GHz Wi-Fi, with optional 5 GHz support via USB dongle
 
-![yumiC](/img/YumiCSeries/YumiCSeries015.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries015.avif" alt="yumiC" />
+</p>
+
 
 ## 💾 Storage & Compatibility That Grows With You
 Comes with 16 GB internal memory, expandable to 32 GB.
@@ -111,7 +150,10 @@ Start, monitor, and control your prints from anywhere — even from the other si
 
 No more USB keys, no more waiting — just tap and print.
 
-![yumiC](/img/YumiCSeries/YumiCSeries016.avif)
+<p align="center">
+  <img src="/img/YumiCSeries/YumiCSeries016.avif" alt="yumiC" />
+</p>
+
 
 ## 🔊 Vibration Compensation & Pressure Advance
 Includes a built-in ADXL sensor for Input Shaper, and native support for Pressure Advance.
