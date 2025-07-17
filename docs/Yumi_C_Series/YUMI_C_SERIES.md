@@ -8,6 +8,8 @@
 </div>
 
 
+[![yumiC](/img/YumiCSeries/YumiCSeries020.avif)](https://www.kickstarter.com/projects/yumi-3d-printer/yumi-3d-printer-the-faster-multicolor-printer-in-the-galaxy?ref=discovery&term=yumi&total_hits=35&category_id=331)
+
 
 # ❤️ Open Source at Heart — Powered by Klipper ❤️
 
