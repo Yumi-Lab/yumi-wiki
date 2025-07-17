@@ -93,6 +93,7 @@ markdown_extensions:
 nav:
   - YUMI C SERIES:
       - Yumi_C_Series/YUMI_C_SERIES.md
+      - Technical Draw: Yumi_C_Series/YUMI_C_SERIES_TECHNICAL_DRAW.pdf
   - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
