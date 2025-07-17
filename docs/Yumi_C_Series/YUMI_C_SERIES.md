@@ -54,7 +54,7 @@ Choose from C235 / C335 / C435, covering needs from everyday prints to large-sca
   <img src="/img/YumiCSeries/YumiCSeries004.avif" alt="yumiC" />
 </p>
 <p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries005.avif" alt="yumiC" />
+  <img src="/img/YumiCSeries/YumiCSeries005.png" alt="yumiC" />
 </p>
 
 # 🌟 MAIN FEATURES — The Future of Modular 3D Printing
