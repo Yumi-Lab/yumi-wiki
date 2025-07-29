@@ -1,10 +1,12 @@
 # 🛠️ Maintenance Guide: Lubricating the X/Y/Z Axes
 
+
 Regular lubrication is essential for keeping your printer running smoothly, quietly, and accurately. This guide covers the proper lubrication procedure for the **X/Y linear rails** and the **Z lead screw(s)**, following best practices for Bambu Lab-style printers.
 
 ---
 
 ## 🔧 Recommended Lubrication Schedule
+
 
 | Axis | Recommended Product | Frequency |
 |------|---------------------|-----------|
@@ -18,6 +20,7 @@ Regular lubrication is essential for keeping your printer running smoothly, quie
 
 ## ⚙️ Required Tools & Materials
 
+
 - Light oil (e.g. PTFE oil, sewing machine oil)
 - Grease (lithium, silicone, or suitable for threaded rods)
 - Lint-free cloths
@@ -28,6 +31,7 @@ Regular lubrication is essential for keeping your printer running smoothly, quie
 
 ## 🧼 Preparation Steps
 
+
 1. **Turn off** the printer and **unplug** it.
 2. **Manually move** the printhead and bed to access all rails and screws.
 3. Use a cloth to **clean old grease, dust, or debris** from all mechanical parts.
@@ -36,9 +40,11 @@ Regular lubrication is essential for keeping your printer running smoothly, quie
 
 ## 🛢️ Lubricating the X/Y Axes (Linear Rails)
 
+
 The X and Y axes move along **linear guide rails** with internal ball bearings.
 
 ### Instructions
+
 
 1. Apply **1–2 drops** of light oil directly on each rail.
 2. **Manually move** the printhead and gantry across all directions to distribute the oil.
@@ -51,9 +57,11 @@ The X and Y axes move along **linear guide rails** with internal ball bearings.
 
 ## ⚙️ Lubricating the Z Axis (Lead Screw)
 
+
 The Z axis uses a **lead screw** that lifts the build plate vertically.
 
 ### Instructions
+
 
 1. Locate the **lead screw(s)**.
 2. Apply a **thin layer of grease** with a swab or brush.
@@ -66,6 +74,7 @@ The Z axis uses a **lead screw** that lifts the build plate vertically.
 
 ## ✅ Final Tips
 
+
 - Use **only compatible lubricants** for plastic and metal parts.
 - **Don't over-lubricate** — excess can attract dust.
 - Avoid products like **WD-40**, which are solvents, not lubricants.
@@ -73,6 +82,7 @@ The Z axis uses a **lead screw** that lifts the build plate vertically.
 ---
 
 ## 📌 Maintenance Reminders
+
 
 - Add lubrication to your **monthly maintenance checklist**.
 - You can also view time-since-last-maintenance in the SmartPad's
