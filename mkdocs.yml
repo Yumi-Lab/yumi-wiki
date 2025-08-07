@@ -157,6 +157,9 @@ nav:
   - Maintenance:
     - Maintenance/Lubricating_the_XYZ_Axes.md
     - Maintenance/Clean_nozzle.md
+    - Maintenance/belt_tension_check.md
+    - Maintenance/build_plate_cleaning.md
+    - Maintenance/fan_cleaning.md
   - YUMI STL:
     - Yumi_stl/Printable_Accessories_and_Parts.md
   
