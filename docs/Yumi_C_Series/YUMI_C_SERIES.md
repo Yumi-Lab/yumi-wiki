@@ -1,11 +1,16 @@
 # 1.1 YUMI C SERIES
 
-<div style="text-align: center;">
-  <video autoplay muted playsinline controls style="width: 800px; max-width: 100%; height: auto;">
-    <source src="https://v2.kickstarter.com/1752735520-XfqB7Z8WIIWsBUqzPqJ%2FbrmiQUsezYyEg93oH8ND1Gc%3D/projects/5038119/video-1372971-h264_high.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la lecture de vidéos.
-  </video>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/UCdwHCwixVY" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
 </div>
+
 
 
 [![yumiC](/img/YumiCSeries/YumiCSeries020.avif)](https://www.kickstarter.com/projects/yumi-3d-printer/yumi-3d-printer-the-faster-multicolor-printer-in-the-galaxy?ref=discovery&term=yumi&total_hits=35&category_id=331)
