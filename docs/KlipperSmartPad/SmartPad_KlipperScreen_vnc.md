@@ -1,5 +1,7 @@
 # 1.5 How to Access KlipperScreen on SmartPad via VNC
 
+<img src="/img/KlipperSmartPad/Klipperscreen_vnc/klipperscreen_vnc_01.png" width="200" alt="KlipperScreen VNC">
+
 This tutorial explains how to remotely view and control the KlipperScreen interface on your YUMI SmartPad using VNC. It shares the actual framebuffer of the SmartPad’s screen, including the correct rotation, allowing you to see exactly what is displayed.
 
 ## Prerequisites
@@ -57,7 +59,7 @@ Leave this command running while you want to use VNC.
 * Enter the password you set for the VNC server.
 * You should now see the live SmartPad screen on your computer.
 
-<img src="/img/KlipperSmartPad/Klipperscreen_vnc/klipperscreen_vnc.png" width="600" alt="KlipperScreen VNC">
+<img src="/img/KlipperSmartPad/Klipperscreen_vnc/klipperscreen_vnc_02.png" width="600" alt="KlipperScreen VNC">
 
 ## Automate VNC Server Startup with systemd
 
