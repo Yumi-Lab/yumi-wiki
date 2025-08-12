@@ -10,7 +10,7 @@
 
 1. Connect the ADXL to the smartpad
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/009.jpg" alt="ADXL" style="width:40%;" />
+  <img src="/img/KlipperSmartPad/ADXL/009.jpg" alt="ADXL" style="width:20%;" />
 </p>
 2. On the **Smartpad**, go to the **More** menu  
 <p align="center">
