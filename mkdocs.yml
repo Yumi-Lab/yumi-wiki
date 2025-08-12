@@ -140,6 +140,7 @@ nav:
     - KlipperSmartPad/SmartPad_change_password.md
     #- KlipperSmartPad/Smartpad_Printers_yumi_configuration.md
     - KlipperSmartPad/SmartPad_rotation_screen.md
+    - KlipperSmartPad/SmartPad_KlipperScreen_vnc.md
     - KlipperSmartPad/Calibration/Extruder_calibration.md
     - KlipperSmartPad/Calibration/Z_Offset_calibration.md
     - KlipperSmartPad/Calibration/PID_calibration.md
