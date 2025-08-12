@@ -57,7 +57,7 @@ Leave this command running while you want to use VNC.
 * Enter the password you set for the VNC server.
 * You should now see the live SmartPad screen on your computer.
 
-<img src="../img/KlipperSmartPad/Klipperscreen_vnc/klipperscreen_vnc.png" width="600" alt="KlipperScreen VNC">
+<img src="/img/KlipperSmartPad/Klipperscreen_vnc/klipperscreen_vnc.png" width="600" alt="KlipperScreen VNC">
 
 ## Automate VNC Server Startup with systemd
 
