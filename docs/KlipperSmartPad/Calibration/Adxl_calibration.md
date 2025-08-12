@@ -14,20 +14,20 @@
 </p>
 2. On the **Smartpad**, go to the **More** menu  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/005.jpg" alt="ADXL" style="width:50%; transform: rotate(-90deg)" />
+  <img src="/img/KlipperSmartPad/ADXL/005.jpg" alt="ADXL" style="width:50%;" />
 </p>
 32. Select **Input Shaper**  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/006.jpg" alt="ADXL" style="width:50%; transform: rotate(-90deg)" />
+  <img src="/img/KlipperSmartPad/ADXL/006.jpg" alt="ADXL" style="width:50%;" />
 </p>
 4. Wait for the Smartpad to detect the ADXL (about **5–10 seconds**)  
 5. Select **Auto-Calibrate**  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/007.jpg" alt="ADXL" style="width:50%; transform: rotate(-90deg)" />
+  <img src="/img/KlipperSmartPad/ADXL/007.jpg" alt="ADXL" style="width:50%;" />
 </p>
 6. Choose the axis to measure (**X** or **Y**)  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/008.jpg" alt="ADXL" style="width:50%; transform: rotate(-90deg)" />
+  <img src="/img/KlipperSmartPad/ADXL/008.jpg" alt="ADXL" style="width:50%;" />
 </p>
 ---
 
@@ -41,7 +41,7 @@
 - Start the measurement for the **X-axis**  
 - Once complete, **save your values**  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" style="width:50%; transform: rotate(-90deg)" />
+  <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" style="width:50%;" />
 </p>
 - The X-axis is now configured ✅  
 
@@ -60,7 +60,7 @@
 - Start the measurement for the **Y-axis**  
 - Once complete, **save your values**  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" style="width:50%; transform: rotate(-90deg)" />
+  <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" />
 </p>
 - The Y-axis is now configured ✅  
 
