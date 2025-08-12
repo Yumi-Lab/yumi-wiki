@@ -10,7 +10,7 @@
 
 1. Connect the ADXL to the smartpad
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/009.jpg" alt="ADXL" style="width:50%;" />
+  <img src="/img/KlipperSmartPad/ADXL/009.jpg" alt="ADXL" style="width:40%;" />
 </p>
 2. On the **Smartpad**, go to the **More** menu  
 <p align="center">
@@ -52,15 +52,15 @@
   [ADXL Clamp Mount - Makerworld](https://makerworld.com/fr/models/1197743-adxl-clamp-mount-work-on-heatbed-nozzle?from=search)  
 - Install the mount as shown in the reference photo  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/003.jpg" alt="ADXL" style="width:50%;" />
+  <img src="/img/KlipperSmartPad/ADXL/003.jpg" alt="ADXL" style="width:40%;" />
 </p>
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/002.jpg" alt="ADXL" style="width:50%;" />
+  <img src="/img/KlipperSmartPad/ADXL/002.jpg" alt="ADXL" style="width:40%;" />
 </p>
 - Start the measurement for the **Y-axis**  
 - Once complete, **save your values**  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" />
+  <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" style="width:50%;"/>
 </p>
 - The Y-axis is now configured ✅  
 
