@@ -52,10 +52,10 @@
   [ADXL Clamp Mount - Makerworld](https://makerworld.com/fr/models/1197743-adxl-clamp-mount-work-on-heatbed-nozzle?from=search)  
 - Install the mount as shown in the reference photo  
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/003.jpg" alt="ADXL" style="width:40%;" />
+  <img src="/img/KlipperSmartPad/ADXL/003.jpg" alt="ADXL" style="width:20%;" />
 </p>
 <p align="center">
-  <img src="/img/KlipperSmartPad/ADXL/002.jpg" alt="ADXL" style="width:40%;" />
+  <img src="/img/KlipperSmartPad/ADXL/002.jpg" alt="ADXL" style="width:20%;" />
 </p>
 - Start the measurement for the **Y-axis**  
 - Once complete, **save your values**  
