@@ -94,6 +94,15 @@ nav:
   - YUMI C SERIES:
       - Yumi_C_Series/YUMI_C_SERIES.md
       - Technical Draw: Yumi_C_Series/pdf/YUMI_C_SERIES_TECHNICAL_DRAW.pdf
+  #- YUMI Laser:
+      #- Yumi_Laser/Yumi_Laser.md
+      #- Yumi_Laser/Yumi_Laser_Overview.md
+      #- Yumi_Laser/Yumi_Laser_Safety.md
+      #- Yumi_Laser/Yumi_Laser_Assembly.md
+      #- Yumi_Laser/Yumi_Laser_LaserGRBL.md
+      #- Yumi_Laserr/Yumi_Laser_LightBurn.md
+      #- Yumi_Laser/Yumi_Laser_Wireless.md
+      #- Yumi_Laser/Yumi_Laser_Troubleshooting.md      
   - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
