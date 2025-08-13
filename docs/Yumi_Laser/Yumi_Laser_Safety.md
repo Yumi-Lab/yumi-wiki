@@ -77,6 +77,3 @@ Do **not** process the following:
 * [1.3 Assembly & First Setup](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1)
 * [1.8 Accessories & Upgrade Packs](Yumi_Laser/Yumi_Laser_Accessories.md)
 
----
-
-Veux-tu que je t’en fasse une version markdown prête à coller, ou que je te la traduise intégralement en français ?

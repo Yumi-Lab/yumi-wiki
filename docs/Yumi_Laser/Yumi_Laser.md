@@ -47,5 +47,3 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 ### [1.8 Troubleshooting](Yumi_Laser_Troubleshooting.md)
 List of common issues, causes, and solutions for YUMI Laser operation.  
 
-
----
