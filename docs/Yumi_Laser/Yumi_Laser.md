@@ -23,28 +23,28 @@ Available models:
 
 ---
 
-### [1.1 Overview & Specifications](Yumi_Laser/Yumi_Laser_Overview.md)
+### [1.1 Overview & Specifications](Yumi_Laser_Overview.md)
 Introduction to the YUMI Laser series, details on available models, interchangeable laser modules, upgrade options, and full technical specifications.  
 
-### [1.2 Safety Guidelines](Yumi_Laser/Yumi_Laser_Safety.md)
+### [1.2 Safety Guidelines](Yumi_Laser_Safety.md)
 Laser safety instructions, prohibited materials, ventilation requirements, and fire prevention measures.  
 
 ### [1.3 Assembly & First Setup](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1)
 Step-by-step guide for unpacking, assembling, and preparing your YUMI Laser for first use.  
 
-### [1.4 LightBurn Setup and Usage](Yumi_Laser/Yumi_Laser_Wireless.md)
+### [1.4 LightBurn Setup and Usage](Yumi_Laser_Wireless.md)
 Installing and configuring LightBurn for YUMI Laser, importing the correct device profile, and setting up materials.  
 
-### [1.5 LaserGRBL Setup and Usage](Yumi_Laser/Yumi_Laser_LaserGRBL.md)
+### [1.5 LaserGRBL Setup and Usage](Yumi_Laser_LaserGRBL.md)
 How to install and configure LaserGRBL with YUMI Laser, load files, and adjust engraving/cutting settings.  
 
-### [1.6 Wireless Control](Yumi_Laser/Yumi_Laser_Wireless.md)
+### [1.6 Wireless Control](Yumi_Laser_Wireless.md)
 How to control the YUMI Laser over Wi-Fi via the web interface or the Lighting Burner mobile app.  
 
-### [1.7 Accessories & Upgrade Packs](Yumi_Laser/Yumi_Laser_Accessories.md)
+### [1.7 Accessories & Upgrade Packs](Yumi_Laser_Accessories.md)
 Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra heads, touchscreen, risers, enclosure/extraction, lens & focus accessories.  
 
-### [1.8 Troubleshooting](Yumi_Laser/Yumi_Laser_Troubleshooting.md)
+### [1.8 Troubleshooting](Yumi_Laser_Troubleshooting.md)
 List of common issues, causes, and solutions for YUMI Laser operation.  
 
 
