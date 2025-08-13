@@ -1,7 +1,3 @@
-Tu as déjà une bonne base bien structurée et claire pour ta page **1.2 Safety Guidelines**. Si tu souhaites la **compléter** en intégrant certains détails importants issus du texte que tu m’as donné, voici quelques suggestions pour étoffer et enrichir ta page sans alourdir :
-
----
-
 # 1.2 Safety Guidelines
 
 Operating a laser engraver involves certain risks.
