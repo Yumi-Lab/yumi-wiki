@@ -7,25 +7,26 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ## Available Models
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <div style="text-align: center;">
+<div style="overflow: hidden; text-align: center;">
+  <div style="float: left; width: 33%; text-align: center;">
     <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A4.png" width="250" alt="YUMI L-A4"><br>
     <b>YUMI L-A4</b><br>
     210 × 297 mm working area
   </div>
 
-  <div style="text-align: center;">
+  <div style="float: left; width: 33%; text-align: center;">
     <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A3.png" width="250" alt="YUMI L-A3"><br>
     <b>YUMI L-A3</b><br>
     420 × 297 mm working area
   </div>
 
-  <div style="text-align: center;">
+  <div style="float: left; width: 33%; text-align: center;">
     <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A2.png" width="250" alt="YUMI L-A2"><br>
     <b>YUMI L-A2</b><br>
     420 × 594 mm working area
   </div>
 </div>
+
 
 
 ---
