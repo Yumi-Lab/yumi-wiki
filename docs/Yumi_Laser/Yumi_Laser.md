@@ -13,25 +13,24 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A4.png" width="250" alt="YUMI L-A4">
   
 **YUMI L-A4**  
-210 × 297 mm working area
+**210 × 297 mm working area**
 </div>
 
 <div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A3.png" width="250" alt="YUMI L-A3">
   
 **YUMI L-A3**  
-420 × 297 mm working area
+**420 × 297 mm working area**
 </div>
 
 <div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A2.png" width="250" alt="YUMI L-A2">
   
 **YUMI L-A2**  
-420 × 594 mm working area
+**420 × 594 mm working area**
 </div>
 
 </div>
-
 
 
 ---
@@ -46,6 +45,8 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 - **Material versatility**: engrave wood, glass, leather, food, acrylic, ceramic, coated metals, paper, silicone, and more; cut MDF, acrylic, basswood, etc.
 
 ---
+
+# Quick Start
 
 ### [1.1 Overview & Specifications](Yumi_Laser_Overview.md)
 Introduction to the YUMI Laser series, details on available models, interchangeable laser modules, upgrade options, and full technical specifications.  
@@ -68,8 +69,9 @@ How to control the YUMI Laser over Wi-Fi via the web interface or the Lighting B
 ### [1.7 Accessories & Upgrade Packs](Yumi_Laser_Accessories.md)
 Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra heads, touchscreen, risers, enclosure/extraction, lens & focus accessories.  
 
-### [1.8 Troubleshooting](Yumi_Laser_Troubleshooting.md)
+# Troubleshooting
 List of common issues, causes, and solutions for YUMI Laser operation.  
+
 
 ## Purchase YUMI Laser
 
