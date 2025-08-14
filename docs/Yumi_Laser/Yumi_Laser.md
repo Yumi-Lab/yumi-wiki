@@ -7,7 +7,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ## Available Models
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: left;">
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
 
 <div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A4.png" width="250" alt="YUMI L-A4">
