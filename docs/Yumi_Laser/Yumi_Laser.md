@@ -7,23 +7,24 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ## Available Models
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
 
-<div style="flex: 0 0 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: center; align-items: flex-start; flex-wrap: nowrap; overflow-x: auto;">
+
+<div style="width: 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA4.png" width="250" alt="YUMI L-A4">
   
 **YUMI L-A4**  
 210 × 297 mm working area
 </div>
 
-<div style="flex: 0 0 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
+<div style="width: 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA3.png" width="250" alt="YUMI L-A3">
   
 **YUMI L-A3**  
 420 × 297 mm working area
 </div>
 
-<div style="flex: 0 0 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
+<div style="width: 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
 <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA2.png" width="250" alt="YUMI L-A2">
   
 **YUMI L-A2**  
@@ -31,7 +32,6 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 </div>
 
 </div>
-
 
 ---
 
@@ -70,9 +70,9 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 ### [1.8 Troubleshooting](Yumi_Laser_Troubleshooting.md)
 List of common issues, causes, and solutions for YUMI Laser operation.  
 
-## 🛒 Purchase YUMI Laser
+## Purchase YUMI Laser
 
 You can order your YUMI Laser directly from our official store:  
-**[➡ Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908)**
+**[Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908)**
 
 
