@@ -7,24 +7,29 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ## Available Models
 
-<div style="overflow: hidden; text-align: center;">
-  <div style="float: left; width: 33%; text-align: center;">
-    <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A4.png" width="250" alt="YUMI L-A4"><br>
-    <b>YUMI L-A4</b><br>
-    210 × 297 mm working area
-  </div>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: left;">
 
-  <div style="float: left; width: 33%; text-align: center;">
-    <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A3.png" width="250" alt="YUMI L-A3"><br>
-    <b>YUMI L-A3</b><br>
-    420 × 297 mm working area
-  </div>
+<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A4.png" width="250" alt="YUMI L-A4">
+  
+**YUMI L-A4**  
+**210 × 297 mm** working area
+</div>
 
-  <div style="float: left; width: 33%; text-align: center;">
-    <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A2.png" width="250" alt="YUMI L-A2"><br>
-    <b>YUMI L-A2</b><br>
-    420 × 594 mm working area
-  </div>
+<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A3.png" width="250" alt="YUMI L-A3">
+  
+**YUMI L-A3**  
+**420 × 297 mm** working area
+</div>
+
+<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_L-A2.png" width="250" alt="YUMI L-A2">
+  
+**YUMI L-A2**  
+**420 × 594 mm** working area
+</div>
+
 </div>
 
 
