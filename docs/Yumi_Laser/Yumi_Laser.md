@@ -3,24 +3,23 @@
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  
 Compact, modular, and powerful, these machines combine large working areas, multiple laser head options, and a rich ecosystem of upgrades to suit beginners, hobbyists, and professionals alike.
 
-<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_01.png" width="550" alt="YUMI Laser Overview">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_001.png" width="550" alt="YUMI Laser Overview">
 
 ## Available Models
 
-
 <table>
   <tr>
-    <td style="text-align: center; border-radius: 8px; padding: 5px;">
+    <td style="text-align: center; padding: 8px;">
       <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA4.png" width="250" alt="YUMI L-A4"><br>
       <b>YUMI L-A4</b><br>
       210 × 297 mm working area
     </td>
-    <td style="text-align: center; border-radius: 8px; padding: 5px;">
+    <td style="text-align: center; padding: 8px;">
       <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA3.png" width="250" alt="YUMI L-A3"><br>
       <b>YUMI L-A3</b><br>
       420 × 297 mm working area
     </td>
-    <td style="text-align: center; border-radius: 8px; padding: 5px;">
+    <td style="text-align: center; padding: 8px;">
       <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA2.png" width="250" alt="YUMI L-A2"><br>
       <b>YUMI L-A2</b><br>
       420 × 594 mm working area
@@ -32,7 +31,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ## Key Features
 - **Designed & engineered in France**
-- **Interchangeable laser modules**: 2.5W / 5.5W / 10W / 20W – precise, uniform engraving with the freedom to upgrade power as needed
+- **Interchangeable laser modules**: **2.5W / 5.5W / 10W / 20W** – precise, uniform engraving with the freedom to upgrade power as needed
 - **Large-format working areas** while keeping a compact, portable design
 - **Air Assist included (30 L/min)** for cleaner cuts and engravings
 - **Low noise level** for comfortable operation
