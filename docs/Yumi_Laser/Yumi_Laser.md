@@ -3,29 +3,30 @@
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  
 Compact, modular, and powerful, these machines combine large working areas, multiple laser head options, and a rich ecosystem of upgrades to suit beginners, hobbyists, and professionals alike.
 
-<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_001.png" width="550" alt="YUMI Laser Overview">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_01.png" width="550" alt="YUMI Laser Overview">
 
 ## Available Models
 
-<table>
+<table style="border-collapse: collapse; border: none;">
   <tr>
-    <td style="text-align: center; padding: 8px;">
+    <td style="text-align: center; padding: 8px; border: none;">
       <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA4.png" width="250" alt="YUMI L-A4"><br>
       <b>YUMI L-A4</b><br>
       210 × 297 mm working area
     </td>
-    <td style="text-align: center; padding: 8px;">
+    <td style="text-align: center; padding: 8px; border: none;">
       <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA3.png" width="250" alt="YUMI L-A3"><br>
       <b>YUMI L-A3</b><br>
       420 × 297 mm working area
     </td>
-    <td style="text-align: center; padding: 8px;">
+    <td style="text-align: center; padding: 8px; border: none;">
       <img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA2.png" width="250" alt="YUMI L-A2"><br>
       <b>YUMI L-A2</b><br>
       420 × 594 mm working area
     </td>
   </tr>
 </table>
+
 
 ---
 
