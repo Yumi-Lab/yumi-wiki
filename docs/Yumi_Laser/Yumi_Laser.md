@@ -3,12 +3,35 @@
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  
 Compact, modular, and powerful, these machines combine large working areas, multiple laser head options, and a rich ecosystem of upgrades to suit beginners, hobbyists, and professionals alike.
 
-<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser.png" width="600" alt="YUMI Laser Overview">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_01.png" width="550" alt="YUMI Laser Overview">
 
-Available models:
-- **YUMI L-A4** – 210 × 297 mm working area
-- **YUMI L-A3** – 420 × 297 mm working area
-- **YUMI L-A2** – 420 × 594 mm working area
+## Available Models
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+
+<div style="flex: 0 0 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA4.png" width="250" alt="YUMI L-A4">
+  
+**YUMI L-A4**  
+210 × 297 mm working area
+</div>
+
+<div style="flex: 0 0 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA3.png" width="250" alt="YUMI L-A3">
+  
+**YUMI L-A3**  
+420 × 297 mm working area
+</div>
+
+<div style="flex: 0 0 300px; text-align: center; border: 1px solid #ccc; border-radius: 8px; padding: 2px;">
+<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser_LA2.png" width="250" alt="YUMI L-A2">
+  
+**YUMI L-A2**  
+420 × 594 mm working area
+</div>
+
+</div>
+
 
 ---
 
@@ -32,7 +55,7 @@ Laser safety instructions, prohibited materials, ventilation requirements, and f
 ### [1.3 Assembly & First Setup](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1)
 Step-by-step guide for unpacking, assembling, and preparing your YUMI Laser for first use.  
 
-### [1.4 LightBurn Setup and Usage](Yumi_Laser_Wireless.md)
+### [1.4 LightBurn Setup and Usage](Yumi_Laser_LightBurn.md)
 Installing and configuring LightBurn for YUMI Laser, importing the correct device profile, and setting up materials.  
 
 ### [1.5 LaserGRBL Setup and Usage](Yumi_Laser_LaserGRBL.md)
@@ -46,4 +69,10 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 
 ### [1.8 Troubleshooting](Yumi_Laser_Troubleshooting.md)
 List of common issues, causes, and solutions for YUMI Laser operation.  
+
+## 🛒 Purchase YUMI Laser
+
+You can order your YUMI Laser directly from our official store:  
+**[➡ Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908)**
+
 
