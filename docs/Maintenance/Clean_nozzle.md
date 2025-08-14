@@ -82,9 +82,9 @@ This guide explains how to **clean the nozzle of a 3D printer** effectively to e
 
 | Printer Usage     | Suggested Cleaning Interval   |
 |-------------------|-------------------------------|
-| Occasional        | Every 2–3 months               |
+| Occasional        | Every 2 months               |
 | Regular           | Once per month                |
-| Intensive (daily) | Every 2–3 weeks               |
+| Intensive (daily) | Every 2 weeks               |
 
 ---
 
