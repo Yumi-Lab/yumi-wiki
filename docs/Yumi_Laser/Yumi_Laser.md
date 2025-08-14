@@ -33,19 +33,6 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 </div>
 
 
----
-
-## Key Features
-- **Designed & engineered in France**
-- **Interchangeable laser modules**: **2.5W / 5.5W / 10W / 20W** – precise, uniform engraving with the freedom to upgrade power as needed
-- **Large-format working areas** while keeping a compact, portable design
-- **Air Assist included (30 L/min)** for cleaner cuts and engravings
-- **Low noise level** for comfortable operation
-- **Compatible software**: LaserGRBL and LightBurn
-- **Material versatility**: engrave wood, glass, leather, food, acrylic, ceramic, coated metals, paper, silicone, and more; cut MDF, acrylic, basswood, etc.
-
----
-
 # Quick Start
 
 ### [1.1 Overview & Specifications](Yumi_Laser_Overview.md)
