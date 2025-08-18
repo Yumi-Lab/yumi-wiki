@@ -98,19 +98,6 @@ This section lists common issues encountered during the operation of the **YUMI 
 2. Increase movement speed.
 3. Enable Air Assist for cleaner cuts.
 
----
 
-## Related Pages
 
-- [1.2 Safety Guidelines](Yumi_Laser/Yumi_Laser_Safety.md)
-- [1.4 LightBurn Setup and First Engraving](Yumi_Laser/Yumi_Laser_LightBurn.md)
-- [1.5 LaserGRBL Setup and First Engraving](Yumi_Laser/Yumi_Laser_LaserGRBL.md)
-- [1.6 Wireless Control](Yumi_Laser/Yumi_Laser_Wireless.md)
 
----
-
-**Suggested images:**
-- `../../img/Yumi_laser/troubleshooting/no_power.png` – laser not turning on
-- `../../img/Yumi_laser/troubleshooting/no_cut.png` – laser firing without cutting
-- `../../img/Yumi_laser/troubleshooting/uneven_cut.png` – uneven engraving
-- `../../img/Yumi_laser/troubleshooting/wifi_error.png` – Wi-Fi issue example

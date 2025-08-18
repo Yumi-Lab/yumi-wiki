@@ -79,11 +79,5 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 - Save material-specific settings using the **Material Profiles** feature for future reuse.
 
----
-
-## Related Pages
-
-- [1.4 LightBurn Setup and First Engraving](Yumi_Laser/Yumi_Laser_LightBurn.md)
-- [1.8 Accessories & Upgrade Packs](Yumi_Laser/Yumi_Laser_Accessories.md)
 
 
