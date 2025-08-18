@@ -29,7 +29,7 @@ Ensure consistent first layers and strong bed adhesion by properly cleaning the 
 
 | Usage Type    | Recommended Cleaning   |
 | ------------- | ---------------------- |
-| Occasional    | Every 5–10 prints      |
+| Occasional    | Every 1 weeks        |
 | Regular       | Weekly                 |
 | Intensive Use | Before each long print |
 

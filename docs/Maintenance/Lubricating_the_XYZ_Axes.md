@@ -24,8 +24,8 @@ Before starting the lubrication procedure, make sure you have the correct mainte
 
 | Axis | Recommended Product | Frequency |
 |------|---------------------|-----------|
-| X/Y  | Light machine oil   | Every 1–2 months or ~300 hours of printing |
-| Z    | Grease (thick)      | Every 3–6 months or ~500 hours of printing |
+| X/Y  | Light machine oil   | Every 1 months or ~300 hours of printing |
+| Z    | Grease (thick)      | Every 3 months or ~500 hours of printing |
 
 !!! tip "SmartPad Notifications"
     Your **SmartPad** will automatically show maintenance reminders (lubrication, cleaning, etc.). Check the **System Notifications** regularly from the main menu.
