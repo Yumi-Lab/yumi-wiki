@@ -39,6 +39,8 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 Open **Grbl Configuration** (`Grbl > Grbl Configuration`) and set the **work area size** according to your YUMI model.  
 
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_04.png" alt="LaserGRBL Configuration Interface">
+
 You must adjust the following parameters:  
 
 - **X-axis maximum travel**  
@@ -46,7 +48,6 @@ You must adjust the following parameters:
 
 After entering the correct values, click **Write** and then **Close**.  
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_04.png" alt="LaserGRBL Configuration Interface">
 
 #### Work Area Dimensions per Model
 
