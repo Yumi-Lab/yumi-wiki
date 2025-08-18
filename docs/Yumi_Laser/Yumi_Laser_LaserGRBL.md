@@ -3,7 +3,7 @@
 **LaserGRBL** is a free, open-source software designed to control GRBL-based laser engravers such as the YUMI Laser.  
 This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A2), select the laser power module, and perform your first engraving.
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_01.png" width="600" alt="LightBurn Interface">
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_01.png" width="600" alt="LaserGRBL Logo">
 
 ---
 
@@ -25,18 +25,39 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 ## 3. Configure LaserGRBL for Your Model
 
 1. Open **LaserGRBL**.
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_02.png" width="600" alt="LaserGRBL Interface">
+
 2. At the top left, select the correct **COM port** and **baud rate**:
    - **Baud rate**: `115200`
 3. Click **Connect**.
-4. In **Grbl Configuration** (`Tools > Grbl Configuration`), set the **work area size** based on your model:
 
-   | Model  | X Axis (mm) | Y Axis (mm) |
-   |--------|-------------|-------------|
-   | L-A4   | 210         | 297         |
-   | L-A3   | 420         | 297         |
-   | L-A2   | 420         | 594         |
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_03.gif" width="600" alt="LaserGRBL Interface">
 
----
+
+4. Set the Work Area Size in **Grbl Configuration**
+
+Open **Grbl Configuration** (`Grbl > Grbl Configuration`) and set the **work area size** according to your YUMI model.  
+
+You must adjust the following parameters:  
+
+- **X-axis maximum travel**  
+- **Y-axis maximum travel**  
+
+After entering the correct values, click **Write** and then **Close**.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_04.png" alt="LaserGRBL Configuration Interface">
+
+#### Work Area Dimensions per Model
+
+| Model | **X-axis (mm)** | **Y-axis (mm)** |
+|-------|-----------------|-----------------|
+| L-A4  | 210             | 297             |
+| L-A3  | 420             | 297             |
+| L-A2  | 420             | 594             |
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_05.png" alt="LaserGRBL Work Area Preview">
+
 
 ## 4. Set Laser Power
 
@@ -53,9 +74,16 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ## 5. Load a Test File
 
-1. Click **Open File** and choose a simple **.nc**, **.svg**, or **.bmp** file.
-2. Use the **Import Raster** function for images.
-3. Adjust **engraving method** (Line to Line, Dithering, etc.) according to your needs.
+1. Click on the **folder icon** next to the **Filename** field and select a simple test file (`.nc`, `.svg`, or `.bmp`). 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_06.png" alt="LaserGRBL Work Area Preview">
+
+2. For images, use the **Import Raster Image** function.
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_07.png" alt="LaserGRBL Work Area Preview">
+
+3. Adjust the **engraving method** (e.g., *Line to Line*, *Dithering*, etc.) according to your needs.  
+
 
 ---
 
