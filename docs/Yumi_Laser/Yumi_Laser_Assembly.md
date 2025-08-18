@@ -32,6 +32,7 @@ Click here to download the official assembly guide:
    - Attach Air Assist pump and tubing (included).
    - Install honeycomb bed or rotary module if used.
 
+
    <img src="../../img/Yumi_laser/Yumi_Laser_Assembly/Yumi_Laser_Assembly_02.png" width="200" alt="YUMI Laser Module">
 
 5. **Connect Power & USB**  
