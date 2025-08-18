@@ -91,7 +91,7 @@ After entering the correct values, click **Write** and then **Close**.
 ## 6. Position & Focus the Laser
 
 1. Move the laser head using the **jog controls**.
-2. Adjust the focus with the supplied focusing tool or manual adjustment knob.
+2. Adjust the focus with the supplied focusing tool.
 3. Enable **Air Assist** if available.
 
 ---

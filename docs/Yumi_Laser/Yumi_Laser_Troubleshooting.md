@@ -2,7 +2,6 @@
 
 This section lists common issues encountered during the operation of the **YUMI Laser Series**, along with their possible causes and recommended solutions.
 
-<img src="../../img/Yumi_laser/troubleshooting/yumi_laser_troubleshooting.png" width="600" alt="YUMI Laser Troubleshooting">
 
 ---
 

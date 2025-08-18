@@ -3,7 +3,6 @@
 The **YUMI Laser** can be controlled over Wi-Fi without a physical display, using a PC, smartphone, or tablet.  
 This section covers the three available connection methods and how to launch engraving jobs wirelessly.
 
-<img src="../../img/Yumi_laser/wireless/wireless_overview.png" width="600" alt="YUMI Laser Wireless Control Overview">
 
 ---
 
@@ -69,14 +68,6 @@ From the built-in web UI, you can:
 
 ---
 
-**Suggested Images:**
-- `../../img/Yumi_laser/wireless/wireless_overview.png` – overview diagram of the 3 connection methods
-- `../../img/Yumi_laser/wireless/serial_setup.png` – sending Wi-Fi credentials over USB
-- `../../img/Yumi_laser/wireless/mks_tool.png` – MKS Laser Tool Wi-Fi setup
-- `../../img/Yumi_laser/wireless/lighting_burner.png` – mobile app interface
-- `../../img/Yumi_laser/wireless/web_ui.png` – web control page
-
----
 
 ## Tips for Stable Wireless Use
 - Keep the laser close to the Wi-Fi router
