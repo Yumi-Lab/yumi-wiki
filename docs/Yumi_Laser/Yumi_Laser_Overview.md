@@ -3,7 +3,7 @@
 The **YUMI Laser Series** is a modular, high-precision engraving and cutting solution designed in France.  
 Available in multiple sizes and laser powers, it combines portability, performance, and flexibility for beginners, hobbyists, and professionals.
 
-<img src="../../img/Yumi_laser/Yumi_laser/yumi_laser.png" width="600" alt="YUMI Laser Overview">
+<img src="../../img/Yumi_laser/Yumi_Laser_Overview/Yumi_Laser_Overview_01.png" width="800" alt="YUMI Laser Overview">
 
 ---
 
@@ -69,12 +69,4 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 | **Noise Level**   | Low |
 | **Design**        | Compact & portable |
 
----
 
-## Related Pages
-
-- [1.2 Safety Guidelines](Yumi_Laser/Yumi_Laser_Safety.md)
-- [1.3 Assembly & First Setup](Yumi_Laser/Yumi_Laser_Assembly.md)
-- [1.8 Accessories & Upgrade Packs](Yumi_Laser/Yumi_Laser_Accessories.md)
-
----

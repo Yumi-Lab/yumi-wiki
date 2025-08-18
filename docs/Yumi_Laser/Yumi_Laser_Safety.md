@@ -3,7 +3,7 @@
 Operating a laser engraver involves certain risks.
 The **YUMI Laser Series** is designed with safety in mind, but safe operation still depends on following proper guidelines.
 
-<img src="../../img/Yumi_laser/safety/laser_safety.png" width="600" alt="Laser Safety">
+<img src="../../img/Yumi_laser/Yumi_Laser_Safety/Yumi_Laser_Safety_01.png" width="350" alt="Laser Attention!!!">  
 
 ---
 
@@ -59,7 +59,6 @@ Do **not** process the following:
 * Do not remove materials until fully cooled.
 * Avoid using highly flammable or explosive materials.
 * Prevent cables (USB, 24V power) from touching the laser beam.
-* The M2 motherboard supports an optional DIY heat/flame sensor to alert in case of fire — but this sensor cannot extinguish flames.
 
 ---
 
@@ -69,11 +68,5 @@ Do **not** process the following:
 * Avoid running cables across walkways or sharp edges.
 * Disconnect power before cleaning, moving, or performing maintenance.
 
----
 
-## Related Pages
-
-* [1.1 Overview & Specifications](Yumi_Laser/Yumi_Laser_Overview.md)
-* [1.3 Assembly & First Setup](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1)
-* [1.8 Accessories & Upgrade Packs](Yumi_Laser/Yumi_Laser_Accessories.md)
 

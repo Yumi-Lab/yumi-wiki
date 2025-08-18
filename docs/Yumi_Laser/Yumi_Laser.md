@@ -41,8 +41,8 @@ Introduction to the YUMI Laser series, details on available models, interchangea
 ### [1.2 Safety Guidelines](Yumi_Laser_Safety.md)
 Laser safety instructions, prohibited materials, ventilation requirements, and fire prevention measures.  
 
-### [1.3 Assembly & First Setup](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1)
-Step-by-step guide for unpacking, assembling, and preparing your YUMI Laser for first use.  
+### [1.3 Assembly & First Setup](Yumi_Laser_Assembly.md)
+Step-by-step guide assembling, and preparing your YUMI Laser for first use.  
 
 ### [1.4 LightBurn Setup and Usage](Yumi_Laser_LightBurn.md)
 Installing and configuring LightBurn for YUMI Laser, importing the correct device profile, and setting up materials.  
