@@ -75,7 +75,7 @@ After entering the correct values, click **Write** and then **Close**.
 
 ## 5. Load a Test File
 
-1. Click on the **folder icon** next to the **Filename** field and select a simple test file (`.nc`, `.svg`, or `.bmp`). 
+1. Click **File** next to the **Open File** field and select a simple test file (`.nc`, `.svg`, or `.bmp`). 
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_06.png" alt="LaserGRBL Work Area Preview">
 
@@ -90,21 +90,54 @@ After entering the correct values, click **Write** and then **Close**.
 
 ## 6. Position & Focus the Laser
 
-1. Move the laser head using the **jog controls**.
-2. Adjust the focus with the supplied focusing tool.
-3. Enable **Air Assist** if available.
+
+1. Move the laser head **manually** over the workpiece.  
+2. Place the **fixed-focus spacer** (5 mm) on the surface. 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_08.png" width="600"  alt="LaserGRBL Work Area Preview">
+
+3. Loosen the fixing screws of the laser module.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_09.png" width="250"  alt="LaserGRBL Work Area Preview">
+
+4. Slide the laser down until it touches the spacer.  
+5. Remove the spacer and tighten the screws.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_10.png" width="250"  alt="LaserGRBL Work Area Preview">
 
 ---
 
-## 7. Launch the First Engraving
+## 7. Positioning the Workpiece
 
-1. Click **Frame** to preview the engraving area without firing the laser.
-2. Click **Start** to begin engraving.
-3. Stay nearby to monitor progress.
+1. Click **Move to Center** → the laser moves to the center of the design.  
+2. Click **Light Laser** → the laser emits a weak beam to show the engraving center. Adjust your material position if necessary.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_11.png" alt="LaserGRBL Work Area Preview">
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_12.gif" alt="LaserGRBL Work Area Preview">
+
+3. Click **Profile Scan** → the laser scans the outline of the design.  
+   - Adjust the material again if needed.  
+   - Use **Wrap Around** until the outline matches correctly.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_13.png" alt="LaserGRBL Work Area Preview">
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_14.gif" alt="LaserGRBL Work Area Preview">
 
 ---
 
-## 8. Save Your Settings
+## 8. Enable Air Assist (Optional)
+
+- If your engraver is equipped with **Air Assist**, turn it on now.  
+- This helps improve cutting quality and reduce burn marks. 
+
+## 9. Start Engraving
+
+1. Verify speed, power, and focus.  
+2. Click **Start** to begin engraving.  
+3. Stay near the machine and monitor the process for safety. 
+
+## 10. Save Your Settings
 
 - Save material-specific settings using the **Material Profiles** feature for future reuse.
 
