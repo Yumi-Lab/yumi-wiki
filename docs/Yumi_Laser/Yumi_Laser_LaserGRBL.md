@@ -114,7 +114,7 @@ After entering the correct values, click **Write** and then **Close**.
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_11.png" alt="LaserGRBL Work Area Preview">
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_12.gif" width="250" alt="LaserGRBL Work Area Preview">
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_12.gif" width="" alt="LaserGRBL Work Area Preview">
 
 3. Click **Profile Scan** → the laser scans the outline of the design.  
    - Adjust the material again if needed.  
