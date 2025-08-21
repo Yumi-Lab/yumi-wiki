@@ -77,11 +77,17 @@ Your YUMI Laser is now ready to use in LightBurn.
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_08.png" width="500" alt="LightBurn Device Added">
 
-3. Set the **Layer**:
-   - **Line** for outline engraving
-   - **Fill** for filled engraving
+3. Set the **Layer**:  
+   - **Line** → for outline engraving.  
+   - **Fill** → for filled engraving.  
+   - Adjust the following parameters:  
+     - **Speed** (mm/min) → engraving or cutting speed.  
+     - **Max Power** (%) → laser output power.  
+     - **Pass Count** → number of passes to apply.  
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_09.png" width="500" alt="LightBurn Device Added">
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_13.png" width="400"  alt="LaserGRBL Work Area Preview">
 
 ---
 

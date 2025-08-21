@@ -59,21 +59,9 @@ After entering the correct values, click **Write** and then **Close**.
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_05.png" alt="LaserGRBL Work Area Preview">
 
-
-## 4. Set Laser Power
-
-- In LaserGRBL, laser power is expressed as a percentage of the maximum PWM value.
-- Recommended starting values per module:
-  - **2.5W** → 10–40%
-  - **5.5W** → 20–70%
-  - **10W** → 30–90%
-  - **20W** → 50–100%
-
-> Always start low and increase gradually to avoid burning materials.
-
 ---
 
-## 5. Load a Test File
+## 4. Load a Test File
 
 1. Click **File** next to the **Open File** field and select a simple test file (`.nc`, `.svg`, or `.bmp`). 
 
@@ -84,6 +72,19 @@ After entering the correct values, click **Write** and then **Close**.
 <img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_07.png" alt="LaserGRBL Work Area Preview">
 
 3. Adjust the **engraving method** (e.g., *Line to Line*, *Dithering*, etc.) according to your needs.  
+
+---
+
+## 5. Set Laser Power
+
+- In LaserGRBL, laser power is expressed as a percentage of the maximum PWM value.
+- Recommended starting values per module:
+  - **2.5W** → 10–40%
+  - **5.5W** → 20–70%
+  - **10W** → 30–90%
+  - **20W** → 50–100%
+
+> Always start low and increase gradually to avoid burning materials.
 
 
 ---
