@@ -114,7 +114,15 @@ Your YUMI Laser is now ready to use in LightBurn.
 
 ---
 
-## 7. Launch the First Engraving
+## 7. Enable Air Assist (Optional)
+
+- If your engraver is equipped with **Air Assist**, turn it on now.  
+- This helps improve cutting quality and reduce burn marks. 
+
+
+---
+
+## 8. Launch the First Engraving
 
 1. In LightBurn, click **Frame** to preview the working area without firing the laser.
 
@@ -124,7 +132,7 @@ Your YUMI Laser is now ready to use in LightBurn.
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_12.png" width="400"  alt="LaserGRBL Work Area Preview">
 
-3. Monitor the job and be ready to stop it if needed.
+
 
 
 
