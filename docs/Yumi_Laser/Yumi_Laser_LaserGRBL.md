@@ -72,7 +72,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
   - **10W** → 30–90%  
   - **20W** → 50–100%  
 
-⚠️ Always start low and increase gradually to avoid burning materials.
+  Always start low and increase gradually to avoid burning materials.
 
 ---
 
