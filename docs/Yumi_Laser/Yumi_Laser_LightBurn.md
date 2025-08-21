@@ -42,18 +42,29 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
    | L-A3   | 420        | 297         |
    | L-A2   | 420        | 594         |
 
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_04.png" width="500" alt="LightBurn Device Discovery Wizard">
+
 - Click **Next** → choose **Front Left** as origin.  
 - Disable **Auto-home on startup**.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_05.png" width="500" alt="LightBurn Device Discovery Wizard">
+
 - Click **Finish**.  
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_06.png" width="500" alt="LightBurn Device Added">
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_06.png" alt="LightBurn Device Added">
 
 ---
 
 ## 4 - Import a Test Design
 
-- Create or import a design (text, SVG, or image).  
-- Place it inside the workspace area.  
+- Create or import a design (text, SVG, or image). 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_07.png" alt="LightBurn Device Added">
+
+- Place it inside the workspace area. 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_08.png" width="800" alt="LightBurn Device Added">
+
 - Set the **Layer**:  
   - **Line** → outline engraving  
   - **Fill** → filled engraving  
@@ -62,7 +73,9 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
   - Max Power (%)  
   - Pass Count  
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_09.png" width="500" alt="LightBurn Layer Settings">
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_09.png"  alt="LightBurn Device Added"> 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_13.png"  alt="LaserGRBL Work Area Preview">
 
 ---
 
@@ -81,7 +94,17 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 - Move the laser head manually over the workpiece.  
 - Place the **5 mm spacer** on the surface.  
-- Loosen the module screws → slide laser down to touch spacer → remove spacer → tighten screws.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_08.png" width="600" alt="LaserGRBL Work Area Preview">
+
+- Loosen the fixing screws of the laser module.
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_09.png" width="200" alt="LaserGRBL Work Area Preview"> 
+
+- Slide the laser down until it touches the spacer.
+- Remove the spacer and tighten the screws. 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_10.png" width="250" alt="LaserGRBL Work Area Preview">
 
 ---
 
@@ -94,4 +117,11 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 ## 8 - Launch the First Engraving
 
 - In LightBurn, click **Frame** to preview area.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_11.png" width="400" alt="LightBurn Device Added"> 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_14.gif" alt="LaserGRBL Work Area Preview">
+
 - Click **Start** to begin engraving.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_12.png" width="400" alt="LaserGRBL Work Area Preview">
