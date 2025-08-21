@@ -1,4 +1,4 @@
-# LaserGRBL Setup and First Engraving
+# 1.5 LaserGRBL Setup and First Engraving
 
 **LaserGRBL** is a free, open-source software designed to control GRBL-based laser engravers such as the YUMI Laser.  
 This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A2), select the laser power module, and perform your first engraving.

@@ -1,4 +1,4 @@
-# LightBurn Setup and First Engraving
+# 1.4 LightBurn Setup and First Engraving
 
 **LightBurn** is one of the most powerful and user-friendly software tools for controlling your YUMI Laser.  
 This guide will walk you through setting up LightBurn for your specific YUMI L Series model (L-A4, L-A3, L-A2) and laser module (2.5W, 5.5W, 10W, 20W), and launching your first engraving job.
@@ -7,14 +7,14 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## Step 1 — Install LightBurn
+## 1 - Install LightBurn
 
 - Download LightBurn from the official website: [https://lightburnsoftware.com](https://lightburnsoftware.com)  
 - Install it on your computer (Windows, macOS, Linux supported).
 
 ---
 
-## Step 2 — Connect Your YUMI Laser
+## 2 - Connect Your YUMI Laser
 
 - Power on your YUMI Laser.  
 - Connect it to your computer via **USB cable**.  
@@ -22,7 +22,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## Step 3 — Add the YUMI Laser to LightBurn
+## 3 - Add the YUMI Laser to LightBurn
 
 - Open **LightBurn** → go to **Devices** → click **Find my Laser**.  
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_02.png" width="450" alt="LightBurn Devices">
@@ -50,7 +50,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## Step 4 — Import a Test Design
+## 4 - Import a Test Design
 
 - Create or import a design (text, SVG, or image).  
 - Place it inside the workspace area.  
@@ -66,7 +66,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## Step 5 — Configure the Laser Module Power
+## 5 - Configure the Laser Module Power
 
 - **2.5W** → fine engraving, 10–40% power  
 - **5.5W** → general use, 20–70%  
@@ -77,7 +77,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## Step 6 — Position & Focus the Laser
+## 6 - Position & Focus the Laser
 
 - Move the laser head manually over the workpiece.  
 - Place the **5 mm spacer** on the surface.  
@@ -85,13 +85,13 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## Step 7 — Enable Air Assist (Optional)
+## 7 - Enable Air Assist (Optional)
 
 - If equipped, turn on **Air Assist** for better cut quality and less burning.  
 
 ---
 
-## Step 8 — Launch the First Engraving
+## 8 - Launch the First Engraving
 
 - In LightBurn, click **Frame** to preview area.  
 - Click **Start** to begin engraving.  
