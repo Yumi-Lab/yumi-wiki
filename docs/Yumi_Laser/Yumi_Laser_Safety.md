@@ -1,7 +1,7 @@
 # 1.2 Safety Guidelines
 
 Operating a laser engraver involves certain risks.
-The **YUMI Laser Series** is designed with safety in mind, but safe operation still depends on following proper guidelines.
+The **YUMI L Series (Laser)** is designed with safety in mind, but safe operation still depends on following proper guidelines.
 
 <img src="../../img/Yumi_laser/Yumi_Laser_Safety/Yumi_Laser_Safety_01.png" width="350" alt="Laser Attention!!!">  
 

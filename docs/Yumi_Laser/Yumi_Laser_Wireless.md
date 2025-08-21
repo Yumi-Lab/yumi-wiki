@@ -41,22 +41,6 @@ This section covers the three available connection methods and how to launch eng
 
 ---
 
-## Method 3 – Mobile App (Lighting Burner)
-
-1. **Install Lighting Burner** on Android or iOS.  
-2. Ensure your phone and the laser are on the **same network**.  
-3. Open the app and:
-- Search for available machines, or
-- Manually enter the laser’s IP.
-4. Control functions available:
-- Move laser head
-- Laser on/off
-- Set origin
-- Transfer files
-- Start engraving from photos, drawings, or templates
-
----
-
 ## Web Control Interface Features
 
 From the built-in web UI, you can:
