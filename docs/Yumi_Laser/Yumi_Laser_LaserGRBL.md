@@ -51,8 +51,14 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ## 4 - Load a Test File
 
-- Click **File** next to the **Open File** field and select a test file (`.nc`, `.svg`, or `.bmp`).  
-- For images, use the **Import Raster Image** function.  
+- Click **File** next to the **Open File** field and select a test file (`.nc`, `.svg`, or `.bmp`). 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_06.png" alt="LaserGRBL Work Area Preview">
+
+- For images, use the **Import Raster Image** function. 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_07.png" alt="LaserGRBL Work Area Preview"> 
+
 - Choose the **engraving method** (*Line to Line*, *Dithering*, etc.).  
 
 ---
@@ -74,15 +80,34 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 - Move the laser head manually over the workpiece.  
 - Place the **5 mm spacer** on the surface.  
-- Loosen the module screws → slide the laser down until it touches the spacer → remove spacer → tighten screws.  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_08.png" width="600" alt="LaserGRBL Work Area Preview">
+
+- Loosen the fixing screws of the laser module.
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_09.png" width="200" alt="LaserGRBL Work Area Preview"> 
+
+- Slide the laser down until it touches the spacer.
+- Remove the spacer and tighten the screws. 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_10.png" width="250" alt="LaserGRBL Work Area Preview">
 
 ---
 
 ## 7 - Position the Workpiece
 
 - Click **Move to Center** → laser moves to design center.  
-- Click **Light Laser** → weak beam shows engraving center. Adjust material if needed.  
-- Click **Profile Scan** → laser scans the outline. Adjust until alignment is correct.  
+- Click **Light Laser** → weak beam shows engraving center. Adjust material if needed. 
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_11.png" alt="LaserGRBL Work Area Preview">
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_12.gif" width="" alt="LaserGRBL Work Area Preview">
+
+- Click **Profile Scan** → laser scans the outline. Adjust until alignment is correct. Adjust the material again if needed and Use **Wrap Around** until the outline matches.
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_13.png" alt="LaserGRBL Work Area Preview">
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_14.gif" alt="LaserGRBL Work Area Preview">
 
 ---
 
