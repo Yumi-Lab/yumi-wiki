@@ -27,7 +27,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI mod
 1. Open **LightBurn**.  
 2. Go to **Devices** → click **Find my Laser**.  
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_02.png" width="500" alt="LightBurn Devices">
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_02.png" width="450" alt="LightBurn Devices">
 
 3. The **Device Discovery Wizard** opens.  
    - Click **Next**.  
