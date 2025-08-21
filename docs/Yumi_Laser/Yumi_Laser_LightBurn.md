@@ -1,4 +1,4 @@
-# 1.4 LightBurn Setup and First Engraving
+# LightBurn Setup and First Engraving
 
 **LightBurn** is one of the most powerful and user-friendly software tools for controlling your YUMI Laser.  
 This guide will walk you through setting up LightBurn for your specific YUMI L Series model (L-A4, L-A3, L-A2) and laser module (2.5W, 5.5W, 10W, 20W), and launching your first engraving job.
@@ -7,39 +7,34 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ---
 
-## 1. Install LightBurn
+## Step 1 — Install LightBurn
 
-- Download LightBurn from the official website: [https://lightburnsoftware.com](https://lightburnsoftware.com)
+- Download LightBurn from the official website: [https://lightburnsoftware.com](https://lightburnsoftware.com)  
 - Install it on your computer (Windows, macOS, Linux supported).
 
 ---
 
-## 2. Connect Your YUMI Laser
+## Step 2 — Connect Your YUMI Laser
 
-1. Power on your YUMI Laser.
-2. Connect it to your computer via **USB cable**.
-3. Insert the included **MicroSD card** if you wish to load files directly without USB control.
+- Power on your YUMI Laser.  
+- Connect it to your computer via **USB cable**.  
+- Insert the included **MicroSD card** if you wish to load files directly without USB control.  
 
 ---
 
-## 3. Add the YUMI Laser to LightBurn
+## Step 3 — Add the YUMI Laser to LightBurn
 
-1. Open **LightBurn**.  
-2. Go to **Devices** → click **Find my Laser**.  
+- Open **LightBurn** → go to **Devices** → click **Find my Laser**.  
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_02.png" width="450" alt="LightBurn Devices">
 
-3. The **Device Discovery Wizard** opens. 
-
-- Click **Next**.  
-- LightBurn will scan and detect your machine (for example: `GRBL (210 mm x 297 mm) at COM3, 115200 baud`).  
-- Select it and click **Add Device**.  
+- The **Device Discovery Wizard** opens → click **Next**.  
+- LightBurn scans and detects your machine (e.g., `GRBL (210 mm x 297 mm) at COM3, 115200 baud`).  
+- Select it → click **Add Device**.  
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_03.png" width="500" alt="LightBurn Device Discovery Wizard">
 
-4. In the next window:  
-
-- Replace the default name (`GRBL`) with your laser name (e.g., `YUMI-LA4-2.5W`).  
+- Replace the default name (`GRBL`) with e.g. `YUMI-LA4-2.5W`.  
 - Set **Machine Units** to `mm/min`.  
-- Verify or adjust the **work area dimensions** according to your model:  
+- Enter the **work area dimensions** for your model:  
 
    | Model  | Width (mm) | Height (mm) |
    |--------|------------|-------------|
@@ -47,101 +42,56 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
    | L-A3   | 420        | 297         |
    | L-A2   | 420        | 594         |
 
-   - Update the values in **X Axis Length** and **Y Axis Length** if needed.  
-   - Click **Next**.  
-
-   <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_04.png" width="500" alt="LightBurn Device Settings">
-
-5. In the **Laser Origin** window: 
-
-- Choose **Front Left** as the origin.  
-- Disable **Auto-home your laser on startup**.  
-- Click **Next**.  
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_05.png" width="500" alt="LightBurn Laser Origin">
-
-6. Click **Finish** to add the new device.  
+- Click **Next** → choose **Front Left** as origin.  
+- Disable **Auto-home on startup**.  
+- Click **Finish**.  
 
 <img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_06.png" width="500" alt="LightBurn Device Added">
 
-Your YUMI Laser is now ready to use in LightBurn.  
+---
+
+## Step 4 — Import a Test Design
+
+- Create or import a design (text, SVG, or image).  
+- Place it inside the workspace area.  
+- Set the **Layer**:  
+  - **Line** → outline engraving  
+  - **Fill** → filled engraving  
+- Adjust parameters:  
+  - Speed (mm/min)  
+  - Max Power (%)  
+  - Pass Count  
+
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_09.png" width="500" alt="LightBurn Layer Settings">
 
 ---
 
-## 4. Import a Test Design
+## Step 5 — Configure the Laser Module Power
 
-1. Create a simple design (text or shape) in LightBurn, or import an image/SVG.
+- **2.5W** → fine engraving, 10–40% power  
+- **5.5W** → general use, 20–70%  
+- **10W** → faster engraving, 30–90%  
+- **20W** → high speed/thick cuts, 50–100%  
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_07.png" alt="LightBurn Device Added">
-
-2. Place the design within the workspace (make sure it fits inside your model’s work area).
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_08.png" width="500" alt="LightBurn Device Added">
-
-3. Set the **Layer**:  
-   - **Line** → for outline engraving.  
-   - **Fill** → for filled engraving.  
-   - Adjust the following parameters:  
-     - **Speed** (mm/min) → engraving or cutting speed.  
-     - **Max Power** (%) → laser output power.  
-     - **Pass Count** → number of passes to apply.  
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_09.png" width="500" alt="LightBurn Device Added">
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_13.png" width="400"  alt="LaserGRBL Work Area Preview">
+⚠️ Always start low, then increase if needed.
 
 ---
 
-## 5. Configure the Laser Module Power
+## Step 6 — Position & Focus the Laser
 
-  - 2.5W: Use for fine engraving, **low power (10–40%)** recommended.
-  - 5.5W: General engraving & light cutting, **20–70%**.
-  - 10W: Faster engraving & cutting thin materials, **30–90%**.
-  - 20W: High-speed engraving & cutting thicker materials, **50–100%**.
-
-> Always start with lower power and increase gradually to avoid burning the material.
+- Move the laser head manually over the workpiece.  
+- Place the **5 mm spacer** on the surface.  
+- Loosen the module screws → slide laser down to touch spacer → remove spacer → tighten screws.  
 
 ---
 
-## 6. Position & Focus the Laser
+## Step 7 — Enable Air Assist (Optional)
 
-1. Move the laser head **manually** over the workpiece.  
-2. Place the **fixed-focus spacer** (5 mm) on the surface. 
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_08.png" width="600"  alt="LaserGRBL Work Area Preview">
-
-3. Loosen the fixing screws of the laser module.  
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_09.png" width="200"  alt="LaserGRBL Work Area Preview">
-
-4. Slide the laser down until it touches the spacer.  
-5. Remove the spacer and tighten the screws.  
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_10.png" width="250"  alt="LaserGRBL Work Area Preview">
+- If equipped, turn on **Air Assist** for better cut quality and less burning.  
 
 ---
 
-## 7. Enable Air Assist (Optional)
+## Step 8 — Launch the First Engraving
 
-- If your engraver is equipped with **Air Assist**, turn it on now.  
-- This helps improve cutting quality and reduce burn marks. 
-
-
----
-
-## 8. Launch the First Engraving
-
-1. In LightBurn, click **Frame** to preview the working area without firing the laser.
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_11.png" width="400" alt="LightBurn Device Added">
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LaserGRBL/Yumi_Laser_LaserGRBL_14.gif" alt="LaserGRBL Work Area Preview">
-
-2. Click **Start** to begin engraving.
-
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_12.png" width="400"  alt="LaserGRBL Work Area Preview">
-
-
-
-
-
+- In LightBurn, click **Frame** to preview area.  
+- Click **Start** to begin engraving.  
