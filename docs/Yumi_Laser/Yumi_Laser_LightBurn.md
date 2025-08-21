@@ -118,7 +118,7 @@ Your YUMI Laser is now ready to use in LightBurn.
 
 1. In LightBurn, click **Frame** to preview the working area without firing the laser.
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_11.png" width="400 alt="LightBurn Device Added">
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_11.png" width="400" alt="LightBurn Device Added">
 
 2. Click **Start** to begin engraving.
 
