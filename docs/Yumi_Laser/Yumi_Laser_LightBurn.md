@@ -86,7 +86,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 - **10W** → faster engraving, 30–90%  
 - **20W** → high speed/thick cuts, 50–100%  
 
-⚠️ Always start low, then increase if needed.
+  Always start low, then increase if needed.
 
 ---
 
