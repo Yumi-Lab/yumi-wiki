@@ -101,8 +101,8 @@ nav:
       - Yumi_Laser/Yumi_Laser_Assembly.md
       - Yumi_Laser/Yumi_Laser_LightBurn.md
       - Yumi_Laser/Yumi_Laser_LaserGRBL.md      
-      - Yumi_Laser/Yumi_Laser_Wireless.md
-      - Yumi_Laser/Yumi_Laser_Troubleshooting.md      
+      #- Yumi_Laser/Yumi_Laser_Wireless.md
+      #- Yumi_Laser/Yumi_Laser_Troubleshooting.md      
   - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
