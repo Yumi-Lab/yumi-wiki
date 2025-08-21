@@ -51,7 +51,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 - Click **Finish**.  
 
-<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_06.png" alt="LightBurn Device Added">
+<img src="../../img/Yumi_laser/Yumi_Laser_LightBurn/Yumi_Laser_LightBurn_06.png"  width="500" alt="LightBurn Device Added">
 
 ---
 
