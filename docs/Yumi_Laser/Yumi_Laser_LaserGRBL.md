@@ -90,7 +90,6 @@ After entering the correct values, click **Write** and then **Close**.
 
 ## 6. Position & Focus the Laser
 
-
 1. Move the laser head **manually** over the workpiece.  
 2. Place the **fixed-focus spacer** (5 mm) on the surface. 
 
@@ -137,9 +136,7 @@ After entering the correct values, click **Write** and then **Close**.
 2. Click **Start** to begin engraving.  
 3. Stay near the machine and monitor the process for safety. 
 
-## 10. Save Your Settings
 
-- Save material-specific settings using the **Material Profiles** feature for future reuse.
 
 
 
