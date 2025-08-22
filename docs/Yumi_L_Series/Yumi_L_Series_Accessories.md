@@ -72,7 +72,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## 1.8.3 Extra Laser Heads
+### Extra Laser Heads
 
 **Purpose**: Upgrade or replace your existing laser module for higher power or different engraving effects.
 
@@ -98,7 +98,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## 1.8.4 Optional Modules
+## 1.8.3 Optional Modules
 
 ### Rotary Module
 
@@ -151,7 +151,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## 1.8.5 Safety & Cleanliness
+## 1.8.4 Safety & Cleanliness
 
 ### Enclosure & Fume Extraction
 
