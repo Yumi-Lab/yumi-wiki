@@ -1,4 +1,4 @@
-# YUMI C Series — Technical Specifications
+# 1.2 Technical Specifications
 
 The **YUMI C Series** is a range of 3D printers.  
 This page provides access to the technical specifications and drawings.  
