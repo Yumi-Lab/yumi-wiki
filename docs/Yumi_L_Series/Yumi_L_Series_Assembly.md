@@ -3,7 +3,7 @@
 This section explains how to assemble, and prepare your YUMI Laser for its first use.  
 The complete illustrated assembly instructions are available in PDF format.
 
-   <img src="../../img/Yumi_laser/Yumi_Laser_Assembly/Yumi_Laser_Assembly_01.png" width="800" alt="YUMI Laser Assembly">
+   <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_01.png" width="800" alt="YUMI Laser Assembly">
 
 ---
 
@@ -37,7 +37,7 @@ Click here to download the official assembly guide:
    - Install honeycomb bed or rotary module if used.
 
 
-   <img src="../../img/Yumi_laser/Yumi_Laser_Assembly/Yumi_Laser_Assembly_02.png" width="200" alt="YUMI Laser Module">
+   <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_02.png" width="200" alt="YUMI Laser Module">
 
 5. **Connect Power & USB** 
 

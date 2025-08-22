@@ -95,14 +95,14 @@ nav:
       - Yumi_C_Series/YUMI_C_SERIES.md
       - Yumi_C_Series/YUMI_C_SERIES_Overview.md
   - YUMI Laser:
-      - Yumi_Laser/Yumi_Laser.md
-      - Yumi_Laser/Yumi_Laser_Overview.md
-      - Yumi_Laser/Yumi_Laser_Safety.md
-      - Yumi_Laser/Yumi_Laser_Assembly.md
-      - Yumi_Laser/Yumi_Laser_LightBurn.md
-      - Yumi_Laser/Yumi_Laser_LaserGRBL.md      
-      #- Yumi_Laser/Yumi_Laser_Wireless.md
-      #- Yumi_Laser/Yumi_Laser_Accessories.md
+      - Yumi_L_Series/Yumi_L_Series.md
+      - Yumi_L_Series/Yumi_L_Series_Overview.md
+      - Yumi_L_Series/Yumi_L_Series_Safety.md
+      - Yumi_L_Series/Yumi_L_Series_Assembly.md
+      - Yumi_L_Series/Yumi_L_Series_LightBurn.md
+      - Yumi_L_Series/Yumi_L_Series_LaserGRBL.md     
+      #- Yumi_Laser/Yumi_Laser_Wireless.md 
+      - Yumi_L_Series/Yumi_L_Series_Accessories.md
       #- Yumi_Laser/Yumi_Laser_Troubleshooting.md      
   - YUMI SBC nano-computer:
     - SMART PI ONE:

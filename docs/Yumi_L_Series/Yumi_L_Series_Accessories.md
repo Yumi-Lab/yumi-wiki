@@ -8,7 +8,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ### Upgrade Kit for YUMI L-A3 / A2
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-upgrade-L-A3.png" width="250" alt="L-A3 Upgrade"> <img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-upgrade-L-A2.png" width="250" alt="L-A2 Upgrade ">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-upgrade-L-A3.png" width="250" alt="L-A3 Upgrade"> <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-upgrade-L-A2.png" width="250" alt="L-A2 Upgrade ">
 
 **Purpose**: Expand your YUMI L-A4 to larger formats for more versatile projects.
 
@@ -29,7 +29,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ### 1. YUMI - Air Assist Pump MAX
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-AIR-PUMP-MAX.png" width="250" alt="YUMI - AIR PUMP MAX">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-AIR-PUMP-MAX.png" width="250" alt="YUMI - AIR PUMP MAX">
 
 **Purpose**: Maintain optimal laser performance and prevent overheating.
 
@@ -50,15 +50,15 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 **Compatibility**:
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/honeycombs-L-A4-400X400.png" width="250" alt="YUMI - Honeycombs L-A4 400X400.">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A4-400X400.png" width="250" alt="YUMI - Honeycombs L-A4 400X400.">
 
 * A4 model bed size: 210 × 297 mm
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/honeycombs-L-A3-525X525.png" width="250" alt="YUMI - Honeycombs L-A3 525X525">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A3-525X525.png" width="250" alt="YUMI - Honeycombs L-A3 525X525">
 
 * A3 model bed size: 420 × 297 mm
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/honeycombs-L-A2-705X705.png" width="250" alt="YUMI - Honeycombs L-A2 705X705">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A2-705X705.png" width="250" alt="YUMI - Honeycombs L-A2 705X705">
 
 * A2 model bed size: 420 × 594 mm
 
@@ -80,15 +80,15 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 * 2.5W – fine engraving on delicate materials
 
-  <img src="../../img/Yumi_laser/Yumi_Laser_Accessories/LAZER-MODULE-5W.png" width="250" alt="YUMI - LAZER MODULE 5W">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/LAZER-MODULE-5W.png" width="250" alt="YUMI - LAZER MODULE 5W">
 
 * 5.5W – general-purpose engraving & cutting
 
-  <img src="../../img/Yumi_laser/Yumi_Laser_Accessories/LAZER-MODULE-10W.png" width="250" alt="YUMI - LAZER MODULE 10W">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/LAZER-MODULE-10W.png" width="250" alt="YUMI - LAZER MODULE 10W">
 
 * 10W – faster cutting, thicker materials
 
-  <img src="../../img/Yumi_laser/Yumi_Laser_Accessories/LAZER-MODULE-20W.png" width="250" alt="YUMI - LAZER MODULE 20W">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/LAZER-MODULE-20W.png" width="250" alt="YUMI - LAZER MODULE 20W">
 
 * 20W – heavy-duty cutting and high-speed engraving
 
@@ -101,7 +101,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ### 4. Rotary Module
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-Rotary-Module.png" width="250" alt="L-A4 Rotary Module">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Rotary-Module.png" width="250" alt="L-A4 Rotary Module">
 
 **Purpose**: Engrave cylindrical objects (bottles, glasses, mugs) with precision.
 
@@ -119,7 +119,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ### 5. Touchscreen Control Panel
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-Touchscreen.png" width="300" alt="L-A4 Touchscreen">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Touchscreen.png" width="300" alt="L-A4 Touchscreen">
 
 **Purpose**: Standalone control without a PC, with intuitive UI.
 
@@ -135,7 +135,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ### 6. Riser Feet
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-Feet.png" width="250" alt="YUMI - Riser Feet">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Feet.png" width="250" alt="YUMI - Riser Feet">
 
 **Purpose**: Increase the engraving height to fit taller objects or rotary module.
 
@@ -154,7 +154,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ### 7. Enclosure & Fume Extraction
 
-<img src="../../img/Yumi_laser/Yumi_Laser_Accessories/L-A4-Enclosure.png" width="300" alt="L-A4 Enclosure">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Enclosure.png" width="300" alt="L-A4 Enclosure">
 
 **Purpose**: Safety and cleanliness — protect eyes, reduce smell and fumes.
 
