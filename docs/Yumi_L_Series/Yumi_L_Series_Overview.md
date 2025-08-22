@@ -7,7 +7,7 @@ Available in multiple sizes and laser powers, it combines portability, performan
 
 ---
 
-## Available Models & Working Areas
+## 1.2.1 Available Models & Working Areas
 
 | Model        | Working Area      |
 |--------------|-------------------|
@@ -17,7 +17,7 @@ Available in multiple sizes and laser powers, it combines portability, performan
 
 ---
 
-## Interchangeable Laser Modules
+## 1.2.2 Interchangeable Laser Modules
 
 The YUMI Laser supports **hot-swappable laser heads** for different project requirements:
 
@@ -32,7 +32,7 @@ The YUMI Laser supports **hot-swappable laser heads** for different project requ
 
 ---
 
-## Materials Compatibility
+## 1.2.3 Materials Compatibility
 
 **Engraving:**  
 Wood, glass, leather, food, acrylic, ceramic, **coated metals**, paper, silicone, etc.  
@@ -43,7 +43,7 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 
 ---
 
-## Key Features
+## 1.2.4 Key Features
 
 - **Designed & engineered in France**
 - **Large-format working areas** with a compact, portable design
@@ -54,7 +54,7 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 
 ---
 
-## Technical Specifications
+## 1.2.5 Technical Specifications
 
 | Parameter         | Specification |
 |-------------------|---------------|

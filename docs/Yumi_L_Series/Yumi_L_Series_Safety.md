@@ -7,7 +7,7 @@ The **YUMI L Series (Laser)** is designed with safety in mind, but safe operatio
 
 ---
 
-## 1. General Safety Rules
+## 1.3.1 General Safety Rules
 
 * Always wear **appropriate laser safety glasses** for the wavelength of your module (e.g. 445 nm with an optical density O.D. ≥ 4).
 * Never look directly into the laser beam.
@@ -22,7 +22,7 @@ The **YUMI L Series (Laser)** is designed with safety in mind, but safe operatio
 
 ---
 
-## 2. Material Restrictions
+## 1.3.2 Material Restrictions
 
 Certain materials can produce **toxic fumes or dangerous reactions** when cut or engraved.
 Do **not** process the following:
@@ -41,7 +41,7 @@ Do **not** process the following:
 
 ---
 
-## 3. Ventilation Requirements
+## 1.3.3 Ventilation Requirements
 
 * Use the laser in a **well-ventilated room** or with an **active fume extraction system**.
 * Recommended: an enclosure with exhaust fan vented outdoors.
@@ -50,7 +50,7 @@ Do **not** process the following:
 
 ---
 
-## 4. Fire Prevention
+## 1.3.4 Fire Prevention
 
 * Keep a **CO₂ or dry powder fire extinguisher** nearby at all times.
 * Alternatively, keep a “fire extinguisher ball” near the machine for automatic flame suppression.
@@ -62,7 +62,7 @@ Do **not** process the following:
 
 ---
 
-## 5. Electrical Safety
+## 1.3.5 Electrical Safety
 
 * Use only the **original power adapter** supplied with the YUMI Laser.
 * Avoid running cables across walkways or sharp edges.

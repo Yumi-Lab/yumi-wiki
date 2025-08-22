@@ -5,7 +5,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1. Laser Does Not Turn On
+## 1.9.1 Laser Does Not Turn On
 
 **Possible causes:**
 - Power adapter not connected or faulty
@@ -21,7 +21,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 2. Laser Fires but Does Not Engrave/Cut
+## 1.9.2 Laser Fires but Does Not Engrave/Cut
 
 **Possible causes:**
 - Laser power set too low
@@ -37,7 +37,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 3. Uneven Engraving or Cutting
+## 1.9.3 Uneven Engraving or Cutting
 
 **Possible causes:**
 - Air Assist not working properly
@@ -53,7 +53,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 4. Wi-Fi Connection Issues
+## 1.9.4 Wi-Fi Connection Issues
 
 **Possible causes:**
 - Incorrect SSID or password
@@ -69,7 +69,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 5. Software Cannot Detect the Laser
+## 1.9.5 Software Cannot Detect the Laser
 
 **Possible causes:**
 - USB cable faulty or disconnected
@@ -85,7 +85,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 6. Burning or Excessive Charring on Material
+## 1.9.6 Burning or Excessive Charring on Material
 
 **Possible causes:**
 - Power too high for material

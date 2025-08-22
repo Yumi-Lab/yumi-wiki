@@ -6,7 +6,7 @@ This section covers the three available connection methods and how to launch eng
 
 ---
 
-## Method 1 – Serial Command Setup via USB
+## 1.7.1 Serial Command Setup via USB
 
 1. **Install USB Driver**  
    - Install the CH340 driver so your PC can detect the laser’s COM port.  
@@ -31,7 +31,7 @@ This section covers the three available connection methods and how to launch eng
 
 ---
 
-## Method 2 – MKS Laser Tool
+## 1.7.2 MKS Laser Tool
 
 1. **Install MKS Laser Tool** on your PC.  
 2. **Connect via USB** and select the detected COM port.  
@@ -41,7 +41,7 @@ This section covers the three available connection methods and how to launch eng
 
 ---
 
-## Web Control Interface Features
+## 1.7.3 Web Control Interface Features
 
 From the built-in web UI, you can:
 - Move the laser head manually
@@ -53,7 +53,7 @@ From the built-in web UI, you can:
 ---
 
 
-## Tips for Stable Wireless Use
+## 1.7.4 Tips for Stable Wireless Use
 - Keep the laser close to the Wi-Fi router
 - Avoid congested Wi-Fi channels
 - For large files, USB transfer is more reliable
