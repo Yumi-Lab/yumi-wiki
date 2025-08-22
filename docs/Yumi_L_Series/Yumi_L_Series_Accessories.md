@@ -4,7 +4,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## A. Upgrade Kits
+## 1.8.1 Upgrade Kits
 
 ### Upgrade Kit for YUMI L-A3 / A2
 
@@ -25,7 +25,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## B. Performance & Support Accessories
+## 1.8.2 Performance & Support Accessories
 
 ### 1. YUMI - Air Assist Pump MAX
 
@@ -72,7 +72,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-### 3. Extra Laser Heads
+### 1.8.3 Extra Laser Heads
 
 **Purpose**: Upgrade or replace your existing laser module for higher power or different engraving effects.
 
@@ -97,7 +97,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 **Purchase link**: [Buy Laser Head - 20W](https://wanhao-europe.com/collections/upgrade-laser-1/products/copie-de-yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=52177025958228)
 ---
 
-## C. Optional Modules
+## 1.8.4 Optional Modules
 
 ### 4. Rotary Module
 
@@ -150,7 +150,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## D. Safety & Cleanliness
+## 1.8.5 Safety & Cleanliness
 
 ### 7. Enclosure & Fume Extraction
 
