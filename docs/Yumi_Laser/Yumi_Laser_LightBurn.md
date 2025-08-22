@@ -1,4 +1,4 @@
-# 1.4 LightBurn Setup and First Engraving
+# 1.5 LightBurn Setup and First Engraving
 
 **LightBurn** is one of the most powerful and user-friendly software tools for controlling your YUMI Laser.  
 This guide will walk you through setting up LightBurn for your specific YUMI L Series model (L-A4, L-A3, L-A2) and laser module (2.5W, 5.5W, 10W, 20W), and launching your first engraving job.

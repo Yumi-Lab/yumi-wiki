@@ -1,4 +1,4 @@
-# YUMI L SERIES (Laser)
+# 1.1 YUMI L SERIES (Laser)
 ### (L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)
 
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  

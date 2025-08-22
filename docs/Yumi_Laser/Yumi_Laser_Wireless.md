@@ -1,4 +1,4 @@
-# 1.6 Wireless Control
+# 1.7 Wireless Control
 
 The **YUMI Laser** can be controlled over Wi-Fi without a physical display, using a PC, smartphone, or tablet.  
 This section covers the three available connection methods and how to launch engraving jobs wirelessly.

@@ -1,4 +1,4 @@
-# 1.1 Overview & Specifications
+# 1.2 Overview & Specifications
 
 The **YUMI Laser Series** is a modular, high-precision engraving and cutting solution designed in France.  
 Available in multiple sizes and laser powers, it combines portability, performance, and flexibility for beginners, hobbyists, and professionals.

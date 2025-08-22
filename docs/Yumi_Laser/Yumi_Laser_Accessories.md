@@ -1,4 +1,4 @@
-# 1.7 Accessories & Upgrade Packs
+# 1.8 Accessories & Upgrade Packs
 
 The **YUMI Laser Series** supports a wide range of optional accessories and upgrade kits, allowing you to expand functionality, improve results, and tailor the machine to your specific projects.
 

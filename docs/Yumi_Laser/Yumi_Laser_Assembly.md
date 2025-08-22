@@ -1,4 +1,4 @@
-# 1.3 Assembly & First Setup
+# 1.4 Assembly & First Setup
 
 This section explains how to assemble, and prepare your YUMI Laser for its first use.  
 The complete illustrated assembly instructions are available in PDF format.

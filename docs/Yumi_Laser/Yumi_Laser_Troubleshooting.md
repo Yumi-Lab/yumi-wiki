@@ -1,4 +1,4 @@
-# 1.8 Troubleshooting
+# 1.9 Troubleshooting
 
 This section lists common issues encountered during the operation of the **YUMI Laser Series**, along with their possible causes and recommended solutions.
 
