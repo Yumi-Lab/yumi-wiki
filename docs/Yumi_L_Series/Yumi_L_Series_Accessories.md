@@ -27,7 +27,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ## 1.8.2 Performance & Support Accessories
 
-### 1. YUMI - Air Assist Pump MAX
+### YUMI - Air Assist Pump MAX
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-AIR-PUMP-MAX.png" width="250" alt="YUMI - AIR PUMP MAX">
 
@@ -44,7 +44,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-### 2. Honeycomb Cutting Bed
+### Honeycomb Cutting Bed
 
 **Purpose**: Improves cutting quality by minimizing burn marks and ensuring better airflow.
 
@@ -72,7 +72,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-### 1.8.3 Extra Laser Heads
+## 1.8.3 Extra Laser Heads
 
 **Purpose**: Upgrade or replace your existing laser module for higher power or different engraving effects.
 
@@ -95,12 +95,12 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
   **Purchase link**: [Buy Laser Head - 5w](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-5-5w-yumi-l-a4-l-a3-pre-commande)
   **Purchase link**: [Buy Laser Head - 10W](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-10w-yumi-l-a4-l-a3-pre-commande)
   **Purchase link**: [Buy Laser Head - 20W](https://wanhao-europe.com/collections/upgrade-laser-1/products/copie-de-yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=52177025958228)
-  
+
 ---
 
 ## 1.8.4 Optional Modules
 
-### 4. Rotary Module
+### Rotary Module
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Rotary-Module.png" width="250" alt="L-A4 Rotary Module">
 
@@ -118,7 +118,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-### 5. Touchscreen Control Panel
+### Touchscreen Control Panel
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Touchscreen.png" width="300" alt="L-A4 Touchscreen">
 
@@ -134,7 +134,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-### 6. Riser Feet
+### Riser Feet
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Feet.png" width="250" alt="YUMI - Riser Feet">
 
@@ -153,7 +153,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ## 1.8.5 Safety & Cleanliness
 
-### 7. Enclosure & Fume Extraction
+### Enclosure & Fume Extraction
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Enclosure.png" width="300" alt="L-A4 Enclosure">
 
