@@ -46,7 +46,24 @@ Click here to download the official assembly guide:
 
 ---
 
-## 1.4.3 First Power-On
+## 1.4.3 Belt Tension Adjustment
+
+Proper belt tension is important for accurate engraving and cutting.  
+
+**Steps:**
+1. Locate the X and Y axis belts.  
+2. With the machine powered off, gently press each belt at the midpoint.  
+   - They should feel firm, with about 3–4 mm of deflection when pressed.  
+3. If a belt is too loose or too tight, adjust using the belt tensioners on the frame.  
+4. Make sure both sides are equally tensioned to avoid skewed movements.  
+5. Re-check after a few hours of operation, as new belts may stretch slightly.  
+
+ A belt that is too loose can cause **layer shifting**, while a belt that is too tight may cause **excessive wear on motors and pulleys**.
+
+
+---
+
+## 1.4.4 First Power-On
 
 - Turn on the main power switch on the socket and then turn the safety key..
 - Ensure that **Air Assist** is working (you should hear airflow).
@@ -54,7 +71,7 @@ Click here to download the official assembly guide:
 
 ---
 
-## 1.4.4 Safety Reminder
+## 1.4.5 Safety Reminder
 
 - Wear laser safety glasses before testing.
 - Keep flammable materials away from the working area.
