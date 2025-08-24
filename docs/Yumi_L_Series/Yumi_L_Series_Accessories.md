@@ -92,9 +92,9 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 * 20W – heavy-duty cutting and high-speed engraving
 
-  **Purchase link**: [Buy Laser Head - 5w](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-5-5w-yumi-l-a4-l-a3-pre-commande)
-  **Purchase link**: [Buy Laser Head - 10W](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-10w-yumi-l-a4-l-a3-pre-commande)
-  **Purchase link**: [Buy Laser Head - 20W](https://wanhao-europe.com/collections/upgrade-laser-1/products/copie-de-yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=52177025958228)
+  - **Purchase link**: [Buy Laser Head - 5w](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-5-5w-yumi-l-a4-l-a3-pre-commande)
+  - **Purchase link**: [Buy Laser Head - 10W](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-10w-yumi-l-a4-l-a3-pre-commande)
+  - **Purchase link**: [Buy Laser Head - 20W](https://wanhao-europe.com/collections/upgrade-laser-1/products/copie-de-yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=52177025958228)
 
 ---
 
