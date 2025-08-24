@@ -1,19 +1,19 @@
-# 1.9 Troubleshooting
+# Troubleshooting
 
 This section lists common issues encountered during the operation of the **YUMI Laser Series**, along with their possible causes and recommended solutions.
 
 **Quick Access to Common Problems:**
 
-* [1.9.1 Laser Does Not Turn On](#191-laser-does-not-turn-on)
-* [1.9.2 Laser Fires but Does Not Engrave or Cut](#192-laser-fires-but-does-not-engrave-or-cut)
-* [1.9.3 Uneven Engraving or Cutting](#193-uneven-engraving-or-cutting)
-* [1.9.4 Wi-Fi Connection Issues](#194-wi-fi-connection-issues)
-* [1.9.5 Software Cannot Detect the Laser](#195-software-cannot-detect-the-laser)
-* [1.9.6 Burning or Excessive Charring on Material](#196-burning-or-excessive-charring-on-material)
+* [Laser Does Not Turn On](#laser-does-not-turn-on)
+* [Laser Fires but Does Not Engrave or Cut](#laser-fires-but-does-not-engrave-or-cut)
+* [Uneven Engraving or Cutting](#uneven-engraving-or-cutting)
+* [Wi-Fi Connection Issues](#wi-fi-connection-issues)
+* [Software Cannot Detect the Laser](#software-cannot-detect-the-laser)
+* [Burning or Excessive Charring on Material](#burning-or-excessive-charring-on-material)
 
 ---
 
-## 1.9.1 Laser Does Not Turn On
+## Laser Does Not Turn On
 
 **Possible Causes:**
 
@@ -33,7 +33,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.2 Laser Fires but Does Not Engrave or Cut
+## Laser Fires but Does Not Engrave or Cut
 
 **Possible Causes:**
 
@@ -51,7 +51,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.3 Uneven Engraving or Cutting
+## Uneven Engraving or Cutting
 
 **Possible Causes:**
 
@@ -69,7 +69,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.4 Wi-Fi Connection Issues
+## Wi-Fi Connection Issues
 
 **Possible Causes:**
 
@@ -87,7 +87,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.5 Software Cannot Detect the Laser
+## Software Cannot Detect the Laser
 
 **Possible Causes:**
 
@@ -105,7 +105,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.6 Burning or Excessive Charring on Material
+## Burning or Excessive Charring on Material
 
 **Possible Causes:**
 
