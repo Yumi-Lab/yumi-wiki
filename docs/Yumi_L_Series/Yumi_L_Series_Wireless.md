@@ -119,7 +119,7 @@ Once the laser is connected to Wi-Fi and the IP address is obtained:
 
 3. The **Web Control Panel** appears.
 
-  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_10.png" width="600" alt="Web control panel interface">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_11.png" width="600" alt="Web control panel interface">
 
 
 ## 1.7.3 Web Control Panel Features
