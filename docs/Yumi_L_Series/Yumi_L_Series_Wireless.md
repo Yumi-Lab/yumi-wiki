@@ -30,7 +30,7 @@ This section explains how to connect the laser to Wi-Fi, and how to access the *
 [ESP115]ON
 ```
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_01.png" width="400" alt="USB serial connection example">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_01.png" width="400" alt="USB serial connection example">
 
 4. **Retrieve IP Address**
 
@@ -40,11 +40,11 @@ This section explains how to connect the laser to Wi-Fi, and how to access the *
 
 * If the IP is not shown automatically, you can request it manually by sending the command:
 
-```
-[ESP111]
-```
+  ```
+  [ESP111]
+  ```
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_03.png" width="400" alt="ESP111 command example">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_03.png" width="400" alt="ESP111 command example">
 
 * The laser will then return its assigned IP address (e.g., `192.168.0.105`).
 
@@ -84,7 +84,7 @@ This section explains how to connect the laser to Wi-Fi, and how to access the *
 * From your router’s DHCP list, or
 * By sending `[ESP111]` once via USB.
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_03.png" width="400" alt="Retrieve IP via ESP111">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_03.png" width="400" alt="Retrieve IP via ESP111">
 
 ---
 
@@ -94,17 +94,17 @@ This section explains how to connect the laser to Wi-Fi, and how to access the *
 
 2. Connect the laser via USB and select the detected COM port.
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_06.png" width="400" alt="MKS tool COM port">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_06.png" width="400" alt="MKS tool COM port">
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_07.png" width="400" alt="MKS tool connection">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_07.png" width="400" alt="MKS tool connection">
 
 3. Enter Wi-Fi SSID and password, then click **Connect Wi-Fi**.
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_08.png" width="400" alt="MKS tool Wi-Fi setup">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_08.png" width="400" alt="MKS tool Wi-Fi setup">
 
 4. The software displays the assigned IP address.
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_09.png" width="400" alt="MKS tool IP display">
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_09.png" width="400" alt="MKS tool IP display">
 
 ---
 
@@ -115,24 +115,35 @@ Once the laser is connected to Wi-Fi and the IP address is obtained:
 1. Open your web browser.
 
 2. Enter the laser’s IP address (e.g., `http://192.168.1.70`).
-  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_10.png" alt="Web control panel interface">
+
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_10.png" width="600" alt="Web control panel interface">
 
 3. The **Web Control Panel** appears.
-  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_11.png" alt="Web control panel interface">
+
+  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_10.png" width="600" alt="Web control panel interface">
 
 
+## 1.7.3 Web Control Panel Features
 
-From this panel, you can:
+Below are examples of the Web Control Panel showing key functions:
 
-* Move the laser head manually
-* Adjust laser power and speed
-* Upload, select, and delete files
-* Start/stop jobs
-* Monitor job progress in real-time
+Main Controls
 
-  <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_12.png" alt="Web control panel interface - Control">
+Move the laser head manually
 
-    <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_13.png" alt="Web control panel interface - SD File">
+Adjust laser power and speed
+
+Start/stop jobs
+
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_12.png" alt="Web control panel interface - Control" >
+
+File Management (SD Card)
+
+Upload, select, and delete files
+
+Monitor job progress in real-time
+
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_13.png" alt="Web control panel interface - SD File" >
 
 ---
 
