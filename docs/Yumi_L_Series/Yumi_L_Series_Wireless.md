@@ -11,9 +11,8 @@ This section explains how to connect the laser to Wi-Fi, and how to access the *
 
 1. **Install USB Driver (if needed)**
 
-* The MKS DLC32 controller uses a **CH340 USB-to-serial chip**.
+* The MKS DLC32 controller uses a [**CH340 USB-to-serial chip**](https://github.com/makerbase-mks/MKS-DLC32/raw/main/MKS-DLC32-main/firmware/tool/CH340G_USB.zip).
 * Some PCs (especially Windows) require the driver to be installed so the laser can be detected as a COM port.
-* **Download CH340 driver:** [CH340G USB Driver](https://github.com/makerbase-mks/MKS-DLC32/raw/main/MKS-DLC32-main/firmware/tool/CH340G_USB.zip)
 * On Windows, check the assigned COM port in *Device Manager*.
 * On Linux/macOS, the driver is usually included by default.
 
