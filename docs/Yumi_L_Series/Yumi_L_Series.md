@@ -60,7 +60,6 @@ How to control the YUMI Laser over Wi-Fi via the web interface.
 ### [1.8 Accessories & Upgrade Packs](Yumi_L_Series_Accessories.md)
 Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra heads, touchscreen, risers, enclosure.  
 
-# Maintenance
 ### [1.9 Diode Laser Maintenance](Yumi_L_Series_Maintenance.md)
 Guidelines for cleaning, inspection, alignment, and safety checks for the YUMI Laser diode module.
 
