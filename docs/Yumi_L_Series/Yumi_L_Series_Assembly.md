@@ -58,7 +58,7 @@ Proper belt tension is important for accurate engraving and cutting.
 4. Make sure both sides are equally tensioned to avoid skewed movements.  
 5. Re-check after a few hours of operation, as new belts may stretch slightly.  
 
- A belt that is too loose can cause **layer shifting**, while a belt that is too tight may cause **excessive wear on motors and pulleys**.
+ A belt that is too loose can cause **layer**, while a belt that is too tight may cause **excessive wear on motors and pulleys**.
 
 
 ---
