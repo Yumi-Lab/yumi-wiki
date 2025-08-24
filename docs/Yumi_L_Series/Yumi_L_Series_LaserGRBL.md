@@ -37,8 +37,6 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
   - Adjust: **X-axis maximum travel** and **Y-axis maximum travel**.  
   - Click **Write** → **Close**.  
 
-#### Work Area Dimensions per Model
-
 | Model | **X-axis (mm)** | **Y-axis (mm)** |
 |-------|-----------------|-----------------|
 | L-A4  | 210             | 297             |
