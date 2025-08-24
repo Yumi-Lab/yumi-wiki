@@ -2,14 +2,14 @@
 
 This section lists common issues encountered during the operation of the **YUMI Laser Series**, along with their possible causes and recommended solutions.
 
-**1.9.0 Quick Access to Common Problems:**
+**Quick Access to Common Problems:**
 
-1. [1.9.1 Laser Does Not Turn On](#laser-does-not-turn-on)
-2. [1.9.2 Laser Fires but Does Not Engrave or Cut](#laser-fires-but-does-not-engrave-or-cut)
-3. [1.9.3 Uneven Engraving or Cutting](#uneven-engraving-or-cutting)
-4. [1.9.4 Wi-Fi Connection Issues](#wi-fi-connection-issues)
-5. [1.9.5 Software Cannot Detect the Laser](#software-cannot-detect-the-laser)
-6. [1.9.6 Burning or Excessive Charring on Material](#burning-or-excessive-charring-on-material)
+* [1.9.1 Laser Does Not Turn On](#191-laser-does-not-turn-on)
+* [1.9.2 Laser Fires but Does Not Engrave or Cut](#192-laser-fires-but-does-not-engrave-or-cut)
+* [1.9.3 Uneven Engraving or Cutting](#193-uneven-engraving-or-cutting)
+* [1.9.4 Wi-Fi Connection Issues](#194-wi-fi-connection-issues)
+* [1.9.5 Software Cannot Detect the Laser](#195-software-cannot-detect-the-laser)
+* [1.9.6 Burning or Excessive Charring on Material](#196-burning-or-excessive-charring-on-material)
 
 ---
 
@@ -21,13 +21,15 @@ This section lists common issues encountered during the operation of the **YUMI 
 * Power switch in OFF position
 * Loose cable connections
 * Defective laser module
+* Security key not inserted or faulty
 
 **Solutions:**
 
 1. Verify that the 12V power supply is plugged in and functioning.
 2. Check the main power switch on the laser.
 3. Inspect all cable connections.
-4. Test with another laser head if available.
+4. Ensure the security key is properly inserted and functional.
+5. Test with another laser head if available.
 
 ---
 
