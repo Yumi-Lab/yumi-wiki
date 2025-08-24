@@ -1,6 +1,6 @@
 # 1.9 Diode Laser Maintenance
 
-Proper maintenance ensures consistent performance, longer lifespan, and safe operation of your **YUMI Laser Series**.
+Proper maintenance ensures consistent performance, longer lifespan, and safe operation of your **YUMI L Series (Lasers)**.
 
 ---
 
