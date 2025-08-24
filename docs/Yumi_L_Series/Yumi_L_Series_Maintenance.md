@@ -51,12 +51,16 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.5 Tips for Longevity
+## 1.8.5 Belt Tension Check
 
-* Keep optics clean.
-* Avoid exceeding recommended power for materials.
-* Give breaks during long operations.
-* Store machine in a dry, dust-free environment.
+**Frequency:** Every 2–3 months (or if accuracy issues appear)
+
+**Steps:**
+1. Power off the machine.  
+2. Gently press the belts (X and Y axis) at the midpoint — they should be firm but not overly tight.  
+3. If the belt feels too loose (sags more than ~3–4 mm), adjust the belt tensioner.  
+4. Ensure both sides are equally tensioned to avoid skewed movement.  
+5. Inspect belts for wear, fraying, or missing teeth. Replace if damaged.  
 
 ---
 
@@ -70,4 +74,15 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 3. Check the zipper runs smoothly; clean it if debris is stuck.  
 4. Ensure the enclosure is stable and properly positioned around the machine.  
 5. Verify ventilation is not obstructed and airflow is maintained.  
+
+---
+
+## 1.8.7 Tips for Longevity
+
+* Keep optics clean.
+* Avoid exceeding recommended power for materials.
+* Give breaks during long operations.
+* Store machine in a dry, dust-free environment.
+
+
 
