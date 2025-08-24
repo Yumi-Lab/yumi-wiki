@@ -2,18 +2,28 @@
 
 This section lists common issues encountered during the operation of the **YUMI Laser Series**, along with their possible causes and recommended solutions.
 
+**Quick Access to Common Problems:**
+
+* [Laser Does Not Turn On](#laser-does-not-turn-on)
+* [Laser Fires but Does Not Engrave or Cut](#laser-fires-but-does-not-engrave-or-cut)
+* [Uneven Engraving or Cutting](#uneven-engraving-or-cutting)
+* [Wi-Fi Connection Issues](#wi-fi-connection-issues)
+* [Software Cannot Detect the Laser](#software-cannot-detect-the-laser)
+* [Burning or Excessive Charring on Material](#burning-or-excessive-charring-on-material)
 
 ---
 
-## 1.9.1 Laser Does Not Turn On
+## Laser Does Not Turn On
 
-**Possible causes:**
-- Power adapter not connected or faulty
-- Power switch in OFF position
-- Loose cable connections
-- Defective laser module
+**Possible Causes:**
+
+* Power adapter not connected or faulty
+* Power switch in OFF position
+* Loose cable connections
+* Defective laser module
 
 **Solutions:**
+
 1. Verify that the 12V power supply is plugged in and functioning.
 2. Check the main power switch on the laser.
 3. Inspect all cable connections.
@@ -21,15 +31,17 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.2 Laser Fires but Does Not Engrave/Cut
+## Laser Fires but Does Not Engrave or Cut
 
-**Possible causes:**
-- Laser power set too low
-- Incorrect focus distance
-- Material not compatible
-- Lens dirty or damaged
+**Possible Causes:**
+
+* Laser power set too low
+* Incorrect focus distance
+* Material not compatible
+* Lens dirty or damaged
 
 **Solutions:**
+
 1. Increase power in software settings.
 2. Re-adjust the laser focus using the provided gauge.
 3. Use approved materials only.
@@ -37,15 +49,17 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.3 Uneven Engraving or Cutting
+## Uneven Engraving or Cutting
 
-**Possible causes:**
-- Air Assist not working properly
-- Bed surface uneven
-- Material not fixed securely
-- Dirty optics
+**Possible Causes:**
+
+* Air Assist not working properly
+* Bed surface uneven
+* Material not fixed securely
+* Dirty optics
 
 **Solutions:**
+
 1. Check Air Assist pump and tubing.
 2. Level the honeycomb bed.
 3. Secure material with clips or magnets.
@@ -53,15 +67,17 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.4 Wi-Fi Connection Issues
+## Wi-Fi Connection Issues
 
-**Possible causes:**
-- Incorrect SSID or password
-- Weak Wi-Fi signal
-- IP conflict on the network
-- Firmware not updated
+**Possible Causes:**
+
+* Incorrect SSID or password
+* Weak Wi-Fi signal
+* IP conflict on the network
+* Firmware not updated
 
 **Solutions:**
+
 1. Re-enter correct Wi-Fi credentials.
 2. Move the laser closer to the router.
 3. Assign a fixed IP in your router settings.
@@ -69,15 +85,17 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.5 Software Cannot Detect the Laser
+## Software Cannot Detect the Laser
 
-**Possible causes:**
-- USB cable faulty or disconnected
-- Incorrect COM port selected
-- Driver not installed
-- Laser in Wi-Fi mode only
+**Possible Causes:**
+
+* USB cable faulty or disconnected
+* Incorrect COM port selected
+* Driver not installed
+* Laser in Wi-Fi mode only
 
 **Solutions:**
+
 1. Use the supplied USB cable or a known good one.
 2. Select the correct COM port in LightBurn or LaserGRBL.
 3. Install the CH340 driver.
@@ -85,18 +103,18 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## 1.9.6 Burning or Excessive Charring on Material
+## Burning or Excessive Charring on Material
 
-**Possible causes:**
-- Power too high for material
-- Speed too low
-- Air Assist disabled
+**Possible Causes:**
+
+* Power too high for material
+* Speed too low
+* Air Assist disabled
 
 **Solutions:**
+
 1. Reduce laser power.
 2. Increase movement speed.
 3. Enable Air Assist for cleaner cuts.
-
-
 
 

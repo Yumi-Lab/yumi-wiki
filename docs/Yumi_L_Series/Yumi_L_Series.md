@@ -63,6 +63,14 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 # Troubleshooting
 List of common issues, causes, and solutions for YUMI Laser operation.  
 
+- [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#laser-does-not-turn-on)
+- [Laser Fires but Does Not Engrave or Cut](Yumi_L_Series_Troubleshooting.md#laser-fires-but-does-not-engrave-or-cut)
+- [Uneven Engraving or Cutting](Yumi_L_Series_Troubleshooting.md#uneven-engraving-or-cutting)
+- [Wi-Fi Connection Issues](Yumi_L_Series_Troubleshooting.md#wi-fi-connection-issues)
+- [Software Cannot Detect the Laser](Yumi_L_Series_Troubleshooting.md#software-cannot-detect-the-laser)
+- [Burning or Excessive Charring on Material](Yumi_L_Series_Troubleshooting.md#burning-or-excessive-charring-on-material)
+
+
 
 ## Purchase YUMI Laser
 
