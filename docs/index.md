@@ -59,7 +59,7 @@ For more information, tutorials, and support, visit our website or get in touch 
 </div>
 
 <div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A2.png" width="250" alt="YUMI L-A2">
+<img src="/img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A2.png" width="250" alt="YUMI L-A2">
   
 <b>YUMI L-A2</b><br>
   <b>420 × 594 mm working area</b>
