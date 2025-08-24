@@ -45,7 +45,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 **Frequency:** Before each session
 
 **Steps:**
-1. Verify key switch and emergency stop.
+1. Verify key switch.
 2. Check enclosure integrity.
 3. Ensure proper ventilation and airflow.
 
@@ -57,3 +57,17 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 * Avoid exceeding recommended power for materials.
 * Give breaks during long operations.
 * Store machine in a dry, dust-free environment.
+
+---
+
+## 1.9.6 Enclosure Maintenance (If Installed)
+
+**Frequency:** Monthly
+
+**Steps:**
+1. Inspect the fabric and zipper for wear, dust, or damage.  
+2. Clean transparent panels (if present) with a soft cloth to keep good visibility.  
+3. Check the zipper runs smoothly; clean it if debris is stuck.  
+4. Ensure the enclosure is stable and properly positioned around the machine.  
+5. Verify ventilation is not obstructed and airflow is maintained.  
+
