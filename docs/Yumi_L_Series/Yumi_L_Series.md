@@ -54,7 +54,7 @@ Installing and configuring LightBurn for YUMI Laser and setting up materials.
 ### [1.6 LaserGRBL Setup and Usage](Yumi_L_Series_LaserGRBL.md)
 How to install and configure LaserGRBL with YUMI Laser, load files, and adjust engraving/cutting settings.  
 
-### 1.7 Wireless Control
+### [1.7 Wireless Control](Yumi_L_Series_Wireless.md)
 How to control the YUMI Laser over Wi-Fi via the web interface.  
 
 ### [1.8 Accessories & Upgrade Packs](Yumi_L_Series_Accessories.md)
