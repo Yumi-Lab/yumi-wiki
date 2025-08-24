@@ -126,21 +126,20 @@ Once the laser is connected to Wi-Fi and the IP address is obtained:
 
 Below are examples of the Web Control Panel showing key functions:
 
-Main Controls
+- Main Controls
 
-Move the laser head manually
+- Move the laser head manually
 
-Adjust laser power and speed
+- Adjust laser power and speed
 
-Start/stop jobs
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_12.png" alt="Web control panel interface - Control" >
 
-File Management (SD Card)
+- File Management (SD Card)
 
-Upload, select, and delete files
+- Upload, select, and delete files
 
-Monitor job progress in real-time
+- Monitor job progress in real-time
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_13.png" alt="Web control panel interface - SD File" >
 
