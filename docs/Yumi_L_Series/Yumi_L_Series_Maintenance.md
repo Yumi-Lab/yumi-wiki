@@ -1,10 +1,10 @@
-# 1.9 Diode Laser Maintenance
+# 1.8 Diode Laser Maintenance
 
 Proper maintenance ensures consistent performance, longer lifespan, and safe operation of your **YUMI L Series (Lasers)**.
 
 ---
 
-## 1.9.1 Cleaning the Optics
+## 1.8.1 Cleaning the Optics
 
 **Frequency:** Weekly
 
@@ -17,7 +17,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.9.2 Checking the Laser Module
+## 1.8.2 Checking the Laser Module
 
 **Frequency:** Monthly
 
@@ -29,7 +29,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.9.3 Air Assist (If Installed)
+## 1.8.3 Air Assist (If Installed)
 
 **Frequency:** Weekly
 
@@ -40,7 +40,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.9.4 Safety Checks
+## 1.8.4 Safety Checks
 
 **Frequency:** Before each session
 
@@ -51,7 +51,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.9.5 Tips for Longevity
+## 1.8.5 Tips for Longevity
 
 * Keep optics clean.
 * Avoid exceeding recommended power for materials.
@@ -60,7 +60,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.9.6 Enclosure Maintenance (If Installed)
+## 1.8.6 Enclosure Maintenance (If Installed)
 
 **Frequency:** Monthly
 
