@@ -40,29 +40,3 @@ Ready to take your projects to the next level? Explore the endless possibilities
 
 For more information, tutorials, and support, visit our website or get in touch with our team. Let's build the future together with YUMI-LAB.
 
-## Yumi L Series
-
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-
-<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="/img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A4.png" width="250" alt="YUMI L-A4">
-
-<b>YUMI L-A4</b><br>
-<b>10 × 297 mm working area</b>
-</div>
-
-<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="/img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A3.png" width="250" alt="YUMI L-A3">
-  
-<b>YUMI L-A3</b><br> 
-<b>420 × 297 mm working area</b>
-</div>
-
-<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="/img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A2.png" width="250" alt="YUMI L-A2">
-  
-<b>YUMI L-A2</b><br>
-  <b>420 × 594 mm working area</b>
-</div>
-
-</div>
