@@ -63,12 +63,12 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 # Troubleshooting
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
-- [1.9.1 Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#191-laser-does-not-turn-on)
-- [1.9.2 Laser Fires but Does Not Engrave or Cut](Yumi_L_Series_Troubleshooting.md#192-laser-fires-but-does-not-engrave-or-cut)
-- [1.9.3 Uneven Engraving or Cutting](Yumi_L_Series_Troubleshooting.md#193-uneven-engraving-or-cutting)
-- [1.9.4 Wi-Fi Connection Issues](Yumi_L_Series_Troubleshooting.md#194-wi-fi-connection-issues)
-- [1.9.5 Software Cannot Detect the Laser](Yumi_L_Series_Troubleshooting.md#195-software-cannot-detect-the-laser)
-- [1.9.6 Burning or Excessive Charring on Material](Yumi_L_Series_Troubleshooting.md#196-burning-or-excessive-charring-on-material)
+- [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#191-laser-does-not-turn-on)
+- [Laser Fires but Does Not Engrave or Cut](Yumi_L_Series_Troubleshooting.md#192-laser-fires-but-does-not-engrave-or-cut)
+- [Uneven Engraving or Cutting](Yumi_L_Series_Troubleshooting.md#193-uneven-engraving-or-cutting)
+- [Wi-Fi Connection Issues](Yumi_L_Series_Troubleshooting.md#194-wi-fi-connection-issues)
+- [Software Cannot Detect the Laser](Yumi_L_Series_Troubleshooting.md#195-software-cannot-detect-the-laser)
+- [ Burning or Excessive Charring on Material](Yumi_L_Series_Troubleshooting.md#196-burning-or-excessive-charring-on-material)
 
 
 
