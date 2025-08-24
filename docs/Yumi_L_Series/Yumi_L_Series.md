@@ -63,6 +63,8 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 # Troubleshooting
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
+### [1.9 Quick Access to Common Problems](Yumi_L_Series_Accessories.md):
+
 - [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#191-laser-does-not-turn-on)
 - [Laser Fires but Does Not Engrave or Cut](Yumi_L_Series_Troubleshooting.md#192-laser-fires-but-does-not-engrave-or-cut)
 - [Uneven Engraving or Cutting](Yumi_L_Series_Troubleshooting.md#193-uneven-engraving-or-cutting)
