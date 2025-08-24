@@ -2,18 +2,18 @@
 
 This section lists common issues encountered during the operation of the **YUMI Laser Series**, along with their possible causes and recommended solutions.
 
-**Quick Access to Common Problems:**
+**1.9.0 Quick Access to Common Problems:**
 
-* [Laser Does Not Turn On](#laser-does-not-turn-on)
-* [Laser Fires but Does Not Engrave or Cut](#laser-fires-but-does-not-engrave-or-cut)
-* [Uneven Engraving or Cutting](#uneven-engraving-or-cutting)
-* [Wi-Fi Connection Issues](#wi-fi-connection-issues)
-* [Software Cannot Detect the Laser](#software-cannot-detect-the-laser)
-* [Burning or Excessive Charring on Material](#burning-or-excessive-charring-on-material)
+1. [1.9.1 Laser Does Not Turn On](#laser-does-not-turn-on)
+2. [1.9.2 Laser Fires but Does Not Engrave or Cut](#laser-fires-but-does-not-engrave-or-cut)
+3. [1.9.3 Uneven Engraving or Cutting](#uneven-engraving-or-cutting)
+4. [1.9.4 Wi-Fi Connection Issues](#wi-fi-connection-issues)
+5. [1.9.5 Software Cannot Detect the Laser](#software-cannot-detect-the-laser)
+6. [1.9.6 Burning or Excessive Charring on Material](#burning-or-excessive-charring-on-material)
 
 ---
 
-## Laser Does Not Turn On
+## 1.9.1 Laser Does Not Turn On
 
 **Possible Causes:**
 
@@ -31,7 +31,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## Laser Fires but Does Not Engrave or Cut
+## 1.9.2 Laser Fires but Does Not Engrave or Cut
 
 **Possible Causes:**
 
@@ -49,7 +49,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## Uneven Engraving or Cutting
+## 1.9.3 Uneven Engraving or Cutting
 
 **Possible Causes:**
 
@@ -67,7 +67,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## Wi-Fi Connection Issues
+## 1.9.4 Wi-Fi Connection Issues
 
 **Possible Causes:**
 
@@ -85,7 +85,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## Software Cannot Detect the Laser
+## 1.9.5 Software Cannot Detect the Laser
 
 **Possible Causes:**
 
@@ -103,7 +103,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 
 ---
 
-## Burning or Excessive Charring on Material
+## 1.9.6 Burning or Excessive Charring on Material
 
 **Possible Causes:**
 
@@ -116,5 +116,4 @@ This section lists common issues encountered during the operation of the **YUMI 
 1. Reduce laser power.
 2. Increase movement speed.
 3. Enable Air Assist for cleaner cuts.
-
 
