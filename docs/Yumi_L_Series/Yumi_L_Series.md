@@ -60,7 +60,7 @@ How to control the YUMI Laser over Wi-Fi via the web interface.
 ### [1.8 Accessories & Upgrade Packs](Yumi_L_Series_Accessories.md)
 Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra heads, touchscreen, risers, enclosure.  
 
-### [1.9 Troubleshooting](Yumi_L_Series_Troubleshooting.md)
+# Troubleshooting
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
 - [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#191-laser-does-not-turn-on)
