@@ -17,8 +17,8 @@ Ordre des colonnes : **Code | Parameter | Default Value | Unit | Description** (
 | $12      | Arc tolerance                          | 0.002              | mm             | Tolérance des arcs G2/G3 (erreur radiale). |
 | $13      | Report in inches                       | 0                  | boolean        | Rapports de position en pouces (si 1). |
 | $20      | Soft limits enable                     | 0                  | boolean        | Limites logicielles (nécessite homing). |
-| $21      | Hard limits enable                     | 1                  | boolean        | Limites matérielles (arrêt immédiat sur déclenchement). |
-| $22      | Homing cycle enable                    | 1                  | boolean        | Active la séquence de référencement (homing). |
+| $21      | Hard limits enable                     | 0                  | boolean        | Limites matérielles (arrêt immédiat sur déclenchement). |
+| $22      | Homing cycle enable                    | 1                 | boolean        | Active la séquence de référencement (homing). |
 | $23      | Homing direction invert                | 3                  | mask           | Inverse la direction de recherche par axe (00000ZYX). |
 | $24      | Homing locate feed rate                | 300.000            | mm/min         | Avance lente pour l’appui précis sur le switch. |
 | $25      | Homing search seek rate                | 3000.000           | mm/min         | Vitesse de recherche rapide des switches. |
