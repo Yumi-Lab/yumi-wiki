@@ -60,7 +60,10 @@ How to control the YUMI Laser over Wi-Fi via the web interface.
 ### [1.8 Diode Laser Maintenance](Yumi_L_Series_Maintenance.md)
 Guidelines for cleaning, inspection, alignment, and safety checks for the YUMI Laser diode module.
 
-### [1.9 Accessories & Upgrade Packs](Yumi_L_Series_Accessories.md)
+### [1.9 L-A4 Default Parameters](Yumi_L_Series_LA4_Parameters.md)
+Complete list of default GRBL configuration parameters for the YUMI L-A4 model.
+
+### [1.10 Accessories & Upgrade Packs](Yumi_L_Series_Accessories.md)
 Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra heads, touchscreen, risers, enclosure.  
 
 
