@@ -16,22 +16,22 @@ Click here to download the official assembly guide:
 
 ## 1.4.2 Assembly Checklist
 
-1. **Unpack all components** 
+1- **Unpack all components** 
 
    - Check that all parts match the inventory list in the manual.
    - Inspect each item for shipping damage.
 
-2. **Frame Assembly**  
+2- **Frame Assembly**  
 
    - Follow the sequence in the PDF guide to assemble the aluminum frame.
    - Ensure all screws are tightened evenly, but avoid over-tightening.
 
-3. **Install Laser Module**  
+3- **Install Laser Module**  
 
    - Mount the selected laser head (2.5W / 5.5W / 10W / 20W).
    - Connect the laser cable to the control board.
 
-4. **Install Accessories**  
+4- **Install Accessories**  
 
    - Attach Air Assist pump and tubing (included).
    - Install honeycomb bed or rotary module if used.
@@ -39,7 +39,7 @@ Click here to download the official assembly guide:
 
    <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_02.png" width="200" alt="YUMI Laser Module">
 
-5. **Connect Power & USB** 
+5- **Connect Power & USB** 
 
    - Plug in the supplied 12V adapter.
    - Connect USB cable to your computer if controlling via software.
@@ -48,15 +48,18 @@ Click here to download the official assembly guide:
 
 ## 1.4.3 Belt Tension Adjustment
 
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_03.png" width="500" alt="Belt Tension Adjustment">
+
 Proper belt tension is important for accurate engraving and cutting.  
 
 **Steps:**
-1. Locate the X and Y axis belts.  
-2. With the machine powered off, gently press each belt at the midpoint.  
-   - They should feel firm, with about 3–4 mm of deflection when pressed.  
-3. If a belt is too loose or too tight, adjust using the belt tensioners on the frame.  
-4. Make sure both sides are equally tensioned to avoid skewed movements.  
-5. Re-check after a few hours of operation, as new belts may stretch slightly.  
+
+- Locate the Y axis belt.  
+- With the machine powered off, gently press each belt at the midpoint.  
+- They should not be too loose or too tight. They should feel firm, with about 3–4 mm of deflection when pressed.  
+- If a belt is too loose or too tight, adjust using the belt tensioners on the frame.  
+- Make sure both sides are equally tensioned to avoid skewed movements.  
+- Re-check after a few hours of operation, as new belts may stretch slightly.  
 
  A belt that is too loose can cause **layer shifting**, while a belt that is too tight may cause **excessive wear on motors and pulleys**.
 
@@ -65,8 +68,13 @@ Proper belt tension is important for accurate engraving and cutting.
 
 ## 1.4.4 First Power-On
 
-- Turn on the main power switch on the socket and then turn the safety key..
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_04.png" width="370" alt="Belt Tension Adjustment">
+
+- Turn on the main power switch on the socket and then turn the safety key.
 - Ensure that **Air Assist** is working (you should hear airflow).
+
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_05.png" width="370" alt="Belt Tension Adjustment">
+
 - The laser head should remain off until commanded by the software.
 
 ---
