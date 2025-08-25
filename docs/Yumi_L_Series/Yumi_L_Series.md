@@ -9,7 +9,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ---
 
-**Available Models**
+# Available Models
 
 <table style="width:100%; text-align:center; border-collapse: collapse;">
   <tr>
