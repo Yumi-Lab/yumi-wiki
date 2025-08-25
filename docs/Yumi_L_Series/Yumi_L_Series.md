@@ -1,7 +1,6 @@
 # 1.1 Yumi L Series
-<div style="font-size:1.5em; font-weight:bold; margin:1em 0;">
+
 **(L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)**
-</div>
 
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  
 Compact, modular, and powerful, these machines combine large working areas, multiple laser head options, and a rich ecosystem of upgrades to suit beginners, hobbyists, and professionals alike.
@@ -10,9 +9,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ---
 
-<div style="font-size:1.5em; font-weight:bold; margin:1em 0;">
 **Available Models**
-</div>
 
 <table style="width:100%; text-align:center; border-collapse: collapse;">
   <tr>
@@ -82,7 +79,6 @@ List of common issues, causes, and solutions for YUMI L Series operation.
 --- 
 
 # Purchase YUMI Laser
-
 You can order your YUMI Laser directly from our official store:  
 **[Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908)**
 
