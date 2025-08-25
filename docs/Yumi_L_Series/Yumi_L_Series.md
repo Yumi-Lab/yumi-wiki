@@ -1,6 +1,6 @@
 # 1.1 Yumi L Series
 <div style="font-size:1.5em; font-weight:bold; margin:1em 0;">
- (L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)
+**(L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)**
 </div>
 
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  
@@ -11,7 +11,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 ---
 
 <div style="font-size:1.5em; font-weight:bold; margin:1em 0;">
- Available Models
+**Available Models**
 </div>
 
 <table style="width:100%; text-align:center; border-collapse: collapse;">
