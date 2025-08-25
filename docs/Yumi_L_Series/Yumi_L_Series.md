@@ -81,7 +81,7 @@ List of common issues, causes, and solutions for YUMI L Series operation.
 
 --- 
 
-## Purchase YUMI Laser
+# Purchase YUMI Laser
 
 You can order your YUMI Laser directly from our official store:  
 **[Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908)**
