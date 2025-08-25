@@ -1,5 +1,7 @@
 # 1.1 Yumi L Series
-### (L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)
+<div style="font-size:1.5em; font-weight:bold; margin:1em 0;">
+ (L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)
+</div>
 
 The **YUMI Laser** series is the first truly versatile laser engraver range designed in France.  
 Compact, modular, and powerful, these machines combine large working areas, multiple laser head options, and a rich ecosystem of upgrades to suit beginners, hobbyists, and professionals alike.
@@ -8,7 +10,9 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ---
 
-## Available Models
+<div style="font-size:1.5em; font-weight:bold; margin:1em 0;">
+ Available Models
+</div>
 
 <table style="width:100%; text-align:center; border-collapse: collapse;">
   <tr>
@@ -65,7 +69,7 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 
 --- 
 
-# **Troubleshooting**
+# Troubleshooting
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
 - [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#laser-does-not-turn-on)
