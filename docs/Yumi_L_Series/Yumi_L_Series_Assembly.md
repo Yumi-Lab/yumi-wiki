@@ -16,22 +16,22 @@ Click here to download the official assembly guide:
 
 ## 1.4.2 Assembly Checklist
 
-1- **Unpack all components** 
+**1- Unpack all components** 
 
    - Check that all parts match the inventory list in the manual.
    - Inspect each item for shipping damage.
 
-2- **Frame Assembly**  
+**2- Frame Assembly**  
 
    - Follow the sequence in the PDF guide to assemble the aluminum frame.
    - Ensure all screws are tightened evenly, but avoid over-tightening.
 
-3- **Install Laser Module**  
+**3- Install Laser Module**  
 
    - Mount the selected laser head (2.5W / 5.5W / 10W / 20W).
    - Connect the laser cable to the control board.
 
-4- **Install Accessories**  
+**4- Install Accessories**  
 
    - Attach Air Assist pump and tubing (included).
    - Install honeycomb bed or rotary module if used.
@@ -39,7 +39,7 @@ Click here to download the official assembly guide:
 
    <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_02.png" width="200" alt="YUMI Laser Module">
 
-5- **Connect Power & USB** 
+**5- Connect Power & USB** 
 
    - Plug in the supplied 12V adapter.
    - Connect USB cable to your computer if controlling via software.
@@ -48,7 +48,7 @@ Click here to download the official assembly guide:
 
 ## 1.4.3 Belt Tension Adjustment
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_03.png" width="500" alt="Belt Tension Adjustment">
+   <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_03.png" width="500" alt="Belt Tension Adjustment">
 
 Proper belt tension is important for accurate engraving and cutting.  
 
@@ -68,12 +68,12 @@ Proper belt tension is important for accurate engraving and cutting.
 
 ## 1.4.4 First Power-On
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_04.png" width="370" alt="Belt Tension Adjustment">
+   <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_04.png" width="370" alt="Belt Tension Adjustment">
 
 - Turn on the main power switch on the socket and then turn the safety key.
 - Ensure that **Air Assist** is working (you should hear airflow).
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_05.png" width="370" alt="Belt Tension Adjustment">
+   <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_05.png" width="370" alt="Belt Tension Adjustment">
 
 - The laser head should remain off until commanded by the software.
 
