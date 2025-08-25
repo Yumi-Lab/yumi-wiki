@@ -10,30 +10,26 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ## Available Models
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+<table style="width:100%; text-align:center; border-collapse: collapse;">
+  <tr>
+    <td style="padding:10px;">
+      <img src="../../img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A4.png" width="250" alt="YUMI L-A4"><br>
+      <b>YUMI L-A4</b><br>
+      <b>10 × 297 mm working area</b>
+    </td>
+    <td style="padding:10px;">
+      <img src="../../img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A3.png" width="250" alt="YUMI L-A3"><br>
+      <b>YUMI L-A3</b><br>
+      <b>420 × 297 mm working area</b>
+    </td>
+    <td style="padding:10px;">
+      <img src="../../img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A2.png" width="250" alt="YUMI L-A2"><br>
+      <b>YUMI L-A2</b><br>
+      <b>420 × 594 mm working area</b>
+    </td>
+  </tr>
+</table>
 
-<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="../../img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A4.png" width="250" alt="YUMI L-A4">
-
-<b>YUMI L-A4</b><br>
-<b>10 × 297 mm working area</b>
-</div>
-
-<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="../../img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A3.png" width="250" alt="YUMI L-A3">
-  
-<b>YUMI L-A3</b><br> 
-<b>420 × 297 mm working area</b>
-</div>
-
-<div style="flex: 1; min-width: 250px; text-align: center; padding: 10px;">
-<img src="../../img/Yumi_L_Series/Yumi_L_Series/Yumi_L_Series_L-A2.png" width="250" alt="YUMI L-A2">
-  
-<b>YUMI L-A2</b><br>
-  <b>420 × 594 mm working area</b>
-</div>
-
-</div>
 
 --- 
 
@@ -69,7 +65,7 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 
 --- 
 
-# Troubleshooting
+# **Troubleshooting**
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
 - [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#laser-does-not-turn-on)
