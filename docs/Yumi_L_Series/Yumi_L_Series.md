@@ -37,7 +37,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 --- 
 
-# **Quick Start**
+# Quick Start
 
 
 ### [1.2 Overview & Specifications](Yumi_L_Series_Overview.md)
@@ -69,7 +69,7 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 
 --- 
 
-# **Troubleshooting**
+# Troubleshooting
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
 - [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#laser-does-not-turn-on)
