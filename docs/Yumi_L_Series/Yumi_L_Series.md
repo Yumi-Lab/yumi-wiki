@@ -67,7 +67,7 @@ Complete list of default GRBL configuration parameters for the YUMI L-A4 model.
 ### [1.10 Accessories & Upgrade Packs](Yumi_L_Series_Accessories.md)
 Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra heads, touchscreen, risers, enclosure.  
 
-
+--- 
 
 # **Troubleshooting**
 List of common issues, causes, and solutions for YUMI L Series operation. 
@@ -79,7 +79,7 @@ List of common issues, causes, and solutions for YUMI L Series operation.
 - [Software Cannot Detect the Laser](Yumi_L_Series_Troubleshooting.md#software-cannot-detect-the-laser)
 - [Burning or Excessive Charring on Material](Yumi_L_Series_Troubleshooting.md#burning-or-excessive-charring-on-material)
 
-
+--- 
 
 ## Purchase YUMI Laser
 
