@@ -6,6 +6,8 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ## 1.8.1 Cleaning the Optics
 
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_LaserGRBL/Yumi_L_Series_LaserGRBL_10.png" width="250" alt="LaserGRBL Work Area Preview">
+
 **Frequency:** Weekly
 
 **Steps:**
@@ -19,6 +21,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ## 1.8.2 Checking the Laser Module
 
+
 **Frequency:** Monthly
 
 **Steps:**
@@ -30,6 +33,8 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 ---
 
 ## 1.8.3 Air Assist (If Installed)
+
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_05.png" width="370" alt="Belt Tension Adjustment">
 
 **Frequency:** Weekly
 
@@ -53,6 +58,8 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ## 1.8.5 Belt Tension Check
 
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_03.png" width="370" alt="Belt Tension Adjustment">
+
 **Frequency:** Every 2–3 months (or if accuracy issues appear)
 
 **Steps:**
@@ -65,6 +72,8 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 ---
 
 ## 1.8.6 Enclosure Maintenance (If Installed)
+
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Enclosure.png" width="300" alt="L-A4 Enclosure">
 
 **Frequency:** Monthly
 
