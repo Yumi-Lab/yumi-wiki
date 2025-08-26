@@ -9,4 +9,4 @@ This page provides access to the technical specifications and drawings.
 
 ## Technical Documentation (PDF)
 
-[Download PDF — YUMI C Series Technical Drawings](pdf/YUMI_C_SERIES_TECHNICAL_DRAW.pdf)
+[Download PDF — YUMI C Series Technical Drawings](https://wiki.yumi-lab.com/Yumi_C_Series/pdf/YUMI_C_SERIES_TECHNICAL_DRAW.pdf)
