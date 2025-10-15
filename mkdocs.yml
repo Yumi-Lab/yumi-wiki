@@ -95,6 +95,7 @@ nav:
       - Yumi_C_Series/YUMI_C_SERIES.md
       - Yumi_C_Series/YUMI_C_SERIES_Overview.md
   - YUMI L SERIES (Laser):
+    - Docs:
       - Yumi_L_Series/Yumi_L_Series.md
       - Yumi_L_Series/Yumi_L_Series_Overview.md
       - Yumi_L_Series/Yumi_L_Series_Safety.md
@@ -105,6 +106,10 @@ nav:
       - Yumi_L_Series/Yumi_L_Series_Maintenance.md  
       - Yumi_L_Series/Yumi_L_Series_LA4_Parameters.md
       - Yumi_L_Series/Yumi_L_Series_Accessories.md 
+    - Tuto:
+        Yumi_L_Series/Tuto/Yumi_L_Series_LaserGRBL
+
+
   - YUMI SBC nano-computer:
     - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
