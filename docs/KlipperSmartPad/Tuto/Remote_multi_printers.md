@@ -1,6 +1,7 @@
 # 3.1 Remote multiple printers on one pad
 
 toto
+
 You can control multiple pads with a single pad. This provides centralized control over all your printers.
 
 # Mainsail method
