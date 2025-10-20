@@ -1,7 +1,8 @@
+# Cork Engraving
 <p><a href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" title="laser Yumi L-A4"><img src="https://i.ibb.co/gMTnH4xm/titre.jpg" alt=""></a></p>
 <p data-start="325" data-end="634">La <strong data-start="328" data-end="355">gravure laser sur liège</strong> séduit de plus en plus les créateurs et bricoleurs : dessous de verres personnalisés, sous-plats gravés, logos ou décorations uniques. Avec la <strong data-start="499" data-end="527">graveuse laser Yumi L-A4</strong> et le logiciel <strong data-start="543" data-end="556">LaserGRBL</strong>, vous pouvez réaliser des projets précis et élégants, même si vous débutez.</p>
 <p data-start="325" data-end="634"> </p>
-<h2 style="text-align: center;" data-start="1352" data-end="1379">⚠️ Sécurité avant tout</h2>
+<h2 style="text-align: center>⚠️ Sécurité avant tout ⚠️</h2>
 <p data-start="1380" data-end="1486">La gravure laser n’est pas un simple passe-temps, c’est un outil puissant qui demande de la <strong data-start="1472" data-end="1483">rigueur</strong>. Portez toujours les <strong data-start="1509" data-end="1544">lunettes de protection fournies</strong>. <strong>Ne respirez pas la fumée</strong> qui s'en dégage. La sécurité est la première étape pour profiter sereinement de la gravure laser.</p>
 <style>
 .product-grid {
@@ -132,10 +133,8 @@
 </div>
 </div>
 <blockquote data-start="1765" data-end="1849"></blockquote>
-<p data-start="1767" data-end="1849"> </p>
-<h2 style="text-align: center;" data-end="1025" data-start="975"><br></h2>
+
 <h2 style="text-align: center;" data-end="1025" data-start="975">LaserGRBL : le logiciel gratuit et performant</h2>
-<p data-end="1091" data-start="1026"><br></p>
 <style>
 .lasergrbl-container {
   display: flex;
@@ -215,7 +214,6 @@
 </div>
 </div>
 <p><br></p>
-<h2 style="text-align: center;" data-start="1856" data-end="1900"><br></h2>
 <h2 style="text-align: center;" data-start="1856" data-end="1900">Étape 1 : Préparer et tester la gravure</h2>
 <p> </p>
 <div class="product-grid">
@@ -223,7 +221,7 @@
 <div class="product-item2">
 <a href="https://lasergrbl.com/download/"> <img src="https://i.ibb.co/WvfWqxs7/grbl.jpg" alt="Honeycomb"> </a>
 <div class="product-title">
-<span style="text-decoration: underline;"><a rel="noopener" title="laser grbl" href="https://lasergrbl.com/download/" target="_blank">Téléchargez et installez <strong data-start="1929" data-end="1942">LaserGRBL</strong></a>,</span> puis branchez le <strong data-start="1962" data-end="1975">Yumi L-A4</strong> à votre PC.</div>
+<p style="text-decoration: underline;"><a rel="noopener" title="laser grbl" href="https://lasergrbl.com/download/" target="_blank">Téléchargez et installez <strong data-start="1929" data-end="1942">LaserGRBL</strong></a>,</p> puis branchez le <strong data-start="1962" data-end="1975">Yumi L-A4</strong> à votre PC.</div>
 </div>
 <!-- Produit 2 -->
 <div class="product-item1">
@@ -250,7 +248,9 @@
 <!-- Produit 1 -->
 <div class="product-item1">
 <a href="#zoom-viewer"> <img src="https://i.ibb.co/v4J0WLzn/test2.jpg" alt="Honeycomb"> </a>
-<div class="product-title">Adaptez les dimensions selon votre matériau (en mm).</div>
+<div class="product-title">
+<p>Adaptez les dimensions selon votre matériau (en mm).</p>
+</div>
 </div>
 <!-- Produit 2 -->
 <div class="product-item1">
@@ -279,13 +279,14 @@
 <div class="mt-3 w-full empty:hidden">
 <div class="text-center"><br></div>
 </div>
-<div class="pointer-events-none h-px w-px" data-edge="true" aria-hidden="true"><br></div>
 <h2 data-start="2273" data-end="2312" style="text-align: center;">Étape 2 : Lancer la gravure finale</h2>
 <div class="product-grid">
 <!-- Produit 1 -->
 <div class="product-item1">
 <a href="#zoom1"> <img src="https://i.ibb.co/TMhr8mh0/ligne-mm.jpg" alt="Honeycomb"> </a>
-<div class="product-title">Ouvrez votre fichier à graver et soyez attentif au <strong>nombre de lignes par mm</strong>. Cela influe directement sur la qualité finale de votre gravure. (A adapté selon le matériau).</div>
+<div class="product-title">
+<p>Ouvrez votre fichier à graver et soyez attentif au <strong>nombre de lignes par mm</strong>. Cela influe directement sur la qualité finale de votre gravure. (A adapté selon le matériau).</p>
+</div>
 </div>
 <!-- Produit 2 -->
 <div class="product-item1">
@@ -330,7 +331,9 @@
 <!-- Produit 3 - Lunettes -->
 <div class="product-item1">
 <a href="#zoom1"> <img src="https://i.ibb.co/TDh8d4cg/play.jpg" alt="liege"> </a>
-<div class="product-title">Lancer la gravure.</div>
+<div class="product-title">
+<p>Lancer la gravure.</p>
+</div>
 </div>
 
 </div>
@@ -393,7 +396,7 @@
 <div id="sliderLine" class="slider-line"></div>
 </div>
 <div class="lasergrbl-text">
-<p data-start="3010" data-end="3259"> </p>
+
   <div><h3 style="text-align: center;" data-start="2959" data-end="3009">Résultat : un dessous de verre en liège unique</h3></div>
 <div><h7 data-end="3259" data-start="3010">En quelques minutes, vous obtenez un <strong data-start="3047" data-end="3079">dessous de verre personnalisé</strong> : naturel, élégant et surtout <strong data-start="3110" data-end="3120">unique</strong>. La gravure laser sur liège est une excellente façon de donner vie à vos idées créatives, avec un rendu professionnel accessible à tous.</h7></div>
 </div>
