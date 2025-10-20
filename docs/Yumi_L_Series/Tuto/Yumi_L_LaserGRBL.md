@@ -1,4 +1,4 @@
-# Cork Engraving
+# 1.1 Cork Engraving
 <p><a href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" title="laser Yumi L-A4"><img src="https://i.ibb.co/B2P95pq8/titre-en.jpg" alt=""></a></p>
 <p data-start="325" data-end="634">Personalized coasters, engraved trivets, custom logos, or unique decorations — laser engraving on cork is becoming increasingly popular among creators and hobbyists. With the Yumi L-A4 laser engraver and LaserGRBL software, you can achieve precise, elegant results — even as a beginner</p>
 <p data-start="325" data-end="634"> </p>
@@ -6,7 +6,9 @@
 <p data-start="1380" data-end="1486">Laser engraving isn’t just a casual hobby — it’s a powerful tool that requires care and attention.
 Always wear the provided safety goggles and avoid inhaling the smoke produced during engraving.
 Safety is the first step to enjoying your laser engraver with peace of mind.</p>
+
 <style>
+
 .product-grid {
   display: flex;
   justify-content: center;
@@ -137,6 +139,7 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <p data-start="325" data-end="634"> </p>
 
 <h2 style="text-align: center;" data-end="1025" data-start="975">LaserGRBL: Free, Powerful, and Easy to Use</h2>
+
 <style>
 .lasergrbl-container {
   display: flex;
@@ -342,6 +345,7 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
 </div>
 
 </div>
+
 <style>
 .image-compare-container {
   position: relative;
@@ -412,7 +416,8 @@ Laser engraving on cork is a fantastic way to bring your creative ideas to life,
 <p> </p>
 <p> </p>
 <p> </p>
-  <script>
+
+<script>
 const zoomViewer = document.getElementById('zoom-viewer');
 const zoomImg = zoomViewer.querySelector('img');
 const scrollPos = { top: 0, left: 0 };
