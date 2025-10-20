@@ -1,7 +1,7 @@
 # 1.1 Cork Engraving
 <p><a href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" title="laser Yumi L-A4"><img src="https://i.ibb.co/B2P95pq8/titre-en.jpg" alt=""></a></p>
 <p data-start="325" data-end="634">Personalized coasters, engraved trivets, custom logos, or unique decorations — laser engraving on cork is becoming increasingly popular among creators and hobbyists. With the Yumi L-A4 laser engraver and LaserGRBL software, you can achieve precise, elegant results — even as a beginner</p>
-<p data-start="325" data-end="634"> </p>
+<p data-start="325" data-end="634"> </p>
 <h2 style="text-align: center">⚠️ Safety First ⚠️</h2>
 <p data-start="1380" data-end="1486">Laser engraving isn’t just a casual hobby — it’s a powerful tool that requires care and attention.
 Always wear the provided safety goggles and avoid inhaling the smoke produced during engraving.
@@ -136,7 +136,7 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <div class="product-title">Included with your Yumi L-A4 laser.</div>
 </div>
 </div>
-<p data-start="325" data-end="634"> </p>
+<p data-start="325" data-end="634"> </p>
 
 <h2 style="text-align: center;" data-end="1025" data-start="975">LaserGRBL: Free, Powerful, and Easy to Use</h2>
 
@@ -274,6 +274,7 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <div class="product-item1">
 <a href="#zoom-viewer"><img src="https://i.ibb.co/pj57LxL4/test3.jpg" alt="Lunettes de protection laser"></a>
 <div class="product-title">
+<div>
 <p>The ideal settings produce a black, clean, and even engraving — without burning or digging into the material. Keep notes of your best parameters for future projects.</p>
 </div>
 </div>
@@ -309,7 +310,7 @@ Manually move the laser head to position it exactly where you want the engraving
 <a href="#zoom1"> <img src="https://i.ibb.co/q3BX1mfj/hauteur.jpg" alt="liege"> </a>
 <div class="product-title">
 <p data-start="2070" data-end="2105">Place the cork disc on the edge of the honeycomb grid, and adjust the height using the guide.</p>
-<p data-start="2070" data-end="2105"> </p>
+<p data-start="2070" data-end="2105"> </p>
 </div>
 </div>
 </div>
@@ -412,7 +413,9 @@ Laser engraving on cork is a fantastic way to bring your creative ideas to life,
 </div>
 </div>
 </div>
-</div>
+<p> </p>
+<p> </p>
+<p> </p>
 
 <script>
 const zoomViewer = document.getElementById('zoom-viewer');
