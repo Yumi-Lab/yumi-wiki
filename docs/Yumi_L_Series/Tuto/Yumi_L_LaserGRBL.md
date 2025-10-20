@@ -261,25 +261,26 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <div class="product-item1">
 <a href="#zoom-viewer"> <img src="https://i.ibb.co/LXRSRP7f/placer-tete.jpg" alt="liege"> </a>
 <div class="product-title">
-<p><strong>Position the laser head so it starts from the bottom-left corner of the engraving area.</p>
+<p>Position the laser head so it starts from the bottom-left corner of the engraving area.</p>
 </div>
 </div>
-<!-- Produit 3 - Lunettes -->
+<!-- Produit 1 -->
 <div class="product-item1">
-<a href="#zoom-viewer"><img src="https://i.ibb.co/1fJ7Twvw/lancertest.jpg" alt="Lunettes de protection laser"></a>
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/1fJ7Twvw/lancertest.jpg" alt="Honeycomb"> </a>
 <div class="product-title">
 <p>Start the test engraving.</p>
 </div>
 </div>
-
+<!-- Produit 2 -->
 <div class="product-item1">
-<a href="#zoom-viewer"><img src="https://i.ibb.co/pj57LxL4/test3.jpg" alt="Lunettes de protection laser"></a>
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/pj57LxL4/test3.jpg" alt="liege"> </a>
 <div class="product-title">
-<p>The ideal settings produce a black, clean, and even engraving — without burning or digging into the material. Keep notes of your best parameters for future projects.</p>
+<p>The ideal settings produce a black, clean, and even engraving — without burning or digging into the material. Keep notes of your best parameters for future projects..</p>
+</div>
 </div>
 </div>
 
-</div>
+
 <div class="z-0 flex min-h-[46px] justify-start"><br></div>
 <div class="mt-3 w-full empty:hidden">
 <div class="text-center"><br></div>
@@ -303,8 +304,8 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <!-- Produit 3 - Lunettes -->
 <div class="product-item1">
 <a href="#zoom1"> <img src="https://i.ibb.co/S4MTgGpj/origine.jpg" alt="liege"> </a>
-<div class="product-title">Tip:The origin point, where the laser head starts moving, is represented by a yellow cross.
-Manually move the laser head to position it exactly where you want the engraving to begin.</div>
+<div class="product-title"><p>Tip:The origin point, where the laser head starts moving, is represented by a yellow cross.
+Manually move the laser head to position it exactly where you want the engraving to begin.</p></div>
 </div>
 <div class="product-item1">
 <a href="#zoom1"> <img src="https://i.ibb.co/q3BX1mfj/hauteur.jpg" alt="liege"> </a>
