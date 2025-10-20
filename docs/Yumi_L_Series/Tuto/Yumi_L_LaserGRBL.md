@@ -271,14 +271,14 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <p>Start the test engraving.</p>
 </div>
 </div>
+
 <div class="product-item1">
 <a href="#zoom-viewer"><img src="https://i.ibb.co/pj57LxL4/test3.jpg" alt="Lunettes de protection laser"></a>
 <div class="product-title">
-<div>
 <p>The ideal settings produce a black, clean, and even engraving — without burning or digging into the material. Keep notes of your best parameters for future projects.</p>
 </div>
 </div>
-</div>
+
 </div>
 <div class="z-0 flex min-h-[46px] justify-start"><br></div>
 <div class="mt-3 w-full empty:hidden">
