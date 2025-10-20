@@ -274,6 +274,7 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 <div class="product-item1">
 <a href="#zoom-viewer"><img src="https://i.ibb.co/pj57LxL4/test3.jpg" alt="Lunettes de protection laser"></a>
 <div class="product-title">
+<div>
 <p>The ideal settings produce a black, clean, and even engraving — without burning or digging into the material. Keep notes of your best parameters for future projects.</p>
 </div>
 </div>
@@ -415,6 +416,10 @@ Laser engraving on cork is a fantastic way to bring your creative ideas to life,
 <p> </p>
 <p> </p>
 <p> </p>
+<div id="zoom-viewer" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+background:rgba(0,0,0,0.85); justify-content:center; align-items:center; z-index:9999; cursor:zoom-out;">
+  <img src="" alt="Zoom image" style="max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 25px rgba(0,0,0,0.6); object-fit:contain;">
+</div>
 
 <script>
 const zoomViewer = document.getElementById('zoom-viewer');
