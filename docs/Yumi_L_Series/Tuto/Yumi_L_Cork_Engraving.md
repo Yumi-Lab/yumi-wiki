@@ -1,7 +1,8 @@
 # 1.3 Cork Engraving
 
 <p><a href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" title="laser Yumi L-A4"><img src="https://i.ibb.co/B2P95pq8/titre-en.jpg" alt=""></a></p>
-
+<p data-start="325" data-end="634">Personalized coasters, engraved trivets, custom logos, or unique decorations — laser engraving on cork is becoming increasingly popular among creators and hobbyists. With the Yumi L-A4 laser engraver and LaserGRBL software, you can achieve precise, elegant results — even as a beginner</p>
+<p data-start="325" data-end="634"> </p>
 <style>
 .product-grid {
   display: flex;
@@ -13,7 +14,6 @@
   text-align: center;
   flex-wrap: wrap;
 }
-
 .product-item1 {
   width: 280px;
   display: flex;
@@ -21,7 +21,6 @@
   align-items: center;
   position: relative;
 }
-
 /* Image */
 .product-item1 img {
   width: 100%;
@@ -30,21 +29,17 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   cursor: zoom-in;
 }
-  
-
 /* Effet hover */
 .product-item1 img:hover {
   transform: scale(1.05);
 }
-
-  .product-item2 {
+.product-item2 {
   width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
-
 /* Image */
 .product-item2 img {
   width: 100%;
@@ -52,16 +47,11 @@
   transition: transform 0.3s ease;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-  
-
 /* Effet hover */
 .product-item2 img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-
-
-
 /* Titre */
 .product-title {
   margin-top: 10px;
@@ -69,7 +59,6 @@
   font-weight: 600;
   line-height: 1.4;
 }
-
 /* === Lightbox universelle === */
 #zoom-viewer {
   display: none;
@@ -82,7 +71,6 @@
   cursor: zoom-out;
   animation: fadeIn 0.3s ease;
 }
-
 /* Image zoomée */
 #zoom-viewer img {
   max-width: 90%;
@@ -95,13 +83,11 @@
   transform: scale(1);
   transition: transform 0.25s ease;
 }
-
 /* Apparition fluide */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
 /* Responsive */
 @media (max-width: 1200px) {
   .product-item1 { width: 45%; }
@@ -111,7 +97,6 @@
 }
 </style>
 
-<div class="text-center"><br></div>
 </div>
 <h2 data-start="2273" data-end="2312" style="text-align: center;">Step 2: Start the Final Engraving</h2>
 <div class="product-grid">
