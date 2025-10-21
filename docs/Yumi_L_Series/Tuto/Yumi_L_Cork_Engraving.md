@@ -3,6 +3,7 @@
 <p><a href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" title="laser Yumi L-A4"><img src="https://i.ibb.co/B2P95pq8/titre-en.jpg" alt=""></a></p>
 <p data-start="325" data-end="634">Personalized coasters, engraved trivets, custom logos, or unique decorations — laser engraving on cork is becoming increasingly popular among creators and hobbyists. With the Yumi L-A4 laser engraver and LaserGRBL software, you can achieve precise, elegant results — even as a beginner</p>
 <p data-start="325" data-end="634"> </p>
+
 <style>
 .product-grid {
   display: flex;
