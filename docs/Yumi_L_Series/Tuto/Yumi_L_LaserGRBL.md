@@ -140,7 +140,6 @@
 
 .lasergrbl-text {
   flex: 1;
-  font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 

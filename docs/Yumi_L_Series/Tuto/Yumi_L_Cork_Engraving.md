@@ -206,7 +206,7 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
 
 .lasergrbl-text {
   flex: 1;
-  font-family: Arial, sans-serif;
+  
   line-height: 1.6;
 }
 
@@ -228,7 +228,7 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
   .lasergrbl-row {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 20px; /* réduit sur mobile */
   }
 
