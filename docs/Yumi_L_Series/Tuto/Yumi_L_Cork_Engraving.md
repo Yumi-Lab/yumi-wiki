@@ -116,7 +116,6 @@
 
 <div class="z-0 flex min-h-[46px] justify-start"><br></div>
 <div class="mt-3 w-full empty:hidden">
-<div class="text-center"><br></div>
 </div>
 <h2 data-start="2273" data-end="2312" style="text-align: center;">Cork Engraving</h2>
 <div class="product-grid">
@@ -230,6 +229,67 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
     width: 90%;
   }
 }
+.lasergrbl-container {
+  display: flex;
+  justify-content: center; /* centre le bloc dans la page */
+  width: 100%;
+}
+
+.lasergrbl-row {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* plus grand espace entre image et texte */
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.lasergrbl-row img {
+  width: 350px; /* taille augmentée de 25% (avant 280px) */
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: cover;
+}
+
+.lasergrbl-text {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.lasergrbl-text h3 {
+  margin-top: 0;
+}
+
+.lasergrbl-text ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.lasergrbl-text li {
+  margin-bottom: 8px;
+}
+
+/* Responsive : image au-dessus sur mobile */
+@media (max-width: 768px) {
+  .lasergrbl-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 20px; /* réduit sur mobile */
+  }
+
+  .lasergrbl-text {
+    max-width: 90%;
+  }
+
+  .lasergrbl-row img {
+    width: 80%; /* image s’adapte sur mobile */
+    
+  }
+}
 </style>
 <div class="product-grid">
 <div class="lasergrbl-container">
@@ -239,7 +299,6 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
 <div id="sliderLine" class="slider-line"></div>
 </div>
 <div class="lasergrbl-text">
-
   <div><h3 style="text-align: center;" data-start="2959" data-end="3009">Result: A Unique Cork Coaster</h3></div>
 <div><h7 data-end="3259" data-start="3010">In just a few minutes, you’ll have your own personalized cork coaster — natural, elegant, and truly one of a kind.
 Laser engraving on cork is a fantastic way to bring your creative ideas to life, offering professional-quality results that are accessible to everyone.</h7></div>
