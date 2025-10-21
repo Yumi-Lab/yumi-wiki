@@ -107,7 +107,9 @@ nav:
       - Yumi_L_Series/Yumi_L_Series_LA4_Parameters.md
       - Yumi_L_Series/Yumi_L_Series_Accessories.md 
     - Tuto:
+        Yumi_L_Series/Tuto/Yumi_L_Series_Safety.md
         Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md
+        Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md
 
 
   - YUMI SBC nano-computer:
