@@ -180,6 +180,67 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
 </div>
 
 <style>
+.lasergrbl-container {
+  display: flex;
+  justify-content: center; /* centre le bloc dans la page */
+  width: 100%;
+}
+
+.lasergrbl-row {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* plus grand espace entre image et texte */
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.lasergrbl-row img {
+  width: 350px; /* taille augmentée de 25% (avant 280px) */
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: cover;
+}
+
+.lasergrbl-text {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.lasergrbl-text h3 {
+  margin-top: 0;
+}
+
+.lasergrbl-text ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.lasergrbl-text li {
+  margin-bottom: 8px;
+}
+
+/* Responsive : image au-dessus sur mobile */
+@media (max-width: 768px) {
+  .lasergrbl-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* réduit sur mobile */
+  }
+
+  .lasergrbl-text {
+    max-width: 90%;
+  }
+
+  .lasergrbl-row img {
+    width: 80%; /* image s’adapte sur mobile */
+    
+  }
+}
 .image-compare-container {
   position: relative;
   width: 500px; /* taille du bloc */
@@ -229,67 +290,7 @@ If necessary, adjust the laser head until the alignment is perfect.</p>
     width: 90%;
   }
 }
-.lasergrbl-container {
-  display: flex;
-  justify-content: center; /* centre le bloc dans la page */
-  width: 100%;
-}
 
-.lasergrbl-row {
-  display: flex;
-  align-items: center;
-  gap: 60px; /* plus grand espace entre image et texte */
-  max-width: 900px;
-  margin: 40px auto;
-  text-align: left;
-}
-
-.lasergrbl-row img {
-  width: 350px; /* taille augmentée de 25% (avant 280px) */
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0;
-  display: block;
-  object-fit: cover;
-}
-
-.lasergrbl-text {
-  flex: 1;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-.lasergrbl-text h3 {
-  margin-top: 0;
-}
-
-.lasergrbl-text ul {
-  padding-left: 20px;
-  margin: 10px 0;
-}
-
-.lasergrbl-text li {
-  margin-bottom: 8px;
-}
-
-/* Responsive : image au-dessus sur mobile */
-@media (max-width: 768px) {
-  .lasergrbl-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    gap: 20px; /* réduit sur mobile */
-  }
-
-  .lasergrbl-text {
-    max-width: 90%;
-  }
-
-  .lasergrbl-row img {
-    width: 80%; /* image s’adapte sur mobile */
-    
-  }
-}
 </style>
 <div class="product-grid">
 <div class="lasergrbl-container">
