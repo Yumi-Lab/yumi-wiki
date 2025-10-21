@@ -114,13 +114,9 @@
 }
 </style>
 
-
-
-<div class="z-0 flex min-h-[46px] justify-start"><br></div>
-<div class="mt-3 w-full empty:hidden">
 <div class="text-center"><br></div>
 </div>
-<h2 data-start="2273" data-end="2312" style="text-align: center;">Step 2: Start the Final Engraving</h2>
+<h2 data-start="2273" data-end="2312" style="text-align: center;">Cork Engraving</h2>
 <div class="product-grid">
 <!-- Produit 1 -->
 <div class="product-item1">

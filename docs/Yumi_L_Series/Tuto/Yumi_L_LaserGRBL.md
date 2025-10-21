@@ -149,6 +149,8 @@
 }
 
 .lasergrbl-text ul {
+  text-align: left;
+  list-style: none; 
   padding-left: 20px;
   margin: 10px 0;
 }
@@ -162,9 +164,9 @@
   .lasergrbl-row {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 20px; /* réduit sur mobile */
   }
+  
 
   .lasergrbl-text {
     max-width: 90%;
@@ -191,8 +193,7 @@
 </div>
 </div>
 </div>
-<p><br></p>
-<h2 style="text-align: center;" data-start="1856" data-end="1900">Step 1: Prepare and Test Your Engraving</h2>
+<h2 style="text-align: center;" data-start="1856" data-end="1900">Prepare and Test Your Engraving</h2>
 
 <div class="product-grid">
 <!-- Produit 1 -->
