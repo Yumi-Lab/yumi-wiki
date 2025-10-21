@@ -1,10 +1,14 @@
-# 1.3 Cork Engraving
-
+# 1.2 Cork Engraving
 <p><a href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" title="laser Yumi L-A4"><img src="https://i.ibb.co/B2P95pq8/titre-en.jpg" alt=""></a></p>
 <p data-start="325" data-end="634">Personalized coasters, engraved trivets, custom logos, or unique decorations — laser engraving on cork is becoming increasingly popular among creators and hobbyists. With the Yumi L-A4 laser engraver and LaserGRBL software, you can achieve precise, elegant results — even as a beginner</p>
 <p data-start="325" data-end="634"> </p>
+<h2 style="text-align: center">⚠️ Safety First ⚠️</h2>
+<p data-start="1380" data-end="1486">Laser engraving isn’t just a casual hobby — it’s a powerful tool that requires care and attention.
+Always wear the provided safety goggles and avoid inhaling the smoke produced during engraving.
+Safety is the first step to enjoying your laser engraver with peace of mind.</p>
 
 <style>
+
 .product-grid {
   display: flex;
   justify-content: center;
@@ -15,6 +19,7 @@
   text-align: center;
   flex-wrap: wrap;
 }
+
 .product-item1 {
   width: 280px;
   display: flex;
@@ -22,6 +27,7 @@
   align-items: center;
   position: relative;
 }
+
 /* Image */
 .product-item1 img {
   width: 100%;
@@ -30,17 +36,21 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   cursor: zoom-in;
 }
+  
+
 /* Effet hover */
 .product-item1 img:hover {
   transform: scale(1.05);
 }
-.product-item2 {
+
+  .product-item2 {
   width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
+
 /* Image */
 .product-item2 img {
   width: 100%;
@@ -48,11 +58,16 @@
   transition: transform 0.3s ease;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+  
+
 /* Effet hover */
 .product-item2 img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+
+
 /* Titre */
 .product-title {
   margin-top: 10px;
@@ -60,6 +75,7 @@
   font-weight: 600;
   line-height: 1.4;
 }
+
 /* === Lightbox universelle === */
 #zoom-viewer {
   display: none;
@@ -72,6 +88,7 @@
   cursor: zoom-out;
   animation: fadeIn 0.3s ease;
 }
+
 /* Image zoomée */
 #zoom-viewer img {
   max-width: 90%;
@@ -84,11 +101,13 @@
   transform: scale(1);
   transition: transform 0.25s ease;
 }
+
 /* Apparition fluide */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 /* Responsive */
 @media (max-width: 1200px) {
   .product-item1 { width: 45%; }
@@ -97,7 +116,174 @@
   .product-item1 { width: 90%; }
 }
 </style>
+<div class="product-grid">
+<!-- Produit 1 -->
+<div class="product-item2">
+<a href="https://wanhao-europe.com/collections/yumi-acmer-les-2-gammes-completes/products/plateau-de-travail-honey-comb-pour-laser-yumi-l-a4-l-a3?variant=50422470213972" rel="noopener noreferrer" target="_blank"> <img src="https://i.ibb.co/VtBS4ss/YLA4-HONEYCOMB400-X400.jpg" alt="Honeycomb"> </a>
+<div class="product-title"><strong>Honeycomb</strong></div>
+<div class="product-title">For cleaner, safer engraving results.</div>
+</div>
+<!-- Produit 2 -->
+<div class="product-item2">
+<a href="https://wanhao-europe.com/collections/yumi-acmer-les-2-gammes-completes/products/enclos-de-protection-pour-laser-yumi-l-a4-l-a3" rel="noopener noreferrer" target="_blank"> <img src="https://i.ibb.co/d2ytjBv/YUMLENCLOBOX-11.jpg" alt="Enclosure - Extracteur d’air"> </a>
+<div class="product-title"><strong>Enclosure + Air Extractor</strong></div>
+<div class="product-title">Prevents smoke inhalation.</div>
+</div>
+<!-- Produit 3 - Lunettes -->
+<div class="product-item2">
+<a rel="noopener" title="laser ymui l-a4" href="https://wanhao-europe.com/collections/yumi-graveur-laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande" target="_blank"><img src="https://i.ibb.co/K3F5QW2/lunette.jpg" alt="Lunettes de protection laser"></a>
+<div class="product-title"><strong>Protective Glasses</strong></div>
+<div class="product-title">Included with your Yumi L-A4 laser.</div>
+</div>
+</div>
+<p data-start="325" data-end="634"> </p>
 
+<h2 style="text-align: center;" data-end="1025" data-start="975">LaserGRBL: Free, Powerful, and Easy to Use</h2>
+
+<style>
+.lasergrbl-container {
+  display: flex;
+  justify-content: center; /* centre le bloc dans la page */
+  width: 100%;
+}
+
+.lasergrbl-row {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* plus grand espace entre image et texte */
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.lasergrbl-row img {
+  width: 350px; /* taille augmentée de 25% (avant 280px) */
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: cover;
+}
+
+.lasergrbl-text {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.lasergrbl-text h3 {
+  margin-top: 0;
+}
+
+.lasergrbl-text ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.lasergrbl-text li {
+  margin-bottom: 8px;
+}
+
+/* Responsive : image au-dessus sur mobile */
+@media (max-width: 768px) {
+  .lasergrbl-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* réduit sur mobile */
+  }
+
+  .lasergrbl-text {
+    max-width: 90%;
+  }
+
+  .lasergrbl-row img {
+    width: 80%; /* image s’adapte sur mobile */
+    
+  }
+}
+</style>
+<div class="lasergrbl-container">
+<div class="lasergrbl-row">
+<a title="laser grbl" href="https://lasergrbl.com/download/" rel="noopener noreferrer" target="_blank"><img src="https://i.ibb.co/rRkXRMg2/Laser-BRGL005.jpg" alt="LaserGRBL logiciel gratuit"></a>
+<div class="lasergrbl-text">
+<p>Unlike many expensive engraving programs, LaserGRBL is:</p>
+<ul>
+<li>✅ Free and open-source</li>
+<li>✅ Compatible with the Yumi L-A4</li>
+<li>✅ User-friendly</li>
+<li>✅ Supports multiple file formats (JPG, PNG, SVG...)</li>
+</ul>
+<p>👉 The perfect choice to get started without investing in paid software.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<h2 style="text-align: center;" data-start="1856" data-end="1900">Step 1: Prepare and Test Your Engraving</h2>
+
+<div class="product-grid">
+<!-- Produit 1 -->
+<div class="product-item2">
+<a href="https://lasergrbl.com/download/"> <img src="https://i.ibb.co/WvfWqxs7/grbl.jpg" alt="Honeycomb"> </a>
+<div class="product-title">
+<p style="text-decoration: underline;"><a rel="noopener" title="laser grbl" href="https://lasergrbl.com/download/" target="_blank">Download and install LaserGRBL, then connect your Yumi L-A4 to your PC.</div>
+</div>
+<!-- Produit 2 -->
+<div class="product-item1">
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/S4HBw6bw/calibration.jpg" alt="liege"> </a>
+<div class="product-title">
+<p>Place your material and adjust the laser head height using the included guide.</p>
+</div>
+</div>
+<!-- Produit 3 - Lunettes -->
+<div class="product-item1">
+<a href="#zoom-viewer"><img src="https://i.ibb.co/60TH4Y6D/connecter.jpg" alt="Lunettes de protection laser"></a>
+<div class="product-title">
+<p>Connect the Yumi L-A4 and run a test engraving.</p>
+</div>
+</div>
+<div class="product-item1">
+<a href="#zoom-viewer"><img src="https://i.ibb.co/cXhZxw4P/test.jpg" alt="Lunettes de protection laser"></a>
+<div class="product-title">
+<p data-start="2070" data-end="2105">Perform a burn test.</p>
+</div>
+</div>
+</div>
+<div class="product-grid">
+<!-- Produit 1 -->
+<div class="product-item1">
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/v4J0WLzn/test2.jpg" alt="Honeycomb"> </a>
+<div class="product-title">
+<p>Adjust the size based on your material (in mm).</p>
+</div>
+</div>
+<!-- Produit 2 -->
+<div class="product-item1">
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/LXRSRP7f/placer-tete.jpg" alt="liege"> </a>
+<div class="product-title">
+<p>Position the laser head so it starts from the bottom-left corner of the engraving area.</p>
+</div>
+</div>
+<!-- Produit 1 -->
+<div class="product-item1">
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/1fJ7Twvw/lancertest.jpg" alt="Honeycomb"> </a>
+<div class="product-title">
+<p>Start the test engraving.</p>
+</div>
+</div>
+<!-- Produit 2 -->
+<div class="product-item1">
+<a href="#zoom-viewer"> <img src="https://i.ibb.co/pj57LxL4/test3.jpg" alt="liege"> </a>
+<div class="product-title">
+<p>The ideal settings produce a black, clean, and even engraving — without burning or digging into the material. Keep notes of your best parameters for future projects..</p>
+</div>
+</div>
+</div>
+
+
+<div class="z-0 flex min-h-[46px] justify-start"><br></div>
+<div class="mt-3 w-full empty:hidden">
+<div class="text-center"><br></div>
 </div>
 <h2 data-start="2273" data-end="2312" style="text-align: center;">Step 2: Start the Final Engraving</h2>
 <div class="product-grid">
