@@ -15,15 +15,21 @@ Official Armbian-based images for **YUMI Smart Pi One** and **YUMI Smart Pad** (
 ## Latest Release
 
 !!! success "v1.6.0 — March 1, 2026"
-    All images are server editions (headless). Select your device and preferred Linux distribution below.
+    Server editions only (headless). Select your device and preferred Linux distribution below.
 
     [:octicons-mark-github-16: View all releases on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/latest){ .md-button .md-button--primary }
+
+!!! info "Desktop images"
+    Desktop (GUI) images were available in release **24.2.1 (March 2024)** for Bookworm (Debian 12).
+    They are **not included in v1.6.0**. If you need a desktop environment, download the server image and install a desktop manually, or use the older release:
+
+    [:octicons-download-16: Release 24.2.1 — Desktop images](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/24.2.1-20240302-2147){ .md-button }
 
 ---
 
 ## Download — Smart Pi One
 
-=== ":simple-debian: Debian"
+=== ":simple-debian: Debian — Server"
 
     | Version | Status | Download |
     |---|---|---|
@@ -35,7 +41,16 @@ Official Armbian-based images for **YUMI Smart Pi One** and **YUMI Smart Pad** (
         **Bookworm (12)** is the current stable — use it for any new installation.
         Trixie (13) is for advanced users who want the latest packages.
 
-=== ":simple-ubuntu: Ubuntu"
+=== ":simple-debian: Debian — Desktop (older)"
+
+    !!! warning "Release 24.2.1 — March 2024"
+        Desktop images are from an older release. Server images (v1.6.0) are more up to date.
+
+    | Version | Download |
+    |---|---|
+    | **Debian 12 Bookworm Desktop** | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/24.2.1-20240302-2147) |
+
+=== ":simple-ubuntu: Ubuntu — Server"
 
     | Version | Status | Download |
     |---|---|---|
@@ -49,7 +64,7 @@ Official Armbian-based images for **YUMI Smart Pi One** and **YUMI Smart Pad** (
 
 ## Download — Smart Pad
 
-=== ":simple-debian: Debian"
+=== ":simple-debian: Debian — Server"
 
     | Version | Status | Download |
     |---|---|---|
@@ -60,7 +75,16 @@ Official Armbian-based images for **YUMI Smart Pi One** and **YUMI Smart Pad** (
     !!! tip "Which version?"
         **Bookworm (12)** is the current stable — use it for any new installation.
 
-=== ":simple-ubuntu: Ubuntu"
+=== ":simple-debian: Debian — Desktop (older)"
+
+    !!! warning "Release 24.2.1 — March 2024"
+        Desktop images are from an older release. Server images (v1.6.0) are more up to date.
+
+    | Version | Download |
+    |---|---|
+    | **Debian 12 Bookworm Desktop** | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/24.2.1-20240302-2147) |
+
+=== ":simple-ubuntu: Ubuntu — Server"
 
     | Version | Status | Download |
     |---|---|---|
