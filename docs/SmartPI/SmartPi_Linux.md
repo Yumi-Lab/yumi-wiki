@@ -14,7 +14,7 @@ Ease of use: User-friendly for beginners, with abundant documentation.
 Debian is preferred for its proven stability. Ubuntu shines for its ease of use and quick access to new features.
 
 ## Official Images
-You must have a micro SD card but max 128Gb for SMART PI ONE
+You must have a micro SD card (16GB minimum, **32GB max** for SMART PI ONE)
 
 > **Latest release: v1.6.0** (March 1, 2026)
 
