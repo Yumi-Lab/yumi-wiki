@@ -6,7 +6,7 @@ In this guide, I'll walk you through the steps to install operating system (serv
 ## 1.4.1 Hardware
 
 - [Smart Pi One](https://wanhao-europe.com/collections/yumi-smart-pi-nano-computer-diy/products/yumi-smart-pi-one-1g-ddr3-processeur-h3-allwinner)
-- Micro SD Card ([Minimum of 16GB](https://wanhao-europe.com/collections/yumi-smart-pi-nano-computer-diy/products/carte-micro-sd-16go))
+- Micro SD Card (4GB minimum, 32GB max)
 - USB keyboard and mouse
 - Computer display (HDMI)
 - Micro-USB C power supply (**5V - 2A  or Power delivery**)
