@@ -12,12 +12,18 @@ In this guide, I'll walk you through the steps to install operating system (serv
 - Micro-USB C power supply (**5V - 2A  or Power delivery**)
 
 ## 1.4.2 Download
-Go to Official images. Choose the Armbian version you'd like to install (Debian 12 or UBuntu)
 
+Go to Official images. Choose the Armbian version you'd like to install.
 
-- <B>DEBIAN SERVER :</B> [Yumi-smartpi1-bookworm-server-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/DEBIAN%2012/Yumi-smartpi1-bookworm-server-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
-- <B>DEBIAN 12 Desktop :</B> [Yumi-smartpi1-bookworm-desktop-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/DEBIAN%2012/Yumi-smartpi1-bookworm-desktop-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
-- <B>UBUNTU SERVER :</B> [Yumi-smartpi1-jammy-server-2024-03-02-2050](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h/SMART%20PI%20ONE/UBUNTU/Yumi-smartpi1-jammy-server-2024-03-02-2050.img.xz.zip?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
+> **Latest release: v1.6.0** (March 1, 2026) — [All releases on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/latest)
+
+| Distribution | Download |
+|---|---|
+| **Debian 12 Bookworm Server** *(recommended)* | [Yumi-smartpi1-bookworm-debian12-server-2026-03-01-1826.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-bookworm-debian12-server-2026-03-01-1826.img.xz) |
+| **Debian 11 Bullseye Server** | [Yumi-smartpi1-bullseye-debian11-server-2026-03-01-1826.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-bullseye-debian11-server-2026-03-01-1826.img.xz) |
+| **Debian 13 Trixie Server** | [Yumi-smartpi1-trixie-debian13-server-2026-03-01-1826.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-trixie-debian13-server-2026-03-01-1826.img.xz) |
+| **Ubuntu 22.04 Jammy Server** | [Yumi-smartpi1-jammy-ubuntu22.04-server-2026-03-01-1826.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-03-01-1826.img.xz) |
+| **Ubuntu 24.04 Noble Server** | [Yumi-smartpi1-noble-ubuntu24.04-server-2026-03-01-1826.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-noble-ubuntu24.04-server-2026-03-01-1826.img.xz) |
 
 
 ## 1.4.3 Use Etcher to write the Smart Pi One SD Card Image to your microSD card

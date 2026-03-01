@@ -15,7 +15,10 @@ Debian is preferred for its proven stability. Ubuntu shines for its ease of use 
 
 ## Official Images
 You must have a micro SD card but max 128Gb for SMART PI ONE
-[Official images](https://www.dropbox.com/scl/fo/aalul2sy5xriflqh0v038/h?rlkey=x6zccvwdrtmwndpmnx9447bpg&dl=0)
+
+> **Latest release: v1.6.0** (March 1, 2026)
+
+[Official images — GitHub Releases](https://github.com/Yumi-Lab/SmartPi-armbian/releases/latest)
 
 ## Instructions for installing the Linux image
 Once you have downloaded the image of your choice, you will need to transfer this file to a microSD card. You will find a detailed guide for this process in our section that explains how to flash your microSD card with the downloaded image.
