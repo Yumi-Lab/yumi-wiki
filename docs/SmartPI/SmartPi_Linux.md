@@ -1,26 +1,67 @@
-# 1.3 Official Linux Server Image
+# 1.3 Official Linux Image — Smart Pi One
 
-We are proud to offer our own official versions of Linux distributions, specially optimized for our YUMI SMART PI nano-computer:
+Official Armbian-based images optimized for the **YUMI Smart Pi One** (Allwinner H3).
 
-## Debian 12 Bookworm Server (the YUMI team's choice)
-Stability and security: Ideal for environments where reliability is crucial.
-Flexibility: Extensive package catalog for in-depth customization.
-Strong community: Extended support thanks to a large user base.
+---
 
-## Ubuntu Server
-Frequent updates: Quick access to the latest technologies.
-Long-term support (LTS): Versions supported for five years, ideal for businesses.
-Ease of use: User-friendly for beginners, with abundant documentation.
-Debian is preferred for its proven stability. Ubuntu shines for its ease of use and quick access to new features.
+## Requirements
 
-## Official Images
-You must have a micro SD card (4GB minimum, **32GB max** for SMART PI ONE)
+!!! warning "microSD Card Compatibility"
+    - **Minimum:** 4 GB
+    - **Maximum: 32 GB** — larger cards are not supported by the Smart Pi One
 
-> **Latest release: v1.6.0** (March 1, 2026)
+---
 
-[Official images — GitHub Releases](https://github.com/Yumi-Lab/SmartPi-armbian/releases/latest)
+## Latest Release
 
-## Instructions for installing the Linux image
-Once you have downloaded the image of your choice, you will need to transfer this file to a microSD card. You will find a detailed guide for this process in our section that explains how to flash your microSD card with the downloaded image.
+!!! success "v1.6.0 — March 1, 2026"
+    All images are server editions (headless). Choose your preferred Linux distribution below.
 
-We wish you an exciting and enriching exploration with your YUMI SMART PI nano-computer.
+    [:octicons-mark-github-16: View all releases on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/latest){ .md-button .md-button--primary }
+
+---
+
+## Download
+
+=== ":simple-debian: Debian"
+
+    | Version | Status | Download |
+    |---|---|---|
+    | **Debian 12 Bookworm** | :material-star: Recommended | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-bookworm-debian12-server-2026-03-01-1826.img.xz) |
+    | **Debian 11 Bullseye** | Stable (LTS) | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-bullseye-debian11-server-2026-03-01-1826.img.xz) |
+    | **Debian 13 Trixie** | Testing | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-trixie-debian13-server-2026-03-01-1826.img.xz) |
+
+    !!! tip "Which Debian version to choose?"
+        **Bookworm (12)** is the current stable release — use it for any new installation.
+        Bullseye (11) is for existing setups. Trixie (13) is for advanced users who want the latest packages.
+
+=== ":simple-ubuntu: Ubuntu"
+
+    | Version | Status | Download |
+    |---|---|---|
+    | **Ubuntu 22.04 Jammy** | LTS | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-03-01-1826.img.xz) |
+    | **Ubuntu 24.04 Noble** | LTS | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/1.6.0/Yumi-smartpi1-noble-ubuntu24.04-server-2026-03-01-1826.img.xz) |
+
+    !!! tip "Which Ubuntu version to choose?"
+        Both are **Long Term Support (LTS)** versions supported until 2027 and 2029 respectively.
+        **Noble (24.04)** is the most recent — recommended for new installations.
+
+---
+
+## Comparison
+
+| | Debian 12 Bookworm | Ubuntu 24.04 Noble |
+|---|---|---|
+| **Best for** | Stability, servers | Latest packages |
+| **Support** | ~5 years | LTS until 2029 |
+| **Package manager** | apt | apt |
+| **Default shell** | bash | bash |
+| **Recommended** | :material-check-bold: Yes | For advanced users |
+
+---
+
+## Next Step — Flash the image
+
+Once downloaded, flash the image to your microSD card:
+
+[:material-sd: Flash guide — balenaEtcher](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/){ .md-button }
