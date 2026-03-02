@@ -6,18 +6,18 @@
 
 ### Web App
 
-Open the [Yumi App Server ](https://app.yumi-lab.com/accounts/login/) and sign up page in a new browser tab.
+Open the [Yumi App Server ](https://app.yumi-lab.com/accounts/login/){ target=_blank } and sign up page in a new browser tab.
 Sign up with your email, Google or Facebook account. If you have already registered, click the "Sign In" button and sign in to your account.
 
 ![yumiapp](/img/KlipperSmartPad/yumiapp/yumiapp001.png)
 
 ### Mobile App
 
-Download the Yumi App from the [Apple App Store](https://apps.apple.com/fr/app/yumi-lab/id6477959422) or  [Google Play Store ](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share).
+Download the Yumi App from the [Apple App Store](https://apps.apple.com/fr/app/yumi-lab/id6477959422){ target=_blank } or  [Google Play Store ](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share){ target=_blank }.
 
-[![yumiapp](/img/KlipperSmartPad/yumiapp/googleplay001.png)](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share "Redirect to Play Store")
+[![yumiapp](/img/KlipperSmartPad/yumiapp/googleplay001.png)](https://play.google.com/store/apps/details?id=com.yumilab.android&pcampaignid=web_share "Redirect to Play Store"){ target=_blank }
 
-[![yumiapp](/img/KlipperSmartPad/yumiapp/apple001.png)](https://apps.apple.com/fr/app/yumi-lab/id6477959422 "Redirect to Apple Store")
+[![yumiapp](/img/KlipperSmartPad/yumiapp/apple001.png)](https://apps.apple.com/fr/app/yumi-lab/id6477959422 "Redirect to Apple Store"){ target=_blank }
 
 Open the mobile app. Click through the first time tour and then tap “Let’s Go!”.
 Simply tap "YES!" on the "Hardware Required" screen.

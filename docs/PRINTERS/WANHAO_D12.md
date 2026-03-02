@@ -18,7 +18,7 @@ If everything checks out, navigate to `Settings` > `About` to view all the detai
 
 ![WANHAO D12 230/300/400/500 update to klipper](/img/Printers/Wanhao/wanhao_D12_Marlin2_to_klipper.png)
 
-Visit the GIT HUB YUMI-CONFIG: [https://github.com/Yumi-Lab/yumi-config](https://github.com/Yumi-Lab/yumi-config).
+Visit the GIT HUB YUMI-CONFIG: [https://github.com/Yumi-Lab/yumi-config](https://github.com/Yumi-Lab/yumi-config){ target=_blank }.
 
 Download the file `printer.cfg` and the Klipper firmware *.bin according to the Marlin2 Screen 'ABOUT' menu.
 ![WANHAO D12 230/300/400/500 update to klipper](/img/Printers/Wanhao/wanhao_d12_github_yumi-config.png)

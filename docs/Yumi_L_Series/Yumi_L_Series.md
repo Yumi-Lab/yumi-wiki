@@ -88,6 +88,6 @@ You can use this file to test engraving or cutting on your YUMI L Series machine
 
 # Purchase YUMI L Series (Laser)
 You can order your YUMI Laser directly from our official store:  
-**[Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908)**
+**[Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908){ target=_blank }**
 
 

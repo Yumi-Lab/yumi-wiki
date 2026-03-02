@@ -10,7 +10,7 @@ The complete illustrated assembly instructions are available in PDF format.
 ## 1.4.1 Assembly Manual (PDF)
 
 Click here to download the official assembly guide:  
-[**YUMI L Series (Laser) Assembly Guide**](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1)
+[**YUMI L Series (Laser) Assembly Guide**](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1){ target=_blank }
 
 ---
 

@@ -3,7 +3,7 @@
 ![Smart PI One - Wifi](../../img/SmartPi/SmartPi_Connect_Wifi/SmartPi_Connect_Wifi_1.png)
 
 ## Prerequisites:
-- **Smart Pi One**: Ensure your Smart Pi One is powered on and has a Wi-Fi module or [dongle](https://wanhao-europe.com/collections/yumi-accessoires-diy/products/cle-wifi-compaitble-windows-linux-2-4g) connected.
+- **Smart Pi One**: Ensure your Smart Pi One is powered on and has a Wi-Fi module or [dongle](https://wanhao-europe.com/collections/yumi-accessoires-diy/products/cle-wifi-compaitble-windows-linux-2-4g){ target=_blank } connected.
 - **NetworkManager and `nmcli`**: These should be installed by default on most Linux distributions for Smart Pi One. If not, install them using your package manager.
 
 ## Steps: 

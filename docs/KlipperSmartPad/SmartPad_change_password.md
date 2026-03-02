@@ -4,7 +4,7 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 ### What You Need:
 
-1. **SSH Client**: If you're on Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or Windows Subsystem for Linux. On macOS or Linux, you can use the terminal.
+1. **SSH Client**: If you're on Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){ target=_blank } or Windows Subsystem for Linux. On macOS or Linux, you can use the terminal.
 
 2. **Smartpad's IP address**: You need to know the IP address of your Smartpad to connect to it.
 
@@ -12,11 +12,11 @@ To change your password on smartpad using SSH (Secure Shell), you can follow the
 
 ### 1. Connect to Smartpad via SSH
 
-- **Windows**: [PuTTY](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/) - [Terminal](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/)
+- **Windows**: [PuTTY](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/){ target=_blank } - [Terminal](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/){ target=_blank }
 
-- **Linux**: [Terminal](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/)
+- **Linux**: [Terminal](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/){ target=_blank }
 
-- **macOS**: [Terminal](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/)
+- **macOS**: [Terminal](https://wiki.yumi-lab.com/KlipperSmartPad/SmartPad_connect_ssh/){ target=_blank }
 
 
 ### 2. Changing the Password

@@ -9,7 +9,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ## 1.6.1 - Install LaserGRBL
 
-- Download LaserGRBL from the official website: [https://lasergrbl.com](https://lasergrbl.com)  
+- Download LaserGRBL from the official website: [https://lasergrbl.com](https://lasergrbl.com){ target=_blank }  
 - Install it on your Windows computer (LaserGRBL is Windows-only).
 
 ---

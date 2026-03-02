@@ -10,9 +10,9 @@ Regular lubrication is essential for keeping your printer running smoothly, quie
 
 Before starting the lubrication procedure, make sure you have the correct maintenance products:
 
-- ✅ [Wanhao Maintenance Oil – 30ml (for X/Y)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51357436936532)
-- ✅ [Wanhao Maintenance Grease – 30ml (for Z axis)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358517264724)
-- ✅ Or, get both in the [Wanhao Maintenance Oil & Grease Pack – 2×30ml](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358414799188)
+- ✅ [Wanhao Maintenance Oil – 30ml (for X/Y)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51357436936532){ target=_blank }
+- ✅ [Wanhao Maintenance Grease – 30ml (for Z axis)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358517264724){ target=_blank }
+- ✅ Or, get both in the [Wanhao Maintenance Oil & Grease Pack – 2×30ml](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358414799188){ target=_blank }
 
 !!! info
     These lubricants are safe for 3D printer components and recommended for linear rails and lead screws. Avoid household substitutes.

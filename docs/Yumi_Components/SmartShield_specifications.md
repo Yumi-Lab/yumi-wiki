@@ -5,7 +5,7 @@
 <img src="../../img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_side.png" width="600" alt="Top view"><p align="left">**[Side view]**</p>
 
 ## 1.2.1 Product Description
-[The YUMI SMART SHIELD](https://wanhao-europe.com/en/collections/yumi-retro-gaming/products/yumi-smart-smart-shield-compatible-smart-pi-one) introduces dedicated USB-C power connectivity, capable of doubling the power available on the SMART PI ONE for unprecedented performance.
+[The YUMI SMART SHIELD](https://wanhao-europe.com/en/collections/yumi-retro-gaming/products/yumi-smart-smart-shield-compatible-smart-pi-one){ target=_blank } introduces dedicated USB-C power connectivity, capable of doubling the power available on the SMART PI ONE for unprecedented performance.
 Offsetting your GPIO by 45°, thus offering improved accessibility and more intuitive management of your projects. In addition to this ergonomic innovation. 
 
 

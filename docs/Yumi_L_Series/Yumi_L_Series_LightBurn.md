@@ -9,7 +9,7 @@ This guide will walk you through setting up LightBurn for your specific YUMI L S
 
 ## 1.5.1 - Install LightBurn
 
-- Download LightBurn from the official website: [https://lightburnsoftware.com](https://lightburnsoftware.com)  
+- Download LightBurn from the official website: [https://lightburnsoftware.com](https://lightburnsoftware.com){ target=_blank }  
 - Install it on your computer (Windows, macOS, Linux supported).
 
 ---

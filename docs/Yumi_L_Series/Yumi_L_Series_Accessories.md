@@ -21,7 +21,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 **Benefits**: Unlock larger projects without compromising on engraving quality. Expand your creative potential today.
 
-**Purchase link**: [Buy Upgrade Kit](https://wanhao-europe.com/collections/upgrade-laser-1/products/yumi-l-a3-upgrade-pack?variant=511772251589963)
+**Purchase link**: [Buy Upgrade Kit](https://wanhao-europe.com/collections/upgrade-laser-1/products/yumi-l-a3-upgrade-pack?variant=511772251589963){ target=_blank }
 
 ---
 
@@ -40,7 +40,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 * Supports **Air Assist**, improving cutting and engraving quality
 * Easy plug-and-play installation
 
-**Purchase link**: [Buy Air Assist Pump](https://wanhao-europe.com/collections/upgrade-laser-1/products/pompe-a-air-30l-min-pour-laser-yumi-l-a4-l-a3)
+**Purchase link**: [Buy Air Assist Pump](https://wanhao-europe.com/collections/upgrade-laser-1/products/pompe-a-air-30l-min-pour-laser-yumi-l-a4-l-a3){ target=_blank }
 
 ---
 
@@ -68,7 +68,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 * Reduced back reflection
 * Magnetic hold for thin materials
 
-**Purchase link**: [Buy Honeycomb Bed](https://wanhao-europe.com/collections/upgrade-laser-1/products/plateau-de-travail-honey-comb-pour-laser-yumi-l-a4-l-a3?variant=50422470213972)
+**Purchase link**: [Buy Honeycomb Bed](https://wanhao-europe.com/collections/upgrade-laser-1/products/plateau-de-travail-honey-comb-pour-laser-yumi-l-a4-l-a3?variant=50422470213972){ target=_blank }
 
 ---
 
@@ -92,9 +92,9 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 * 20W – heavy-duty cutting and high-speed engraving
 
-  - **Purchase link**: [Buy Laser Head - 5w](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-5-5w-yumi-l-a4-l-a3-pre-commande)
-  - **Purchase link**: [Buy Laser Head - 10W](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-10w-yumi-l-a4-l-a3-pre-commande)
-  - **Purchase link**: [Buy Laser Head - 20W](https://wanhao-europe.com/collections/upgrade-laser-1/products/copie-de-yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=52177025958228)
+  - **Purchase link**: [Buy Laser Head - 5w](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-5-5w-yumi-l-a4-l-a3-pre-commande){ target=_blank }
+  - **Purchase link**: [Buy Laser Head - 10W](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-laser-10w-yumi-l-a4-l-a3-pre-commande){ target=_blank }
+  - **Purchase link**: [Buy Laser Head - 20W](https://wanhao-europe.com/collections/upgrade-laser-1/products/copie-de-yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=52177025958228){ target=_blank }
 
 ---
 
@@ -114,7 +114,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 * Smooth, slip-resistant rollers
 * Easy plug-and-play connection
 
-**Purchase link**: [Buy Rotary Module](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-de-rotation-pour-laser-yumi-l-a4-l-a3)
+**Purchase link**: [Buy Rotary Module](https://wanhao-europe.com/collections/upgrade-laser-1/products/module-de-rotation-pour-laser-yumi-l-a4-l-a3){ target=_blank }
 
 ---
 
@@ -130,7 +130,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 * Laser parameter adjustments
 * Real-time preview
 
-**Purchase link**: [Buy Touchscreen](https://wanhao-europe.com/collections/upgrade-laser-1)
+**Purchase link**: [Buy Touchscreen](https://wanhao-europe.com/collections/upgrade-laser-1){ target=_blank }
 
 ---
 
@@ -147,7 +147,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 * Quick installation
 * Anti-slip pads for stability
 
-**Purchase link**: [Buy Riser Feet](https://wanhao-europe.com/collections/upgrade-laser-1)
+**Purchase link**: [Buy Riser Feet](https://wanhao-europe.com/collections/upgrade-laser-1){ target=_blank }
 
 ---
 
@@ -167,6 +167,6 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 * Built-in ventilation port
 
 
-**Purchase link**: [Buy Enclosure](https://wanhao-europe.com/collections/upgrade-laser-1/products/enclos-de-protection-pour-laser-yumi-l-a4-l-a3)
+**Purchase link**: [Buy Enclosure](https://wanhao-europe.com/collections/upgrade-laser-1/products/enclos-de-protection-pour-laser-yumi-l-a4-l-a3){ target=_blank }
 
 

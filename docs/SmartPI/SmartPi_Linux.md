@@ -138,4 +138,4 @@ Once you have downloaded the image of your choice, follow the [flash guide](Smar
 
 ## Next Step — Flash the image
 
-[:material-sd: Flash guide — balenaEtcher](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/){ .md-button }
+[:material-sd: Flash guide — balenaEtcher](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/){ .md-button target=_blank }

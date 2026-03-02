@@ -20,7 +20,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 **1. Download and Install PuTTY**:
 
-- Visit the [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+- Visit the [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){ target=_blank }.
 - Download and install the appropriate version for your system.
 
 **2. Open PuTTY**:

@@ -4,7 +4,7 @@
 
 ##  1. Overview
 
-The [YUMI 3D Pen](https://wanhao-europe.com/en/products/yumi-stylo-3d-3d-pen-enfant-children?variant=49236914995540) is the ultimate tool for creators of all ages, from curious children to DIY enthusiasts and artists. With its ergonomic design and advanced features, the YUMI 3D Pen provides an easy and enjoyable 3D drawing experience for beginners and experts alike. 
+The [YUMI 3D Pen](https://wanhao-europe.com/en/products/yumi-stylo-3d-3d-pen-enfant-children?variant=49236914995540){ target=_blank } is the ultimate tool for creators of all ages, from curious children to DIY enthusiasts and artists. With its ergonomic design and advanced features, the YUMI 3D Pen provides an easy and enjoyable 3D drawing experience for beginners and experts alike. 
 
 Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and tastes.
 
@@ -87,5 +87,5 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 
 
 ## Where to Buy the YUMI 3D Pen
-- **[Official Store - Wanhao Europe](https://wanhao-europe.com/)**  
+- **[Official Store - Wanhao Europe](https://wanhao-europe.com/){ target=_blank }**  
   Buy directly from the official Wanhao Europe.
