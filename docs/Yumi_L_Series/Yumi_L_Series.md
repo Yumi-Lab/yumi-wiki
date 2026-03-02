@@ -9,7 +9,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 ---
 
-## **Available Models**
+## 1. Available Models
 
 <table style="width:100%; text-align:center; border-collapse: collapse;">
   <tr>
@@ -34,7 +34,7 @@ Compact, modular, and powerful, these machines combine large working areas, mult
 
 --- 
 
-## Quick Start
+## 2. Quick Start
 
 
 ### [1.2 Overview & Specifications](Yumi_L_Series_Overview.md)
@@ -66,7 +66,7 @@ Detailed breakdown of optional modules and kits: rotary, honeycomb bed, extra he
 
 --- 
 
-## Troubleshooting
+## 3. Troubleshooting
 List of common issues, causes, and solutions for YUMI L Series operation. 
 
 - [Laser Does Not Turn On](Yumi_L_Series_Troubleshooting.md#laser-does-not-turn-on)
@@ -78,7 +78,7 @@ List of common issues, causes, and solutions for YUMI L Series operation.
 
 --- 
 
-## G-code Sample for Testing
+## 4. G-code Sample for Testing
 
 You can use this file to test engraving or cutting on your YUMI L Series machine. Make sure to follow safety precautions and material guidelines.
 
@@ -86,7 +86,7 @@ You can use this file to test engraving or cutting on your YUMI L Series machine
 
 ---
 
-## Purchase YUMI L Series (Laser)
+## 5. Purchase YUMI L Series (Laser)
 You can order your YUMI Laser directly from our official store:  
 **[Buy YUMI Laser on Wanhao Europe](https://wanhao-europe.com/collections/laser/products/yumi-l-a4-laser-pour-gravure-et-decoupe-pre-commande?variant=48130514157908){ target=_blank }**
 

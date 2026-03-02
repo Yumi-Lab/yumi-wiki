@@ -111,7 +111,7 @@
 </style>
 
 
-## LaserGRBL: Free, Powerful, and Easy to Use
+## 1. LaserGRBL: Free, Powerful, and Easy to Use
 
 <style>
 .lasergrbl-container {
@@ -192,7 +192,7 @@
 </div>
 </div>
 </div>
-## Prepare and Test Your Engraving
+## 2. Prepare and Test Your Engraving
 
 <div class="product-grid">
 <!-- Produit 1 -->
