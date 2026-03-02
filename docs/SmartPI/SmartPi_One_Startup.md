@@ -76,9 +76,15 @@ sudo apt update && sudo apt upgrade -y
 ![smartpi_one_startup_4](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_4.png)
 
 ## 9. Initial Configuration
-- **Change Password**: For security, change the default password. Follow the instructions in the [Password Change Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Change_Password/){ target=_blank }.
-- **Set the Timezone**: Make sure the timezone is set correctly by following the [Timezone Configuration Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_ConfigureTimeZone/){ target=_blank }.
-- **Connect to Wi-Fi**: If using Wi-Fi, refer to the [Wi-Fi Connection Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Connect_Wifi/){ target=_blank } to set it up.
+
+### Change Password
+For security, change the default password. Follow the instructions in the [Password Change Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Change_Password/){ target=_blank }.
+
+### Set the Timezone
+Make sure the timezone is set correctly by following the [Timezone Configuration Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_ConfigureTimeZone/){ target=_blank }.
+
+### Connect to Wi-Fi
+If using Wi-Fi, refer to the [Wi-Fi Connection Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Connect_Wifi/){ target=_blank } to set it up.
 
 ## 10. Basic Commands
 Familiarize yourself with essential commands to manage your board effectively. Visit the [Basic Commands Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Basic_Commands/){ target=_blank } for useful commands such as shutting down, rebooting, and file management.
