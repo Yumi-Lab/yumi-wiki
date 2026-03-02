@@ -111,7 +111,7 @@
 </style>
 
 
-<h2 style="text-align: center;" data-end="1025" data-start="975">LaserGRBL: Free, Powerful, and Easy to Use</h2>
+## LaserGRBL: Free, Powerful, and Easy to Use
 
 <style>
 .lasergrbl-container {
@@ -192,7 +192,7 @@
 </div>
 </div>
 </div>
-<h2 style="text-align: center;" data-start="1856" data-end="1900">Prepare and Test Your Engraving</h2>
+## Prepare and Test Your Engraving
 
 <div class="product-grid">
 <!-- Produit 1 -->
