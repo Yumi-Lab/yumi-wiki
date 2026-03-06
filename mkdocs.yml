@@ -30,12 +30,15 @@ theme:
     repo: fontawesome/brands/github
     alternate: material/web
   features:
-      #- navigation.tabs
-      #- navigation.expand
+      - navigation.instant
+      - navigation.instant.progress
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.tracking
       - navigation.top
       - navigation.footer
-      # if enabled, the TOC doesn't work for some pages
-      # - toc.integrate
+      - navigation.indexes
+      - content.code.copy
       - search.suggest
       - search.highlight
       - search.share
