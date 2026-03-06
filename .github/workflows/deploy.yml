@@ -34,8 +34,12 @@ jobs:
       # Fix absolute /img/ paths for GitHub Pages subdirectory deployment
       - name: Fix image paths
         run: |
-          find site -name '*.html' -exec sed -i 's|"/img/|"/yumi-wiki/img/|g' {} +
-          find site -name '*.html' -exec sed -i 's|(/img/|(/yumi-wiki/img/|g' {} +
+          echo "Before fix:"
+          grep -r '"/img/' site/index.html || echo "no match in index.html"
+          grep -rl '"/img/' site/ | xargs sed -i 's|"/img/|"/yumi-wiki/img/|g' || true
+          grep -rl "(/img/" site/ | xargs sed -i 's|(/img/|(/yumi-wiki/img/|g' || true
+          echo "After fix:"
+          grep -r '"/img/' site/index.html || echo "fixed - no more /img/ in index.html"
 
       - uses: actions/upload-pages-artifact@v3
         with:
