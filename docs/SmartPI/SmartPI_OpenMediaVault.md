@@ -67,7 +67,7 @@ apt-get install openmediavault
 
 http://Your_IP_Address
 
-![SSH](/img/SmartPi/OMV/OMV002.png)
+![SSH](/img/SmartPi/OMV/OMV002.webp)
 
 
 The default logins are :

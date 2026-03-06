@@ -50,15 +50,15 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 **Compatibility**:
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A4-400X400.png" width="250" alt="YUMI - Honeycombs L-A4 400X400.">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A4-400X400.webp" width="250" alt="YUMI - Honeycombs L-A4 400X400.">
 
 * A4 model bed size: 210 × 297 mm
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A3-525X525.png" width="250" alt="YUMI - Honeycombs L-A3 525X525">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A3-525X525.webp" width="250" alt="YUMI - Honeycombs L-A3 525X525">
 
 * A3 model bed size: 420 × 297 mm
 
-<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A2-705X705.png" width="250" alt="YUMI - Honeycombs L-A2 705X705">
+<img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/honeycombs-L-A2-705X705.webp" width="250" alt="YUMI - Honeycombs L-A2 705X705">
 
 * A2 model bed size: 420 × 594 mm
 

@@ -1,6 +1,6 @@
 # 4.2 Dual Color D12 230
 
-![Dualcolor](/img/KlipperSmartPad/DualColorD12/D12dual.png)
+![Dualcolor](/img/KlipperSmartPad/DualColorD12/D12dual.webp)
 
 How do I use the D12 230 dual?
 
@@ -84,20 +84,20 @@ STL: https://github.com/Yumi-Lab/yumi-wiki/blob/main/stl/D12_purge/PURGE_D12_v2.
 
 To fit, remove the 2 screws from the X axis on the right, install the bleed system and replace the 2 screws.
 
-![Dualcolorpurge](/img/KlipperSmartPad/DualColorD12/purge001screws.png)
+![Dualcolorpurge](/img/KlipperSmartPad/DualColorD12/purge001screws.webp)
 
 
 
 To clean the nozzle, use silicone sheeting(1) which you stick in the space provided and use aluminium tape(2) to help the drain down.
 
-![Dualcolorpurge](/img/KlipperSmartPad/DualColorD12/purge001tapesili.png)
+![Dualcolorpurge](/img/KlipperSmartPad/DualColorD12/purge001tapesili.webp)
 
 
 ### Filament preparation
 
 You must insert the 2 filaments at this limit
 
-![Dualcolororca](/img/KlipperSmartPad/DualColorD12/dualprepafilament001.png)
+![Dualcolororca](/img/KlipperSmartPad/DualColorD12/dualprepafilament001.webp)
 
 
 ### Slice
