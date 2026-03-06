@@ -27,9 +27,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: cp -r img docs/img
-
       - run: mkdocs build
+
+      - run: cp -r img site/img
+
+      # Fix absolute /img/ paths for GitHub Pages subdirectory deployment
+      - name: Fix image paths
+        run: find site -name '*.html' -exec sed -i 's|="/img/|="/yumi-wiki/img/|g; s|(/img/|(/yumi-wiki/img/|g' {} +
 
       - uses: actions/upload-pages-artifact@v3
         with:
