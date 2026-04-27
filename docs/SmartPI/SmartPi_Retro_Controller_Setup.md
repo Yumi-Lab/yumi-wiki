@@ -1,4 +1,4 @@
-# Controller Setup for RetroMi / RetroPie
+# 2.2.1 Controller Setup for RetroMi / RetroPie
 
 ![controller setup](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
 
@@ -8,18 +8,20 @@ Setting up your game controller is one of the first steps after installing Retro
 
 This guide covers the initial configuration, hotkey shortcuts, and supported controller types.
 
-## First Boot — Controller Detection
+## 2.2.1.1 First Boot — Controller Detection
 
 When EmulationStation starts for the first time, you will see the following screen:
 
-> **"WELCOME — 1 GAMEPADS DETECTED. HOLD A BUTTON ON YOUR DEVICE TO CONFIGURE IT."**
+![controller detection](/img/SmartPi/Retro_Gaming/controllers/controller-configuration.png)
 
 **Press and hold any button** on your gamepad (or keyboard). The device name will appear at the bottom of the screen, then EmulationStation will open the button mapping wizard.
+
+![controller name detected](/img/SmartPi/Retro_Gaming/controllers/controller-configuration2.png)
 
 !!! tip
     If you are using a keyboard, press and hold any key to start configuration.
 
-## Button Mapping
+## 2.2.1.2 Button Mapping
 
 Follow the on-screen prompts to assign each button one by one. EmulationStation will ask you to press the corresponding button on your controller for:
 
@@ -50,15 +52,21 @@ Follow the on-screen prompts to assign each button one by one. EmulationStation 
 
 Once all buttons are mapped, press **A** on the "OK" prompt to save.
 
-## Supported Controller Layouts
+![configuration complete](/img/SmartPi/Retro_Gaming/controllers/controller-configuration3.png)
+
+## 2.2.1.3 Supported Controller Layouts
 
 RetroMi works with most USB and Bluetooth controllers. Below are the most common layouts:
 
 ### SNES-style Controllers
 
+![SNES controller layout](/img/SmartPi/Retro_Gaming/controllers/snes-controller.png)
+
 Classic layout with D-pad, 4 face buttons (A/B/X/Y), Start, Select, and two shoulder buttons (L/R). Ideal for 8-bit and 16-bit consoles.
 
 ### Xbox-style Controllers (Xbox 360 / Xbox One / Xbox Series)
+
+![Xbox 360 controller layout](/img/SmartPi/Retro_Gaming/controllers/xbox-360-controller.png)
 
 Full layout with D-pad, 4 face buttons, 2 analog sticks, 2 shoulder buttons (LB/RB), 2 triggers (LT/RT), and Start/Select (Menu/View). The **Xbox button** can be used as the Hotkey.
 
@@ -66,6 +74,8 @@ Full layout with D-pad, 4 face buttons, 2 analog sticks, 2 shoulder buttons (LB/
     Xbox controllers using the **xpadneo** driver are supported out of the box on RetroMi. Simply plug in the USB dongle or pair via Bluetooth.
 
 ### PlayStation-style Controllers (DS3 / DS4 / DualSense)
+
+![PS3 controller layout](/img/SmartPi/Retro_Gaming/controllers/ps3-controller.png)
 
 Full layout with D-pad, 4 face buttons (Cross/Circle/Triangle/Square), 2 analog sticks, L1/R1, L2/R2, L3/R3, and Share/Options. The **PS button** can be used as the Hotkey.
 
@@ -76,7 +86,7 @@ Full layout with D-pad, 4 face buttons (Cross/Circle/Triangle/Square), 2 analog 
 
 Most modern 8BitDo controllers use **XInput mode** (Xbox layout) by default. Hold the correct button combination when powering on to select the mode — refer to 8BitDo's documentation for your specific model.
 
-## Hotkey Shortcuts
+## 2.2.1.4 Hotkey Shortcuts
 
 The **Hotkey** button (usually SELECT) combined with other buttons gives you quick access to important functions during gameplay:
 
@@ -93,7 +103,7 @@ The **Hotkey** button (usually SELECT) combined with other buttons gives you qui
 !!! warning "Always use Hotkey + Start to exit"
     Never power off the Smart Pi One while a game is running. Always exit the game first using **Hotkey + Start**, then shut down properly from the EmulationStation menu.
 
-## Reconfiguring a Controller
+## 2.2.1.5 Reconfiguring a Controller
 
 If you need to remap your controller at any time:
 
@@ -102,7 +112,7 @@ If you need to remap your controller at any time:
 3. Hold a button on the controller you want to reconfigure
 4. Follow the mapping wizard again
 
-## Using a Keyboard as Controller
+## 2.2.1.6 Using a Keyboard as Controller
 
 A keyboard can be configured as a controller using the same mapping wizard. Common default mappings:
 
@@ -119,7 +129,7 @@ A keyboard can be configured as a controller using the same mapping wizard. Comm
 !!! note
     Keyboard mappings are fully customizable through the same configuration wizard.
 
-## Troubleshooting
+## 2.2.1.7 Troubleshooting
 
 ### Controller not detected
 
