@@ -147,6 +147,7 @@ nav:
     - LINUX LAB PROJECT:  
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
+      - SmartPI/SmartPi_Retro_Controller_Setup.md
       - SmartPI/SmartPi_Home_Assistant.md
       - SmartPI/SmartPI_OpenMediaVault.md
       - SmartPI/SmartPi_Plex_Server.md
