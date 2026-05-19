@@ -32,8 +32,6 @@ theme:
   features:
       - navigation.instant
       - navigation.instant.progress
-      - navigation.tabs
-      - navigation.tabs.sticky
       - navigation.tracking
       - navigation.top
       - navigation.footer
@@ -100,6 +98,14 @@ nav:
   - YUMI C SERIES:
       - Yumi_C_Series/YUMI_C_SERIES.md
       - Yumi_C_Series/YUMI_C_SERIES_Overview.md
+      - Maintenance:
+        - c-series/maintenance/index.md
+        - c-series/maintenance/clean-bed.md
+        - c-series/maintenance/clean-nozzle.md
+        - c-series/maintenance/lube-xy-rails.md
+        - c-series/maintenance/grease-z-leadscrew.md
+        - c-series/maintenance/inspect-belts.md
+        - c-series/maintenance/check-wiring.md
   - YUMI L SERIES (Laser):
     - DOCS:
       - Yumi_L_Series/Yumi_L_Series.md
