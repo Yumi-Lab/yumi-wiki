@@ -1,10 +1,10 @@
-# 1.10 L-A4 Default GRBL Parameters
+# 1.11 L-A4 Default GRBL Parameters
 
 This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.1 Stepper Settings**
+## **1.11.1 Stepper Settings**
 
 <table>
 <thead>
@@ -25,7 +25,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.2 Status / Tolerances**
+## **1.11.2 Status / Tolerances**
 
 <table>
 <thead>
@@ -43,7 +43,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.3 Limits / Homing**
+## **1.11.3 Limits / Homing**
 
 <table>
 <thead>
@@ -65,7 +65,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.4 Spindle / Laser**
+## **1.11.4 Spindle / Laser**
 
 <table>
 <thead>
@@ -86,7 +86,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.5 Axis Travel Resolution**
+## **1.11.5 Axis Travel Resolution**
 
 <table>
 <thead>
@@ -106,7 +106,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.6 Maximum Rate**
+## **1.11.6 Maximum Rate**
 
 <table>
 <thead>
@@ -126,7 +126,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.7 Acceleration**
+## **1.11.7 Acceleration**
 
 <table>
 <thead>
@@ -146,7 +146,7 @@ This table lists the default GRBL parameters of the **YUMI L-A4**.
 
 ---
 
-## **1.10.8 Maximum Travel**
+## **1.11.8 Maximum Travel**
 
 <table>
 <thead>

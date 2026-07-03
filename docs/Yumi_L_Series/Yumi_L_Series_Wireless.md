@@ -1,11 +1,11 @@
-# 1.8 Wireless Control
+# 1.9 Wireless Control
 
 The **YUMI L Series (Lasers)** can be controlled over Wi-Fi without a physical display, using a PC, smartphone, or tablet.
 This section explains how to connect the laser to Wi-Fi, and how to access the **Web Control Interface**.
 
 ---
 
-## 1.8.1 Connection Methods
+## 1.9.1 Connection Methods
 
 ### Method 1 – Serial Command via USB
 
@@ -107,7 +107,7 @@ This section explains how to connect the laser to Wi-Fi, and how to access the *
 
 ---
 
-## 1.8.2 Accessing the Web Control Interface
+## 1.9.2 Accessing the Web Control Interface
 
 Once the laser is connected to Wi-Fi and the IP address is obtained:
 
@@ -122,7 +122,7 @@ Once the laser is connected to Wi-Fi and the IP address is obtained:
   <img src="../../img/Yumi_L_Series/Yumi_L_Series_Wireless/Yumi_L_Series_Wireless_11.png" width="600" alt="Web control panel interface">
 
 
-## 1.8.3 Web Control Panel Features
+## 1.9.3 Web Control Panel Features
 
 Below are examples of the Web Control Panel showing key functions:
 
@@ -145,7 +145,7 @@ Below are examples of the Web Control Panel showing key functions:
 
 ---
 
-## 1.8.3 Tips for Stable Wireless Use
+## 1.9.4 Tips for Stable Wireless Use
 
 * Keep the laser close to your Wi-Fi router
 * Avoid congested Wi-Fi channels

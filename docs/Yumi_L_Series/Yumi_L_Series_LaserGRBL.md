@@ -1,4 +1,4 @@
-# 1.6 LaserGRBL Setup and First Engraving
+# 1.7 LaserGRBL Setup and First Engraving
 
 **LaserGRBL** is a free, open-source software designed to control GRBL-based laser engravers such as the YUMI Laser.  
 This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A2), select the laser power module, and perform your first engraving.
@@ -7,14 +7,14 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.1 - Install LaserGRBL
+## 1.7.1 - Install LaserGRBL
 
 - Download LaserGRBL from the official website: [https://lasergrbl.com](https://lasergrbl.com){ target=_blank }  
 - Install it on your Windows computer (LaserGRBL is Windows-only).
 
 ---
 
-## 1.6.2 - Connect Your YUMI Laser
+## 1.7.2 - Connect Your YUMI Laser
 
 - Power on your YUMI Laser.  
 - Connect it to your computer via **USB cable**.  
@@ -22,7 +22,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.3 - Configure LaserGRBL for Your Model
+## 1.7.3 - Configure LaserGRBL for Your Model
 
 - Open **LaserGRBL**.  
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_LaserGRBL/Yumi_L_Series_LaserGRBL_02.png" width="600" alt="LaserGRBL Interface">
@@ -47,7 +47,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.4 - Load a Test File
+## 1.7.4 - Load a Test File
 
 - Click **File** next to the **Open File** field and select a test file (`.nc`, `.svg`, or `.bmp`). 
 
@@ -61,7 +61,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.5 - Set Laser Power
+## 1.7.5 - Set Laser Power
 
 - In LaserGRBL, laser power is expressed as a percentage of the maximum PWM value.  
 - Recommended starting values:  
@@ -74,7 +74,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.6 - Position & Focus the Laser
+## 1.7.6 - Position & Focus the Laser
 
 - Move the laser head manually over the workpiece.  
 - Place the **5 mm spacer** on the surface.  
@@ -92,7 +92,7 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.7 - Position the Workpiece
+## 1.7.7 - Position the Workpiece
 
 - Click **Move to Center** → laser moves to design center.  
 - Click **Light Laser** → weak beam shows engraving center. Adjust material if needed. 
@@ -109,13 +109,13 @@ This guide explains how to configure LaserGRBL for your model (L-A4 / L-A3 / L-A
 
 ---
 
-## 1.6.8 - Enable Air Assist (Optional)
+## 1.7.8 - Enable Air Assist (Optional)
 
 - If equipped, turn on **Air Assist** to improve cutting quality and reduce burn marks.  
 
 ---
 
-## 1.6.9 - Start Engraving
+## 1.7.9 - Start Engraving
 
 - Verify speed, power, and focus.  
 - Click **Start** to begin engraving.  
