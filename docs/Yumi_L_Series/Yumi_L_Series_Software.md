@@ -41,7 +41,8 @@ The reference free and open-source software for GRBL laser engravers. Excellent 
 - **Price**: free and open source
 - **Best for**: beginners on Windows, image engraving
 
-➡️ Setup guide: [1.7 LaserGRBL Setup and Usage](Yumi_L_Series_LaserGRBL.md)
+➡️ Setup guide: [1.7 LaserGRBL Setup and Usage](Yumi_L_Series_LaserGRBL.md)  
+➡️ Tutorials: [LaserGRBL step-by-step](Tuto/Yumi_L_LaserGRBL.md) · [Cork engraving with LaserGRBL](Tuto/Yumi_L_Cork_Engraving.md)
 
 ---
 
