@@ -99,7 +99,7 @@ This section lists common issues encountered during the operation of the **YUMI 
 **Solutions:**
 
 1. Use the supplied USB cable or a known good one.
-2. Select the correct COM port in LightBurn or LaserGRBL.
+2. Select the correct COM port in LightBurn, LaserGRBL, or OpenBurn Laser.
 3. Install the CH340 driver.
 4. Switch to USB mode if needed.
 

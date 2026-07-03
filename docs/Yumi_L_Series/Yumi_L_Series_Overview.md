@@ -49,7 +49,7 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 - **Large-format working areas** with a compact, portable design
 - **Air Assist included (30 L/min)** for cleaner cuts and engravings
 - **Low noise level** for comfortable operation
-- **Software compatibility**: LaserGRBL and LightBurn
+- **Software compatibility**: LaserGRBL, LightBurn, and OpenBurn Laser (free)
 - **Rich accessory ecosystem**: rotary module, honeycomb bed, touchscreen, risers, enclosure, lens kits
 
 ---
@@ -63,7 +63,7 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 | **Processor**     | 32-bit |
 | **Laser Modules** | 2.5W / 5.5W / 10W / 20W |
 | **Air Assist**    | Yes, 30 L/min pump included |
-| **Software**      | LaserGRBL, LightBurn |
+| **Software**      | LaserGRBL, LightBurn, OpenBurn Laser |
 | **Connectivity**  | USB, MicroSD card (side access) |
 | **Power Supply**  | 12V adapter included |
 | **Noise Level**   | Low |

@@ -1,10 +1,10 @@
-# 1.8 Diode Laser Maintenance
+# 1.9 Diode Laser Maintenance
 
 Proper maintenance ensures consistent performance, longer lifespan, and safe operation of your **YUMI L Series (Lasers)**.
 
 ---
 
-## 1.8.1 Cleaning the Optics
+## 1.9.1 Cleaning the Optics
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_LaserGRBL/Yumi_L_Series_LaserGRBL_10.png" width="250" alt="LaserGRBL Work Area Preview">
 
@@ -19,7 +19,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.2 Checking the Laser Module
+## 1.9.2 Checking the Laser Module
 
 
 **Frequency:** Monthly
@@ -32,7 +32,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.3 Air Assist (If Installed)
+## 1.9.3 Air Assist (If Installed)
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_05.png" width="370" alt="Belt Tension Adjustment">
 
@@ -45,7 +45,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.4 Safety Checks
+## 1.9.4 Safety Checks
 
 **Frequency:** Before each session
 
@@ -56,7 +56,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.5 Belt Tension Check
+## 1.9.5 Belt Tension Check
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_03.png" width="370" alt="Belt Tension Adjustment">
 
@@ -71,7 +71,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.6 Enclosure Maintenance (If Installed)
+## 1.9.6 Enclosure Maintenance (If Installed)
 
 <img src="../../img/Yumi_L_Series/Yumi_L_Series_Accessories/L-A4-Enclosure.png" width="300" alt="L-A4 Enclosure">
 
@@ -86,7 +86,7 @@ Proper maintenance ensures consistent performance, longer lifespan, and safe ope
 
 ---
 
-## 1.8.7 Tips for Longevity
+## 1.9.7 Tips for Longevity
 
 * Keep optics clean.
 * Avoid exceeding recommended power for materials.
