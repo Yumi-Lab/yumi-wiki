@@ -110,6 +110,8 @@ nav:
         - c-series/maintenance/inspect-belts.md
         - c-series/maintenance/check-wiring.md
   - YUMI L SERIES (Laser):
+    - SOFTWARE:
+      - Yumi_L_Series/Yumi_L_Series_Software.md
     - DOCS:
       - Yumi_L_Series/Yumi_L_Series.md
       - Yumi_L_Series/Yumi_L_Series_Overview.md
@@ -122,8 +124,6 @@ nav:
       - Yumi_L_Series/Yumi_L_Series_Maintenance.md
       - Yumi_L_Series/Yumi_L_Series_LA4_Parameters.md
       - Yumi_L_Series/Yumi_L_Series_Accessories.md
-    - SOFTWARE:
-      - Yumi_L_Series/Yumi_L_Series_Software.md
     - TUTO:
       - Yumi_L_Series/Tuto/Yumi_L_Safety.md
       - Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md
