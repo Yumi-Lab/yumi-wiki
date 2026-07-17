@@ -54,8 +54,9 @@ In agent mode, Grok CLI can read and edit files and run commands on the board �
 
 ## 6. Notes
 
-- Because Grok runs under emulation, generation is slower than native — expect roughly ~40 seconds for a response on reference hardware, with the CPU peaking near 78 °C under restricted core allocation.
-- CPU allocation is configurable with the `GROK_CPUS` environment variable (default `0,1,2,3`) to balance speed against heat and system responsiveness — e.g. `GROK_CPUS=0,1 grok`.
+- **Performance (measured on the H3):** ~1.3 s startup · `grok models` ~12 s · one-shot generation ~40 s · 68 °C idle, 78 °C peak on 2 cores.
+- **Thermals:** because Grok runs under emulation, sustained loads run hot — a 4-core run once drove the H3 to ~102 °C and froze the machine. CPU allocation is set with `GROK_CPUS` (default `0,1,2,3` = all 4 cores); on a fanless board use `GROK_CPUS=0,1` to throttle without reinstalling.
 - **Do not run `grok update`.** A self-update would fetch a 64-bit binary that cannot run on the board — to update, re-run the installer (`install.sh`) instead.
 - Grok's native TUI is unstable under emulation, so the interactive interface is rebuilt on top of Grok's headless streaming mode (`grok-tui`) for reliability.
+- **`earlyoom`** is enabled as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT; the vendored QEMU is GPL-2.0; the official Grok binary is downloaded from xAI at install time and remains subject to xAI's terms.

@@ -15,7 +15,7 @@ Moonshot's official installer has no 32-bit ARM build, but the `kimi-cli` PyPI p
 - `armv7l` / 32-bit ARM SBC with at least **1 GB RAM**
 - A Debian-based Linux distribution (tested on the Smart Pad — Debian 13 trixie armhf, Python 3.13)
 - `~/.local/bin` on your `$PATH`
-- A **Kimi account** (Moonshot AI) — sign in with OAuth or an API key
+- A **Kimi Code plan** (OAuth sign-in) **or** a Moonshot **`KIMI_API_KEY`**
 
 ## 3. Installation
 
@@ -37,11 +37,23 @@ KIMI_BUILD_CPUS=0,1 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/kimi-c
 
 ## 4. Authentication
 
+Two ways to authenticate — OAuth with your Kimi Code plan, or a Moonshot API key.
+
+### OAuth device flow (Kimi Code plan, no API key)
+
 ```bash
-kimi login
+kimi login          # add --json to stream the OAuth events as JSON lines
 ```
 
-Follow the OAuth prompt, or provide an API key. Credentials are stored in `~/.kimi/`.
+It prints a verification URL and a short code. Open the URL in a browser on **any** machine, approve it on your Kimi account, and the CLI polls and completes automatically — no local browser needed.
+
+### API key (Moonshot platform, pay-as-you-go)
+
+```bash
+export KIMI_API_KEY=sk-...
+```
+
+Create keys at [platform.moonshot.ai](https://platform.moonshot.ai){ target=_blank } (or the `.cn` console).
 
 ## 5. Usage
 
@@ -50,7 +62,7 @@ Follow the OAuth prompt, or provide an API key. Credentials are stored in `~/.ki
 | `kimi` | Full interactive agent TUI (native execution) |
 | `kimi -p "your question"` | Start from a prompt, then continue interactively |
 | `kimi --quiet -p "your task"` | One-shot mode — final answer only |
-| `kimi login` | Sign in to your Kimi account |
+| `kimi login` | Sign in — OAuth device flow (Kimi Code plan); or set `KIMI_API_KEY` |
 | `kimi --version` | Version check (~0.9 s) |
 
 In agent mode, Kimi CLI can read and edit files and run commands on the board — useful for scripting the GPIO sensors, configuring services, or working through Smart Pi projects.
@@ -70,5 +82,6 @@ KIMI_CPUS=0,1 kimi -p "explain this error"
 
 - **Native, no emulation:** unlike Grok CLI (which runs under QEMU), Kimi CLI runs directly as a Python tool. Startup is fast (~0.9 s); one-shot latency is bounded by Moonshot's remote inference, not the board.
 - **Updating Kimi:** do **not** re-run `uv tool install kimi-cli` over an existing install. Update with `uv tool upgrade kimi-cli`, then re-run the installer once to restore the YUMI-LAB wrappers.
-- **CPU control:** `KIMI_BUILD_CPUS` bounds the one-time compile; `KIMI_CPUS` bounds the running agent. Both default to 4 cores.
+- **CPU control:** `KIMI_BUILD_CPUS` bounds the one-time compile; `KIMI_CPUS` bounds the running agent. Both default to all 4 cores — set them to `0,1` on a fanless board.
+- **`earlyoom`** is installed as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT (YUMI-LAB); Kimi CLI itself remains subject to Moonshot AI's terms and is installed from the official PyPI package at runtime.

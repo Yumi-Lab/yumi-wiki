@@ -160,8 +160,8 @@ nav:
       - SmartPI/AI/AI_Overview.md
       - SmartPI/AI/SmartPi_AI_Claude_Code.md
       - SmartPI/AI/SmartPi_AI_Grok_CLI.md
-      - SmartPI/AI/SmartPi_AI_Vibe_CLI.md
       - SmartPI/AI/SmartPi_AI_Kimi_CLI.md
+      - SmartPI/AI/SmartPi_AI_Vibe_CLI.md
     - LINUX LAB PROJECT:
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md

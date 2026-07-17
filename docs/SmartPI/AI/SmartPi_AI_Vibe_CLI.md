@@ -96,5 +96,6 @@ VIBE_CPUS=0,1 vibe -p "explain this error"
 
 - **Thin client:** your code and prompts are sent to Mistral's servers for inference. No large model runs on the board.
 - **Thermals:** the one-time install compile is the hot part (~87 °C peak); at rest the board sits around 68–70 °C. On a fanless board, cap the compile with `VIBE_BUILD_CPUS`.
-- **Cold start:** the Python runtime adds a few seconds of startup latency per invocation (e.g. a version check takes ~7 s).
+- **Performance (measured on the H3):** first install ~14 min (2 cores) · `vibe --version` ~6.8 s · one-shot `vibe -p` ~20–21 s (of which ~17 s is the Python client cold start on the A7).
+- **`earlyoom`** is installed as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT (YUMI-LAB); Mistral Vibe itself remains subject to Mistral AI's terms and is installed from the official distribution at runtime.
