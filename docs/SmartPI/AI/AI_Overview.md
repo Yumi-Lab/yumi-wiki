@@ -10,13 +10,16 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 
 [![Vibe CLI on Smart Pi One](/img/SmartPi/AI/vibe-cli-banner.svg)](SmartPi_AI_Vibe_CLI.md)
 
+[![Kimi CLI on Smart Pi One](/img/SmartPi/AI/kimi-cli-banner.svg)](SmartPi_AI_Kimi_CLI.md)
+
 | Tool | Provider | Sign-in | Guide |
 | --- | --- | --- | --- |
 | ![](/img/SmartPi/AI/claude-logo.svg){ .off-glb width="18" } **Claude Code** | Anthropic | Claude Pro or Max account (no API key) | [Claude Code](SmartPi_AI_Claude_Code.md) |
 | ![](/img/SmartPi/AI/grok-logo.svg){ .off-glb width="18" } **Grok CLI** | xAI | grok.com / SuperGrok account (no API key) | [Grok CLI](SmartPi_AI_Grok_CLI.md) |
 | ![](/img/SmartPi/AI/mistral-logo.svg){ .off-glb width="18" } **Vibe CLI** | Mistral AI | Mistral API key | [Vibe CLI](SmartPi_AI_Vibe_CLI.md) |
+| ![](/img/SmartPi/AI/kimi-logo.svg){ .off-glb width="18" } **Kimi CLI** | Moonshot AI | Kimi account (OAuth or API key) | [Kimi CLI](SmartPi_AI_Kimi_CLI.md) |
 
-**Claude Code** and **Grok CLI** sign in with your existing subscription account through a browser-based flow — no API key, no separate developer billing. **Vibe CLI** instead uses a Mistral API key (created at [console.mistral.ai](https://console.mistral.ai/){ target=_blank }).
+**Claude Code** and **Grok CLI** sign in with your existing subscription account through a browser-based flow — no API key, no separate developer billing. **Kimi CLI** signs in with a Kimi account (OAuth or an API key). **Vibe CLI** uses a Mistral API key (created at [console.mistral.ai](https://console.mistral.ai/){ target=_blank }).
 
 ## 2. Requirements
 
@@ -24,7 +27,7 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 - `armv7l` / 32-bit ARM CPU (Allwinner H3)
 - At least **1 GB RAM**
 - An active internet connection
-- Access to the matching provider: a **Claude Pro/Max** account (Claude Code), a **grok.com / SuperGrok** account (Grok CLI), or a **Mistral API key** (Vibe CLI)
+- Access to the matching provider: a **Claude Pro/Max** account (Claude Code), a **grok.com / SuperGrok** account (Grok CLI), a **Mistral API key** (Vibe CLI), or a **Kimi account** (Kimi CLI)
 
 ## 3. What can you do with it?
 
@@ -42,5 +45,6 @@ All three give you an interactive terminal UI and one-shot (`-p "question"`) que
 - Choose **[Claude Code](SmartPi_AI_Claude_Code.md)** if you have a Claude Pro or Max account. It runs natively (no emulation) and is the fastest.
 - Choose **[Grok CLI](SmartPi_AI_Grok_CLI.md)** if you have a grok.com / SuperGrok account. It runs the official binary under lightweight QEMU emulation.
 - Choose **[Vibe CLI](SmartPi_AI_Vibe_CLI.md)** if you have a Mistral API key. It's a thin client — inference runs on Mistral's servers, so it's light on the board (but the first install compiles for ~15 min).
+- Choose **[Kimi CLI](SmartPi_AI_Kimi_CLI.md)** if you have a Kimi account. It installs natively as a pure-Python tool and starts fast (~0.9 s).
 
-Nothing stops you from installing all three.
+Nothing stops you from installing all of them.
