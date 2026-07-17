@@ -1,5 +1,7 @@
 # Grok CLI on Smart Pi One
 
+![Grok CLI on Smart Pi One](/img/SmartPi/AI/grok-cli-banner.svg){ .off-glb }
+
 [Grok CLI](https://github.com/Yumi-Lab/grok-cli-smartpi){ target=_blank } is xAI's official Grok command-line assistant, packaged by YUMI-LAB to run on the 32-bit ARM (Allwinner H3 / armv7l) Smart Pi One and Smart Pad — hardware the standard installer normally rejects as unsupported.
 
 > **Repository:** [github.com/Yumi-Lab/grok-cli-smartpi](https://github.com/Yumi-Lab/grok-cli-smartpi){ target=_blank }
@@ -46,6 +48,9 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 | `grok models` | Show your account and available model information |
 
 In agent mode, Grok CLI can read and edit files and run commands on the board — useful for scripting the GPIO sensors, configuring services, or working through Smart Pi projects.
+
+![Example Grok CLI session on a Smart Pi One](/img/SmartPi/AI/grok-cli-terminal.svg){ .off-glb }
+*Example session (illustration).*
 
 ## 6. Notes
 

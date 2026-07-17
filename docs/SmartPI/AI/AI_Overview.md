@@ -4,10 +4,14 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 
 ## 1. Available AI Assistants
 
+[![Claude Code on Smart Pi One](/img/SmartPi/AI/claude-code-banner.svg)](SmartPi_AI_Claude_Code.md)
+
+[![Grok CLI on Smart Pi One](/img/SmartPi/AI/grok-cli-banner.svg)](SmartPi_AI_Grok_CLI.md)
+
 | Tool | Provider | Account needed | Guide |
 | --- | --- | --- | --- |
-| **Claude Code** | Anthropic | Claude Pro or Max | [Claude Code](SmartPi_AI_Claude_Code.md) |
-| **Grok CLI** | xAI | grok.com / SuperGrok | [Grok CLI](SmartPi_AI_Grok_CLI.md) |
+| ![](/img/SmartPi/AI/claude-logo.svg){ .off-glb width="18" } **Claude Code** | Anthropic | Claude Pro or Max | [Claude Code](SmartPi_AI_Claude_Code.md) |
+| ![](/img/SmartPi/AI/grok-logo.svg){ .off-glb width="18" } **Grok CLI** | xAI | grok.com / SuperGrok | [Grok CLI](SmartPi_AI_Grok_CLI.md) |
 
 Both tools run **without an API key** — you sign in with your existing subscription account through a browser-based authentication flow, so no billing is tied to a separate developer key.
 

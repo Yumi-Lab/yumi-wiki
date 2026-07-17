@@ -1,5 +1,7 @@
 # Claude Code on Smart Pi One
 
+![Claude Code on Smart Pi One](/img/SmartPi/AI/claude-code-banner.svg){ .off-glb }
+
 [Claude Code](https://github.com/Yumi-Lab/claude-code-smartpi){ target=_blank } is Anthropic's official AI coding assistant, adapted by YUMI-LAB to run **natively** on the 32-bit ARM (armv7l) Smart Pi One and Smart Pad — hardware the standard installer rejects as incompatible.
 
 > **Repository:** [github.com/Yumi-Lab/claude-code-smartpi](https://github.com/Yumi-Lab/claude-code-smartpi){ target=_blank }
@@ -54,6 +56,9 @@ The generated token is valid for **one year**.
 | `claude-token-save <token>` | Save your authentication token |
 
 In agent mode, Claude Code can read and edit files and run commands on the board — ideal for writing GPIO scripts, configuring services, or debugging your Smart Pi projects.
+
+![Example Claude Code session on a Smart Pi One](/img/SmartPi/AI/claude-code-terminal.svg){ .off-glb }
+*Example session (illustration).*
 
 ## 6. Notes
 
