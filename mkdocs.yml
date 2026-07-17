@@ -156,7 +156,11 @@ nav:
       #- SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_Sound_Detection_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control.md
-    - LINUX LAB PROJECT:  
+    - AI:
+      - SmartPI/AI/AI_Overview.md
+      - SmartPI/AI/SmartPi_AI_Claude_Code.md
+      - SmartPI/AI/SmartPi_AI_Grok_CLI.md
+    - LINUX LAB PROJECT:
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
       - SmartPI/SmartPi_Retro_Controller_Setup.md
