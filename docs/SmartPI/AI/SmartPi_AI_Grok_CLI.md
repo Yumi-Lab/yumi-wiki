@@ -41,7 +41,7 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 
 | Command | Purpose |
 | --- | --- |
-| `grok` | Interactive full interface with menu navigation and live streaming |
+| `grok` | Interactive interface — menu navigation, live streaming, session resume (++ctrl+s++), scrolling, interrupt (++esc++) |
 | `grok -p "your question"` | Single-shot answer, with agent mode enabled |
 | `grok-live -p "your task"` | Streaming output with visible reasoning |
 | `grok-chat` | Minimal conversation REPL |
@@ -55,5 +55,7 @@ In agent mode, Grok CLI can read and edit files and run commands on the board �
 ## 6. Notes
 
 - Because Grok runs under emulation, generation is slower than native — expect roughly ~40 seconds for a response on reference hardware, with the CPU peaking near 78 °C under restricted core allocation.
-- CPU allocation is configurable with the `GROK_CPUS` environment variable to balance speed against heat and system responsiveness.
+- CPU allocation is configurable with the `GROK_CPUS` environment variable (default `0,1,2,3`) to balance speed against heat and system responsiveness — e.g. `GROK_CPUS=0,1 grok`.
+- **Do not run `grok update`.** A self-update would fetch a 64-bit binary that cannot run on the board — to update, re-run the installer (`install.sh`) instead.
+- Grok's native TUI is unstable under emulation, so the interactive interface is rebuilt on top of Grok's headless streaming mode (`grok-tui`) for reliability.
 - Licensing: the installer scripts are MIT; the vendored QEMU is GPL-2.0; the official Grok binary is downloaded from xAI at install time and remains subject to xAI's terms.

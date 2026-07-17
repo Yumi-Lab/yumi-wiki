@@ -53,7 +53,8 @@ The generated token is valid for **one year**.
 | `claude` | Interactive assistant with the full terminal UI |
 | `claude -p "your question"` | Single-shot answer, with agent mode enabled |
 | `claude setup-token` | Start the OAuth authentication flow |
-| `claude-token-save <token>` | Save your authentication token |
+| `claude-token-save <token>` | Save your authentication token (to `~/.claude/`) |
+| `CLAUDE_CPUS=0,1 claude …` | Pin Claude to specific CPU cores (keeps the board cool and responsive) |
 
 In agent mode, Claude Code can read and edit files and run commands on the board — ideal for writing GPIO scripts, configuring services, or debugging your Smart Pi projects.
 
@@ -64,4 +65,5 @@ In agent mode, Claude Code can read and edit files and run commands on the board
 
 - **Auto-update is disabled on purpose.** Do not upgrade Claude Code past 2.1.112 — newer versions are 64-bit only and will not run on the Smart Pi One.
 - Two environment variables enable 32-bit compatibility: `USE_BUILTIN_RIPGREP=0` (use the system `ripgrep`) and `DISABLE_AUTOUPDATER=1` (prevent an incompatible downgrade/upgrade).
+- **CPU control:** prefix any command with `CLAUDE_CPUS` to pin Claude to specific cores (the counterpart of `GROK_CPUS` / `KIMI_CPUS`), e.g. `CLAUDE_CPUS=0,1 claude`.
 - The installer scripts are MIT-licensed; Claude Code itself remains subject to Anthropic's terms, as it is installed from official sources.
