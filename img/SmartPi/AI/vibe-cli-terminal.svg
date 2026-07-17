@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-label="Vibe CLI example terminal session">
+  <rect x="1" y="1" width="898" height="318" rx="14" fill="#0d1117" stroke="#2a2f39" stroke-width="1.5"/>
+  <path d="M1 15 a14 14 0 0 1 14 -14 h870 a14 14 0 0 1 14 14 v26 h-898 z" fill="#161b22"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="21" r="6" fill="#28c840"/>
+  <text x="450" y="26" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7d8590">yumi@smartpi: ~ &#8212; Vibe CLI (Mistral)</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16.5">
+    <text x="26" y="86"><tspan fill="#3fb950">yumi@smartpi</tspan><tspan fill="#7d8590">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#c9d1d9">$ vibe -p </tspan><tspan fill="#a5d6ff">"add a --verbose flag to backup.sh"</tspan></text>
+    <text x="26" y="128"><tspan fill="#ff8205">&#9670; Vibe </tspan><tspan fill="#8b949e"> &#183; mistral-vibe-cli-latest</tspan></text>
+    <text x="26" y="158" fill="#8b949e">  Editing backup.sh &#8230;  added -v|--verbose parsing and</text>
+    <text x="26" y="184" fill="#8b949e">  gated the echo lines behind $VERBOSE. Review the diff</text>
+    <text x="26" y="210" fill="#8b949e">  and approve to write.</text>
+    <text x="26" y="252"><tspan fill="#3fb950">&#10003;</tspan><tspan fill="#8b949e"> applied  &#183;  inference on Mistral servers  &#183;  thin client</tspan></text>
+    <text x="26" y="288"><tspan fill="#3fb950">yumi@smartpi</tspan><tspan fill="#7d8590">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#c9d1d9">$ </tspan><tspan fill="#c9d1d9">&#9608;</tspan></text>
+  </g>
+</svg>
