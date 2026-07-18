@@ -19,8 +19,8 @@
   <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14">
     <rect x="194" y="132" width="214" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
     <text x="210" y="150"><tspan fill="#D97757">armv7l</tspan><tspan fill="#8b8f99">  &#183;  Smart Pi One</tspan></text>
-    <rect x="418" y="132" width="268" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
-    <text x="434" y="150" fill="#c9cdd6">No API key &#183; Claude Pro / Max</text>
+    <rect x="418" y="132" width="150" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="434" y="150" fill="#c9cdd6">Claude account</text>
   </g>
   <text x="872" y="34" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#5b6270">YUMI&#183;LAB</text>
 </svg>

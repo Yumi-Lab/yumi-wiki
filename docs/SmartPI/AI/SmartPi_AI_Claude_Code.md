@@ -8,15 +8,12 @@
 
 ## 1. How it works
 
-There are **two install channels** — both run under Debian's own Node (no emulation), and neither needs a token or account to install:
+Two install channels — both run natively (no emulation) and neither needs a token or account to install. The installer does all the work on the board:
 
-- **Latest** — *any* current version (2.1.2xx…). Since 2.1.113 the official CLI ships as a Bun-compiled binary (64-bit only), but its readable JavaScript is embedded inside. The installer downloads the **official public binary** (~240 MB, no token), **extracts that JS on your device**, lowers the one modern syntax it uses (`using` declarations) to Node 20 with `esbuild --target=node20`, and runs it under Debian's Node 20 with a small (~15-function) Bun→Node shim. Re-run the installer to update.
-- **Pinned** — **2.1.112**, the last npm release distributed as pure JavaScript. Lightest option (no big download), runs on any board with Node.js ≥ 18. This is the fallback channel.
+- **Latest** — installs the newest Claude Code version. Re-run the installer any time to update.
+- **Pinned** — **2.1.112**, the lightest option (small pure-JS install), and the fallback channel.
 
-Every launch goes through a small `taskset … nice -n 5` wrapper that runs Claude on all 4 cores at low priority by default.
-
-!!! note "The old “never go past 2.1.112” rule is gone"
-    Earlier this page said 2.1.112 was the ceiling on 32-bit. That was only because there was no known way to run the newer Bun binaries — the on-device extract-and-lower method above now runs the latest versions fine.
+Every launch runs through a small `taskset … nice -n 5` wrapper (all 4 cores at low priority by default; throttle with `CLAUDE_CPUS`).
 
 ## 2. Requirements
 
@@ -31,7 +28,7 @@ Every launch goes through a small `taskset … nice -n 5` wrapper that runs Clau
 
 Pick a channel and run its one-liner on your Smart Pi One.
 
-**Latest version** — downloads the official binary, extracts and builds it on-device:
+**Latest version** — installs the newest Claude Code:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/claude-code-smartpi/main/install-latest.sh | bash
