@@ -89,8 +89,8 @@ VIBE_BUILD_CPUS=0,1 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/vibe-c
 VIBE_CPUS=0,1 vibe -p "explain this error"
 ```
 
-![Example Vibe CLI session on a Smart Pi One](/img/SmartPi/AI/vibe-cli-terminal.svg){ .off-glb }
-*Example session (illustration).*
+![Vibe CLI interface on a Smart Pi One](/img/SmartPi/AI/vibe-cli-terminal.svg){ .off-glb }
+*Live interface captured on a Yumi board (armv7l, Yumi OS 26.05).*
 
 ## 6. Notes
 

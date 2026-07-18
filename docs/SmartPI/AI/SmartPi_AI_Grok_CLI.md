@@ -49,8 +49,8 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 
 In agent mode, Grok CLI can read and edit files and run commands on the board — useful for scripting the GPIO sensors, configuring services, or working through Smart Pi projects.
 
-![Example Grok CLI session on a Smart Pi One](/img/SmartPi/AI/grok-cli-terminal.svg){ .off-glb }
-*Example session (illustration).*
+![Grok CLI interface on a Smart Pi One](/img/SmartPi/AI/grok-cli-terminal.svg){ .off-glb }
+*Live interface captured on a Yumi board (armv7l, Yumi OS 26.05).*
 
 ## 6. Notes
 

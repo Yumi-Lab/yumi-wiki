@@ -78,8 +78,8 @@ The generated token is valid for **one year**.
 
 In agent mode, Claude Code can read and edit files and run commands on the board — ideal for writing GPIO scripts, configuring services, or debugging your Smart Pi projects.
 
-![Example Claude Code session on a Smart Pi One](/img/SmartPi/AI/claude-code-terminal.svg){ .off-glb }
-*Example session (illustration).*
+![Claude Code CLI interface on a Smart Pi One](/img/SmartPi/AI/claude-code-terminal.svg){ .off-glb }
+*Live interface captured on a Yumi board (armv7l, Yumi OS 26.05).*
 
 ## 6. Notes
 
