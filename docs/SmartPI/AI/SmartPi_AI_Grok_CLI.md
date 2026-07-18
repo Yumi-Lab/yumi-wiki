@@ -15,7 +15,7 @@ The official Grok CLI is a static Rust binary built for 64-bit ARM. This project
 - `armv7l` / 32-bit ARM CPU (Allwinner H3)
 - At least **1 GB RAM** recommended
 - A Debian-based Linux distribution (tested on the Smart Pad — 4× Cortex-A7 @ 1.2 GHz, 1 GB RAM, Debian 13)
-- A **grok.com / SuperGrok** account (no API key needed)
+- An **X (x.com)** or **grok.com / SuperGrok** account — a standard X subscription works; no API key needed
 
 ## 3. Installation
 
@@ -29,7 +29,7 @@ The installer downloads the official Grok binary from xAI at install time, along
 
 ## 4. Authentication
 
-Grok CLI signs in with your grok.com / SuperGrok account through a device-flow authorization — no API key required, and no browser needed on the board itself.
+Grok CLI signs in with your X (x.com) / grok.com account through a device-flow authorization — a standard X subscription works, no API key required, and no browser needed on the board itself.
 
 ```bash
 grok login --device-auth

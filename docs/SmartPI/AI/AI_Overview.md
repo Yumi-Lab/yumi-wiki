@@ -16,8 +16,8 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 
 | Tool | Runs on the board | Sign-in | Core throttle | Repository |
 | --- | --- | --- | --- | --- |
-| ![](/img/SmartPi/AI/claude-logo.svg){ .off-glb width="18" } **[Claude Code CLI](SmartPi_AI_Claude_Code.md)** | **Native** — Node.js, no emulation | Claude Pro/Max account (OAuth, no API key) | `CLAUDE_CPUS` | [claude-code-smartpi](https://github.com/Yumi-Lab/claude-code-smartpi){ target=_blank } |
-| ![](/img/SmartPi/AI/grok-logo.svg){ .off-glb width="18" } **[Grok CLI](SmartPi_AI_Grok_CLI.md)** | **Emulated** — QEMU user-mode (aarch64) | grok.com / SuperGrok account (device-auth, no API key) | `GROK_CPUS` | [grok-cli-smartpi](https://github.com/Yumi-Lab/grok-cli-smartpi){ target=_blank } |
+| ![](/img/SmartPi/AI/claude-logo.svg){ .off-glb width="18" } **[Claude Code CLI](SmartPi_AI_Claude_Code.md)** | **Native** — Node.js, no emulation (latest, or pinned 2.1.112) | Claude Pro/Max account (OAuth, no API key) | `CLAUDE_CPUS` | [claude-code-smartpi](https://github.com/Yumi-Lab/claude-code-smartpi){ target=_blank } |
+| ![](/img/SmartPi/AI/grok-logo.svg){ .off-glb width="18" } **[Grok CLI](SmartPi_AI_Grok_CLI.md)** | **Emulated** — QEMU user-mode (aarch64) | X (x.com) / grok.com account (device-auth, no API key) | `GROK_CPUS` | [grok-cli-smartpi](https://github.com/Yumi-Lab/grok-cli-smartpi){ target=_blank } |
 | ![](/img/SmartPi/AI/kimi-logo.svg){ .off-glb width="18" } **[Kimi CLI](SmartPi_AI_Kimi_CLI.md)** | **Native** — Python via uv | Kimi Code plan (OAuth) or `KIMI_API_KEY` | `KIMI_CPUS` + `KIMI_BUILD_CPUS` | [kimi-cli-smartpi](https://github.com/Yumi-Lab/kimi-cli-smartpi){ target=_blank } |
 | ![](/img/SmartPi/AI/mistral-logo.svg){ .off-glb width="18" } **[Vibe CLI](SmartPi_AI_Vibe_CLI.md)** | **Native** — Python thin client | Mistral browser sign-in (PKCE) or `MISTRAL_API_KEY` | `VIBE_CPUS` + `VIBE_BUILD_CPUS` | [vibe-cli-smartpi](https://github.com/Yumi-Lab/vibe-cli-smartpi){ target=_blank } |
 
@@ -30,8 +30,8 @@ Each CLI ships a `taskset` / `nice` wrapper. **All core knobs default to all 4 c
 Each tool installs with a single command on the board (run as a normal user, not root):
 
 ```bash
-# Claude Code
-curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/claude-code-smartpi/main/install.sh | bash
+# Claude Code CLI — latest (or use install.sh for the pinned 2.1.112 fallback)
+curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/claude-code-smartpi/main/install-latest.sh | bash
 
 # Grok CLI
 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/grok-cli-smartpi/main/install.sh | bash
@@ -51,7 +51,7 @@ On a fanless board, prefix the Kimi/Vibe installers with the build knob, e.g. `K
 - `armv7l` / 32-bit ARM CPU (Allwinner H3)
 - At least **1 GB RAM**
 - An active internet connection
-- Access to the matching provider: a **Claude Pro/Max** account (Claude Code), a **grok.com / SuperGrok** account (Grok CLI), a **Kimi Code plan or API key** (Kimi CLI), or a **Mistral account or API key** (Vibe CLI)
+- Access to the matching provider: a **Claude Pro/Max** account (Claude Code), an **X (x.com) or grok.com / SuperGrok** account (Grok CLI), a **Kimi Code plan or API key** (Kimi CLI), or a **Mistral account or API key** (Vibe CLI)
 
 ## 5. What can you do with it?
 
@@ -66,8 +66,8 @@ These assistants run in **agent mode**: they can read and write files, run shell
 
 All four give you an interactive terminal UI and one-shot (`-p "question"`) query mode. Pick the one that matches the account or key you already have:
 
-- Choose **[Claude Code CLI](SmartPi_AI_Claude_Code.md)** if you have a Claude Pro or Max account. It runs natively as a Node.js tool (no emulation).
-- Choose **[Grok CLI](SmartPi_AI_Grok_CLI.md)** if you have a grok.com / SuperGrok account. It runs the official binary under lightweight QEMU emulation — watch thermals on long runs.
+- Choose **[Claude Code CLI](SmartPi_AI_Claude_Code.md)** if you have a Claude Pro or Max account. It runs natively as a Node.js tool (no emulation) — the *latest* channel builds the newest version on-device, or use the lightweight pinned 2.1.112.
+- Choose **[Grok CLI](SmartPi_AI_Grok_CLI.md)** if you have an X (x.com) or grok.com / SuperGrok account. It runs the official binary under lightweight QEMU emulation — watch thermals on long runs.
 - Choose **[Kimi CLI](SmartPi_AI_Kimi_CLI.md)** if you have a Kimi Code plan (or a Moonshot API key). It installs natively as a pure-Python tool and starts fastest (~0.9 s).
 - Choose **[Vibe CLI](SmartPi_AI_Vibe_CLI.md)** if you have a Mistral account (or API key). It's a thin client — inference runs on Mistral's servers, so it's light on the board (but the first install compiles for ~14 min).
 

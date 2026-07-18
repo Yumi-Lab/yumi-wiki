@@ -8,25 +8,48 @@
 
 ## 1. How it works
 
-Claude Code version **2.1.112** is the last npm release distributed as pure JavaScript — later versions switched to 64-bit-only Bun binaries. This project pins that version, so it runs on any board with Node.js ≥ 18, **with no emulation** — it executes directly on the CPU. Every launch goes through a small `taskset … nice -n 5` wrapper that runs Claude on all 4 cores at low priority by default.
+There are **two install channels** — both run under Debian's own Node (no emulation), and neither needs a token or account to install:
+
+- **Latest** — *any* current version (2.1.2xx…). Since 2.1.113 the official CLI ships as a Bun-compiled binary (64-bit only), but its readable JavaScript is embedded inside. The installer downloads the **official public binary** (~240 MB, no token), **extracts that JS on your device**, lowers the one modern syntax it uses (`using` declarations) to Node 20 with `esbuild --target=node20`, and runs it under Debian's Node 20 with a small (~15-function) Bun→Node shim. Re-run the installer to update.
+- **Pinned** — **2.1.112**, the last npm release distributed as pure JavaScript. Lightest option (no big download), runs on any board with Node.js ≥ 18. This is the fallback channel.
+
+Every launch goes through a small `taskset … nice -n 5` wrapper that runs Claude on all 4 cores at low priority by default.
+
+!!! note "The old “never go past 2.1.112” rule is gone"
+    Earlier this page said 2.1.112 was the ceiling on 32-bit. That was only because there was no known way to run the newer Bun binaries — the on-device extract-and-lower method above now runs the latest versions fine.
 
 ## 2. Requirements
 
-- Node.js **≥ 18**
 - `armv7l` / 32-bit ARM CPU (Allwinner H3)
 - At least **1 GB RAM**
 - A Debian-based Linux distribution
+    - **Latest** channel: **Node.js ≥ 20** (Debian 13 trixie armhf ships 20.x) plus `npm` and `ripgrep` — the installer adds them
+    - **Pinned** channel: **Node.js ≥ 18**
 - A **Claude Pro or Max** account (no API key needed)
 
 ## 3. Installation
 
-Run the one-line installer on your Smart Pi One:
+Pick a channel and run its one-liner on your Smart Pi One.
+
+**Latest version** — downloads the official binary, extracts and builds it on-device:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/claude-code-smartpi/main/install-latest.sh | bash
+```
+
+Re-run it any time to move to the newest version, or pin a specific one:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/claude-code-smartpi/main/install-latest.sh | bash -s -- 2.1.212
+```
+
+**Pinned 2.1.112** — lightest, pure-JS npm, no big download:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/claude-code-smartpi/main/install.sh | bash
 ```
 
-The installer pins version 2.1.112, disables auto-updates (newer releases are 64-bit only), and installs `earlyoom` for memory safety on low-RAM boards.
+Both channels install `earlyoom` for memory safety on the 1 GB board.
 
 ## 4. Authentication
 
@@ -63,9 +86,9 @@ In agent mode, Claude Code can read and edit files and run commands on the board
 
 ## 6. Notes
 
-- **Auto-update is disabled on purpose.** Do not upgrade Claude Code past 2.1.112 — newer versions are 64-bit only and will not run on the Smart Pi One.
-- Two environment variables enable 32-bit compatibility: `USE_BUILTIN_RIPGREP=0` (use the system `ripgrep`) and `DISABLE_AUTOUPDATER=1` (prevent an incompatible downgrade/upgrade).
+- **Updating — latest channel:** re-run `install-latest.sh`; it fetches and builds the newest version (or `… | bash -s -- 2.1.212` to pin one).
+- **Updating — pinned channel:** intentionally frozen. Do **not** run `claude update` (it would fetch a 64-bit binary); auto-update is disabled. Re-run `install.sh` to refresh it.
 - **CPU control:** prefix any command with `CLAUDE_CPUS` to pin Claude to specific cores (the same knob as `GROK_CPUS` / `KIMI_CPUS`), e.g. `CLAUDE_CPUS=0,1 claude`. Default is all 4 cores.
-- **Performance (measured on the H3):** `claude --version` ~6.6 s · one-shot answer ~23 s · multi-turn agentic sessions stable.
+- **Performance (measured on the H3):** the latest install downloads ~240 MB and runs esbuild once (~30 s); the built version then behaves like the pinned one. Pinned 2.1.112: `claude --version` ~6.6 s · one-shot answer ~23 s · multi-turn sessions stable.
 - **`earlyoom`** is enabled as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
-- The installer scripts are MIT-licensed; Claude Code itself remains subject to Anthropic's terms, as it is installed from official sources.
+- **Licensing:** the scripts, shim, extractor and launcher in the repo are MIT (YUMI-LAB). The pinned build installs from the official npm registry; the latest build downloads the official binary from Anthropic and extracts its JS **locally, on your own device** — the resulting bundle stays on that device, is never redistributed, and remains subject to Anthropic's terms.
