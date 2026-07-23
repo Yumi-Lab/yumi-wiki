@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 484" role="img" aria-label="pi@smartpad: ~ — Kimi Code CLI">
+  <rect x="1" y="1" width="898" height="482" rx="14" fill="#0d1117" stroke="#2a2f39" stroke-width="1.5"/>
+  <path d="M1 15 a14 14 0 0 1 14 -14 h870 a14 14 0 0 1 14 14 v19 h-898 z" fill="#161b22"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="21" r="6" fill="#28c840"/>
+  <text x="450.0" y="26" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7d8590">pi@smartpad: ~ — Kimi Code CLI</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14">
+  <text x="24" y="64" fill="#c9d1d9" xml:space="preserve">   managed:kimi-code · +3 models.</text>
+  <text x="24" y="102" fill="#c9d1d9" xml:space="preserve"> ╭────────────────────────────────────────────────────────────────────────────────────────────────╮</text>
+  <text x="24" y="121" fill="#c9d1d9" xml:space="preserve"> │                                                                                                │</text>
+  <text x="24" y="140" fill="#8b93f8" xml:space="preserve"> │  ▐█▛█▛█▌  Welcome to Kimi Code!                                                                │</text>
+  <text x="24" y="159" fill="#c9d1d9" xml:space="preserve"> │  ▐█████▌  Send /help for help information.                                                     │</text>
+  <text x="24" y="178" fill="#c9d1d9" xml:space="preserve"> │                                                                                                │</text>
+  <text x="24" y="197" fill="#c9d1d9" xml:space="preserve"> │  Directory: /home/pi                                                                           │</text>
+  <text x="24" y="216" fill="#c9d1d9" xml:space="preserve"> │  Session:   session_bffdd9c9-ee19-44dd-b773-026716d4c35f                                       │</text>
+  <text x="24" y="235" fill="#c9d1d9" xml:space="preserve"> │  Model:     kimi-for-coding                                                                    │</text>
+  <text x="24" y="254" fill="#c9d1d9" xml:space="preserve"> │  Version:   0.29.0                                                                             │</text>
+  <text x="24" y="273" fill="#c9d1d9" xml:space="preserve"> │                                                                                                │</text>
+  <text x="24" y="292" fill="#c9d1d9" xml:space="preserve"> ╰────────────────────────────────────────────────────────────────────────────────────────────────╯</text>
+  <text x="24" y="330" fill="#c9d1d9" xml:space="preserve"> ✦ Use Kimi K3 with High thinking effort - for the best balance between token spend and capability</text>
+  <text x="24" y="349" fill="#c9d1d9" xml:space="preserve">   Run /model to switch to K3 and set thinking effort to High</text>
+  <text x="24" y="387" fill="#c9d1d9" xml:space="preserve"> ╭────────────────────────────────────────────────────────────────────────────────────────────────╮</text>
+  <text x="24" y="406" fill="#c9d1d9" xml:space="preserve"> │ &gt;                                                                                              │</text>
+  <text x="24" y="425" fill="#c9d1d9" xml:space="preserve"> ╰────────────────────────────────────────────────────────────────────────────────────────────────╯</text>
+  <text x="24" y="444" fill="#c9d1d9" xml:space="preserve"> kimi-for-coding  ~                             ask Kimi to schedule tasks, e.g. &quot;remind me at 5pm&quot;</text>
+  <text x="24" y="463" fill="#c9d1d9" xml:space="preserve">                                                                               context: 0% (0/256k)</text>
+  </g>
+</svg>
