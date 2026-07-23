@@ -6,23 +6,39 @@
     --md-accent-fg-color:  lightblue;
 }
 
-/img {
-    background-color: white;
-}
-
 .center-image {
     margin: 0 auto;
     display: block;
 }
+
 /* Wider layout than the Material default, but still bounded:
    unbounded width stretches text into unreadable lines on large screens. */
 .md-grid {
     max-width: 1600px;
 }
 
-/* Images never stretch past their design size (banners/terminals are ~900px),
-   and stay fully responsive below that. */
+/* Content images: always responsive, never blown up past a sane size,
+   and softened with rounded corners. Raster photos are capped tighter than
+   the wide SVG banners/terminals so they don't dominate the page. */
 .md-typeset img {
-    max-width: min(100%, 1000px);
+    max-width: 100%;
     height: auto;
+}
+.md-typeset img[src$=".png"],
+.md-typeset img[src$=".jpg"],
+.md-typeset img[src$=".jpeg"],
+.md-typeset img[src$=".webp"] {
+    max-width: min(100%, 760px);
+    display: block;
+    border-radius: 12px;
+}
+.md-typeset img[src$=".svg"] {
+    max-width: min(100%, 960px);
+}
+
+/* Product/overview galleries: uniform, tidy image cards. */
+.md-typeset .grid.cards img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 0 .4rem;
 }

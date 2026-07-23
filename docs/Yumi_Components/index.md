@@ -2,6 +2,34 @@
 
 Add-on boards that extend the Smart Pi One — a touchscreen for display and input, a USB hub for power and connectivity, and a shield for extra power and GPIO access. Each one clips onto the Smart Pi One with no soldering.
 
+<div class="grid cards" markdown>
+
+-   [![Smart LCD Touch 4.3 inch](/img/SmartPi/Yumi_Components/SmartLCD_Touch_4.3inch800x400specifications/yumi-smartlcd-800x430-4.3inch-1.png)](SmartLCD_Touch_4.3inch800x480specifications.md)
+
+    ### Smart LCD Touch 4.3"
+
+    800×480 capacitive touchscreen — also works as a standalone HDMI monitor.
+
+    [:octicons-arrow-right-24: Details](SmartLCD_Touch_4.3inch800x480specifications.md)
+
+-   [![Smart Hub 1 to 4](/img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_top.png)](SmartHub_specifications.md)
+
+    ### Smart Hub 1→4
+
+    One USB input into four outputs, with 5 V injected on every port.
+
+    [:octicons-arrow-right-24: Details](SmartHub_specifications.md)
+
+-   [![Smart Shield](/img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_top.png)](SmartShield_specifications.md)
+
+    ### Smart Shield
+
+    USB-C power (doubles it), 45° GPIO header, UART and ADXL345 breakout.
+
+    [:octicons-arrow-right-24: Details](SmartShield_specifications.md)
+
+</div>
+
 ## At a glance
 
 | Component | What it does | Key interfaces | Size | Weight |
