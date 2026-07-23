@@ -14,7 +14,15 @@
     margin: 0 auto;
     display: block;
 }
-/* Full browser width for content (header, body, footer) */
+/* Wider layout than the Material default, but still bounded:
+   unbounded width stretches text into unreadable lines on large screens. */
 .md-grid {
-    max-width: initial;
+    max-width: 1600px;
+}
+
+/* Images never stretch past their design size (banners/terminals are ~900px),
+   and stay fully responsive below that. */
+.md-typeset img {
+    max-width: min(100%, 1000px);
+    height: auto;
 }
