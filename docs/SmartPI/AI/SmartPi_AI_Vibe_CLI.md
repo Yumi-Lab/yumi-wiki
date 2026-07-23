@@ -8,7 +8,7 @@
 
 ## 1. How it works
 
-Vibe CLI is a **thin client**: the command-line tool runs locally on the board, but the AI inference happens remotely on Mistral's servers (model `mistral-vibe-cli-latest`). This keeps the heavy computation off the low-power Allwinner H3 — the board only handles the agent loop (tool calls, file edits, parsing), so there is **no emulation and no version pinning**. It installs as a native Python package via [uv](https://github.com/astral-sh/uv){ target=_blank }.
+Vibe CLI is a **thin client**: the command-line tool runs locally on the board, but the AI inference happens remotely on Mistral's servers. This keeps the heavy computation off the low-power Allwinner H3 — the board only handles the agent loop (tool calls, file edits, parsing), so there is **no emulation**. It installs as a native Python package via [uv](https://github.com/astral-sh/uv){ target=_blank }, always at the latest published version, and the installer doubles as the updater.
 
 Because inference is remote, response latency is dominated by the Mistral API round-trip rather than the board's CPU.
 
@@ -16,7 +16,7 @@ Because inference is remote, response latency is dominated by the Mistral API ro
 
 - `armv7l` / 32-bit ARM CPU (Allwinner H3 or compatible Cortex-A7)
 - At least **1 GB RAM** (swap protection via `earlyoom`)
-- A Debian-based Linux distribution with build essentials (tested on the Smart Pad — 4× Cortex-A7 @ 1.2 GHz, 1 GB RAM, Debian 13 armhf)
+- A Debian-based Linux distribution with build essentials (tested on the Smart Pad — trixie armhf)
 - A **Mistral account** (browser sign-in) **or** a **Mistral API key** — both managed at [console.mistral.ai](https://console.mistral.ai/){ target=_blank }
 
 ## 3. Installation
@@ -27,7 +27,7 @@ Run the one-line installer on your Smart Pi One **as a normal user (not root)**:
 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/vibe-cli-smartpi/main/install.sh | bash
 ```
 
-The first install compiles a few native dependencies from source and takes **~15 minutes** on the H3 (the compile is core-limited to keep temperatures in check — see [Limiting CPU cores](#limiting-cpu-cores)). The installer adds `~/.local/bin` to your `PATH` via `~/.bashrc` and `~/.profile` — open a new shell afterwards.
+The first install compiles a few native dependencies from source and takes a few minutes on the board (the compile is core-limited to keep temperatures in check — see [Limiting CPU cores](#limiting-cpu-cores)). Re-run the installer any time to update. It adds `~/.local/bin` to your `PATH` via `~/.bashrc` and `~/.profile` — open a new shell afterwards.
 
 ## 4. Authentication
 
@@ -73,7 +73,8 @@ export MISTRAL_API_KEY=sk-...
 | `vibe -c` / `vibe --resume` | Continue or resume the previous session |
 | `vibe --setup` | Sign-in wizard (browser account or API key) |
 | `vibe-signin` | Headless browser sign-in helper (prints the approval URL) |
-| `vibe --check-upgrade` | Check for and install updates |
+| `vibe-check-update` | OTA probe — one JSON line |
+| `VIBE_CPUS=0,1 vibe …` | Pin the running agent to a CPU subset (default = all 4 cores) |
 
 In agent mode, Vibe CLI can read and edit files and run commands on the board — useful for scripting the GPIO sensors, configuring services, or working through Smart Pi projects.
 
@@ -82,10 +83,10 @@ In agent mode, Vibe CLI can read and edit files and run commands on the board �
 Two variables control core usage: `VIBE_BUILD_CPUS` bounds the one-time wheel compilation, and `VIBE_CPUS` bounds the running agent (the counterpart of `GROK_CPUS` / `KIMI_CPUS`).
 
 ```bash
-# Fanless board — cap the install compile to 2 cores (cooler, a bit slower)
+# Cap the install compile (cooler on a passively-cooled board, or frees cores)
 VIBE_BUILD_CPUS=0,1 curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/vibe-cli-smartpi/main/install.sh | bash
 
-# Pin the running agent to 2 cores
+# Pin the running agent to a core subset
 VIBE_CPUS=0,1 vibe -p "explain this error"
 ```
 
@@ -95,7 +96,7 @@ VIBE_CPUS=0,1 vibe -p "explain this error"
 ## 6. Notes
 
 - **Thin client:** your code and prompts are sent to Mistral's servers for inference. No large model runs on the board.
-- **Thermals:** the one-time install compile is the hot part (~87 °C peak); at rest the board sits around 68–70 °C. On a fanless board, cap the compile with `VIBE_BUILD_CPUS`.
-- **Performance (measured on the H3):** first install ~14 min (2 cores) · `vibe --version` ~6.8 s · one-shot `vibe -p` ~20–21 s (of which ~17 s is the Python client cold start on the A7).
+- **Performance:** the one-time install compiles from source and takes a few minutes (it's the hot part — cap it with `VIBE_BUILD_CPUS` to run cooler). Afterwards each launch pays a short Python cold start; inference time is set by Mistral's servers.
+- **Updating:** re-run `install.sh` — that *is* the updater (it upgrades in place). Do **not** run a bare `uv tool upgrade` / `vibe --check-upgrade` install path — it drops the YUMI-LAB `VIBE_CPUS` wrapper; the installer restores it. `vibe-check-update` prints `{installed, latest, update_available}`.
 - **`earlyoom`** is installed as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT (YUMI-LAB); Mistral Vibe itself remains subject to Mistral AI's terms and is installed from the official distribution at runtime.

@@ -11,13 +11,13 @@
 
 ## 1. How it works
 
-The `@moonshot-ai/kimi-code` npm package is **plain JavaScript** (`bin` → `dist/main.mjs`, a 16 MB bundle with no Linux native prebuild), so it runs natively — all it needs is Node ≥ 22.19. Debian trixie ships Node 20, so the installer adds **Node 22 for armv7l** from nodejs.org. The package is installed **non-globally** (`~/.local/lib/kimi-code`), which keeps it unprivileged and prevents it from touching an existing `kimi-cli` install. `earlyoom` is added for memory safety on the 1 GB board.
+The `@moonshot-ai/kimi-code` npm package is **plain JavaScript** (no Linux native prebuild), so it runs natively — all it needs is **Node 22**. Debian trixie ships Node 20, so the installer adds Node 22 for armv7l. The package is installed **non-globally** (`~/.local/lib/kimi-code`), which keeps it unprivileged and prevents it from touching an existing `kimi-cli` install. `earlyoom` is added for memory safety on the 1 GB board.
 
 ## 2. Requirements
 
-- `armv7l` / 32-bit ARM SBC with at least **1 GB RAM** (~200 MB free for Node + the bundle)
-- A Debian-based Linux distribution (tested on the Smart Pad — Yumi 26.05 trixie armhf)
-- **Node ≥ 22.19** — the installer adds Node 22 armv7l if needed
+- `armv7l` / 32-bit ARM SBC with at least **1 GB RAM**
+- A Debian-based Linux distribution (tested on the Smart Pad — trixie armhf)
+- **Node 22** — the installer adds it for armv7l if needed
 - `~/.local/bin` on your `$PATH`
 - A **Kimi account** (OAuth sign-in) **or** an API key (Kimi Code plan / Moonshot platform)
 
@@ -32,7 +32,7 @@ curl -fsSL https://raw.githubusercontent.com/Yumi-Lab/kimi-code-smartpi/main/ins
 The installer **always fetches the newest version published on npm** (re-running it is the update path). To pin or roll back:
 
 ```bash
-KIMI_CODE_VERSION=0.28.0 bash install.sh
+KIMI_CODE_VERSION=<version> bash install.sh
 ```
 
 `~/.local/bin` is added to `~/.bashrc` and `~/.profile` — open a new shell or run `. ~/.profile`.
@@ -102,7 +102,7 @@ kimi-code-daemon-status --json     # {"daemon":true,"running":2,"max":2,"queued"
 ## 6. Updating (OTA)
 
 - **Update:** re-run `install.sh` — that *is* the updater. It resolves the newest npm version, is a no-op when you are already current, and reinstalls the launcher/shims/probes.
-- **Check:** `kimi-code-check-update` prints one JSON line (`{"installed":"0.29.0","latest":"0.30.0","update_available":true}`).
+- **Check:** `kimi-code-check-update` prints one JSON line (`{installed, latest, update_available}`).
 - ⚠️ **Never run `kimi-code upgrade`** (upstream's self-updater) — it downloads a binary release, and there is none for 32-bit ARM.
 - Everything lives under `$HOME` — no sudo after the first install.
 
@@ -115,11 +115,11 @@ Both can live on the same pad, side by side:
 | [Kimi CLI](SmartPi_AI_Kimi_CLI.md) (Python) | `kimi` | `~/.kimi/` | uv tool |
 | **Kimi Code CLI** (TypeScript) | `kimi-code` | `~/.kimi-code/` | npm, `~/.local/lib/kimi-code/` |
 
-The Python CLI stays the **lighter** option on a 1 GB board (~0.9 s start); `kimi-code` is where the new features land, at the cost of a heavier warm start.
+The Python CLI stays the **lighter, faster-to-start** option on a 1 GB board; `kimi-code` is where the new features land, at the cost of a heavier warm start.
 
 ## 8. Notes
 
-- **Performance (Smart Pad, Node 22.22.0, kimi-code 0.29.0):** install ~44 s · `kimi-code --version` ~19.5 s cold / ~12.5 s warm · one-shot `-p` ~18 s · ~140 MB RSS per live runtime. The ~12.5 s warm start is a **one-time cost per session** (parsing the 16 MB bundle on a 1.2 GHz A7) — invisible in an interactive run, amortised by the daemon, but heavy for a loop of fresh one-shots. Prefer one session, or the daemon.
-- **Node ceiling:** there is **no Node 24 build for armv7l**. The Node 22 line (maintained to April 2027) is the only viable runtime, so this port lives as long as kimi-code supports Node 22.
+- **Performance:** the first install downloads a large bundle and takes a few minutes; interactive launches then pay a **one-time warm start per session** (parsing the JS bundle on a slow ARM core), invisible in an interactive run and amortised by the daemon, but heavy for a loop of fresh one-shot `-p` calls — prefer one session, or the daemon. Each live runtime uses a few hundred MB.
+- **Node ceiling:** the port runs on the **Node 22** line (there is no Node 24 build for armv7l), so it lives as long as kimi-code supports Node 22.
 - **`earlyoom`** is installed as a memory safety net. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT (YUMI-LAB); Kimi Code itself is installed from the official npm package (`@moonshot-ai/kimi-code`) at runtime — not redistributed here — and remains subject to Moonshot AI's terms.
