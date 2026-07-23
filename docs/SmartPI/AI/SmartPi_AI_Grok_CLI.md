@@ -8,7 +8,11 @@
 
 ## 1. How it works
 
-The official Grok CLI is a static Rust binary built for 64-bit ARM, so this project runs it through **user-mode QEMU emulation**. Two engines are installed: **YUMI-LAB's QEMU fork** (default — patched for correct 64-bit atomics on the Cortex-A7, which is what keeps the official native TUI and long multi-threaded runs stable) and a **vendored QEMU 7.2** as the automatic fallback (force it with `GROK_QEMU=7.2`). A wrapper runs the emulation at low priority across the cores (`GROK_CPUS`). The installer fetches the latest published Grok and **doubles as the updater** — re-run it to update.
+The official Grok CLI is a static Rust binary built for 64-bit ARM, so this project runs it through **user-mode QEMU emulation**.
+
+The key piece is **YUMI-LAB's own QEMU fork**, patched for correct 64-bit atomics on the Cortex-A7. With stock QEMU those atomics tear, the official interface won't run, and earlier versions of this project had to work around it by **rebuilding the interface** on top of Grok's headless streaming mode. That workaround is no longer needed: on the fork engine you get the **real official Grok interface, unmodified**, and long multi-threaded runs stay stable. A vendored **QEMU 7.2** remains installed as an automatic fallback (force it with `GROK_QEMU=7.2`), where the legacy rebuilt interface still steps in.
+
+A wrapper runs the emulation at low priority across the cores (`GROK_CPUS`). The installer fetches the latest published Grok and **doubles as the updater** — re-run it to update.
 
 Because a cold start pays an emulated bootstrap, a small **warm daemon** keeps one agent process ready so repeat `grok -p` calls answer quickly; it stops itself when idle.
 
@@ -42,7 +46,7 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 
 | Command | Purpose |
 | --- | --- |
-| `grok` | The native interactive TUI — the official interface (falls back to the legacy `grok-tui` on the 7.2 engine or with `GROK_TUI=python`) |
+| `grok` | The **real official Grok interface**, running unmodified — no rebuilt TUI (the legacy rebuilt interface only steps in on the 7.2 fallback engine, or with `GROK_TUI=python`) |
 | `grok -p "your question"` | One-shot answer through the **warm daemon** — fast once warm (`GROK_DAEMON=0` for the old direct behaviour) |
 | `grok-daemon status\|stop` | Inspect / stop the warm agent daemon (stops itself when idle) |
 | `grok-live -p "your task"` | One-shot with readable streaming (dimmed reasoning) |
@@ -64,7 +68,7 @@ Engine selection: the YUMI-LAB QEMU fork is the default; `GROK_QEMU=7.2` forces 
 
 ## 7. Notes
 
-- **Emulated, so mind the start:** a cold one-shot pays an emulated bootstrap and is slow; the **warm daemon** makes repeat `grok -p` calls fast. The interactive TUI stays responsive on the fork engine.
+- **Emulated, so mind the start:** a cold one-shot pays an emulated bootstrap and is slow; the **warm daemon** makes repeat `grok -p` calls fast. On the fork engine the official interface runs unmodified and stays stable over long sessions.
 - **Thermals:** sustained emulated loads run hot and can freeze the board — cap the cores with `GROK_CPUS` (e.g. `GROK_CPUS=0,1`) to run cooler. Default is all 4 cores.
 - **`earlyoom`** is enabled as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT (YUMI-LAB); the vendored QEMU is GPL-2.0; the official Grok binary is downloaded from xAI at install time and is not redistributed here.
