@@ -174,9 +174,10 @@ nav:
       - 3d_pen/index.md
   - "5. YUMI PenScreen":
       - PenScreen/index.md
-  - "6. YUMI others Components":
-    - "6.1 Smart LCD Touch 4.3inch": Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
-    - "6.2 Smart Hub": Yumi_Components/SmartHub_specifications.md
+  - "6. Components & Accessories":
+    - Yumi_Components/index.md
+    - "6.1 Smart LCD Touch 4.3\"": Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
+    - "6.2 Smart Hub 1→4": Yumi_Components/SmartHub_specifications.md
     - "6.3 Smart Shield": Yumi_Components/SmartShield_specifications.md
   - "7. YUMI Klipper SMART PAD":
     - "7.1 Introduction & Specification": KlipperSmartPad/SmartPad_specifications.md

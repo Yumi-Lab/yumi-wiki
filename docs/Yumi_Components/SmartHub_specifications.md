@@ -1,21 +1,36 @@
-# 1.2 Smart Hub
-<img src="../../img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_top.png" width="560" alt="Top view"> <p align="left">**[Top view]**</p>
-<img src="../../img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_bottom.png" width="600" alt="Bottom view"> <p align="left">**[Bottom view]**</p>
+# Smart Hub 1→4
 
-## 1.2.1 Product Description
-The [YUMI SMART HUB 1 to 4](https://wanhao-europe.com/collections/yumi-retro-gaming/products/yumi-smart-smart-shield-compatible-smart-pi-one){ target=_blank } revolutionizes the management of power and connectivity for your devices. With an innovative configuration including 1 USB 2.0 input, 2 standard USB 2.0 outputs and 2 USB 2.0 outputs in 6pin FFC format, this hub stands out for its ability to inject 5V into all USB ports, whether from the inputs or exits. This unique feature not only powers the SMART PI ONE, but also all connected devices, providing unprecedented flexibility in energy management.
+![Smart Hub — top view](/img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_top.png)
+*Top view*
 
-<img src="../../img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_side.png" width="450" alt="Bottom view"> <p align="left">
-### Applications
-* Power and connect multiple USB devices without worry of power management.
-* Flexible configuration of your workspace thanks to the possibility of remote use.
-* Ideal solution for SMART PI ONE users looking to maximize the performance of their device while simplifying power management.
+![Smart Hub — bottom view](/img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_bottom.png)
+*Bottom view*
 
-### Compatibility
-* Compatible with SMART PI ONE and all USB 2.0 powered devices.
-* Expanded functionality with YUMI SMART SHIELD for transformation into a USB-C port.
-* For those looking for an efficient and versatile solution for powering and connecting multiple devices, the YUMI SMART HUB 1 to 4 is the ideal tool. Maximize your productivity and  simplify the management of your devices with this innovative USB hub.
+## 1. Overview
 
-## 1.2.2 Product Parameters
-* **Product Size :** 49.5 mm x 47.5mm
-* **Weight :** 12g
+The [**YUMI Smart Hub 1→4**](https://wanhao-europe.com/collections/yumi-retro-gaming/products/yumi-smart-smart-shield-compatible-smart-pi-one){ target=_blank } turns a single USB 2.0 input into four outputs and **injects 5 V on every port** — inputs and outputs alike. That means it powers the Smart Pi One *and* every device connected to it, so you manage power and connectivity for a whole setup from one small board.
+
+![Smart Hub — side view](/img/SmartPi/Yumi_Components/SmartHub_specifications/smart_hub_usb_1_4_side.png)
+*Side view*
+
+## 2. Key features
+
+- **1× USB 2.0 input → 4 outputs:** 2 standard USB 2.0 ports + 2 in 6-pin FFC format
+- **5 V injected on all ports** — powers the Smart Pi One and connected peripherals
+- Frees you from worrying about per-device power management
+- Supports remote placement for a flexible workspace layout
+- Pairs with the [Smart Shield](SmartShield_specifications.md) to add a USB-C port
+
+## 3. Compatibility
+
+Compatible with the Smart Pi One and any USB 2.0-powered device. Functionality expands with the [YUMI Smart Shield](SmartShield_specifications.md) (adds USB-C).
+
+## 4. Specifications
+
+| | |
+| --- | --- |
+| **Input** | 1× USB 2.0 |
+| **Outputs** | 2× USB 2.0 + 2× USB 2.0 (6-pin FFC) |
+| **Power** | 5 V injected on all ports (inputs and outputs) |
+| **Product size** | 49.5 mm × 47.5 mm |
+| **Weight** | 12 g |

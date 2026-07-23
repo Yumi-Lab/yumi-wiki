@@ -1,33 +1,35 @@
-# 1.3 Smart Shield
-<img src="../../img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_top.png" width="600" alt="Top view"><p align="left">**[Top view]**</p>
+# Smart Shield
 
+![Smart Shield — top view](/img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_top.png)
+*Top view*
 
-<img src="../../img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_side.png" width="600" alt="Top view"><p align="left">**[Side view]**</p>
+![Smart Shield — side view](/img/SmartPi/Yumi_Components/SmartShield_specifications/smart_shield_side.png)
+*Side view*
 
-## 1.2.1 Product Description
-[The YUMI SMART SHIELD](https://wanhao-europe.com/en/collections/yumi-retro-gaming/products/yumi-smart-smart-shield-compatible-smart-pi-one){ target=_blank } introduces dedicated USB-C power connectivity, capable of doubling the power available on the SMART PI ONE for unprecedented performance.
-Offsetting your GPIO by 45°, thus offering improved accessibility and more intuitive management of your projects. In addition to this ergonomic innovation. 
+## 1. Overview
 
+The [**YUMI Smart Shield**](https://wanhao-europe.com/en/collections/yumi-retro-gaming/products/yumi-smart-smart-shield-compatible-smart-pi-one){ target=_blank } adds dedicated **USB-C power** to the Smart Pi One — enough to double the power available to the board for more demanding projects. It also **offsets the GPIO header by 45°** for easier, more intuitive access, and breaks out UART and an ADXL345 connector.
 
+## 2. Key features
 
-### Applications
-Ideal for developers, DIY enthusiasts, and educators looking to fully exploit the potential of SMART PI ONE. Whether for automation or robotics projects, or simply to explore the possibilities offered by the addition of sensors and actuators, the YUMI SMART SHIELD opens new avenues of creation and innovation.
+- **USB-C power input/output** — doubles the power available on the Smart Pi One
+- **GPIO offset by 45°** for improved accessibility
+- Dedicated **ADXL345 sensor** connector
+- **UART1 / UART2** access, plus an **RJ11** connector for UART1
+- Raspberry Pi-compatible 40-pin GPIO
 
-The YUMI SMART SHIELD is the essential accessory for those who want to push the capabilities of the SMART PI ONE to the maximum, simplifying interfacing with sensors and offering a robust and flexible power solution.
+## 3. Compatibility
 
-### Compatibility
- * GPIO 40 pin compatible with Raspberry Pi's GPIO
- * With the YUMI - ADXL345 Sensor: Incorporates a specific connector for the YUMI - ADXL345 sensor, facilitating interfacing and expanding the capabilities of the SMART PI ONE without additional effort.
- * USB-C power input/ouput to double the power on the SMART PI ONE, ensuring stable and efficient power for your most demanding projects. And UART1, UART2.
- * RJ11 a connector for UART1.
+Designed for the Smart Pi One. The 40-pin GPIO is compatible with the Raspberry Pi's GPIO, and the dedicated connector makes wiring the YUMI ADXL345 sensor effortless. Ideal for automation, robotics, and sensor/actuator projects that need stable, higher power.
 
- 
+## 4. Specifications
 
-## 1.2.2 Product Parameters
-* **GPIO:** 2.54mm spacing input 40 pin/Output 40 pin (by 45°) compatible with Raspberry Pi's GPIO
-* **USB2.0 FFC 6 PIN:** input for data transmission, in power input/ouput 5V
-* **MicroUSB-C:** for data transmission, UART1, UART2 and power input/ouput 5V
-* **RJ11 6PIN**: UART1 and power input/ouput 5V
-* **ADXL345**: 6PIN
-* **Product Size:** 11.5 mm x 84 mm
-* **Weight:** 23g
+| Interface | Details |
+| --- | --- |
+| **GPIO** | 40-pin input / 40-pin output (offset 45°), 2.54 mm pitch — Raspberry Pi compatible |
+| **USB 2.0 (FFC 6-pin)** | Data + 5 V power input/output |
+| **Micro USB-C** | Data, UART1, UART2, and 5 V power input/output |
+| **RJ11 (6-pin)** | UART1 + 5 V power input/output |
+| **ADXL345** | 6-pin sensor connector |
+| **Product size** | 11.5 mm × 84 mm |
+| **Weight** | 23 g |
