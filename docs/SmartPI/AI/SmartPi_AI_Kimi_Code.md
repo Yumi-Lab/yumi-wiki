@@ -11,7 +11,7 @@
 
 ## 1. How it works
 
-The `@moonshot-ai/kimi-code` npm package is **plain JavaScript** (no Linux native prebuild), so it runs natively — all it needs is **Node 22**. Debian trixie ships Node 20, so the installer adds Node 22 for armv7l. The package is installed **non-globally** (`~/.local/lib/kimi-code`), which keeps it unprivileged and prevents it from touching an existing `kimi-cli` install. `earlyoom` is added for memory safety on the 1 GB board.
+Kimi Code runs **natively** on the board, always on the **latest version**. One command installs it — including the Node runtime it needs — and the same command updates it. You sign in with your Kimi account, or use an API key. It installs alongside the Python [Kimi CLI](SmartPi_AI_Kimi_CLI.md) without touching it.
 
 ## 2. Requirements
 

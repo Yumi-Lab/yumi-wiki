@@ -8,9 +8,7 @@
 
 ## 1. How it works
 
-Vibe CLI is a **thin client**: the command-line tool runs locally on the board, but the AI inference happens remotely on Mistral's servers. This keeps the heavy computation off the low-power Allwinner H3 — the board only handles the agent loop (tool calls, file edits, parsing), so there is **no emulation**. It installs as a native Python package via [uv](https://github.com/astral-sh/uv){ target=_blank }, always at the latest published version, and the installer doubles as the updater.
-
-Because inference is remote, response latency is dominated by the Mistral API round-trip rather than the board's CPU.
+Vibe CLI runs **natively** on the board, always on the **latest version**. It's a thin client — the AI work happens on Mistral's servers, so the board stays light. One command installs it, and the same command updates it. You sign in with your Mistral account, or use an API key.
 
 ## 2. Requirements
 

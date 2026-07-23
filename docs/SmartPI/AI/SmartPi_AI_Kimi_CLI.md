@@ -8,7 +8,7 @@
 
 ## 1. How it works
 
-Moonshot's official installer has no 32-bit ARM build, but the `kimi-cli` PyPI package ships as a **pure-Python wheel** (`py3-none-any`). YUMI-LAB installs it with [uv](https://github.com/astral-sh/uv){ target=_blank } (`uv tool install kimi-cli`), so Kimi CLI runs **natively — no emulation and no version pinning**. Only a couple of C dependencies (Pillow) compile from source with the armhf toolchain during install; `earlyoom` is added for memory safety on the 1 GB board.
+Kimi CLI runs **natively** on the board, always on the **latest version** — it's the lighter, quickest-to-start of Moonshot's two tools. One command installs it, and the same command updates it. You sign in with your Kimi Code plan, or use an API key.
 
 ## 2. Requirements
 

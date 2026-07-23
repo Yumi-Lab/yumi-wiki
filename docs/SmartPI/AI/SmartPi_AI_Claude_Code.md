@@ -8,7 +8,7 @@
 
 ## 1. How it works
 
-Claude Code runs **natively (no emulation), always on the latest version**. A single installer fetches the newest Claude Code, prepares it to run under the board's own Node, and **doubles as the updater** — re-run it any time to move to the latest. You can pin a specific version if you need to. Sign-in is a Claude Pro/Max account (no API key). Every launch goes through a small `taskset … nice -n 5` wrapper (all 4 cores at low priority by default; throttle with `CLAUDE_CPUS`).
+Claude Code runs **natively** on the board, always on the **latest version**. One command installs it — and the same command updates it. You sign in with your Claude Pro/Max account; no API key needed.
 
 ## 2. Requirements
 

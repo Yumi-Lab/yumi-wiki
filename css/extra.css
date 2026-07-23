@@ -14,3 +14,7 @@
     margin: 0 auto;
     display: block;
 }
+/* Full browser width for content (header, body, footer) */
+.md-grid {
+    max-width: initial;
+}
