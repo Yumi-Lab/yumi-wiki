@@ -98,114 +98,114 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - YUMI C SERIES:
-      - Yumi_C_Series/YUMI_C_SERIES.md
-      - Yumi_C_Series/YUMI_C_SERIES_Overview.md
-      - Maintenance:
+  - "1. YUMI C SERIES":
+      - "1.1 YUMI C SERIES": Yumi_C_Series/YUMI_C_SERIES.md
+      - "1.2 Technical Specifications": Yumi_C_Series/YUMI_C_SERIES_Overview.md
+      - "1.3 Maintenance":
         - c-series/maintenance/index.md
-        - c-series/maintenance/clean-bed.md
-        - c-series/maintenance/clean-nozzle.md
-        - c-series/maintenance/lube-xy-rails.md
-        - c-series/maintenance/grease-z-leadscrew.md
-        - c-series/maintenance/inspect-belts.md
-        - c-series/maintenance/check-wiring.md
-  - YUMI L SERIES (Laser):
-    - SOFTWARE:
-      - Yumi_L_Series/Yumi_L_Series_Software.md
-    - DOCS:
-      - Yumi_L_Series/Yumi_L_Series.md
-      - Yumi_L_Series/Yumi_L_Series_Overview.md
-      - Yumi_L_Series/Yumi_L_Series_Safety.md
-      - Yumi_L_Series/Yumi_L_Series_Assembly.md
-      - Yumi_L_Series/Yumi_L_Series_LightBurn.md
-      - Yumi_L_Series/Yumi_L_Series_LaserGRBL.md
-      - Yumi_L_Series/Yumi_L_Series_OpenBurn.md
-      - Yumi_L_Series/Yumi_L_Series_Wireless.md
-      - Yumi_L_Series/Yumi_L_Series_Maintenance.md
-      - Yumi_L_Series/Yumi_L_Series_LA4_Parameters.md
-      - Yumi_L_Series/Yumi_L_Series_Accessories.md
-    - TUTO:
-      - Yumi_L_Series/Tuto/Yumi_L_Safety.md
-      - Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md
-      - Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md
+        - "1.3.1 Clean Print Bed": c-series/maintenance/clean-bed.md
+        - "1.3.2 Clean Nozzle": c-series/maintenance/clean-nozzle.md
+        - "1.3.3 Lubricate X/Y Rails": c-series/maintenance/lube-xy-rails.md
+        - "1.3.4 Grease Z Lead Screw": c-series/maintenance/grease-z-leadscrew.md
+        - "1.3.5 Inspect Belts": c-series/maintenance/inspect-belts.md
+        - "1.3.6 Check Wiring": c-series/maintenance/check-wiring.md
+  - "2. YUMI L SERIES (Laser)":
+    - "2.1 SOFTWARE":
+      - "2.1.1 Software Overview & Compatibility": Yumi_L_Series/Yumi_L_Series_Software.md
+    - "2.2 DOCS":
+      - "2.2.1 Yumi L Series": Yumi_L_Series/Yumi_L_Series.md
+      - "2.2.2 Overview & Specifications": Yumi_L_Series/Yumi_L_Series_Overview.md
+      - "2.2.3 Safety Guidelines": Yumi_L_Series/Yumi_L_Series_Safety.md
+      - "2.2.4 Assembly & First Setup": Yumi_L_Series/Yumi_L_Series_Assembly.md
+      - "2.2.5 LightBurn Setup and First Engraving": Yumi_L_Series/Yumi_L_Series_LightBurn.md
+      - "2.2.6 LaserGRBL Setup and First Engraving": Yumi_L_Series/Yumi_L_Series_LaserGRBL.md
+      - "2.2.7 OpenBurn Laser Setup and First Engraving": Yumi_L_Series/Yumi_L_Series_OpenBurn.md
+      - "2.2.8 Wireless Control": Yumi_L_Series/Yumi_L_Series_Wireless.md
+      - "2.2.9 Diode Laser Maintenance": Yumi_L_Series/Yumi_L_Series_Maintenance.md
+      - "2.2.10 L-A4 Default GRBL Parameters": Yumi_L_Series/Yumi_L_Series_LA4_Parameters.md
+      - "2.2.11 Accessories & Upgrade Packs": Yumi_L_Series/Yumi_L_Series_Accessories.md
+    - "2.3 TUTO":
+      - "2.3.1 Safety": Yumi_L_Series/Tuto/Yumi_L_Safety.md
+      - "2.3.2 Laser GRBL": Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md
+      - "2.3.3 Cork Engraving": Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md
 
 
-  - YUMI SBC nano-computer:
-    - SMART PI ONE:
-      - SmartPI/SmartPi_One_specifications.md
-      - SmartPI/SmartPi_One_Startup.md
-      - SmartPI/SmartPi_Linux.md
-      - SmartPI/SmartPi_Linux_flash_sd.md
-      - SmartPI/SmartPi_Connect_Ssh.md
-      - SmartPI/SmartPi_Change_Password.md
-      - SmartPI/SmartPi_Basic_Commands.md
-      - SmartPI/SmartPi_ConfigureTimeZone.md
-      - SmartPI/SmartPi_Connect_Wifi.md
-      - SmartPI/SmartPi_Test_Infrared_Sensor.md
-      - SmartPI/SmartPi_Test_USB_Camera.md
-      - SmartPI/Sensors&Modules/SmartPi_Sensors_Modules_Integration.md
-      - SmartPI/Sensors&Modules/SmartPi_Button_Control.md
-      - SmartPI/Sensors&Modules/SmartPi_LED_Control.md
-      - SmartPI/Sensors&Modules/SmartPi_Buzzer_Control.md
-      - SmartPI/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control.md
-      - SmartPI/Sensors&Modules/SmartPi_Photoresistor_Sensor_Control.md
-      - SmartPI/Sensors&Modules/SmartPi_MPU-6050-ADXL345.md
-      - SmartPI/Sensors&Modules/SmartPi_Relay_Control.md
-      - SmartPI/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic.md
+  - "3. YUMI SBC nano-computer":
+    - "3.1 SMART PI ONE":
+      - "3.1.1 Introduction & Specifications": SmartPI/SmartPi_One_specifications.md
+      - "3.1.2 Getting Started with the Smart Pi One": SmartPI/SmartPi_One_Startup.md
+      - "3.1.3 Official Linux Image": SmartPI/SmartPi_Linux.md
+      - "3.1.4 Linux flash Micro SD CARD": SmartPI/SmartPi_Linux_flash_sd.md
+      - "3.1.5 How to connect via SSH on Windows, Mac, and Linux": SmartPI/SmartPi_Connect_Ssh.md
+      - "3.1.6 How to change password": SmartPI/SmartPi_Change_Password.md
+      - "3.1.7 Basic Commands for Using the Smart Pi One Board": SmartPI/SmartPi_Basic_Commands.md
+      - "3.1.8 Change timezone": SmartPI/SmartPi_ConfigureTimeZone.md
+      - "3.1.9 How to connect Wi-Fi": SmartPI/SmartPi_Connect_Wifi.md
+      - "3.1.10 Testing and Using the Infrared Sensor on Smart Pi One": SmartPI/SmartPi_Test_Infrared_Sensor.md
+      - "3.1.11 Testing USB Camera on Smart Pi One": SmartPI/SmartPi_Test_USB_Camera.md
+      - "3.1.12 Sensors & Modules Integration": SmartPI/Sensors&Modules/SmartPi_Sensors_Modules_Integration.md
+      - "3.1.13 Button with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_Button_Control.md
+      - "3.1.14 Controlling an LED via GPIO on Smart Pi One": SmartPI/Sensors&Modules/SmartPi_LED_Control.md
+      - "3.1.15 Using a Buzzer with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_Buzzer_Control.md
+      - "3.1.16 Obstacle IR Sensor with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_IR_Obstacle_Sensor_Control.md
+      - "3.1.17 Photoresistor with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_Photoresistor_Sensor_Control.md
+      - "3.1.18 How to Test the MPU-6050 and ADXL345 Sensors on Smart Pi One (Python and C)": SmartPI/Sensors&Modules/SmartPi_MPU-6050-ADXL345.md
+      - "3.1.19 Activating a Relay on Smart Pi One": SmartPI/Sensors&Modules/SmartPi_Relay_Control.md
+      - "3.1.20 Using an Ultrasonic Sensor with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic.md
       #- SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_Sound_Detection_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control.md
-    - AI ASSISTANTS:
-      - SmartPI/AI/AI_Overview.md
-      - SmartPI/AI/SmartPi_AI_Claude_Code.md
-      - SmartPI/AI/SmartPi_AI_Grok_CLI.md
-      - SmartPI/AI/SmartPi_AI_Kimi_Code.md
-      - SmartPI/AI/SmartPi_AI_Kimi_CLI.md
-      - SmartPI/AI/SmartPi_AI_Vibe_CLI.md
-    - LINUX LAB PROJECT:
-      - SmartPI/SmartPi_Klipper.md
-      - SmartPI/SmartPi_Retro_Gaming.md
-      - SmartPI/SmartPi_Retro_Controller_Setup.md
-      - SmartPI/SmartPi_Home_Assistant.md
-      - SmartPI/SmartPI_OpenMediaVault.md
-      - SmartPI/SmartPi_Plex_Server.md
-  - YUMI 3D PEN:    
-      - 3d_pen/index.md    
-  - YUMI PenScreen:    
+    - "3.2 AI ASSISTANTS":
+      - SmartPI/AI/index.md
+      - "3.2.1 Claude Code CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Claude_Code.md
+      - "3.2.2 Grok CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Grok_CLI.md
+      - "3.2.3 Kimi Code CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Kimi_Code.md
+      - "3.2.4 Kimi CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Kimi_CLI.md
+      - "3.2.5 Vibe CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Vibe_CLI.md
+    - "3.3 LINUX LAB PROJECT":
+      - "3.3.1 Klipper (YUMIOS)": SmartPI/SmartPi_Klipper.md
+      - "3.3.2 RetroMi (include optimised RetroPie)": SmartPI/SmartPi_Retro_Gaming.md
+      - "3.3.3 Controller Setup for RetroMi / RetroPie": SmartPI/SmartPi_Retro_Controller_Setup.md
+      - "3.3.4 Home Assistant": SmartPI/SmartPi_Home_Assistant.md
+      - "3.3.5 OpenMediaVault": SmartPI/SmartPI_OpenMediaVault.md
+      - "3.3.6 Plex Server": SmartPI/SmartPi_Plex_Server.md
+  - "4. YUMI 3D PEN":
+      - 3d_pen/index.md
+  - "5. YUMI PenScreen":
       - PenScreen/index.md
-  - YUMI others Components:
-    - Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
-    - Yumi_Components/SmartHub_specifications.md
-    - Yumi_Components/SmartShield_specifications.md
-  - YUMI Klipper SMART PAD:
-    - KlipperSmartPad/SmartPad_specifications.md
-    - KlipperSmartPad/SmartPad_connect_ssh.md
-    - KlipperSmartPad/SmartPad_change_password.md
+  - "6. YUMI others Components":
+    - "6.1 Smart LCD Touch 4.3inch": Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
+    - "6.2 Smart Hub": Yumi_Components/SmartHub_specifications.md
+    - "6.3 Smart Shield": Yumi_Components/SmartShield_specifications.md
+  - "7. YUMI Klipper SMART PAD":
+    - "7.1 Introduction & Specification": KlipperSmartPad/SmartPad_specifications.md
+    - "7.2 How to connect via SSH on Windows, Mac, and Linux": KlipperSmartPad/SmartPad_connect_ssh.md
+    - "7.3 How to change password": KlipperSmartPad/SmartPad_change_password.md
     #- KlipperSmartPad/Smartpad_Printers_yumi_configuration.md
-    - KlipperSmartPad/SmartPad_rotation_screen.md
-    - KlipperSmartPad/SmartPad_KlipperScreen_vnc.md
-    - KlipperSmartPad/Calibration/Extruder_calibration.md
-    - KlipperSmartPad/Calibration/Z_Offset_calibration.md
-    - KlipperSmartPad/Calibration/PID_calibration.md
-    - KlipperSmartPad/Calibration/Adxl_calibration.md
-    - KlipperSmartPad/Tuto/Remote_multi_printers.md
-    - KlipperSmartPad/SmartPad_Orcaslicer.md
-    - KlipperSmartPad/Smartpad_D12_dual.md
-    - KlipperSmartPad/SmartPad_Yumi_App.md
-    - PRINTERS INSTALLATION:
-      - PRINTERS/WANHAO_D12.md
-      - PRINTERS/D12-230_EVO_MEGA-KIT.md
-      - PRINTERS/SIDEWINDER_X2.md
-      - PRINTERS/SIDEWINDER_X1.md
-      - PRINTERS/PRUSA_MK3.md
-  - Maintenance:
-    - Maintenance/Lubricating_the_XYZ_Axes.md
-    - Maintenance/Clean_nozzle.md
-    - Maintenance/belt_tension_check.md
-    - Maintenance/build_plate_cleaning.md
-    - Maintenance/fan_cleaning.md
-  - YUMI STL:
-    - Yumi_stl/Printable_Accessories_and_Parts.md
+    - "7.4 How to rotate the screen of Smartpad": KlipperSmartPad/SmartPad_rotation_screen.md
+    - "7.5 How to Access KlipperScreen on SmartPad via VNC": KlipperSmartPad/SmartPad_KlipperScreen_vnc.md
+    - "7.6 Extruder calibration": KlipperSmartPad/Calibration/Extruder_calibration.md
+    - "7.7 Z-OFFSET calibration": KlipperSmartPad/Calibration/Z_Offset_calibration.md
+    - "7.8 PID calibration": KlipperSmartPad/Calibration/PID_calibration.md
+    - "7.9 Adxl calibration": KlipperSmartPad/Calibration/Adxl_calibration.md
+    - "7.10 Remote multiple printers on one pad": KlipperSmartPad/Tuto/Remote_multi_printers.md
+    - "7.11 Orcaslicer profiles V1.00": KlipperSmartPad/SmartPad_Orcaslicer.md
+    - "7.12 Dual Color D12 230": KlipperSmartPad/Smartpad_D12_dual.md
+    - "7.13 Set up Yumi App for Smartpad": KlipperSmartPad/SmartPad_Yumi_App.md
+    - "7.14 PRINTERS INSTALLATION":
+      - "7.14.1 Klipper Wanhao D12 installation": PRINTERS/WANHAO_D12.md
+      - "7.14.2 **Klipper D12-230 Evo Mega-Kit Installation**": PRINTERS/D12-230_EVO_MEGA-KIT.md
+      - "7.14.3 Klipper Sidewinder X2 installation": PRINTERS/SIDEWINDER_X2.md
+      - "7.14.4 Klipper Sidewinder X1 installation": PRINTERS/SIDEWINDER_X1.md
+      - "7.14.5 Klipper Prusa Mk3 installation": PRINTERS/PRUSA_MK3.md
+  - "8. Maintenance":
+    - "8.1 🛠️ Maintenance Guide: Lubricating the X/Y/Z Axes": Maintenance/Lubricating_the_XYZ_Axes.md
+    - "8.2 🧼 Nozzle Cleaning – Maintenance Guide": Maintenance/Clean_nozzle.md
+    - "8.3 ⚖️ Belt Tension Check – Maintenance Guide": Maintenance/belt_tension_check.md
+    - "8.4 🧼 Build Plate Cleaning – Maintenance Guide": Maintenance/build_plate_cleaning.md
+    - "8.5 💨 Fan Cleaning – Maintenance Guide": Maintenance/fan_cleaning.md
+  - "9. YUMI STL":
+    - "9.1 **YUMI STL - 3D Printable Accessories and Parts**": Yumi_stl/Printable_Accessories_and_Parts.md
   
 
