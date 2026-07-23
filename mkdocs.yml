@@ -131,7 +131,7 @@ nav:
 
 
   - YUMI SBC nano-computer:
-    - 1.1 SMART PI ONE:
+    - SMART PI ONE:
       - SmartPI/SmartPi_One_specifications.md
       - SmartPI/SmartPi_One_Startup.md
       - SmartPI/SmartPi_Linux.md
@@ -156,14 +156,14 @@ nav:
       #- SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_Sound_Detection_Control.md
       #- SmartPi/Sensors&Modules/SmartPi_IR_Optocoupler_Control.md
-    - 1.2 AI ASSISTANTS:
+    - AI ASSISTANTS:
       - SmartPI/AI/AI_Overview.md
       - SmartPI/AI/SmartPi_AI_Claude_Code.md
       - SmartPI/AI/SmartPi_AI_Grok_CLI.md
       - SmartPI/AI/SmartPi_AI_Kimi_Code.md
       - SmartPI/AI/SmartPi_AI_Kimi_CLI.md
       - SmartPI/AI/SmartPi_AI_Vibe_CLI.md
-    - 1.3 LINUX LAB PROJECT:
+    - LINUX LAB PROJECT:
       - SmartPI/SmartPi_Klipper.md
       - SmartPI/SmartPi_Retro_Gaming.md
       - SmartPI/SmartPi_Retro_Controller_Setup.md
