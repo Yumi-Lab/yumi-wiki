@@ -8,13 +8,9 @@
 
 ## 1. How it works
 
-The official Grok CLI is a static Rust binary built for 64-bit ARM, so this project runs it through **user-mode QEMU emulation**.
+xAI ships Grok only as a 64-bit binary, so on the Smart Pi One it runs through QEMU emulation — the installer sets all of that up for you, and you get the **official Grok interface**, unmodified.
 
-The key piece is **YUMI-LAB's own QEMU fork**, patched for correct 64-bit atomics on the Cortex-A7. With stock QEMU those atomics tear, the official interface won't run, and earlier versions of this project had to work around it by **rebuilding the interface** on top of Grok's headless streaming mode. That workaround is no longer needed: on the fork engine you get the **real official Grok interface, unmodified**, and long multi-threaded runs stay stable. A vendored **QEMU 7.2** remains installed as an automatic fallback (force it with `GROK_QEMU=7.2`), where the legacy rebuilt interface still steps in.
-
-A wrapper runs the emulation at low priority across the cores (`GROK_CPUS`). The installer fetches the latest published Grok and **doubles as the updater** — re-run it to update.
-
-Because a cold start pays an emulated bootstrap, a small **warm daemon** keeps one agent process ready so repeat `grok -p` calls answer quickly; it stops itself when idle.
+The installer always fetches the latest published Grok and **doubles as the updater** — re-run it to update. A warm daemon keeps a process ready so repeat `grok -p` calls answer quickly, and `GROK_CPUS` limits how many cores it uses.
 
 ## 2. Requirements
 
@@ -46,7 +42,7 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 
 | Command | Purpose |
 | --- | --- |
-| `grok` | The **real official Grok interface**, running unmodified — no rebuilt TUI (the legacy rebuilt interface only steps in on the 7.2 fallback engine, or with `GROK_TUI=python`) |
+| `grok` | The official Grok interactive interface |
 | `grok -p "your question"` | One-shot answer through the **warm daemon** — fast once warm (`GROK_DAEMON=0` for the old direct behaviour) |
 | `grok-daemon status\|stop` | Inspect / stop the warm agent daemon (stops itself when idle) |
 | `grok-live -p "your task"` | One-shot with readable streaming (dimmed reasoning) |
@@ -55,7 +51,6 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 | `grok-check-update` | OTA probe — one JSON line |
 | `GROK_CPUS=0,1 grok …` | Run on a CPU subset for this launch (default = all 4 cores) |
 
-Engine selection: the YUMI-LAB QEMU fork is the default; `GROK_QEMU=7.2` forces the vendored 7.2 engine (also the automatic fallback).
 
 ![Grok CLI interface on a Smart Pi One](/img/SmartPi/AI/grok-cli-terminal.svg){ .off-glb }
 *Live interface captured on a Yumi board (armv7l, Yumi OS 26.05).*
@@ -68,7 +63,7 @@ Engine selection: the YUMI-LAB QEMU fork is the default; `GROK_QEMU=7.2` forces 
 
 ## 7. Notes
 
-- **Emulated, so mind the start:** a cold one-shot pays an emulated bootstrap and is slow; the **warm daemon** makes repeat `grok -p` calls fast. On the fork engine the official interface runs unmodified and stays stable over long sessions.
+- **First call is slower:** a cold one-shot takes a while; the **warm daemon** makes repeat `grok -p` calls fast.
 - **Thermals:** sustained emulated loads run hot and can freeze the board — cap the cores with `GROK_CPUS` (e.g. `GROK_CPUS=0,1`) to run cooler. Default is all 4 cores.
 - **`earlyoom`** is enabled as a memory safety net on the 1 GB board. Rule of thumb: run **one heavy CLI at a time**.
 - Licensing: the installer scripts are MIT (YUMI-LAB); the vendored QEMU is GPL-2.0; the official Grok binary is downloaded from xAI at install time and is not redistributed here.
