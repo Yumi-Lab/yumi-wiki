@@ -1,4 +1,4 @@
-# 2.5 Obstacle IR Sensor with Smart Pi One
+# Obstacle IR Sensor with Smart Pi One
 
 In this guide, we will demonstrate how to display a message when an obstacle is detected by an **IR obstacle sensor** connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 

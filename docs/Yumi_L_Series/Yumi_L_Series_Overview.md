@@ -1,4 +1,4 @@
-# 1.2 Overview & Specifications
+# Overview & Specifications
 
 The **YUMI Laser Series** is a modular, high-precision engraving and cutting solution designed in France.  
 Available in multiple sizes and laser powers, it combines portability, performance, and flexibility for beginners, hobbyists, and professionals.
@@ -7,7 +7,7 @@ Available in multiple sizes and laser powers, it combines portability, performan
 
 ---
 
-## 1.2.1 Available Models & Working Areas
+## 1. Available Models & Working Areas
 
 | Model        | Working Area      |
 |--------------|-------------------|
@@ -17,7 +17,7 @@ Available in multiple sizes and laser powers, it combines portability, performan
 
 ---
 
-## 1.2.2 Interchangeable Laser Modules
+## 2. Interchangeable Laser Modules
 
 The YUMI Laser supports **hot-swappable laser heads** for different project requirements:
 
@@ -32,7 +32,7 @@ The YUMI Laser supports **hot-swappable laser heads** for different project requ
 
 ---
 
-## 1.2.3 Materials Compatibility
+## 3. Materials Compatibility
 
 **Engraving:**  
 Wood, glass, leather, food, acrylic, ceramic, **coated metals**, paper, silicone, etc.  
@@ -43,7 +43,7 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 
 ---
 
-## 1.2.4 Key Features
+## 4. Key Features
 
 - **Designed & engineered in France**
 - **Large-format working areas** with a compact, portable design
@@ -54,7 +54,7 @@ MDF, acrylic, basswood (balsa), and similar thin sheets.
 
 ---
 
-## 1.2.5 Technical Specifications
+## 5. Technical Specifications
 
 | Parameter         | Specification |
 |-------------------|---------------|

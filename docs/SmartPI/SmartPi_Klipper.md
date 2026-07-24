@@ -1,4 +1,4 @@
-# 2.1 Klipper (YUMIOS)
+# Klipper (YUMIOS)
 
 ![yumios](/img/SmartPi/klipper/YumiOSLogo.jpeg)
 

@@ -1,4 +1,4 @@
-# 1.9 How to connect Wi-Fi
+# How to connect Wi-Fi
 
 ![Smart PI One - Wifi](../../img/SmartPi/SmartPi_Connect_Wifi/SmartPi_Connect_Wifi_1.png)
 

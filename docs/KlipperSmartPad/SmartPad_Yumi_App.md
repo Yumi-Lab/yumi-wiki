@@ -1,4 +1,4 @@
-# 5.1 Set up Yumi App for Smartpad
+# Set up Yumi App for Smartpad
 
 
 

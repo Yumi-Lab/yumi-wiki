@@ -1,4 +1,4 @@
-# 2.6 Using an Ultrasonic Sensor with Smart Pi One
+# Using an Ultrasonic Sensor with Smart Pi One
 
 This page describes how to use an ultrasonic sensor (e.g., HC-SR04) with the Smart Pi One, providing detailed steps, wiring instructions, and code examples in both Python and C.
 

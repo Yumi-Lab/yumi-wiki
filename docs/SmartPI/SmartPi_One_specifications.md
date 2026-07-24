@@ -1,10 +1,10 @@
-# 1.1 Introduction & Specifications
+# Introduction & Specifications
 
 * The [Smart Pi One](https://wanhao-europe.com/collections/yumi-smart-pi-nano-computer-diy/products/yumi-smart-pi-one-1g-ddr3-processeur-h3-allwinner){ target=_blank } uses the Allwinner H3 Soc. It integrates Ethernet, IR receiver, video/audio output and supports HDMI and AVOUT. It can be powered via the MicroUSB port (DC 5V/2A and POWER DELIVERY CHARGER).
 
 * In such a small board it still integrates rich interfaces and ports. HDMI, Ethernet, USB-Host, USB-OTG, DVP camera interface and AVOUT (audio and video) it has an onboard Microphone, IR receiver, a serial debug port and a Raspberry Pi compatible 40 pin GPIO pin header.
 
-## Specifications
+## 1. Specifications
 
 * **CPU:** Allwinner H3, Quad-core Cortex-A7-1.3GHz
 * **GPU:** Mali400MP2@600MHz，Supports OpenGL ES2.0
@@ -28,17 +28,17 @@
 * **Weight:** 33g
 * **OS/Software:** YumiOS, Debian 12(Armbian), Ubuntu(Armbian)
 
-## 1.2 Software Features
+## 2. Software Features
 
 **Official Linux Server Image:** [https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/){ target=_blank }
 
 
-# 1.3 Layout
+## 3. Layout
 <img src="../../img/SmartPi/Specifications/smart-pi-one1.jpg" width="1000" alt="Top view"> <p align="center">**[Top view]**</p>
 <img src="../../img/SmartPi/Specifications/smart-pi-one2.jpg" width="1000" alt="bottom view"> <p align="center">**[Bottom view]**</p>
 
 
-## 1.4 Diagram
+## 4. Diagram
 
 ### GPIO Pin Spec
 
@@ -78,7 +78,7 @@
 | 4    | UART_RXD0/GPIOA5/PWM0    |
 
 
-### <b>DVP Camera IF Pin Spec</b>
+### DVP Camera IF Pin Spec
 
 | Pin#              | Name       | Description                                   |
 |-------------------|------------|-----------------------------------------------|
@@ -97,10 +97,10 @@
 
 
 
-## 1.5 Board Dimension 
+## 5. Board Dimension
 <img src="../../img/SmartPi/Specifications/smart-pi-one3.jpg" width="500" alt="Board dimension view"> 
 
-## 1.6 Case SmartPi One
+## 6. Case SmartPi One
 
 <img src="../../img/SmartPi/Specifications/Case_SmartPiOne.jpg" width="500" alt="Case"> 
 

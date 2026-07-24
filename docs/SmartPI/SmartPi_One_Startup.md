@@ -1,4 +1,4 @@
-# 1.2 Getting Started with the Smart Pi One
+# Getting Started with the Smart Pi One
 
 <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_1.png" alt="Smart Pi One - Yumi" width="380"/>
 

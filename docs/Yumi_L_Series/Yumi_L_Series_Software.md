@@ -1,11 +1,11 @@
-# 1.5 Software Overview & Compatibility
+# Software Overview & Compatibility
 
 The YUMI Laser (L-A4 / L-A3 / L-A2) is a standard **GRBL** machine: it can be controlled by any GRBL-compatible software over USB (baud rate `115200`).  
 This page compares the three recommended options so you can quickly pick the right one for your computer and your needs.
 
 ---
 
-## 1.5.1 Compatibility & Price Comparison
+## 1. Compatibility & Price Comparison
 
 | Software | Windows | macOS | Linux | Price | Setup Guide |
 |----------|:-------:|:-----:|:-----:|-------|-------------|
@@ -17,7 +17,7 @@ This page compares the three recommended options so you can quickly pick the rig
 
 ---
 
-## 1.5.2 LightBurn
+## 2. LightBurn
 
 [https://lightburnsoftware.com](https://lightburnsoftware.com){ target=_blank }
 
@@ -31,7 +31,7 @@ The most powerful and complete laser software on the market. Full vector editing
 
 ---
 
-## 1.5.3 LaserGRBL
+## 3. LaserGRBL
 
 [https://lasergrbl.com](https://lasergrbl.com){ target=_blank }
 
@@ -46,7 +46,7 @@ The reference free and open-source software for GRBL laser engravers. Excellent 
 
 ---
 
-## 1.5.4 OpenBurn Laser
+## 4. OpenBurn Laser
 
 [https://www.m3d-formation.com/openburn/](https://www.m3d-formation.com/openburn/){ target=_blank }
 
@@ -60,7 +60,7 @@ A free alternative to LightBurn developed by M3D-FORMATION, with a similar intui
 
 ---
 
-## 1.5.5 Which Software Should You Choose?
+## 5. Which Software Should You Choose?
 
 | Your situation | Recommended software |
 |----------------|---------------------|

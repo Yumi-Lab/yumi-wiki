@@ -1,4 +1,4 @@
-# 2.2 Controlling an LED via GPIO on Smart Pi One
+# Controlling an LED via GPIO on Smart Pi One
 
 This page describes how to control an LED using GPIO on the Smart Pi One, with detailed steps, wiring instructions, a wiring diagram, and code examples in both Python and C.
 

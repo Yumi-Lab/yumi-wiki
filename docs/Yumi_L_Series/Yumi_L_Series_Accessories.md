@@ -1,10 +1,10 @@
-# 1.12 Accessories & Upgrade Packs
+# Accessories & Upgrade Packs
 
 The **YUMI Laser Series** supports a wide range of optional accessories and upgrade kits, allowing you to expand functionality, improve results, and tailor the machine to your specific projects.
 
 ---
 
-## 1.12.1 Upgrade Kits
+## 1. Upgrade Kits
 
 ### Upgrade Kit for YUMI L-A3 / A2
 
@@ -25,7 +25,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## 1.12.2 Performance & Support Accessories
+## 2. Performance & Support Accessories
 
 ### YUMI - Air Assist Pump MAX
 
@@ -98,7 +98,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## 1.12.3 Optional Modules
+## 3. Optional Modules
 
 ### Rotary Module
 
@@ -151,7 +151,7 @@ The **YUMI Laser Series** supports a wide range of optional accessories and upgr
 
 ---
 
-## 1.12.4 Safety & Cleanliness
+## 4. Safety & Cleanliness
 
 ### Enclosure & Fume Extraction
 

@@ -1,4 +1,4 @@
-# 1.11 L-A4 Default GRBL Parameters
+# L-A4 Default GRBL Parameters
 
 This table lists the default GRBL parameters of the **YUMI L-A4**.
 

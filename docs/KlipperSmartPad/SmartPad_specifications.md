@@ -1,4 +1,4 @@
-# 1.1 Introduction & Specification
+# Introduction & Specification
 
 ![KlipperSmartPad](/img/KlipperSmartPad/W3-DSMARTPAD-1.png)
 

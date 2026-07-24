@@ -1,33 +1,33 @@
-# 4.1 Orcaslicer profiles V1.00
+# Orcaslicer profiles V1.00
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer001.png)
 
 Below you will find the Orceslicer profiles for different printers. They have been optimized and tested to work with the smartpad.
 
-# Download Orcaslicer
+## 1. Download Orcaslicer
 
 https://github.com/SoftFever/OrcaSlicer/releases
 
-# Download D12 profiles
+## 2. Download D12 profiles
 
 https://www.dropbox.com/scl/fi/joc7zcqv6oye5wadbcd2o/profilsD12-02042025.zip?rlkey=n6hbde74c9qwl86v1pipnrrcu&st=0vpvg5u9&dl=0
 
-# Extract the ZIP archive
+## 3. Extract the ZIP archive
 
 Right-click and click on "Extract All..."
 
-# Copy the files and folder
+## 4. Copy the files and folder
 
 Copy the **Wanhao France** folder and the **Wanhao France.json** file.
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/d12profils02.png)
 
-# Go to the OrcaSlicer directory
+## 5. Go to the OrcaSlicer directory
 
 Close OrcaSlicer  
 Move to this folder **"C:\Program Files\OrcaSlicer\resources\profiles"** and paste the previously copied elements
 
-# Select your profile
+## 6. Select your profile
 
 Launch OrcaSlicer and add a printer
 
@@ -50,7 +50,7 @@ Bowden:
 
 
 
-## Sidewinder X2
+## 7. Sidewinder X2
 
 ![Sidewinder X2](/img/Printers/Artillery/X2/X2.jpeg)
 
@@ -60,7 +60,7 @@ It's an optimized profile. As a reminder, you need to adapt the profile to your 
 
 https://raw.githubusercontent.com/Yumi-Lab/yumi-wiki/main/Profile_Slicer/Orcaslicer/Artillery%20Sidewinder%20X2%200.4%20nozzle%20Klipper%20X4.orca_printer
 
-## Sidewinder X1
+## 8. Sidewinder X1
 
 ![Sidewinder X1](/img/Printers/Artillery/X1/sidewinderx1.jpg)
 
@@ -73,7 +73,7 @@ https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Printer
 Special thanks to Dark3dprint for their help : https://www.tiktok.com/@dark3dprint?lang=fr
 
 
-## Prusa MK3/S/S+
+## 9. Prusa MK3/S/S+
 
 ![mk3](/img/Printers/Prusa/Mk3/Mk3.jpeg)
 

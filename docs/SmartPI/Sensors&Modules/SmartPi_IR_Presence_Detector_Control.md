@@ -1,4 +1,4 @@
-# 2.8 IR Presence Detector with Smart Pi One
+# IR Presence Detector with Smart Pi One
 
 In this guide, we will demonstrate how to read the values from an IR presence detector connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 

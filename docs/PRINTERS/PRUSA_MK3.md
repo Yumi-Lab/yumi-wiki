@@ -4,17 +4,17 @@
 
 This procedure is for anyone who has a Prusa Mk3 and a SmartPad klipper control device.
 
-## Please read the procedure first
+## 1. Please read the procedure first
 
 You are responsible for all operations carried out on your equipment. This procedure explains how to set up klipper on your printer. It has been tested and is fully functional.
 This procedure has been tested and approved for prusa mk3. Do not install it on other printers.
 
 
-# Hardware and software
+## 2. Hardware and software
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
 
-# SSH connection
+## 3. SSH connection
 
 Download and install MobaXterm.
 
@@ -51,7 +51,7 @@ Once you're logged in, you'll see this screen:
 
 ![ConnectPi](/img/Printers/Prusa/Mk3/ConnectPI.png)
 
-# Generate firmware
+## 4. Generate firmware
 
 The left sidebar corresponds to the Pad file and the right to the command line interface.
 
@@ -86,7 +86,7 @@ make clean
 make
 ```
 
-# Firmware flash
+## 5. Firmware flash
 
 Return to MobaXterm.
 Connect the printer to the pad and run the command:
@@ -104,13 +104,13 @@ make flash FLASH_DEVICE=/dev/serial/by-id/xxxxxxxxxxxxxx
 XXXXXX corexponds to the one you obtained with the command ls /dev/serial/by-id*.
 For example: make flash FLASH_DEVICE=/dev/serial/by-id/usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_CZPX0123X004XK05843-if00
 
-# Download configuration files
+## 6. Download configuration files
 
 You can download the Prusa configuration file from the following link:
 
 Printer.cfg: https://github.com/Yumi-Lab/yumi-wiki/blob/main/Klipper/Prusa/Mk3/printer.cfg
 
-# Mainsail Web interface
+## 7. Mainsail Web interface
 
 You can connect to your Mainsail interface from a web browser with the address http://Your IP address.
 
@@ -135,8 +135,8 @@ Restart the Pad and connect the printer to it with the correct USB cable.
 
 From the Dashboard, you should be able to control your printer.
 
-# Changer les paramètres de votre slicer
-## CURA
+## 8. Changer les paramètres de votre slicer
+## 9. CURA
 
 From cura, go to Preference/Configure Cura...
 In the new window, go to Printers and choose your X2 profile.
@@ -162,7 +162,7 @@ Once installed, activate firmware retraction in the Klipper Settings section.
 
 ![Slicer](/img/Printers/Prusa/Mk3/Slicer03.jpeg)
 
-## PrusaSlicer
+## 10. PrusaSlicer
 
 From your printer settings,
 In the Start Gcode section, enter:
@@ -178,8 +178,8 @@ PRINT_END
 
 In the general section of your printer settings, activate firmware retraction.
 
-# Calibrating your printer
-## BED PID
+## 11. Calibrating your printer
+## 12. BED PID
 
 Now it's time to set the PIDs and printer settings.
 
@@ -191,7 +191,7 @@ From the Dashboard, launch the BED PID 65 macro
 Your tray will heat up several times to 65°C and wait 5 minutes for this to finish.
 Use the save macro to apply the settings on restart.
 
-## HOTEND PID
+## 13. HOTEND PID
 
 Start HOTEND PID and save the configuration:
 From the Dashboard, run the HOTEND 220 PID macro
@@ -201,7 +201,7 @@ From the Dashboard, run the HOTEND 220 PID macro
 Your nozzle will heat up several times to 220°C and wait 5 minutes for this to finish.
 Use the save macro to apply the settings on restart.
 
-## Adjust Z-OFFSET
+## 14. Adjust Z-OFFSET
 
 From the dashboard, switch to the Console section.
 
@@ -232,7 +232,7 @@ Once the head is correctly set, issue the ACCEPT command, then SAVE_CONFIG.
 Mainsail will restart and your configuration will be saved.
 Use the `G28` command to reposition the head to its original point.
 
-# Extruder calibration
+## 15. Extruder calibration
 
 The configuration files I use are set up for my hardware. You need to set the parameters of your extruder.
 Start by heating your nozzle to 220°C from the control panel.
@@ -269,7 +269,7 @@ You can slice a 3d model and import it into the G-Code File section.
 You can now start printing from the Mainsail interface or from the touch screen.
 
 
-# Print
+## 16. Print
 
 I recommend starting with a calibration cube. 
 

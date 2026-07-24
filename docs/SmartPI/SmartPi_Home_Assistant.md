@@ -1,10 +1,10 @@
-# 2.3 Home Assistant
+# Home Assistant
 
 <p align="center">
 <img src="https://design.home-assistant.io/images/brand/logo.png" style="width:50%" >
 </p>
 
-# Installation
+## 1. Installation
 
 Download Balena Etcher: https://etcher.balena.io/#download-etcher
 
@@ -30,7 +30,7 @@ Flash SD:
 <img src="https://github.com/Maxime3d77/smartpad-home-assistant/blob/main/img/balena004.png?raw=true" style="width:50%" >
 </p>
 
-# Wifi
+## 2. Wifi
 
 with a keyboard and screen, connect to the smartpad.
 Attention QWERTY keyboard
@@ -54,7 +54,7 @@ sudo ip a
 
 
 
-# Connexion
+## 3. Connexion
 
 Now connect to the Home Assistant interface using a browser:
 

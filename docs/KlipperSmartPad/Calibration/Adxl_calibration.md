@@ -1,12 +1,12 @@
-# 2.4 Adxl calibration
+# Adxl calibration
 
-# 📦 Prerequisites
+## 1. 📦 Prerequisites
 - **Smartpad**  [buy here](https://wanhao-europe.com/products/wanhao-klipper-pad?variant=50407737753940){ target=_blank }
 - **ADXL345 sensor** properly connected and configured in Klipper  [buy here](https://wanhao-europe.com/products/capteur-adxl-test?_pos=1&_psq=adxl&_ss=e&_v=1.0){ target=_blank }  
 
 ---
 
-# 🚀 Starting the Calibration
+## 2. 🚀 Starting the Calibration
 
 1. Connect the ADXL to the smartpad
 <p align="center">
@@ -31,9 +31,9 @@
 </p>
 ---
 
-# 📏 ADXL Positioning
+## 3. 📏 ADXL Positioning
 
-## Measuring the X-axis
+## 4. Measuring the X-axis
 - Mount the ADXL on the X-axis as shown in the reference photo (using a screw).  
 <p align="center">
   <img src="/img/KlipperSmartPad/ADXL/004.jpg" alt="ADXL" style="width:50%;" />
@@ -47,7 +47,7 @@
 
 ---
 
-## Measuring the Y-axis
+## 5. Measuring the Y-axis
 - You can use this STL file to mount the ADXL on the bed:  
   [ADXL Clamp Mount - Makerworld](https://makerworld.com/fr/models/1197743-adxl-clamp-mount-work-on-heatbed-nozzle?from=search){ target=_blank }  
 - Install the mount as shown in the reference photo  

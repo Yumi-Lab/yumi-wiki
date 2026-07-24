@@ -1,4 +1,4 @@
-# 1.8 OpenBurn Laser Setup and First Engraving
+# OpenBurn Laser Setup and First Engraving
 
 **OpenBurn Laser** is a free laser engraving and cutting software for Windows, developed by M3D-FORMATION.  
 It is a **free alternative to LightBurn** with a similar, intuitive interface, and works with all GRBL-based machines such as the YUMI Laser (L-A4 / L-A3 / L-A2).
@@ -16,7 +16,7 @@ It is a **free alternative to LightBurn** with a similar, intuitive interface, a
 
 ---
 
-## 1.8.1 - Install OpenBurn Laser
+## 1. - Install OpenBurn Laser
 
 - Download OpenBurn Laser for free from the official website: [https://www.m3d-formation.com/openburn/](https://www.m3d-formation.com/openburn/){ target=_blank }  
 - Run the installer (`OpenBurn_Laser_Setup.exe`) on your Windows computer (OpenBurn Laser is Windows-only).  
@@ -24,7 +24,7 @@ It is a **free alternative to LightBurn** with a similar, intuitive interface, a
 
 ---
 
-## 1.8.2 - Connect Your YUMI Laser
+## 2. - Connect Your YUMI Laser
 
 - Power on your YUMI Laser.  
 - Connect it to your computer via **USB cable**.  
@@ -33,7 +33,7 @@ It is a **free alternative to LightBurn** with a similar, intuitive interface, a
 
 ---
 
-## 1.8.3 - Create a Machine Profile for Your Model
+## 3. - Create a Machine Profile for Your Model
 
 OpenBurn Laser supports multiple machine profiles, so you can save one profile per machine or laser module.
 
@@ -49,7 +49,7 @@ OpenBurn Laser supports multiple machine profiles, so you can save one profile p
 
 ---
 
-## 1.8.4 - Import or Create a Design
+## 4. - Import or Create a Design
 
 - Import a **JPEG** or **PNG** image to engrave, and resize it as needed.  
 - Or create a design directly with the built-in drawing tools: **rectangles, circles, lines, hexagons, and text**.  
@@ -57,7 +57,7 @@ OpenBurn Laser supports multiple machine profiles, so you can save one profile p
 
 ---
 
-## 1.8.5 - Set Laser Power
+## 5. - Set Laser Power
 
 - Laser power is expressed as a percentage of the maximum PWM value.  
 - Recommended starting values:  
@@ -70,7 +70,7 @@ OpenBurn Laser supports multiple machine profiles, so you can save one profile p
 
 ---
 
-## 1.8.6 - Position & Focus the Laser
+## 6. - Position & Focus the Laser
 
 - Move the laser head manually over the workpiece.  
 - Place the **5 mm spacer** on the surface.  
@@ -88,14 +88,14 @@ OpenBurn Laser supports multiple machine profiles, so you can save one profile p
 
 ---
 
-## 1.8.7 - Frame the Engraving Area
+## 7. - Frame the Engraving Area
 
 - Use the **Frame** function: the laser head traces the outline of your design at low power, so you can check the positioning **without marking the material**.  
 - Adjust the material position and repeat the frame until the alignment is correct.
 
 ---
 
-## 1.8.8 - Start Engraving
+## 8. - Start Engraving
 
 - Verify speed, power, and focus.  
 - Click **Start** to begin engraving.  

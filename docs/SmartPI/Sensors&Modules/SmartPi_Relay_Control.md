@@ -1,4 +1,4 @@
-# 2.3 Activating a Relay on Smart Pi One
+# Activating a Relay on Smart Pi One
 
 This page describes how to activate a relay using the Smart Pi One, with detailed steps, wiring instructions, and code examples in both Python and C.
 

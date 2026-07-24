@@ -1,6 +1,6 @@
 
 
-# 1.2 How to connect via SSH on Windows, Mac, and Linux
+# How to connect via SSH on Windows, Mac, and Linux
 
 ![ssh smartpad](/img/KlipperSmartPad/Connect_ssh/smartpad_ssh.png)
 
@@ -13,7 +13,7 @@ SSH (Secure Shell) is a protocol used to securely connect to remote systems. Her
 - The remote machine's IP address (e.g., **`192.168.1.61`**).
 - SSH credentials (Username: **`pi`**, Password: **`yumi`**).
 
-## 1.2.1 Windows
+## 1. Windows
 Windows does not come with an SSH client by default, but you can use third-party tools like PuTTY or the built-in OpenSSH client on Windows 10 or later.
 
 #### Method 1: Using PuTTY
@@ -63,7 +63,7 @@ Windows does not come with an SSH client by default, but you can use third-party
 
 ![connect_ssh_smartpad_6.png](/img/KlipperSmartPad/Connect_ssh/connect_ssh_smartpad_6.png)
 
-## 1.2.2 Mac
+## 2. Mac
 MacOS comes with an SSH client pre-installed, accessible through the Terminal.
 
 **1. Open Terminal**:
@@ -78,7 +78,7 @@ ssh pi@192.168.1.61
 ```
 - When prompted, enter the password **`yumi`**.
 
-## 1.2.3 Linux
+## 3. Linux
 Most Linux distributions come with an SSH client pre-installed. You can use the terminal to connect via SSH.
 
 **1. Open Terminal**:

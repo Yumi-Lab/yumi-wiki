@@ -1,4 +1,4 @@
-# 2.4 Using a Buzzer with Smart Pi One
+# Using a Buzzer with Smart Pi One
 
 This page describes how to connect and use a buzzer with the Smart Pi One, including wiring instructions, and code examples in both Python and C.
 

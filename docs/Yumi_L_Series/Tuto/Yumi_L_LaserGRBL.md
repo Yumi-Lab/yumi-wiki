@@ -2,7 +2,7 @@
 glightbox: false
 ---
 
-# 1.2 Laser GRBL
+# Laser GRBL
 
 <style>
 

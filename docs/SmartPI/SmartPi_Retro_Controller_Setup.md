@@ -1,14 +1,14 @@
-# 2.2.1 Controller Setup for RetroMi / RetroPie
+# Controller Setup for RetroMi / RetroPie
 
 ![controller setup](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
 
-## Introduction
+## 1. Introduction
 
 Setting up your game controller is one of the first steps after installing RetroMi on your Smart Pi One. EmulationStation needs to know how your gamepad buttons are mapped before you can navigate menus and play games.
 
 This guide covers the initial configuration, hotkey shortcuts, and supported controller types.
 
-## 2.2.1.1 First Boot — Controller Detection
+## 2. First Boot — Controller Detection
 
 When EmulationStation starts for the first time, you will see the following screen:
 
@@ -21,7 +21,7 @@ When EmulationStation starts for the first time, you will see the following scre
 !!! tip
     If you are using a keyboard, press and hold any key to start configuration.
 
-## 2.2.1.2 Button Mapping
+## 3. Button Mapping
 
 Follow the on-screen prompts to assign each button one by one. EmulationStation will ask you to press the corresponding button on your controller for:
 
@@ -54,7 +54,7 @@ Once all buttons are mapped, press **A** on the "OK" prompt to save.
 
 ![configuration complete](/img/SmartPi/Retro_Gaming/controllers/controller-configuration3.png)
 
-## 2.2.1.3 Supported Controller Layouts
+## 4. Supported Controller Layouts
 
 RetroMi works with most USB and Bluetooth controllers. Below are the most common layouts:
 
@@ -86,7 +86,7 @@ Full layout with D-pad, 4 face buttons (Cross/Circle/Triangle/Square), 2 analog 
 
 Most modern 8BitDo controllers use **XInput mode** (Xbox layout) by default. Hold the correct button combination when powering on to select the mode — refer to 8BitDo's documentation for your specific model.
 
-## 2.2.1.4 Hotkey Shortcuts
+## 5. Hotkey Shortcuts
 
 The **Hotkey** button (usually SELECT) combined with other buttons gives you quick access to important functions during gameplay:
 
@@ -103,7 +103,7 @@ The **Hotkey** button (usually SELECT) combined with other buttons gives you qui
 !!! warning "Always use Hotkey + Start to exit"
     Never power off the Smart Pi One while a game is running. Always exit the game first using **Hotkey + Start**, then shut down properly from the EmulationStation menu.
 
-## 2.2.1.5 Reconfiguring a Controller
+## 6. Reconfiguring a Controller
 
 If you need to remap your controller at any time:
 
@@ -112,7 +112,7 @@ If you need to remap your controller at any time:
 3. Hold a button on the controller you want to reconfigure
 4. Follow the mapping wizard again
 
-## 2.2.1.6 Using a Keyboard as Controller
+## 7. Using a Keyboard as Controller
 
 A keyboard can be configured as a controller using the same mapping wizard. Common default mappings:
 
@@ -129,7 +129,7 @@ A keyboard can be configured as a controller using the same mapping wizard. Comm
 !!! note
     Keyboard mappings are fully customizable through the same configuration wizard.
 
-## 2.2.1.7 Troubleshooting
+## 8. Troubleshooting
 
 ### Controller not detected
 

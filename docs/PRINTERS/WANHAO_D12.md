@@ -4,11 +4,11 @@
 
 This procedure is for anyone who has a WANHAO D12 and a SmartPad klipper control device.
 
-## Please read the procedure first
+## 1. Please read the procedure first
 
 You are responsible for all operations carried out on your equipment. This procedure explains how to set up KLIPPER on your 3D printer. It has been tested and is fully functional.
 
-# Hardware and software :
+## 2. Hardware and software :
 
 **First Step: Identify your motherboard model and motor driver connections.**
 We recommend updating your printer to the official MARLIN 2 release available at WanhaoFrance https://formation.wanhaofrance.com/slides/slide/firmware-d12-230-758?fullscreen=0&fullscreen=1
@@ -35,8 +35,8 @@ To finalize, open your MAINSAIL INTERFACE at http://yumios.local or http://"smar
 
 Finally, go to the Machine menu and replace the `printer.cfg` with the one you just downloaded from GitHub. Please click to save & restart.
 
-# Slicer profile
-## Orcaslicer
+## 3. Slicer profile
+## 4. Orcaslicer
     
 Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer (230, 300, 500) and import it. there's a version with bltouch and one without.
 
@@ -44,7 +44,7 @@ It's an optimized profile. As a reminder, you need to adapt the profile to your 
 
     https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
 
-# Print
+## 5. Print
 
 I recommend starting with a calibration cube. 
 

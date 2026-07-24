@@ -1,8 +1,8 @@
-# 2.3 PID calibration
+# PID calibration
 
 The calibration of the PID (Proportional-Integral-Derivative) on Klipper, a firmware used to control 3D printers, is crucial for ensuring precise temperature regulation of the extruder and the heated bed. 
 
-# 2.3.1 Purpose of PID Calibration
+## 1. Purpose of PID Calibration
 
 Here are the primary purposes and benefits of this calibration.
 
@@ -20,7 +20,7 @@ Here are the primary purposes and benefits of this calibration.
 
 
 
-# 2.3.2 Calibrating PID settings for the extruder
+## 2. Calibrating PID settings for the extruder
 
 1. Open the Printer’s Terminal and access your printer's terminal via your control interface (such as Mainsail: **http://yumios.local** or **http://Your_IP_Address**).
 
@@ -47,7 +47,7 @@ Here are the primary purposes and benefits of this calibration.
 
      ![smartpad_pid_4](/img/KlipperSmartPad/PID_calibration/smartpad_pid_4.png)
 
-# 2.3.2 Calibrating PID settings for the heated bed
+## 3. Calibrating PID settings for the heated bed
 
 1. In the console, input the following command for the calibration:
 

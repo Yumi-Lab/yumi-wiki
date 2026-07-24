@@ -1,4 +1,4 @@
-# 1.5 How to Access KlipperScreen on SmartPad via VNC
+# How to Access KlipperScreen on SmartPad via VNC
 
 <img src="/img/KlipperSmartPad/Klipperscreen_vnc/klipperscreen_vnc_01.png" width="200" alt="KlipperScreen VNC">
 

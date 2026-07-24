@@ -1,4 +1,4 @@
-# 1.1 Yumi L Series
+# Yumi L Series
 
 **(L-A4 / L-A3 / L-A2 | 2.5W / 5.5W / 10W / 20W)**
 

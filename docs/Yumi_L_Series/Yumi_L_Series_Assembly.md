@@ -1,4 +1,4 @@
-# 1.4 Assembly & First Setup
+# Assembly & First Setup
 
 This section explains how to assemble, and prepare your YUMI Laser for its first use.  
 The complete illustrated assembly instructions are available in PDF format.
@@ -7,14 +7,14 @@ The complete illustrated assembly instructions are available in PDF format.
 
 ---
 
-## 1.4.1 Assembly Manual (PDF)
+## 1. Assembly Manual (PDF)
 
 Click here to download the official assembly guide:  
 [**YUMI L Series (Laser) Assembly Guide**](https://www.dropbox.com/scl/fi/padqpqt2lru4ei1qlo9q2/LA4-Notice-V0.8.pdf?rlkey=9mbpopw79ce0kvnbask1epanf&e=1&st=e0222g5e&dl=1){ target=_blank }
 
 ---
 
-## 1.4.2 Assembly Checklist
+## 2. Assembly Checklist
 
 **1- Unpack all components** 
 
@@ -46,7 +46,7 @@ Click here to download the official assembly guide:
 
 ---
 
-## 1.4.3 Belt Tension Adjustment
+## 3. Belt Tension Adjustment
 
    <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_03.png" width="500" alt="Belt Tension Adjustment">
 
@@ -66,7 +66,7 @@ Proper belt tension is important for accurate engraving and cutting.
 
 ---
 
-## 1.4.4 First Power-On
+## 4. First Power-On
 
    <img src="../../img/Yumi_L_Series/Yumi_L_Series_Assembly/Yumi_L_Series_Assembly_04.png" width="370" alt="Belt Tension Adjustment">
 
@@ -79,7 +79,7 @@ Proper belt tension is important for accurate engraving and cutting.
 
 ---
 
-## 1.4.5 Safety Reminder
+## 5. Safety Reminder
 
 - Wear laser safety glasses before testing.
 - Keep flammable materials away from the working area.

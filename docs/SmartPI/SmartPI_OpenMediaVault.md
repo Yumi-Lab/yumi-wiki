@@ -1,4 +1,4 @@
-# 2.4 OpenMediaVault
+# OpenMediaVault
 
 ![OMV](/img/SmartPi/OMV/openmediavault.jpg)
 
@@ -6,7 +6,7 @@ Openmediavault is a reference for anyone who wants to build their own DIY NAS.
 
 
 
-# Prerequisites
+## 1. Prerequisites
 
 -Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  
 
@@ -18,13 +18,13 @@ Connect to the smartpi via ssh with mobaxterm or putty, for example.
 
 ![SSH](/img/SmartPi/OMV/OMV001.png)
 
-## Update the smartpi
+## 2. Update the smartpi
 
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-## Install
+## 3. Install
 
 Switch to Superuser:
 
@@ -44,14 +44,14 @@ Add the package repositories:
 ```
 cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list
 deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm main
-# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm main
-## Uncomment the following line to add software from the proposed repository.
-# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm-proposed main
-# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm-proposed main
-## This software is not part of OpenMediaVault, but is offered by third-party
-## developers as a service to OpenMediaVault users.
-# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm partner
-# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm partner
+## 4. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm main
+## 5. Uncomment the following line to add software from the proposed repository.
+## 6. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm-proposed main
+## 7. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm-proposed main
+## 8. This software is not part of OpenMediaVault, but is offered by third-party
+## 9. developers as a service to OpenMediaVault users.
+## 10. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm partner
+## 11. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm partner
 EOF
 ```
 
@@ -63,7 +63,7 @@ apt-get install openmediavault
 ```
 
 
-## connection to web interface
+## 12. connection to web interface
 
 http://Your_IP_Address
 
@@ -77,7 +77,7 @@ Password: `openmediavault`
 
 You can now connect a disk and create shares.
 
-## Add Disk
+## 13. Add Disk
 
 Please note that not all changes are applied immediately. Each change requires validation.
 If you see the following message, this means that changes are pending. Click on validate to apply them.

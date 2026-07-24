@@ -1,4 +1,4 @@
-# 2.1 Extruder calibration
+# Extruder calibration
 
 
 The configuration files I use are configured for my hardware. You

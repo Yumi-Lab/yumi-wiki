@@ -2,7 +2,7 @@
 
 You can control multiple pads with a single pad. This provides centralized control over all your printers.
 
-# Mainsail method
+## 1. Mainsail method
 
 Log in to your mainsail interface
 
@@ -48,7 +48,7 @@ And now I control my Creality K1 Max
 
 ![RemotePad](/img/KlipperSmartPad/RemotePads/20240222_170854.jpg)
 
-# SSH method
+## 2. SSH method
 
 To do this, you need an ssh connection on the pad you'll be using to control other pads.
 

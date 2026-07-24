@@ -1,4 +1,4 @@
-# 2.3 Home Assistant
+# Home Assistant
 
 ![Home Assistant](/img/SmartPi/Home_Assistant/homeassistant_logo.png)
 

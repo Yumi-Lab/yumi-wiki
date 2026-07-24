@@ -2,7 +2,7 @@
 glightbox: false
 ---
 
-# 1.1 Safety
+# Safety
 ## ⚠️ Safety First ⚠️
 <p data-start="1380" data-end="1486">Laser engraving isn’t just a casual hobby — it’s a powerful tool that requires care and attention.
 Always wear the provided safety goggles and avoid inhaling the smoke produced during engraving.

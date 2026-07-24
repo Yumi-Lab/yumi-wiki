@@ -1,4 +1,4 @@
-# 2.2 Z-OFFSET calibration
+# Z-OFFSET calibration
 
 ## From Mainsail
 

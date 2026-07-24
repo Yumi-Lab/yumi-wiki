@@ -1,12 +1,12 @@
-# 1.8 Change timezone
+# Change timezone
 
-# Hardware and software :
+## 1. Hardware and software :
 
 MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
 
 Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1 
 
-# SSH connection
+## 2. SSH connection
 
 Download and install MobaXterm.
 

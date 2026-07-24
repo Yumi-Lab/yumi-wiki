@@ -1,4 +1,4 @@
-# 4.2 Dual Color D12 230
+# Dual Color D12 230
 
 ![Dualcolor](/img/KlipperSmartPad/DualColorD12/D12dual.webp)
 

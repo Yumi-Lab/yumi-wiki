@@ -1,4 +1,4 @@
-# 1.3 Official Linux Image
+# Official Linux Image
 
 Official Armbian-based images for **YUMI Smart Pi One** and **YUMI Smart Pad** (Allwinner H3).
 

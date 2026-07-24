@@ -1,6 +1,6 @@
-# 2.2 RetroMi (include optimised RetroPie)
+# RetroMi (include optimised RetroPie)
 ![retropie](/img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png)
-## Introduction
+## 1. Introduction
 RetroPie stands out in the retro gaming world for its unparalleled flexibility and customization options, making it a go-to choice for enthusiasts and builders of retro gaming projects. With its broad support for emulators, RetroPie enables users to dive into a vast library of games spanning decades of consoles and computer systems, from classic Atari and NES to more recent platforms like the PlayStation.
 
 Its customizable nature is a significant advantage, offering users the freedom to tweak the user interface, controller configurations, and even add extra scripts and features to meet their specific needs. This adaptability makes RetroPie an ideal solution for those looking to create a personalized retro gaming console.
@@ -9,7 +9,7 @@ Moreover, RetroPie benefits from a dedicated and active community, providing ext
 
 In summary, RetroPie is a key platform for retro gaming projects, offering powerful flexibility, extensive emulator support, and a vibrant community, enabling users to craft customized and immersive retro gaming experiences.
 
-# Auto Installation (Recommended for beginners)
+## 2. Auto Installation (Recommended for beginners)
 
 You can use Balena Etcher or Raspberry imager to prepare the SD card with the image below
 
@@ -23,9 +23,9 @@ You can use Balena Etcher or Raspberry imager to prepare the SD card with the im
 
 Image for OS any SD card: Available soon
 
-# Manual Installation
+## 3. Manual Installation
 
-## Prerequisites
+## 4. Prerequisites
 
 -Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  (https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
 
@@ -35,7 +35,7 @@ Manual installation can take several hours, so you'll just have to be patient wh
 
 Connect to the pad via ssh with mobaxterm or putty, for example.
 
-## Retropie installation for YUMI Smart Pi One
+## 5. Retropie installation for YUMI Smart Pi One
 
 ```
 git clone https://github.com/Yumi-Lab/Retropie-smartpi.git
@@ -44,13 +44,13 @@ cd Retropie-smartpi
 
 ```
 
-## Relaunching the Smart Pi One
+## 6. Relaunching the Smart Pi One
 
 ```
 sudo reboot
 ```
 
-## Start
+## 7. Start
 
 You should see Emulastation start up.
 
@@ -61,7 +61,7 @@ Once started, you need to set up a controller
 ![emula](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
 
 
-## Find IP address from Retropie
+## 8. Find IP address from Retropie
 
 To find your IP from Retropie, go to the Retropie menu.
 
@@ -77,7 +77,7 @@ In this example the IP address is 192.168.1.123.
 
 You can now easily send Roms over the network.
 
-## add roms or BIOS
+## 9. add roms or BIOS
 
 you can add roms and bios from your pc by opening an explorer and typing your ip address in the address bar.
 

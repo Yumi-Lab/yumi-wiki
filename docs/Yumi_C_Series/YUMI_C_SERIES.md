@@ -1,4 +1,4 @@
-# 1.1 YUMI C SERIES
+# YUMI C SERIES
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
@@ -16,7 +16,7 @@
 [![yumiC](/img/YumiCSeries/YumiCSeries020.avif)](https://www.kickstarter.com/projects/yumi-3d-printer/yumi-3d-printer-the-faster-multicolor-printer-in-the-galaxy?ref=discovery&term=yumi&total_hits=35&category_id=331){ target=_blank }
 
 
-# ❤️ Open Source at Heart — Powered by Klipper ❤️
+## 1. ❤️ Open Source at Heart — Powered by Klipper ❤️
 
 Before going further, let’s take a moment to acknowledge Kevin O'Connor — the brilliant mind behind Klipper.
 His firmware redefined 3D printing by shifting complex calculations from the printer’s mainboard to an external system, unlocking greater speed, precision, and quality.
@@ -26,7 +26,7 @@ Our mission is clear: make multicolor 3D printing fast, reliable, and accessible
 
 We are launching this project with you, our contributors, in mind. Join us in this exciting adventure — and together, let's revolutionize open-source 3D printing.
 
-# 🖨️ YUMI C Series — The Multicolor 3D Printer, Reimagined
+## 2. 🖨️ YUMI C Series — The Multicolor 3D Printer, Reimagined
 
 The YUMI Model C is a next-generation 3D printer built for speed, precision, and true multicolor performance — without compromise.
 
@@ -64,12 +64,12 @@ Choose from C235 / C335 / C435, covering needs from everyday prints to large-sca
   <img src="/img/YumiCSeries/YumiCSeries005.webp" alt="yumiC" />
 </p>
 
-# 🌟 MAIN FEATURES — The Future of Modular 3D Printing
+## 3. 🌟 MAIN FEATURES — The Future of Modular 3D Printing
 
-## 🚀 Ultra-Fast & High-Performance Printing
+## 4. 🚀 Ultra-Fast & High-Performance Printing
 Print at up to 700 mm/s with accelerations up to 20,000 mm/s². The 220V/110V heated bed reaches 100°C in seconds, so your prints start like never before
 
-## 🎨 Modular Multi-Color System (1 to 12 Colors)
+## 5. 🎨 Modular Multi-Color System (1 to 12 Colors)
 The YUMI Material System (YMS) scales from 1 to 12 independent modules.
 Each YMS includes an anti-UV protective cover, and only 10 cm of retraction is needed to switch colors.
 Filament is cut close to the nozzle, reducing purge, and waste is automatically ejected.
@@ -78,7 +78,7 @@ Filament is cut close to the nozzle, reducing purge, and waste is automatically 
   <img src="/img/YumiCSeries/YumiCSeries006.avif" alt="yumiC" />
 </p>
 
-# 🔥Meet the YUMI Print Heads — Built for Speed and Color
+## 6. 🔥Meet the YUMI Print Heads — Built for Speed and Color
 
 <p align="center">
   <img src="/img/YumiCSeries/YumiCSeries007.avif" alt="yumiC" />
@@ -100,7 +100,7 @@ They cover everything from PLA, PETG, ABS, ASA, TPU to engineering-grade materia
 
 
 
-# 🎯 YMS — The Modular Material System That Changes Everything
+## 7. 🎯 YMS — The Modular Material System That Changes Everything
 
 <p align="center">
   <img src="/img/YumiCSeries/YumiCSeries010.avif" alt="yumiC" />
@@ -139,7 +139,7 @@ No more towers. No more waste. Just pure color freedom.
 </p>
 
 
-# More details about YUMi 3D printers
+## 8. More details about YUMi 3D printers
 
 🖥️ Smart Interface & Remote Access
 Use the built-in 4.3” capacitive touchscreen to control everything, or manage your print remotely through the YUMI | Lab mobile app.
@@ -150,15 +150,15 @@ Use the built-in 4.3” capacitive touchscreen to control everything, or manage 
 </p>
 
 
-## 💾 Storage & Compatibility That Grows With You
+## 9. 💾 Storage & Compatibility That Grows With You
 Comes with 16 GB internal memory, expandable to 32 GB.
 Fully compatible with OrcaSlicer and all major open-source slicers.
 
-## 🔓 Open & Modular by Design
+## 10. 🔓 Open & Modular by Design
 Powered by Klipper firmware — 100% open source and already available on GitHub.
 Modular design makes it easy to upgrade, experiment, and create without limits.
 
-## 🌐 Print from Anywhere — Any Device, Total Freedom
+## 11. 🌐 Print from Anywhere — Any Device, Total Freedom
 Your YUMI 3D printer stays connected to your PC, tablet, and smartphone at the same time.
 Start, monitor, and control your prints from anywhere — even from the other side of the world — all at your fingertips.
 
@@ -169,16 +169,16 @@ No more USB keys, no more waiting — just tap and print.
 </p>
 
 
-## 🔊 Vibration Compensation & Pressure Advance
+## 12. 🔊 Vibration Compensation & Pressure Advance
 Includes a built-in ADXL sensor for Input Shaper, and native support for Pressure Advance.
 → Your prints come out faster, cleaner, and sharper — especially on corners and curve.
 
-## 📡 Non-Contact Metal-Based Auto Bed Leveling
+## 13. 📡 Non-Contact Metal-Based Auto Bed Leveling
 → Result: perfect first layers and high dimensional accuracy.
 YUMI uses a proximity sensor to detect the build surface without any physical contact, unlike systems that require the nozzle to press directly onto the plate.
 → This ensures consistent precision, even in the presence of dust, residue, or fragile build surfaces.
 
-# 🚀 Meet the YUMI Team
+## 14. 🚀 Meet the YUMI Team
 
 This campaign would never have come to life without the passion and dedication of our incredible team. Over the past few months, our logistics, marketing, customer support, and production crews have worked tirelessly behind the scenes to make sure every detail is planned, tested, and ready—so we can deliver exactly what we promise.
 

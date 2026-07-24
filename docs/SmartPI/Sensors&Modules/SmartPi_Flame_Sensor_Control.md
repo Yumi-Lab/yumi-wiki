@@ -1,4 +1,4 @@
-# 2.7 Flame Presence Sensor with Smart Pi One
+# Flame Presence Sensor with Smart Pi One
 
 In this guide, we will demonstrate how to read the values from a flame presence sensor connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
