@@ -81,7 +81,7 @@ Measured on the pad: **20 jobs → 3 at a time until the queue drains → 20/20 
 
 - **Update:** re-run `install.sh` — that *is* the updater (exits fast when already newest; `CLAUDE_FORCE=1` to rebuild).
 - **Check:** `claude-check-update` prints one JSON line (`{installed, latest, update_available}`).
-- ⚠️ **Do not run `claude update`** — auto-update is disabled on this platform (it would fetch a 64-bit binary).
+- **Do not run `claude update`** — auto-update is disabled on this platform (it would fetch a 64-bit binary).
 
 ## 7. Notes
 

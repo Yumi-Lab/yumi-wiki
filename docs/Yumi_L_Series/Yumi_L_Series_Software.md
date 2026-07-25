@@ -13,7 +13,7 @@ This page compares the three recommended options so you can quickly pick the rig
 | **LaserGRBL** | ✅ | ❌ | ❌ | **Free** (open source) | [1.7 LaserGRBL Setup](Yumi_L_Series_LaserGRBL.md) |
 | **OpenBurn Laser** | ✅ | ❌ | ❌ | **Free** | [1.8 OpenBurn Laser Setup](Yumi_L_Series_OpenBurn.md) |
 
-> 💡 Whatever your OS, you can also control the laser from any web browser (PC, Mac, smartphone, tablet) using the built-in **Web Control Interface** — see [1.9 Wireless Control](Yumi_L_Series_Wireless.md).
+> Whatever your OS, you can also control the laser from any web browser (PC, Mac, smartphone, tablet) using the built-in **Web Control Interface** — see [1.9 Wireless Control](Yumi_L_Series_Wireless.md).
 
 ---
 
@@ -27,7 +27,7 @@ The most powerful and complete laser software on the market. Full vector editing
 - **Price**: paid license, with a free trial period
 - **Best for**: regular users and professionals who want the most complete tool
 
-➡️ Setup guide: [1.6 LightBurn Setup and Usage](Yumi_L_Series_LightBurn.md)
+ Setup guide: [1.6 LightBurn Setup and Usage](Yumi_L_Series_LightBurn.md)
 
 ---
 
@@ -41,8 +41,8 @@ The reference free and open-source software for GRBL laser engravers. Excellent 
 - **Price**: free and open source
 - **Best for**: beginners on Windows, image engraving
 
-➡️ Setup guide: [1.7 LaserGRBL Setup and Usage](Yumi_L_Series_LaserGRBL.md)  
-➡️ Tutorials: [LaserGRBL step-by-step](Tuto/Yumi_L_LaserGRBL.md) · [Cork engraving with LaserGRBL](Tuto/Yumi_L_Cork_Engraving.md)
+ Setup guide: [1.7 LaserGRBL Setup and Usage](Yumi_L_Series_LaserGRBL.md)
+ Tutorials: [LaserGRBL step-by-step](Tuto/Yumi_L_LaserGRBL.md) · [Cork engraving with LaserGRBL](Tuto/Yumi_L_Cork_Engraving.md)
 
 ---
 
@@ -56,7 +56,7 @@ A free alternative to LightBurn developed by M3D-FORMATION, with a similar intui
 - **Price**: free
 - **Best for**: Windows users who want a LightBurn-style interface without buying a license
 
-➡️ Setup guide: [1.8 OpenBurn Laser Setup and Usage](Yumi_L_Series_OpenBurn.md)
+ Setup guide: [1.8 OpenBurn Laser Setup and Usage](Yumi_L_Series_OpenBurn.md)
 
 ---
 

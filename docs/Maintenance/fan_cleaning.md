@@ -1,14 +1,14 @@
-# 💨 Fan Cleaning – Maintenance Guide
+# Fan Cleaning – Maintenance Guide
 
 ---
 
-## 🌟 Objective
+## Objective
 
 Prevent overheating and extend the life of electronics and the hotend by cleaning printer fans.
 
 ---
 
-## ⚖️ Required Tools
+## Required Tools
 
 - Compressed air canister or small air blower
 - Soft brush (e.g., paintbrush or antistatic brush)
@@ -16,7 +16,7 @@ Prevent overheating and extend the life of electronics and the hotend by cleanin
 
 ---
 
-## ⚠️ Safety Precautions
+## Safety Precautions
 
 !!! warning
     - Turn off and unplug the printer.
@@ -24,7 +24,7 @@ Prevent overheating and extend the life of electronics and the hotend by cleanin
 
 ---
 
-## 📆 Cleaning Frequency
+## Cleaning Frequency
 
 | Environment      | Fan Cleaning Interval |
 | ---------------- | --------------------- |
@@ -33,7 +33,7 @@ Prevent overheating and extend the life of electronics and the hotend by cleanin
 
 ---
 
-## 🔧 Steps
+## Steps
 
 1. **Access the fans** (hotend, part cooling, controller board)
 2. Blow out dust with **compressed air** or a small air blower.
@@ -42,7 +42,7 @@ Prevent overheating and extend the life of electronics and the hotend by cleanin
 
 ---
 
-## 📅 Tips
+## Tips
 
 - Clean intake filters or covers if present.
 - Listen for unusual noise — it may indicate damaged bearings.

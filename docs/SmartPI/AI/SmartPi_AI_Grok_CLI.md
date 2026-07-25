@@ -59,7 +59,7 @@ The CLI displays an `accounts.x.ai` URL and a verification code. Open the URL on
 
 - **Update:** re-run `install.sh` — that *is* the updater (exits fast when already newest; `GROK_FORCE=1` to reinstall, `GROK_VERSION=<version>` to pin).
 - **Check:** `grok-check-update` prints one JSON line (`{installed, latest, update_available}`).
-- ⚠️ **Never run `grok update`** — it would install a binary outside the wrapper; re-run `install.sh` instead.
+- **Never run `grok update`** — it would install a binary outside the wrapper; re-run `install.sh` instead.
 
 ## 7. Notes
 

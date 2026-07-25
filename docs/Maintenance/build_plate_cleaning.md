@@ -1,14 +1,14 @@
-# 🧼 Build Plate Cleaning – Maintenance Guide
+# Build Plate Cleaning – Maintenance Guide
 
 ---
 
-## 🌟 Objective
+## Objective
 
 Ensure consistent first layers and strong bed adhesion by properly cleaning the build surface.
 
 ---
 
-## ⚖️ Required Tools
+## Required Tools
 
 - Lint-free cloth or paper towel
 - Isopropyl alcohol (IPA) 90% or higher
@@ -17,7 +17,7 @@ Ensure consistent first layers and strong bed adhesion by properly cleaning the 
 
 ---
 
-## ⚠️ Safety Precautions
+## Safety Precautions
 
 !!! warning
     - Wait until the build plate is **cool** before cleaning.
@@ -25,7 +25,7 @@ Ensure consistent first layers and strong bed adhesion by properly cleaning the 
 
 ---
 
-## 🧹 Cleaning Frequency
+## Cleaning Frequency
 
 | Usage Type    | Recommended Cleaning   |
 | ------------- | ---------------------- |
@@ -35,7 +35,7 @@ Ensure consistent first layers and strong bed adhesion by properly cleaning the 
 
 ---
 
-## 🧹 Cleaning Methods
+## Cleaning Methods
 
 ### 1. **Routine Cleaning (IPA Wipe)**
 
@@ -52,7 +52,7 @@ Ensure consistent first layers and strong bed adhesion by properly cleaning the 
 
 ---
 
-## 📅 Tips
+## Tips
 
 - Do not touch the print surface with bare fingers after cleaning.
 - Do not use acetone unless explicitly safe for your build surface.

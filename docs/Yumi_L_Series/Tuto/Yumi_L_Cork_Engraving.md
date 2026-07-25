@@ -96,7 +96,7 @@ glightbox: false
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  object-fit: contain; /* ✅ garde les proportions originales */
+ object-fit: contain; /* garde les proportions originales */
   width: auto;
   height: auto;
   transform: scale(1);

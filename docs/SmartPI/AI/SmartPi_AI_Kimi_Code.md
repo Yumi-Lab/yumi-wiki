@@ -103,7 +103,7 @@ kimi-code-daemon-status --json     # {"daemon":true,"running":2,"max":2,"queued"
 
 - **Update:** re-run `install.sh` — that *is* the updater. It resolves the newest npm version, is a no-op when you are already current, and reinstalls the launcher/shims/probes.
 - **Check:** `kimi-code-check-update` prints one JSON line (`{installed, latest, update_available}`).
-- ⚠️ **Never run `kimi-code upgrade`** (upstream's self-updater) — it downloads a binary release, and there is none for 32-bit ARM.
+- **Never run `kimi-code upgrade`** (upstream's self-updater) — it downloads a binary release, and there is none for 32-bit ARM.
 - Everything lives under `$HOME` — no sudo after the first install.
 
 ## 7. Coexistence with the Python Kimi CLI

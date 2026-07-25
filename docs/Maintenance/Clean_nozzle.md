@@ -1,16 +1,16 @@
-# 🧼 Nozzle Cleaning – Maintenance Guide
+# Nozzle Cleaning – Maintenance Guide
 
 ---
 
-## 🎯 Objective
+## Objective
 
 This guide explains how to **clean the nozzle of a 3D printer** effectively to ensure smooth extrusion and avoid partial or complete clogs.
 
-⚙️ **Important:** These instructions apply only to printers equipped with an extruder that includes a **manual release mechanism** for separating the drive gears (such as a lever).
+ **Important:** These instructions apply only to printers equipped with an extruder that includes a **manual release mechanism** for separating the drive gears (such as a lever).
 
 ---
 
-## 🛠️ Required Tools
+## Required Tools
 
 - Flat wrench suitable for the nozzle (typically 7 mm)
 - Brass wire brush (recommended)
@@ -22,7 +22,7 @@ This guide explains how to **clean the nozzle of a 3D printer** effectively to e
 
 ---
 
-## ⚠️ Safety Precautions
+## Safety Precautions
 
 !!! warning
     - **Release the extruder manually** using the provided lever or system before inserting or removing filament.
@@ -32,7 +32,7 @@ This guide explains how to **clean the nozzle of a 3D printer** effectively to e
 
 ---
 
-## 🧽 Cleaning Steps
+## Cleaning Steps
 
 ### 1. Heat the Nozzle (via Mainsail / Klipper)
 
@@ -78,7 +78,7 @@ This guide explains how to **clean the nozzle of a 3D printer** effectively to e
 
 ---
 
-## 🔄 Recommended Cleaning Frequency
+## Recommended Cleaning Frequency
 
 | Printer Usage     | Suggested Cleaning Interval   |
 |-------------------|-------------------------------|
@@ -88,7 +88,7 @@ This guide explains how to **clean the nozzle of a 3D printer** effectively to e
 
 ---
 
-## ✅ Additional Tips
+## Additional Tips
 
 - Always use **high-quality filament from the Yumi brand** to reduce clog risks.
 - Do not leave heated filament idle in the nozzle for long periods.

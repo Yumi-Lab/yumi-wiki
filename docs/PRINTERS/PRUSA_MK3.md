@@ -275,4 +275,4 @@ I recommend starting with a calibration cube.
 
 https://www.thingiverse.com/thing:1278865
 
-Once you've got a perfect cube, you can start printing 😉
+Once you've got a perfect cube, you can start printing

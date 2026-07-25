@@ -1,12 +1,12 @@
 # Adxl calibration
 
-## 1. 📦 Prerequisites
+## 1. Prerequisites
 - **Smartpad**  [buy here](https://wanhao-europe.com/products/wanhao-klipper-pad?variant=50407737753940){ target=_blank }
 - **ADXL345 sensor** properly connected and configured in Klipper  [buy here](https://wanhao-europe.com/products/capteur-adxl-test?_pos=1&_psq=adxl&_ss=e&_v=1.0){ target=_blank }  
 
 ---
 
-## 2. 🚀 Starting the Calibration
+## 2. Starting the Calibration
 
 1. Connect the ADXL to the smartpad
 <p align="center">
@@ -31,7 +31,7 @@
 </p>
 ---
 
-## 3. 📏 ADXL Positioning
+## 3. ADXL Positioning
 
 ## 4. Measuring the X-axis
 - Mount the ADXL on the X-axis as shown in the reference photo (using a screw).  
@@ -43,7 +43,7 @@
 <p align="center">
   <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" style="width:50%;" />
 </p>
-- The X-axis is now configured ✅  
+- The X-axis is now configured
 
 ---
 
@@ -62,7 +62,7 @@
 <p align="center">
   <img src="/img/KlipperSmartPad/ADXL/001.jpg" alt="ADXL" style="width:50%;"/>
 </p>
-- The Y-axis is now configured ✅  
+- The Y-axis is now configured
 
 ---
 

@@ -92,7 +92,7 @@ glightbox: false
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  object-fit: contain; /* ✅ garde les proportions originales */
+ object-fit: contain; /* garde les proportions originales */
   width: auto;
   height: auto;
   transform: scale(1);
@@ -187,12 +187,12 @@ glightbox: false
 <div class="lasergrbl-text">
 <p>Unlike many expensive engraving programs, LaserGRBL is:</p>
 <ul>
-<li>✅ Free and open-source</li>
-<li>✅ Compatible with the Yumi L-A4</li>
-<li>✅ User-friendly</li>
-<li>✅ Supports multiple file formats (JPG, PNG, SVG...)</li>
+<li> Free and open-source</li>
+<li> Compatible with the Yumi L-A4</li>
+<li> User-friendly</li>
+<li> Supports multiple file formats (JPG, PNG, SVG...)</li>
 </ul>
-<p>👉 The perfect choice to get started without investing in paid software.</p>
+<p> The perfect choice to get started without investing in paid software.</p>
 </div>
 </div>
 </div>

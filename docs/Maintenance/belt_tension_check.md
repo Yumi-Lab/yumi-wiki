@@ -1,21 +1,21 @@
-# ⚖️ Belt Tension Check – Maintenance Guide
+# Belt Tension Check – Maintenance Guide
 
 ---
 
-## 🌟 Objective
+## Objective
 
 Maintain print quality by ensuring correct belt tension for X/Y axis.
 
 ---
 
-## ⚖️ Tools Required
+## Tools Required
 
 - Hex key / screwdriver (if adjustment needed)
 - Tension test tool (optional) or use sound test
 
 ---
 
-## ⚠️ Warning
+## Warning
 
 !!! note
     Loose belts cause layer shifting, skipped steps, or wavy lines.
@@ -23,7 +23,7 @@ Maintain print quality by ensuring correct belt tension for X/Y axis.
 
 ---
 
-## 🔍 Inspection Frequency
+## Inspection Frequency
 
 | Usage Level    | Check Belts Every |
 | -------------- | ----------------- |
@@ -32,7 +32,7 @@ Maintain print quality by ensuring correct belt tension for X/Y axis.
 
 ---
 
-## 🔧 Check Procedure
+## Check Procedure
 
 1. **Power off** the printer.
 2. **Gently press** the center of the belt — it should have some resistance but not feel loose.
@@ -42,7 +42,7 @@ Maintain print quality by ensuring correct belt tension for X/Y axis.
 
 ---
 
-## ⚖️ Adjustment (if applicable)
+## Adjustment (if applicable)
 
 - Locate tension screws on the X and Y axis carriages or idler mounts.
 - Tighten gradually and test often.
@@ -50,7 +50,7 @@ Maintain print quality by ensuring correct belt tension for X/Y axis.
 
 ---
 
-## 📅 Final Notes
+## Final Notes
 
 - If you hear grinding or skipping during prints, check belts immediately.
 - Inspect pulley set screws for tightness as well.

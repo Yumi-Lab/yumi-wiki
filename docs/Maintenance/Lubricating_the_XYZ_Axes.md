@@ -1,25 +1,25 @@
-# 🛠️ Maintenance Guide: Lubricating the X/Y/Z Axes
+# Maintenance Guide: Lubricating the X/Y/Z Axes
 
 
 Regular lubrication is essential for keeping your printer running smoothly, quietly, and accurately. This guide covers the proper lubrication procedure for the **X/Y linear rails** and the **Z lead screw(s)**, following best practices for Bambu Lab-style printers.
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 
 Before starting the lubrication procedure, make sure you have the correct maintenance products:
 
-- ✅ [Wanhao Maintenance Oil – 30ml (for X/Y)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51357436936532){ target=_blank }
-- ✅ [Wanhao Maintenance Grease – 30ml (for Z axis)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358517264724){ target=_blank }
-- ✅ Or, get both in the [Wanhao Maintenance Oil & Grease Pack – 2×30ml](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358414799188){ target=_blank }
+- [Wanhao Maintenance Oil – 30ml (for X/Y)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51357436936532){ target=_blank }
+- [Wanhao Maintenance Grease – 30ml (for Z axis)](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358517264724){ target=_blank }
+- Or, get both in the [Wanhao Maintenance Oil & Grease Pack – 2×30ml](https://wanhao-europe.com/products/huile-de-maintenance-30ml?variant=51358414799188){ target=_blank }
 
 !!! info
     These lubricants are safe for 3D printer components and recommended for linear rails and lead screws. Avoid household substitutes.
 
 ---
 
-## 🔧 Recommended Lubrication Schedule
+## Recommended Lubrication Schedule
 
 
 | Axis | Recommended Product | Frequency |
@@ -32,7 +32,7 @@ Before starting the lubrication procedure, make sure you have the correct mainte
 
 ---
 
-## ⚙️ Required Tools & Materials
+## Required Tools & Materials
 
 
 - Light oil (e.g. PTFE oil, sewing machine oil)
@@ -43,7 +43,7 @@ Before starting the lubrication procedure, make sure you have the correct mainte
 
 ---
 
-## 🧼 Preparation Steps
+## Preparation Steps
 
 
 1. **Turn off** the printer and **unplug** it.
@@ -52,7 +52,7 @@ Before starting the lubrication procedure, make sure you have the correct mainte
 
 ---
 
-## 🛢️ Lubricating the X/Y Axes (Linear Rails)
+## Lubricating the X/Y Axes (Linear Rails)
 
 
 The X and Y axes move along **linear guide rails** with internal ball bearings.
@@ -69,7 +69,7 @@ The X and Y axes move along **linear guide rails** with internal ball bearings.
 
 ---
 
-## ⚙️ Lubricating the Z Axis (Lead Screw)
+## Lubricating the Z Axis (Lead Screw)
 
 
 The Z axis uses a **lead screw** that lifts the build plate vertically.
@@ -86,7 +86,7 @@ The Z axis uses a **lead screw** that lifts the build plate vertically.
 
 ---
 
-## ✅ Final Tips
+## Final Tips
 
 
 - Use **only compatible lubricants** for plastic and metal parts.
@@ -95,7 +95,7 @@ The Z axis uses a **lead screw** that lifts the build plate vertically.
 
 ---
 
-## 📌 Maintenance Reminders
+## Maintenance Reminders
 
 
 - Add lubrication to your **monthly maintenance checklist**.

@@ -3,7 +3,7 @@ glightbox: false
 ---
 
 # Safety
-## ⚠️ Safety First ⚠️
+## Safety First
 <p data-start="1380" data-end="1486">Laser engraving isn’t just a casual hobby — it’s a powerful tool that requires care and attention.
 Always wear the provided safety goggles and avoid inhaling the smoke produced during engraving.
 Safety is the first step to enjoying your laser engraver with peace of mind.</p>
@@ -96,7 +96,7 @@ Safety is the first step to enjoying your laser engraver with peace of mind.</p>
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  object-fit: contain; /* ✅ garde les proportions originales */
+ object-fit: contain; /* garde les proportions originales */
   width: auto;
   height: auto;
   transform: scale(1);
