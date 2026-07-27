@@ -25,8 +25,10 @@ Once you have downloaded the image of your choice, follow the [flash guide](Smar
 ## 1. Requirements
 
 !!! warning "microSD Card Compatibility"
-    - **Minimum:** 4 GB
+    - **Minimum:** 4 GB — 8 GB or more for a desktop image
     - **Maximum: 32 GB** — larger cards are not supported
+    - Use a genuine **Class 10 / V30** card: a slow or counterfeit card is the most common cause of a board that will not boot. We sell one tested on these boards — [YUMI 16 GB microSD](https://wanhao-europe.com/products/carte-micro-sd-16go?variant=48222240375124){ target=_blank }.
+    - No card slot on your computer? Use a microSD-to-SD adapter, or a microSD-to-USB reader.
 
 ---
 

@@ -10,10 +10,27 @@ https://yumi-lab.github.io/SmartPi-armbian/os_list.json
 
 It is regenerated with every release, so the menu always offers the newest images.
 
-!!! info "Which version of Imager?"
-    You need **Raspberry Pi Imager 2.0 or newer** — earlier versions cannot be pointed at a custom image list from the interface. Check with *Raspberry Pi Imager → About*, or download the current version from [raspberrypi.com/software](https://www.raspberrypi.com/software/){ target=_blank }.
+!!! info "Imager 2.0 or newer"
+    Earlier versions cannot be pointed at a custom image list from the interface. Check yours with *Raspberry Pi Imager → About*.
 
-## 1. Point Imager at the YUMI-LAB list
+## 1. What you need
+
+**A microSD card.** This is the board's only disk, and it is where most "it will not boot" stories start: a slow or counterfeit card corrupts itself after a few power cycles. Buy a genuine, high-speed card — **Class 10 / V30 or better** — from a source you trust.
+
+[:material-sd: YUMI 16 GB microSD — Class 10 V30](https://wanhao-europe.com/products/carte-micro-sd-16go?variant=48222240375124){ .md-button .md-button--primary target=_blank }
+
+**Capacity:** 4 GB minimum, 8 GB or more for a desktop image, **32 GB maximum** — larger cards are not supported.
+
+**A way to plug the card into your computer**, depending on what your machine has:
+
+| Your computer | What you need |
+|---|---|
+| A full-size SD slot (most laptops) | A **microSD-to-SD adapter** — usually supplied with the card |
+| No card slot at all | A **microSD-to-USB reader**, a few euros in any computer shop |
+
+**Raspberry Pi Imager 2.0 or newer**, from [raspberrypi.com/software](https://www.raspberrypi.com/software/){ target=_blank } — Windows, macOS and Linux.
+
+## 2. Point Imager at the YUMI-LAB list
 
 === "From the interface (recommended)"
 
@@ -57,13 +74,13 @@ It is regenerated with every release, so the menu always offers the newest image
     rpi-imager --repo https://yumi-lab.github.io/SmartPi-armbian/os_list.json
     ```
 
-## 2. Skip the device step
+## 3. Skip the device step
 
 Imager opens on **"Select your Raspberry Pi device"**. Our list contains images, not Raspberry Pi models, so **this page is empty — that is expected**. Click **NEXT** to move on.
 
 ![The empty device step](/img/SmartPi/OS/rpi-imager-device.png)
 
-## 3. Choose your image
+## 4. Choose your image
 
 The **"Choose operating system"** page lists every YUMI-LAB image, each with its size and release date.
 
@@ -83,7 +100,7 @@ Not sure which one? See [Which one should I choose?](index.md#5-which-one-should
 !!! tip "Smart Pad owners"
     Pick the same images. The Smart Pad is a Smart Pi One with the 4.3" touchscreen fitted; the screen is detected at boot and the display rotated automatically.
 
-## 4. Choose the card and write
+## 5. Choose the card and write
 
 **1.** On **"Choose storage"**, select your microSD card. Check the size shown against the card in your reader — everything on the selected device is erased.
 
@@ -96,8 +113,9 @@ Not sure which one? See [Which one should I choose?](index.md#5-which-one-should
 !!! warning "microSD card compatibility"
     - **Minimum:** 4 GB — a desktop image needs 8 GB or more
     - **Maximum: 32 GB** — larger cards are not supported
+    - Speed and quality matter: see [what you need](#1-what-you-need)
 
-## 5. After the first boot
+## 6. After the first boot
 
 The board takes an address by DHCP on Ethernet, and also answers over the USB cable at `172.22.1.1` (see [SSH over USB](index.md#4-ssh-over-usb-otg-port)).
 
@@ -117,11 +135,11 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
 
 The [DietPi image](SmartPi_DietPi.md) is the exception — it uses its own accounts and configures itself with no questions at all.
 
-## 6. Going back to the Raspberry Pi list
+## 7. Going back to the Raspberry Pi list
 
 The custom URL stays until you change it. To install Raspberry Pi OS again: **APP OPTIONS → Content Repository → EDIT → Raspberry Pi (default) → APPLY & RESTART**. If you used the command line instead, just launch Imager normally.
 
-## 7. If something goes wrong
+## 8. If something goes wrong
 
 | Symptom | Cause and fix |
 |---|---|
@@ -131,7 +149,7 @@ The custom URL stays until you change it. To install Raspberry Pi OS again: **AP
 | The download stalls or fails | The images are served by GitHub. Retry, or [download the `.img.xz` by hand](../SmartPi_Linux.md) and use *Use custom* in Imager. |
 | The card is not offered | Reinsert it, try another reader, and remember cards larger than 32 GB are not supported. |
 
-## 8. Prefer to do it manually?
+## 9. Prefer to do it manually?
 
 Download the image yourself and write it with balenaEtcher or `dd`:
 
