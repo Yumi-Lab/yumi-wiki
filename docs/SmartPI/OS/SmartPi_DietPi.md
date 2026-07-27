@@ -4,7 +4,7 @@
 
 [DietPi](https://dietpi.com/){ target=_blank } is a minimal Debian distribution for single-board computers: a trimmed-down system, a curated software catalog, and a set of menu-driven configuration tools. YUMI-LAB publishes a DietPi variant for the **Smart Pi One** and the **Smart Pad**, built from our own Debian 13 (trixie) server image.
 
-The result is about **293 MB compressed** and idles at roughly **87 MB of RAM** — against about 528 MB for the Armbian server image — which leaves a lot more of the H3's 1 GB for your own work.
+The result is about **293 MB compressed** and idles at roughly **87 MB of RAM** — against about 200 MB for the Armbian server image — which leaves more of the H3's 1 GB for your own work.
 
 !!! warning "Unofficial DietPi build"
     This image is **not** an official DietPi release. It is maintained by YUMI-LAB and is currently a **release candidate**: it works, and we are still refining it. Report anything odd on the [DietPi-SmartPi issue tracker](https://github.com/Yumi-Lab/DietPi-SmartPi/issues){ target=_blank }.
