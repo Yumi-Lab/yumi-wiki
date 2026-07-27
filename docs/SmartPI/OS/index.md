@@ -20,7 +20,11 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 [![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg)](SmartPi_DietPi.md)
 
+![Debian 14 Forky for Smart Pi One — coming soon](/img/SmartPi/OS/debian14-forky-banner.svg){ .off-glb }
+
 </div>
+
+**Debian 14 Forky** is the next Debian stable. An image for these boards is in preparation and will appear here when it is ready.
 
 ## 2. At a glance
 
