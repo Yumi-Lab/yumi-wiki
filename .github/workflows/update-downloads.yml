@@ -1,0 +1,43 @@
+name: Refresh download links
+
+# Rewrites the generated download tables from the SmartPi-armbian and
+# DietPi-SmartPi releases, so the wiki always links to the newest images
+# without anyone editing the page. Pushing to main triggers the deploy.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-downloads
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate the download tables
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_downloads.py
+
+      - name: Commit if the releases moved
+        run: |
+          if git diff --quiet; then
+            echo "Download tables already up to date"
+            exit 0
+          fi
+          git config user.name 'yumi-wiki-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git commit -am 'Refresh image download links from the latest releases'
+          git push

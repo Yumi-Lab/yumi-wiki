@@ -57,6 +57,15 @@
     .md-sidebar--primary {
         width: 17rem;
     }
+    /* Material pins the nav content to 11.5rem with padding, so widening the
+       sidebar alone only pushes the page content right — widen the inner box
+       too, otherwise nothing is gained. */
+    [dir=ltr] .md-sidebar--primary .md-sidebar__inner {
+        padding-right: calc(100% - 16.4rem);
+    }
+    [dir=rtl] .md-sidebar--primary .md-sidebar__inner {
+        padding-left: calc(100% - 16.4rem);
+    }
 }
 
 /* Banner galleries: two cards per row, so a column of 900x190 banners does

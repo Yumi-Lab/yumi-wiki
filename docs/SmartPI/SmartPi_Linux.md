@@ -27,119 +27,61 @@ Once you have downloaded the image of your choice, follow the [flash guide](Smar
 
 ---
 
-## 2. Latest stable release
+## 2. Download
 
-!!! success "v1.7.0 — April 23, 2026"
-    Server and Desktop editions available. Kernel headers are pre-installed, so kernel modules (WiFi drivers, GPIO drivers, DKMS) compile directly on the board. Select your device and preferred Linux distribution below.
+The links below always point at the **newest published release** — they are regenerated from the [GitHub releases](https://github.com/Yumi-Lab/SmartPi-armbian/releases){ target=_blank } every day.
 
-    [:octicons-mark-github-16: View all releases on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases){ .md-button .md-button--primary target=_blank }
+<!-- BEGIN AUTO: armbian-stable -->
 
----
+!!! success "v1.7.0 — latest stable release, 2026-04-23"
 
-## 3. Download — Smart Pi One (screenless / external display)
+    [:octicons-mark-github-16: v1.7.0 on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/v1.7.0){ .md-button target=_blank }
 
-=== ":simple-debian: Debian — Server"
+**Smart Pi One**
 
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Debian 13 Trixie** | :material-star: Recommended | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-trixie-debian13-server-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Debian 12 Bookworm** | Stable | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-bookworm-debian12-server-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Debian 11 Bullseye** | EOL | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-bullseye-debian11-server-2026-04-23-0753.img.xz){ target=_blank } |
+| Distribution | Server | Desktop |
+|---|---|---|
+| **Debian 13 Trixie** | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-trixie-debian13-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Trixie_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-trixie-debian13-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Debian 12 Bookworm** | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-bookworm-debian12-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-bookworm-debian12-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Ubuntu 24.04 Noble** | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-noble-ubuntu24.04-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Noble_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-noble-ubuntu24.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Ubuntu 22.04 Jammy** | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Jammy_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-jammy-ubuntu22.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Debian 11 Bullseye (EOL)** | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-bullseye-debian11-server-2026-04-23-0753.img.xz){ target=_blank } | — |
 
-    !!! tip "Which version?"
-        **Trixie (13)** is the current stable release — recommended for new installations.
-        **Bookworm (12)** remains a solid choice for proven stability.
-        Bullseye (11) is end-of-life — only use it for legacy setups.
+**Smart Pad**
 
-=== ":simple-debian: Debian — Desktop"
+| Distribution | Server | Desktop |
+|---|---|---|
+| **Debian 13 Trixie** | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-trixie-debian13-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Trixie_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-trixie-debian13-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Debian 12 Bookworm** | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-bookworm-debian12-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-bookworm-debian12-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Ubuntu 24.04 Noble** | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-noble-ubuntu24.04-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Noble_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-noble-ubuntu24.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Ubuntu 22.04 Jammy** | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-jammy-ubuntu22.04-server-2026-04-23-0753.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Jammy_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-jammy-ubuntu22.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+| **Debian 11 Bullseye (EOL)** | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-bullseye-debian11-server-2026-04-23-0753.img.xz){ target=_blank } | — |
 
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Debian 13 Trixie** | :material-star: Recommended | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Trixie_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-trixie-debian13-desktop-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Debian 12 Bookworm** | Stable | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-bookworm-debian12-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+<!-- END AUTO: armbian-stable -->
 
-    !!! info "No Bullseye Desktop"
-        Debian 11 Bullseye is end-of-life — no desktop image is provided for this version.
+!!! tip "Which version?"
+    **Trixie (13)** is the current Debian stable — recommended for new installations.
+    **Bookworm (12)** remains a solid choice for proven stability.
+    **Noble (24.04)** is the current Ubuntu LTS, supported until 2029.
+    Jammy (22.04) support ends April 2027, and Bullseye (11) is end-of-life — use them only to match an existing setup.
 
-=== ":simple-ubuntu: Ubuntu — Server"
+Every image has a matching `.sha256` file on the release page. Verify before flashing:
 
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Ubuntu 24.04 Noble** | :material-star: Recommended (LTS) | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-noble-ubuntu24.04-server-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Ubuntu 22.04 Jammy** | LTS | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-04-23-0753.img.xz){ target=_blank } |
-
-    !!! tip "Which version?"
-        **Noble (24.04)** is the current LTS — recommended for new installations (supported until 2029).
-        Jammy (22.04) standard support ends April 2027 — migrate to Noble when possible.
-
-=== ":simple-ubuntu: Ubuntu — Desktop"
-
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Ubuntu 24.04 Noble** | :material-star: Recommended (LTS) | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Noble_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-noble-ubuntu24.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Ubuntu 22.04 Jammy** | LTS | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Jammy_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpi1-jammy-ubuntu22.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
+```bash
+sha256sum -c Yumi-smartpi1-trixie-debian13-server-*.img.xz.sha256
+```
 
 ---
 
-## 4. Download — [Smart Pad](../KlipperSmartPad/SmartPad_specifications.md) (integrated touchscreen)
+## 3. Release candidate
 
-=== ":simple-debian: Debian — Server"
+<!-- BEGIN AUTO: armbian-rc -->
 
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Debian 13 Trixie** | :material-star: Recommended | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-trixie-debian13-server-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Debian 12 Bookworm** | Stable | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-bookworm-debian12-server-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Debian 11 Bullseye** | EOL | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-bullseye-debian11-server-2026-04-23-0753.img.xz){ target=_blank } |
+!!! info "v1.8.0-rc3 — release candidate, 2026-07-26"
 
-    !!! tip "Which version?"
-        **Trixie (13)** is the current stable — recommended for new installations.
-        **Bookworm (12)** remains a solid choice for proven stability.
-
-=== ":simple-debian: Debian — Desktop"
-
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Debian 13 Trixie** | :material-star: Recommended | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Trixie_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-trixie-debian13-desktop-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Debian 12 Bookworm** | Stable | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-bookworm-debian12-desktop-2026-04-23-0753.img.xz){ target=_blank } |
-
-    !!! info "No Bullseye Desktop"
-        Debian 11 Bullseye is end-of-life — no desktop image is provided for this version.
-
-=== ":simple-ubuntu: Ubuntu — Server"
-
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Ubuntu 24.04 Noble** | :material-star: Recommended (LTS) | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-noble-ubuntu24.04-server-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Ubuntu 22.04 Jammy** | LTS | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-jammy-ubuntu22.04-server-2026-04-23-0753.img.xz){ target=_blank } |
-
-    !!! tip "Which version?"
-        **Noble (24.04)** is the current LTS — recommended for new installations (supported until 2029).
-        Jammy (22.04) standard support ends April 2027 — migrate to Noble when possible.
-
-=== ":simple-ubuntu: Ubuntu — Desktop"
-
-    | Version | Status | Release | Download |
-    |---|---|---|---|
-    | **Ubuntu 24.04 Noble** | :material-star: Recommended (LTS) | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Noble_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-noble-ubuntu24.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
-    | **Ubuntu 22.04 Jammy** | LTS | v1.7.0 — 2026-04-23 | [![Download](https://img.shields.io/badge/Download-Jammy_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.7.0/Yumi-smartpad-jammy-ubuntu22.04-desktop-2026-04-23-0753.img.xz){ target=_blank } |
-
----
-
-## 5. Release candidate — v1.8.0
-
-!!! info "v1.8.0-rc3 — July 26, 2026 — release candidate"
-    Validated on real Smart Pi One hardware, and the version our [DietPi image](OS/SmartPi_DietPi.md) is built from. Use it if you want SSH over USB; stay on v1.7.0 if you want the release we consider final.
+    One image serves both the Smart Pi One and the Smart Pad — the touchscreen is detected at boot.
 
     [:octicons-mark-github-16: v1.8.0-rc3 on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/v1.8.0-rc3){ .md-button target=_blank }
-
-**What is new**
-
-- **SSH over USB (OTG port)** — one cable powers the board *and* carries the network. The board answers at `172.22.1.1`; set `172.22.1.2/24` on the computer side. The gadget uses **CDC NCM**, supported natively by macOS, Linux and Windows. See [SSH over USB](OS/index.md#4-ssh-over-usb-otg-port).
-- **Customizable boot logo** — U-Boot displays `/boot/boot.bmp` at power-on. The boot partition is FAT32 and mounts on macOS and Windows, so you can replace or delete the logo from any computer (uncompressed BMP, no larger than the display resolution).
-- **Kernel packages published** — the exact `linux-image`, `linux-headers`, `linux-dtb` and `linux-u-boot` `.deb` files matching these images are attached to the release, for both kernel branches (`current` 6.18 and `legacy` 6.12). Install DKMS headers from there, **not** from `apt.armbian.com`, whose generic builds do not match this kernel.
-- **One image for both boards** — the 4.3" 800x480 touchscreen is now detected at boot and the display rotated 180° only when it is found, so the `smartpi1` images also serve the Smart Pad. On an HDMI monitor the orientation is untouched.
-
-**Downloads (Smart Pi One and Smart Pad)**
 
 | Distribution | Server | Desktop |
 |---|---|---|
@@ -147,19 +89,28 @@ Once you have downloaded the image of your choice, follow the [flash guide](Smar
 | **Debian 12 Bookworm** | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-bookworm-debian12-server-2026-07-26-2006.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-bookworm-debian12-desktop-2026-07-26-2006.img.xz){ target=_blank } |
 | **Ubuntu 24.04 Noble** | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-noble-ubuntu24.04-server-2026-07-26-2006.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Noble_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-noble-ubuntu24.04-desktop-2026-07-26-2006.img.xz){ target=_blank } |
 | **Ubuntu 22.04 Jammy** | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-07-26-2006.img.xz){ target=_blank } | — |
-| **Debian 11 Bullseye** (EOL) | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-bullseye-debian11-server-2026-07-26-2006.img.xz){ target=_blank } | — |
+| **Debian 11 Bullseye (EOL)** | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc3/Yumi-smartpi1-bullseye-debian11-server-2026-07-26-2006.img.xz){ target=_blank } | — |
+
+<!-- END AUTO: armbian-rc -->
+
+**What is new in v1.8.0**
+
+- **SSH over USB (OTG port)** — one cable powers the board *and* carries the network. The board answers at `172.22.1.1`; set `172.22.1.2/24` on the computer side. The gadget uses **CDC NCM**, supported natively by macOS, Linux and Windows. See [SSH over USB](OS/index.md#4-ssh-over-usb-otg-port).
+- **Customizable boot logo** — U-Boot displays `/boot/boot.bmp` at power-on. The boot partition is FAT32 and mounts on macOS and Windows, so you can replace or delete the logo from any computer (uncompressed BMP, no larger than the display resolution).
+- **Kernel packages published** — the exact `linux-image`, `linux-headers`, `linux-dtb` and `linux-u-boot` `.deb` files matching these images are attached to the release, for both kernel branches (`current` 6.18 and `legacy` 6.12). Install DKMS headers from there, **not** from `apt.armbian.com`, whose generic builds do not match this kernel.
+- **One image for both boards** — the 4.3" 800x480 touchscreen is now detected at boot and the display rotated 180° only when it is found, so the `smartpi1` images also serve the Smart Pad. On an HDMI monitor the orientation is untouched.
 
 ---
 
-## 6. Lighter alternative — DietPi
+## 4. Lighter alternative — DietPi
 
 [![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg){ .banner }](OS/SmartPi_DietPi.md)
 
-Built from the v1.8.0 Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_DietPi.md) trades the desktop and part of the base system for memory: about **293 MB** compressed and roughly **87 MB of RAM at idle**, with a first boot that configures itself with no screen and no keyboard. Headless only, and currently a release candidate.
+Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_DietPi.md) trades the desktop and part of the base system for memory: about **293 MB** compressed and roughly **87 MB of RAM at idle**, with a first boot that configures itself with no screen and no keyboard. Headless only, and currently a release candidate.
 
 ---
 
-## 7. Comparison
+## 5. Comparison
 
 | | Debian 13 Trixie | Debian 12 Bookworm | Ubuntu 24.04 Noble | DietPi |
 |---|---|---|---|---|
@@ -172,7 +123,7 @@ Built from the v1.8.0 Debian 13 trixie server image, the [DietPi variant](OS/Sma
 
 ---
 
-## 8. Verify your board
+## 6. Verify your board
 
 Whichever image you flash, two commands confirm you are running the YUMI build:
 
@@ -190,6 +141,6 @@ Every image ships with the 1368 MHz CPU overclock, our custom U-Boot (DRAM 576 M
 
 ---
 
-## 9. Next Step — Flash the image
+## 7. Next Step — Flash the image
 
 [:material-sd: Flash guide — balenaEtcher](SmartPi_Linux_flash_sd.md){ .md-button .md-button--primary }

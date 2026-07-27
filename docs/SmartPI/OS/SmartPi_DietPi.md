@@ -40,9 +40,15 @@ On a board with 1 GB of RAM and an Allwinner H3, that headroom is the whole poin
 
 [:octicons-mark-github-16: DietPi-SmartPi releases](https://github.com/Yumi-Lab/DietPi-SmartPi/releases){ .md-button .md-button--primary target=_blank }
 
-| File | Size | Base |
+<!-- BEGIN AUTO: dietpi-release -->
+
+| File | Size | Release |
 |---|---|---|
-| `Yumi-smartpi1-trixie-debian13-dietpi-<date>.img.xz` | ~293 MB | SmartPi-armbian, Debian 13 trixie server |
+| [`Yumi-smartpi1-trixie-debian13-dietpi-2026-07-26-2351.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc3/Yumi-smartpi1-trixie-debian13-dietpi-2026-07-26-2351.img.xz){ target=_blank } | 306 MB | v1.8.0-rc3 — 2026-07-26 |
+
+The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc3){ target=_blank }.
+
+<!-- END AUTO: dietpi-release -->
 
 **2. Verify the checksum** — both files must sit in the same folder:
 
