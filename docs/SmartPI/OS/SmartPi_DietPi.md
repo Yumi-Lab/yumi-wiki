@@ -1,6 +1,6 @@
 # DietPi for Smart Pi One
 
-![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg){ .off-glb }
+![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg){ .off-glb .banner }
 
 [DietPi](https://dietpi.com/){ target=_blank } is a minimal Debian distribution for single-board computers: a trimmed-down system, a curated software catalog, and a set of menu-driven configuration tools. YUMI-LAB publishes a DietPi variant for the **Smart Pi One** and the **Smart Pad**, built from our own Debian 13 (trixie) server image.
 

@@ -50,3 +50,37 @@
     padding: .5rem .9rem;
     border-radius: 10px;
 }
+
+/* Roomier primary navigation: the numbered page titles in this wiki are long
+   and wrap two or three lines at Material's default 12.1rem. */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        width: 17rem;
+    }
+}
+
+/* Banner galleries: two cards per row, so a column of 900x190 banners does
+   not swallow the page. Single column once the viewport gets narrow. */
+.md-typeset .os-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .9rem;
+    margin: 1em 0;
+}
+.md-typeset .os-gallery p {
+    margin: 0;
+}
+.md-typeset .os-gallery img {
+    width: 100%;
+    max-width: 100%;
+}
+@media screen and (max-width: 60em) {
+    .md-typeset .os-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Standalone banners sit smaller than the 960px default for SVGs. */
+.md-typeset img.banner {
+    max-width: min(100%, 700px);
+}

@@ -6,6 +6,8 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 ## 1. Available images
 
+<div class="os-gallery" markdown>
+
 [![Debian 13 Trixie for Smart Pi One](/img/SmartPi/OS/debian13-trixie-banner.svg)](../SmartPi_Linux.md)
 
 [![Debian 12 Bookworm for Smart Pi One](/img/SmartPi/OS/debian12-bookworm-banner.svg)](../SmartPi_Linux.md)
@@ -17,6 +19,8 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 [![Debian 11 Bullseye for Smart Pi One](/img/SmartPi/OS/debian11-bullseye-banner.svg)](../SmartPi_Linux.md)
 
 [![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg)](SmartPi_DietPi.md)
+
+</div>
 
 ## 2. At a glance
 

@@ -153,7 +153,7 @@ Once you have downloaded the image of your choice, follow the [flash guide](Smar
 
 ## 6. Lighter alternative — DietPi
 
-[![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg)](OS/SmartPi_DietPi.md)
+[![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg){ .banner }](OS/SmartPi_DietPi.md)
 
 Built from the v1.8.0 Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_DietPi.md) trades the desktop and part of the base system for memory: about **293 MB** compressed and roughly **87 MB of RAM at idle**, with a first boot that configures itself with no screen and no keyboard. Headless only, and currently a release candidate.
 
