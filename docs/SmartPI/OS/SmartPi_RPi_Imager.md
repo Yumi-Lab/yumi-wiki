@@ -76,9 +76,12 @@ It is regenerated with every release, so the menu always offers the newest image
 
 ## 3. Skip the device step
 
-Imager opens on **"Select your Raspberry Pi device"**. Our list contains images, not Raspberry Pi models, so **this page is empty — that is expected**. Click **NEXT** to move on.
+Imager opens on **"Select your Raspberry Pi device"**. That page exists to filter the Raspberry Pi catalogue — it has **no effect on our images**, which carry no device tag and are listed whatever you pick.
 
-![The empty device step](/img/SmartPi/OS/rpi-imager-device.png)
+- If the list shows Raspberry Pi models, leave it alone (or take *No filtering* if your version offers it) and click **NEXT**.
+- If the list is **empty**, that is fine too: there is nothing to choose, click **NEXT**.
+
+Either way you land on the image list.
 
 ## 4. Choose your image
 
