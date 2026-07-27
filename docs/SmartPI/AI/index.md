@@ -4,6 +4,8 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 
 ## 1. Available AI Assistants
 
+<div class="banner-gallery" markdown>
+
 [![Claude Code CLI on Smart Pi One](/img/SmartPi/AI/claude-code-banner.svg)](SmartPi_AI_Claude_Code.md)
 
 [![Grok CLI on Smart Pi One](/img/SmartPi/AI/grok-cli-banner.svg)](SmartPi_AI_Grok_CLI.md)
@@ -13,6 +15,8 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 [![Kimi CLI on Smart Pi One](/img/SmartPi/AI/kimi-cli-banner.svg)](SmartPi_AI_Kimi_CLI.md)
 
 [![Vibe CLI on Smart Pi One](/img/SmartPi/AI/vibe-cli-banner.svg)](SmartPi_AI_Vibe_CLI.md)
+
+</div>
 
 ## 2. At a glance
 

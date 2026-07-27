@@ -70,21 +70,21 @@
 
 /* Banner galleries: two cards per row, so a column of 900x190 banners does
    not swallow the page. Single column once the viewport gets narrow. */
-.md-typeset .os-gallery {
+.md-typeset .banner-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: .9rem;
     margin: 1em 0;
 }
-.md-typeset .os-gallery p {
+.md-typeset .banner-gallery p {
     margin: 0;
 }
-.md-typeset .os-gallery img {
+.md-typeset .banner-gallery img {
     width: 100%;
     max-width: 100%;
 }
 @media screen and (max-width: 60em) {
-    .md-typeset .os-gallery {
+    .md-typeset .banner-gallery {
         grid-template-columns: 1fr;
     }
 }

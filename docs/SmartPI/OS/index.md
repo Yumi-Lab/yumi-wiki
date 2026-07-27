@@ -6,7 +6,7 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 ## 1. Available images
 
-<div class="os-gallery" markdown>
+<div class="banner-gallery" markdown>
 
 [![Debian 13 Trixie for Smart Pi One](/img/SmartPi/OS/debian13-trixie-banner.svg)](../SmartPi_Linux.md)
 
