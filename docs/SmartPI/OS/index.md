@@ -48,7 +48,7 @@ These are ours, not stock Armbian or stock DietPi. Whichever you pick, you get:
 | **Device tree** | `YUMi SmartPi One` — `cat /proc/device-tree/model` |
 | **Smart Pad screen rotation** | The 4.3" 800x480 touchscreen is detected at boot and the display rotated 180° only then; an HDMI monitor is left alone |
 | **SSH over USB** | The OTG port powers the board *and* carries the network — see below |
-| **Boot logo** | `/boot/boot.bmp`, replaceable from any computer |
+| **Boot logo** | The Yumi logo is embedded in U-Boot and drawn the moment the video output starts |
 | **Kernel packages held** | `apt-mark hold` on every `linux-*` package, so no upgrade can replace the custom kernel with a generic one |
 
 !!! note "One image for both boards"
@@ -86,10 +86,11 @@ Beyond the general-purpose systems above, YUMI-LAB also ships images built aroun
 
 ## 7. Next step
 
-Once you have picked an image, flash it to a microSD card (4 to 32 GB):
+Once you have picked an image, write it to a microSD card (4 to 32 GB). The simplest route is Raspberry Pi Imager pointed at our image list — it downloads, verifies and writes in one step:
 
-[:material-sd: Flash guide](../SmartPi_Linux_flash_sd.md){ .md-button .md-button--primary }
+[:material-download-box: Install with Raspberry Pi Imager](SmartPi_RPi_Imager.md){ .md-button .md-button--primary }
 [:octicons-download-16: Download the images](../SmartPi_Linux.md){ .md-button }
+[:material-sd: Flash guide — balenaEtcher](../SmartPi_Linux_flash_sd.md){ .md-button }
 
 Then verify the board is running the YUMI build:
 

@@ -188,7 +188,7 @@ Everything that makes the YUMI Linux images specific to these boards survives th
 | **Custom U-Boot** | DRAM at 576 MHz with ZQ calibration and ODT |
 | **Device tree** | `YUMi SmartPi One` — check it with `cat /proc/device-tree/model` |
 | **Smart Pad screen rotation** | The 4.3" 800x480 touchscreen is detected at boot and the display rotated 180° **only then** — on a regular HDMI monitor the orientation is untouched |
-| **Boot logo** | `/boot/boot.bmp`, replaceable from any computer (the boot partition is FAT32) |
+| **Boot logo** | The Yumi logo, embedded in U-Boot and drawn as soon as the video output starts |
 | **Kernel packages held** | `apt-mark hold` on every `linux-*` package |
 
 That last one matters. The generic kernels on `apt.armbian.com` do not carry our DRAM timings or the Smart Pi One device tree, and a board booted with one of them does not come back. The hold makes sure no `apt upgrade` or `dietpi-update` can quietly replace the kernel.

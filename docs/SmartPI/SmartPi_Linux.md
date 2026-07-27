@@ -17,6 +17,9 @@ Looking for something lighter? The [DietPi image](OS/SmartPi_DietPi.md) idles at
 
 Once you have downloaded the image of your choice, follow the [flash guide](SmartPi_Linux_flash_sd.md) to transfer it to a microSD card.
 
+!!! tip "Skip the download entirely"
+    [Raspberry Pi Imager](OS/SmartPi_RPi_Imager.md) can pull these images straight from our list: it downloads, checks the SHA-256 and writes the card in one step, on Windows, macOS and Linux.
+
 ---
 
 ## 1. Requirements
@@ -96,7 +99,8 @@ sha256sum -c Yumi-smartpi1-trixie-debian13-server-*.img.xz.sha256
 **What is new in v1.8.0**
 
 - **SSH over USB (OTG port)** — one cable powers the board *and* carries the network. The board answers at `172.22.1.1`; set `172.22.1.2/24` on the computer side. The gadget uses **CDC NCM**, supported natively by macOS, Linux and Windows. See [SSH over USB](OS/index.md#4-ssh-over-usb-otg-port).
-- **Customizable boot logo** — U-Boot displays `/boot/boot.bmp` at power-on. The boot partition is FAT32 and mounts on macOS and Windows, so you can replace or delete the logo from any computer (uncompressed BMP, no larger than the display resolution).
+- **Yumi boot logo in U-Boot** — the logo is embedded in the bootloader and drawn the instant the video output is initialised, before anything is read from the card, with the boot console running normally alongside it.
+- **Works on any screen up to 4K UHD** — the display is fixed to 1280x720 at 60 Hz on the kernel command line, so every monitor from the SmartPad panel to a 4K screen accepts and upscales the picture. Remove `video=HDMI-A-1:1280x720@60` from `/boot/armbianEnv.txt` to negotiate the native resolution instead.
 - **Kernel packages published** — the exact `linux-image`, `linux-headers`, `linux-dtb` and `linux-u-boot` `.deb` files matching these images are attached to the release, for both kernel branches (`current` 6.18 and `legacy` 6.12). Install DKMS headers from there, **not** from `apt.armbian.com`, whose generic builds do not match this kernel.
 - **One image for both boards** — the 4.3" 800x480 touchscreen is now detected at boot and the display rotated 180° only when it is found, so the `smartpi1` images also serve the Smart Pad. On an HDMI monitor the orientation is untouched.
 

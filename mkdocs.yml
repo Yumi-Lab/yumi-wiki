@@ -157,8 +157,9 @@ nav:
     - "3.2 OPERATING SYSTEMS":
       - SmartPI/OS/index.md
       - "3.2.1 Official Linux Image": SmartPI/SmartPi_Linux.md
-      - "3.2.2 Linux flash Micro SD CARD": SmartPI/SmartPi_Linux_flash_sd.md
-      - "3.2.3 DietPi for Smart Pi One": SmartPI/OS/SmartPi_DietPi.md
+      - "3.2.2 Install with Raspberry Pi Imager": SmartPI/OS/SmartPi_RPi_Imager.md
+      - "3.2.3 Linux flash Micro SD CARD": SmartPI/SmartPi_Linux_flash_sd.md
+      - "3.2.4 DietPi for Smart Pi One": SmartPI/OS/SmartPi_DietPi.md
     - "3.3 AI ASSISTANTS":
       - SmartPI/AI/index.md
       - "3.3.1 Claude Code CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Claude_Code.md
