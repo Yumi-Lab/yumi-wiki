@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-label="Yumi Code CLI on Smart Pi One — coming soon">
+  <defs>
+    <linearGradient id="ycbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1e24"/>
+      <stop offset="1" stop-color="#141519"/>
+    </linearGradient>
+    <radialGradient id="ycglow" cx="0.12" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffca2b" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffca2b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#ycbg)" stroke="#2f323b" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#ycglow)"/>
+  <rect x="6.5" y="6.5" width="887" height="177" rx="13" fill="none" stroke="#ffca2b" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="7 7"/>
+  <g transform="translate(44,47)">
+    <rect x="-3" y="-3" width="102" height="102" rx="24" fill="#101216" stroke="#3a3e48" stroke-width="1.5"/>
+    <g transform="translate(21,26) scale(0.192)">
+      <path fill="#ffca2b" d="M8.67,0h43.23C54.94,0,57.75,1.59,59.32,4.19l45.99,76.36c3.34,5.54,11.35,5.6,14.77.1L167.63,4.09C169.21,1.55,171.99,0,174.99,0h42.77C224.62,0,228.75,7.62,225.01,13.37l-83.27,128.04c-.91,1.4-1.4,3.04-1.4,4.72v90.93c0,4.78-3.88,8.66-8.66,8.66h-38.15c-4.78,0-8.66-3.88-8.66-8.66v-89.92c0-1.65-.47-3.26-1.35-4.64L1.37,13.3C-2.3,7.54,1.84,0,8.67,0Z"/>
+    </g>
+    <text x="48" y="86" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" fill="#ffca2b" fill-opacity="0.8">&gt;_</text>
+  </g>
+  <text x="192" y="82" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="42" font-weight="700" fill="#f5f5f4">Yumi Code CLI</text>
+  <text x="194" y="114" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" fill="#a8a29e">YUMI-LAB&#8217;s own coding agent, written in Go &#8212; a fraction of the RAM</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14">
+    <rect x="194" y="132" width="277" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="210" y="150"><tspan fill="#ffca2b">armv7l</tspan><tspan fill="#8b8f99">  ·  Smart Pi One / Pad</tspan></text>
+    <rect x="481" y="132" width="124" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="497" y="150" fill="#ffca2b">Coming soon</text>
+  </g>
+  <text x="872" y="34" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#5b6270">YUMI&#183;LAB</text>
+</svg>

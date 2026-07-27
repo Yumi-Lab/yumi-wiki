@@ -16,7 +16,11 @@ The Smart Pi One and Smart Pad are 32-bit ARM (Allwinner H3 / armv7l) single-boa
 
 [![Vibe CLI on Smart Pi One](/img/SmartPi/AI/vibe-cli-banner.svg)](SmartPi_AI_Vibe_CLI.md)
 
+![Yumi Code CLI on Smart Pi One — coming soon](/img/SmartPi/AI/yumi-code-banner.svg){ .off-glb }
+
 </div>
+
+**Yumi Code CLI** is our own agent, written in Go for these boards — announced here when it ships. The five above are available today.
 
 ## 2. At a glance
 
