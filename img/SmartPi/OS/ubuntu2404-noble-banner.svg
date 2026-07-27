@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-label="Ubuntu 24.04 Noble on Smart Pi One">
+  <defs>
+    <linearGradient id="u24bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1e24"/>
+      <stop offset="1" stop-color="#141519"/>
+    </linearGradient>
+    <radialGradient id="u24glow" cx="0.12" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E95420" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#E95420" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#u24bg)" stroke="#2f323b" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#u24glow)"/>
+  <g transform="translate(48,48) scale(4.0)">
+    <path fill="#E95420" d="M17.61.455a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41M12.92.8C8.923.777 5.137 2.941 3.148 6.451a5 5 0 0 1 .26-.007 4.9 4.9 0 0 1 2.585.737A8.32 8.32 0 0 1 12.688 3.6 4.94 4.94 0 0 1 13.723.834 11 11 0 0 0 12.92.8m9.226 4.994a4.9 4.9 0 0 1-1.918 2.246 8.36 8.36 0 0 1-.273 8.303 4.9 4.9 0 0 1 1.632 2.54 11.16 11.16 0 0 0 .559-13.089M3.41 7.932A3.41 3.41 0 0 0 0 11.342a3.41 3.41 0 0 0 3.41 3.409 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zm2.027 7.866a4.9 4.9 0 0 1-2.915.358 11.1 11.1 0 0 0 7.991 6.698 11.2 11.2 0 0 0 2.422.249 4.88 4.88 0 0 1-.999-2.85 9 9 0 0 1-.836-.136 8.3 8.3 0 0 1-5.663-4.32zm11.405.928a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41"/>
+  </g>
+  <text x="192" y="82" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="42" font-weight="700" fill="#f5f5f4">Ubuntu 24.04 Noble</text>
+  <text x="194" y="114" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" fill="#a8a29e">Current Ubuntu LTS — server and desktop editions</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14">
+    <rect x="194" y="132" width="277" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="210" y="150"><tspan fill="#E95420">armv7l</tspan><tspan fill="#8b8f99">  ·  Smart Pi One / Pad</tspan></text>
+    <rect x="481" y="132" width="277" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="497" y="150" fill="#c9cdd6">LTS · supported to April 2029</text>
+  </g>
+  <text x="872" y="34" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#5b6270">YUMI&#183;LAB</text>
+</svg>

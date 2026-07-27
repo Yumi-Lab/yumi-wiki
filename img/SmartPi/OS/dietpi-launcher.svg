@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 473" role="img" aria-label="root@DietPi: ~ — dietpi-launcher">
+  <rect x="1" y="1" width="898" height="471" rx="14" fill="#0000aa" stroke="#2a2f39" stroke-width="1.5"/>
+  <path d="M1 15 a14 14 0 0 1 14 -14 h870 a14 14 0 0 1 14 14 v19 h-898 z" fill="#161b22"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="21" r="6" fill="#28c840"/>
+  <text x="450.0" y="26" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7d8590">root@DietPi: ~ — dietpi-launcher</text>
+  <rect x="40" y="56" width="820" height="385" fill="#b2b2b2" stroke="#8a8a8a"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14">
+    <text x="60" y="82" fill="#000000" font-weight="700">Please select a program to run:</text>
+    <text x="60" y="108" fill="#000080" xml:space="preserve">●─ Install Optimized Software </text>
+    <rect x="56" y="113" width="788" height="19" fill="#0000aa"/>
+    <text x="60" y="127" fill="#ffffff" xml:space="preserve">DietPi-Software           : Install optimised ready-to-run software</text>
+    <text x="60" y="146" fill="#000000" xml:space="preserve">DietPi-VPN                : GUI to setup a VPN connection</text>
+    <text x="60" y="165" fill="#000080" xml:space="preserve">●─ Configuration          </text>
+    <text x="60" y="184" fill="#000000" xml:space="preserve">DietPi-Config             : Feature rich config tool for your device</text>
+    <text x="60" y="203" fill="#000000" xml:space="preserve">DietPi-Drive_Manager      : Setup and control multiple external drives</text>
+    <text x="60" y="222" fill="#000000" xml:space="preserve">DietPi-AutoStart          : Choose what software runs after boot</text>
+    <text x="60" y="241" fill="#000000" xml:space="preserve">DietPi-Services           : Service and process tool control</text>
+    <text x="60" y="260" fill="#000000" xml:space="preserve">DietPi-Display            : Set the console display mode and rotation</text>
+    <text x="60" y="279" fill="#000080" xml:space="preserve">●─ Maintenance            </text>
+    <text x="60" y="298" fill="#000000" xml:space="preserve">DietPi-Update             : Keep your DietPi system up to date</text>
+    <text x="60" y="317" fill="#000000" xml:space="preserve">DietPi-Backup             : Backup and restore your DietPi system</text>
+    <text x="60" y="336" fill="#000000" xml:space="preserve">DietPi-Cleaner            : Remove unwanted junk from your system</text>
+    <text x="60" y="355" fill="#000080" xml:space="preserve">●─ Misc                   </text>
+    <text x="60" y="374" fill="#000000" xml:space="preserve">DietPi-CPUinfo            : Displays CPU temp, frequencies, type etc.</text>
+    <rect x="320.0" y="405" width="90" height="24" fill="#0000aa"/>
+    <text x="365.0" y="422" text-anchor="middle" fill="#ffffff">&lt;Ok&gt;</text>
+    <rect x="490.0" y="405" width="90" height="24" fill="#0000aa"/>
+    <text x="535.0" y="422" text-anchor="middle" fill="#ffffff">&lt;Exit&gt;</text>
+  </g>
+</svg>

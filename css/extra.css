@@ -42,3 +42,11 @@
     border-radius: 10px;
     margin: 0 0 .4rem;
 }
+
+/* Third-party logos with a dark wordmark (DietPi, …): sit them on a light
+   plate so they stay readable when the wiki is in dark mode. */
+.md-typeset img.logo-plate {
+    background: #ffffff;
+    padding: .5rem .9rem;
+    border-radius: 10px;
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 268" role="img" aria-label="root@smartpi1: ~ — verifying the image">
+  <rect x="1" y="1" width="898" height="266" rx="14" fill="#0d1117" stroke="#2a2f39" stroke-width="1.5"/>
+  <path d="M1 15 a14 14 0 0 1 14 -14 h870 a14 14 0 0 1 14 14 v19 h-898 z" fill="#161b22"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="21" r="6" fill="#28c840"/>
+  <text x="450.0" y="26" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7d8590">root@smartpi1: ~ — verifying the image</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14">
+  <text x="24" y="64" fill="#c9d1d9" xml:space="preserve">$ ssh root@172.22.1.1</text>
+  <text x="24" y="83" fill="#808080" xml:space="preserve">root@172.22.1.1&#8217;s password:</text>
+  <text x="24" y="121" fill="#c9d1d9" xml:space="preserve">root@smartpi1:~# cat /proc/device-tree/model</text>
+  <text x="24" y="140" fill="#7ee787" xml:space="preserve">YUMi SmartPi One</text>
+  <text x="24" y="159" fill="#c9d1d9" xml:space="preserve">root@smartpi1:~# cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq</text>
+  <text x="24" y="178" fill="#7ee787" xml:space="preserve">1368000</text>
+  <text x="24" y="197" fill="#c9d1d9" xml:space="preserve">root@smartpi1:~# uname -r</text>
+  <text x="24" y="216" fill="#7ee787" xml:space="preserve">6.18.40-current-sunxi</text>
+  <text x="24" y="235" fill="#c9d1d9" xml:space="preserve">root@smartpi1:~# </text>
+  </g>
+</svg>

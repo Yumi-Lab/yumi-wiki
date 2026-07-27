@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 439" role="img" aria-label="root@DietPi: ~ — SSH login">
+  <rect x="1" y="1" width="898" height="437" rx="14" fill="#0d1117" stroke="#2a2f39" stroke-width="1.5"/>
+  <path d="M1 15 a14 14 0 0 1 14 -14 h870 a14 14 0 0 1 14 14 v19 h-898 z" fill="#161b22"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="70" cy="21" r="6" fill="#28c840"/>
+  <text x="450.0" y="26" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#7d8590">root@DietPi: ~ — SSH login</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14">
+  <text x="24" y="64" fill="#afff00" xml:space="preserve"> ─────────────────────────────────────────────────────</text>
+  <text x="24" y="83" fill="#ffffff" xml:space="preserve"> DietPi v10.5.2 │ 21:35 - Sun 26/07/26</text>
+  <text x="24" y="102" fill="#afff00" xml:space="preserve"> ─────────────────────────────────────────────────────</text>
+  <text x="24" y="121" fill="#ffffff" xml:space="preserve"> - Device model     : Generic Allwinner H3 (armv7l)</text>
+  <text x="24" y="140" fill="#ffffff" xml:space="preserve"> - CPU temp         : 42 °C / 107 °F : Optimal temperature</text>
+  <text x="24" y="159" fill="#ffffff" xml:space="preserve"> - LAN IP           : 192.168.1.42 (eth0)</text>
+  <text x="24" y="197" fill="#808080" xml:space="preserve"> DietPi Team     : https://github.com/MichaIng/DietPi</text>
+  <text x="24" y="216" fill="#808080" xml:space="preserve"> Image by        : Yumi Lab (pre-image: Yumi SmartPi-armbian, Armbian trixie server)</text>
+  <text x="24" y="235" fill="#808080" xml:space="preserve"> Website         : https://dietpi.com/</text>
+  <text x="24" y="254" fill="#808080" xml:space="preserve"> Contribute      : https://dietpi.com/contribute.html</text>
+  <text x="24" y="292" fill="#ffffff" xml:space="preserve"> dietpi-launcher : All the DietPi programs in one place</text>
+  <text x="24" y="311" fill="#ffffff" xml:space="preserve"> dietpi-config   : Feature rich configuration tool for your device</text>
+  <text x="24" y="330" fill="#ffffff" xml:space="preserve"> dietpi-software : Select optimised software for installation</text>
+  <text x="24" y="349" fill="#ffffff" xml:space="preserve"> htop            : Resource monitor</text>
+  <text x="24" y="368" fill="#ffffff" xml:space="preserve"> cpu             : Shows CPU information and stats</text>
+  <text x="24" y="406" fill="#c9d1d9" xml:space="preserve">root@DietPi:~# </text>
+  </g>
+</svg>
