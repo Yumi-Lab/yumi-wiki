@@ -74,13 +74,16 @@ It is regenerated with every release, so the menu always offers the newest image
     rpi-imager --repo https://yumi-lab.github.io/SmartPi-armbian/os_list.json
     ```
 
-## 3. Skip the device step
+## 3. On the device step, choose "No filtering"
 
-Imager opens on **"Select your Raspberry Pi device"**. That page exists to filter the Raspberry Pi catalogue — it has **no effect on our images**, which carry no device tag and are listed whatever you pick.
+Imager opens on **"Select your Raspberry Pi device"**. **Scroll to the bottom of the list** and select **No filtering — Show every possible image**, then click **NEXT**.
 
-![The device step in Raspberry Pi Imager](/img/SmartPi/OS/rpi-imager-device.png)
+![Choosing No filtering at the bottom of the device list](/img/SmartPi/OS/rpi-imager-device.png)
 
-Leave it as it is and click **NEXT**. Depending on your version and on what Imager has already cached, this page shows the Raspberry Pi models, a *No filtering* entry, or nothing at all — none of it changes what comes next. You land on the image list either way.
+!!! warning "Not Raspberry Pi 5"
+    Any other entry in that list works too — the Smart Pi One images show up all the same. **Raspberry Pi 5 is the exception**: pick it and the image list comes up without our images, because a Pi 5 only takes 64-bit images and the Smart Pi One is 32-bit ARM. *No filtering* keeps you out of that trap.
+
+If your copy of Imager shows an empty list on this page, there is nothing to choose — click **NEXT** and carry on.
 
 ## 4. Choose your image
 
