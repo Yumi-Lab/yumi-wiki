@@ -131,6 +131,7 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 
 | Server image | RAM used | Available |
 |---|---|---|
+| Debian 14 Forky — experimental build | 107 MB | 852 MB |
 | Debian 13 Trixie — Yumi 26.08.0 | 109 MB | 850 MB |
 | Debian 12 Bookworm — Yumi 26.08.0 | 105 MB | 854 MB |
 

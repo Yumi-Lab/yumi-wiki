@@ -41,6 +41,7 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 | Server image | RAM used | Available |
 |---|---|---|
+| Debian 14 Forky — experimental build | 107 MB | 852 MB |
 | Debian 13 Trixie — Yumi 26.08.0 | 109 MB | 850 MB |
 | Debian 12 Bookworm — Yumi 26.08.0 | 105 MB | 854 MB |
 
