@@ -140,7 +140,15 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 
 Each release is added here as it is measured, and any service you install comes on top.
 
-**Desktop editions are a different story.** On the same board, idle at the desktop with nothing open: **Debian 13 Trixie XFCE — 378 MB used, 581 MB available**, and **Ubuntu 24.04 Noble XFCE — 352 MB used, 607 MB available**. Xorg, the panel and its applets account for the difference with the server images. Pick a server image whenever the board does not need a screen.
+**Desktop editions are a different story.** Idle at the desktop, nothing open, same board:
+
+| Desktop image | RAM used | Available |
+|---|---|---|
+| Debian 13 Trixie — XFCE | 378 MB | 581 MB |
+| Ubuntu 24.04 Noble — XFCE | 352 MB | 607 MB |
+| Debian 13 Trixie — i3 (experimental) | 245 MB | 714 MB |
+
+Xorg, the panel and its applets account for the gap with the server images — and for the 130 MB between XFCE and the tiling i3 session. Pick a server image whenever the board does not need a screen.
 
 ---
 
