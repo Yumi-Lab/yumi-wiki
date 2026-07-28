@@ -54,7 +54,25 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 Each release is added here as it is measured, and any service you install comes on top.
 
-**Desktop editions are a different story.** Idle at the desktop, nothing open, same board:
+### Desktop editions
+
+<div class="banner-gallery" markdown>
+
+[![Debian 13 Trixie with XFCE](/img/SmartPi/OS/debian13-trixie-xfce-banner.svg)](../SmartPi_Linux.md)
+
+[![Debian 12 Bookworm with XFCE](/img/SmartPi/OS/debian12-bookworm-xfce-banner.svg)](../SmartPi_Linux.md)
+
+[![Ubuntu 24.04 Noble with XFCE](/img/SmartPi/OS/ubuntu2404-noble-xfce-banner.svg)](../SmartPi_Linux.md)
+
+[![Debian 13 Trixie with i3 — coming soon](/img/SmartPi/OS/debian13-trixie-i3-banner.svg)](SmartPi_i3_Desktop.md)
+
+![Debian 14 Forky with MATE — coming soon](/img/SmartPi/OS/debian14-forky-mate-banner.svg){ .off-glb }
+
+</div>
+
+Three XFCE images are published; the [i3](SmartPi_i3_Desktop.md) and MATE builds are experimental and not downloadable yet.
+
+**Idle at the desktop**, nothing open, same board:
 
 | Desktop image | RAM used | Available |
 |---|---|---|
