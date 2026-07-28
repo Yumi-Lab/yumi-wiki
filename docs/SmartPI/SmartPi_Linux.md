@@ -150,6 +150,8 @@ Each release is added here as it is measured, and any service you install comes 
 
 Xorg, the panel and its applets account for the gap with the server images — and for the 130 MB between XFCE and the tiling i3 session. Pick a server image whenever the board does not need a screen.
 
+**What that leaves for your own work.** A web browser is the heaviest thing most people run here. Measured on the i3 image with a single YouTube tab open, the board reports **around 320 MB still available with Chromium**, and **around 210 MB with Firefox ESR**. One desktop plus one browser tab fits; two or three tabs do not. If the memory is meant for your own services, run a server image and connect over SSH — that keeps roughly 850 MB free.
+
 ---
 
 ## 6. Verify your board
