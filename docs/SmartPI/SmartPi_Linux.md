@@ -13,7 +13,7 @@ We offer several Linux distributions optimized for our boards, in both **Server*
 !!! tip "Debian or Ubuntu?"
     **Debian** is preferred for its proven stability and lightweight footprint. **Ubuntu** shines for its ease of use and quick access to new features. Both use `apt` as package manager.
 
-Looking for something lighter? The [DietPi image](OS/SmartPi_DietPi.md) idles at about 87 MB of RAM instead of roughly 200 MB. All the choices are compared on the [Operating Systems](OS/index.md) page.
+Looking for something lighter? The [DietPi image](OS/SmartPi_DietPi.md) idles at about 87 MB of RAM against roughly 105 MB for a server image, and its download is a third of the size. All the choices are compared on the [Operating Systems](OS/index.md) page.
 
 Once you have downloaded the image of your choice, follow the [flash guide](SmartPi_Linux_flash_sd.md) to transfer it to a microSD card.
 
@@ -124,7 +124,7 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 | **Best for** | New installations | Proven stability | Ease of use | Low memory footprint |
 | **Support** | Until 2028 (+ LTS 2030) | Until June 2028 | LTS until 2029 | Follows Debian 13 |
 | **Desktop available** | :material-check-bold: Yes | :material-check-bold: Yes | :material-check-bold: Yes | :material-close-thick: No |
-| **RAM at idle** | ~200 MB (server) | ~200 MB (server) | ~200 MB (server) | **~87 MB** |
+| **RAM at idle** | ~105 MB (server) | ~105 MB (server) | ~105 MB (server) | **~87 MB** |
 | **Package manager** | apt | apt | apt | apt + `dietpi-software` |
 
 ---

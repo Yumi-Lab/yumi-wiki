@@ -30,11 +30,11 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 | Image | Base | Editions | RAM at idle | Best for |
 |---|---|---|---|---|
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~200 MB (server) | New installations — current stable |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~200 MB (server) | Proven stability, wide package coverage |
-| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~200 MB (server) | Ubuntu users, abundant documentation |
-| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | Server (+ Desktop up to v1.7.0) | ~200 MB (server) | Existing 22.04 deployments |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian | Server | ~200 MB | Legacy setups only — end of life |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~105 MB (server) | New installations — current stable |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~105 MB (server) | Proven stability, wide package coverage |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~105 MB (server) | Ubuntu users, abundant documentation |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | Server (+ Desktop up to v1.7.0) | ~105 MB (server) | Existing 22.04 deployments |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian | Server | ~105 MB | Legacy setups only — end of life |
 | ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md)** | Debian 13 trixie server | Server (headless) | **~87 MB** | Squeezing the most out of 1 GB of RAM |
 
 ## 3. What every YUMI image includes
@@ -74,7 +74,7 @@ The gadget uses **CDC NCM**, recognised natively by macOS, Linux and Windows —
 - **[Debian 13 Trixie](../SmartPi_Linux.md)** — the default choice for a new board. Current Debian stable, server or desktop.
 - **[Debian 12 Bookworm](../SmartPi_Linux.md)** — when you want the most conservative, most widely tested option.
 - **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** — if you already work with Ubuntu and want its documentation and PPAs.
-- **[DietPi](SmartPi_DietPi.md)** — when RAM is what you are short of. About 87 MB at idle instead of roughly 200 MB, with a menu-driven software catalog. Headless only, and currently a release candidate.
+- **[DietPi](SmartPi_DietPi.md)** — when RAM is what you are short of. About 87 MB at idle against roughly 105 MB for an Armbian server image, in a system trimmed to the essentials, with a menu-driven software catalog. Headless only, and currently a release candidate.
 - **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** / **[Debian 11 Bullseye](../SmartPi_Linux.md)** — only to match an existing deployment. Bullseye is end of life.
 
 ## 6. Purpose-built images
