@@ -30,7 +30,7 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 | Image | Base | Editions | RAM at idle | Best for |
 |---|---|---|---|---|
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **109 MB** (server) | New installations — current stable |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **109 MB** server, **378 MB** desktop | New installations — current stable |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **105 MB** (server) | Proven stability, wide package coverage |
 | ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **104 MB** server, **352 MB** desktop | Ubuntu users, abundant documentation |
 | ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | Server (+ Desktop up to v1.7.0) | **77 MB** (server) | Existing 22.04 deployments |
@@ -50,7 +50,7 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 Each release is added here as it is measured, and any service you install comes on top.
 
-**Desktop editions are a different story.** The same board running the XFCE desktop image (Ubuntu 24.04 Noble) sits at **352 MB used, 607 MB available**, with the session idle at the desktop: Xorg, the panel and its applets account for most of the difference. Pick a server image whenever the board does not need a screen.
+**Desktop editions are a different story.** On the same board, idle at the desktop with nothing open: **Debian 13 Trixie XFCE — 378 MB used, 581 MB available**, and **Ubuntu 24.04 Noble XFCE — 352 MB used, 607 MB available**. Xorg, the panel and its applets account for the difference with the server images. Pick a server image whenever the board does not need a screen.
 
 ## 3. What every YUMI image includes
 

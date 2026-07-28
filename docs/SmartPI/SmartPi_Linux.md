@@ -124,7 +124,7 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 | **Best for** | New installations | Proven stability | Ease of use | Low memory footprint |
 | **Support** | Until 2028 (+ LTS 2030) | Until June 2028 | LTS until 2029 | Follows Debian 13 |
 | **Desktop available** | :material-check-bold: Yes | :material-check-bold: Yes | :material-check-bold: Yes | :material-close-thick: No |
-| **RAM at idle** (measured) | **109 MB** server | **105 MB** server | **104 MB** server · 352 MB desktop | ~87 MB (vendor figure) |
+| **RAM at idle** (measured) | **109 MB** server · 378 MB desktop | **105 MB** server | **104 MB** server · 352 MB desktop | ~87 MB (vendor figure) |
 | **Package manager** | apt | apt | apt | apt + `dietpi-software` |
 
 **Measured on hardware.** Idle memory on a Smart Pi One (960 MB total), read minutes after boot with nothing added:
@@ -140,7 +140,7 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 
 Each release is added here as it is measured, and any service you install comes on top.
 
-**Desktop editions are a different story.** The same board running the XFCE desktop image (Ubuntu 24.04 Noble) sits at **352 MB used, 607 MB available**, with the session idle at the desktop: Xorg, the panel and its applets account for most of the difference. Pick a server image whenever the board does not need a screen.
+**Desktop editions are a different story.** On the same board, idle at the desktop with nothing open: **Debian 13 Trixie XFCE — 378 MB used, 581 MB available**, and **Ubuntu 24.04 Noble XFCE — 352 MB used, 607 MB available**. Xorg, the panel and its applets account for the difference with the server images. Pick a server image whenever the board does not need a screen.
 
 ---
 
