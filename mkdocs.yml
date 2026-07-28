@@ -160,6 +160,7 @@ nav:
       - "3.2.2 Install with Raspberry Pi Imager": SmartPI/OS/SmartPi_RPi_Imager.md
       - "3.2.3 Linux flash Micro SD CARD": SmartPI/SmartPi_Linux_flash_sd.md
       - "3.2.4 DietPi for Smart Pi One": SmartPI/OS/SmartPi_DietPi.md
+      - "3.2.5 Debian 13 with i3 (coming soon)": SmartPI/OS/SmartPi_i3_Desktop.md
     - "3.3 AI ASSISTANTS":
       - SmartPI/AI/index.md
       - "3.3.1 Claude Code CLI on Smart Pi One": SmartPI/AI/SmartPi_AI_Claude_Code.md

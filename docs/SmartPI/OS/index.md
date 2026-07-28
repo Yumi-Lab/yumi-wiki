@@ -20,9 +20,13 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 [![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg)](SmartPi_DietPi.md)
 
+[![Debian 13 Trixie with i3 — coming soon](/img/SmartPi/OS/debian13-trixie-i3-banner.svg)](SmartPi_i3_Desktop.md)
+
 ![Debian 14 Forky for Smart Pi One — coming soon](/img/SmartPi/OS/debian14-forky-banner.svg){ .off-glb }
 
 </div>
+
+**[Debian 13 Trixie with i3](SmartPi_i3_Desktop.md)** is a tiling desktop image — 245 MB at idle instead of 378 MB for XFCE. It is being prepared and is not downloadable yet.
 
 **Debian 14 Forky** is the next Debian stable. An image for these boards is in preparation and will appear here when it is ready.
 
