@@ -28,29 +28,23 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 ## 2. At a glance
 
-| Image | Base | Editions | RAM at idle | Best for |
+### Server images
+
+Headless, driven over SSH. Memory read on a Smart Pi One (960 MB total) minutes after boot, nothing installed.
+
+| Image | Base | RAM at idle | Available | Best for |
 |---|---|---|---|---|
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **109 MB** server, **378 MB** desktop | New installations — current stable |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **105 MB** (server) | Proven stability, wide package coverage |
-| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **104 MB** server, **352 MB** desktop | Ubuntu users, abundant documentation |
-| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | Server (+ Desktop up to v1.7.0) | **77 MB** (server) | Existing 22.04 deployments |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian | Server | **86 MB** | Legacy setups only — end of life |
-| ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md)** | Debian 13 trixie server | Server (headless) | ~87 MB (vendor figure) | Squeezing the most out of 1 GB of RAM |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | **109 MB** | 850 MB | New installations — current stable |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | **105 MB** | 854 MB | Proven stability, wide package coverage |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | **104 MB** | 855 MB | Ubuntu users, abundant documentation |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | **77 MB** | 848 MB | Existing 22.04 deployments |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian, legacy 6.12 kernel | **86 MB** | 850 MB | Legacy setups only — end of life |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | Armbian, experimental | **107 MB** | 852 MB | Not published yet |
+| ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md)** | Debian 13 trixie server | ~87 MB *(vendor figure)* | — | Squeezing the most out of 1 GB of RAM |
 
-**Measured on hardware.** Idle memory on a Smart Pi One (960 MB total), read minutes after boot with nothing added:
+They all land between 77 and 109 MB: the choice of distribution costs nothing in memory. Anything you install comes on top.
 
-| Server image | RAM used | Available |
-|---|---|---|
-| Debian 14 Forky — experimental build | 107 MB | 852 MB |
-| Debian 13 Trixie — Yumi 26.08.0 | 109 MB | 850 MB |
-| Debian 12 Bookworm — Yumi 26.08.0 | 105 MB | 854 MB |
-| Debian 11 Bullseye — Yumi 26.08.0 (legacy 6.12 kernel) | 86 MB | 850 MB |
-| Ubuntu 24.04 Noble — Yumi 26.08.0 | 104 MB | 855 MB |
-| Ubuntu 22.04 Jammy — Yumi 26.08.0 | 77 MB | 848 MB |
-
-Each release is added here as it is measured, and any service you install comes on top.
-
-### Desktop editions
+### Desktop images
 
 <div class="banner-gallery" markdown>
 
@@ -66,17 +60,17 @@ Each release is added here as it is measured, and any service you install comes 
 
 </div>
 
-Three XFCE images are published; the [i3](SmartPi_i3_Desktop.md) and MATE builds are experimental and not downloadable yet.
+Same board, idle at the desktop with nothing open.
 
-**Idle at the desktop**, nothing open, same board:
+| Image | Interface | RAM at idle | Available | Status |
+|---|---|---|---|---|
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | XFCE | **378 MB** | 581 MB | Published |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | XFCE | **352 MB** | 607 MB | Published |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | XFCE | not measured | — | Published |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](SmartPi_i3_Desktop.md)** | i3 (tiling) | **245 MB** | 714 MB | Coming soon |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | MATE | not measured | — | Coming soon |
 
-| Desktop image | RAM used | Available |
-|---|---|---|
-| Debian 13 Trixie — XFCE | 378 MB | 581 MB |
-| Ubuntu 24.04 Noble — XFCE | 352 MB | 607 MB |
-| Debian 13 Trixie — i3 (experimental) | 245 MB | 714 MB |
-
-Xorg, the panel and its applets account for the gap with the server images — and for the 130 MB between XFCE and the tiling i3 session. Pick a server image whenever the board does not need a screen.
+A graphical session costs 250 to 270 MB — Xorg, the panel and its applets — and the tiling [i3 build](SmartPi_i3_Desktop.md) saves 130 MB of that. Pick a server image whenever the board does not need a screen.
 
 **What that leaves for your own work.** A web browser is the heaviest thing most people run here. Measured on the i3 image with a single YouTube tab open, the board reports **around 320 MB still available with Chromium**, and **around 210 MB with Firefox ESR**. One desktop plus one browser tab fits; two or three tabs do not. If the memory is meant for your own services, run a server image and connect over SSH — that keeps roughly 850 MB free.
 
