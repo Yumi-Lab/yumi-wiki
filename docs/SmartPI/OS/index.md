@@ -30,12 +30,12 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 
 | Image | Base | Editions | RAM at idle | Best for |
 |---|---|---|---|---|
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~105 MB (server) | New installations — current stable |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~105 MB (server) | Proven stability, wide package coverage |
-| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | Server + Desktop | ~105 MB (server) | Ubuntu users, abundant documentation |
-| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | Server (+ Desktop up to v1.7.0) | ~105 MB (server) | Existing 22.04 deployments |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian | Server | ~105 MB | Legacy setups only — end of life |
-| ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md)** | Debian 13 trixie server | Server (headless) | **~87 MB** | Squeezing the most out of 1 GB of RAM |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **109 MB** (server) | New installations — current stable |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **105 MB** (server) | Proven stability, wide package coverage |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | Armbian | Server + Desktop | **104 MB** server, **352 MB** desktop | Ubuntu users, abundant documentation |
+| ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | Server (+ Desktop up to v1.7.0) | **77 MB** (server) | Existing 22.04 deployments |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian | Server | **86 MB** | Legacy setups only — end of life |
+| ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md)** | Debian 13 trixie server | Server (headless) | ~87 MB (vendor figure) | Squeezing the most out of 1 GB of RAM |
 
 **Measured on hardware.** Idle memory on a Smart Pi One (960 MB total), read minutes after boot with nothing added:
 

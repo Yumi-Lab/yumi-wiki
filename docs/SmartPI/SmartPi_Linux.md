@@ -124,7 +124,7 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 | **Best for** | New installations | Proven stability | Ease of use | Low memory footprint |
 | **Support** | Until 2028 (+ LTS 2030) | Until June 2028 | LTS until 2029 | Follows Debian 13 |
 | **Desktop available** | :material-check-bold: Yes | :material-check-bold: Yes | :material-check-bold: Yes | :material-close-thick: No |
-| **RAM at idle** | ~105 MB (server) | ~105 MB (server) | ~105 MB (server) | **~87 MB** |
+| **RAM at idle** (measured) | **109 MB** server | **105 MB** server | **104 MB** server · 352 MB desktop | ~87 MB (vendor figure) |
 | **Package manager** | apt | apt | apt | apt + `dietpi-software` |
 
 **Measured on hardware.** Idle memory on a Smart Pi One (960 MB total), read minutes after boot with nothing added:
