@@ -138,7 +138,9 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 | Ubuntu 24.04 Noble — Yumi 26.08.0 | 104 MB | 855 MB |
 | Ubuntu 22.04 Jammy — Yumi 26.08.0 | 77 MB | 848 MB |
 
-Each release is added here as it is measured. Desktop editions are far heavier, and any service you install comes on top.
+Each release is added here as it is measured, and any service you install comes on top.
+
+**Desktop editions are a different story.** The same board running the XFCE desktop image (Ubuntu 24.04 Noble) sits at **352 MB used, 607 MB available**, with the session idle at the desktop: Xorg, the panel and its applets account for most of the difference. Pick a server image whenever the board does not need a screen.
 
 ---
 
