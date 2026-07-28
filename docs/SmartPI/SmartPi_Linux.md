@@ -127,6 +127,8 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 | **RAM at idle** | ~105 MB (server) | ~105 MB (server) | ~105 MB (server) | **~87 MB** |
 | **Package manager** | apt | apt | apt | apt + `dietpi-software` |
 
+*Idle memory measured on a Smart Pi One, minutes after boot with nothing added: **Debian 12 bookworm server (Yumi 26.08.0) — 105 MB used of 960 MB total**, 854 MB available. The Armbian releases share one base, so the other server images sit in the same range; each is added here as it is measured on hardware.*
+
 ---
 
 ## 6. Verify your board

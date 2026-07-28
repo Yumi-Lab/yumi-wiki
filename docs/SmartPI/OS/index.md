@@ -37,6 +37,8 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian | Server | ~105 MB | Legacy setups only — end of life |
 | ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md)** | Debian 13 trixie server | Server (headless) | **~87 MB** | Squeezing the most out of 1 GB of RAM |
 
+*Idle memory measured on a Smart Pi One, minutes after boot with nothing added: **Debian 12 bookworm server (Yumi 26.08.0) — 105 MB used of 960 MB total**, 854 MB available. The Armbian releases share one base, so the other server images sit in the same range; each is added here as it is measured on hardware.*
+
 ## 3. What every YUMI image includes
 
 These are ours, not stock Armbian or stock DietPi. Whichever you pick, you get:
