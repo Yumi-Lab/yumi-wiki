@@ -44,6 +44,7 @@ All of them share the same hardware stack — our overclocked kernel, our U-Boot
 | Debian 14 Forky — experimental build | 107 MB | 852 MB |
 | Debian 13 Trixie — Yumi 26.08.0 | 109 MB | 850 MB |
 | Debian 12 Bookworm — Yumi 26.08.0 | 105 MB | 854 MB |
+| Debian 11 Bullseye — Yumi 26.08.0 (legacy 6.12 kernel) | 86 MB | 850 MB |
 | Ubuntu 22.04 Jammy — Yumi 26.08.0 | 77 MB | 848 MB |
 
 Each release is added here as it is measured. Desktop editions are far heavier, and any service you install comes on top.
