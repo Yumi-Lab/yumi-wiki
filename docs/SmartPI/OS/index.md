@@ -66,11 +66,11 @@ Same board, idle at the desktop with nothing open.
 |---|---|---|---|---|
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | XFCE | **378 MB** | 581 MB | Published |
 | ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | XFCE | **352 MB** | 607 MB | Published |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | XFCE | not measured | — | Published |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | XFCE | **401 MB** | 558 MB | Published |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](SmartPi_i3_Desktop.md)** | i3 (tiling) | **245 MB** | 714 MB | Coming soon |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | MATE | not measured | — | Coming soon |
 
-A graphical session costs 250 to 270 MB — Xorg, the panel and its applets — and the tiling [i3 build](SmartPi_i3_Desktop.md) saves 130 MB of that. Pick a server image whenever the board does not need a screen.
+A graphical session costs 250 to 300 MB — Xorg, the panel and its applets — and the tiling [i3 build](SmartPi_i3_Desktop.md) saves 130 MB of that. Pick a server image whenever the board does not need a screen.
 
 **What that leaves for your own work.** A web browser is the heaviest thing most people run here. Measured on the i3 image with a single YouTube tab open, the board reports **around 320 MB still available with Chromium**, and **around 210 MB with Firefox ESR**. One desktop plus one browser tab fits; two or three tabs do not. If the memory is meant for your own services, run a server image and connect over SSH — that keeps roughly 850 MB free.
 

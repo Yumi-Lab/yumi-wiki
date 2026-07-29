@@ -146,6 +146,7 @@ Each release is added here as it is measured, and any service you install comes 
 |---|---|---|
 | Debian 13 Trixie — XFCE | 378 MB | 581 MB |
 | Ubuntu 24.04 Noble — XFCE | 352 MB | 607 MB |
+| Debian 12 Bookworm — XFCE | 401 MB | 558 MB |
 | Debian 13 Trixie — i3 (experimental) | 245 MB | 714 MB |
 
 Xorg, the panel and its applets account for the gap with the server images — and for the 130 MB between XFCE and the tiling i3 session. Pick a server image whenever the board does not need a screen.
