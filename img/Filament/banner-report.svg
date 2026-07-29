@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-label="Independent Test Reports">
+  <defs>
+    <linearGradient id="banner-reportbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1e24"/>
+      <stop offset="1" stop-color="#141519"/>
+    </linearGradient>
+    <radialGradient id="banner-reportglow" cx="0.12" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#64748b" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#64748b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-reportbg)" stroke="#2f323b" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-reportglow)"/>
+  <g transform="translate(48,40)">
+    <rect x="0" y="0" width="82" height="104" rx="8" fill="#1a1c22" stroke="#64748b" stroke-width="2.5"/>
+    <rect x="22" y="-8" width="38" height="16" rx="6" fill="#20232a" stroke="#64748b" stroke-width="2"/>
+    <g transform="translate(14,34)">
+      <rect x="0" y="30" width="10" height="24" fill="#64748b"/>
+      <rect x="16" y="16" width="10" height="38" fill="#94a3b8"/>
+      <rect x="32" y="24" width="10" height="30" fill="#64748b"/>
+      <rect x="48" y="6" width="10" height="48" fill="#94a3b8"/>
+    </g>
+  </g>
+  <text x="192" y="82" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="38" font-weight="700" fill="#f5f5f4">Independent Test Reports</text>
+  <text x="194" y="112" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="17" fill="#a8a29e">Mechanical, hardness &amp; antibacterial lab validation</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14">
+    <rect x="194" y="132" width="124" height="28" rx="14" fill="#64748b" stroke="#64748b"/>
+    <text x="256.0" y="150" text-anchor="middle" fill="#0b0d10" font-weight="700">REPORT</text>
+    <rect x="330" y="132" width="199" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="429.5" y="150" text-anchor="middle" fill="#c9cdd6" font-weight="700">5 documents</text>
+  </g>
+</svg>

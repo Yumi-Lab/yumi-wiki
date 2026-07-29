@@ -98,7 +98,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - "1. YUMI FILAMENT":
+  - "1. YUMI FILAMENTS":
     - "1.1 Compliance & Certifications (TDS / SDS / REACH / FDA)": Filament/YUMI_Filament_Compliance.md
   - "2. YUMI C SERIES":
       - "2.1 YUMI C SERIES": Yumi_C_Series/YUMI_C_SERIES.md

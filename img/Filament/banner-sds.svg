@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-label="Safety Data Sheet">
+  <defs>
+    <linearGradient id="banner-sdsbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1e24"/>
+      <stop offset="1" stop-color="#141519"/>
+    </linearGradient>
+    <radialGradient id="banner-sdsglow" cx="0.12" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#dc2626" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#dc2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-sdsbg)" stroke="#2f323b" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-sdsglow)"/>
+  <g transform="translate(60,45) rotate(45 44 44)">
+    <rect x="0" y="0" width="88" height="88" rx="10" fill="#2a1414" stroke="#dc2626" stroke-width="4"/>
+  </g>
+  <g transform="translate(90,49)" fill="#f5f5f4">
+    <rect x="-4" y="0" width="8" height="38" rx="4"/>
+    <rect x="-4" y="46" width="8" height="10" rx="4"/>
+  </g>
+  <text x="192" y="82" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="38" font-weight="700" fill="#f5f5f4">Safety Data Sheet</text>
+  <text x="194" y="112" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="17" fill="#a8a29e">Composition, GHS hazard classification &amp; handling</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14">
+    <rect x="194" y="132" width="79" height="28" rx="14" fill="#dc2626" stroke="#dc2626"/>
+    <text x="233.5" y="150" text-anchor="middle" fill="#0b0d10" font-weight="700">SDS</text>
+    <rect x="285" y="132" width="184" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="377.0" y="150" text-anchor="middle" fill="#c9cdd6" font-weight="700">1 document</text>
+  </g>
+</svg>

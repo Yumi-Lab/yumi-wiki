@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-label="REACH SVHC Declaration">
+  <defs>
+    <linearGradient id="banner-reachbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1e24"/>
+      <stop offset="1" stop-color="#141519"/>
+    </linearGradient>
+    <radialGradient id="banner-reachglow" cx="0.12" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#16a34a" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#16a34a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-reachbg)" stroke="#2f323b" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-reachglow)"/>
+  <g transform="translate(44,44)">
+    <circle cx="44" cy="44" r="44" fill="#12241a" stroke="#16a34a" stroke-width="2"/>
+    <circle cx="44.0" cy="14.0" r="3.4" fill="#16a34a"/><circle cx="59.0" cy="18.0" r="3.4" fill="#16a34a"/><circle cx="70.0" cy="29.0" r="3.4" fill="#16a34a"/><circle cx="74.0" cy="44.0" r="3.4" fill="#16a34a"/><circle cx="70.0" cy="59.0" r="3.4" fill="#16a34a"/><circle cx="59.0" cy="70.0" r="3.4" fill="#16a34a"/><circle cx="44.0" cy="74.0" r="3.4" fill="#16a34a"/><circle cx="29.0" cy="70.0" r="3.4" fill="#16a34a"/><circle cx="18.0" cy="59.0" r="3.4" fill="#16a34a"/><circle cx="14.0" cy="44.0" r="3.4" fill="#16a34a"/><circle cx="18.0" cy="29.0" r="3.4" fill="#16a34a"/><circle cx="29.0" cy="18.0" r="3.4" fill="#16a34a"/>
+    <circle cx="44" cy="44" r="7" fill="#16a34a"/>
+    <circle cx="28" cy="50" r="5" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="60" cy="50" r="5" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+    <line x1="33" y1="50" x2="37" y2="44" stroke="#16a34a" stroke-width="2.5"/>
+    <line x1="55" y1="50" x2="51" y2="44" stroke="#16a34a" stroke-width="2.5"/>
+  </g>
+  <text x="192" y="82" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="38" font-weight="700" fill="#f5f5f4">REACH SVHC Declaration</text>
+  <text x="194" y="112" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="17" fill="#a8a29e">EU Regulation 1907/2006 candidate list screening</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14">
+    <rect x="194" y="132" width="109" height="28" rx="14" fill="#16a34a" stroke="#16a34a"/>
+    <text x="248.5" y="150" text-anchor="middle" fill="#0b0d10" font-weight="700">REACH</text>
+    <rect x="315" y="132" width="199" height="28" rx="14" fill="#2a2d35" stroke="#3a3e48"/>
+    <text x="414.5" y="150" text-anchor="middle" fill="#c9cdd6" font-weight="700">2 documents</text>
+  </g>
+</svg>

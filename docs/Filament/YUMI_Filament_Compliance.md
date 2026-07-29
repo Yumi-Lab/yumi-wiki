@@ -1,4 +1,4 @@
-# YUMI Filament — Compliance & Certifications
+# YUMI Filaments — Compliance & Certifications
 
 Every YUMI filament is backed by third-party lab testing: **TÜV SÜD**, **BCTC** and the **Wuxi** materials lab. This page is the official file bank for that paperwork — technical data sheets, safety data sheets, REACH SVHC declarations, FDA food-contact reports, CE/RoHS certificates and independent mechanical test reports — free to download for resellers, print shops, schools and any customer who needs to file compliance paperwork of their own.
 
@@ -7,6 +7,24 @@ Every YUMI filament is backed by third-party lab testing: **TÜV SÜD**, **BCTC*
     - **Print shops, schools, fablabs** — the SDS is required for workplace safety filing (COSHH/Code du travail) wherever the filament is used professionally.
     - **Anyone printing food-contact parts** — check the FDA section below; only specific grades are food-safe, not the whole range.
     - **Engineers choosing a material** — the TDS gives print temperatures and mechanical properties; the test reports validate real-world performance (hardness, mechanical strength, antibacterial action).
+
+## Document categories
+
+<div class="banner-gallery" markdown>
+
+[![Technical Data Sheets](/img/Filament/banner-tds.svg)](#1-technical-data-sheets-tds)
+
+[![Safety Data Sheet](/img/Filament/banner-sds.svg)](#2-safety-data-sheet-sds-msds)
+
+[![REACH SVHC Declaration](/img/Filament/banner-reach.svg)](#3-reach-svhc-declaration)
+
+[![FDA Food-Contact Compliance](/img/Filament/banner-fda.svg)](#4-fda-food-contact-compliance)
+
+[![CE & RoHS Compliance](/img/Filament/banner-ce-rohs.svg)](#5-ce-declaration-rohs-compliance)
+
+[![Independent Test Reports](/img/Filament/banner-report.svg)](#6-independent-test-reports)
+
+</div>
 
 ---
 
