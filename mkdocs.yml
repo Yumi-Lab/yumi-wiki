@@ -100,6 +100,7 @@ markdown_extensions:
 nav:
   - "1. YUMI FILAMENTS":
     - "1.1 Compliance & Certifications (TDS / SDS / REACH / FDA)": Filament/YUMI_Filament_Compliance.md
+    - "1.2 Technical Data & Print Settings": Filament/YUMI_Filament_Technical_Data.md
   - "2. YUMI C SERIES":
       - "2.1 YUMI C SERIES": Yumi_C_Series/YUMI_C_SERIES.md
       - "2.2 Technical Specifications": Yumi_C_Series/YUMI_C_SERIES_Overview.md

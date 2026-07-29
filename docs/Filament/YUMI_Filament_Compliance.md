@@ -30,7 +30,7 @@ Every YUMI filament is backed by third-party lab testing: **TÜV SÜD**, **BCTC*
 
 ## 1. Technical Data Sheets (TDS)
 
-The TDS lists the physical, thermal and mechanical properties of the filament — diameter tolerance, density, tensile strength, recommended nozzle/bed temperatures — everything needed to set up a slicer profile or compare materials.
+The TDS lists the physical, thermal and mechanical properties of the filament — diameter tolerance, density, tensile strength, recommended nozzle/bed temperatures — everything needed to set up a slicer profile or compare materials. For a browsable, material-by-material breakdown of this data, see [Technical Data & Print Settings](YUMI_Filament_Technical_Data.md).
 
 | Document | Scope | Size | Download |
 |---|---|---|---|
