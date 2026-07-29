@@ -54,6 +54,8 @@ They all land between 77 and 109 MB: the choice of distribution costs nothing in
 
 [![Ubuntu 24.04 Noble with XFCE](/img/SmartPi/OS/ubuntu2404-noble-xfce-banner.svg)](../SmartPi_Linux.md)
 
+![Debian 14 Forky with XFCE — coming soon](/img/SmartPi/OS/debian14-forky-xfce-banner.svg){ .off-glb }
+
 [![Debian 13 Trixie with i3 — coming soon](/img/SmartPi/OS/debian13-trixie-i3-banner.svg)](SmartPi_i3_Desktop.md)
 
 ![Debian 14 Forky with MATE — coming soon](/img/SmartPi/OS/debian14-forky-mate-banner.svg){ .off-glb }
@@ -67,6 +69,7 @@ Same board, idle at the desktop with nothing open.
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](../SmartPi_Linux.md)** | XFCE | **378 MB** | 581 MB | Published |
 | ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 24.04 Noble](../SmartPi_Linux.md)** | XFCE | **352 MB** | 607 MB | Published |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | XFCE | **401 MB** | 558 MB | Published |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | XFCE | **345 MB** | 614 MB | Coming soon |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](SmartPi_i3_Desktop.md)** | i3 (tiling) | **245 MB** | 714 MB | Coming soon |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | MATE | not measured | — | Coming soon |
 
