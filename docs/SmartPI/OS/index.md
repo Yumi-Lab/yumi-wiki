@@ -71,7 +71,7 @@ Same board, idle at the desktop with nothing open.
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 12 Bookworm](../SmartPi_Linux.md)** | XFCE | **401 MB** | 558 MB | Published |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | XFCE | **345 MB** | 614 MB | Coming soon |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 13 Trixie](SmartPi_i3_Desktop.md)** | i3 (tiling) | **245 MB** | 714 MB | Coming soon |
-| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | MATE | not measured | — | Coming soon |
+| ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **Debian 14 Forky** | MATE | **413 MB** | 547 MB | Coming soon |
 
 A graphical session costs 250 to 300 MB — Xorg, the panel and its applets — and the tiling [i3 build](SmartPi_i3_Desktop.md) saves 130 MB of that. Pick a server image whenever the board does not need a screen.
 
