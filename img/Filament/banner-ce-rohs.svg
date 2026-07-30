@@ -11,11 +11,11 @@
   </defs>
   <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-ce-rohsbg)" stroke="#2f323b" stroke-width="1.5"/>
   <rect x="1" y="1" width="898" height="188" rx="18" fill="url(#banner-ce-rohsglow)"/>
-  <g transform="translate(40,52)" fill="none" stroke="#0ea5e9" stroke-width="9" stroke-linecap="round">
-    <path d="M40 6 A34 34 0 1 0 40 74"/>
-    <path d="M56 34 H80 M56 40 H74"/>
+  <g transform="translate(30,20) scale(0.62)">
+    <path d="M 64.5 64.6 A 32 32 0 1 1 64.5 23.4" fill="none" stroke="#9aa3af" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 144.5 64.6 A 32 32 0 1 1 144.5 23.4 M 85 44 H 144.5" fill="none" stroke="#9aa3af" stroke-width="11" stroke-linecap="round"/>
   </g>
-  <g transform="translate(150,38)">
+  <g transform="translate(178,40)">
     <circle cx="14" cy="14" r="14" fill="#0b2318" stroke="#22c55e" stroke-width="2"/>
     <path d="M7 14 L12 19 L21 8" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
