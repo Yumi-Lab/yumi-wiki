@@ -82,19 +82,19 @@ sha256sum -c Yumi-smartpi1-trixie-debian13-server-*.img.xz.sha256
 
 <!-- BEGIN AUTO: armbian-rc -->
 
-!!! info "v1.8.0-rc4 — release candidate, 2026-07-27"
+!!! info "v1.8.0-rc5 — release candidate, 2026-07-31"
 
     One image serves both the Smart Pi One and the Smart Pad — the touchscreen is detected at boot.
 
-    [:octicons-mark-github-16: v1.8.0-rc4 on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/v1.8.0-rc4){ .md-button target=_blank }
+    [:octicons-mark-github-16: v1.8.0-rc5 on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/tag/v1.8.0-rc5){ .md-button target=_blank }
 
 | Distribution | Server | Desktop |
 |---|---|---|
-| **Debian 13 Trixie** | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-trixie-debian13-server-2026-07-27-0249.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Trixie_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-trixie-debian13-desktop-2026-07-27-0249.img.xz){ target=_blank } |
-| **Debian 12 Bookworm** | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-bookworm-debian12-server-2026-07-27-0249.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Bookworm_Desktop-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-bookworm-debian12-desktop-2026-07-27-0249.img.xz){ target=_blank } |
-| **Ubuntu 24.04 Noble** | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-noble-ubuntu24.04-server-2026-07-27-0249.img.xz){ target=_blank } | [![Download](https://img.shields.io/badge/Download-Noble_Desktop-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-noble-ubuntu24.04-desktop-2026-07-27-0249.img.xz){ target=_blank } |
-| **Ubuntu 22.04 Jammy** | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-07-27-0249.img.xz){ target=_blank } | — |
-| **Debian 11 Bullseye (EOL)** | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc4/Yumi-smartpi1-bullseye-debian11-server-2026-07-27-0249.img.xz){ target=_blank } | — |
+| **Debian 13 Trixie** | [![Download](https://img.shields.io/badge/Download-Trixie_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc5/Yumi-smartpi1-trixie-debian13-server-2026-07-31-0002.img.xz){ target=_blank } | — |
+| **Debian 12 Bookworm** | [![Download](https://img.shields.io/badge/Download-Bookworm_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc5/Yumi-smartpi1-bookworm-debian12-server-2026-07-31-0002.img.xz){ target=_blank } | — |
+| **Ubuntu 24.04 Noble** | [![Download](https://img.shields.io/badge/Download-Noble_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc5/Yumi-smartpi1-noble-ubuntu24.04-server-2026-07-31-0002.img.xz){ target=_blank } | — |
+| **Ubuntu 22.04 Jammy** | [![Download](https://img.shields.io/badge/Download-Jammy_Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc5/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-07-31-0002.img.xz){ target=_blank } | — |
+| **Debian 11 Bullseye (EOL)** | [![Download](https://img.shields.io/badge/Download-Bullseye_Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc5/Yumi-smartpi1-bullseye-debian11-server-2026-07-31-0002.img.xz){ target=_blank } | — |
 
 <!-- END AUTO: armbian-rc -->
 

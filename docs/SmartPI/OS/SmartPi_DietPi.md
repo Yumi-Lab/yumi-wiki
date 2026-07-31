@@ -44,9 +44,9 @@ On a board with 1 GB of RAM and an Allwinner H3, that headroom is the whole poin
 
 | File | Size | Release |
 |---|---|---|
-| [`Yumi-smartpi1-trixie-debian13-dietpi-2026-07-27-0444.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc4/Yumi-smartpi1-trixie-debian13-dietpi-2026-07-27-0444.img.xz){ target=_blank } | 309 MB | v1.8.0-rc4 — 2026-07-27 |
+| [`Yumi-smartpi1-trixie-debian13-dietpi-2026-07-31-0717.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc5/Yumi-smartpi1-trixie-debian13-dietpi-2026-07-31-0717.img.xz){ target=_blank } | 308 MB | v1.8.0-rc5 — 2026-07-31 |
 
-The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc4){ target=_blank }.
+The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc5){ target=_blank }.
 
 <!-- END AUTO: dietpi-release -->
 
