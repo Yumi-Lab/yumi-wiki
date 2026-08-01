@@ -44,9 +44,9 @@ On a board with 1 GB of RAM and an Allwinner H3, that headroom is the whole poin
 
 | File | Size | Release |
 |---|---|---|
-| [`Yumi-smartpi1-trixie-debian13-dietpi-2026-07-27-0444.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc4/Yumi-smartpi1-trixie-debian13-dietpi-2026-07-27-0444.img.xz){ target=_blank } | 309 MB | v1.8.0-rc4 — 2026-07-27 |
+| [`Yumi-smartpi1-trixie-debian13-dietpi-2026-07-31-0717.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc5/Yumi-smartpi1-trixie-debian13-dietpi-2026-07-31-0717.img.xz){ target=_blank } | 308 MB | v1.8.0-rc5 — 2026-07-31 |
 
-The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc4){ target=_blank }.
+The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc5){ target=_blank }.
 
 <!-- END AUTO: dietpi-release -->
 
@@ -136,7 +136,7 @@ ssh root@172.22.1.1
 The gadget uses the **CDC NCM** protocol, which macOS, Linux and Windows all recognise natively — no driver to install.
 
 !!! warning "Unplugging the cable cuts the power"
-    That cable is the board's power supply as well as its network link: pull it and the board loses power. And for a sustained workload at the 1368 MHz overclock, a computer's USB port may not deliver enough current — use a dedicated **5 V / 2 A** supply and keep the USB cable for data only.
+    That cable is the board's power supply as well as its network link: pull it and the board loses power. And for a sustained workload with the optional overclock enabled, a computer's USB port may not deliver enough current — use a dedicated **5 V / 2 A** supply and keep the USB cable for data only.
 
 This works the same way on every current YUMI Linux image, not just DietPi.
 
@@ -184,11 +184,10 @@ Everything that makes the YUMI Linux images specific to these boards survives th
 
 | Feature | Detail |
 |---|---|
-| **CPU overclock** | 1368 MHz instead of the stock 1296 MHz |
+| **Optional CPU overclock** | Stock is up to 1296 MHz; `sudo smartpi-oc on` switches to a fixed 1368 MHz, `smartpi-oc off` reverts |
 | **Custom U-Boot** | DRAM at 576 MHz with ZQ calibration and ODT |
 | **Device tree** | `YUMi SmartPi One` — check it with `cat /proc/device-tree/model` |
 | **Smart Pad screen rotation** | The 4.3" 800x480 touchscreen is detected at boot and the display rotated 180° **only then** — on a regular HDMI monitor the orientation is untouched |
-| **Boot logo** | The Yumi logo, embedded in U-Boot and drawn as soon as the video output starts |
 | **Kernel packages held** | `apt-mark hold` on every `linux-*` package |
 
 That last one matters. The generic kernels on `apt.armbian.com` do not carry our DRAM timings or the Smart Pi One device tree, and a board booted with one of them does not come back. The hold makes sure no `apt upgrade` or `dietpi-update` can quietly replace the kernel.
@@ -242,7 +241,7 @@ cat /proc/device-tree/model
 # YUMi SmartPi One
 
 cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
-# 1368000
+# 1296000  (1368000 once the optional overclock is enabled)
 ```
 
 And to see the memory footprint for yourself:

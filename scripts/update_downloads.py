@@ -37,6 +37,7 @@ DIETPI_PAGE = REPO_ROOT / "docs/SmartPI/OS/SmartPi_DietPi.md"
 # Display order and labels, newest-first within each distribution family.
 DISTROS = [
     ("trixie", "Debian 13 Trixie", "A81D33", "debian"),
+    ("forky", "Debian 14 Forky (preview)", "A81D33", "debian"),
     ("bookworm", "Debian 12 Bookworm", "A81D33", "debian"),
     ("noble", "Ubuntu 24.04 Noble", "E95420", "ubuntu"),
     ("jammy", "Ubuntu 22.04 Jammy", "E95420", "ubuntu"),
@@ -44,10 +45,17 @@ DISTROS = [
 ]
 BOARDS = [("smartpi1", "Smart Pi One"), ("smartpad", "Smart Pad")]
 
-# Yumi-<board>-<codename>-<distro>-<edition>-<timestamp>.img.xz
+# Desktop environments, in preferred display order (falls back to alphabetical
+# for any DE not listed here, so a future addition never disappears silently).
+DE_ORDER = ["XFCE", "i3", "MATE"]
+
+# Yumi-<board>-<codename>-<distro>-<edition>[_<desktop-environment>]-<timestamp>.img.xz
+# The desktop environment suffix (e.g. "_XFCE", "_i3", "_MATE") was introduced
+# in v1.8.0-rc5 once a distro started shipping more than one desktop variant;
+# older releases (v1.7.0 and earlier) have plain "-desktop-" with no suffix.
 ASSET_RE = re.compile(
     r"^Yumi-(?P<board>[a-z0-9]+)-(?P<codename>[a-z]+)-(?P<distro>[a-z0-9.]+)"
-    r"-(?P<edition>server|desktop)-(?P<stamp>[\d-]+)\.img\.xz$"
+    r"-(?P<edition>server|desktop)(?:_(?P<de>[A-Za-z0-9]+))?-(?P<stamp>[\d-]+)\.img\.xz$"
 )
 
 
@@ -91,15 +99,22 @@ def newest(releases):
 
 
 def parse_images(release):
-    """{board: {codename: {edition: download_url}}} for the .img.xz assets."""
+    """{board: {codename: {"server": url_or_None, "desktop": {de: url}}}}
+    for the .img.xz assets. A desktop asset with no _<DE> suffix (older
+    releases, before a distro shipped more than one desktop) is filed under
+    the generic key "Desktop"."""
     images = {}
     for asset in release["assets"]:
         m = ASSET_RE.match(asset["name"])
         if not m:
             continue
-        images.setdefault(m["board"], {}).setdefault(m["codename"], {})[
-            m["edition"]
-        ] = asset["browser_download_url"]
+        entry = images.setdefault(m["board"], {}).setdefault(
+            m["codename"], {"server": None, "desktop": {}}
+        )
+        if m["edition"] == "server":
+            entry["server"] = asset["browser_download_url"]
+        else:
+            entry["desktop"][m["de"] or "Desktop"] = asset["browser_download_url"]
     return images
 
 
@@ -109,19 +124,25 @@ def badge(label, colour, logo, url):
             f"?logo={logo}&logoColor=white)]({url}){{ target=_blank }}")
 
 
+def de_sort_key(de):
+    return (DE_ORDER.index(de),) if de in DE_ORDER else (len(DE_ORDER), de)
+
+
 def table(per_distro):
     rows = ["| Distribution | Server | Desktop |", "|---|---|---|"]
     for codename, name, colour, logo in DISTROS:
-        editions = per_distro.get(codename)
-        if not editions:
+        entry = per_distro.get(codename)
+        if not entry:
             continue
-        cells = []
-        for edition in ("server", "desktop"):
-            url = editions.get(edition)
-            short = name.split(" (")[0].split()[-1]
-            cells.append(badge(f"{short} {edition.capitalize()}", colour, logo, url)
-                         if url else "—")
-        rows.append(f"| **{name}** | {cells[0]} | {cells[1]} |")
+        short = name.split(" (")[0].split()[-1]
+        server_cell = (badge(f"{short} Server", colour, logo, entry["server"])
+                       if entry["server"] else "—")
+        desktop_editions = sorted(entry["desktop"].items(),
+                                   key=lambda kv: de_sort_key(kv[0]))
+        desktop_cell = (" ".join(badge(f"{short} {de}", colour, logo, url)
+                                  for de, url in desktop_editions)
+                        if desktop_editions else "—")
+        rows.append(f"| **{name}** | {server_cell} | {desktop_cell} |")
     return "\n".join(rows)
 
 

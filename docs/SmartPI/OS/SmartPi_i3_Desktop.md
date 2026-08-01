@@ -4,8 +4,10 @@
 
 A desktop image built around **i3**, a tiling window manager, instead of XFCE. Same Debian 13 base, same kernel, same hardware stack — the difference is what runs on top of Xorg, and it costs **133 MB less memory**.
 
-!!! info "Not released yet"
-    This image is being prepared and does not appear on the [download page](../SmartPi_Linux.md) yet. The figures below were measured on a working build; the page will link to the image as soon as it ships.
+!!! info "Release candidate"
+    This image ships as part of the [v1.8.0-rc5 release candidate](../SmartPi_Linux.md#3-release-candidate) — good for testing, not yet the recommended default for a board you depend on.
+
+[![Download i3](https://img.shields.io/badge/Download-Trixie_i3-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.8.0-rc5/Yumi-smartpi1-trixie-debian13-desktop_i3-2026-07-31-0002.img.xz){ target=_blank }
 
 ## 1. Why a tiling desktop on this board
 

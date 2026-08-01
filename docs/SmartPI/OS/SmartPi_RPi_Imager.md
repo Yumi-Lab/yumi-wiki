@@ -95,12 +95,12 @@ Entries are named `SmartPi One <codename> (<distribution>) <edition> <version>`:
 
 | Part of the name | Meaning |
 |---|---|
-| `trixie`, `bookworm`, `bullseye` | Debian 13, 12, 11 |
+| `trixie`, `bookworm`, `bullseye`, `forky` | Debian 13, 12, 11, 14 (preview) |
 | `noble`, `jammy` | Ubuntu 24.04, 22.04 |
 | `server` | Headless — no desktop, ~465 MB to ~550 MB to download |
-| `desktop` | Graphical desktop, ~1.2 GB to 1.4 GB to download |
+| `desktop (XFCE)`, `desktop (i3)`, `desktop (MATE)` | Graphical desktop, ~1.2 GB to 1.4 GB to download — the desktop environment is named directly in the entry |
 
-Not sure which one? See [Which one should I choose?](index.md#5-which-one-should-i-choose) — **Debian 13 Trixie server** is the usual answer.
+Not sure which one? See [Which one should I choose?](index.md#6-which-one-should-i-choose) — **Debian 13 Trixie server** is the usual answer.
 
 !!! tip "Smart Pad owners"
     Pick the same images. The Smart Pad is a Smart Pi One with the 4.3" touchscreen fitted; the screen is detected at boot and the display rotated automatically.
@@ -135,10 +135,12 @@ cat /proc/device-tree/model
 # YUMi SmartPi One
 
 cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
-# 1368000
+# 1296000  (1368000 once the optional overclock is enabled — see below)
 ```
 
 The [DietPi image](SmartPi_DietPi.md) is the exception — it uses its own accounts and configures itself with no questions at all.
+
+The CPU overclock is [optional](index.md#5-optional-cpu-overclock) — enable it with `sudo smartpi-oc on` once you are logged in.
 
 ## 7. Going back to the Raspberry Pi list
 
