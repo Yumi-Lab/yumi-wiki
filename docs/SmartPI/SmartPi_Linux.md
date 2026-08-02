@@ -143,8 +143,9 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 | Debian 11 Bullseye — Yumi 26.08.0 (legacy 6.12 kernel) | 86 MB | 850 MB |
 | Ubuntu 24.04 Noble — Yumi 26.08.0 | 104 MB | 855 MB |
 | Ubuntu 22.04 Jammy — Yumi 26.08.0 | 77 MB | 848 MB |
+| [DietPi](OS/SmartPi_DietPi.md#4-default-accounts) — release candidate | ~87 MB *(vendor figure)* | — |
 
-Each release is added here as it is measured, and any service you install comes on top.
+Each release is added here as it is measured, and any service you install comes on top. DietPi's figure is the vendor's own claim, not one of our own board measurements — see [Default accounts](OS/SmartPi_DietPi.md#4-default-accounts) for the `root`/`pi` logins (both `yumi`) once you flash it.
 
 **Desktop editions are a different story.** Idle at the desktop, nothing open, same board:
 
