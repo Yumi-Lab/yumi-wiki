@@ -127,6 +127,7 @@ nav:
       - "3.2.9 Diode Laser Maintenance": Yumi_L_Series/Yumi_L_Series_Maintenance.md
       - "3.2.10 L-A4 Default GRBL Parameters": Yumi_L_Series/Yumi_L_Series_LA4_Parameters.md
       - "3.2.11 Accessories & Upgrade Packs": Yumi_L_Series/Yumi_L_Series_Accessories.md
+      - "3.2.12 Troubleshooting": Yumi_L_Series/Yumi_L_Series_Troubleshooting.md
     - "3.3 TUTO":
       - "3.3.1 Safety": Yumi_L_Series/Tuto/Yumi_L_Safety.md
       - "3.3.2 Laser GRBL": Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md
