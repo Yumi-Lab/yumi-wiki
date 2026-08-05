@@ -12,3 +12,9 @@ site/
 # IDE
 .vscode/
 .idea/
+.monitor/
+.loop/
+.done
+.done-*
+.gate-handoff
+.env
