@@ -1,6 +1,6 @@
 # YUMI 3D PEN
 
-<img src="../img/3d_pen/YUMI-3D-PEN-1.webp" alt="YUMI - 3D PEN" width="400">
+![YUMI 3D Pen in pink, blue and white with colored filament strands](/img/3d_pen/YUMI-3D-PEN-1.webp){ width="400" }
 
 ##  1. Overview
 
@@ -43,7 +43,7 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 
 ## 4. Example of First Use
 
-<img src="../../img/3d_pen/YUMI-3D-PEN-4.webp" alt="YUMI - 3D PEN" width="300">
+![Blue YUMI 3D Pen with filament coil and a drawn flower pot example](/img/3d_pen/YUMI-3D-PEN-4.webp){ width="300" }
 
 **Step 1: Preparation**
 
@@ -64,7 +64,8 @@ Available in Blue, White, and Pink, the YUMI 3D Pen suits all personalities and 
 - **Cool and Finalize**: Once your creation is complete, let it cool on the mat. Use the scissors to adjust any details, and voilà! Your first 3D object is ready.
 
 
-**Attention:** The extrusion nozzle becomes very hot during use. Never touch the extrusion nozzle while it is in operation. After use, allow the pen to cool down before storing it in the travel bag. It is recommended to empty the pen after use by pressing the "filament reverse" button. For children using the pen, ensure that they are supervised by an adult at all times to avoid accidents and misuse.
+!!! warning "Hot nozzle"
+    The extrusion nozzle becomes very hot during use. Never touch the extrusion nozzle while it is in operation. After use, allow the pen to cool down before storing it in the travel bag. It is recommended to empty the pen after use by pressing the "filament reverse" button. For children using the pen, ensure that they are supervised by an adult at all times to avoid accidents and misuse.
 
 
 ## 5. Specifications

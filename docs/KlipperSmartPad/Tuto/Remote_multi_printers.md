@@ -55,7 +55,8 @@ To do this, you need an ssh connection on the pad you'll be using to control oth
 Once connected, you'll need to edit a text file.
 
 ```
-nano cd ~/printer_data/config/KlipperScreen.conf
+cd ~/printer_data/config
+nano KlipperScreen.conf
 ```
 
 In this text file, you'll need to put the first line:

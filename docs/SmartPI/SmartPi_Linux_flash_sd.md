@@ -13,17 +13,7 @@ In this guide, I'll walk you through the steps to install operating system (serv
 
 ## 2. Download
 
-Go to Official images. Choose the Armbian version you'd like to install.
-
-> **Latest release: v1.6.0** (March 1, 2026) — [All releases on GitHub](https://github.com/Yumi-Lab/SmartPi-armbian/releases/latest){ target=_blank }
-
-| Distribution | Download |
-|---|---|
-| [![Debian](https://img.shields.io/badge/Debian_12_Bookworm-Server_(recommended)-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-bookworm-debian12-server-2026-03-01-2139.img.xz){ target=_blank } | [Yumi-smartpi1-bookworm-debian12-server-2026-03-01-2139.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-bookworm-debian12-server-2026-03-01-2139.img.xz){ target=_blank } |
-| [![Debian](https://img.shields.io/badge/Debian_11_Bullseye-Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-bullseye-debian11-server-2026-03-01-2139.img.xz){ target=_blank } | [Yumi-smartpi1-bullseye-debian11-server-2026-03-01-2139.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-bullseye-debian11-server-2026-03-01-2139.img.xz){ target=_blank } |
-| [![Debian](https://img.shields.io/badge/Debian_13_Trixie-Server-A81D33?logo=debian&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-trixie-debian13-server-2026-03-01-2139.img.xz){ target=_blank } | [Yumi-smartpi1-trixie-debian13-server-2026-03-01-2139.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-trixie-debian13-server-2026-03-01-2139.img.xz){ target=_blank } |
-| [![Ubuntu](https://img.shields.io/badge/Ubuntu_22.04_Jammy-Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-03-01-2139.img.xz){ target=_blank } | [Yumi-smartpi1-jammy-ubuntu22.04-server-2026-03-01-2139.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-jammy-ubuntu22.04-server-2026-03-01-2139.img.xz){ target=_blank } |
-| [![Ubuntu](https://img.shields.io/badge/Ubuntu_24.04_Noble-Server-E95420?logo=ubuntu&logoColor=white)](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-noble-ubuntu24.04-server-2026-03-01-2139.img.xz){ target=_blank } | [Yumi-smartpi1-noble-ubuntu24.04-server-2026-03-01-2139.img.xz](https://github.com/Yumi-Lab/SmartPi-armbian/releases/download/v1.6.0/Yumi-smartpi1-noble-ubuntu24.04-server-2026-03-01-2139.img.xz){ target=_blank } |
+Go to the [Official Linux Image](SmartPi_Linux.md) page and choose the Armbian version you'd like to install. It is kept up to date automatically with the latest releases.
 
 
 ## 3. Use Etcher to write the Smart Pi One SD Card Image to your microSD card
@@ -84,7 +74,7 @@ Debian 12 or Ubuntu will download and install the latest updates and patches.
 Install additional software or packages you need by running:
 
 ```
-psudo apt install [package-name]
+sudo apt install [package-name]
 ```
 
 Let's go! Operating  system is now up and running on your Smart Pi One. You can explore a variety of applications, use it as a server, or engage in some exciting DIY projects.

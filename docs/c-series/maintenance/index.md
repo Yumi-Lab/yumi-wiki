@@ -10,8 +10,9 @@ Regular maintenance keeps your Yumi C Series printer running at peak performance
 | [Clean Nozzle](clean-nozzle.md) | Every 14 days | Easy |
 | [Lubricate X/Y Rails](lube-xy-rails.md) | Every 30 days | Easy |
 | [Grease Z Lead Screw](grease-z-leadscrew.md) | Every 90 days | Easy |
-| [Inspect Belts](inspect-belts.md) | Every 90 days | Medium |
+| [Inspect Belts](inspect-belts.md) | Every 3–4 weeks | Medium |
 | [Check Wiring](check-wiring.md) | Every 180 days | Medium |
+| [Fan Cleaning](fan_cleaning.md) | Every 30 days | Easy |
 
 ## Automatic Reminders
 

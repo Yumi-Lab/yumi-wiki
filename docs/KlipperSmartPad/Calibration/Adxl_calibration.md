@@ -16,7 +16,7 @@
 <p align="center">
   <img src="/img/KlipperSmartPad/ADXL/005.jpg" alt="ADXL" style="width:50%;" />
 </p>
-32. Select **Input Shaper**  
+3. Select **Input Shaper**  
 <p align="center">
   <img src="/img/KlipperSmartPad/ADXL/006.jpg" alt="ADXL" style="width:50%;" />
 </p>

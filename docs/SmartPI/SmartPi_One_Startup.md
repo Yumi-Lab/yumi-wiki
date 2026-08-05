@@ -6,7 +6,7 @@
 The **Smart Pi One** is a versatile nano-computer designed for various projects, from home automation to retro gaming. This guide will walk you through the initial setup and essential configurations to get you started.
 
 ## Specifications
-For detailed specifications of the Smart Pi One, visit the [Specifications Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_One_specifications/){ target=_blank }.
+For detailed specifications of the Smart Pi One, visit the [Specifications Page](SmartPi_One_specifications.md).
 
 ## 1. Required Materials
 Before starting, ensure you have the following:
@@ -21,19 +21,19 @@ Before starting, ensure you have the following:
 ## 2. Modules Complémentaires
 While not required for the initial setup, the following accessories can enhance your Smart Pi One experience:
 
-- [Smart LCD Touch 4.3inch](https://wiki.yumi-lab.com/Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications/){ target=_blank } (for a touch interface)
-- [Smart Hub](https://wiki.yumi-lab.com/Yumi_Components/SmartHub_specifications/){ target=_blank } (for enhanced connectivity)
-- [Smart Shield](https://wiki.yumi-lab.com/Yumi_Components/SmartShield_specifications/){ target=_blank } (for additional functionalities)
+- [Smart LCD Touch 4.3inch](../Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md) (for a touch interface)
+- [Smart Hub](../Yumi_Components/SmartHub_specifications.md) (for enhanced connectivity)
+- [Smart Shield](../Yumi_Components/SmartShield_specifications.md) (for additional functionalities)
 
 ## 3. Printable Cases
 To protect and enhance your Smart Pi One, you can print cases. Here are some resources where you can find 3D models:
 
 - [Cults3D - Smart Pi Case](https://cults3d.com/fr/recherche?q=boitier+smart+pi){ target=_blank }
-- [YUMI STL - 3D Printable Accessories and Parts](https://wiki.yumi-lab.com/Yumi_stl/Printable_Accessories_and_Parts/){ target=_blank }
+- [YUMI STL - 3D Printable Accessories and Parts](../Yumi_stl/Printable_Accessories_and_Parts.md)
 
 ## 4. Preparing the microSD Card
-1. **Download the Official Linux Server Image** for Smart Pi One from the [Linux Image Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/){ target=_blank }.
-2. **Flash the Image** onto the microSD card using software like balenaEtcher. Follow the instructions on the [Micro SD Card Flashing Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux_flash_sd/){ target=_blank }.
+1. **Download the Official Linux Server Image** for Smart Pi One from the [Linux Image Page](SmartPi_Linux.md).
+2. **Flash the Image** onto the microSD card using software like balenaEtcher. Follow the instructions on the [Micro SD Card Flashing Guide](SmartPi_Linux_flash_sd.md).
 
 ![smartpi_one_startup_2](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_2.png)
 
@@ -65,7 +65,7 @@ The Smart Pi One has SSH enabled by default. To connect remotely:
 
 ![smartpi_one_startup_3](/img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_3.png)
 
-For detailed SSH connection instructions for Windows, Mac, and Linux, refer to the [SSH Connection Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Connect_Ssh/){ target=_blank }.
+For detailed SSH connection instructions for Windows, Mac, and Linux, refer to the [SSH Connection Guide](SmartPi_Connect_Ssh.md).
 
 ## 8. System Update
 After booting, it’s crucial to update the system to ensure you have the latest security patches and features:
@@ -78,23 +78,23 @@ sudo apt update && sudo apt upgrade -y
 ## 9. Initial Configuration
 
 ### Change Password
-For security, change the default password. Follow the instructions in the [Password Change Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Change_Password/){ target=_blank }.
+For security, change the default password. Follow the instructions in the [Password Change Guide](SmartPi_Change_Password.md).
 
 ### Set the Timezone
-Make sure the timezone is set correctly by following the [Timezone Configuration Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_ConfigureTimeZone/){ target=_blank }.
+Make sure the timezone is set correctly by following the [Timezone Configuration Guide](SmartPi_ConfigureTimeZone.md).
 
 ### Connect to Wi-Fi
-If using Wi-Fi, refer to the [Wi-Fi Connection Guide](https://wiki.yumi-lab.com/SmartPI/SmartPi_Connect_Wifi/){ target=_blank } to set it up.
+If using Wi-Fi, refer to the [Wi-Fi Connection Guide](SmartPi_Connect_Wifi.md) to set it up.
 
 ## 10. Basic Commands
-Familiarize yourself with essential commands to manage your board effectively. Visit the [Basic Commands Page](https://wiki.yumi-lab.com/SmartPI/SmartPi_Basic_Commands/){ target=_blank } for useful commands such as shutting down, rebooting, and file management.
+Familiarize yourself with essential commands to manage your board effectively. Visit the [Basic Commands Page](SmartPi_Basic_Commands.md) for useful commands such as shutting down, rebooting, and file management.
 
 ## 11. Explore Advanced Projects
 Once you are comfortable with the basics, explore advanced projects:
 
-- **Klipper**: [Setup Klipper <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_6.png" alt="Smart Pi One - Yumi" width="50"/>](https://wiki.yumi-lab.com/SmartPI/SmartPi_Klipper/){ target=_blank }
-- **Retro Gaming**: [Install RetroMi (Optimized <img src="../../img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png" alt="Smart Pi One - Yumi" width="100"/>)](https://wiki.yumi-lab.com/SmartPI/SmartPi_Retro_Gaming/){ target=_blank }
+- **Klipper**: [Setup Klipper <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_6.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPi_Klipper.md)
+- **Retro Gaming**: [Install RetroMi (Optimized <img src="../../img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png" alt="Smart Pi One - Yumi" width="100"/>)](SmartPi_Retro_Gaming.md)
 
-- **Home Automation**: [Set up Home Assistant <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_5.png" alt="Smart Pi One - Yumi" width="50"/>](https://wiki.yumi-lab.com/SmartPI/SmartPi_Home_Assistant/){ target=_blank }
-- **Media Storage**: [Configure OpenMediaVault <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_7.png" alt="Smart Pi One - Yumi" width="50"/>](https://wiki.yumi-lab.com/SmartPI/SmartPI_OpenMediaVault/){ target=_blank }
-- **Media Server**: [Set up Plex Server <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_8.png" alt="Smart Pi One - Yumi" width="50"/>](https://wiki.yumi-lab.com/SmartPI/SmartPi_Plex_Server/){ target=_blank }
+- **Home Automation**: [Set up Home Assistant <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_5.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPi_Home_Assistant.md)
+- **Media Storage**: [Configure OpenMediaVault <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_7.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPI_OpenMediaVault.md)
+- **Media Server**: [Set up Plex Server <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_8.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPi_Plex_Server.md)

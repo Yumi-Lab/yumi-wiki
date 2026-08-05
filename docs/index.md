@@ -6,9 +6,7 @@ Welcome to YUMI-LAB, where innovation meets versatility in the realm of electron
 
 ## Introducing the Smart Pi One
 
-The Smart Pi One is not just another single-board computer; it's a game-changer in terms of performance, flexibility, and functionality. Let's compare it to the industry-standard Raspberry Pi:
-
-As you can see, the Smart Pi One holds its own against the Raspberry Pi, offering comparable performance and connectivity options. However, where it truly shines is in its additional features and capabilities:
+The Smart Pi One is not just another single-board computer; it's a game-changer in terms of performance, flexibility, and functionality. Check out its [full specifications](SmartPI/SmartPi_One_specifications.md) to see what it packs — where it truly shines is in its additional features and capabilities:
 
 ## Unleash Your Creativity
 

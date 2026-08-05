@@ -16,7 +16,7 @@ Openmediavault is a reference for anyone who wants to build their own DIY NAS.
 
 Connect to the smartpi via ssh with mobaxterm or putty, for example.
 
-![SSH](/img/SmartPi/OMV/OMV001.png)
+![MobaXterm SSH session connected to the Smart Pi One](/img/SmartPi/OMV/OMV001.png)
 
 ## 2. Update the smartpi
 
@@ -44,14 +44,16 @@ Add the package repositories:
 ```
 cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list
 deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm main
-## 4. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm main
-## 5. Uncomment the following line to add software from the proposed repository.
-## 6. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm-proposed main
-## 7. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm-proposed main
-## 8. This software is not part of OpenMediaVault, but is offered by third-party
-## 9. developers as a service to OpenMediaVault users.
-## 10. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm partner
-## 11. deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm partner
+# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm main
+
+## Uncomment the following line to add software from the proposed repository.
+# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm-proposed main
+# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm-proposed main
+
+## This software is not part of OpenMediaVault, but is offered by third-party
+## developers as a service to OpenMediaVault users.
+# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm partner
+# deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages sandworm partner
 EOF
 ```
 
@@ -63,11 +65,11 @@ apt-get install openmediavault
 ```
 
 
-## 12. connection to web interface
+## 4. Connection to the web interface
 
 http://Your_IP_Address
 
-![SSH](/img/SmartPi/OMV/OMV002.webp)
+![OpenMediaVault web interface login page](/img/SmartPi/OMV/OMV002.webp)
 
 
 The default logins are :
@@ -77,56 +79,56 @@ Password: `openmediavault`
 
 You can now connect a disk and create shares.
 
-## 13. Add Disk
+## 5. Add a disk
 
 Please note that not all changes are applied immediately. Each change requires validation.
 If you see the following message, this means that changes are pending. Click on validate to apply them.
 
-![SSH](/img/SmartPi/OMV/OMV013.png)
+![OpenMediaVault pending configuration changes banner](/img/SmartPi/OMV/OMV013.png)
 
 Connecting an external usb hard drive
 Go to Storage\File Systems
 
-![SSH](/img/SmartPi/OMV/OMV003.png)
+![OpenMediaVault Storage > File Systems page with the connected USB disk](/img/SmartPi/OMV/OMV003.png)
 
 Click on the Play button
 
-![SSH](/img/SmartPi/OMV/OMV004.png)
+![Mount (Play) button in the File Systems toolbar](/img/SmartPi/OMV/OMV004.png)
 
 Select your disk and click on Save
 
-![SSH](/img/SmartPi/OMV/OMV005.png)
+![File system selection dialog with the Save button](/img/SmartPi/OMV/OMV005.png)
 
 Go to StorageShared Folders then click on + to create a new share
 
-![SSH](/img/SmartPi/OMV/OMV006.png)
+![OpenMediaVault Storage > Shared Folders page](/img/SmartPi/OMV/OMV006.png)
 
 The name field corresponds to the name of the share.
 The FileSytem field corresponds to your disk
 The relative path field corresponds to the name of the folder created on your disk.
 Once completed, click on Save
 
-![SSH](/img/SmartPi/OMV/OMV007.png)
+![Shared folder creation form (name, file system, relative path)](/img/SmartPi/OMV/OMV007.png)
 
 
 If it's for a Windows share, go to Services\SMB\CIFS\Settings
 Activate the service and select the features you want.
 Once completed, click on Save
 
-![SSH](/img/SmartPi/OMV/OMV008.png)
+![SMB/CIFS settings page with the service enabled](/img/SmartPi/OMV/OMV008.png)
 
 
 Then go to Services\SMB\CIFS\Shares and click on the pencil to choose the options that interest you.
 
-![SSH](/img/SmartPi/OMV/OMV009.png)
-![SSH](/img/SmartPi/OMV/OMV010.png)
+![SMB/CIFS shares list with the created share](/img/SmartPi/OMV/OMV009.png)
+![SMB/CIFS share edit options](/img/SmartPi/OMV/OMV010.png)
 
 Once completed, click on Save
 
 
 Return to StorageShared Folders. select your share and click on permission. Then choose the desired permission
 
-![SSH](/img/SmartPi/OMV/OMV011.png)
-![SSH](/img/SmartPi/OMV/OMV012.png)
+![Permissions button in the Shared Folders toolbar](/img/SmartPi/OMV/OMV011.png)
+![Shared folder permissions for the pi user and group](/img/SmartPi/OMV/OMV012.png)
 
 

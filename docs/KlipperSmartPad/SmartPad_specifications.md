@@ -19,7 +19,7 @@ The Wanhao SMART Pad case is a complete case with Klipper pre-installed in the W
 - Ease of use: Even if you're a beginner, you'll find this box easy to install and use. All printers on the market are theoretically compatible with Klipper. If you're a beginner, please check that the configuration files for your 3D printer are available on our GITHUB or support page.
 
 - Energy savings: By using an external enclosure, your 3D printer will consume less energy, reducing your long-term operating costs.
-Scalability: Thanks to the open source nature of Klipper, you can continue to update and improve your 3D printing system as technology evolves. The system is designed to grow and evolve with you, whatever the scope of your 3D printing project.
+- Scalability: Thanks to the open source nature of Klipper, you can continue to update and improve your 3D printing system as technology evolves. The system is designed to grow and evolve with you, whatever the scope of your 3D printing project.
 
 - Precise configuration: Klipper lets you precisely define the printer's movements, which can improve the detail and accuracy of your prints. You can also adjust settings for different materials, which can help improve overall print quality.
 
@@ -30,7 +30,7 @@ Scalability: Thanks to the open source nature of Klipper, you can continue to up
 - Noise reduction: By offloading some of the processing tasks to an external enclosure, your 3D printer can run more quietly, which can make your working environment more pleasant.
 
 - Enhanced user experience: Klipper's user interface is designed to be easy to understand and use, making it easy even for 3D printing beginners to get started.
-Increased stability: Thanks to Klipper firmware, your 3D printer becomes more stable when printing, reducing the chance of print failure and improving print quality.
+- Increased stability: Thanks to Klipper firmware, your 3D printer becomes more stable when printing, reducing the chance of print failure and improving print quality.
 
 ## TECHNICAL INFORMATION
 

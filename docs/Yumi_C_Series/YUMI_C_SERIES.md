@@ -1,20 +1,6 @@
 # YUMI C SERIES
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/UCdwHCwixVY" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  </iframe>
-</div>
-
-
-
-[![yumiC](/img/YumiCSeries/YumiCSeries020.avif)](https://www.kickstarter.com/projects/yumi-3d-printer/yumi-3d-printer-the-faster-multicolor-printer-in-the-galaxy?ref=discovery&term=yumi&total_hits=35&category_id=331){ target=_blank }
-
+[Watch the YUMI C Series presentation video on YouTube](https://www.youtube.com/watch?v=UCdwHCwixVY){ target=_blank }
 
 ## 1. Open Source at Heart — Powered by Klipper
 
@@ -33,12 +19,13 @@ The YUMI Model C is a next-generation 3D printer built for speed, precision, and
 Powered by Klipper firmware, it combines ultra-fast motion control (up to 700 mm/s) with modular extrusion options: choose between the ChromaX12 head for up to 12 independent colors, or the high-temperature DirectDrive for faster printing with flexible and technical materials.
 
 Every detail was designed to solve the pain points of multicolor printing:
- No purge towers
- Minimal waste
- Fast color switching
- Clean filament transitions
- AI-assisted monitoring
- Remote control via the YUMI | lab app
+
+- No purge towers
+- Minimal waste
+- Fast color switching
+- Clean filament transitions
+- AI-assisted monitoring
+- Remote control via the YUMI | lab app
 
 Available in three build volumes (C235 / C335 / C435), the YUMI Model C adapts to every workspace — from your home studio to a professional lab.
 
@@ -48,21 +35,15 @@ Whether you're an artist, educator, or engineer, the YUMI Model C is not just a 
 Choose from C235 / C335 / C435, covering needs from everyday prints to large-scale projects.
 → From compact to professional-scale prints.
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries001.avif" alt="yumiC" />
-</p>
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries002.avif" alt="yumiC" />
-</p>
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries003.avif" alt="yumiC" />
-</p>
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries004.avif" alt="yumiC" />
-</p>
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries005.webp" alt="yumiC" />
-</p>
+![YUMI C Series lineup: the three build sizes C235, C335 and C435 with their YMS filament modules](/img/YumiCSeries/YumiCSeries001.avif)
+
+![Specification comparison table of the C235, C335 and C435 models](/img/YumiCSeries/YumiCSeries002.avif)
+
+![Print precision of 0.1 to 0.3 mm and adjustable layer thickness from 0.08 to 0.32 mm](/img/YumiCSeries/YumiCSeries003.avif)
+
+![Print time and waste comparison between YUMI C Series and other brands on a five-color bust](/img/YumiCSeries/YumiCSeries004.avif)
+
+![Launch configurations and pricing for the C235, C335, C435 and PenScreen](/img/YumiCSeries/YumiCSeries005.webp)
 
 ## 3. MAIN FEATURES — The Future of Modular 3D Printing
 
@@ -74,15 +55,11 @@ The YUMI Material System (YMS) scales from 1 to 12 independent modules.
 Each YMS includes an anti-UV protective cover, and only 10 cm of retraction is needed to switch colors.
 Filament is cut close to the nozzle, reducing purge, and waste is automatically ejected.
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries006.avif" alt="yumiC" />
-</p>
+![Row of YMS PRO and YMS LIGHT filament modules with anti-UV covers mounted on a printer](/img/YumiCSeries/YumiCSeries006.avif)
 
 ## 6. Meet the YUMI Print Heads — Built for Speed and Color
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries007.avif" alt="yumiC" />
-</p>
+![Close-up of the YUMI Chroma X12 multicolor print head](/img/YumiCSeries/YumiCSeries007.avif)
 
 
  Two Swappable Heads for Full Material Compatibility
@@ -90,21 +67,15 @@ Filament is cut close to the nozzle, reducing purge, and waste is automatically 
 →High-Flow DirectDrive: high-temperature filaments up to 310°C
 They cover everything from PLA, PETG, ABS, ASA, TPU to engineering-grade materials
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries008.avif" alt="yumiC" />
-</p>
+![Chroma X12 and Direct Drive head features, with Active Flow Control and Vibration Compensation comparisons](/img/YumiCSeries/YumiCSeries008.avif)
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries009.avif" alt="yumiC" />
-</p>
+![Technical comparison table of the Chroma X12 and Direct Drive print heads](/img/YumiCSeries/YumiCSeries009.avif)
 
 
 
 ## 7. YMS — The Modular Material System That Changes Everything
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries010.avif" alt="yumiC" />
-</p>
+![YMS spool compatibility from 200 g to 1 kg and supported materials such as PLA, PETG, TPU and ABS](/img/YumiCSeries/YumiCSeries010.avif)
 
 
 At the heart of the YUMI Model C lies our most revolutionary innovation: the YMS (YUMI Material System) — a fully modular, independent multicolor filament system designed to make multi-material 3D printing simple, fast, and clean.
@@ -122,21 +93,13 @@ Whether you’re printing prototypes, figurines, or detailed functional parts, Y
 
 No more towers. No more waste. Just pure color freedom.
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries011.avif" alt="yumiC" />
-</p>
+![YMS Lite and YMS Pro filament modules side by side](/img/YumiCSeries/YumiCSeries011.avif)
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries012.avif" alt="yumiC" />
-</p>
+![Feature comparison table of the YMS Lite and YMS Pro modules](/img/YumiCSeries/YumiCSeries012.avif)
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries013.avif" alt="yumiC" />
-</p>
+![Print quality with filament exposed to humidity: YMS Lite versus YMS Pro dried filament](/img/YumiCSeries/YumiCSeries013.avif)
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries014.avif" alt="yumiC" />
-</p>
+![Hyper Drive 3P2L hub connecting up to three YMS Pro and two YMS Lite modules](/img/YumiCSeries/YumiCSeries014.avif)
 
 
 ## 8. More details about YUMi 3D printers
@@ -145,9 +108,7 @@ No more towers. No more waste. Just pure color freedom.
 Use the built-in 4.3” capacitive touchscreen to control everything, or manage your print remotely through the YUMI | Lab mobile app.
 → Built-in 2.4 GHz Wi-Fi, with optional 5 GHz support via USB dongle
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries015.avif" alt="yumiC" />
-</p>
+![Smart Pad touchscreen mounted on the Hyper Drive 05 hub of the printer](/img/YumiCSeries/YumiCSeries015.avif)
 
 
 ## 9. Storage & Compatibility That Grows With You
@@ -164,9 +125,7 @@ Start, monitor, and control your prints from anywhere — even from the other si
 
 No more USB keys, no more waiting — just tap and print.
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries016.avif" alt="yumiC" />
-</p>
+![Local access via Mainsail or cloud access via the YUMI | LAB mobile app](/img/YumiCSeries/YumiCSeries016.avif)
 
 
 ## 12. Vibration Compensation & Pressure Advance
@@ -182,23 +141,14 @@ YUMI uses a proximity sensor to detect the build surface without any physical co
 
 This campaign would never have come to life without the passion and dedication of our incredible team. Over the past few months, our logistics, marketing, customer support, and production crews have worked tirelessly behind the scenes to make sure every detail is planned, tested, and ready—so we can deliver exactly what we promise.
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries017.avif" alt="yumiC" />
-</p>
+![The YUMI team members and their roles](/img/YumiCSeries/YumiCSeries017.avif)
 
 
 We also want to give a special shout-out to our creative team, the minds behind the design and visual identity of the YUMI Model C. Your talent, vision, and commitment have been essential in shaping the spirit of this project.
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries018.avif" alt="yumiC" />
-</p>
+![YUMI printer production line: assembled frames and print heads in the factory](/img/YumiCSeries/YumiCSeries018.avif)
 
 
 At YUMI, everything is built with care, transparency, and a deep love for innovation—and this journey is one we’re proud to share with you
 
-<p align="center">
-  <img src="/img/YumiCSeries/YumiCSeries019.avif" alt="yumiC" />
-</p>
-
-
-[![yumiC](/img/YumiCSeries/YumiCSeries020.avif)](https://www.kickstarter.com/projects/yumi-3d-printer/yumi-3d-printer-the-faster-multicolor-printer-in-the-galaxy?ref=discovery&term=yumi&total_hits=35&category_id=331){ target=_blank }
+![Environmental benefits: 80 percent less waste, cardboard filament spools, less printing time and less electricity consumed](/img/YumiCSeries/YumiCSeries019.avif)

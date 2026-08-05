@@ -1,4 +1,4 @@
-# RetroMi (include optimised RetroPie)
+# RetroMi (includes optimized RetroPie)
 ![retropie](/img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png)
 ## 1. Introduction
 RetroPie stands out in the retro gaming world for its unparalleled flexibility and customization options, making it a go-to choice for enthusiasts and builders of retro gaming projects. With its broad support for emulators, RetroPie enables users to dive into a vast library of games spanning decades of consoles and computer systems, from classic Atari and NES to more recent platforms like the PlayStation.
@@ -15,13 +15,11 @@ You can use Balena Etcher or Raspberry imager to prepare the SD card with the im
 
 2024-07-16: Pre-built with web browser http://your_ip:8080 for managing games and auto resize image for all TF cards minimum 16GB recommended. (BETA v0.4 / Remember to unzip the file. SSH user: pi, password: yumi) [RetroPie for SMART PI ONE V0.4beta](https://www.dropbox.com/scl/fi/et290vqex21cth2eoav81/smartpad1-retro.img.xz?rlkey=jp0starr84i54ydhd7tqubpjr&dl=0){ target=_blank } for more details : [GITHUB MAXIME3D77 SMARTPI](https://github.com/Maxime3d77/smartpi1-retropie){ target=_blank }
 
-2024-04-26 : Prebuilt image link for 16GB or more (BETA v0.3 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.3beta](https://gofile.me/67vGQ/){ target=_blank }JYxrUDZA1 )
+2024-04-26 : Prebuilt image link for 16GB or more (BETA v0.3 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.3beta](https://gofile.me/67vGQ/JYxrUDZA1){ target=_blank }
 
-2024-04-01 : Prebuilt image link for 16GB or more (BETA v0.2 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.2beta](https://gofile.me/67vGQ/){ target=_blank }VREUvyEth )
+2024-04-01 : Prebuilt image link for 16GB or more (BETA v0.2 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.2beta](https://gofile.me/67vGQ/VREUvyEth){ target=_blank }
 
-2024-03-22 : Prebuilt image link for 16GB or more (BETA v0.1 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.1beta](https://gofile.me/67vGQ/){ target=_blank }0bSQSSoCT )
-
-Image for OS any SD card: Available soon
+2024-03-22 : Prebuilt image link for 16GB or more (BETA v0.1 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.1beta](https://gofile.me/67vGQ/0bSQSSoCT){ target=_blank }
 
 ## 3. Manual Installation
 
@@ -52,9 +50,9 @@ sudo reboot
 
 ## 7. Start
 
-You should see Emulastation start up.
+You should see EmulationStation start up.
 
-![emula](/img/SmartPi/Retro_Gaming/bootemulastation.png)
+![EmulationStation boot screen on the Smart Pi One](/img/SmartPi/Retro_Gaming/bootemulationstation.png)
 
 Once started, you need to set up a controller
 

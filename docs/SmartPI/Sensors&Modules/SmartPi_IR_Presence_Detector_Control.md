@@ -2,12 +2,11 @@
 
 In this guide, we will demonstrate how to read the values from an IR presence detector connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_1.png" width="200" alt="IR Presence Detector">
+![HC-SR501 PIR presence detector module](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_1.png){ width="200" }
 
 We will cover the following methods:
 - **CLI commands**
 - **Python script**
-
 
 ## Required Materials
 
@@ -20,14 +19,13 @@ We will cover the following methods:
 
 The IR presence detector typically has three pins: **VCC**, **GND**, and **DOUT** (digital output).
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_5.png" width="450" alt="IR Presence Detector">
-
+![HC-SR501 pinout: GND, High/Low Output and +Power pins, with sensitivity and time delay adjustments](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_5.png){ width="450" }
 
 - **VCC** connects to **3.3V (Pin 1)**.
 - **GND** connects to **Ground (Pin 6)**.
 - **DOUT** connects to **GPIOG11 (Pin 7)** to read the presence detection signal.
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_2.png" width="520" alt="IR Presence Detector Wiring Diagram">
+![Wiring diagram: HC-SR501 VCC, GND and DOUT connected to the Smart Pi One header](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_2.png){ width="520" }
 
 | **Pin Number** | **Pin Name**          | **Function**          |
 |----------------|-----------------------|-----------------------|
@@ -35,41 +33,7 @@ The IR presence detector typically has three pins: **VCC**, **GND**, and **DOUT*
 | 7              | GPIOG11                | IR Presence Output     |
 | 6              | GND                   | Ground                |
 
-
-
-## Prerequisites: Configuration of smartpi-gpio
-
-To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
-
-1. **Update system**:
-
-   ```bash
-   sudo apt update 
-   sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
-   sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-   ```
-
-2. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
-   cd smartpi-gpio
-   ```
-
-3. **Install the library**:
-
-   ```bash
-   sudo python3 setup.py sdist bdist_wheel
-   sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
-   ```
-
-4. **Activate GPIO interfaces**:
-
-   ```bash
-   sudo activate_interfaces.sh
-   ``` 
-
-   ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+--8<-- "_snippets/smartpi-gpio-prerequisites.md"
 
 ## Reading Values via CLI
 
@@ -97,8 +61,6 @@ You can read the values from the IR presence detector using the CLI.
    ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_3.png)
 
 This will display "IR presence detector value: Pin 7: 1" when the detector senses something.
-
-## Using Python
 
 ## Reading Values with Python
 
@@ -151,4 +113,3 @@ With **SmartPi-GPIO** and Python, you can write a simple script to read the valu
    ![Smart Pi One - IR Presence Detector](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_4.png)
 
 This will continuously display "Presence Detected!" when detection occurs.
-

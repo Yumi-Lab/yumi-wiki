@@ -1,28 +1,20 @@
 # Klipper (YUMIOS)
 
-![yumios](/img/SmartPi/klipper/YumiOSLogo.jpeg)
+![YumiOS logo](/img/SmartPi/klipper/YumiOSLogo.jpeg)
 
-Remember to save your printer.cfg if you have already configured your smartpad, because it contains all your configuration, mesh, Z-Offset etc...
+!!! warning
+    If you have already configured your smartpad, save your `printer.cfg` first: it contains all your configuration, mesh, Z-Offset etc...
 
-Download YumiOS: https://github.com/Yumi-Lab/YumiOS/releases
+## 1. Download YumiOS
 
-unzip the xz file until you get an img file. You can use 7zip for example.
+Download the latest YumiOS image from the releases page: <https://github.com/Yumi-Lab/YumiOS/releases>
 
-Download Balena Etcher: https://etcher.balena.io/
+Unzip the xz file until you get an img file. You can use 7zip for example.
 
-Launch Balena Etcher
+## 2. Flash the image to your micro SD card
 
-![yumios](/img/SmartPi/klipper/Balena001.png)
+Flash the img file to your micro SD card with Balena Etcher, following the detailed steps of the [flash guide](SmartPi_Linux_flash_sd.md) (download Etcher, select the img file, select your micro SD, then Flash!).
 
-Click on Flash from file and select the img file
+## 3. First boot
 
-![yumios](/img/SmartPi/klipper/Balena002.png)
-
-Then select your micro sd
-
-![yumios](/img/SmartPi/klipper/Balena003.png)
-
-Now click on Flash! to flash your micro SD.
-
-Wait for the flash to complete. At the end, you can insert the micro SD card into the smartpad and plug it in. After a few minutes of initialization, you will be able to use the smartpad normally.
-
+Insert the micro SD card into the smartpad and plug it in. After a few minutes of initialization, you will be able to use the smartpad normally.
