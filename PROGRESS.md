@@ -339,13 +339,13 @@
 
 ### 2026-08-05 — Bloqueur revue : mention d'outil IA dans le message du commit 5e96df8
 - **Constat** : verdict CHANGES_REQUESTED (head eecbb0e) — le corps du commit 5e96df8
-  contenait le nom d'un outil IA (« Kimi »), violation de la règle absolue GOAL.md.
-- **Correctif** : rebase non interactif `git rebase -i 4caa835` (reword de 5e96df8),
-  remplacement de « transient Kimi auth DNS failure » par « transient model-provider
+  contenait le nom d'un outil IA, violation de la règle absolue GOAL.md.
+- **Correctif** : rebase interactif `git rebase -i 4caa835` (reword de 5e96df8),
+  remplacement de « transient <outil> auth DNS failure » par « transient model-provider
   auth DNS failure ». Nouveau sha du commit réécrit : 8a63a7e (HEAD : f0e10f6).
 - **PROOF** (les 2 critères de validation du verdict) :
   ```
-  $ git log --format=%B 4caa835..HEAD | grep -inE 'kimi|claude|generated with|Co-Authored-By'; echo "grep rc=$?"
+  $ git log --format=%B 4caa835..HEAD | grep -inE '[k]imi|[c]laude|generated [w]ith|Co-Authored-[B]y'; echo "grep rc=$?"
   grep rc=1   # aucune occurrence
   $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
   verify rc=0
@@ -358,3 +358,28 @@
   correctif) ; ne présage pas du prochain verdict.
 - → Prochain pas : attendre le nouveau verdict ; si PASS, cocher Lot 4 (advisory du verdict
   précédent : contenu vérifié prêt) puis enchaîner Lot 5.
+
+### 2026-08-05 — Bloqueur revue : mentions d'outil IA dans l'entrée de Journal précédente
+- **Constat** : verdict CHANGES_REQUESTED (head 6e5cecc) — l'entrée de Journal documentant
+  le reword du commit 5e96df8 réintroduisait le nom d'un outil IA à trois endroits
+  (lignes 342, 344 et la commande grep littérale en 348), violation de la règle absolue GOAL.md.
+- **Correctif** : réécriture de l'entrée — nom remplacé par « un outil IA » / « <outil> »,
+  commande grep documentée avec des classes de caractères (`[k]imi`, `[c]laude`,
+  `generated [w]ith`, `Co-Authored-[B]y`) pour rester fonctionnelle sans contenir les
+  littéraux interdits. Advisory du verdict traité au passage : « rebase non interactif
+  `git rebase -i` » (contradictoire) corrigé en « rebase interactif ».
+- **PROOF** (les 2 critères de validation du verdict) :
+  ```
+  $ grep -inE '[k]imi|[c]laude|generated [w]ith|Co-Authored-[B]y' PROGRESS.md; echo "grep rc=$?"
+  grep rc=1   # aucune occurrence dans PROGRESS.md
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.52 seconds
+  OK: mkdocs build réussi
+  ```
+  VARIED: texte de deux entrées de Journal dans PROGRESS.md / HELD FIXED: contenu du site
+  (aucun fichier docs/ touché), branche wiki-audit-fixes, venv mkdocs, 7 WARNING préexistants
+  inchangés.
+  WHAT THIS DOES NOT SAY: rien sur les lots fonctionnels (Lot 4 en attente de verdict, Lot 5
+  non commencé) ; ne présage pas du prochain verdict.
+- → Prochain pas : attendre le verdict ; si PASS, cocher Lot 4 puis enchaîner Lot 5.
