@@ -63,7 +63,7 @@
   corriger la contradiction de pin VCC relevée dans l'audit, puis décommenter/ajouter son
   entrée dans `mkdocs.yml` sous `4.1 SMART PI ONE` (section capteurs), à la suite des pages
   capteurs existantes. — test : entrée active dans `mkdocs.yml` ; `./verify.sh` vert.
-- [ ] **Lot 10** Publier `docs/SmartPI/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md`
+- [x] **Lot 10** Publier `docs/SmartPI/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md`
   de la même façon (page déjà complète d'après l'audit — relis-la et corrige ce qui saute
   aux yeux avant de publier). — test : entrée active dans `mkdocs.yml` ; `./verify.sh` vert.
 
@@ -591,3 +591,51 @@
   <h1 id="flame-presence-sensor-with-smart-pi-one">Flame Presence Sensor with Smart Pi One
   ```
   → Prochain pas : Lot 10 (publier SmartPi_IR_Presence_Detector_Control.md de la même façon).
+
+- **2026-08-05 · Lot 10 — SmartPi_IR_Presence_Detector_Control.md publiée.** Page relue
+  avant publication : pas de contradiction de pin (VCC 3.3V Pin 1 cohérent avec la table
+  de la page et la convention du dossier). Deux défauts visibles corrigés :
+  (1) titre dupliqué « ## Using Python » immédiatement suivi de « ## Reading Values with
+  Python » (lignes 101-103) — le premier est supprimé, contenu Python inchangé ;
+  (2) alts non descriptifs corrigés après inspection visuelle des images : image _1 =
+  photo du module (« HC-SR501 PIR presence detector module »), image _5 = schéma de
+  pinout (« HC-SR501 pinout: GND, High/Low Output and +Power pins, with sensitivity and
+  time delay adjustments » — auparavant « IR Presence Detector », en double avec _1 et
+  trompeur sous la section Wiring). Les `<img>` relatifs `../../../img/` sont conservés :
+  convention identique sur les 11 pages capteurs déjà publiées (même traitement que
+  l'advisory du verdict Lot 9 — conversion hors scope de ce lot). Publication : ligne
+  commentée mkdocs.yml remplacée par l'entrée `"4.1.20 IR Presence Detector with Smart
+  Pi One"` à la suite de 4.1.19, numérotation poursuivie. Les 5 images référencées
+  existent sous `img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/`.
+  Gate rendu réel (build mkdocs frais en mktemp) : la page rend (86 322 octets HTML),
+  H1 « IR Presence Detector with Smart Pi One » présent, « Using Python » disparu (×0),
+  les deux nouveaux alts présents, l'entrée 4.1.20 visible dans la nav du site généré.
+  VARIED: 3 lignes md + 1 entrée nav mkdocs.yml / HELD FIXED: venv mkdocs, autres pages,
+  images, harness (même verify.sh, même machine).
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  la spécification électrique réelle du HC-SR501 (plage d'alimentation nominale) n'est
+  pas revérifiée — aucune contradiction interne à corriger.
+  **PROOF** :
+  ```
+  $ grep -n "IR_Presence_Detector_Control" mkdocs.yml
+  158:      - "4.1.20 IR Presence Detector with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.85 seconds
+  OK: mkdocs build réussi
+  7
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    P="$OUT/SmartPI/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/index.html"; \
+    wc -c "$P"; grep -o '<h1[^>]*>[^<]*' "$P" | head -1; \
+    grep -c 'Using Python' "$P"; grep -o 'alt="HC-SR501[^"]*"' "$P"; \
+    grep -o '4\.1\.20 IR Presence Detector' "$OUT/index.html" | head -1
+  86322 …/SmartPi_IR_Presence_Detector_Control/index.html
+  <h1 id="ir-presence-detector-with-smart-pi-one">IR Presence Detector with Smart Pi One
+  0
+  alt="HC-SR501 PIR presence detector module"
+  alt="HC-SR501 pinout: GND, High/Low Output and +Power pins, with sensitivity and time delay adjustments"
+  4.1.20 IR Presence Detector
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 11 (page fan_cleaning.md au format c-series/maintenance + nav
+  2.3 Maintenance + index du dossier).
