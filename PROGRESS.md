@@ -837,19 +837,21 @@
   WHAT THIS DOES NOT SAY: le rendu visuel final dans un navigateur (gate humain en fin de parcours).
   **PROOF** :
   ```
-  $ grep -rn "PenScreen" docs/ img/ --include="*.md" | grep -v "docs/PenScreen/index.md"
-  (aucune sortie — aucune info réutilisable ailleurs)
+  $ grep -rln "PenScreen" docs/ img/ --include="*.md" | grep -v "PenScreen/index.md"; echo "rc=$?"
+  rc=1
   $ wc -l docs/PenScreen/index.md
-  11 docs/PenScreen/index.md
+        11 docs/PenScreen/index.md
   $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
   verify rc=0
-  INFO    -  Documentation built in 1.60 seconds
+  INFO    -  Documentation built in 1.65 seconds
   OK: mkdocs build réussi
   7
   $ grep -i "penscreen" /tmp/verify-mkdocs.log
-  INFO - Doc file 'PenScreen/index.md' contains an absolute link '/img/Yumi-logoyellow-white.png', it was left as is.
+  INFO    -  Doc file 'PenScreen/index.md' contains an absolute link '/img/Yumi-logoyellow-white.png', it was left as is. Did you mean '../img/Yumi-logoyellow-white.png'?
   ```
+  ATTRIBUTION : grep (BSD grep, GNU compatible) 2.6.0-FreeBSD ; mkdocs 1.6.1
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; commit 28b2302f2e5babdf0dd3c97274f5de0ec1d51bba ;
+  macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T08:22Z.
   (INFO préexistant sur la ligne logo, déjà présente dans le stub ; règle projet = chemins
   `/img/...` absolus. 7 WARNING préexistants inchangés, hors fichiers touchés.)
   Prochain pas : Lot 15 (terminer `SmartPad_Yumi_App.md`, titre QRcode orphelin).
-  → Prochain pas : Lot 14 (compléter docs/PenScreen/index.md, stub de 7 lignes).
