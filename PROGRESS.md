@@ -336,3 +336,25 @@
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : attendre la revue (verdict en cours de régénération) ; cocher Lot 4 et
   enchaîner Lot 5 une fois le verdict PASS.
+
+### 2026-08-05 — Bloqueur revue : mention d'outil IA dans le message du commit 5e96df8
+- **Constat** : verdict CHANGES_REQUESTED (head eecbb0e) — le corps du commit 5e96df8
+  contenait le nom d'un outil IA (« Kimi »), violation de la règle absolue GOAL.md.
+- **Correctif** : rebase non interactif `git rebase -i 4caa835` (reword de 5e96df8),
+  remplacement de « transient Kimi auth DNS failure » par « transient model-provider
+  auth DNS failure ». Nouveau sha du commit réécrit : 8a63a7e (HEAD : f0e10f6).
+- **PROOF** (les 2 critères de validation du verdict) :
+  ```
+  $ git log --format=%B 4caa835..HEAD | grep -inE 'kimi|claude|generated with|Co-Authored-By'; echo "grep rc=$?"
+  grep rc=1   # aucune occurrence
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.57 seconds
+  OK: mkdocs build réussi
+  ```
+  VARIED: message du commit ex-5e96df8 / HELD FIXED: contenu du tree (rebase reword only,
+  diff vide commit à commit), branche wiki-audit-fixes, venv mkdocs.
+  WHAT THIS DOES NOT SAY: rien sur les lots au-delà de Lot 4 (contenu inchangé par ce
+  correctif) ; ne présage pas du prochain verdict.
+- → Prochain pas : attendre le nouveau verdict ; si PASS, cocher Lot 4 (advisory du verdict
+  précédent : contenu vérifié prêt) puis enchaîner Lot 5.
