@@ -157,7 +157,7 @@
 
 ## Priorité 9 — pages vitrines au gabarit produit (B)
 
-- [ ] **Lot 23** `docs/Yumi_C_Series/YUMI_C_SERIES.md` : remplacer l'embed YouTube brut et les
+- [x] **Lot 23** `docs/Yumi_C_Series/YUMI_C_SERIES.md` : remplacer l'embed YouTube brut et les
   `<p align="center">` par une structure gabarit B (voir `GOAL.md`), remplacer les alt "yumiC"
   ×20 par des alts descriptifs réels, retirer ou mettre à jour le CTA Kickstarter s'il pointe
   vers une campagne terminée (vérifie l'URL avant de trancher). — test : plus de
@@ -1214,3 +1214,72 @@
   bb4136e fix: extract duplicated smartpi-gpio prerequisites block into shared snippet
   ```
   Vigilance aux prochaines itérations : vérifier `git status` (branche) AVANT de committer.
+
+- **2026-08-05 · Advisory verdict PASS (head f726f84) — hygiène d'arbre (commit 2f63f4a).**
+  Le verdict PASS du lot 22 signalait en advisory des changements non commités sur `loop.sh` et
+  un `audit-wiki-2026-03-06.html` non suivi. Nettoyé AVANT le lot 23 : `loop.sh` commité en
+  `chore:` (câblage du helper `lock-alive.sh` pour la vitalité du verrou + `verdict_real_pass`
+  — un PASS n'ouvre le gate/.done que s'il est réel et ancré sur le HEAD courant ; syntaxe
+  validée par `bash -n loop.sh`), et `audit-wiki-*.html` ajouté à `.gitignore` (artefact de
+  travail local, non publié). Arbre propre, `git status` vide après commit.
+  PROOF :
+  ```
+  $ bash -n loop.sh && echo SYNTAX-OK
+  SYNTAX-OK
+  $ git commit -m "chore: lock-alive helper wiring, verdict PASS ancre sur HEAD, ignore audit HTML"
+  [wiki-audit-fixes 2f63f4a] chore: lock-alive helper wiring, verdict PASS ancre sur HEAD, ignore audit HTML
+   2 files changed, 64 insertions(+), 22 deletions(-)
+  $ git status --short
+  (vide)
+  ```
+
+- **2026-08-05 · Lot 23 — `YUMI_C_SERIES.md` remise au gabarit B, alts réels ×19, CTA Kickstarter retiré.**
+  Embed YouTube brut (`<div>` responsive + `<iframe youtube.com/embed>`) remplacé par un lien
+  Markdown simple vers la vidéo (`youtube.com/watch?v=UCdwHCwixVY`, `target=_blank`) — zéro
+  iframe/script tiers, règle GOAL.md « zéro dépendance externe non hébergée ». Les 19 blocs
+  `<p align="center"><img alt="yumiC">` convertis en images Markdown `/img/...` absolues avec
+  alts descriptifs réels : les 20 images ont été converties en JPEG (/tmp, sips) puis VUES une
+  par une avant d'écrire chaque alt (lineup C235/C335/C435, tables de specs, têtes Chroma X12 /
+  Direct Drive, modules YMS Lite/Pro, Hyper Drive 3P2L, accès Mainsail/YUMI LAB, équipe, usine,
+  bénéfices environnementaux). CTA Kickstarter : URL vérifiée AVANT de trancher — la campagne
+  est TERMINÉE (période de collecte 10 juil. → 8 sept. 2025, page marquée « 已結束 »/terminée,
+  HK$ 4 277 449 / 810 contributeurs) ; les deux bannières « ORDER NOW » cliquables
+  (YumiCSeries020.avif, haut et bas de page) sont RETIRÉES, sans URL de remplacement inventée.
+  L'image 005 (pledge tiers / prix de lancement) est conservée comme contenu informatif avec un
+  alt neutre « Launch configurations and pricing » — le lot ne demande pas sa suppression.
+  Prose conservée verbatim (y compris les artefacts préexistants hors scope : « Three Build
+  Sizes » en tête de §2, tirets « → », numérotation §3 vide).
+  VARIED: docs/Yumi_C_Series/YUMI_C_SERIES.md (205 → 173 lignes) /
+  HELD FIXED: tout autre fichier du wiki, mkdocs.yml, css/extra.css, img/ (aucun ajout), venv mkdocs.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  disponibilité future de la vidéo YouTube liée ; pertinence éditoriale des prix de lancement
+  affichés dans l'image 005 (contenu image, hors scope du lot).
+  **PROOF** :
+  ```
+  $ grep -c 'p align="center"' docs/Yumi_C_Series/YUMI_C_SERIES.md; grep -c 'yumiC"' docs/Yumi_C_Series/YUMI_C_SERIES.md; grep -ci 'kickstarter\|iframe\|youtube.com/embed' docs/Yumi_C_Series/YUMI_C_SERIES.md; grep -c '<img' docs/Yumi_C_Series/YUMI_C_SERIES.md
+  0
+  0
+  0
+  0
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.61 seconds
+  OK: mkdocs build réussi
+  5
+  $ OUT=$(mktemp -d) && ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" && P="$OUT/Yumi_C_Series/YUMI_C_SERIES/index.html" && grep -c 'p align' "$P"; grep -c '<img' "$P"; grep -c iframe "$P"; grep -ci kickstarter "$P"; grep -o 'youtube[^"]*' "$P"
+  0
+  21
+  0
+  0
+  youtube.com/watch?v=UCdwHCwixVY
+  ```
+  (gate sur build frais : 0 `p align`, 21 `<img>` = 19 images de contenu aux alts descriptifs
+  + 2 logos du thème, 0 iframe, 0 kickstarter, lien YouTube watch présent ; WARNING mkdocs = 5,
+  inchangé depuis les lots 20-22 ; les INFO « absolute link … left as is » sur les 19 images sont
+  le comportement attendu de la convention `/img/...` — NOTE : `site/` à la racine est un build
+  PÉRIMÉ, verify.sh builde dans un mktemp, ne pas gater sur `site/`.)
+  ATTRIBUTION : grep (BSD) macOS ; sips pour la conversion avif→jpeg temporaire ; mkdocs 1.6.1
+  + pymdown-extensions 10.21.3 (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base
+  2f63f4a (chore hygiène, lui-même sur f726f84 = head du verdict PASS lot 22) ; macOS 15.2
+  arm64 ; user nicolasmichaut ; 2026-08-05T10:20Z.
+  Prochain pas : Lot 24 (3d_pen/index.md : unification des chemins d'image vers /img absolu,
+  « Attention: » gras → `!!! warning`).
