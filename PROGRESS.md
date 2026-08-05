@@ -7,7 +7,7 @@
 
 ## Priorité 1 — page trompeuse
 
-- [ ] **Lot 1** Réécrire `docs/SmartPI/SmartPi_ConfigureTimeZone.md` : contenu actuel = un
+- [x] **Lot 1** Réécrire `docs/SmartPI/SmartPi_ConfigureTimeZone.md` : contenu actuel = un
   tuto imprimante Artillery X2 recyclé (MobaXterm, Pronterface, "raspberry's IP address",
   login pi/Yumi, images `img/Printers/Artillery/X2/*`). Le remplacer par la vraie procédure
   de changement de fuseau horaire sur le Smart Pi One (`timedatectl` / `raspi-config` /
@@ -210,3 +210,27 @@
 ## Journal
 <!-- chaque itération ajoute : date · lot · PROOF (commande + 5 dernières lignes de sortie réelle) · prochain pas
      Une case ne se coche QUE si son entrée Journal contient ce bloc PROOF. -->
+
+- **2026-08-05 · Lot 1 — SmartPi_ConfigureTimeZone.md réécrit.** Remplacé le tuto Artillery X2
+  recyclé (MobaXterm/Pronterface/credentials pi/Yumi/images Printers/Artillery) par la vraie
+  procédure Smart Pi One : ouverture d'un terminal (local ou SSH, lien relatif vers
+  `SmartPi_Connect_Ssh.md`), `sudo armbian-config` → Personal → Timezone (images
+  `/img/SmartPi/TimeZone/Timezone00{1..4}.png` conservées, alts rendus descriptifs), plus une
+  alternative `timedatectl` (list-timezones / set-timezone / vérification). Aucun fait inventé :
+  la procédure armbian-config est confirmée par `SmartPi_Basic_Commands.md`,
+  `SmartPi_Test_Infrared_Sensor.md` et `SmartPi_One_Startup.md`.
+  VARIED: contenu de `docs/SmartPI/SmartPi_ConfigureTimeZone.md` / HELD FIXED: mkdocs.yml, images, venv mkdocs.
+  WHAT THIS DOES NOT SAY: le rendu visuel final dans un navigateur (gate humain en fin de parcours).
+  **PROOF** :
+  ```
+  $ grep -inE "pronterface|mobaxterm|artillery" docs/SmartPI/SmartPi_ConfigureTimeZone.md; echo "grep rc=$?"
+  grep rc=1            # aucun match
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 2.22 seconds
+  OK: mkdocs build réussi
+  ```
+  (les 4 lignes INFO « absolute link » sur ce fichier sont le comportement mkdocs habituel des
+  chemins `/img/...` imposés par GOAL.md — même pattern préexistant sur tout le repo, pas un
+  warning nouveau ; 7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 2 (fences `'''` SIDEWINDER_X1/X2).

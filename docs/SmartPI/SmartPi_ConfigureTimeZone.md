@@ -1,68 +1,58 @@
 # Change timezone
 
-## 1. Hardware and software :
+This guide explains how to set the correct timezone on the Smart Pi One.
 
-MobaXterm https://mobaxterm.mobatek.net/download-home-edition.html
+## 1. Open a terminal on the Smart Pi One
 
-Pronterface https://github.com/kliment/Printrun/releases/tag/printrun-2.0.1 
+You can run these commands either:
 
-## 2. SSH connection
+- directly on the Smart Pi One, in a terminal window on its desktop, or
+- remotely over SSH — see the [SSH Connection Guide](SmartPi_Connect_Ssh.md) for detailed instructions.
 
-Download and install MobaXterm.
+## 2. Set the timezone with armbian-config
 
-Click on the Session icon
+Run the following command:
 
-![Moba Session](/img/Printers/Artillery/X2/MobaSession.png)
-
-Select SSH
-
-![SSH](/img/Printers/Artillery/X2/MobaSSH.png)
-
-Enter the raspberry's IP address and enter pi as the user name.
-Follow this procedure to find the IP address: https://www.malekal.com/comment-faire-un-scan-ip-reseau-local-lan/
-Or, on the Pad, go to Menu :
-
-![Pad1](/img/Printers/Artillery/X2/Pad1.jpeg)
-
-Network:
-
-![Pad1](/img/Printers/Artillery/X2/Pad2.jpeg)
-
-You will see your IP address
-
-![Pad1](/img/Printers/Artillery/X2/Pad3.jpeg)
-
-![MobaConnect](/img/Printers/Artillery/X2/MobaConnect.png)
-
-You will be prompted to enter the password.
-
-The Pad Wanhao username is `pi` and the password is `Yumi`.
-
-A certificate authorization may appear. You need to validate it.
-Once you're logged in, you'll see this screen:
-
-![ConnectPi](/img/Printers/Artillery/X2/ConnectPI.png)
-
-run the following command:
-
-```
+```bash
 sudo armbian-config
 ```
 
-Use the arrow keys to go to Personnal and confirm by pressing `Enter`.
+Use the arrow keys to go to **Personal** and confirm by pressing `Enter`.
 
-![TimeZone](/img/SmartPi/TimeZone/Timezone001.png)
+![armbian-config main menu with the Personal entry highlighted](/img/SmartPi/TimeZone/Timezone001.png)
 
-Use the arrow keys to go to TimeZone and press "Enter" to confirm.
+Use the arrow keys to go to **Timezone** and press `Enter` to confirm.
 
-![TimeZone](/img/SmartPi/TimeZone/Timezone002.png)
+![armbian-config Personal menu with the Timezone entry highlighted](/img/SmartPi/TimeZone/Timezone002.png)
 
 Use the arrows to select your zone and press `Enter` to confirm.
 
-![TimeZone](/img/SmartPi/TimeZone/Timezone003.png)
+![Timezone selection list in armbian-config](/img/SmartPi/TimeZone/Timezone003.png)
 
-Select your reference city using the arrows and press Enter to confirm.
+Select your reference city using the arrows and press `Enter` to confirm.
 
-![TimeZone](/img/SmartPi/TimeZone/Timezone004.png)
+![City selection list in armbian-config](/img/SmartPi/TimeZone/Timezone004.png)
 
-You can exit the SSH connection - the card is now on time
+The Smart Pi One is now on the correct time — you can close the terminal or the SSH session.
+
+## 3. Alternative: set the timezone with timedatectl
+
+You can also set the timezone from the command line, without `armbian-config`.
+
+List the available timezones:
+
+```bash
+timedatectl list-timezones
+```
+
+Set your timezone (replace with the value from the list):
+
+```bash
+sudo timedatectl set-timezone Europe/Paris
+```
+
+Check the result:
+
+```bash
+timedatectl
+```
