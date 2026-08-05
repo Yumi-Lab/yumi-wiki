@@ -92,7 +92,7 @@
 
 ## Priorité 5 — pages tronquées publiées
 
-- [ ] **Lot 14** Compléter `docs/PenScreen/index.md` (stub de 7 lignes). Cherche d'abord
+- [x] **Lot 14** Compléter `docs/PenScreen/index.md` (stub de 7 lignes). Cherche d'abord
   `grep -rn "PenScreen" docs/ img/` pour voir si des specs/images existent déjà ailleurs dans
   le repo à réutiliser. Si vraiment aucune info fiable n'existe, structure la page au gabarit
   produit (bannière si dispo, sinon titre + une ou deux phrases honnêtes) plutôt que de
@@ -823,4 +823,33 @@
   …/Yumi_stl/Printable_Accessories_and_Parts/index.html
   ```
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+
+- **2026-08-05 · Lot 14 — PenScreen/index.md complété honnêtement.** Le stub de 7 lignes
+  (dont un titre vide "## Introducing the PenScreen") est devenu une page structurée au
+  gabarit : titre, logo existant conservé, section `## 1. Introducing the PenScreen` avec
+  le texte d'intro déjà présent (typo "tactil" → "tactile" corrigée au passage), plus une
+  admonition `!!! note` annonçant que la documentation détaillée est en cours de rédaction.
+  **Aucune spec fabriquée** : `grep -rn "PenScreen"` sur tout le repo ne retourne que la
+  page elle-même, mkdocs.yml, README.md (mentions structurelles) et l'audit — aucune image
+  (`img/PenScreen/` inexistant), aucune spec réutilisable n'existe. Conformément au lot, la
+  page reste donc courte et honnête plutôt qu'inventée.
+  VARIED: contenu de `docs/PenScreen/index.md` / HELD FIXED: mkdocs.yml, images, venv mkdocs.
+  WHAT THIS DOES NOT SAY: le rendu visuel final dans un navigateur (gate humain en fin de parcours).
+  **PROOF** :
+  ```
+  $ grep -rn "PenScreen" docs/ img/ --include="*.md" | grep -v "docs/PenScreen/index.md"
+  (aucune sortie — aucune info réutilisable ailleurs)
+  $ wc -l docs/PenScreen/index.md
+  11 docs/PenScreen/index.md
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.60 seconds
+  OK: mkdocs build réussi
+  7
+  $ grep -i "penscreen" /tmp/verify-mkdocs.log
+  INFO - Doc file 'PenScreen/index.md' contains an absolute link '/img/Yumi-logoyellow-white.png', it was left as is.
+  ```
+  (INFO préexistant sur la ligne logo, déjà présente dans le stub ; règle projet = chemins
+  `/img/...` absolus. 7 WARNING préexistants inchangés, hors fichiers touchés.)
+  Prochain pas : Lot 15 (terminer `SmartPad_Yumi_App.md`, titre QRcode orphelin).
   → Prochain pas : Lot 14 (compléter docs/PenScreen/index.md, stub de 7 lignes).

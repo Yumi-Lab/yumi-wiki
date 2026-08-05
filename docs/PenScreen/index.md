@@ -2,6 +2,10 @@
 
 ![YUMI-LAB](/img/Yumi-logoyellow-white.png)
 
-Welcome to YUMI-LAB, where innovation meets versatility in the realm of electronics. We're thrilled to introduce our groundbreaking flagship product, the YUMI PenScreen, designed to revolutionize the world of portable tactil screen
+## 1. Introducing the PenScreen
 
-## Introducing the PenScreen
+The YUMI PenScreen is YUMI-LAB's portable touchscreen, designed to bring a versatile tactile display to your electronics projects.
+
+!!! note "Documentation in progress"
+
+    This section of the wiki is still being written. Detailed specifications, setup guides and usage examples for the PenScreen will be published here as they become available.
