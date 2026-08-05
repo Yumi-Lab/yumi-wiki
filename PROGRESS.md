@@ -1194,3 +1194,23 @@
   left as is » sont le comportement attendu de la convention `/img/...` imposée par GOAL.md.)
   Prochain pas : Lot 23 (YUMI_C_SERIES.md : gabarit B, alts « yumiC » ×20, CTA Kickstarter à
   vérifier).
+
+- **2026-08-05 · REPAIR — HEAD détaché rattacher à `wiki-audit-fixes`.**
+  Constat en commitant le lot 22 : `HEAD detached from bb4136e`. Le reflog montre deux
+  `checkout` à 17:38 (wiki-audit-fixes → 3f8afa7 → bb4136e, probablement la revue contrôlée)
+  qui ont laissé HEAD détaché ; les commits 47de297 (lot 21) et 3a9b3e5 (lot 22) n'étaient
+  rattachés à AUCUNE branche (la branche restait sur bb4136e). Réparation : `git checkout
+  wiki-audit-fixes` + `git merge --ff-only 3a9b3e5` → fast-forward bb4136e..3a9b3e5, aucune
+  réécriture, arbre identique (le build vert du lot 22 couvre exactement cet arbre). Aucun
+  push, aucun merge de main. PROOF :
+  ```
+  $ git checkout wiki-audit-fixes && git merge --ff-only 3a9b3e5
+  Switched to branch 'wiki-audit-fixes'
+  Updating bb4136e..3a9b3e5
+  Fast-forward
+  $ git log --oneline -3
+  3a9b3e5 fix: clean Yumi L LaserGRBL and cork engraving pages, localize tutorial images
+  47de297 fix: clean Yumi L safety page, localize accessory images
+  bb4136e fix: extract duplicated smartpi-gpio prerequisites block into shared snippet
+  ```
+  Vigilance aux prochaines itérations : vérifier `git status` (branche) AVANT de committer.
