@@ -174,7 +174,7 @@
   "SSH" copiés-collés par des alts descriptifs du contenu réel de chaque capture. — test :
   les `## N.` sont contigus depuis 1 ; `grep -c 'alt="SSH"\|\[SSH\]' …` a fortement diminué ;
   `./verify.sh` vert.
-- [ ] **Lot 26** `docs/SmartPI/SmartPi_Retro_Gaming.md` : corriger les 3 liens de
+- [x] **Lot 26** `docs/SmartPI/SmartPi_Retro_Gaming.md` : corriger les 3 liens de
   téléchargement cassés (URLs tronquées — retrouve la bonne URL ou remplace par un lien vers
   la page de release GitHub correspondante), retirer le placeholder "Available soon" obsolète
   depuis 2024 si la fonctionnalité est disponible (vérifie), corriger le H1 et
@@ -1359,3 +1359,46 @@
   lot 24) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T10:45Z.
   Prochain pas : Lot 26 (SmartPi_Retro_Gaming.md : 3 liens cassés, placeholder
   « Available soon », « Emulastation » → « EmulationStation » ×7).
+
+- **2026-08-05 · Lot 26 — SmartPi_Retro_Gaming.md corrigé.** Les 3 liens gofile avaient
+  leur token hors des parenthèses du lien Markdown (`…/67vGQ/` + `JYxrUDZA1` en texte
+  parasite) : tokens fusionnés dans l'URL (`https://gofile.me/67vGQ/JYxrUDZA1`,
+  `…/VREUvyEth`, `…/0bSQSSoCT`) — chaque URL vérifiée HTTP 200 par curl. Placeholder
+  « Image for OS any SD card: Available soon » retiré : la v0.4 (2024-07-16, même page)
+  « auto resize image for all TF cards minimum 16GB » livre cette fonctionnalité.
+  H1 corrigé (« include optimised » → « includes optimized », grammaire + orthographe US
+  cohérente avec le corps de page). « Emulastation » → « EmulationStation » (le ×7 de
+  l'audit n'existe pas dans le fichier : 2 occurrences réelles, texte ligne 55 + nom de
+  fichier image) ; image renommée `bootemulastation.png` → `bootemulationstation.png`
+  (git mv), alt de cette image rendu descriptif au passage (la ligne était éditée de
+  toute façon). Hors-lot laissé tel quel : lien absolu wiki.yumi-lab.com ligne 30
+  (périmètre Lot 29, fichier non listé), alts « emula » des autres images.
+  PROOF :
+  ```
+  $ for t in JYxrUDZA1 VREUvyEth 0bSQSSoCT; do curl -sI -o /dev/null -w '%{http_code}\n' -L --max-time 15 "https://gofile.me/67vGQ/$t"; done
+  200
+  200
+  200
+  $ grep -c "Emulastation" docs/SmartPI/SmartPi_Retro_Gaming.md; grep -c "Available soon" docs/SmartPI/SmartPi_Retro_Gaming.md
+  0
+  0
+  $ grep -rn "bootemulastation" docs/ img/ ; echo rc=$?
+  rc=1
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.34 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  (WARNING mkdocs = 5, inchangé — tous préexistants sur d'autres pages ; l'INFO
+  « absolute link … left as is » sur `bootemulationstation.png` confirme que l'image
+  renommée est bien résolue par le build.)
+  VARIED : contenu de SmartPi_Retro_Gaming.md + nom de bootemulationstation.png.
+  HELD FIXED : venv mkdocs, mkdocs.yml, branche wiki-audit-fixes, base e47cc0e.
+  WHAT THIS DOES NOT SAY : ne prouve pas que les images gofile téléchargées sont
+  intègres (seulement que les pages de partage répondent 200) ; ne couvre pas le lien
+  Dropbox v0.4 (hors périmètre des 3 liens cassés).
+  ATTRIBUTION : curl macOS ; grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions
+  10.21.3 (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base e47cc0e (= head
+  du verdict PASS lot 25) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T10:55Z.
+  Prochain pas : Lot 27 (SmartPi_Plex_Server.md : version .deb Plex épinglée 1.40.1,
+  artefacts de notes de bas de page).
