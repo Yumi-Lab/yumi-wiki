@@ -213,10 +213,10 @@ nav:
     - "7.13 Set up Yumi App for Smartpad": KlipperSmartPad/SmartPad_Yumi_App.md
     - "7.14 PRINTERS INSTALLATION":
       - "7.14.1 Klipper Wanhao D12 installation": PRINTERS/WANHAO_D12.md
-      - "7.14.2 **Klipper D12-230 Evo Mega-Kit Installation**": PRINTERS/D12-230_EVO_MEGA-KIT.md
+      - "7.14.2 Klipper D12-230 Evo Mega-Kit Installation": PRINTERS/D12-230_EVO_MEGA-KIT.md
       - "7.14.3 Klipper Sidewinder X2 installation": PRINTERS/SIDEWINDER_X2.md
       - "7.14.4 Klipper Sidewinder X1 installation": PRINTERS/SIDEWINDER_X1.md
       - "7.14.5 Klipper Prusa Mk3 installation": PRINTERS/PRUSA_MK3.md
   - "8. YUMI STL":
-    - "8.1 **YUMI STL - 3D Printable Accessories and Parts**": Yumi_stl/Printable_Accessories_and_Parts.md
+    - "8.1 YUMI STL - 3D Printable Accessories and Parts": Yumi_stl/Printable_Accessories_and_Parts.md
 

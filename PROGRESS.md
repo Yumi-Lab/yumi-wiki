@@ -199,7 +199,7 @@
   du domaine de prod (local, staging). — test :
   `grep -c "https://wiki.yumi-lab.com" docs/SmartPI/SmartPi_One_Startup.md docs/KlipperSmartPad/SmartPad_change_password.md docs/PRINTERS/D12-230_EVO_MEGA-KIT.md`
   = 0 partout ; `./verify.sh` vert.
-- [ ] **Lot 30** Corriger les deux entrées `mkdocs.yml` qui contiennent du Markdown brut
+- [x] **Lot 30** Corriger les deux entrées `mkdocs.yml` qui contiennent du Markdown brut
   (`**gras**`) dans leur label YAML — sections `Klipper SMART PAD` (§7.14.2,
   "**Klipper D12-230 Evo Mega-Kit Installation**") et `YUMI STL` (§9.1). Un label de nav
   YAML n'est jamais interprété comme du Markdown par mkdocs-material — retire les
@@ -1511,3 +1511,32 @@
   user nicolasmichaut ; 2026-08-05T11:15Z.
   Prochain pas : Lot 30 (mkdocs.yml : retirer le `**gras**` Markdown brut des 2 labels
   de nav, §7.14.2 et §9.1).
+
+- **2026-08-05 · Lot 30 — mkdocs.yml : Markdown brut retiré des 2 labels de nav.**
+  Astérisques `**…**` supprimés des labels « 7.14.2 Klipper D12-230 Evo Mega-Kit
+  Installation » (ligne 216) et « 8.1 YUMI STL - 3D Printable Accessories and Parts »
+  (ligne 221, section YUMI STL — la §9.1 de l'audit est devenue 8.1 après les lots
+  précédents). La 3ᵉ occurrence de `\*\*` (`_snippets/**` ligne 11, glob `exclude`)
+  n'est PAS un label : laissée telle quelle, comme prévu par le critère « diminué de 2 ».
+  PROOF :
+  ```
+  $ grep -c '\*\*' mkdocs.yml   # avant : 3
+  1
+  $ grep -n '\*\*' mkdocs.yml
+  11:  _snippets/**
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.53 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  (critère du lot : `grep -c '\*\*' mkdocs.yml` diminué de 2 — 3 → 1 ✓ ; WARNING = 5,
+  inchangé, tous préexistants.)
+  VARIED : 2 labels de nav dans mkdocs.yml.
+  HELD FIXED : venv mkdocs, docs/, base 320319e.
+  WHAT THIS DOES NOT SAY : ne prouve pas le rendu visuel des labels dans la nav (gate
+  visuel final) ; ne couvre pas d'autres astérisques légitimes ailleurs (glob d'exclusion).
+  ATTRIBUTION : grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3 (venv
+  `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base 320319e ; macOS 15.2 arm64 ;
+  user nicolasmichaut ; 2026-08-05T11:20Z.
+  Prochain pas : tous les lots cochés → vérification DoD complète (verify.sh vert),
+  puis `.gate-handoff` pour la relecture visuelle humaine des pages modifiées.
