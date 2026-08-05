@@ -104,7 +104,7 @@
   le repo, referme la section proprement (retire le titre orphelin ou ajoute une phrase
   claire "voir l'app mobile YUMI" sans inventer d'étapes). — test : le fichier ne se termine
   plus sur un titre vide ; `./verify.sh` vert.
-- [ ] **Lot 16** Compléter `docs/index.md` : la page promet littéralement une comparaison
+- [x] **Lot 16** Compléter `docs/index.md` : la page promet littéralement une comparaison
   Raspberry Pi ("Let's compare it to the industry-standard Raspberry Pi... As you can see...")
   jamais insérée. Ne fabrique aucun chiffre de comparaison — retire la phrase d'annonce et
   remplace-la par un lien vers `docs/SmartPI/SmartPi_One_specifications.md`, ou par un vrai
@@ -892,3 +892,32 @@
   (7 WARNING préexistants inchangés ; INFO préexistants sur les liens absolus `/img/...` de la
   page touchée — règle projet = chemins absolus, non modifiés.)
   Prochain pas : Lot 16 (compléter `docs/index.md`, promesse de comparaison Raspberry Pi).
+
+- **2026-08-05 · Lot 16 — promesse de comparaison Raspberry Pi retirée de docs/index.md.**
+  La page d'accueil annonçait « Let's compare it to the industry-standard Raspberry Pi: » puis
+  enchaînait sur « As you can see, ... » sans aucun tableau entre les deux. Vérifications avant
+  action : aucun tableau comparatif Smart Pi One vs Raspberry Pi n'existe dans le repo
+  (`grep -ri "Raspberry Pi" docs/` — seules occurrences : `SmartPi_RPi_Imager.md`, qui traite de
+  l'outil de flash, pas d'une comparaison hardware). Aucun chiffre fabriqué : conformément au
+  lot, les deux phrases d'annonce sont remplacées par un lien relatif vers la page de specs
+  réelle `SmartPI/SmartPi_One_specifications.md` (présente dans la nav, `mkdocs.yml:140`).
+  Le reste de la page (sections "Unleash Your Creativity" etc.) est inchangé.
+  VARIED: contenu de `docs/index.md` / HELD FIXED: mkdocs.yml, images, venv mkdocs, autres pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  pertinence marketing du nouveau wording.
+  **PROOF** :
+  ```
+  $ grep -n "As you can see\|Let's compare" docs/index.md; echo "grep rc=$?"
+  grep rc=1
+  $ ./verify.sh 2>&1 | tail -2
+  INFO    -  Documentation built in 1.51 seconds
+  OK: mkdocs build réussi
+  ```
+  ATTRIBUTION : grep (BSD grep) 2.6.0-FreeBSD ; mkdocs 1.6.1
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; commit b53abe8 (base de départ) ;
+  macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T08:40Z.
+  (grep rc=1 = aucune occurrence restante ; WARNING/INFO mkdocs préexistants inchangés, hors
+  fichier touché ; le lien `SmartPI/SmartPi_One_specifications.md` est validé par le build,
+  aucun warning de lien brisé sur index.md.)
+  Prochain pas : Lot 17 (table de téléchargement figée v1.6.0 + typo `psudo` dans
+  `SmartPi_Linux_flash_sd.md`).
