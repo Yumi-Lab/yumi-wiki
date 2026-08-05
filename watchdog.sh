@@ -8,7 +8,9 @@
 #   */5 * * * * /chemin/watchdog.sh /chemin/repo      (ou : ./watchdog.sh --install /chemin/repo)
 #
 # IDEMPOTENT — ne fait RIEN si :
-#   • la boucle TOURNE déjà (pgrep)  • .done existe (fini)  • .gate-handoff en attente (gate humain).
+#   • la boucle TOURNE déjà (verrou VIVANT : pid + identité ancrés au repo — pas un pgrep global
+#     qui confondrait avec la boucle d'un AUTRE projet)  • .done existe (fini)
+#   • .gate-handoff en attente (gate humain).
 # Sinon (tombée, pas finie, pas de gate) → nettoie le VERROU résiduel + relance. Journal : .monitor/watchdog.log
 #
 # Env : LOOP_SCRIPT=loop.sh · LAUNCH_CMD='./loop.sh' (forks : './run-v7.sh') · DONE_FILE=.done
@@ -47,17 +49,16 @@ mkdir -p "$MONITOR_DIR"
 LOG="$MONITOR_DIR/watchdog.log"
 log() { echo "$(date '+%F %T') $*" >> "$LOG"; }
 
+# Vitalité du verrou : helper COMMUN lock-alive.sh (pid du verrou + identité ancrée au repo —
+# fin du pgrep global multi-projets, M10). Repli si absent (vieux kit non synchronisé) :
+# pgrep historique — dégradé (aveugle aux autres projets), jamais dangereux.
+_LA="$(cd "$(dirname "$0")" 2>/dev/null && pwd -P)/lock-alive.sh"
+if [ -f "$_LA" ]; then . "$_LA"; else lock_alive() { pgrep -f "$LOOP_SCRIPT" >/dev/null 2>&1; }; fi
+
 # ── Idempotence : ne rien faire si terminé / en attente de gate / déjà en cours ─
 for d in "$DONE_FILE" "$DONE_FILE"-*; do [ -e "$d" ] && exit 0; done   # .done ou .done-v7 → fini
 [ -f "$HANDOFF_FILE" ] && exit 0                                        # gate humain en attente
-# pgrep -f "$LOOP_SCRIPT" seul est un piège double : (1) matche N'IMPORTE QUEL
-# loop.sh d'un autre repo (d'où le filtre cwd) ; (2) matche aussi tout process
-# dont la ligne de commande MENTIONNE juste "loop.sh" sans l'exécuter — ex. un
-# monitor-watch.sh lancé avec LOOP_SCRIPT=loop.sh en argument matche le pattern
-# alors qu'il ne fait que surveiller. D'où le pattern resserré à l'invocation
-# réelle "bash ./loop.sh", pas une mention en passant.
-alive() { for p in $(pgrep -f "bash .*/${LOOP_SCRIPT%.sh}\.sh" 2>/dev/null); do d=$(lsof -a -p "$p" -d cwd -Fn 2>/dev/null | sed -n 's/^n//p'); [ "$d" = "$PWD" ] && return 0; done; return 1; }
-if alive; then exit 0; fi                                               # tourne déjà (CE repo) → rien à faire
+if lock_alive .; then exit 0; fi             # boucle VIVANTE de CE repo (verrou + pid + identité)
 
 # ── La boucle est TOMBÉE → nettoie le verrou résiduel + relance (détaché) ─────
 [ -d "$MONITOR_DIR/.lock" ] && { rm -rf "$MONITOR_DIR/.lock" 2>/dev/null; log "verrou résiduel .lock nettoyé"; }

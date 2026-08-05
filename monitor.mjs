@@ -6,8 +6,9 @@
 import { readdirSync, statSync, openSync, readSync, closeSync, existsSync, appendFileSync } from "node:fs";
 import { join, basename } from "node:path";
 import { StringDecoder } from "node:string_decoder";
+import { MONITOR_DIR } from "./kit-paths.mjs";
 
-const DIR = join(process.cwd(), ".monitor");
+const DIR = join(process.cwd(), MONITOR_DIR);
 const REFRESH_MS = 1000;
 const HISTORY_EVERY = 30;                 // écrit une ligne CSV toutes les ~30 rafraîchissements
 const STALL_S = Number(process.env.STALL_S) || 300;   // inactivité (s) → alerte rouge
@@ -79,9 +80,17 @@ function ingest(file) {
   if (!s) { s = freshState(); state.set(file, s); }
   if (st.size < s.off) resetRun(s);                        // fichier réécrit (nouveau run) → reset propre
   if (st.size === s.off) return;
-  const fd = openSync(file, "r"); const b = Buffer.alloc(st.size - s.off);
-  readSync(fd, b, 0, b.length, s.off); closeSync(fd);
-  s.off = st.size; s.buf += s.dec.write(b);                // StringDecoder : ne coupe pas un char UTF-8 multi-octet
+  // TOCTOU (M5) : le jsonl peut disparaître ou devenir illisible entre statSync et open/read →
+  // on saute ce tick (réessai au prochain rafraîchissement) ; finally : jamais de fuite de fd.
+  // Lecture PARTIELLE possible si le fichier est retaillé après le stat → on ne décode que n octets.
+  let fd;
+  try {
+    fd = openSync(file, "r");
+    const b = Buffer.alloc(st.size - s.off);
+    const n = readSync(fd, b, 0, b.length, s.off);
+    s.off = st.size; s.buf += s.dec.write(b.subarray(0, n)); // StringDecoder : ne coupe pas un char UTF-8 multi-octet
+  } catch { return; }              // tick sauté : état conservé
+  finally { if (fd !== undefined) { try { closeSync(fd); } catch {} } }
   let nl;
   while ((nl = s.buf.indexOf("\n")) >= 0) {
     const line = s.buf.slice(0, nl); s.buf = s.buf.slice(nl + 1);
