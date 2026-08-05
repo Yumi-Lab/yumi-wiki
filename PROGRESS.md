@@ -21,7 +21,7 @@
   (ligne ~157-159) et `docs/PRINTERS/SIDEWINDER_X2.md` (ligne ~204-206). — test :
   `grep -c "'''" docs/PRINTERS/SIDEWINDER_X1.md docs/PRINTERS/SIDEWINDER_X2.md` = 0 partout ;
   `./verify.sh` vert.
-- [ ] **Lot 3** Dans `docs/SmartPI/SmartPi_One_specifications.md` : corriger le titre collé
+- [x] **Lot 3** Dans `docs/SmartPI/SmartPi_One_specifications.md` : corriger le titre collé
   `###SmartPione Cases` (espace manquant après `###`, il ne rend pas comme un titre), et
   remplacer le `<p align="center"><img width="1000">` par une image Markdown standard
   `![alt](/img/...)` qui respecte le plafond CSS existant. — test : `grep -n "^### "`
@@ -266,3 +266,35 @@
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 3 (titre `###SmartPione Cases` + `<img width="1000">` dans
   SmartPi_One_specifications.md).
+
+- **2026-08-05 · Lot 3 — SmartPi_One_specifications.md : titre + images 1000px réparés.**
+  `###SmartPione Cases` → `### SmartPione Cases` (espace ajouté, rend maintenant en `<h3>`).
+  Les deux `<img … width="1000">` + `<p align="center">**[…]**</p>` de la section Layout
+  remplacés par des images Markdown standard en chemin absolu `/img/...` avec alts
+  descriptifs (« Top/Bottom view of the Smart Pi One board ») — le plafond CSS existant
+  (`max-width: min(100%, 760px)` dans css/extra.css) s'applique désormais. Les `<img>`
+  width="500" des sections 5/6 et l'image GPIO relative ligne 47 sont HORS scope du lot,
+  non touchés. Les deux fichiers images existent bien sous img/SmartPi/Specifications/.
+  VARIED: 3 lignes du fichier / HELD FIXED: reste de la page, mkdocs.yml, css.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours).
+  **PROOF** :
+  ```
+  $ grep -n '^### ' docs/SmartPI/SmartPi_One_specifications.md | tail -1; \
+    grep -c '<img width="1000"' docs/SmartPI/SmartPi_One_specifications.md
+  111:### SmartPione Cases: Versatility and Style for Your Nano-Computer
+  0
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 2.27 seconds
+  OK: mkdocs build réussi
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    grep -o '<h3 id="smartpione-cases[^<]*<' "$OUT/SmartPI/SmartPi_One_specifications/index.html"; \
+    grep -o 'src="/img/SmartPi/Specifications/smart-pi-one[12].jpg"' "$OUT/SmartPI/SmartPi_One_specifications/index.html"; \
+    grep -c 'width="1000"' "$OUT/SmartPI/SmartPi_One_specifications/index.html"
+  <h3 id="smartpione-cases-versatility-and-style-for-your-nano-computer">SmartPione Cases: …<
+  src="/img/SmartPi/Specifications/smart-pi-one1.jpg"
+  src="/img/SmartPi/Specifications/smart-pi-one2.jpg"
+  0
+  ```
+  (7 WARNING préexistants inchangés.)
+  → Prochain pas : Lot 4 (listes fusionnées YUMI_C_SERIES.md + SmartPad_specifications.md).

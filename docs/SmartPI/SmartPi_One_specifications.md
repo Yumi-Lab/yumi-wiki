@@ -36,8 +36,10 @@
 
 
 ## 3. Layout
-<img src="../../img/SmartPi/Specifications/smart-pi-one1.jpg" width="1000" alt="Top view"> <p align="center">**[Top view]**</p>
-<img src="../../img/SmartPi/Specifications/smart-pi-one2.jpg" width="1000" alt="bottom view"> <p align="center">**[Bottom view]**</p>
+
+![Top view of the Smart Pi One board](/img/SmartPi/Specifications/smart-pi-one1.jpg)
+
+![Bottom view of the Smart Pi One board](/img/SmartPi/Specifications/smart-pi-one2.jpg)
 
 
 ## 4. Diagram
@@ -106,7 +108,7 @@
 
 <img src="../../img/SmartPi/Specifications/Case_SmartPiOne.jpg" width="500" alt="Case"> 
 
-###SmartPione Cases: Versatility and Style for Your Nano-Computer
+### SmartPione Cases: Versatility and Style for Your Nano-Computer
 
 Give your SmartPione the protection it deserves with our modular and versatile cases. Designed to suit various operational modes, these cases are an excellent solution to safeguard and showcase your electronic board while meeting the demands of your project.
 
