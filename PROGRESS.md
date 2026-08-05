@@ -1540,3 +1540,31 @@
   user nicolasmichaut ; 2026-08-05T11:20Z.
   Prochain pas : tous les lots cochés → vérification DoD complète (verify.sh vert),
   puis `.gate-handoff` pour la relecture visuelle humaine des pages modifiées.
+
+- **2026-08-05 · Gate final — `.gate-handoff` écrit, passage de main à l'humain.**
+  Tous les lots cochés (30/30), dernier verdict PASS (fd28af0, blocking=[]). Le DoD exige
+  la relecture visuelle humaine avant `.done` : `.gate-handoff` créé avec les 8 pages/arbres
+  les plus modifiés (ConfigureTimeZone réécrit, Home_Assistant fusionné, YUMI_C_SERIES
+  restructuré, tutos Yumi L dédoublonnés, arbre maintenance fusionné, guides PRINTERS
+  dédupliqués, pages Sensors&Modules republiées) + checklist par page. PROOF :
+  ```
+  $ grep -c '^\- \[x\]' PROGRESS.md; grep -c '^\- \[ \]' PROGRESS.md
+  30
+  0
+  $ ./verify.sh 2>&1 | tail -2
+  INFO    -  Documentation built in 1.55 seconds
+  OK: mkdocs build réussi
+  $ grep -c 'WARNING' /tmp/verify-mkdocs.log
+  5
+  $ git diff --stat main...wiki-audit-fixes | tail -1
+   50 files changed, 506 insertions(+), 2314 deletions(-)
+  ```
+  VARIED : création de `.gate-handoff` (gitignoré) + cette entrée de Journal.
+  HELD FIXED : branche wiki-audit-fixes @ fd28af0, docs/ inchangé depuis le verdict PASS.
+  WHAT THIS DOES NOT SAY : ne prouve pas le rendu visuel dans un navigateur — c'est
+  précisément l'objet du handoff humain. `.done` NON créé : il attend la suppression de
+  `.gate-handoff` par l'humain.
+  ATTRIBUTION : mkdocs 1.6.1 (venv ~/.cache/yumi-wiki-mkdocs-venv, Python 3.14) ; grep BSD ;
+  macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T11:25Z.
+  Prochain pas : STOP — attente validation humaine (suppression de `.gate-handoff`), puis
+  création de `.done` au tour suivant.
