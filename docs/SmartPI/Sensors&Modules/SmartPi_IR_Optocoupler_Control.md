@@ -32,6 +32,8 @@ The IR Optocoupler module typically has three connections: **VCC**, **GND**, and
 
 
 
+--8<-- "_snippets/smartpi-gpio-prerequisites.md"
+
 ## Detecting Speed via CLI
 
 You can detect speed by reading the output signal from the IR Optocoupler using CLI commands.
@@ -61,36 +63,6 @@ You can detect speed by reading the output signal from the IR Optocoupler using 
    ```
 
 This will print "Speed Detected!" whenever the sensor detects an interruption (e.g., passing of a rotating object).
-
-## Using Python
-
-### Prerequisites: Configuration of smartpi-gpio
-
-To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
-
-1. **Update system**:
-   ```bash
-   sudo apt update 
-   sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
-   sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-   ```
-
-2. **Clone the repository**:
-   ```bash
-   git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
-   cd smartpi-gpio
-   ```
-
-3. **Install the library**:
-   ```bash
-   sudo python3 setup.py sdist bdist_wheel
-   sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
-   ```
-
-4. **Activate GPIO interfaces**:
-   ```bash
-   sudo activate_interfaces.sh
-   ```
 
 ## Detecting Speed with Python
 

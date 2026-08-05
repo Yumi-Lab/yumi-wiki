@@ -6,6 +6,10 @@ copyright: "Copyright &copy; 2024-2026 YUMI-LAB"
 repo_url: https://github.com/Yumi-Lab/yumi-wiki
 repo_name: Yumi-Lab/yumi-wiki
 
+# Shared snippet files are included via pymdownx.snippets, never built as pages
+exclude_docs: |
+  _snippets/**
+
 # Website layout configuration (using mkdocs-material theme)
 theme:
   name: material
@@ -81,7 +85,9 @@ markdown_extensions:
       repo: yumi-wiki
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path:
+        - docs
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

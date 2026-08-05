@@ -134,7 +134,7 @@
   `Smartpad_D12_dual.md` et `PRINTERS/WANHAO_D12.md` — garder `SmartPad_Orcaslicer.md` comme
   source, remplacer les copies par des liens. — test : `./verify.sh` vert, relecture des
   trois pages confirmant l'absence de triple duplication.
-- [ ] **Lot 20** Extraire le bloc "Prerequisites: Configuration of smartpi-gpio" (~25 lignes,
+- [x] **Lot 20** Extraire le bloc "Prerequisites: Configuration of smartpi-gpio" (~25 lignes,
   dupliqué sur 11 pages capteurs) dans un snippet partagé sous `docs/_snippets/` (créer le
   dossier), et le référencer via `pymdownx.snippets` (déjà activé dans `mkdocs.yml`) depuis
   les 11 pages concernées au lieu du copier-coller. — test : le texte du prérequis n'existe
@@ -1037,3 +1037,55 @@
   les nouveaux liens relatifs `../KlipperSmartPad/SmartPad_Orcaslicer.md` et
   `SmartPad_Orcaslicer.md` ne produisent aucun warning de lien brisé.)
   Prochain pas : Lot 20 (snippet partagé « Configuration of smartpi-gpio », 11 pages capteurs).
+
+- **2026-08-05 · Lot 20 — bloc « Configuration of smartpi-gpio » extrait en snippet partagé.**
+  Créé `docs/_snippets/smartpi-gpio-prerequisites.md` (titre `## ` + corps canonique repris de
+  `SmartPi_LED_Control.md`, espaces trailing nettoyés, alt de l'image rendu fidèle au contenu
+  réel de la capture — menu « Enable/Disable Interfaces » de `activate_interfaces.sh`, vérifié
+  visuellement — le même PNG terminal était recopié avec 8 alts différents et faux par page).
+  `mkdocs.yml` : `pymdownx.snippets` configuré avec `base_path: [docs]`, et `exclude_docs:
+  _snippets/**` (mkdocs 1.6.1) pour que le snippet ne soit ni buildé en page orpheline ni
+  signalé hors-nav. Les 11 pages capteurs référencent désormais
+  `--8<-- "_snippets/smartpi-gpio-prerequisites.md"`. Cas particuliers traités honnêtement :
+  `SmartPi_HC-SR04_Ultrasonic.md` avait un 2ᵉ titre `### Prerequisites: Configuration of
+  smartpi-gpio` dont le corps était des étapes Python (nano/copier le script), pas le bloc
+  d'installation — titre renommé `### Preparing the Python script` ; `SmartPi_Sound_Detection_
+  Control.md` et `SmartPi_IR_Optocoupler_Control.md` avaient chacune une section `## Using
+  Python` ne contenant QUE une redite du bloc (doublon intra-page) — section redondante
+  supprimée ; pour IR_Optocoupler (dont la seule occurrence était ce doublon `###`), l'include
+  a été inséré au niveau page avant `## Detecting Speed via CLI`, comme dans les autres pages.
+  Aucun fait inventé : contenu du bloc strictement repris de l'existant.
+  VARIED: les 11 pages Sensors&Modules + mkdocs.yml + nouveau docs/_snippets/ / HELD FIXED:
+  toute autre page du wiki, img/, venv mkdocs, contenu du bloc (verbatim hors trailing spaces).
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  correction des chemins relatifs `../../../img` restants sur d'autres images de ces pages
+  (hors lot — 2 warnings préexistants subsistent sur les schémas de câblage).
+  **PROOF** :
+  ```
+  $ grep -rn "Configuration of smartpi-gpio" docs/
+  docs//_snippets/smartpi-gpio-prerequisites.md:1:## Prerequisites: Configuration of smartpi-gpio
+  $ grep -rn -- "--8<--" docs/ | wc -l
+        11
+  $ OUT=$(mktemp -d) && ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" >/dev/null 2>&1 \
+    && grep -c "Prerequisites: Configuration of smartpi-gpio" "$OUT/SmartPI/Sensors&Modules/SmartPi_LED_Control/index.html"
+  3
+  $ grep -c "SmartPi_Button_Control_3.png" "$OUT/SmartPI/Sensors&Modules/SmartPi_LED_Control/index.html"
+  1
+  $ ls "$OUT" | grep -ci snippet; echo "rc=$?"
+  rc=1
+  $ ./verify.sh > /tmp/verify.log 2>&1; echo "verify rc=$?"; grep -c "^WARNING" /tmp/verify-mkdocs.log; tail -2 /tmp/verify.log
+  verify rc=0
+  5
+  INFO    -  Documentation built in 1.57 seconds
+  OK: mkdocs build réussi
+  ```
+  ATTRIBUTION : grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base 3f8afa7 (head du verdict PASS
+  couvrant le lot 19) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T09:31Z.
+  (critère numérique : exactement 1 occurrence du texte du prérequis dans docs/ — le snippet —
+  11 lignes d'inclusion ; HTML buildé contient bien le titre et l'image expansés ; WARNING
+  mkdocs = 5 contre 7 au lot 19, baisse expliquée : 2 warnings de chemins relatifs supprimés
+  avec le doublon d'image dans Photoresistor/Sound_Detection, AUCUN nouveau warning, aucun sur
+  `_snippets`.)
+  Prochain pas : Lot 21 (Yumi_L_Safety.md : retirer `<style>`/`<script>`, `!!! danger`,
+  traduction résidus FR, rapatriement images i.ibb.co).

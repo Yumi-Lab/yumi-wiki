@@ -19,7 +19,6 @@ This page describes how to use an ultrasonic sensor (e.g., HC-SR04) with the Sma
 - Connecting wires
 - Breadboard (optional for easier connections)
 
-
 ## Wiring Diagram
 
 Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smart Pi One:
@@ -38,44 +37,11 @@ Below is a sample wiring diagram for connecting an ultrasonic sensor to the Smar
   - Connect a 1kΩ resistor between the ECHO pin and the GPIO pin.
   - Connect a 2kΩ resistor between the GPIO pin and GND to complete the voltage divider.
 
-
-## Prerequisites: Configuration of smartpi-gpio
-
-To install **SmartPi-GPIO** on your Smart Pi One, follow these steps:
-
-1. **Update system**:
-
-   ```bash
-   sudo apt update 
-   sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
-   sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-   ```
-
-2. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
-   cd smartpi-gpio
-   ```
-
-3. **Install the library**:
-
-   ```bash
-   sudo python3 setup.py sdist bdist_wheel
-   sudo pip3 install dist/smartpi_gpio-1.0.0-py3-none-any.whl
-   ```
-
-4. **Activate GPIO interfaces**:
-
-   ```bash
-   sudo activate_interfaces.sh
-   ``` 
-
-   ![Smart Pi One - Button](/img/SmartPi/Sensors&Modules/SmartPi_Button_Control/SmartPi_Button_Control_3.png)
+--8<-- "_snippets/smartpi-gpio-prerequisites.md"
 
 ## Using Python
 
-### Prerequisites: Configuration of smartpi-gpio
+### Preparing the Python script
 
 1. Open a terminal on your Smart Pi One.
 2. Create a new Python file using `nano`:
@@ -137,5 +103,3 @@ sudo python3 ultrasonic_sensor.py
 ```
 
 ![Smart Pi One - HC-SR04](/img/SmartPi/Sensors&Modules/SmartPi_HC-SR04_Ultrasonic/SmartPi_HC-SR04_Ultrasonic_3.png)
-
-
