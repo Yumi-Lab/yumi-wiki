@@ -40,7 +40,7 @@ You will see your IP address
 
 ![Pad1](/img/Printers/Prusa/Mk3/Pad3.jpeg)
 
-![MobaConnect](//img/Printers/Prusa/Mk3/MobaConnect.png)
+![MobaConnect](/img/Printers/Prusa/Mk3/MobaConnect.png)
 
 You will be prompted to enter the password.
 

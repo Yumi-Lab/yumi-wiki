@@ -26,12 +26,12 @@
   remplacer le `<p align="center"><img width="1000">` par une image Markdown standard
   `![alt](/img/...)` qui respecte le plafond CSS existant. — test : `grep -n "^### "`
   retrouve bien le titre ; plus de `<img width="1000"` dans le fichier ; `./verify.sh` vert.
-- [ ] **Lot 4** Listes qui fusionnent en paragraphe faute de tiret markdown, dans
+- [x] **Lot 4** Listes qui fusionnent en paragraphe faute de tiret markdown, dans
   `docs/Yumi_C_Series/YUMI_C_SERIES.md` (~lignes 36-41) et
   `docs/KlipperSmartPad/SmartPad_specifications.md` — ajouter les `-` manquants. — test :
   relecture du rendu (`mkdocs build` + diff visuel du HTML généré si possible), sinon
   vérification que chaque item de liste commence bien par `- ` dans le source.
-- [ ] **Lot 5** Corrections ponctuelles éparses : item de liste numéroté "32." aberrant dans
+- [x] **Lot 5** Corrections ponctuelles éparses : item de liste numéroté "32." aberrant dans
   `docs/KlipperSmartPad/Calibration/Adxl_calibration.md` ; `//img/` (double slash) dans
   `docs/PRINTERS/PRUSA_MK3.md:43` ; fence de code cassée autour de `passwd` dans
   `docs/SmartPI/SmartPi_Change_Password.md`. — test : les trois patterns fautifs ont disparu
@@ -383,3 +383,47 @@
   WHAT THIS DOES NOT SAY: rien sur les lots fonctionnels (Lot 4 en attente de verdict, Lot 5
   non commencé) ; ne présage pas du prochain verdict.
 - → Prochain pas : attendre le verdict ; si PASS, cocher Lot 4 puis enchaîner Lot 5.
+
+- **2026-08-05 · Verdict PASS (75ba1fe) — Lot 4 coché + Lot 5 terminé.** Verdict
+  `.loop/control/last-verdict.json` = PASS avec l'advisory « check Lot 4 and proceed to Lot 5 ».
+  Lot 4 coché (contenu déjà vérifié au rendu au checkpoint précédent, revue passée).
+  Lot 5 : trois correctifs ponctuels —
+  (1) `Adxl_calibration.md:19` « 32. Select **Input Shaper** » → « 3. » (liste 1,2,32,4,5,6
+  aberrante, numérotation contiguë rétablie) ;
+  (2) `PRUSA_MK3.md:43` `//img/…MobaConnect.png` → `/img/…` (double slash, cassait le
+  protocole-relatif en domaine « img ») ;
+  (3) `SmartPi_Change_Password.md:29-31` fence contenant `` `passwd` `` (backticks inline
+  DANS le bloc code, rendaient littéralement) → `passwd` nu.
+  Gate rendu réel (build mkdocs frais en mktemp) : les trois pages rendent correctement —
+  `<li>Select <strong>Input Shaper</strong></li>` (item de liste), `src="/img/Printers/Prusa/
+  Mk3/MobaConnect.png"` (chemin absolu résolu), bloc `<pre><code>…passwd</code></pre>` (fence
+  propre, plus de backticks littéraux). Deux greps de gate ont d'abord échoué sur mes
+  PATTERNS (espaces trailing dans le `<li>`, spans de numérotation de ligne dans le `<code>`)
+  — HARNESS_ERROR classifié et corrigé, pas le produit.
+  VARIED: 3 lignes dans 3 fichiers md / HELD FIXED: mkdocs.yml, venv mkdocs, reste des pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  les `<p align="center">` et alts « ADXL » dupliqués d'Adxl_calibration.md sont hors scope
+  Lot 5, non touchés.
+  **PROOF** :
+  ```
+  $ grep -n "32\. Select" docs/KlipperSmartPad/Calibration/Adxl_calibration.md; echo "adxl rc=$?"
+  adxl rc=1   # disparu
+  $ grep -n "//img/" docs/PRINTERS/PRUSA_MK3.md; echo "prusa rc=$?"
+  prusa rc=1  # disparu
+  $ grep -n '^`passwd`$' docs/SmartPI/SmartPi_Change_Password.md; echo "passwd rc=$?"
+  passwd rc=1 # disparu
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.56 seconds
+  OK: mkdocs build réussi
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    grep -n "Input Shaper" "$OUT/KlipperSmartPad/Calibration/Adxl_calibration/index.html" | head -1; \
+    grep -o 'src="/img/Printers/Prusa/Mk3/MobaConnect.png"' "$OUT/PRINTERS/PRUSA_MK3/index.html"; \
+    grep -o '<code>[^>]*passwd' "$OUT/SmartPI/SmartPi_Change_Password/index.html" | head -1
+  3515:<li>Select <strong>Input Shaper</strong>  </li>
+  src="/img/Printers/Prusa/Mk3/MobaConnect.png"
+  <code><span id="__span-0-1">…passwd
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 6 (suppression du doublon Remote_multi_printers.md + commande
+  `nano cd …` invalide dans la version conservée).
