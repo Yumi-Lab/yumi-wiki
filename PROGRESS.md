@@ -47,7 +47,7 @@
   référence encore le chemin supprimé. — test : `diff` confirmé vide avant suppression ;
   `grep -r "KlipperSmartPad/Remote_multi_printers.md" docs/ mkdocs.yml` ne retourne rien
   après ; `./verify.sh` vert.
-- [ ] **Lot 7** Fusionner `docs/SmartPI/SmartPi_Home_Assistant.md` et
+- [x] **Lot 7** Fusionner `docs/SmartPI/SmartPi_Home_Assistant.md` et
   `docs/SmartPI/SmartPi_Home_Assistant adnrobotics save.md` : compare les deux, le "save" est
   a priori plus à jour — garde le meilleur contenu combiné dans le fichier principal
   (nom sans espace, celui qui est dans `mkdocs.yml`), rapatrie les images hotlinkées en local
@@ -467,3 +467,59 @@
   ```
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 7 (fusion SmartPi_Home_Assistant.md + fichier « save »).
+
+- **2026-08-05 · Lot 7 — fusion Home Assistant + « save », images hotlinkées rapatriées.**
+  Les deux pages décrivent deux méthodes distinctes, conservées toutes les deux dans le
+  fichier principal (celui référencé en nav, `mkdocs.yml:179`) : **section 1** = flash de
+  l'image prébuildée via Balena Etcher (contenu de l'ancienne page principale) + config
+  Wifi `armbian-config` + connexion http://IP:8123 ; **section 2** = installation Home
+  Assistant Supervised (contenu du fichier « save », a priori plus à jour) avec ses
+  sous-sections Prerequisites / Firmware / installation. Structure remise au gabarit
+  (sections numérotées `## N.`, un seul H1, `!!! warning` pour le clavier QWERTY, alts
+  descriptifs réels — chaque image relue visuellement avant rédaction de l'alt). Lien
+  interne absolu `https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/` converti en relatif
+  `SmartPi_Linux.md`. Phrase orpheline « discussed here before (see links below) »
+  supprimée (aucun lien n'existait dans la page). Rapatriement local : les 5 images
+  hotlinkées GitHub (Balena001-004, HA001) téléchargées depuis
+  `github.com/Maxime3d77/smartpad-home-assistant` vers
+  `img/SmartPi/Home_Assistant/` (renommées en minuscules, convention du dossier) ; le
+  logo `design.home-assistant.io` remplacé par le `homeassistant_logo.png` local déjà
+  présent. Aucune image externe restante. Fichier « save » supprimé (`git rm`) ; aucune
+  autre page ne le référençait (grep préalable). Gate rendu réel (build mkdocs frais en
+  mktemp) : les 13 images rendent en `src="/img/SmartPi/Home_Assistant/..."`, zéro
+  `githubusercontent|raw=true|design.home-assistant.io|<p align="center">` dans le HTML,
+  titres H2 `#1-flash-the-prebuilt-image` / `#2-install-home-assistant-supervised`
+  présents, le répertoire de la page « save » absent du build.
+  Advisory du verdict d4dea67 : les artefacts de boucle non trackés (actions.mjs, hub.mjs,
+  scan.mjs, shlint.sh, audit html) sont l'outillage de la boucle/audit, intentionnels, hors
+  périmètre de commit.
+  VARIED: SmartPi_Home_Assistant.md (fusion), +5 images sous img/SmartPi/Home_Assistant/,
+  suppression du fichier « save » / HELD FIXED: mkdocs.yml, venv mkdocs, autres pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  la validité des liens externes (Google Drive, GitHub releases) n'est pas revérifiée
+  (contenu existant conservé tel quel).
+  **PROOF** :
+  ```
+  $ grep -c "githubusercontent\|raw=true" docs/SmartPI/SmartPi_Home_Assistant.md; echo "hotlinks rc=$?"
+  0
+  hotlinks rc=1
+  $ grep -rn "adnrobotics save" docs/ mkdocs.yml; echo "refs rc=$?"
+  refs rc=1   # aucune référence au fichier supprimé
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.55 seconds
+  OK: mkdocs build réussi
+  7
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    P="$OUT/SmartPI/SmartPi_Home_Assistant/index.html"; \
+    grep -c 'githubusercontent\|raw=true\|design.home-assistant.io\|<p align="center"' "$P"; \
+    ls "$OUT/SmartPI/" | grep -i "adnrobotics"; echo "save dir rc=$?"; \
+    grep -o '<h2 id="[^"]*"' "$P" | head -5
+  0
+  save dir rc=1
+  <h2 id="1-flash-the-prebuilt-image"
+  <h2 id="2-install-home-assistant-supervised"
+  ```
+  (13/13 images vérifiées présentes dans le HTML — boucle grep sur chaque nom, toutes OK ;
+  7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 8 (rattacher Yumi_L_Series_Troubleshooting.md à la nav).
