@@ -114,7 +114,7 @@
 
 ## Priorité 6 — page de téléchargement figée
 
-- [ ] **Lot 17** Dans `docs/SmartPI/SmartPi_Linux_flash_sd.md` : retirer la table de
+- [x] **Lot 17** Dans `docs/SmartPI/SmartPi_Linux_flash_sd.md` : retirer la table de
   téléchargement figée en v1.6.0 (obsolète — `SmartPi_Linux.md` est auto-générée par
   `scripts/update_downloads.py` et sert déjà de source unique), la remplacer par un lien
   vers cette page. Corrige aussi le typo `psudo` → `sudo`. — test :
@@ -921,3 +921,34 @@
   aucun warning de lien brisé sur index.md.)
   Prochain pas : Lot 17 (table de téléchargement figée v1.6.0 + typo `psudo` dans
   `SmartPi_Linux_flash_sd.md`).
+
+- **2026-08-05 · Lot 17 — table v1.6.0 figée retirée de SmartPi_Linux_flash_sd.md + typo `psudo` corrigé.**
+  La section « 2. Download » contenait une note « Latest release: v1.6.0 (March 1, 2026) » et une
+  table de 5 lignes pointant vers des artefacts figés `releases/download/v1.6.0/...`, obsolète
+  dès la release suivante. `docs/SmartPI/SmartPi_Linux.md` (nav « 4.2.1 Official Linux Image »,
+  mkdocs.yml:164) est auto-générée par `scripts/update_downloads.py` et sert déjà de source
+  unique — le lot demande de pointer vers elle, rien d'autre. Remplacé par une phrase + lien
+  relatif `SmartPi_Linux.md` ; aucune autre section du tuto (Etcher, first boot, setup) touchée.
+  Typo `psudo apt install` → `sudo apt install` (section 7).
+  VARIED: contenu de `docs/SmartPI/SmartPi_Linux_flash_sd.md` / HELD FIXED: mkdocs.yml, images,
+  SmartPi_Linux.md (auto-générée, non touchée), venv mkdocs, autres pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  fraîcheur réelle des artefacts listés sur la page auto-générée.
+  **PROOF** :
+  ```
+  $ grep -c "v1.6.0" docs/SmartPI/SmartPi_Linux_flash_sd.md
+  0
+  $ grep -c "psudo" docs/SmartPI/SmartPi_Linux_flash_sd.md
+  0
+  $ ./verify.sh 2>&1 | tail -2
+  INFO    -  Documentation built in 1.51 seconds
+  OK: mkdocs build réussi
+  ```
+  ATTRIBUTION : grep (BSD grep) 2.6.0-FreeBSD ; mkdocs 1.6.1
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; commit b53abe8 (base de départ) ;
+  macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T08:50Z.
+  (critère numérique : les deux grep retournent 0 occurrences ; WARNING mkdocs = 7, inchangés
+  vs état de départ ; les INFO « absolute link » sur `/img/...` de ce fichier sont préexistants
+  — convention du repo — et le lien relatif `SmartPi_Linux.md` est validé par le build, aucun
+  warning de lien brisé.)
+  Prochain pas : Lot 18 (déduplication calibration dans SIDEWINDER_X1/X2 et PRUSA_MK3).
