@@ -112,6 +112,7 @@ nav:
         - "2.3.4 Grease Z Lead Screw": c-series/maintenance/grease-z-leadscrew.md
         - "2.3.5 Inspect Belts": c-series/maintenance/inspect-belts.md
         - "2.3.6 Check Wiring": c-series/maintenance/check-wiring.md
+        - "2.3.7 Fan Cleaning": c-series/maintenance/fan_cleaning.md
   - "3. YUMI L SERIES (Laser)":
     - "3.1 SOFTWARE":
       - "3.1.1 Software Overview & Compatibility": Yumi_L_Series/Yumi_L_Series_Software.md
