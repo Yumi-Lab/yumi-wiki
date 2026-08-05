@@ -149,7 +149,7 @@
   rapatrier les images `i.ibb.co` en local sous `/img/Yumi_L_Series/Tuto/...` si accessibles.
   — test : `grep -c "<style>\|i.ibb.co" docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md` = 0 ;
   `./verify.sh` vert.
-- [ ] **Lot 22** Même traitement pour `docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md` (répare
+- [x] **Lot 22** Même traitement pour `docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md` (répare
   aussi le `<a>` non fermé signalé vers la ligne 206) et
   `docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md`. — test :
   `grep -c "<style>\|i.ibb.co" docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md`
@@ -1138,3 +1138,59 @@
   comportement attendu de la convention `/img/...` imposée par GOAL.md, pas des warnings.)
   Prochain pas : Lot 22 (même traitement sur Yumi_L_LaserGRBL.md — dont le `<a>` non fermé
   ~ligne 206 — et Yumi_L_Cork_Engraving.md).
+
+- **2026-08-05 · Lot 22 — `Yumi_L_LaserGRBL.md` + `Yumi_L_Cork_Engraving.md` remises au gabarit, 20 images rapatriées.**
+  LaserGRBL (289 → 49 lignes) : les deux blocs `<style>` (grille produit + layout lasergrbl-row),
+  le `<div id="zoom-viewer">` inline et le `<script>` de zoom maison supprimés ; le `<a>` non fermé
+  ex-ligne 206 (lien « Download and install LaserGRBL » jamais refermé, qui absorbait le `</div>`
+  suivant) disparaît avec le HTML — remplacé par un lien Markdown propre. Contenu restructuré en
+  liste numérotée de 8 étapes avec images légendées. Cork_Engraving (401 → 63 lignes) : mêmes
+  `<style>`×2 (dont le comparateur avant/après `.image-compare-container`), `<script>`×2 (zoom +
+  slider de comparaison animé), divs résiduelles d'artefacts ChatGPT (`z-0 flex min-h-[46px]`,
+  `pointer-events-none h-px w-px`, attributs `data-start`/`data-end`, `</strong>` orphelin,
+  `<h7>` invalide, `<p> </p>` vides) supprimés ; le comparateur avant/après JS est remplacé par
+  les deux photos côte à côte (vierge / gravée) — zéro JS inline, règle absolue. Le « Tip:The
+  origin point » passe en `!!! tip "Origin point"`. Front-matter `glightbox: false` RETIRÉ sur
+  les deux pages (différence assumée avec le lot 21) : ces pages sont des tutos pas-à-pas dont
+  les captures gagnent à être zoomées, et glightbox (plugin global, mkdocs.yml:52) remplace
+  exactement le zoom maison supprimé ; glightbox ignore les images déjà dans un lien, donc la
+  bannière boutique reste un lien wanhao-europe.com. 20 images `i.ibb.co` rapatriées sous
+  `img/Yumi_L_Series/Tuto/` (9 lasergrbl-*.jpg + yumi-l-a4-banner.jpg + 10 cork-*.jpg), toutes
+  vérifiées visuellement une par une AVANT d'écrire les alts : chaque alt décrit le contenu
+  réel (captures LaserGRBL v7.14.1 en français avec l'élément mis en évidence, tête laser
+  YUMi 2.5W sur plateau nid d'abeille, sous-verre liège vierge vs gravé Mario Kart) — les
+  anciens alts « Honeycomb »/« liege »/« Lunettes de protection laser » copiés-collés sans
+  rapport sont remplacés. Largeurs bornées 300–360 px via `attr_list`. Lien boutique
+  wanhao-europe.com conservé verbatim (externe légitime).
+  VARIED: docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md,
+  docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md, img/Yumi_L_Series/Tuto/ (20 nouveaux JPEG) /
+  HELD FIXED: tout autre fichier du wiki, mkdocs.yml, css/extra.css, venv mkdocs.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  activation réelle du zoom glightbox sur ces pages (vérifiée au build, pas au navigateur) ;
+  disponibilité future des URLs lasergrbl.com et wanhao-europe.com.
+  **PROOF** :
+  ```
+  $ grep -c "<style>\|i.ibb.co" docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md
+  docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md:0
+  docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md:0
+  $ grep -c "<script>\|<a href\|</a>\|glightbox" docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md
+  docs/Yumi_L_Series/Tuto/Yumi_L_LaserGRBL.md:0
+  docs/Yumi_L_Series/Tuto/Yumi_L_Cork_Engraving.md:0
+  $ file img/Yumi_L_Series/Tuto/lasergrbl-software.jpg img/Yumi_L_Series/Tuto/cork-coaster-engraved.jpg img/Yumi_L_Series/Tuto/yumi-l-a4-banner.jpg
+  lasergrbl-software.jpg:     JPEG image data, Exif standard, progressive, precision 8, 829x488
+  cork-coaster-engraved.jpg:  JPEG image data, Exif standard, progressive, precision 8, 1000x1000
+  yumi-l-a4-banner.jpg:       JPEG image data, Exif standard, progressive, precision 8, 1920x886
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.59 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  ATTRIBUTION : grep/file (BSD) macOS ; curl 8.x pour le rapatriement ; mkdocs 1.6.1 +
+  pymdown-extensions 10.21.3 (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base 47de297
+  (head du verdict PASS couvrant le lot 21) ; macOS 15.2 arm64 ; user nicolasmichaut ;
+  2026-08-05T10:05Z.
+  (critère numérique : 0 occurrence `<style>`/`i.ibb.co`/`<script>`/`<a>` brut sur les deux
+  fichiers ; WARNING mkdocs = 5, identique aux lots 20-21 — les lignes INFO « absolute link …
+  left as is » sont le comportement attendu de la convention `/img/...` imposée par GOAL.md.)
+  Prochain pas : Lot 23 (YUMI_C_SERIES.md : gabarit B, alts « yumiC » ×20, CTA Kickstarter à
+  vérifier).
