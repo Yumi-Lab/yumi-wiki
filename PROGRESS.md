@@ -59,7 +59,7 @@
   `mkdocs.yml` sous la section `3.2 DOCS` (contenu déjà fini, juste orphelin), en continuant
   la numérotation existante. — test : `grep "Yumi_L_Series_Troubleshooting" mkdocs.yml`
   retourne une ligne ; `./verify.sh` vert.
-- [ ] **Lot 9** Publier `docs/SmartPI/Sensors&Modules/SmartPi_Flame_Sensor_Control.md` :
+- [x] **Lot 9** Publier `docs/SmartPI/Sensors&Modules/SmartPi_Flame_Sensor_Control.md` :
   corriger la contradiction de pin VCC relevée dans l'audit, puis décommenter/ajouter son
   entrée dans `mkdocs.yml` sous `4.1 SMART PI ONE` (section capteurs), à la suite des pages
   capteurs existantes. — test : entrée active dans `mkdocs.yml` ; `./verify.sh` vert.
@@ -552,3 +552,42 @@
   ```
   → Prochain pas : Lot 9 (publier SmartPi_Flame_Sensor_Control.md — corriger la
   contradiction de pin VCC, puis entrée nav sous 4.1 SMART PI ONE).
+
+- **2026-08-05 · Lot 9 — SmartPi_Flame_Sensor_Control.md publiée, contradiction VCC corrigée.**
+  Contradiction interne : le texte disait « VCC connects to 5V (Pin 1) » alors que la table
+  de la même page donne 5V = Pin 2, et la convention de tout le dossier Sensors&Modules
+  (Button, Photoresistor, Sound, IR Presence…) est Pin 1 = 3.3V. Correctif minimal aligné
+  sur la table de la page : « 5V (Pin 1) » → « 5V (Pin 2) ». Publication : entrée nav
+  `"4.1.19 Flame Presence Sensor with Smart Pi One"` (mkdocs.yml:157) décommentée/ajoutée à
+  la suite de 4.1.18, numérotation poursuivie. Les 5 images référencées existent sous
+  `img/SmartPi/Sensors&Modules/SmartPi_Flame_Sensor_Control/`. Gate rendu réel (build
+  mkdocs frais en mktemp) : la page rend (85 705 octets HTML), H1 « Flame Presence Sensor
+  with Smart Pi One » présent, « 5V (Pin 2) » présent (×1), « 5V (Pin 1) » disparu. Les
+  notes INFO mkdocs « absolute link /img/… » sur cette page sont les mêmes que sur toutes
+  les pages capteurs déjà publiées (chemin absolu = règle GOAL.md) ; les 7 WARNING
+  préexistants sont inchangés et hors fichiers touchés.
+  VARIED: 1 ligne md + 1 entrée nav mkdocs.yml / HELD FIXED: venv mkdocs, autres pages,
+  images.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  l'exactitude électrique 5V vs 3.3V pour ce capteur précis n'est pas revérifiée au
+  multimètre — le correctif supprime la contradiction interne, ne tranche pas la spec.
+  **PROOF** :
+  ```
+  $ grep -c "5V (Pin 1)" "docs/SmartPI/Sensors&Modules/SmartPi_Flame_Sensor_Control.md"
+  0
+  $ grep -n "Flame_Sensor_Control" mkdocs.yml
+  157:      - "4.1.19 Flame Presence Sensor with Smart Pi One": SmartPI/Sensors&Modules/SmartPi_Flame_Sensor_Control.md
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -cE "WARNING|ERROR" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.64 seconds
+  OK: mkdocs build réussi
+  7
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    P="$OUT/SmartPI/Sensors&Modules/SmartPi_Flame_Sensor_Control/index.html"; \
+    grep -c '5V (Pin 2)' "$P"; grep -c '5V (Pin 1)' "$P"; \
+    grep -o '<h1[^>]*>[^<]*' "$P" | head -1
+  1
+  0
+  <h1 id="flame-presence-sensor-with-smart-pi-one">Flame Presence Sensor with Smart Pi One
+  ```
+  → Prochain pas : Lot 10 (publier SmartPi_IR_Presence_Detector_Control.md de la même façon).

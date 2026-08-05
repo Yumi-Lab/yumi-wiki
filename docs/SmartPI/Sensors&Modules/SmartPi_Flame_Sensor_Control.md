@@ -19,7 +19,7 @@ We will cover the following methods:
 
 The flame presence sensor typically has three pins: **VCC**, **GND**, and **DOUT** (digital output).
 
-- **VCC** connects to **5V (Pin 1)**.
+- **VCC** connects to **5V (Pin 2)**.
 - **GND** connects to **Ground (Pin 6)**.
 - **DOUT** connects to **GPIOG11(Pin 7)** to read the presence of flame.
 
