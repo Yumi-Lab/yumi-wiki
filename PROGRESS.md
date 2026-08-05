@@ -1592,3 +1592,28 @@
   WHAT THIS DOES NOT SAY : ne re-prouve pas le rendu visuel — il a été validé par l'humain
   (suppression du handoff), pas re-testé ici.
   Prochain pas : verdict PASS sur ce commit → création de `.done` au tour suivant.
+
+- **2026-08-05 · `.done` créé — mission terminée (bloqueur verdict CHANGES_REQUESTED b5bcf8a).**
+  Le verdict exigeait la création de `.done` : les 30 lots sont cochés (chacun avec PROOF),
+  `.gate-handoff` a été supprimé par l'humain (gate visuel validé), `verify.sh` est vert.
+  `.done` (fichier vide) créé → arrêt propre de la boucle et du watchdog.
+  PROOF :
+  ```
+  $ grep -c '^\- \[x\]' PROGRESS.md && grep -c '^\- \[ \]' PROGRESS.md
+  30
+  0
+  $ ls .gate-handoff
+  ls: .gate-handoff: No such file or directory
+  $ ./verify.sh 2>&1 | tail -2
+  INFO    -  Documentation built in 1.47 seconds
+  OK: mkdocs build réussi
+  $ touch .done && ls -la .done
+  -rw-r--r--@ 1 nicolasmichaut  staff  0 Aug  5 20:26 .done
+  ```
+  VARIED : `.done` créé + cette entrée Journal — rien d'autre.
+  HELD FIXED : branche wiki-audit-fixes, docs/ inchangé depuis b5bcf8a, mkdocs 1.6.1
+  (venv ~/.cache/yumi-wiki-mkdocs-venv, Python 3.14) ; macOS 15.2 arm64 ; user
+  nicolasmichaut ; 2026-08-05T12:26Z.
+  WHAT THIS DOES NOT SAY : `.done` stoppe le dispositif ; le merge vers `main` reste une
+  décision humaine, hors de cette boucle.
+  Prochain pas : aucun — la boucle s'arrête sur `.done`.
