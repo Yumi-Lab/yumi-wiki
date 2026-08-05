@@ -668,3 +668,23 @@
   (7 WARNING préexistants inchangés, tous hors fichier touché.)
   → Prochain pas : attendre le verdict du contrôleur sur ce commit fix ; si PASS,
   reprendre Lot 11.
+- [2026-08-05] **FIX blocker verdict CHANGES_REQUESTED (config failover, head 0cd929d)** —
+  le message du commit `0cd929d` nommait des outils IA (« Kimi » x4, « Claude » x1) en
+  violation de la règle absolue de GOAL.md « aucune mention d'outil IA nulle part ». Message
+  réécrit via `git commit --amend` en termes génériques (« provider principal » / « provider
+  de secours ») sans toucher au contenu du diff (`loop.conf` seul, inchangé). Nouveau head :
+  `522c314`.
+  VARIED: message de commit uniquement / HELD FIXED: diff de `loop.conf`, working tree,
+  harness (même verify.sh, même machine).
+  WHAT THIS DOES NOT SAY: rien sur la validité fonctionnelle du mécanisme de failover
+  lui-même (non modifié par ce fix, déjà couvert par la revue précédente hors ce point).
+  **PROOF** :
+  ```
+  $ git log --format=%B -1 HEAD | grep -inE '[k]imi|[c]laude|generated [w]ith|Co-Authored-[B]y'; echo "grep rc=$?"
+  grep rc=1
+  $ ./verify.sh 2>&1 | tail -2; echo "verify rc=${PIPESTATUS[0]}"
+  OK: mkdocs build réussi
+  verify rc=0
+  ```
+  → Prochain pas : attendre le verdict du contrôleur sur `522c314` ; si PASS, reprendre
+  Lot 11.
