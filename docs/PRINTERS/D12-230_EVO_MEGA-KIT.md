@@ -71,16 +71,16 @@ If your printer is equipped with a 3D Touch sensor, make sure to download and us
 Before performing your first print, it’s crucial to properly calibrate your printer for optimal results. Follow these steps:
 
 1. **Extruder Calibration**  
-   - This calibration ensures that the extruder is accurately pushing the correct amount of filament. Follow [this guide on extruder calibration](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Extruder_calibration/){ target=_blank }.
+   - This calibration ensures that the extruder is accurately pushing the correct amount of filament. Follow [this guide on extruder calibration](../KlipperSmartPad/Calibration/Extruder_calibration.md).
 
 2. **Z-Offset Adjustment**  
-   - Proper Z-offset calibration is essential for a good first layer. You can follow [this detailed Z-offset calibration guide](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Z_Offset_calibration/){ target=_blank }.
+   - Proper Z-offset calibration is essential for a good first layer. You can follow [this detailed Z-offset calibration guide](../KlipperSmartPad/Calibration/Z_Offset_calibration.md).
 
 3. **PID Tuning (Proportional-Integral-Derivative)**  
-   - Perform PID tuning for both the extruder and bed to maintain stable temperatures during printing. Use [this guide for PID tuning](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/PID_calibration/){ target=_blank }.
+   - Perform PID tuning for both the extruder and bed to maintain stable temperatures during printing. Use [this guide for PID tuning](../KlipperSmartPad/Calibration/PID_calibration.md).
 
 4. **ADXL Configuration (if applicable)**  
-   - If your printer is equipped with an ADXL345 sensor for vibration analysis, follow [this vibration measurement and compensation guide](https://wiki.yumi-lab.com/KlipperSmartPad/Calibration/Adxl_calibration/){ target=_blank }.
+   - If your printer is equipped with an ADXL345 sensor for vibration analysis, follow [this vibration measurement and compensation guide](../KlipperSmartPad/Calibration/Adxl_calibration.md).
 
 
 ## **Recommended Tests Before Your First Print**

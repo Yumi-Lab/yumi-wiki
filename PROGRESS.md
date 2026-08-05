@@ -192,7 +192,7 @@
 
 ## Hygiène finale wiki-wide
 
-- [ ] **Lot 29** Convertir les liens internes absolus (`https://wiki.yumi-lab.com/...`) en
+- [x] **Lot 29** Convertir les liens internes absolus (`https://wiki.yumi-lab.com/...`) en
   liens relatifs dans `docs/SmartPI/SmartPi_One_Startup.md` (toute la page),
   `docs/KlipperSmartPad/SmartPad_change_password.md` (~lignes 15-19) et
   `docs/PRINTERS/D12-230_EVO_MEGA-KIT.md` (~lignes 74-83) — ces liens cassent tout build hors
@@ -1473,3 +1473,41 @@
   user nicolasmichaut ; 2026-08-05T11:10Z.
   Prochain pas : Lot 29 (liens absolus wiki.yumi-lab.com → relatifs dans
   SmartPi_One_Startup.md, SmartPad_change_password.md, D12-230_EVO_MEGA-KIT.md).
+
+- **2026-08-05 · Lot 29 — liens internes absolus convertis en relatifs (3 fichiers).**
+  24 liens `https://wiki.yumi-lab.com/...` convertis : 17 dans
+  `SmartPI/SmartPi_One_Startup.md` (12 même dossier → `X.md`, 5 inter-dossiers →
+  `../Yumi_Components/…`, `../Yumi_stl/…`), 3 dans `KlipperSmartPad/SmartPad_change_password.md`
+  (→ `SmartPad_connect_ssh.md`), 4 dans `PRINTERS/D12-230_EVO_MEGA-KIT.md`
+  (→ `../KlipperSmartPad/Calibration/….md`). Les 22 cibles distinctes ont été vérifiées
+  présentes sur disque AVANT conversion (test `-f` sur chaque chemin). Le suffixe
+  `{ target=_blank }` a été retiré des liens devenus internes (il ne concerne que les
+  liens externes : wanhao-europe.com, cults3d.com — conservés tels quels). Transformation
+  mécanique par sed BSD (3 expressions par fichier), diff relu intégralement : 24
+  lignes modifiées, rien d'autre.
+  PROOF :
+  ```
+  $ grep -c "https://wiki.yumi-lab.com" docs/SmartPI/SmartPi_One_Startup.md docs/KlipperSmartPad/SmartPad_change_password.md docs/PRINTERS/D12-230_EVO_MEGA-KIT.md
+  docs/SmartPI/SmartPi_One_Startup.md:0
+  docs/KlipperSmartPad/SmartPad_change_password.md:0
+  docs/PRINTERS/D12-230_EVO_MEGA-KIT.md:0
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.54 seconds
+  OK: mkdocs build réussi
+  5
+  $ grep -iE 'One_Startup|change_password|D12-230_EVO' /tmp/verify-mkdocs.log | grep -i 'WARNING'; echo rc=$?
+  rc=1
+  ```
+  (critère du lot = 0 partout, atteint ; aucune WARNING mkdocs sur les 3 fichiers —
+  les 22 liens relatifs sont donc résolus par le build ; WARNING total = 5, inchangé.)
+  VARIED : URLs des liens internes dans les 3 fichiers listés.
+  HELD FIXED : venv mkdocs, mkdocs.yml, tous les autres fichiers docs/, base 0961c3c.
+  WHAT THIS DOES NOT SAY : ne couvre PAS les liens absolus wiki.yumi-lab.com dans
+  d'autres fichiers (ex. SmartPi_Retro_Gaming.md ligne 30, SmartPi_Plex_Server.md
+  ligne 17 — explicitement hors périmètre du lot, qui ne liste que ces 3 fichiers) ;
+  ne prouve pas le rendu visuel des liens dans le navigateur (gate final).
+  ATTRIBUTION : sed/grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3 (venv
+  `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base 0961c3c ; macOS 15.2 arm64 ;
+  user nicolasmichaut ; 2026-08-05T11:15Z.
+  Prochain pas : Lot 30 (mkdocs.yml : retirer le `**gras**` Markdown brut des 2 labels
+  de nav, §7.14.2 et §9.1).
