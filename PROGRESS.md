@@ -69,7 +69,7 @@
 
 ## Priorité 4 — fusion des deux arbres de maintenance
 
-- [ ] **Lot 11** Dans `docs/c-series/maintenance/`, ajouter une page `fan_cleaning.md` au
+- [x] **Lot 11** Dans `docs/c-series/maintenance/`, ajouter une page `fan_cleaning.md` au
   même format court que les autres fiches du dossier (`**Interval:**`, `**Difficulty:**`,
   `**Time:**`, `**Applies to:**`, section `## Why`) — reprends le contenu factuel de
   `docs/Maintenance/fan_cleaning.md` mais reformate-le dans ce style, et vérifie/harmonise
@@ -688,3 +688,49 @@
   ```
   → Prochain pas : attendre le verdict du contrôleur sur `522c314` ; si PASS, reprendre
   Lot 11.
+- [2026-08-05] **Lot 11 — fan_cleaning.md ajoutée à c-series/maintenance (head 70f90d2).**
+  Nouvelle page `docs/c-series/maintenance/fan_cleaning.md` au format court des 6 fiches
+  sœurs (en-tête `**Interval:**`/`**Difficulty:**`/`**Time:**`/`**Applies to:**`, sections
+  `## Why` / `## What You Need` / `## Steps` numérotées / `## Tips`, clôture SmartPad
+  `Menu > More > Maintenance > Fan Cleaning > Done`). Contenu factuel repris de
+  `docs/Maintenance/fan_cleaning.md` (outils, 4 étapes de nettoyage, tips identiques —
+  vérifié par relecture de la source) et reformaté, pas recopié. Intervalle harmonisé à
+  « Every 30 days (every 14 days in dusty environments) » : la source disait monthly /
+  2 weeks, ramené au vocabulaire en jours des fiches du dossier (clean-nozzle.md 14 days,
+  lube-xy-rails.md 30 days) — harmonisation, pas invention. Ajouts : entrée nav
+  `"2.3.7 Fan Cleaning"` dans mkdocs.yml à la suite de 2.3.6, et ligne
+  `| [Fan Cleaning](fan_cleaning.md) | Every 30 days | Easy |` dans
+  `docs/c-series/maintenance/index.md`. Aucune image, aucun emoji, aucun lien externe
+  ajouté. Gate rendu réel (build mkdocs frais en mktemp) : la page rend (75 088 octets),
+  H1 « Fan Cleaning », intervalle et motif SmartPad présents, entrée 2.3.7 visible dans la
+  nav du site généré.
+  VARIED: 1 nouveau fichier md + 2 lignes (nav + index) / HELD FIXED: venv mkdocs, autres
+  pages, harness (même verify.sh, même machine).
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  l'intervalle 30/14 jours est une harmonisation éditoriale entre les deux arbres, pas une
+  spec constructeur revérifiée (la tranchée revient au Lot 12).
+  **PROOF** :
+  ```
+  $ git log --oneline -1
+  70f90d2 docs(c-series): ajouter la fiche fan_cleaning au format maintenance (lot 11)
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.66 seconds
+  OK: mkdocs build réussi
+  7
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    P="$OUT/c-series/maintenance/fan_cleaning/index.html"; \
+    wc -c "$P"; grep -o '<h1[^>]*>[^<]*' "$P" | head -1; \
+    grep -c 'Every 30 days' "$P"; \
+    grep -o 'Menu &gt; More &gt; Maintenance &gt; Fan Cleaning &gt; Done' "$P" | head -1; \
+    grep -o '2\.3\.7 Fan Cleaning' "$OUT/index.html" | head -1
+     75088 …/c-series/maintenance/fan_cleaning/index.html
+  <h1 id="fan-cleaning">Fan Cleaning
+  1
+  Menu &gt; More &gt; Maintenance &gt; Fan Cleaning &gt; Done
+  2.3.7 Fan Cleaning
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 12 (réconcilier les intervalles contradictoires entre
+  c-series/maintenance/ et Maintenance/ — courroies et buse — avant suppression de
+  l'ancien arbre).
