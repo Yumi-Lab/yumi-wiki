@@ -169,7 +169,7 @@
 
 ## Priorité 10 — fond de catalogue (chantier long)
 
-- [ ] **Lot 25** `docs/SmartPI/SmartPI_OpenMediaVault.md` : renuméroter proprement les
+- [x] **Lot 25** `docs/SmartPI/SmartPI_OpenMediaVault.md` : renuméroter proprement les
   sections (`## N.` actuellement incohérent, saute de 3 à 12 à 13), remplacer les 13 alt
   "SSH" copiés-collés par des alts descriptifs du contenu réel de chaque capture. — test :
   les `## N.` sont contigus depuis 1 ; `grep -c 'alt="SSH"\|\[SSH\]' …` a fortement diminué ;
@@ -1317,3 +1317,45 @@
   lot 23) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T10:35Z.
   Prochain pas : Lot 25 (SmartPI_OpenMediaVault.md : renumérotation des sections, 13 alts
   « SSH » → descriptifs).
+
+- **2026-08-05 · Lot 25 — SmartPI_OpenMediaVault.md : sections renumérotées 1-5 contigus,
+  13 alts « SSH » → descriptifs.** Les lignes `## 4.` … `## 11.` n'étaient PAS des titres :
+  c'étaient les commentaires du fichier `openmediavault.list` copiés-collés avec une
+  numérotation parasite à l'intérieur du bloc code heredoc. Restaurés au format officiel du
+  fichier OMV (`#` pour les lignes deb commentées, `##` pour les deux vraies lignes de
+  commentaire, numéros parasites supprimés — contenu vérifiable contre la doc officielle
+  openmediavault, aucune ligne `deb` active modifiée). Les vrais titres `## 12. connection
+  to web interface` → `## 4. Connection to the web interface` et `## 13. Add Disk` →
+  `## 5. Add a disk`. Les 13 alts « SSH » copiés-collés sont remplacés par des alts
+  descriptifs réels après lecture de chaque capture (ReadMediaFile sur OMV001→OMV013 :
+  session MobaXterm, page de login OMV, bandeau « Pending configuration changes », pages
+  File Systems / Shared Folders / SMB-CIFS / permissions…).
+  VARIED: docs/SmartPI/SmartPI_OpenMediaVault.md (6 éditions ciblées) /
+  HELD FIXED: tout autre fichier, img/SmartPi/OMV/ (les 14 images existaient déjà,
+  aucune ajoutée/supprimée), mkdocs.yml.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur (gate humain final) ; exactitude de la
+  procédure OMV elle-même (hors scope — le lot ne demandait que renumérotation + alts ;
+  les mentions mobaxterm/putty ligne 17 sont préexistantes et hors lot).
+  **PROOF** :
+  ```
+  $ grep -nE '^## [0-9]+\.' docs/SmartPI/SmartPI_OpenMediaVault.md; grep -c 'alt="SSH"\|\[SSH\]' docs/SmartPI/SmartPI_OpenMediaVault.md
+  9:## 1. Prerequisites
+  21:## 2. Update the smartpi
+  27:## 3. Install
+  68:## 4. Connection to the web interface
+  82:## 5. Add a disk
+  0
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.57 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  (grep `^## [0-9]` hors titres = 0 : plus aucune ligne numérotée parasite dans le heredoc ;
+  WARNING mkdocs = 5, inchangé — tous préexistants sur d'autres pages ; les 14 INFO
+  « absolute link … left as is » sur cette page sont le comportement attendu de la
+  convention `/img/...`, identiques avant/après — seuls les alts ont changé.)
+  ATTRIBUTION : grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3 (venv
+  `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base c907241 (= head du verdict PASS
+  lot 24) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T10:45Z.
+  Prochain pas : Lot 26 (SmartPi_Retro_Gaming.md : 3 liens cassés, placeholder
+  « Available soon », « Emulastation » → « EmulationStation » ×7).
