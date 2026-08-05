@@ -185,7 +185,7 @@
   qu'une version qui deviendra fausse, nettoyer les artefacts de notes de bas de page
   résiduels ("connection2 providers3" et similaires). — test :
   `grep -c "1\.40\.1" docs/SmartPI/SmartPi_Plex_Server.md` = 0 ; `./verify.sh` vert.
-- [ ] **Lot 28** `docs/SmartPI/SmartPi_Klipper.md` : structurer les 28 lignes actuelles avec
+- [x] **Lot 28** `docs/SmartPI/SmartPi_Klipper.md` : structurer les 28 lignes actuelles avec
   de vrais titres `## N. Titre`, dédupliquer avec `SmartPi_Linux_flash_sd.md` (renvoyer vers
   le flash guide plutôt que de le réexpliquer). — test : au moins 2 titres `## ` présents ;
   `./verify.sh` vert.
@@ -1436,3 +1436,40 @@
   lot 26) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T11:05Z.
   Prochain pas : Lot 28 (SmartPi_Klipper.md : structurer avec de vrais titres ## N.,
   dédupliquer avec SmartPi_Linux_flash_sd.md).
+
+- **2026-08-05 · Lot 28 — SmartPi_Klipper.md restructuré + dédupliqué.** Page passée de
+  28 lignes sans titres à 3 sections numérotées (`## 1. Download YumiOS`,
+  `## 2. Flash the image to your micro SD card`, `## 3. First boot`). Le pas-à-pas
+  Balena Etcher (3 captures `Balena001/002/003.png` + 4 paragraphes) dupliquait le
+  guide de flash : remplacé par un renvoi relatif vers
+  [flash guide](SmartPi_Linux_flash_sd.md) (même convention de lien relatif que
+  `SmartPi_Linux.md` dans ce guide). Le rappel « save your printer.cfg » devient une
+  admonition `!!! warning` (style du gabarit GOAL.md). Alt du logo rendu descriptif
+  (« YumiOS logo »). Les fichiers `img/SmartPi/klipper/Balena00*.png` deviennent
+  orphelins : laissés sur disque (leur suppression n'est pas demandée par le lot).
+  PROOF :
+  ```
+  $ grep -c '^## ' docs/SmartPI/SmartPi_Klipper.md
+  3
+  $ grep -n 'Balena00' docs/SmartPI/SmartPi_Klipper.md; echo "rc=$?"
+  rc=1
+  $ grep -i 'SmartPi_Klipper' /tmp/verify-mkdocs.log
+  INFO    -  Doc file 'SmartPI/SmartPi_Klipper.md' contains an absolute link '/img/SmartPi/klipper/YumiOSLogo.jpeg', it was left as is.
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.59 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  (3 titres `## ` ≥ 2 requis ; aucune WARNING sur SmartPi_Klipper.md — le lien relatif
+  vers SmartPi_Linux_flash_sd.md est résolu par le build, sinon mkdocs l'aurait signalé ;
+  WARNING total = 5, inchangé, tous préexistants.)
+  VARIED : contenu de SmartPi_Klipper.md uniquement.
+  HELD FIXED : venv mkdocs, mkdocs.yml, SmartPi_Linux_flash_sd.md, base 98a3334.
+  WHAT THIS DOES NOT SAY : ne prouve pas le rendu visuel de l'admonition dans le
+  navigateur (périmètre du gate visuel final) ; ne couvre pas la fraîcheur des releases
+  YumiOS sur GitHub (contenu tiers).
+  ATTRIBUTION : grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3 (venv
+  `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base 98a3334 ; macOS 15.2 arm64 ;
+  user nicolasmichaut ; 2026-08-05T11:10Z.
+  Prochain pas : Lot 29 (liens absolus wiki.yumi-lab.com → relatifs dans
+  SmartPi_One_Startup.md, SmartPad_change_password.md, D12-230_EVO_MEGA-KIT.md).
