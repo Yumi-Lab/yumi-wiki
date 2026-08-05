@@ -18,3 +18,6 @@ site/
 .done-*
 .gate-handoff
 .env
+
+# Rapport d'audit local (artefact de travail, non publie)
+audit-wiki-*.html

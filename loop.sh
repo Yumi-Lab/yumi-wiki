@@ -344,13 +344,27 @@ fi
 mkdir -p "$MONITOR_DIR" "$CTL_DIR"
 
 # Verrou une-boucle-par-repo (mkdir atomique, portable bash 3.2). Nettoyé par le trap EXIT.
+# Vitalité du verrou : helper COMMUN lock-alive.sh (pid + identité ancrée au repo — M10/M11).
+# Repli si absent (projet non resynchronisé) : la PRÉSENCE du verrou vaut « vivant »
+# (comportement historique — sûr : refuse, jamais de double boucle).
+_LA="$(cd "$(dirname "$0")" 2>/dev/null && pwd -P)/lock-alive.sh"
+if [ -f "$_LA" ]; then . "$_LA"; else lock_alive() { [ -d "$1/${MONITOR_DIR:-.monitor}/.lock" ]; }; fi
 LOCK="$MONITOR_DIR/.lock"
 if [ -f "$LOCK/pid" ] && [ "$(cat "$LOCK/pid" 2>/dev/null)" = "$$" ]; then
   : # auto-update : exec conserve le PID → ce verrou est DÉJÀ le nôtre, on le garde tel quel.
 elif ! mkdir "$LOCK" 2>/dev/null; then
+  if lock_alive .; then
+    _op="$(cat "$LOCK/pid" 2>/dev/null || echo '?')"
+    echo "⛔ Une boucle tourne déjà dans ce repo ($LOCK, pid=$_op)." >&2
+    echo "   Si c'est un résidu (process mort) : rm -rf $LOCK" >&2; exit 1
+  fi
+  # Verrou RÉSIDUEL : pid mort, ou RÉUTILISÉ par un process innocent (crash/reboot/coupure) →
+  # nettoyage auto + démarrage (M11 — fin du rm -rf manuel). On ne tue RIEN : le pid vivant
+  # éventuel n'est pas une boucle de ce repo ; le rm ne touche que le dossier verrou.
   _op="$(cat "$LOCK/pid" 2>/dev/null || echo '?')"
-  echo "⛔ Une boucle tourne déjà dans ce repo ($LOCK, pid=$_op)." >&2
-  echo "   Si c'est un résidu (process mort) : rm -rf $LOCK" >&2; exit 1
+  echo "↻ verrou résiduel ($LOCK, pid=$_op mort ou réutilisé) — nettoyage auto." >&2
+  rm -rf "$LOCK"
+  mkdir "$LOCK" || { echo "⛔ impossible de recréer le verrou $LOCK" >&2; exit 1; }
 fi
 echo $$ > "$LOCK/pid"   # PID de la boucle → permet un stop/restart propre (hub, loop-agent)
 cleanup() { rm -f "$LOCK/pid" 2>/dev/null; rmdir "$LOCK" 2>/dev/null || true; }
@@ -446,20 +460,34 @@ if [ -n "${LOOP_RESUME:-}" ]; then
   echo "↻ auto-update : reprise sur la NOUVELLE version de loop.sh (itération $i conservée, compteurs restaurés)."
 fi
 
+# verdict_real_pass [verdict vhead] — le SEUL juge de « revue validante » (M2/M3/M4). Un verdict
+# n'ouvre le gate ni n'accepte .done que s'il est un PASS RÉEL (ni provisoire, ni synthétique
+# stale) ANCRÉ SUR LE HEAD COURANT : un PASS sur un vieux sha est PÉRIMÉ — il ne valide pas les
+# commits de tête non revus (M4). Sans jq ou sans fichier : invérifiable → NON (fail-closed, M3 —
+# aligné sur .done). Args optionnels = valeurs déjà lues par l'appelant (sinon relecture).
+verdict_real_pass() {
+  [ -n "$JQ" ] && [ -f "$VERDICT_FILE" ] || return 1
+  local v="${1:-}" h="${2:-}" hv
+  [ -n "$v" ] || v="$("$JQ" -r '.verdict // ""' "$VERDICT_FILE" 2>/dev/null)"
+  [ -n "$h" ] || h="$("$JQ" -r '.head // ""' "$VERDICT_FILE" 2>/dev/null)"
+  [ "$v" = PASS ] || return 1
+  [ "$("$JQ" -r '.provisional // .stale // false' "$VERDICT_FILE" 2>/dev/null)" = false ] || return 1
+  hv="$(git rev-parse --verify --quiet "$h^{commit}" 2>/dev/null)"
+  [ -n "$hv" ] && [ "$hv" = "$(git rev-parse HEAD 2>/dev/null)" ]
+}
+
 # Gate-handoff déjà en attente ? En mode contrôlé, la main n'est rendue à l'humain que si le
-# verdict couvrant le handoff est un PASS RÉEL (ni provisoire, ni synthétique stale) — sinon
-# (arrêt/restart/auto-update pendant une suspension, abort MAX_REVIEW_RETRY avec handoff sur
-# disque…) le gate reste SUSPENDU : la contrôleuse repasse d'abord, l'humain ne reçoit que du
-# code revu (garantie 088259c durcie — elle n'était tenue qu'en mémoire, pas entre deux runs).
+# verdict couvrant le handoff est un PASS RÉEL ancré sur le HEAD courant — sinon (arrêt/restart/
+# auto-update pendant une suspension, abort MAX_REVIEW_RETRY avec handoff sur disque, PASS ancré
+# sur un vieux sha après de nouveaux commits…) le gate reste SUSPENDU : la contrôleuse repasse
+# d'abord, l'humain ne reçoit que du code revu (garantie 088259c durcie — elle n'était tenue
+# qu'en mémoire, pas entre deux runs — et l'ancrage HEAD manquait : M4).
 if is_true "$GATE_HANDOFF" && [ -f "$HANDOFF_FILE" ]; then
   _reviewed=1
-  if is_true "$reviewer" && [ -n "$JQ" ]; then
-    # (sans jq : verdict invérifiable → comportement historique, le fail-closed exige jq)
+  if is_true "$reviewer"; then
+    # (sans jq : verdict invérifiable → gate SUSPENDU, fail-closed aligné sur .done — M3)
     _reviewed=0
-    [ -f "$VERDICT_FILE" ] \
-      && [ "$("$JQ" -r '.verdict // ""' "$VERDICT_FILE" 2>/dev/null)" = PASS ] \
-      && [ "$("$JQ" -r '.provisional // .stale // false' "$VERDICT_FILE" 2>/dev/null)" = false ] \
-      && _reviewed=1
+    verdict_real_pass && _reviewed=1
   fi
   if [ "$_reviewed" = 1 ] && [ "${handoff_wait_review:-0}" != 1 ]; then
     echo "⏸ $HANDOFF_FILE présent (gate visuel/device en attente humain). Contenu :"
@@ -467,7 +495,7 @@ if is_true "$GATE_HANDOFF" && [ -f "$HANDOFF_FILE" ]; then
     echo "→ Fais le gate puis supprime $HANDOFF_FILE pour relancer."; exit 0
   else
     handoff_wait_review=1
-    echo "⏸ $HANDOFF_FILE présent SANS verdict PASS réel → gate SUSPENDU : la contrôleuse repasse d'abord (l'humain ne reçoit que du code revu)."
+    echo "⏸ $HANDOFF_FILE présent SANS verdict PASS réel ancré sur HEAD → gate SUSPENDU : la contrôleuse repasse d'abord (l'humain ne reçoit que du code revu)."
   fi
 fi
 
@@ -767,22 +795,33 @@ while [ ! -f "$DONE_FILE" ] && [ "$i" -lt "$MAX_ITERS" ] \
         elif [ "$verdict" = CHANGES_REQUESTED ]; then cr_streak=1; last_cr_head="$vhead"
         else cr_streak=0; last_cr_head=""; fi
         [ "$cr_streak" -ge "$MAX_CR" ] && { echo "⛔ $cr_streak revues CHANGES_REQUESTED d'affilée sur $vhead → arrêt (ping-pong)."; exit 1; }
-        # GATE-HANDOFF : la main n'est cédée à l'humain QUE sur verdict PASS (le commit du handoff a
-        # été revu dans CE tour). Sinon : handoff RETIRÉ, flux CR normal — la codeuse corrige les
-        # blockers au tour suivant et re-déposera le handoff une fois la correction commitée.
+        # GATE-HANDOFF : la main n'est cédée à l'humain QUE sur verdict PASS RÉEL ancré sur le
+        # HEAD courant (M4 — un PASS sur un vieux sha ne valide pas les commits de tête non
+        # revus). Sinon : handoff RETIRÉ, flux CR normal — la codeuse corrige au tour suivant
+        # et re-déposera le handoff une fois la correction commitée.
         handoff_wait_review=0
         if is_true "$GATE_HANDOFF" && [ -f "$HANDOFF_FILE" ]; then
-          if [ "$verdict" = PASS ]; then
-            echo "⏸ verdict PASS sur le commit du handoff → gate humain (code VALIDÉ par la revue)."; STATE=handoff; break
+          if verdict_real_pass "$verdict" "$vhead"; then
+            echo "⏸ verdict PASS ancré sur HEAD ($vhead) → gate humain (code VALIDÉ par la revue)."; STATE=handoff; break
           else
             rm -f "$HANDOFF_FILE"
-            echo "↩ verdict $verdict sur le commit du handoff → $HANDOFF_FILE RETIRÉ : correction d'abord (flux CR normal), le handoff sera re-déposé après."
+            if [ "$verdict" = PASS ]; then
+              echo "↩ verdict PASS ancré sur $vhead ≠ HEAD courant → verdict PÉRIMÉ (commits de tête non revus) : $HANDOFF_FILE RETIRÉ, la revue tranchera sur le HEAD réel."
+            else
+              echo "↩ verdict $verdict sur le commit du handoff → $HANDOFF_FILE RETIRÉ : correction d'abord (flux CR normal), le handoff sera re-déposé après."
+            fi
           fi
         fi
       fi
-      # .done accepté seulement si la revue indépendante a validé (PASS).
-      if [ -f "$DONE_FILE" ] && [ "$verdict" != PASS ]; then
-        rm -f "$DONE_FILE"; echo "⚠ $DONE_FILE retiré : verdict=$verdict (≠ PASS) — pas de fin sans revue verte."
+      # .done accepté seulement si la revue indépendante a validé (PASS RÉEL ancré sur HEAD — M4 :
+      # un PASS périmé ne couvre pas les commits de tête, la fin serait déclarée sur du non-revu).
+      if [ -f "$DONE_FILE" ] && ! verdict_real_pass "$verdict" "$vhead"; then
+        rm -f "$DONE_FILE"
+        if [ "$verdict" = PASS ]; then
+          echo "⚠ $DONE_FILE retiré : verdict PASS ancré sur $vhead ≠ HEAD — verdict PÉRIMÉ, pas de fin sur des commits de tête non revus."
+        else
+          echo "⚠ $DONE_FILE retiré : verdict=$verdict (≠ PASS) — pas de fin sans revue verte."
+        fi
       fi
     else
       # Sans jq, impossible de valider le verdict → on ne se fie pas à un .done créé en mode contrôlé.
