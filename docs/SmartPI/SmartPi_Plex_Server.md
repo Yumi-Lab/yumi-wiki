@@ -2,14 +2,14 @@
 
 ![plex](/img/SmartPi/Plex/Plex_Logo.jpg)
 
-Plex is a client-server multimedia management program that lets you access movies, TV series, music and photos on the server wherever you are, as long as you have an Internet connection2. It consists of two parts
+Plex is a client-server multimedia management program that lets you access movies, TV series, music and photos on the server wherever you are, as long as you have an Internet connection. It consists of two parts
 
 - The Plex server, which can be installed on Windows, MacOS, Linux, FreeBSD and network storage servers. It contains and organizes files, and manages client connections.
 
 - The client receives content from the server via a web browser (via the Internet site) or an application for mobiles, televisions or home cinemas.
 
 
-A paying offer called "Plex Pass" is available, offering more metadata on music, offline synchronization for mobile devices, use of online storage providers3 (this option has been dropped), multi-user mode, parental control, access to high-quality trailers and partner promotions4. This offer is available for monthly (€4.99), annual (€39.99) or one-off (€119.99) billing.
+A paying offer called "Plex Pass" is available, offering more metadata on music, offline synchronization for mobile devices, use of online storage providers (this option has been dropped), multi-user mode, parental control, access to high-quality trailers and partner promotions. This offer is available for monthly (€4.99), annual (€39.99) or one-off (€119.99) billing.
 
 
 ## 1. Prerequisites
@@ -29,9 +29,12 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 ## 3. Install
 
+Download the latest Plex Media Server package for **Linux ARMv7 (armhf)** from the official Plex download page: <https://www.plex.tv/media-server-downloads/#plex-media-server> (choose your distribution: **Linux**, then **ARMv7**).
+
+Then install the downloaded package (replace the filename with the one you downloaded):
+
 ```
-wget https://downloads.plex.tv/plex-media-server-new/1.40.1.8227-c0dd5a73e/debian/plexmediaserver_1.40.1.8227-c0dd5a73e_armhf.deb
-dpkg -i plexmediaserver_1.40.1.8227-c0dd5a73e_armhf.deb
+sudo dpkg -i plexmediaserver_<version>_armhf.deb
 ```
 
 ## 4. connection to web interface

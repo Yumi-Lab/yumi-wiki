@@ -180,7 +180,7 @@
   depuis 2024 si la fonctionnalité est disponible (vérifie), corriger le H1 et
   "Emulastation" → "EmulationStation" partout (×7). — test :
   `grep -c "Emulastation" docs/SmartPI/SmartPi_Retro_Gaming.md` = 0 ; `./verify.sh` vert.
-- [ ] **Lot 27** `docs/SmartPI/SmartPi_Plex_Server.md` : remplacer la version `.deb` Plex
+- [x] **Lot 27** `docs/SmartPI/SmartPi_Plex_Server.md` : remplacer la version `.deb` Plex
   épinglée en dur (1.40.1) par un lien vers la page de téléchargement officielle Plex plutôt
   qu'une version qui deviendra fausse, nettoyer les artefacts de notes de bas de page
   résiduels ("connection2 providers3" et similaires). — test :
@@ -1402,3 +1402,37 @@
   du verdict PASS lot 25) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T10:55Z.
   Prochain pas : Lot 27 (SmartPi_Plex_Server.md : version .deb Plex épinglée 1.40.1,
   artefacts de notes de bas de page).
+
+- **2026-08-05 · Lot 27 — SmartPi_Plex_Server.md corrigé.** La section « 3. Install »
+  épinglait en dur `plexmediaserver_1.40.1.8227-c0dd5a73e_armhf.deb` (wget + dpkg) :
+  remplacée par un renvoi vers la page de téléchargement officielle Plex
+  (https://www.plex.tv/media-server-downloads/#plex-media-server, Linux → ARMv7) +
+  commande d'installation générique `sudo dpkg -i plexmediaserver_<version>_armhf.deb`.
+  Artefacts de notes de bas de page nettoyés : « Internet connection2 » → « connection »,
+  « providers3 » → « providers », « promotions4 » → « promotions » (3 occurrences réelles
+  dans le fichier). Hors-lot laissé tel quel : lien absolu wiki.yumi-lab.com ligne 17
+  (périmètre Lot 29, fichier non listé), typo « recommanded », titre « 4. connection ».
+  PROOF :
+  ```
+  $ grep -c "1\.40\.1" docs/SmartPI/SmartPi_Plex_Server.md; echo "rc=$?"
+  0
+  rc=1
+  $ grep -nE "connection[0-9]|providers[0-9]|promotions[0-9]" docs/SmartPI/SmartPi_Plex_Server.md; echo "rc2=$?"
+  rc2=1
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.47 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  (grep rc=1 = aucune occurrence, critère du lot atteint ; WARNING mkdocs = 5, inchangé,
+  tous préexistants sur d'autres pages.)
+  VARIED : contenu de SmartPi_Plex_Server.md uniquement.
+  HELD FIXED : venv mkdocs, mkdocs.yml, branche wiki-audit-fixes, base 3bd547c.
+  WHAT THIS DOES NOT SAY : ne prouve pas que la page de téléchargement Plex propose
+  actuellement un build ARMv7 (lien externe, contenu tiers hors de contrôle) ; ne couvre
+  pas la validité des prix Plex Pass cités plus haut dans la page (hors périmètre du lot).
+  ATTRIBUTION : grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3 (venv
+  `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base 3bd547c (= head du verdict PASS
+  lot 26) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T11:05Z.
+  Prochain pas : Lot 28 (SmartPi_Klipper.md : structurer avec de vrais titres ## N.,
+  dédupliquer avec SmartPi_Linux_flash_sd.md).
