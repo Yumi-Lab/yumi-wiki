@@ -55,7 +55,7 @@
   Journal listant celles qui restent externes), puis supprime le fichier "save". — test :
   fichier "save" supprimé ; `grep -c "githubusercontent\|raw=true" docs/SmartPI/SmartPi_Home_Assistant.md`
   a diminué ou est à 0 ; `./verify.sh` vert.
-- [ ] **Lot 8** Rattacher `docs/Yumi_L_Series/Yumi_L_Series_Troubleshooting.md` à la nav dans
+- [x] **Lot 8** Rattacher `docs/Yumi_L_Series/Yumi_L_Series_Troubleshooting.md` à la nav dans
   `mkdocs.yml` sous la section `3.2 DOCS` (contenu déjà fini, juste orphelin), en continuant
   la numérotation existante. — test : `grep "Yumi_L_Series_Troubleshooting" mkdocs.yml`
   retourne une ligne ; `./verify.sh` vert.
@@ -523,3 +523,32 @@
   (13/13 images vérifiées présentes dans le HTML — boucle grep sur chaque nom, toutes OK ;
   7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 8 (rattacher Yumi_L_Series_Troubleshooting.md à la nav).
+
+- **2026-08-05 · Lot 8 — Yumi_L_Series_Troubleshooting.md rattaché à la nav.** Entrée
+  `"3.2.12 Troubleshooting"` ajoutée sous `3.2 DOCS` (mkdocs.yml:130), à la suite de
+  `3.2.11 Accessories & Upgrade Packs` — numérotation existante poursuivie. Le fichier
+  `docs/Yumi_L_Series/Yumi_L_Series_Troubleshooting.md` existe déjà (2778 octets, contenu
+  fini, juste orphelin) ; seul `mkdocs.yml` est modifié (commit e3807cf, verdict PASS de la
+  contrôleuse — l'advisory demandait seulement la coche + ce bloc PROOF). `./verify.sh`
+  vert ; les 7 WARNING sont identiques à l'état d'avant lot et portent tous sur des
+  fichiers hors périmètre (`KlipperSmartPad/SmartPad_specifications.md`,
+  `SmartPI/SmartPi_Connect_Wifi.md`, `SmartPI/SmartPi_One_specifications.md`,
+  `SmartPI/Sensors&Modules/…` — liens `../../img/…` préexistants).
+  VARIED: entrée nav `mkdocs.yml` (+1 ligne) / HELD FIXED: pages, images, venv mkdocs,
+  harness.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur de la page dans la nav (gate humain en
+  fin de parcours) ; le contenu de la page elle-même n'a pas été retouché (hors lot).
+  **PROOF** :
+  ```
+  $ grep -n "Yumi_L_Series_Troubleshooting" mkdocs.yml
+  130:      - "3.2.12 Troubleshooting": Yumi_L_Series/Yumi_L_Series_Troubleshooting.md
+  $ ls -la docs/Yumi_L_Series/Yumi_L_Series_Troubleshooting.md
+  -rw-r--r--@ 1 nicolasmichaut  staff  2778 Jul 24 17:40 docs/Yumi_L_Series/Yumi_L_Series_Troubleshooting.md
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.64 seconds
+  OK: mkdocs build réussi
+  7
+  ```
+  → Prochain pas : Lot 9 (publier SmartPi_Flame_Sensor_Control.md — corriger la
+  contradiction de pin VCC, puis entrée nav sous 4.1 SMART PI ONE).
