@@ -144,7 +144,7 @@
 
 ## Priorité 8 — tutos laser hors-charte
 
-- [ ] **Lot 21** `docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md` : retirer le `<style>`/`<script>`
+- [x] **Lot 21** `docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md` : retirer le `<style>`/`<script>`
   inline, passer le contenu sécurité en `!!! danger`, traduire les résidus français restants,
   rapatrier les images `i.ibb.co` en local sous `/img/Yumi_L_Series/Tuto/...` si accessibles.
   — test : `grep -c "<style>\|i.ibb.co" docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md` = 0 ;
@@ -1089,3 +1089,52 @@
   `_snippets`.)
   Prochain pas : Lot 21 (Yumi_L_Safety.md : retirer `<style>`/`<script>`, `!!! danger`,
   traduction résidus FR, rapatriement images i.ibb.co).
+
+- **2026-08-05 · Lot 21 — `Yumi_L_Safety.md` remis au gabarit, images rapatriées.**
+  Page réécrite (172 → 33 lignes) : le bloc `<style>` (108 lignes de CSS produit/lightbox) et le
+  `<script>` de zoom maison supprimés — mkdocs-material fournit déjà le zoom via glightbox… sauf
+  que le front-matter de la page le désactive (`glightbox: false`) ; choix assumé de le LAISSER
+  désactivé car le contenu restant (3 vignettes d'accessoires vers wanhao-europe.com) n'a pas
+  vocation à être zoomé, et la règle « zéro `<style>` inline » prime. Le paragraphe sécurité est
+  passé en `!!! danger "Laser safety is not optional"` (titre honnête, pas inventé : il reformule
+  le corps). Résidus français traduits : commentaires `<!-- Produit N - Lunettes -->` partis avec
+  le HTML, alt « Lunettes de protection laser » et « Enclosure - Extracteur d'air » remplacés par
+  des alts anglais descriptifs du contenu réel (vérifié sur les images téléchargées : plateau
+  nid d'abeille, caisson avec extracteur, lunettes de protection). Les 3 images `i.ibb.co`
+  (hôte externe non pérenne) rapatriées sous `img/Yumi_L_Series/Tuto/` (nouveau dossier) —
+  téléchargement vérifié : JPEG 1000×1000 valides (`file`). Liens boutique wanhao-europe.com
+  conservés tels quels (liens externes légitimes, pas des dépendances de rendu). Largeurs bornées
+  à 300 px via `attr_list` (`{ width="300" }`), extension déjà active dans mkdocs.yml — les
+  vignettes 1000 px sinon pleine page. Aucune grille CSS recréée : aucun usage `grid cards`
+  dans le repo, Markdown simple suffit (règle KISS).
+  VARIED: docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md, img/Yumi_L_Series/Tuto/ (3 nouveaux JPEG) /
+  HELD FIXED: tout autre fichier du wiki, mkdocs.yml, css/extra.css, venv mkdocs.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  disponibilité future des URLs wanhao-europe.com (non retestées au-delà de leur reprise verbatim).
+  **PROOF** :
+  ```
+  $ grep -c "<style>\|i.ibb.co" docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md
+  0
+  $ grep -c "<script>" docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md
+  0
+  $ file img/Yumi_L_Series/Tuto/*.jpg
+  YLA4-HONEYCOMB400-X400.jpg: JPEG image data, progressive, precision 8, 1000x1000
+  YUMLENCLOBOX-11.jpg:        JPEG image data, progressive, precision 8, 1000x1000
+  lunette.jpg:                JPEG image data, Exif standard, progressive, precision 8, 1000x1000
+  $ grep -n "Extracteur\|Lunettes" docs/Yumi_L_Series/Tuto/Yumi_L_Safety.md; echo "rc=$?"
+  rc=1
+  $ ./verify.sh > /tmp/verify.log 2>&1; echo "verify rc=$?"; grep -c "^WARNING" /tmp/verify-mkdocs.log; tail -2 /tmp/verify.log
+  verify rc=0
+  5
+  INFO    -  Documentation built in 1.68 seconds
+  OK: mkdocs build réussi
+  ```
+  ATTRIBUTION : grep/file (BSD) macOS ; curl 8.x pour le rapatriement ; mkdocs 1.6.1 +
+  pymdown-extensions 10.21.3 (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base bb4136e
+  (head du verdict PASS couvrant le lot 20) ; macOS 15.2 arm64 ; user nicolasmichaut ;
+  2026-08-05T09:47Z.
+  (critère numérique : 0 occurrence `<style>`/`i.ibb.co`/`<script>` ; WARNING mkdocs = 5, identique
+  au lot 20 — les 3 lignes INFO « absolute link … left as is » ajoutées sur cette page sont le
+  comportement attendu de la convention `/img/...` imposée par GOAL.md, pas des warnings.)
+  Prochain pas : Lot 22 (même traitement sur Yumi_L_LaserGRBL.md — dont le `<a>` non fermé
+  ~ligne 206 — et Yumi_L_Cork_Engraving.md).
