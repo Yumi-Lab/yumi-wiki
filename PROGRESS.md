@@ -39,7 +39,7 @@
 
 ## Priorité 3 — orphelins et doublons de fichiers
 
-- [ ] **Lot 6** Supprimer `docs/KlipperSmartPad/Remote_multi_printers.md` (doublon identique
+- [x] **Lot 6** Supprimer `docs/KlipperSmartPad/Remote_multi_printers.md` (doublon identique
   à `docs/KlipperSmartPad/Tuto/Remote_multi_printers.md` — vérifie avec `diff` avant de
   supprimer). Dans la version conservée (`Tuto/`), corriger la commande invalide
   `nano cd ~/printer_data/config/KlipperScreen.conf` (scinder en `cd` puis `nano`, et vérifier
@@ -427,3 +427,43 @@
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 6 (suppression du doublon Remote_multi_printers.md + commande
   `nano cd …` invalide dans la version conservée).
+
+- **2026-08-05 · Lot 6 — doublon Remote_multi_printers.md supprimé, commande SSH réparée.**
+  `diff` confirmé vide entre `docs/KlipperSmartPad/Remote_multi_printers.md` et
+  `docs/KlipperSmartPad/Tuto/Remote_multi_printers.md` avant suppression (`git rm` de la
+  copie racine). La nav (`mkdocs.yml:202`) pointait déjà vers la version `Tuto/` conservée ;
+  aucune autre page ne référençait le chemin supprimé. Commande invalide
+  `nano cd ~/printer_data/config/KlipperScreen.conf` scindée en
+  `cd ~/printer_data/config` puis `nano KlipperScreen.conf`. Nom de fichier vérifié : le
+  tutoriel lui-même (méthode Mainsail, même fichier édité) et la doc upstream KlipperScreen
+  confirment `KlipperScreen.conf` dans `~/printer_data/config/` (chemin de recherche
+  standard KlipperScreen). Gate rendu réel (build mkdocs frais en mktemp) : les deux
+  commandes rendent dans le bloc `<code>`, `nano cd` a disparu, et la page supprimée ne
+  rend plus (`ls` sur le répertoire du build : No such file or directory).
+  VARIED: suppression d'un fichier md + 1 bloc code dans la version Tuto/ / HELD FIXED:
+  mkdocs.yml, venv mkdocs, reste des pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  la contradiction résiduelle ligne 9 (`klipperscreen.cfg` côté Mainsail vs
+  `KlipperScreen.conf` côté SSH) est hors scope du lot, non touchée.
+  **PROOF** :
+  ```
+  $ diff docs/KlipperSmartPad/Remote_multi_printers.md docs/KlipperSmartPad/Tuto/Remote_multi_printers.md && echo "DIFF EMPTY"
+  DIFF EMPTY
+  $ git rm docs/KlipperSmartPad/Remote_multi_printers.md
+  rm 'docs/KlipperSmartPad/Remote_multi_printers.md'
+  $ grep -rn "KlipperSmartPad/Remote_multi_printers" docs/ mkdocs.yml; echo "ref grep rc=$?"
+  ref grep rc=1   # aucune référence au chemin supprimé
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.56 seconds
+  OK: mkdocs build réussi
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    grep -o 'cd ~/printer_data/config' "$OUT/KlipperSmartPad/Tuto/Remote_multi_printers/index.html"; \
+    grep -o 'nano KlipperScreen.conf' "$OUT/KlipperSmartPad/Tuto/Remote_multi_printers/index.html"; \
+    ls "$OUT/KlipperSmartPad/Remote_multi_printers"
+  cd ~/printer_data/config
+  nano KlipperScreen.conf
+  ls: …/KlipperSmartPad/Remote_multi_printers: No such file or directory
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 7 (fusion SmartPi_Home_Assistant.md + fichier « save »).
