@@ -298,3 +298,41 @@
   ```
   (7 WARNING préexistants inchangés.)
   → Prochain pas : Lot 4 (listes fusionnées YUMI_C_SERIES.md + SmartPad_specifications.md).
+
+- **2026-08-05 · Lot 4 — CHECKPOINT wip (case NON cochée, verdict CHANGES_REQUESTED actif).**
+  L'itération précédente est morte au plafond de tour avec les édits Lot 4 sur disque non
+  committés. Règle du commit incrémental appliquée : `git status`/`git diff` d'abord, travail
+  valide conservé, vérifié, checkpoint-committé — SANS cocher la case (le verdict
+  `.loop/control/last-verdict.json` est CHANGES_REQUESTED, blocking = « do NOT code, review
+  re-run automatically » ; la revue couvrira ce commit au prochain passage).
+  Contenu vérifié : `docs/Yumi_C_Series/YUMI_C_SERIES.md` (tirets `- ` ajoutés aux 6 items
+  « No purge towers … Remote control » + ligne vide avant la liste) et
+  `docs/KlipperSmartPad/SmartPad_specifications.md` (tirets ajoutés à « Scalability: » et
+  « Increased stability: »). Gate rendu réel (build mkdocs frais en mktemp) : les items
+  rendent en `<li>` (liste loose → `<li><p>…`, d'où le premier grep `<li>Scalability` négatif
+  — vérifié au contexte, c'est bien un item de liste, pas un paragraphe fusionné).
+  VARIED: les 2 fichiers md / HELD FIXED: mkdocs.yml, venv mkdocs, reste des pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain) ; le reste du Lot 4
+  n'est pas relu en entier (seules les zones éditées sont vérifiées au rendu).
+  **PROOF** :
+  ```
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.57 seconds
+  OK: mkdocs build réussi
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    grep -c '<li>No purge towers</li>\|<li>Minimal waste</li>\|<li>Fast color switching</li>' \
+    "$OUT/Yumi_C_Series/YUMI_C_SERIES/index.html"
+  3
+  $ sed -n '3512,3518p' "$OUT/KlipperSmartPad/SmartPad_specifications/index.html"
+  </li>
+  <li>
+  <p>Energy savings: …</p>
+  </li>
+  <li>
+  <p>Scalability: Thanks to the open source nature of Klipper, …</p>
+  </li>
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : attendre la revue (verdict en cours de régénération) ; cocher Lot 4 et
+  enchaîner Lot 5 une fois le verdict PASS.

@@ -33,12 +33,13 @@ The YUMI Model C is a next-generation 3D printer built for speed, precision, and
 Powered by Klipper firmware, it combines ultra-fast motion control (up to 700 mm/s) with modular extrusion options: choose between the ChromaX12 head for up to 12 independent colors, or the high-temperature DirectDrive for faster printing with flexible and technical materials.
 
 Every detail was designed to solve the pain points of multicolor printing:
- No purge towers
- Minimal waste
- Fast color switching
- Clean filament transitions
- AI-assisted monitoring
- Remote control via the YUMI | lab app
+
+- No purge towers
+- Minimal waste
+- Fast color switching
+- Clean filament transitions
+- AI-assisted monitoring
+- Remote control via the YUMI | lab app
 
 Available in three build volumes (C235 / C335 / C435), the YUMI Model C adapts to every workspace — from your home studio to a professional lab.
 
