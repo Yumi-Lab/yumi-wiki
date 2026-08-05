@@ -162,7 +162,7 @@
   ×20 par des alts descriptifs réels, retirer ou mettre à jour le CTA Kickstarter s'il pointe
   vers une campagne terminée (vérifie l'URL avant de trancher). — test : plus de
   `<p align="center">` ni d'alt "yumiC" répété ; `./verify.sh` vert.
-- [ ] **Lot 24** `docs/3d_pen/index.md` : unifier les trois conventions de chemin d'image
+- [x] **Lot 24** `docs/3d_pen/index.md` : unifier les trois conventions de chemin d'image
   (`../img`, `/img`, `../../img` coexistent dans le même fichier) vers `/img/...` absolu,
   passer l'avertissement "Attention:" en gras vers `!!! warning`. — test :
   `grep -c "\.\./.*img/" docs/3d_pen/index.md` = 0 ; `./verify.sh` vert.
@@ -1283,3 +1283,37 @@
   arm64 ; user nicolasmichaut ; 2026-08-05T10:20Z.
   Prochain pas : Lot 24 (3d_pen/index.md : unification des chemins d'image vers /img absolu,
   « Attention: » gras → `!!! warning`).
+
+- **2026-08-05 · Lot 24 — 3d_pen/index.md : chemins d'image unifiés vers /img absolu,
+  warning admonition.** Les trois conventions (`../img`, `/img`, `../../img`) coexistaient ;
+  les deux `<img>` HTML (lignes 3 et 46) sont convertis en Markdown `![alt](/img/...)` avec
+  `{ width="..." }` (attr_list activé dans mkdocs.yml), alts descriptifs réels réécrits après
+  lecture des deux images (photo produit 3 couleurs + filaments ; stylo bleu avec exemple de
+  pot de fleurs dessiné) au lieu du générique « YUMI - 3D PEN » copié. L'image ligne 42 était
+  déjà en `/img/...` Markdown (inchangée). Le paragraphe « **Attention:** » devient
+  `!!! warning "Hot nozzle"` (texte conservé verbatim, indentation 4 espaces).
+  VARIED: docs/3d_pen/index.md (3 éditions ciblées) /
+  HELD FIXED: tout autre fichier, img/3d_pen/ (les 4 images existaient déjà), mkdocs.yml.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur (gate humain final) ; pertinence
+  éditoriale de la page (hors scope — correctif ciblé demandé par le lot uniquement).
+  **PROOF** :
+  ```
+  $ grep -c "\.\./.*img/" docs/3d_pen/index.md; grep -c "<img\|Attention:" docs/3d_pen/index.md; grep -n "img/" docs/3d_pen/index.md
+  0
+  0
+  3:![YUMI 3D Pen in pink, blue and white with colored filament strands](/img/3d_pen/YUMI-3D-PEN-1.webp){ width="400" }
+  42:![YUMI 3D PEN - Pack](/img/3d_pen/YUMI-3D-PEN-3.png)
+  46:![Blue YUMI 3D Pen with filament coil and a drawn flower pot example](/img/3d_pen/YUMI-3D-PEN-4.webp){ width="300" }
+  $ ./verify.sh 2>&1 | tail -2; grep -c 'WARNING' /tmp/verify-mkdocs.log
+  INFO    -  Documentation built in 1.51 seconds
+  OK: mkdocs build réussi
+  5
+  ```
+  (WARNING mkdocs = 5, inchangé depuis le lot 23 — tous préexistants sur d'autres pages ;
+  les 3 INFO « absolute link … left as is » sur 3d_pen/index.md sont le comportement attendu
+  de la convention `/img/...` comme au lot 23.)
+  ATTRIBUTION : grep (BSD) macOS ; mkdocs 1.6.1 + pymdown-extensions 10.21.3 (venv
+  `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base dbbd36 (= head du verdict PASS
+  lot 23) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T10:35Z.
+  Prochain pas : Lot 25 (SmartPI_OpenMediaVault.md : renumérotation des sections, 13 alts
+  « SSH » → descriptifs).
