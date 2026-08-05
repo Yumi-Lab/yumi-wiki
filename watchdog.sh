@@ -50,7 +50,14 @@ log() { echo "$(date '+%F %T') $*" >> "$LOG"; }
 # ── Idempotence : ne rien faire si terminé / en attente de gate / déjà en cours ─
 for d in "$DONE_FILE" "$DONE_FILE"-*; do [ -e "$d" ] && exit 0; done   # .done ou .done-v7 → fini
 [ -f "$HANDOFF_FILE" ] && exit 0                                        # gate humain en attente
-if pgrep -f "$LOOP_SCRIPT" >/dev/null 2>&1; then exit 0; fi             # tourne déjà → rien à faire
+# pgrep -f "$LOOP_SCRIPT" seul est un piège double : (1) matche N'IMPORTE QUEL
+# loop.sh d'un autre repo (d'où le filtre cwd) ; (2) matche aussi tout process
+# dont la ligne de commande MENTIONNE juste "loop.sh" sans l'exécuter — ex. un
+# monitor-watch.sh lancé avec LOOP_SCRIPT=loop.sh en argument matche le pattern
+# alors qu'il ne fait que surveiller. D'où le pattern resserré à l'invocation
+# réelle "bash ./loop.sh", pas une mention en passant.
+alive() { for p in $(pgrep -f "bash \./$LOOP_SCRIPT" 2>/dev/null); do d=$(lsof -a -p "$p" -d cwd -Fn 2>/dev/null | sed -n 's/^n//p'); [ "$d" = "$PWD" ] && return 0; done; return 1; }
+if alive; then exit 0; fi                                               # tourne déjà (CE repo) → rien à faire
 
 # ── La boucle est TOMBÉE → nettoie le verrou résiduel + relance (détaché) ─────
 [ -d "$MONITOR_DIR/.lock" ] && { rm -rf "$MONITOR_DIR/.lock" 2>/dev/null; log "verrou résiduel .lock nettoyé"; }
