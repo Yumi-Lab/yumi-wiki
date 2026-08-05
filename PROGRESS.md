@@ -123,7 +123,7 @@
 
 ## Priorité 7 — déduplication calibration / slicer / bloc capteurs
 
-- [ ] **Lot 18** Dans `docs/PRINTERS/SIDEWINDER_X1.md`, `SIDEWINDER_X2.md` et
+- [x] **Lot 18** Dans `docs/PRINTERS/SIDEWINDER_X1.md`, `SIDEWINDER_X2.md` et
   `PRUSA_MK3.md` : remplacer les sections de calibration recopiées (Extruder/Z-offset/PID)
   par un lien vers les pages sources `docs/KlipperSmartPad/Calibration/*.md`. Ne supprime
   aucune info spécifique à l'imprimante qui ne serait PAS déjà dans les pages Calibration —
@@ -952,3 +952,45 @@
   — convention du repo — et le lien relatif `SmartPi_Linux.md` est validé par le build, aucun
   warning de lien brisé.)
   Prochain pas : Lot 18 (déduplication calibration dans SIDEWINDER_X1/X2 et PRUSA_MK3).
+- **2026-08-05 · Lot 18 — calibration recopiée remplacée par des liens vers Calibration/ (X1, X2, MK3).**
+  Les sections Z-OFFSET (`G28`/`PROBE_CALIBRATE`/`TESTZ`/`ACCEPT`/`SAVE_CONFIG`) et Extruder
+  (`M83`, marquage 10/12 cm, `G1 E100 F200`, formule `rotation_distance`) des trois pages
+  PRINTERS étaient des copies quasi verbatim de `docs/KlipperSmartPad/Calibration/Z_Offset_calibration.md`
+  et `Extruder_calibration.md` → supprimées, remplacées par un bloc de 3 liens relatifs
+  `../KlipperSmartPad/Calibration/{PID,Z_Offset,Extruder}_calibration.md` sous le titre
+  « N. Calibrating your printer » de chaque page. Les sections BED PID / HOTEND PID sont
+  CONSERVÉES : elles décrivent les macros dashboard YumiOS (`BED PID 65`, `HOTEND 220 PID`),
+  une procédure absente des pages Calibration (qui utilisent `PID_CALIBRATE` en console) —
+  le lot impose de garder toute info non couverte par les pages sources, avec le lien en
+  complément (fait dans le bloc d'intro). Titres renumérotés en séquence contiguë
+  (X1 : 10→13, X2 : 13→17, MK3 : 11→14). Aucune info spécifique imprimante supprimée.
+  VARIED: contenu des 3 pages PRINTERS / HELD FIXED: pages Calibration (sources), mkdocs.yml,
+  images, venv mkdocs, autres pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  exactitude technique des macros dashboard YumiOS conservées.
+  **PROOF** :
+  ```
+  $ grep -c 'KlipperSmartPad/Calibration' docs/PRINTERS/SIDEWINDER_X1.md docs/PRINTERS/SIDEWINDER_X2.md docs/PRINTERS/PRUSA_MK3.md
+  docs/PRINTERS/SIDEWINDER_X1.md:3
+  docs/PRINTERS/SIDEWINDER_X2.md:3
+  docs/PRINTERS/PRUSA_MK3.md:3
+  $ grep -c 'TESTZ\|rotation_distance' docs/PRINTERS/SIDEWINDER_X1.md docs/PRINTERS/SIDEWINDER_X2.md docs/PRINTERS/PRUSA_MK3.md
+  docs/PRINTERS/SIDEWINDER_X1.md:0
+  docs/PRINTERS/SIDEWINDER_X2.md:0
+  docs/PRINTERS/PRUSA_MK3.md:0
+  $ grep -n '^## ' docs/PRINTERS/PRUSA_MK3.md | tail -4
+  181:## 11. Calibrating your printer
+  191:## 12. BED PID
+  203:## 13. HOTEND PID
+  213:## 14. Print
+  $ ./verify.sh 2>&1 | tail -2
+  INFO    -  Documentation built in 3.09 seconds
+  OK: mkdocs build réussi
+  ```
+  ATTRIBUTION : grep (BSD grep) 2.6.0-FreeBSD ; mkdocs 1.6.1
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base revue précédente e211afe
+  (head du dernier verdict PASS) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T09:00Z.
+  (critère numérique : 3 liens Calibration par page, 0 occurrence TESTZ/rotation_distance,
+  titres contigus ; WARNING mkdocs = 7, inchangés, tous dans des fichiers non touchés —
+  les nouveaux liens relatifs ne produisent aucun warning de lien brisé.)
+  Prochain pas : Lot 19 (déduplication profils OrcaSlicer).
