@@ -22,15 +22,9 @@ For the moment the following motherboards are configured:
 
 ### Orcaslicer
 
-Also use orcaslicer profiles for the D12 DUAL.
+Also use OrcaSlicer profiles for the D12 DUAL. The OrcaSlicer setup is described in the [OrcaSlicer profiles guide](SmartPad_Orcaslicer.md).
 
-Import profile
-
-Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer and import it. there's a version with bltouch (bl in name) and one without (no bl in name).
-
-It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
-
-Download It: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230DUAL.zip
+Download the DUAL profile for your printer — there is a version with BLTouch (`bl` in the name) and one without: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/D12-230DUAL.zip
 
 ### Next Coming soon
 
@@ -53,15 +47,9 @@ For the moment the following motherboards are configured:
 
 ### Orcaslicer
 
-Also use orcaslicer profiles for the D12 DUAL.
+Also use OrcaSlicer profiles for the D12 DUAL. The OrcaSlicer setup is described in the [OrcaSlicer profiles guide](SmartPad_Orcaslicer.md).
 
-Import profile
-
-Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer and import it. there's a version with bltouch (bl in name) and one without (no bl in name).
-
-It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
-
-Download It: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao_D12_Profils_Orcaslicer_DUAL.zip
+Download the DUAL profile (purge version) for your printer — there is a version with BLTouch (`bl` in the name) and one without: https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/Wanhao_D12_Profils_Orcaslicer_DUAL.zip
 
 ![Orca](/img/KlipperSmartPad/Orcaslicer/Orcaslicer002.png)
 

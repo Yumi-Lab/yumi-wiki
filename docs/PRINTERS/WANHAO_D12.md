@@ -35,16 +35,15 @@ To finalize, open your MAINSAIL INTERFACE at http://yumios.local or http://"smar
 
 Finally, go to the Machine menu and replace the `printer.cfg` with the one you just downloaded from GitHub. Please click to save & restart.
 
-## 3. Slicer profile
-## 4. Orcaslicer
-    
-Add the profile for the wanhao d12 300 to the predefined printers. then download the profile for your printer (230, 300, 500) and import it. there's a version with bltouch and one without.
+## 3. Orcaslicer
 
-It's an optimized profile. As a reminder, you need to adapt the profile to your 3d models.
+Install the D12 profiles in OrcaSlicer as described in the [OrcaSlicer profiles guide](../KlipperSmartPad/SmartPad_Orcaslicer.md).
 
-    https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
+Download the profile for your printer (230, 300, 500) — there is a version with BLTouch and one without:
 
-## 5. Print
+https://github.com/Yumi-Lab/yumi-wiki/raw/main/Profile_Slicer/Orcaslicer/WanhaoD12Orcaslicer.zip
+
+## 4. Print
 
 I recommend starting with a calibration cube. 
 

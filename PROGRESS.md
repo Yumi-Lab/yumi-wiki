@@ -130,7 +130,7 @@
   dans ce cas garde-la et ajoute juste le lien en complément. — test : les trois pages
   contiennent un lien vers `Calibration/`, la duplication de contenu générique a disparu ;
   `./verify.sh` vert.
-- [ ] **Lot 19** Dédupliquer les profils OrcaSlicer entre `SmartPad_Orcaslicer.md`,
+- [x] **Lot 19** Dédupliquer les profils OrcaSlicer entre `SmartPad_Orcaslicer.md`,
   `Smartpad_D12_dual.md` et `PRINTERS/WANHAO_D12.md` — garder `SmartPad_Orcaslicer.md` comme
   source, remplacer les copies par des liens. — test : `./verify.sh` vert, relecture des
   trois pages confirmant l'absence de triple duplication.
@@ -994,3 +994,46 @@
   titres contigus ; WARNING mkdocs = 7, inchangés, tous dans des fichiers non touchés —
   les nouveaux liens relatifs ne produisent aucun warning de lien brisé.)
   Prochain pas : Lot 19 (déduplication profils OrcaSlicer).
+- **2026-08-05 · Lot 19 — déduplication profils OrcaSlicer (source unique SmartPad_Orcaslicer.md).**
+  Le paragraphe générique « Add the profile for the wanhao d12 300 to the predefined printers…
+  It's an optimized profile… » était copié verbatim à 3 endroits : `PRINTERS/WANHAO_D12.md`
+  (§3/§4) et `KlipperSmartPad/Smartpad_D12_dual.md` (sous-sections « Orcaslicer » ×2, versions
+  sans/avec purge). `SmartPad_Orcaslicer.md` (source, §1-6 = procédure complète d'installation
+  des profils D12) reste la référence ; les copies sont remplacées par un lien relatif vers elle.
+  Infos spécifiques CONSERVÉES dans chaque page (absentes de la source) : variantes BLTouch /
+  modèles 230-300-500 dans WANHAO_D12.md, note `bl` dans le nom pour le DUAL, et les 3 liens de
+  téléchargement distincts (`WanhaoD12Orcaslicer.zip`, `D12-230DUAL.zip`,
+  `Wanhao_D12_Profils_Orcaslicer_DUAL.zip` — les 3 zips existent bien dans
+  `Profile_Slicer/Orcaslicer/`, vérifié par `ls`). Bonus structurel minimal : le titre vide
+  « ## 3. Slicer profile » de WANHAO_D12.md (collé à « ## 4. Orcaslicer ») est fusionné en
+  « ## 3. Orcaslicer » et « ## 5. Print » renuméroté « ## 4. Print » (titres contigus, comme lot 18).
+  VARIED: contenu de WANHAO_D12.md et Smartpad_D12_dual.md / HELD FIXED: SmartPad_Orcaslicer.md
+  (source, non modifiée), mkdocs.yml, zips Profile_Slicer/, venv mkdocs, autres pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  validité des URLs Dropbox/GitHub raw externes (non retéléchargées).
+  **PROOF** :
+  ```
+  $ grep -rn "Add the profile for the wanhao" docs/; echo "rc=$?"
+  rc=1
+  $ grep -rn "It's an optimized profile" docs/PRINTERS/WANHAO_D12.md docs/KlipperSmartPad/Smartpad_D12_dual.md; echo "rc=$?"
+  rc=1
+  $ ls Profile_Slicer/Orcaslicer/ | grep -iE "wanhao|d12"
+  D12-230-PRO-M2-MONO-DUAL-BETA.zip
+  D12-230DUAL.zip
+  WanhaoD12Orcaslicer.zip
+  Wanhao_D12-500_0.4_nozzle_DirectDrive_smartpad.zip
+  Wanhao_D12_Profils_Orcaslicer_DUAL.zip
+  profilesD1204032025.zip
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.50 seconds
+  OK: mkdocs build réussi
+  ```
+  ATTRIBUTION : grep (BSD grep) 2.6.0-FreeBSD ; mkdocs 1.6.1
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; base ac58d63 (head du verdict PASS
+  couvrant le lot 18) ; macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T09:10Z.
+  (critère numérique : 0 occurrence du texte dupliqué hors source, les 3 zips référencés
+  présents dans le repo ; WARNING mkdocs = 7, inchangés, aucun sur les fichiers touchés —
+  les nouveaux liens relatifs `../KlipperSmartPad/SmartPad_Orcaslicer.md` et
+  `SmartPad_Orcaslicer.md` ne produisent aucun warning de lien brisé.)
+  Prochain pas : Lot 20 (snippet partagé « Configuration of smartpi-gpio », 11 pages capteurs).
