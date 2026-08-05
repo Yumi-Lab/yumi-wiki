@@ -76,7 +76,7 @@
   l'intervalle avec les autres fiches du dossier plutôt que de le recopier tel quel.
   Ajoute-la à `mkdocs.yml` sous `2.3 Maintenance` et à `docs/c-series/maintenance/index.md`.
   — test : nouvelle page présente, listée en nav et dans l'index ; `./verify.sh` vert.
-- [ ] **Lot 12** Réconcilier les intervalles contradictoires entre `c-series/maintenance/`
+- [x] **Lot 12** Réconcilier les intervalles contradictoires entre `c-series/maintenance/`
   et `Maintenance/` AVANT de supprimer ce dernier : pour courroies et buse notamment,
   décide de l'intervalle correct (le plus prudent/conservateur des deux, sauf preuve
   contraire) et assure-toi que la version qui va survivre (`c-series/maintenance/`) porte
@@ -734,3 +734,50 @@
   → Prochain pas : Lot 12 (réconcilier les intervalles contradictoires entre
   c-series/maintenance/ et Maintenance/ — courroies et buse — avant suppression de
   l'ancien arbre).
+
+### 2026-08-05 — Lot 12 : réconciliation des intervalles de maintenance (courroies, buse)
+  Comparatif exhaustif des 5 paires de fiches en doublon entre `c-series/maintenance/`
+  (arbre survivant) et `docs/Maintenance/` (arbre à supprimer au Lot 13) :
+  - Courroies : `inspect-belts.md` disait « Every 90 days » ; `Maintenance/belt_tension_check.md`
+    disait 2 mois (usage occasionnel) / 3–4 semaines (usage intensif). CONTRADICTION réelle —
+    les deux bras de l'ancienne fiche sont plus fréquents que 90 jours. Décision (règle du lot :
+    le plus prudent/conservateur sauf preuve contraire) : intervalle retenu = bras intensif,
+    « Every 3–4 weeks (every 2 months at most for occasional use) » — aucune valeur inventée,
+    les deux bornes viennent de la table source. Fiche + ligne de l'index
+    `c-series/maintenance/index.md` mises à jour.
+  - Buse : `clean-nozzle.md` dit « Every 14 days (every 5 spools PLA/PETG, every 2 spools CF) » ;
+    `Maintenance/Clean_nozzle.md` dit 2 mois (occasionnel) / 1 mois (régulier) / 2 semaines
+    (intensif). La valeur survivante (14 jours) égale déjà le bras le plus prudent (intensif)
+    et ajoute une condition par bobine plus fine — AUCUN changement nécessaire, valeur conservée.
+  - Plateau : 7 jours côté c-series vs weekly/« every 1 week » côté Maintenance — cohérent, rien.
+  - Lubrification X/Y : 30 days vs 1 mois/300 h — cohérent. Z : 90 days vs 3 mois/500 h — cohérent.
+  - Ventilateurs : harmonisé au Lot 11 (30/14 jours) vs monthly/2 weeks — cohérent.
+  Gate rendu réel (build mkdocs frais en mktemp) : la fiche courroies rend le nouvel intervalle,
+  zéro occurrence résiduelle de « Every 90 days » sur sa page, l'index porte « Every 3–4 weeks »,
+  la fiche buse rend toujours son intervalle 14 jours inchangé.
+  VARIED: 1 ligne d'intervalle (fiche + index) / HELD FIXED: venv mkdocs, autres fiches, harness
+  (même verify.sh, même machine).
+  WHAT THIS DOES NOT SAY: les intervalles retenus sont une réconciliation éditoriale entre les
+  deux arbres existants (bras le plus prudent), pas une spec constructeur revérifiée ; rendu
+  visuel navigateur final réservé au gate humain de fin de parcours.
+  **PROOF** :
+  ```
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.59 seconds
+  OK: mkdocs build réussi
+  7
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    P="$OUT/c-series/maintenance/inspect-belts/index.html"; \
+    grep -o 'Every 3–4 weeks (every 2 months at most for occasional use)' "$P" | head -1; \
+    grep -c 'Every 90 days' "$P"; \
+    grep -o 'Every 3–4 weeks' "$OUT/c-series/maintenance/index.html" | head -1; \
+    grep -o 'Every 14 days (every 5 spools PLA/PETG, every 2 spools CF)' "$OUT/c-series/maintenance/clean-nozzle/index.html" | head -1
+  Every 3–4 weeks (every 2 months at most for occasional use)
+  0
+  Every 3–4 weeks
+  Every 14 days (every 5 spools PLA/PETG, every 2 spools CF)
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 13 (retirer la section 8. Maintenance de mkdocs.yml, supprimer
+  docs/Maintenance/, renuméroter 9. YUMI STL → 8.).

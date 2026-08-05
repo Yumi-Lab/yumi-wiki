@@ -1,6 +1,6 @@
 # Inspect Belts
 
-**Interval:** Every 90 days  
+**Interval:** Every 3–4 weeks (every 2 months at most for occasional use)  
 **Difficulty:** Medium  
 **Time:** 10 minutes  
 **Applies to:** C235, C335, C435
