@@ -83,7 +83,7 @@
   la bonne valeur. Note ta décision et pourquoi dans le Journal. — test : la fiche
   `c-series/maintenance/inspect-belts.md` et `clean-nozzle.md` portent l'intervalle retenu,
   documenté dans le Journal ; `./verify.sh` vert.
-- [ ] **Lot 13** Retirer la section `8. Maintenance` de `mkdocs.yml` (dont les emojis
+- [x] **Lot 13** Retirer la section `8. Maintenance` de `mkdocs.yml` (dont les emojis
   🛠️🧼⚖️💨 — seule section à en avoir), supprimer le dossier `docs/Maintenance/` (5 fichiers,
   maintenant redondant avec `c-series/maintenance/`), et renuméroter les sections `9. YUMI STL`
   → `8. YUMI STL` en conséquence. Vérifie qu'aucune page n'a de lien interne cassé vers
@@ -781,3 +781,46 @@
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 13 (retirer la section 8. Maintenance de mkdocs.yml, supprimer
   docs/Maintenance/, renuméroter 9. YUMI STL → 8.).
+
+### 2026-08-05 — Lot 13 : suppression de la section 8. Maintenance (ancien arbre)
+  Section « 8. Maintenance » (5 entrées, seules avec emojis 🛠️🧼⚖️💨) retirée de
+  `mkdocs.yml`, dossier `docs/Maintenance/` (5 fichiers, redondant avec
+  `c-series/maintenance/` après les lots 11-12) supprimé via `git rm -r`, sections
+  renumérotées `9. YUMI STL` → `8. YUMI STL` et `9.1` → `8.1`. Audit préalable :
+  aucun lien interne vers `Maintenance/*.md` dans `docs/` (les entrées nav
+  « 2.3 Maintenance » et « 3.2.9 Diode Laser Maintenance » pointent vers
+  `c-series/maintenance/` et `Yumi_L_Series/`, hors périmètre — inchangées).
+  Gate rendu réel (build mkdocs frais en mktemp) : dossier `Maintenance/` absent du
+  site généré, nav porte « 8. YUMI STL », zéro occurrence résiduelle des anciennes
+  entrées Maintenance, la page YUMI STL rend toujours. Nb : le label « 8.1 **YUMI
+  STL…** » contient du Markdown brut — préexistant, traité au Lot 30, pas ici.
+  VARIED: 6 lignes nav mkdocs.yml + 5 fichiers supprimés / HELD FIXED: venv mkdocs,
+  autres pages, harness (même verify.sh, même machine).
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de
+  parcours) ; le contenu des 5 fiches supprimées survit dans
+  `c-series/maintenance/` (réconcilié aux lots 11-12).
+  **PROOF** :
+  ```
+  $ grep -c "Maintenance/" mkdocs.yml
+  0
+  $ ls docs/Maintenance/
+  ls: docs/Maintenance/: No such file or directory
+  $ grep -rn "](.*Maintenance/" docs/ ; echo "links rc=$?"
+  links rc=1
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.50 seconds
+  OK: mkdocs build réussi
+  7
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    ls "$OUT/Maintenance" 2>&1 | head -1; \
+    grep -o '8\. YUMI STL' "$OUT/index.html" | head -1; \
+    grep -c 'Maintenance Guide: Lubricating' "$OUT/index.html"; \
+    ls "$OUT/Yumi_stl/Printable_Accessories_and_Parts/index.html"
+  ls: …/Maintenance: No such file or directory
+  8. YUMI STL
+  0
+  …/Yumi_stl/Printable_Accessories_and_Parts/index.html
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 14 (compléter docs/PenScreen/index.md, stub de 7 lignes).

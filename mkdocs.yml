@@ -211,12 +211,6 @@ nav:
       - "7.14.3 Klipper Sidewinder X2 installation": PRINTERS/SIDEWINDER_X2.md
       - "7.14.4 Klipper Sidewinder X1 installation": PRINTERS/SIDEWINDER_X1.md
       - "7.14.5 Klipper Prusa Mk3 installation": PRINTERS/PRUSA_MK3.md
-  - "8. Maintenance":
-    - "8.1 🛠️ Maintenance Guide: Lubricating the X/Y/Z Axes": Maintenance/Lubricating_the_XYZ_Axes.md
-    - "8.2 🧼 Nozzle Cleaning – Maintenance Guide": Maintenance/Clean_nozzle.md
-    - "8.3 ⚖️ Belt Tension Check – Maintenance Guide": Maintenance/belt_tension_check.md
-    - "8.4 🧼 Build Plate Cleaning – Maintenance Guide": Maintenance/build_plate_cleaning.md
-    - "8.5 💨 Fan Cleaning – Maintenance Guide": Maintenance/fan_cleaning.md
-  - "9. YUMI STL":
-    - "9.1 **YUMI STL - 3D Printable Accessories and Parts**": Yumi_stl/Printable_Accessories_and_Parts.md
+  - "8. YUMI STL":
+    - "8.1 **YUMI STL - 3D Printable Accessories and Parts**": Yumi_stl/Printable_Accessories_and_Parts.md
 
