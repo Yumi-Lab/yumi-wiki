@@ -44,15 +44,4 @@ The app will start scanning for the Klipper printer connected to the same local 
 If a printer is found, simply click the "Link" button and the app will do the rest for you.
 
 
-## Link Your Printer Manually With QRcode
-
-
-
-
-
-
-
-
-
-
 

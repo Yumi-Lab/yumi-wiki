@@ -98,7 +98,7 @@
   produit (bannière si dispo, sinon titre + une ou deux phrases honnêtes) plutôt que de
   laisser un stub silencieux — ne fabrique aucune spécification. — test : page > 7 lignes,
   ne contient aucune valeur inventée (relis-toi) ; `./verify.sh` vert.
-- [ ] **Lot 15** Terminer `docs/KlipperSmartPad/SmartPad_Yumi_App.md`, qui se termine sur le
+- [x] **Lot 15** Terminer `docs/KlipperSmartPad/SmartPad_Yumi_App.md`, qui se termine sur le
   titre "Link Your Printer Manually With QRcode" sans contenu derrière. Cherche le contexte
   (`grep -rn "QRcode\|QR code" docs/KlipperSmartPad/`) ; si l'info n'existe nulle part dans
   le repo, referme la section proprement (retire le titre orphelin ou ajoute une phrase
@@ -855,3 +855,40 @@
   (INFO préexistant sur la ligne logo, déjà présente dans le stub ; règle projet = chemins
   `/img/...` absolus. 7 WARNING préexistants inchangés, hors fichiers touchés.)
   Prochain pas : Lot 15 (terminer `SmartPad_Yumi_App.md`, titre QRcode orphelin).
+
+- **2026-08-05 · Lot 15 — titre orphelin "QRcode" retiré de SmartPad_Yumi_App.md.** La page
+  se terminait sur `## Link Your Printer Manually With QRcode` suivi de 11 lignes vides, sans
+  aucun contenu. Vérifications avant action : le titre est né vide (copie du fichier depuis
+  `SmartPad_Orcaslicer.md` au commit 557d335, jamais rempli ensuite — `git log -p -S "QRcode"`
+  ne montre aucune version avec du contenu), et `grep -rln "QRcode\|QR code\|QRCode\|qrcode"
+  docs/ img/` ne retourne rien d'exploitable (la seule autre occurrence,
+  `docs/c-series/maintenance/index.md:26`, parle de scanner un QR code de guide de maintenance,
+  sans rapport avec le linking d'imprimante). Aucune étape inventée : conformément au lot, le
+  titre orphelin et les lignes vides sont retirés ; la page se termine désormais sur la section
+  complète "Launch the Link Printer wizard".
+  VARIED: contenu de `docs/KlipperSmartPad/SmartPad_Yumi_App.md` / HELD FIXED: mkdocs.yml,
+  images, venv mkdocs, autres pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  existence éventuelle d'une fonction QR dans l'app mobile (hors repo, non vérifiable ici).
+  **PROOF** :
+  ```
+  $ grep -rln "QRcode\|QR code\|QRCode\|qrcode" docs/ img/
+  docs//KlipperSmartPad/SmartPad_Yumi_App.md
+  docs//c-series/maintenance/index.md
+  $ grep -n "QR" docs/c-series/maintenance/index.md
+  26:3. Tap **"Guide"** next to any task to scan a QR code with your phone for step-by-step instructions
+  $ tail -2 docs/KlipperSmartPad/SmartPad_Yumi_App.md
+  The app will start scanning for the Klipper printer connected to the same local network.
+  If a printer is found, simply click the "Link" button and the app will do the rest for you.
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log; grep -c "WARNING" /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 1.53 seconds
+  OK: mkdocs build réussi
+  7
+  ```
+  ATTRIBUTION : grep (BSD grep) 2.6.0-FreeBSD ; mkdocs 1.6.1
+  (venv `~/.cache/yumi-wiki-mkdocs-venv`, Python 3.14) ; commit c9c1eaa1330e8795f6016294a60194b4a5b4eca3 ;
+  macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T08:30Z.
+  (7 WARNING préexistants inchangés ; INFO préexistants sur les liens absolus `/img/...` de la
+  page touchée — règle projet = chemins absolus, non modifiés.)
+  Prochain pas : Lot 16 (compléter `docs/index.md`, promesse de comparaison Raspberry Pi).
