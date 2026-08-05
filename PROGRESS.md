@@ -17,7 +17,7 @@
 
 ## Priorité 2 — rendus cassés (impact immédiat, correctifs courts)
 
-- [ ] **Lot 2** Corriger les fences `'''` → ```` ``` ```` dans `docs/PRINTERS/SIDEWINDER_X1.md`
+- [x] **Lot 2** Corriger les fences `'''` → ```` ``` ```` dans `docs/PRINTERS/SIDEWINDER_X1.md`
   (ligne ~157-159) et `docs/PRINTERS/SIDEWINDER_X2.md` (ligne ~204-206). — test :
   `grep -c "'''" docs/PRINTERS/SIDEWINDER_X1.md docs/PRINTERS/SIDEWINDER_X2.md` = 0 partout ;
   `./verify.sh` vert.
@@ -234,3 +234,35 @@
   chemins `/img/...` imposés par GOAL.md — même pattern préexistant sur tout le repo, pas un
   warning nouveau ; 7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 2 (fences `'''` SIDEWINDER_X1/X2).
+
+- **2026-08-05 · Lot 2 — fences `'''` réparées (SIDEWINDER_X1/X2).** Remplacé les deux blocs
+  `''' ls /dev/serial/by-id/* '''` (X1 lignes 157-159, X2 lignes 204-206) par des fences
+  ```` ``` ```` standard, convention déjà utilisée partout dans ces deux fichiers. Gate réel :
+  build mkdocs frais dans un répertoire temporaire (verify.sh builde dans un mktemp, le
+  `site/` du repo est un artefact figé du 26 juil. — ne PAS s'y fier) ; les deux pages
+  rendent désormais le bloc en `<div class="language-text highlight"><pre><code>` et ne
+  contiennent plus aucun `'''`.
+  VARIED: fences des 2 fichiers / HELD FIXED: mkdocs.yml, venv mkdocs, reste du contenu des pages.
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur final (gate humain en fin de parcours) ;
+  le `site/` commité du repo reste figé (régénéré au déploiement).
+  **PROOF** :
+  ```
+  $ grep -c "'''" docs/PRINTERS/SIDEWINDER_X1.md docs/PRINTERS/SIDEWINDER_X2.md
+  docs/PRINTERS/SIDEWINDER_X1.md:0
+  docs/PRINTERS/SIDEWINDER_X2.md:0
+  $ ./verify.sh > /tmp/verify-mkdocs.log 2>&1; echo "verify rc=$?"; tail -2 /tmp/verify-mkdocs.log
+  verify rc=0
+  INFO    -  Documentation built in 3.75 seconds
+  OK: mkdocs build réussi
+  $ OUT=$(mktemp -d); ~/.cache/yumi-wiki-mkdocs-venv/bin/mkdocs build -d "$OUT" -q; \
+    grep -n 'by-id' "$OUT/PRINTERS/SIDEWINDER_X1/index.html" | tail -1; \
+    grep -n 'by-id' "$OUT/PRINTERS/SIDEWINDER_X2/index.html" | head -1; \
+    grep -c "'''" "$OUT/PRINTERS/SIDEWINDER_X1/index.html" "$OUT/PRINTERS/SIDEWINDER_X2/index.html"
+  3757:<div class="language-text highlight"><pre><span></span><code>…ls /dev/serial/by-id/*
+  3856:<div class="language-text highlight"><pre><span></span><code>…ls /dev/serial/by-id/*
+  …/SIDEWINDER_X1/index.html:0
+  …/SIDEWINDER_X2/index.html:0
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
+  → Prochain pas : Lot 3 (titre `###SmartPione Cases` + `<img width="1000">` dans
+  SmartPi_One_specifications.md).

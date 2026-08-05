@@ -201,9 +201,9 @@ Restart the Pad and connect the printer to it with the correct USB cable.
 Connect your printer to one of the PAD's USB ports.
 
 Connect via SSH with MobaXterm, then enter the following command to retrieve the USB serial from the motherboard:
-'''
+```
 ls /dev/serial/by-id/*
-'''
+```
 Your id will be different from mine. You should see the USB id appear like this:
 
 ![MID](/img/Printers/Artillery/X2/ID01.png)
