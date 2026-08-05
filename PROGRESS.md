@@ -1556,7 +1556,7 @@
   OK: mkdocs build réussi
   $ grep -c 'WARNING' /tmp/verify-mkdocs.log
   5
-  $ git diff --stat main...wiki-audit-fixes | tail -1
+  $ git diff --stat main...wiki-audit-fixes -- docs/ | tail -1
    50 files changed, 506 insertions(+), 2314 deletions(-)
   ```
   VARIED : création de `.gate-handoff` (gitignoré) + cette entrée de Journal.
@@ -1568,3 +1568,27 @@
   macOS 15.2 arm64 ; user nicolasmichaut ; 2026-08-05T11:25Z.
   Prochain pas : STOP — attente validation humaine (suppression de `.gate-handoff`), puis
   création de `.done` au tour suivant.
+
+- **2026-08-05 · GATE PASS (human) + correctif advisory verdict f3c2f58.**
+  `.gate-handoff` supprimé par l'humain → relecture visuelle validée (DoD gate final rempli).
+  Advisory du verdict PASS f3c2f58 corrigé : la commande PROOF du diff omettait `-- docs/`,
+  le chiffre cité (50 fichiers) ne se reproduisait pas tel quel — commande réparée, sortie
+  identique. Aucun changement sous `docs/` : le build ne peut pas régresser, vérifié quand même.
+  PROOF :
+  ```
+  $ ls .gate-handoff .done
+  ls: .done: No such file or directory
+  ls: .gate-handoff: No such file or directory
+  $ ./verify.sh 2>&1 | tail -2
+  INFO    -  Documentation built in 1.54 seconds
+  OK: mkdocs build réussi
+  $ git diff --stat main...wiki-audit-fixes -- docs/ | tail -1
+   50 files changed, 506 insertions(+), 2314 deletions(-)
+  ```
+  VARIED : PROGRESS.md uniquement (commande PROOF corrigée + cette entrée).
+  HELD FIXED : branche wiki-audit-fixes, docs/ inchangé depuis f3c2f58, mkdocs 1.6.1
+  (venv ~/.cache/yumi-wiki-mkdocs-venv, Python 3.14) ; macOS 15.2 arm64 ; user
+  nicolasmichaut ; 2026-08-05T12:22Z.
+  WHAT THIS DOES NOT SAY : ne re-prouve pas le rendu visuel — il a été validé par l'humain
+  (suppression du handoff), pas re-testé ici.
+  Prochain pas : verdict PASS sur ce commit → création de `.done` au tour suivant.
