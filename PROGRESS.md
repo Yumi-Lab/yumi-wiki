@@ -669,11 +669,11 @@
   → Prochain pas : attendre le verdict du contrôleur sur ce commit fix ; si PASS,
   reprendre Lot 11.
 - [2026-08-05] **FIX blocker verdict CHANGES_REQUESTED (config failover, head 0cd929d)** —
-  le message du commit `0cd929d` nommait des outils IA (« Kimi » x4, « Claude » x1) en
-  violation de la règle absolue de GOAL.md « aucune mention d'outil IA nulle part ». Message
-  réécrit via `git commit --amend` en termes génériques (« provider principal » / « provider
-  de secours ») sans toucher au contenu du diff (`loop.conf` seul, inchangé). Nouveau head :
-  `522c314`.
+  le message du commit `0cd929d` nommait des outils IA (deux noms distincts, cinq
+  occurrences au total) en violation de la règle absolue de GOAL.md « aucune mention
+  d'outil IA nulle part ». Message réécrit via `git commit --amend` en termes génériques
+  (« provider principal » / « provider de secours ») sans toucher au contenu du diff
+  (`loop.conf` seul, inchangé). Nouveau head : `522c314`.
   VARIED: message de commit uniquement / HELD FIXED: diff de `loop.conf`, working tree,
   harness (même verify.sh, même machine).
   WHAT THIS DOES NOT SAY: rien sur la validité fonctionnelle du mécanisme de failover
