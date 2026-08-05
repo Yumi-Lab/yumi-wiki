@@ -2,7 +2,7 @@
 
 In this guide, we will demonstrate how to read the values from an IR presence detector connected to the **Smart Pi One**, using the **SmartPi-GPIO** library.
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_1.png" width="200" alt="HC-SR501 PIR presence detector module">
+![HC-SR501 PIR presence detector module](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_1.png){ width="200" }
 
 We will cover the following methods:
 - **CLI commands**
@@ -20,14 +20,14 @@ We will cover the following methods:
 
 The IR presence detector typically has three pins: **VCC**, **GND**, and **DOUT** (digital output).
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_5.png" width="450" alt="HC-SR501 pinout: GND, High/Low Output and +Power pins, with sensitivity and time delay adjustments">
+![HC-SR501 pinout: GND, High/Low Output and +Power pins, with sensitivity and time delay adjustments](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_5.png){ width="450" }
 
 
 - **VCC** connects to **3.3V (Pin 1)**.
 - **GND** connects to **Ground (Pin 6)**.
 - **DOUT** connects to **GPIOG11 (Pin 7)** to read the presence detection signal.
 
-<img src="../../../img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_2.png" width="520" alt="IR Presence Detector Wiring Diagram">
+![Wiring diagram: HC-SR501 VCC, GND and DOUT connected to the Smart Pi One header](/img/SmartPi/Sensors&Modules/SmartPi_IR_Presence_Detector_Control/SmartPi_IR_Presence_Detector_Control_2.png){ width="520" }
 
 | **Pin Number** | **Pin Name**          | **Function**          |
 |----------------|-----------------------|-----------------------|

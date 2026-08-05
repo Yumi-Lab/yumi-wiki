@@ -639,3 +639,32 @@
   (7 WARNING préexistants inchangés, tous hors fichiers touchés.)
   → Prochain pas : Lot 11 (page fan_cleaning.md au format c-series/maintenance + nav
   2.3 Maintenance + index du dossier).
+- [2026-08-05] **FIX blocker verdict CHANGES_REQUESTED (Lot 10, head 2c777c1)** — les trois
+  `<img src="../../../img/...">` relatifs de
+  `docs/SmartPI/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md` (lignes 5, 23, 30)
+  convertis en images Markdown absolues `/img/...` avec `{ width="N" }` (idiome du repo,
+  attr_list activé), largeurs 200/450/520 et alts préservés ; l'alt de _2 (« IR Presence
+  Detector Wiring Diagram », générique) précisé en « Wiring diagram: HC-SR501 VCC, GND and
+  DOUT connected to the Smart Pi One header » (règle alt descriptif de GOAL.md). Aucune
+  autre ligne touchée — scope limité au blocker.
+  VARIED: 3 balises <img> → 3 images Markdown absolues / HELD FIXED: venv mkdocs, nav,
+  autres pages, harness (même verify.sh, même machine).
+  WHAT THIS DOES NOT SAY: rendu visuel navigateur (gate humain final) ; les alts génériques
+  « Smart Pi One - IR Presence Detector » (lignes 97, 149) et l'image réutilisée de
+  Button_Control (ligne 72) relèvent des advisories non bloquantes — hors scope sous
+  CHANGES_REQUESTED.
+  **PROOF** :
+  ```
+  $ grep -c '<img src="../../../img/' 'docs/SmartPI/Sensors&Modules/SmartPi_IR_Presence_Detector_Control.md'; echo "grep rc=$?"
+  0
+  grep rc=1
+  $ ./verify.sh 2>&1 | tail -2; echo "verify rc=${PIPESTATUS[0]}"
+  INFO    -  Documentation built in 1.58 seconds
+  OK: mkdocs build réussi
+  verify rc=0
+  $ grep -c 'WARNING' /tmp/verify-mkdocs.log
+  7
+  ```
+  (7 WARNING préexistants inchangés, tous hors fichier touché.)
+  → Prochain pas : attendre le verdict du contrôleur sur ce commit fix ; si PASS,
+  reprendre Lot 11.
