@@ -118,7 +118,7 @@ sha256sum -c Yumi-smartpi1-trixie-debian13-server-*.img.xz.sha256
 
 [![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg){ .banner }](OS/SmartPi_DietPi.md)
 
-Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_DietPi.md) trades the desktop and part of the base system for memory: about **293 MB** compressed and roughly **87 MB of RAM at idle**, with a first boot that configures itself with no screen and no keyboard. Headless only, and currently a release candidate.
+Built from the Debian server image (Trixie by default, Forky preview also available), the [DietPi variant](OS/SmartPi_DietPi.md) trades the desktop and part of the base system for memory: about **293 MB** compressed and roughly **87 MB of RAM at idle**, with a first boot that configures itself with no screen and no keyboard. Headless only, and currently a release candidate.
 
 ---
 
@@ -128,7 +128,7 @@ Built from the Debian 13 trixie server image, the [DietPi variant](OS/SmartPi_Di
 |---|---|---|---|---|
 | **Status** | :material-star: Current stable | Previous stable | Current LTS | Release candidate |
 | **Best for** | New installations | Proven stability | Ease of use | Low memory footprint |
-| **Support** | Until 2028 (+ LTS 2030) | Until June 2028 | LTS until 2029 | Follows Debian 13 |
+| **Support** | Until 2028 (+ LTS 2030) | Until June 2028 | LTS until 2029 | Follows its Debian base |
 | **Desktop available** | :material-check-bold: Yes | :material-check-bold: Yes | :material-check-bold: Yes | :material-close-thick: No |
 | **RAM at idle** (measured) | **109 MB** server · 378 MB desktop | **105 MB** server | **104 MB** server · 352 MB desktop | ~87 MB (vendor figure) |
 | **Package manager** | apt | apt | apt | apt + `dietpi-software` |

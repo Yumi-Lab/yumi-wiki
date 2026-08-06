@@ -2,7 +2,7 @@
 
 ![DietPi for Smart Pi One](/img/SmartPi/OS/dietpi-banner.svg){ .off-glb .banner }
 
-[DietPi](https://dietpi.com/){ target=_blank } is a minimal Debian distribution for single-board computers: a trimmed-down system, a curated software catalog, and a set of menu-driven configuration tools. YUMI-LAB publishes a DietPi variant for the **Smart Pi One** and the **Smart Pad**, built from our own Debian 13 (trixie) server image.
+[DietPi](https://dietpi.com/){ target=_blank } is a minimal Debian distribution for single-board computers: a trimmed-down system, a curated software catalog, and a set of menu-driven configuration tools. YUMI-LAB publishes a DietPi variant for the **Smart Pi One** and the **Smart Pad**, built from our own Debian server image — **Trixie (13)** by default, with a **Forky (14) preview** build also available.
 
 The result is about **293 MB compressed** and idles at roughly **87 MB of RAM** — against about 105 MB for the Armbian server image, and a third of its download size.
 
@@ -15,11 +15,11 @@ The result is about **293 MB compressed** and idles at roughly **87 MB of RAM** 
 
 ## 1. What it is, and why
 
-The image starts from our [SmartPi-armbian](https://github.com/Yumi-Lab/SmartPi-armbian/releases){ target=_blank } **Debian 13 trixie server** build and runs the official DietPi installer over it. You keep the YUMI hardware stack (custom U-Boot, overclocked kernel, Smart Pi One device tree) and gain the DietPi userland:
+The image starts from our [SmartPi-armbian](https://github.com/Yumi-Lab/SmartPi-armbian/releases){ target=_blank } **Debian server** build (Trixie or Forky) and runs the official DietPi installer over it. You keep the YUMI hardware stack (custom U-Boot, overclocked kernel, Smart Pi One device tree) and gain the DietPi userland:
 
 | Layer | What you get |
 |---|---|
-| **Base system** | Debian 13 (trixie), armhf — stripped of everything a headless board does not need |
+| **Base system** | Debian 13 (trixie) or Debian 14 (forky, preview), armhf — stripped of everything a headless board does not need |
 | **Memory** | About **87 MB RAM at idle**, logs in RAM (ramlog) instead of on the SD card — a desktop image uses several hundred MB more |
 | **Image size** | About **293 MB** compressed, expands to fill the card on first boot |
 | **Software** | `dietpi-software` — a catalog of ready-to-run, pre-optimised installs |
@@ -42,11 +42,12 @@ On a board with 1 GB of RAM and an Allwinner H3, that headroom is the whole poin
 
 <!-- BEGIN AUTO: dietpi-release -->
 
-| File | Size | Release |
-|---|---|---|
-| [`Yumi-smartpi1-trixie-debian13-dietpi-2026-08-06-0709.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc5/Yumi-smartpi1-trixie-debian13-dietpi-2026-08-06-0709.img.xz){ target=_blank } | 308 MB | v1.8.0-rc5 — 2026-07-31 |
+| Distribution | File | Size | Release |
+|---|---|---|---|
+| **Debian 13 Trixie** | [`Yumi-smartpi1-trixie-debian13-dietpi-2026-08-06-0709.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc5/Yumi-smartpi1-trixie-debian13-dietpi-2026-08-06-0709.img.xz){ target=_blank } | 308 MB | v1.8.0-rc5 — 2026-07-31 |
+| **Debian 14 Forky (preview)** | [`Yumi-smartpi1-forky-debian14-dietpi-2026-08-06-0859.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc5/Yumi-smartpi1-forky-debian14-dietpi-2026-08-06-0859.img.xz){ target=_blank } | 311 MB | v1.8.0-rc5 — 2026-07-31 |
 
-The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc5){ target=_blank }.
+The matching `.sha256` file for each image is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc5){ target=_blank }.
 
 <!-- END AUTO: dietpi-release -->
 
@@ -55,26 +56,26 @@ The matching `.sha256` file is on the [release page](https://github.com/Yumi-Lab
 === "Linux"
 
     ```bash
-    sha256sum -c Yumi-smartpi1-trixie-debian13-dietpi-*.img.xz.sha256
+    sha256sum -c Yumi-smartpi1-*-dietpi-*.img.xz.sha256
     ```
 
 === "macOS"
 
     ```bash
-    shasum -a 256 -c Yumi-smartpi1-trixie-debian13-dietpi-*.img.xz.sha256
+    shasum -a 256 -c Yumi-smartpi1-*-dietpi-*.img.xz.sha256
     ```
 
 === "Windows (PowerShell)"
 
     ```powershell
-    Get-FileHash .\Yumi-smartpi1-trixie-debian13-dietpi-<date>.img.xz -Algorithm SHA256
+    Get-FileHash .\Yumi-smartpi1-<variant>-dietpi-<date>.img.xz -Algorithm SHA256
     # compare the result with the contents of the .sha256 file
     ```
 
 **3. Flash the card** with [Raspberry Pi Imager](https://www.raspberrypi.com/software/){ target=_blank } (*Choose OS → Use custom*), [balenaEtcher](https://etcher.balena.io/){ target=_blank }, or `dd`:
 
 ```bash
-xzcat Yumi-smartpi1-trixie-debian13-dietpi-<date>.img.xz | sudo dd of=/dev/sdX bs=1M status=progress conv=fsync
+xzcat Yumi-smartpi1-<variant>-dietpi-<date>.img.xz | sudo dd of=/dev/sdX bs=1M status=progress conv=fsync
 ```
 
 Both Imager and Etcher read the `.img.xz` directly — no need to decompress it first. With `dd`, double-check `/dev/sdX`: writing to the wrong device will destroy it.

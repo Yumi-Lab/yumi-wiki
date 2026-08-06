@@ -58,6 +58,12 @@ ASSET_RE = re.compile(
     r"-(?P<edition>server|desktop)(?:_(?P<de>[A-Za-z0-9]+))?-(?P<stamp>[\d-]+)\.img\.xz$"
 )
 
+# DietPi assets have no server/desktop edition — DietPi's own catalog replaces that split.
+DIETPI_ASSET_RE = re.compile(
+    r"^Yumi-(?P<board>[a-z0-9]+)-(?P<codename>[a-z]+)-(?P<distro>[a-z0-9.]+)"
+    r"-dietpi-(?P<stamp>[\d-]+)\.img\.xz$"
+)
+
 
 def api(path):
     req = urllib.request.Request(
@@ -178,21 +184,40 @@ def armbian_block(release, kind):
 
 
 def dietpi_block(release):
-    """The newest image of the release — a candidate release can carry several
-    rebuilds of the same image, and only the last one is worth downloading."""
+    """One row per distro variant in the release, newest asset within each —
+    a candidate release can carry several rebuilds of the same image (only
+    the last one of each variant is worth downloading), and since v1.8.0-rc5
+    a release can also carry more than one variant (e.g. trixie + forky)."""
     tag, date = release["tag_name"], date_of(release)
-    images = [a for a in release["assets"] if a["name"].endswith(".img.xz")]
-    if not images:
-        raise SystemExit(f"no .img.xz asset in {DIETPI_REPO} {tag}")
-    asset = max(images, key=lambda a: a.get("created_at", a["name"]))
-    size = f"{asset['size'] / 1_000_000:.0f} MB"
+    variants = {}
+    for asset in release["assets"]:
+        m = DIETPI_ASSET_RE.match(asset["name"])
+        if not m:
+            continue
+        current = variants.get(m["codename"])
+        if current is None or asset.get("created_at", "") > current.get("created_at", ""):
+            variants[m["codename"]] = asset
+    if not variants:
+        raise SystemExit(f"no dietpi .img.xz asset in {DIETPI_REPO} {tag}")
+
+    labels = {codename: name for codename, name, *_ in DISTROS}
+    # Known codenames first in DISTROS order; an unlisted one is appended
+    # rather than dropped, so a future variant never disappears silently.
+    order = [c for c, *_ in DISTROS if c in variants]
+    order += sorted(c for c in variants if c not in order)
+
+    rows = ["| Distribution | File | Size | Release |", "|---|---|---|---|"]
+    for codename in order:
+        asset = variants[codename]
+        label = labels.get(codename, codename.capitalize())
+        size = f"{asset['size'] / 1_000_000:.0f} MB"
+        rows.append(f"| **{label}** | [`{asset['name']}`]({asset['browser_download_url']})"
+                    f"{{ target=_blank }} | {size} | {tag} — {date} |")
+
     return "\n".join([
-        "| File | Size | Release |",
-        "|---|---|---|",
-        f"| [`{asset['name']}`]({asset['browser_download_url']})"
-        f"{{ target=_blank }} | {size} | {tag} — {date} |",
+        *rows,
         "",
-        "The matching `.sha256` file is on the "
+        "The matching `.sha256` file for each image is on the "
         f"[release page](https://github.com/{DIETPI_REPO}/releases/tag/{tag})"
         "{ target=_blank }.",
     ])

@@ -40,7 +40,7 @@ Headless, driven over SSH. Memory read on a Smart Pi One (960 MB total) minutes 
 | ![](/img/SmartPi/OS/ubuntu-logo.svg){ .off-glb width="18" } **[Ubuntu 22.04 Jammy](../SmartPi_Linux.md)** | Armbian | **77 MB** | 848 MB | Existing 22.04 deployments |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 11 Bullseye](../SmartPi_Linux.md)** | Armbian, legacy 6.12 kernel | **86 MB** | 850 MB | Legacy setups only — end of life |
 | ![](/img/SmartPi/OS/debian-logo.svg){ .off-glb width="18" } **[Debian 14 Forky](../SmartPi_Linux.md#3-release-candidate)** | Armbian, preview | **107 MB** | 852 MB | Release candidate |
-| ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md#4-default-accounts)** | Debian 13 trixie server | ~87 MB *(vendor figure)* | — | Squeezing the most out of 1 GB of RAM |
+| ![](/img/SmartPi/OS/dietpi-mark.png){ .off-glb width="18" } **[DietPi](SmartPi_DietPi.md#4-default-accounts)** | Debian server (Trixie or Forky) | ~87 MB *(vendor figure)* | — | Squeezing the most out of 1 GB of RAM |
 
 They all land between 77 and 109 MB: the choice of distribution costs nothing in memory. Anything you install comes on top.
 
