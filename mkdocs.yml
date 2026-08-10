@@ -188,12 +188,13 @@ nav:
       - "4.5.1 Smart LCD Touch 4.3\"": Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md
       - "4.5.2 Smart Hub 1→4": Yumi_Components/SmartHub_specifications.md
       - "4.5.3 Smart Shield": Yumi_Components/SmartShield_specifications.md
-  - "5. YUMI Plug and Play Images":
+  - "5. YUMI Distributions":
     - "5.1 Klipper (YUMIOS)": SmartPI/SmartPi_Klipper.md
-    - "5.2 RetroMi (include optimised RetroPie)": SmartPI/SmartPi_Retro_Gaming.md
-    - "5.3 Batocera": SmartPI/SmartPi_Retro_Batocera.md
-    - "5.4 Controller Setup for RetroMi / RetroPie": SmartPI/SmartPi_Retro_Controller_Setup.md
-    - "5.5 Home Assistant": SmartPI/SmartPi_Home_Assistant.md
+    - "5.2 Retro Gaming":
+      - "5.2.1 RetroMi": SmartPI/SmartPi_Retro_Gaming.md
+      - "5.2.2 Batocera": SmartPI/SmartPi_Retro_Batocera.md
+      - "5.2.3 Controller Setup": SmartPI/SmartPi_Retro_Controller_Setup.md
+    - "5.3 Home Assistant": SmartPI/SmartPi_Home_Assistant.md
   - "6. YUMI 3D PEN":
       - 3d_pen/index.md
   - "7. YUMI PenScreen":

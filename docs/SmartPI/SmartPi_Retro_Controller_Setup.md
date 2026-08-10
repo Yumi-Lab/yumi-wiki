@@ -1,12 +1,12 @@
-# Controller Setup for RetroMi / RetroPie
+# Controller Setup
 
 ![controller setup](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
 
 ## 1. Introduction
 
-Setting up your game controller is one of the first steps after installing RetroMi on your Smart Pi One. EmulationStation needs to know how your gamepad buttons are mapped before you can navigate menus and play games.
+Setting up your game controller is one of the first steps after installing [RetroMi](SmartPi_Retro_Gaming.md) or [Batocera](SmartPi_Retro_Batocera.md) on your Smart Pi One — both boot into EmulationStation, which needs to know how your gamepad buttons are mapped before you can navigate menus and play games.
 
-This guide covers the initial configuration, hotkey shortcuts, and supported controller types.
+This guide covers the initial configuration, hotkey shortcuts, and supported controller types. The wizard itself is identical on both images; only a handful of menu labels differ, noted where it matters.
 
 ## 2. First Boot — Controller Detection
 
@@ -56,7 +56,7 @@ Once all buttons are mapped, press **A** on the "OK" prompt to save.
 
 ## 4. Supported Controller Layouts
 
-RetroMi works with most USB and Bluetooth controllers. Below are the most common layouts:
+Both images work with most USB and Bluetooth controllers. Below are the most common layouts:
 
 ### SNES-style Controllers
 
@@ -145,7 +145,7 @@ A keyboard can be configured as a controller using the same mapping wizard. Comm
 ### Bluetooth controller won't pair
 
 - Make sure the controller is in **pairing mode** (flashing LED)
-- Go to **RetroPie menu > Bluetooth** and follow the on-screen instructions
+- On RetroMi, go to **RetroPie menu > Bluetooth** and follow the on-screen instructions; on Batocera, the exact menu path is documented at [wiki.batocera.org](https://wiki.batocera.org/){ target=_blank }
 - Keep the controller close to the Smart Pi One during pairing
 
 ### Controller works in menus but not in games
@@ -155,4 +155,4 @@ A keyboard can be configured as a controller using the same mapping wizard. Comm
 
 ---
 
-For more details, refer to the [official RetroPie controller documentation](https://retropie.org.uk/docs/Controller-Configuration/){ target=_blank }.
+For more details, refer to the [official RetroPie controller documentation](https://retropie.org.uk/docs/Controller-Configuration/){ target=_blank } (RetroMi) or [wiki.batocera.org](https://wiki.batocera.org/){ target=_blank } (Batocera).
