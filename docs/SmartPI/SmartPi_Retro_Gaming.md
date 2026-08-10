@@ -1,104 +1,145 @@
-# RetroMi (includes optimized RetroPie)
-![retropie](/img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png)
+# RetroMi
+
+![EmulationStation on a Smart Pi One](/img/SmartPi/Retro_Gaming/bootemulationstation.png)
+
 ## 1. Introduction
-RetroPie stands out in the retro gaming world for its unparalleled flexibility and customization options, making it a go-to choice for enthusiasts and builders of retro gaming projects. With its broad support for emulators, RetroPie enables users to dive into a vast library of games spanning decades of consoles and computer systems, from classic Atari and NES to more recent platforms like the PlayStation.
 
-Its customizable nature is a significant advantage, offering users the freedom to tweak the user interface, controller configurations, and even add extra scripts and features to meet their specific needs. This adaptability makes RetroPie an ideal solution for those looking to create a personalized retro gaming console.
+RetroMi is YUMI-LAB's retrogaming image for the Smart Pi One: a ready-to-flash Armbian Bookworm build with EmulationStation, RetroArch and over 100 pre-compiled emulator cores — Dreamcast, N64 and PSP included, plus PC game streaming via Moonlight. Everything ships pre-compiled for armhf, so there is nothing to build on the device itself.
 
-Moreover, RetroPie benefits from a dedicated and active community, providing extensive guides, tutorials, and support forums. This community is invaluable for both newcomers learning to set up their retro gaming system and experienced users seeking advanced advice or new project ideas.
+!!! info "Actively developed"
+    RetroMi is maintained by YUMI-LAB at [github.com/Yumi-Lab/RetroMi](https://github.com/Yumi-Lab/RetroMi){ target=_blank }. Report issues there.
 
-In summary, RetroPie is a key platform for retro gaming projects, offering powerful flexibility, extensive emulator support, and a vibrant community, enabling users to craft customized and immersive retro gaming experiences.
+Prefer a simpler, more polished out-of-the-box experience with RetroAchievements? See [Batocera](SmartPi_Retro_Batocera.md) instead.
 
-## 2. Auto Installation (Recommended for beginners)
+## 2. What you get
 
-You can use Balena Etcher or Raspberry imager to prepare the SD card with the image below
+| Feature | Detail |
+|---|---|
+| **EmulationStation** | EpicNoir theme pre-installed, 200+ additional themes via the built-in downloader |
+| **RetroArch** | 100+ libretro cores, tuned for the Mali-400 GPU |
+| **Controllers** | 237 gamepads recognised out of the box — PS3, PS4, PS5, Xbox, Switch Pro, 8BitDo, Logitech |
+| **Dreamcast** | Flycast (GLES2) — playable on the H3 |
+| **Moonlight** | Stream from a PC running Sunshine, with HEVC hardware decode |
+| **File access** | Samba shares plus a web-based FileBrowser (port 80) for ROMs, BIOS and configs |
+| **USB auto-mount** | Plug a USB drive with a `RetroPie/roms/<system>/` layout — ROMs are picked up automatically |
+| **Bezels** | Decorative overlays for 19 systems, from TheBezelProject |
 
-2024-07-16: Pre-built with web browser http://your_ip:8080 for managing games and auto resize image for all TF cards minimum 16GB recommended. (BETA v0.4 / Remember to unzip the file. SSH user: pi, password: yumi) [RetroPie for SMART PI ONE V0.4beta](https://www.dropbox.com/scl/fi/et290vqex21cth2eoav81/smartpad1-retro.img.xz?rlkey=jp0starr84i54ydhd7tqubpjr&dl=0){ target=_blank } for more details : [GITHUB MAXIME3D77 SMARTPI](https://github.com/Maxime3d77/smartpi1-retropie){ target=_blank }
+## 3. Supported systems
 
-2024-04-26 : Prebuilt image link for 16GB or more (BETA v0.3 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.3beta](https://gofile.me/67vGQ/JYxrUDZA1){ target=_blank }
+102 cores across 20 groups:
 
-2024-04-01 : Prebuilt image link for 16GB or more (BETA v0.2 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.2beta](https://gofile.me/67vGQ/VREUvyEth){ target=_blank }
+| Group | Systems |
+|---|---|
+| `nintendo` | NES, SNES, Game Boy / Color, GBA (13 cores) |
+| `n64` | Nintendo 64, PC Engine / TurboGrafx (5 cores) |
+| `sega` | Mega Drive, Sega CD, 32X, Master System, Game Gear, Neo Geo CD |
+| `sony` | PlayStation 1 |
+| `psp` | PlayStation Portable (PPSSPP) |
+| `arcade` | FBNeo — Arcade, Neo Geo, CPS1-2-3 |
+| `arcade-compat` | MAME 2000 / 2003 / 2003+ / 2010, FBAlpha2012 |
+| `heavy` | Nintendo DS, Dreamcast, Saturn, 3DO, Jaguar |
+| `amiga` | Amiga (uae4arm, PUAE) |
+| `computers` | C64, MSX, Atari 8-bit, ZX Spectrum, Amstrad CPC, Atari ST, Apple II, BBC Micro, Enterprise 128 |
+| `japan-computers` | PC-98, PC-88, X68000, Sharp X1 |
+| `portables` | Neo Geo Pocket, Lynx, Virtual Boy, WonderSwan, Pokémon Mini, Arduboy, Vectrex, Game & Watch |
+| `dosbox` | DOSBox Pure |
+| `scummvm` | ScummVM — 250+ point-and-click adventures |
+| `openbor` | OpenBOR (beat 'em up engine) |
+| `misc` | Doom, Quake, Atari 2600, PICO-8, WASM-4, TIC-80, EasyRPG, Cave Story, Java ME |
+| `moonlight` | PC game streaming (Sunshine / NVIDIA) |
+| `skyscraper` | Game metadata and artwork scraper |
+| `retroarch` | RetroArch frontend and assets |
+| `emulationstation` | EmulationStation frontend |
 
-2024-03-22 : Prebuilt image link for 16GB or more (BETA v0.1 / Remember to unzip the file/ password pi: fun): [RetroPie for SMART PI ONE V0.1beta](https://gofile.me/67vGQ/0bSQSSoCT){ target=_blank }
+## 4. Download and flash
 
-## 3. Manual Installation
+**1. Download** both parts of the current release, `1.0.4`, from the [release page](https://github.com/Yumi-Lab/RetroMi/releases){ target=_blank } — the image is split in two to stay under GitHub's 2 GiB file limit:
 
-## 4. Prerequisites
+| File | Size |
+|---|---|
+| [`2026-03-08-RetroMi-1.0.4-armbian-RetroMi.img.7z.001`](https://github.com/Yumi-Lab/RetroMi/releases/download/1.0.4/2026-03-08-RetroMi-1.0.4-armbian-RetroMi.img.7z.001){ target=_blank } | 1.99 GB |
+| [`2026-03-08-RetroMi-1.0.4-armbian-RetroMi.img.7z.002`](https://github.com/Yumi-Lab/RetroMi/releases/download/1.0.4/2026-03-08-RetroMi-1.0.4-armbian-RetroMi.img.7z.002){ target=_blank } | 785 MB |
 
--Installing a smartpi, LINUX BOOKWORM SERVER is recommanded.  (https://wiki.yumi-lab.com/SmartPI/SmartPi_Linux/)
+The matching `.sha256` files and the full changelog are on the release page.
 
--During linux server installation please create user: pi 
+**2. Extract** — both files must sit in the same folder:
 
-Manual installation can take several hours, so you'll just have to be patient while everything installs properly. You'll just have to do a few things during installation.
+=== "Linux"
 
-Connect to the pad via ssh with mobaxterm or putty, for example.
+    ```bash
+    7z x 2026-03-08-RetroMi-1.0.4-armbian-RetroMi.img.7z.001
+    sha256sum -c 2026-03-08-RetroMi-1.0.4-armbian-RetroMi.img.7z.sha256
+    ```
 
-## 5. Retropie installation for YUMI Smart Pi One
+=== "macOS"
+
+    Open `.img.7z.001` with [Keka](https://www.keka.io/){ target=_blank } or [The Unarchiver](https://theunarchiver.com/){ target=_blank } — it picks up `.002` automatically.
+
+=== "Windows"
+
+    Right-click `.img.7z.001` → **Extract Here**, using [7-Zip](https://7-zip.org/){ target=_blank }.
+
+**3. Flash** the extracted `.img` with [Raspberry Pi Imager](https://www.raspberrypi.com/software/){ target=_blank } (*Choose OS → Use custom*), [balenaEtcher](https://etcher.balena.io/){ target=_blank }, or `dd`:
+
+```bash
+sudo dd if=RetroMi-*.img of=/dev/sdX bs=4M status=progress
+```
+
+With `dd`, double-check `/dev/sdX`: writing to the wrong device will destroy it.
+
+## 5. First boot
+
+Insert the card into the Smart Pi One and power on. First boot takes 2 to 3 minutes while RetroMi finishes its initial setup, then EmulationStation starts.
+
+## 6. Default accounts
+
+| Service | User | Password |
+|---|---|---|
+| **SSH** | `pi` | `yumi` |
+| **FileBrowser** (port 80) | `admin` | `RetroMi2026!` |
+| **FileBrowser** (port 80) | `pi` | `YumiRetroMi25` |
+
+!!! danger "Change the passwords"
+    Change both, right after the first login.
+
+## 7. Adding ROMs
+
+Three ways in:
+
+- **FileBrowser** — browse to `http://<device-ip>/`, navigate to `RetroPie/roms/<system>/` and upload your files
+- **USB** — build the same `RetroPie/roms/<system>/` structure on a USB drive and plug it in; ROMs are detected and linked automatically
+- **SCP** — `scp game.zip pi@<device-ip>:/home/pi/RetroPie/roms/<system>/`
+
+Restart EmulationStation, or reboot, to refresh the game list.
+
+## 8. WiFi
+
+From the EmulationStation menu: **RetroPie → Wi-Fi**. Or over SSH:
+
+```bash
+sudo nmtui
+```
+
+## 9. Controller setup
+
+The first time EmulationStation starts, it asks you to map a controller. The full walkthrough — button mapping, hotkeys, supported layouts, troubleshooting — has its own page:
+
+[Controller Setup for RetroMi](SmartPi_Retro_Controller_Setup.md){ .md-button }
+
+## 10. Architecture
+
+RetroMi is built in three layers:
 
 ```
-git clone https://github.com/Yumi-Lab/Retropie-smartpi.git
-cd Retropie-smartpi
-./install.sh
-
+Layer 1 — SmartPi-armbian   : Armbian Bookworm server base (armhf)
+Layer 2 — RetroMi-packages  : 102 pre-compiled libretro cores (20 groups)
+Layer 3 — RetroMi           : themes, config, modules, controllers, bezels
 ```
 
-## 6. Relaunching the Smart Pi One
+Layer 2 is built separately via QEMU armhf in Docker, so nothing compiles on the device itself.
 
-```
-sudo reboot
-```
+## 11. Notes
 
-## 7. Start
-
-You should see EmulationStation start up.
-
-![EmulationStation boot screen on the Smart Pi One](/img/SmartPi/Retro_Gaming/bootemulationstation.png)
-
-Once started, you need to set up a controller
-
-![emula](/img/SmartPi/Retro_Gaming/RetroPie-Reset-Controllers.png)
-
-
-## 8. Find IP address from Retropie
-
-To find your IP from Retropie, go to the Retropie menu.
-
-![emula](/img/SmartPi/Retro_Gaming/IP001.jpg)
-
-Go to the show IP menu
-
-![emula](/img/SmartPi/Retro_Gaming/IP002.jpg)
-
-In this example the IP address is 192.168.1.123.
-
-![emula](/img/SmartPi/Retro_Gaming/IP003.jpg)
-
-You can now easily send Roms over the network.
-
-## 9. add roms or BIOS
-
-you can add roms and bios from your pc by opening an explorer and typing your ip address in the address bar.
-
-For exemple:
-
-![emula](/img/SmartPi/Retro_Gaming/uncshare.png)
-
-you'll be able to see the bios and roms folder. Simply upload your files here, respecting the format and tree structure.
-For example, in the roms folder, there's the gba folder for gameboy advance, psx for playstation 1
-
-In this example there is a zip rom for a GameBoy Advence game.
-
-![emula](/img/SmartPi/Retro_Gaming/exemplegba.png)
-
-Each time you add or remove roms, you need to restart Emulation Station or Smartpi.
-
-![emula](/img/SmartPi/Retro_Gaming/gba1.jpg)
-
-![emula](/img/SmartPi/Retro_Gaming/gba2.jpg)
-
-![emula](/img/SmartPi/Retro_Gaming/gba3.jpg)
-
-
-For everything else, please refer to the official Retropie documentation.
-
-
+- **Status:** actively developed. Current release: **1.0.4** (2026-03-08).
+- **Source:** [github.com/Yumi-Lab/RetroMi](https://github.com/Yumi-Lab/RetroMi){ target=_blank }. License: GPL-3.0.
+- **Want RetroAchievements and a simpler, atomic-update system instead?** See [Batocera](SmartPi_Retro_Batocera.md) — fewer emulators (117 systems, standalone), but a more polished out-of-the-box experience.

@@ -93,7 +93,7 @@ Familiarize yourself with essential commands to manage your board effectively. V
 Once you are comfortable with the basics, explore advanced projects:
 
 - **Klipper**: [Setup Klipper <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_6.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPi_Klipper.md)
-- **Retro Gaming**: [Install RetroMi (Optimized <img src="../../img/SmartPi/Retro_Gaming/RetroPieWebsiteLogo.png" alt="Smart Pi One - Yumi" width="100"/>)](SmartPi_Retro_Gaming.md)
+- **Retro Gaming**: [Install RetroMi](SmartPi_Retro_Gaming.md) (100+ emulator cores) or [Batocera](SmartPi_Retro_Batocera.md) (117 systems, RetroAchievements)
 
 - **Home Automation**: [Set up Home Assistant <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_5.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPi_Home_Assistant.md)
 - **Media Storage**: [Configure OpenMediaVault <img src="../../img/SmartPi/SmartPi_One_Startup/smartpi_one_startup_7.png" alt="Smart Pi One - Yumi" width="50"/>](SmartPI_OpenMediaVault.md)

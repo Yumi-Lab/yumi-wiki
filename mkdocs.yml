@@ -183,10 +183,11 @@ nav:
     - "4.4 LINUX LAB PROJECT":
       - "4.4.1 Klipper (YUMIOS)": SmartPI/SmartPi_Klipper.md
       - "4.4.2 RetroMi (include optimised RetroPie)": SmartPI/SmartPi_Retro_Gaming.md
-      - "4.4.3 Controller Setup for RetroMi / RetroPie": SmartPI/SmartPi_Retro_Controller_Setup.md
-      - "4.4.4 Home Assistant": SmartPI/SmartPi_Home_Assistant.md
-      - "4.4.5 OpenMediaVault": SmartPI/SmartPI_OpenMediaVault.md
-      - "4.4.6 Plex Server": SmartPI/SmartPi_Plex_Server.md
+      - "4.4.3 Batocera": SmartPI/SmartPi_Retro_Batocera.md
+      - "4.4.4 Controller Setup for RetroMi / RetroPie": SmartPI/SmartPi_Retro_Controller_Setup.md
+      - "4.4.5 Home Assistant": SmartPI/SmartPi_Home_Assistant.md
+      - "4.4.6 OpenMediaVault": SmartPI/SmartPI_OpenMediaVault.md
+      - "4.4.7 Plex Server": SmartPI/SmartPi_Plex_Server.md
     - "4.5 EXTRA HARDWARE":
       - Yumi_Components/index.md
       - "4.5.1 Smart LCD Touch 4.3\"": Yumi_Components/SmartLCD_Touch_4.3inch800x480specifications.md

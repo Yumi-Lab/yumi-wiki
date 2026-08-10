@@ -136,7 +136,8 @@ After enabling and rebooting, `smartpi-oc status` reports `current max: 1368000 
 Beyond the general-purpose systems above, YUMI-LAB also ships images built around a single application:
 
 - **[YumiOS — Klipper](../SmartPi_Klipper.md)** — 3D printer control, the system running on the Klipper Smart Pad
-- **[RetroMi](../SmartPi_Retro_Gaming.md)** — retro gaming, an optimised RetroPie for the H3
+- **[RetroMi](../SmartPi_Retro_Gaming.md)** — retro gaming, an optimised RetroPie for the H3, 100+ emulator cores
+- **[Batocera](../SmartPi_Retro_Batocera.md)** — retro gaming, 117 systems and RetroAchievements, atomic updates
 
 ## 8. Next step
 
