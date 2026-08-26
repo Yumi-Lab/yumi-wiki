@@ -11,10 +11,10 @@
     display: block;
 }
 
-/* Wider layout than the Material default, but still bounded:
-   unbounded width stretches text into unreadable lines on large screens. */
+/* Fluid layout: fills the viewport instead of capping at a fixed width,
+   so wide/ultrawide screens don't get large empty bands on both sides. */
 .md-grid {
-    max-width: 1600px;
+    max-width: 100%;
 }
 
 /* Content images: always responsive, never blown up past a sane size,
@@ -92,4 +92,72 @@
 /* Standalone banners sit smaller than the 960px default for SVGs. */
 .md-typeset img.banner {
     max-width: min(100%, 700px);
+}
+
+/* Page header toolbar: breadcrumb trail (left) + "Copy for LLM" button
+   (right), one row above every page's content. Colors ride Material's own
+   theme tokens so light/dark and the accent stay in sync automatically. */
+.md-page-toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.md-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .3rem;
+    font-size: .68rem;
+    color: var(--md-default-fg-color--light);
+}
+.md-breadcrumb__item {
+    color: inherit;
+}
+a.md-breadcrumb__item:hover {
+    color: var(--md-accent-fg-color);
+}
+.md-breadcrumb__item[aria-current="page"] {
+    color: var(--md-default-fg-color);
+}
+.md-breadcrumb__sep {
+    color: var(--md-default-fg-color--lightest);
+}
+
+.md-copy-llm {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    margin-left: auto;
+    padding: .3rem .7rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: .3rem;
+    background: var(--md-code-bg-color);
+    color: var(--md-default-fg-color--light);
+    font-family: var(--md-text-font-family, inherit);
+    font-size: .68rem;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: color .1s, border-color .1s;
+}
+.md-copy-llm:hover,
+.md-copy-llm:focus-visible {
+    color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+}
+.md-copy-llm:disabled {
+    cursor: default;
+}
+.md-copy-llm.is-done {
+    color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+}
+.md-copy-llm.is-error {
+    color: #e05252;
+    border-color: #e05252;
+}
+.md-copy-llm svg {
+    flex-shrink: 0;
 }

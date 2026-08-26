@@ -72,6 +72,8 @@ yumi-wiki/
 │   └── Yumi_stl/          # STL files documentation
 ├── img/                   # Images and assets
 ├── css/                   # Custom stylesheets
+├── js/                    # Custom scripts (page toolbar: breadcrumb + copy-for-LLM)
+├── hooks/                 # Build-time hooks (mkdocs.yml `hooks:`)
 ├── Klipper/               # Klipper configuration files
 ├── Profile_Slicer/        # Slicer profiles
 ├── stl/                   # STL model files

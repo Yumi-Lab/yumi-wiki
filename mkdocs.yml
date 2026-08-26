@@ -10,6 +10,9 @@ repo_name: Yumi-Lab/yumi-wiki
 exclude_docs: |
   _snippets/**
 
+hooks:
+  - hooks/copy_markdown.py
+
 # Website layout configuration (using mkdocs-material theme)
 theme:
   name: material
@@ -52,6 +55,8 @@ plugins:
   - glightbox
 extra_css:
   - css/extra.css
+extra_javascript:
+  - js/page-toolbar.js
 
 # Extensions
 markdown_extensions:
