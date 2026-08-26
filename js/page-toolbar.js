@@ -34,9 +34,12 @@
       if (!textEl) return;
       const text = textEl.textContent.trim();
       const isLast = index === items.length - 1;
-      const linkEl = li.querySelector(
-        ":scope > div.md-nav__container > a[href], :scope > a[href]"
-      );
+      // A section's own page link, if it has one, always appears before its
+      // nested <nav> of children in the DOM — so the first link found here
+      // is either that own page, or (for a pure category with no page of
+      // its own) the first page reachable under it, which is the next best
+      // thing to jump to.
+      const linkEl = li.querySelector("a[href]");
 
       if (nav.childElementCount) {
         const sep = document.createElement("span");
@@ -101,8 +104,14 @@
     const article = document.querySelector(
       ".md-content__inner[data-md-source-path]"
     );
-    if (!article || article.dataset.pageToolbarMounted) return;
-    article.dataset.pageToolbarMounted = "true";
+    if (!article) return;
+
+    // Rebuilt from scratch on every call instead of mounted once: Material
+    // may reuse the same <article> node across instant-navigation swaps, so
+    // a "mounted" flag on that node can go stale and skip re-mounting on
+    // the next page.
+    const existing = article.querySelector(":scope > .md-page-toolbar");
+    if (existing) existing.remove();
 
     const bar = document.createElement("div");
     bar.className = "md-page-toolbar";
