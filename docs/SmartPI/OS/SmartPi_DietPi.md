@@ -145,7 +145,9 @@ This works the same way on every current YUMI Linux image, not just DietPi.
 
 The Smart Pi One has **no onboard WiFi** — you need a **USB WiFi adapter**.
 
-The WiFi stack (`iw`, `wpasupplicant`, `wireless-regdb`) is **pre-installed** in this image. That matters: DietPi normally fetches those packages when you enable WiFi, which is impossible on a board whose only way online *is* the WiFi you are trying to configure. Here it works offline, out of the box.
+The WiFi stack (`iw`, `wpasupplicant`, `wireless-regdb`) is **pre-installed** in this image, and WiFi is **enabled by default** in `dietpi.txt`. That matters: DietPi normally fetches those packages when you enable WiFi, which is impossible on a board whose only way online *is* the WiFi you are trying to configure. Here it works offline, out of the box — plug in an adapter and add your credentials, no internet connection needed first.
+
+At first boot, DietPi brings up WiFi if a working adapter is present, and falls back to Ethernet automatically otherwise — the normal case here, since the board has no onboard WiFi. Plug in Ethernet, or a WiFi adapter with your credentials already set (below), and either one gets you online with nothing to configure by hand.
 
 ### After the first boot, from the board
 
@@ -153,31 +155,27 @@ The WiFi stack (`iw`, `wpasupplicant`, `wireless-regdb`) is **pre-installed** in
 dietpi-config
 ```
 
-Then **Network Options: Adapters → WiFi**: enable the adapter, scan, pick your network, enter the passphrase. Set your country code in the same menu (the image ships with `GB`).
+Then **Network Options: Adapters → WiFi**: enable the adapter, scan, pick your network, enter the passphrase. Set your country code in the same menu (the image ships with the DietPi default, `GB` — set yours here).
 
 ### Before the first boot, with no screen
 
-The boot partition is **FAT32** and is labelled `armbi_boot`, so it mounts on macOS and Windows as soon as you plug the freshly flashed card into a card reader. Two files there control the automatic setup.
-
-In **`dietpi.txt`**:
-
-```ini
-AUTO_SETUP_NET_WIFI_ENABLED=1
-AUTO_SETUP_NET_WIFI_COUNTRY_CODE=FR
-```
-
-In **`dietpi-wifi.txt`**:
+The boot partition is **FAT32** and is labelled `armbi_boot`, so it mounts on macOS and Windows as soon as you plug the freshly flashed card into a card reader. `AUTO_SETUP_NET_WIFI_ENABLED=1` is already set in **`dietpi.txt`** — you only need to add your network in **`dietpi-wifi.txt`**:
 
 ```ini
 aWIFI_SSID[0]='YourNetwork'
 aWIFI_KEY[0]='YourPassword'
 ```
 
+Set your own country in `dietpi.txt` if you are not in the UK:
+
+```ini
+AUTO_SETUP_NET_WIFI_COUNTRY_CODE=US
+```
+
 Eject the card cleanly, boot the board, and it joins your network on its own.
 
-!!! info "Two things to know"
-    - **WiFi takes priority over Ethernet.** With `AUTO_SETUP_NET_WIFI_ENABLED=1`, DietPi disables the Ethernet interface. Leave it at `0` if you want to keep the cable.
-    - **`dietpi-wifi.txt` disappears after the first boot.** DietPi moves your credentials into `/var/lib/dietpi/dietpi-wifi.db` so the passphrase is not left in clear text on a partition any computer can read. To change networks later, use `dietpi-config`.
+!!! info "One thing to know"
+    **`dietpi-wifi.txt` disappears after the first boot.** DietPi moves your credentials into `/var/lib/dietpi/dietpi-wifi.db` so the passphrase is not left in clear text on a partition any computer can read. To change networks later, use `dietpi-config`.
 
 ## 7. What it inherits from our base image
 
