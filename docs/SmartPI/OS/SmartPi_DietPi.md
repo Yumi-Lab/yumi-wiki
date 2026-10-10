@@ -44,8 +44,8 @@ On a board with 1 GB of RAM and an Allwinner H3, that headroom is the whole poin
 
 | Distribution | File | Size | Release |
 |---|---|---|---|
-| **Debian 13 Trixie** | [`Yumi-smartpi1-trixie-debian13-dietpi-2026-10-08-0616.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc6/Yumi-smartpi1-trixie-debian13-dietpi-2026-10-08-0616.img.xz){ target=_blank } | 521 MB | v1.8.0-rc6 — 2026-10-08 |
-| **Debian 14 Forky (preview)** | [`Yumi-smartpi1-forky-debian14-dietpi-2026-10-08-0621.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc6/Yumi-smartpi1-forky-debian14-dietpi-2026-10-08-0621.img.xz){ target=_blank } | 571 MB | v1.8.0-rc6 — 2026-10-08 |
+| **Debian 13 Trixie** | [`Yumi-smartpi1-trixie-debian13-dietpi-2026-10-09-2140.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc6/Yumi-smartpi1-trixie-debian13-dietpi-2026-10-09-2140.img.xz){ target=_blank } | 520 MB | v1.8.0-rc6 — 2026-10-09 |
+| **Debian 14 Forky (preview)** | [`Yumi-smartpi1-forky-debian14-dietpi-2026-10-09-2154.img.xz`](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/download/v1.8.0-rc6/Yumi-smartpi1-forky-debian14-dietpi-2026-10-09-2154.img.xz){ target=_blank } | 572 MB | v1.8.0-rc6 — 2026-10-09 |
 
 The matching `.sha256` file for each image is on the [release page](https://github.com/Yumi-Lab/DietPi-SmartPi/releases/tag/v1.8.0-rc6){ target=_blank }.
 
